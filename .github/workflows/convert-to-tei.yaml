@@ -72,7 +72,7 @@ jobs:
           push: true
   _3:
     needs: [build]
-    uses: acdh-oeaw/gl-autodevops-minimal-port/.github/workflows/deploy-cluster-2.yml@main
+    uses: wibarab/gl-autodevops-minimal-port/.github/workflows/deploy-cluster-2.yml@main
     secrets: inherit
     with:
       DOCKER_TAG: "ghcr.io/wibarab/corpus-data/corpus-noske"
