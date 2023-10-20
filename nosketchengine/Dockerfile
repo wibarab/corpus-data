@@ -1,9 +1,9 @@
 FROM acdhch/noske:5.63.9-2.223.6-open
 LABEL maintainer omar.siam@oeaw.ac.at
 
-ENV CORPLIST shawi
-COPY 130_vert_plain/ /var/lib/manatee/data/verticals/shawi/
-COPY nosketchengine/shawi /var/lib/manatee/registry/shawi
+ENV CORPLIST wibarab-corpus-data
+COPY 130_vert_plain/ /var/lib/manatee/data/verticals/wibarab-corpus-data/
+COPY nosketchengine/wibarab-corpus-data /var/lib/manatee/registry/wibarab-corpus-data
 # Build will not save anything in /var/lib/manatee/data/ as this is defined as VOLUME
 USER root
 RUN path=$(grep -h ^PATH $MANATEE_REGISTRY/$CORPLIST | sed -e 's/^PATH[^"]*"\(.*\)"$/\1/g'); \
