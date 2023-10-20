@@ -45,7 +45,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/acdh-oeaw/wibarab/corpus-data/corpus-noske
+            ghcr.io/wibarab/corpus-data/corpus-noske
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -75,7 +75,7 @@ jobs:
     uses: acdh-oeaw/gl-autodevops-minimal-port/.github/workflows/deploy-cluster-2.yml@main
     secrets: inherit
     with:
-      DOCKER_TAG: "ghcr.io/acdh-oeaw/wibarab/corpus-data/corpus-noske"
+      DOCKER_TAG: "ghcr.io/wibarab/corpus-data/corpus-noske"
       APP_NAME: "corpus-noske"
       APP_ROOT: "/"
       POSTGRES_ENABLED: false
