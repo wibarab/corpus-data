@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:_="urn:shawi"
+    xmlns:_="https://wibarab.acdh.oeaw.ac.at"
     xmlns:map="http://www.w3.org/2005/xpath-functions/map"
     xmlns="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs tei _ map"
@@ -10,51 +10,60 @@
     <xsl:output method="xml" indent="yes"/>
     
     <!--  
-        This stylesheet transforms the TEI representation of SHAWI_Recordings.xlsx produed 
+        This stylesheet transforms the TEI representation of WIBARAB_Recordings.xlsx produed 
         by the TEIC's xlsxtotei.xsl (https://github.com/TEIC/Stylesheets/blob/dev/xlsx/xlsxtotei.xsl) 
         into the project's Corpus Header Document and included TEI Headers for the ELAN transcription.
         
-        For the full conversion workflow cf. https://gitlab.com/acdh-oeaw/shawibarab/shawi-data/-/blob/main/080_scripts_generic/080_01_ELAN2TEI/ELAN2TEI.ipynb
+        For the full conversion workflow cf. https://github.com/wibarab/corpus-data/tree/main/080_scripts_generic/080_01_ELAN2TEI
         
-        INPUT: 080_scripts_generic/080_01_ELAN2TEI/data/Shawi_Recordings.xml
-        OUTPUT: 102_derived_tei/shawiCorpus.xml
+        INPUT: 080_scripts_generic/080_01_ELAN2TEI/data/WIBARAB_Recordings.xml
+        OUTPUT: 102_derived_tei/wibarabCorpus.xml
         
         TODOs mentioned inline.
         
         Author: Daniel Schopper
-        Created: 2022-03-10
+        Created: 2022-03-10 (within the SHAWI project)
     -->
 
     <xsl:param name="pathToRecordings"/>
+    <xsl:param name="sp_pathToRecordingsXLSX"/>
     
     
     <xsl:variable name="prefixDefs">
-        <prefixDef ident="corpus" matchPattern="^(.+)$" replacementPattern="shawiCorpus.xml#$1">
-            <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="shawiCorpus.xml">SHAWI teiCorpus document</ref>.</p>
+        <prefixDef ident="{$teiCorpusPrefix}" matchPattern="^(.+)$" replacementPattern="wibarabCorpus.xml#$1">
+            <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
         </prefixDef>
-        <prefixDef ident="share" matchPattern="^(.+)$" replacementPattern="\\share17.univie.ac.at\orientalistik\SHAWI\Recordings\*\*\$1.wav">
-            <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the SHAWI network share.</p>
+        <prefixDef ident="{$sharePrefix}" matchPattern="^(.+)$" replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+            <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
         </prefixDef>
-        <prefixDef ident="geo" matchPattern="^(.+)$" replacementPattern="https://github.com/acdh-oeaw/vicav-content/blob/master/vicav_biblio/vicav_geodata.xml#$1">
-            <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-content/blob/master/vicav_biblio/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+        <prefixDef ident="{$vicavGeoListPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+            <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
         </prefixDef>
-        <prefixDef ident="zotid" matchPattern="^(.+)$" replacementPattern="https://github.com/acdh-oeaw/vicav-content/blob/master/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+        <prefixDef ident="{$dmpPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+            <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+        </prefixDef>
+        <prefixDef ident="{$vicavZoteroGroupPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
             <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+        </prefixDef>
+        <prefixDef ident="{$sourcesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+            <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
         </prefixDef>
     </xsl:variable>
     
     <xsl:variable name="teiCorpusPrefix">corpus</xsl:variable>
     <xsl:variable name="sharePrefix">share</xsl:variable>
     <xsl:variable name="vicavGeoListPrefix">geo</xsl:variable>
+    <xsl:variable name="dmpPrefix">dmp</xsl:variable>
     <xsl:variable name="vicavZoteroGroupPrefix">zotid</xsl:variable>
+    <xsl:variable name="sourcesPrefix">sources</xsl:variable>
        
     <xsl:variable name="cn" as="map(xs:string, map(xs:string, xs:integer))">
         <xsl:map>
             <xsl:for-each select="//tei:table/tei:head">
              <xsl:map-entry key="xs:string(.)">                
                  <xsl:map>
-                     <xsl:for-each select="following-sibling::tei:row[@n='1'][1]/tei:cell[normalize-space(.) ne '']">
-                         <xsl:map-entry key="xs:string(.)" select="xs:integer(position())"/>
+                     <xsl:for-each select="following-sibling::tei:row[@n='1'][1]/tei:cell[some $e in (tei:ptr/@target,.) satisfies normalize-space($e) ne '']">
+                         <xsl:map-entry key="(tei:ptr/normalize-space(@target),normalize-space(.))[1]" select="xs:integer(position())"/>
                      </xsl:for-each>
                  </xsl:map> 
              </xsl:map-entry>
@@ -63,7 +72,7 @@
     </xsl:variable>
     
     <xsl:variable name="t_Speakers" select="//tei:table[tei:head = 'Speakers']" as="element(tei:table)"/>
-    <xsl:variable name="allSpeakers" select="$t_Speakers//tei:row[position() gt 1]" as="element(tei:row)*"/>
+    <xsl:variable name="allSpeakers" select="$t_Speakers//tei:row[position() gt 1][tei:cell[1] != '']" as="element(tei:row)*"/>
     <xsl:variable name="t_Speakers_in_Recordings" select="//tei:table[tei:head = 'Speakers_in_Recordings']" as="element(tei:table)"/>
     
     <xsl:variable name="t_Subjects" select="//tei:table[tei:head = 'Subjects']" as="element(tei:table)"/>
@@ -71,9 +80,11 @@
     <xsl:variable name="t_Subjects_in_Recordings" select="//tei:table[tei:head = 'Subjects_in_Recordings']" as="element(tei:table)"/>
     
     <xsl:variable name="t_Team" select="//tei:table[tei:head = 'Team']" as="element(tei:table)"/>
-    <xsl:variable name="allTeam" select="$t_Team//tei:row[position() gt 1]" as="element(tei:row)*"/>
+    <xsl:variable name="allTeam" select="$t_Team//tei:row[position() gt 1][tei:cell[3] != '']" as="element(tei:row)*"/>
     
     <xsl:variable name="t_Places" select="//tei:table[tei:head = 'Places']" as="element(tei:table)"/>
+    
+    <xsl:variable name="t_Campaigns" select="//tei:table[tei:head = 'Campaigns']" as="element(tei:table)"/>
     
     <xsl:template match="/">
         <xsl:comment>THIS FILE WAS PROGRAMMATICALLY CREATED by table2corpus.xsl on/at <xsl:value-of select="current-dateTime()"/></xsl:comment>
@@ -97,7 +108,7 @@
     
     <xsl:function name="_:personReferenceByName" as="element(tei:person)?">
         <xsl:param name="persName" as="xs:string"/>
-        <xsl:variable name="tei:row" select="($allTeam[tei:cell[$cn('Team')('Forename')]||' '||tei:cell[$cn('Team')('Surname')] = $persName], $allSpeakers[tei:cell[$cn('Speakers')('Speaker')] = $persName])[1]"/>
+        <xsl:variable name="tei:row" select="($allTeam[tei:cell[$cn('Team')('persName')] = $persName], $allSpeakers[tei:cell[$cn('Speakers')('Speaker')] = $persName])[1]"/>
         <xsl:apply-templates select="$tei:row" mode="teiInstanceDoc"/>
     </xsl:function>
     
@@ -110,7 +121,7 @@
             <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
             <date when="????-??-??">TODO Set publication date here</date>
             <address>
-                <addrLine>Sonnenfelsgasse 19</addrLine> 
+                <addrLine>Bäckerstraße 13</addrLine> 
                 <addrLine>1010 Vienna</addrLine> 
                 <addrLine>Austria</addrLine>
             </address>
@@ -118,7 +129,7 @@
                 <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
             </availability>
             <xsl:if test="$textID != ''">
-                <idno type="SHAWICorpusID"><xsl:value-of select="$textID"/></idno>
+                <idno type="WIBARABCorpusID"><xsl:value-of select="$textID"/></idno>
             </xsl:if>
         </publicationStmt>
     </xsl:template>
@@ -129,16 +140,17 @@
             <xsl:if test="$textID != ''">
                 <title level="a"><xsl:value-of select="$textID"/></title>
             </xsl:if>
-            <title level="s">SHAWI Corpus</title>
+            <title level="s">WIBARAB Corpus</title>
             <xsl:choose>
                 <xsl:when test="$textID != ''">
                     <xsl:apply-templates select="$allTeam" mode="respStmtInstanceDoc"/>
                 </xsl:when>
                 <xsl:otherwise>
+                    <!-- TODO add fields from Recordings table -->
                     <xsl:apply-templates select="$allTeam" mode="respStmtCorpusDoc"/>
                 </xsl:otherwise>
             </xsl:choose>
-            <funder>Funded by the <orgName ref="https://ror.org/013tf3c58">FWF Austrian Science Fund</orgName> under the number <idno type="projectNumber">P 33574</idno></funder>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
         </titleStmt>
     </xsl:template>
     
@@ -150,7 +162,7 @@
                     <xsl:call-template name="titleStmt"/>
                     <xsl:call-template name="publicationStmt"/>
                     <sourceDesc>
-                        <p>Derived from <ptr target="https://oeawacat.sharepoint.com/:x:/r/sites/ACDH-CH_p_ShawiTypeArabicDialects_Shawi/_layouts/15/Doc.aspx?sourcedoc=%7BF01FF43B-2409-4E31-A5BF-653E0559B160%7D&amp;file=SHAWI%20Recordings.xlsx&amp;action=default&amp;mobileredirect=true&amp;cid=cb8309b3-e569-4b43-b184-6149e267b7dc"/> via xlsxtotei and table2corpus.xsl</p>
+                        <p>Derived from <ptr target="{$sp_pathToRecordingsXLSX}"/> via xlsxtotei and table2corpus.xsl</p>
                     </sourceDesc>
                 </fileDesc>
                 <encodingDesc>
@@ -178,12 +190,13 @@
                     </particDesc>
                 </profileDesc>
             </teiHeader>
-            <standOff>
+            <!-- replaced by DMP document -->
+            <!--<standOff>
                 <listPerson>
                     <head>Project Team</head>
                     <xsl:apply-templates select="$allTeam" mode="teiCorpusDoc"/>
                 </listPerson>
-            </standOff>
+            </standOff>-->
             <xsl:apply-templates select="tei:row[position() gt 1][tei:cell[1] != '']"/>
         </teiCorpus>
     </xsl:template>
@@ -198,13 +211,22 @@
         <xsl:variable name="subjectIDs" select="$t_Subjects_in_Recordings//tei:row[tei:cell = $textID]/tei:cell[. != $textID]"/>
         <xsl:variable name="subjects_in_recording" select="$allSubjects[tei:cell[$cn('Subjects')('Label')] = $subjectIDs]" as="element(tei:row)*"/>
         
+        
+        <xsl:variable name="recordingPerson" select="normalize-space(tei:cell[$cn('Recordings')('Rec. person')])"/>
+        <xsl:variable name="recordingPersonID" select="_:personReferenceByName($recordingPerson)"/>
+        
         <!-- place -->
         <xsl:variable name="placeName" select="tei:cell[$cn('Recordings')('Place')]"/>
         <xsl:variable name="placeID" select="$t_Places//tei:row[tei:cell[$cn('Places')('PlaceName')] = $placeName]/tei:cell[$cn('Places')('ID')]"/>
         
         <!-- path to Audio files -->
-        <xsl:variable name="relPath" select="tei:cell[$cn('Recordings')('Trascribed Audio-file')]"/>
+        <xsl:variable name="audioFilename" select="tei:cell[$cn('Recordings')('Trascribed Audio-file')]"/>
         <xsl:variable name="fullPath" select="$pathToRecordings"/>
+        
+        <xsl:variable name="campaignName" select="tei:cell[$cn('Recordings')('Campaign')]"/>
+        <xsl:variable name="campaign" select="$t_Campaigns//tei:row[tei:cell[$cn('Campaigns')('Campaign')]=$campaignName]"/>
+        <xsl:variable name="campaignID" select="$campaign/tei:cell[$cn('Campaigns')('ID')]"/>
+        
         <TEI>
             <teiHeader>
                 <fileDesc>
@@ -222,10 +244,16 @@
                                 <date when="{_:excelSerialToISO( tei:cell[$cn('Recordings')('Date')])}"/>
                                 <respStmt>
                                     <resp>recording</resp>
-                                    <persName ref="{$teiCorpusPrefix}:{_:personReferenceByName(tei:cell[$cn('Recordings')('Rec. person')])}"><xsl:value-of select="normalize-space(tei:cell[$cn('Recordings')('Rec. person')])"/></persName>
+                                    <persName ref="{$teiCorpusPrefix}:{$recordingPersonID}"><xsl:value-of select="$recordingPerson"/></persName>
                                 </respStmt>
+                                
                                 <!-- TODO The audio files on the share need to be re-organised to match the replacementPattern in the header -->
-                                <media url="{$sharePrefix}:{tei:cell[$cn('Recordings')('Transcribed Audio-file')]}" mimeType="audio/wav" type="master"/>
+                                <xsl:if test="$audioFilename!=''">
+                                    <media url="{$sharePrefix}:{$audioFilename}" mimeType="audio/wav" type="master"/>
+                                </xsl:if>
+                                <xsl:if test="$campaignName != ''">
+                                    <p>Recorded during <ref target="{$sourcesPrefix}:{$campaignID}"><xsl:value-of select="$campaignName"/></ref></p>
+                                </xsl:if>
                             </recording>
                         </recordingStmt>
                     </sourceDesc>
@@ -247,11 +275,21 @@
                             </xsl:for-each>
                         </listPerson>
                     </particDesc>
-                    <settingDesc>
+                    
                         <!-- TODO find ID  -->
                         <!-- TODO fetch additional metadata from place list -->
-                        <place sameAs="{$vicavGeoListPrefix}:{$placeID}"><placeName><xsl:value-of select="$placeName"/></placeName></place>
-                    </settingDesc>
+                        <xsl:choose>
+                            <xsl:when test="$placeName != ''">
+                                <settingDesc>
+                                    <setting>
+                                        <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}"><xsl:value-of select="$placeName"/></placeName>
+                                    </setting>
+                                </settingDesc>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:comment>No place of Recording provided.</xsl:comment>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     <textClass>
                         <xsl:for-each select="$subjects_in_recording">
                             <xsl:sort select="_:sortKey(tei:cell[1])"/>
@@ -290,7 +328,10 @@
         <person xml:id="{tei:cell[1]}">
             <name type="pseudonym"><xsl:value-of select="tei:cell[1]"/></name>
             <sex><xsl:value-of select="tei:cell[2]"/></sex>
-            <birth><xsl:value-of select="tei:cell[3]"/></birth>
+            <xsl:call-template name="parseBirth">
+                <xsl:with-param name="yearOfBirth" select="tei:cell[3]"/>
+                <xsl:with-param name="placeOfOrigin" select="tei:cell[5]"/>
+            </xsl:call-template>
             <xsl:if test="tei:cell[4] != ''">
                 <langKnowledge>
                     <xsl:for-each select="tokenize(tei:cell[4], ',')">
@@ -298,8 +339,51 @@
                     </xsl:for-each>
                 </langKnowledge>
             </xsl:if>
-            <note><xsl:value-of select="tei:cell[5]"/></note>
+            <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
+            <!--<note><xsl:value-of select="tei:cell[5]"/></note>-->
         </person>
+    </xsl:template>
+    
+    <xsl:template name="parseBirth">
+        <xsl:param name="yearOfBirth"/>
+        <xsl:param name="placeOfOrigin"/>
+        <xsl:choose>
+            <xsl:when test="matches($yearOfBirth,'^\d+$')">
+                <birth>
+                    <date when="{$yearOfBirth}"><xsl:value-of select="$yearOfBirth"/></date>
+                    <xsl:if test="$placeOfOrigin != ''">
+                        <placeName><xsl:value-of select="$placeOfOrigin"/></placeName>
+                    </xsl:if>
+                </birth>
+            </xsl:when>
+            <xsl:when test="matches($yearOfBirth, '^\d{4,4}s')">
+                <xsl:variable name="int" select="xs:integer(substring($yearOfBirth,1,4))"/>
+                <birth>
+                    <date notBefore="{$int}" notAfter="{$int+9}"><xsl:value-of select="$yearOfBirth"/></date>
+                    <xsl:if test="$placeOfOrigin != ''">
+                        <placeName><xsl:value-of select="$placeOfOrigin"/></placeName>
+                    </xsl:if>
+                </birth>
+            </xsl:when>
+            <xsl:when test="$yearOfBirth = '' and $placeOfOrigin != ''">
+                <birth>
+                    <xsl:comment>no information on birth date</xsl:comment>
+                    <placeName><xsl:value-of select="$placeOfOrigin"/></placeName>
+                </birth>
+            </xsl:when>
+            <xsl:when test="$yearOfBirth != '' and $placeOfOrigin != ''">
+                <xsl:comment>no information on birth date or origin</xsl:comment>
+            </xsl:when>
+            <xsl:otherwise>
+                <birth>
+                    <xsl:comment>Could not parse of birth date</xsl:comment>
+                    <date><xsl:value-of select="$yearOfBirth"/></date>
+                    <xsl:if test="$placeOfOrigin != ''">
+                        <placeName><xsl:value-of select="$placeOfOrigin"/></placeName>
+                    </xsl:if>
+                </birth>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:table[tei:head = 'Speakers']/tei:row[tei:cell[1] != '']" mode="teiInstanceDoc">
@@ -313,35 +397,31 @@
     </xsl:template>
     
    
-    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[1] != '']" mode="teiCorpusDoc">
+    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']" mode="teiCorpusDoc">
         <!-- mode = what is the context of this run:
             * "teiCorpusDoc": this generates the master list of team members in the teiCorpus
             * "respStmts: genereates a list of respStmts pointing to the list of team members 
             * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
         <xsl:param name="mode"/>
-        <person xml:id="{tei:cell[1]}">
-            <persName>
-                <forename><xsl:value-of select="tei:cell[$cn('Team')('Forename')]"/></forename>
-                <surname><xsl:value-of select="tei:cell[$cn('Team')('Surname')]"/></surname>
-            </persName>
-            <state type="projectRole"><desc><xsl:value-of select="tei:cell[$cn('Team')('Role')]"/></desc></state>
+        <person xml:id="{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}">
+            <persName><xsl:value-of select="tei:cell[$cn('Team')('persName')]"/></persName>
+            <state type="projectRole"><desc><xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]"/></desc></state>
             <idno type="URI" subtype="ORCID">
                 <xsl:choose>
                     <xsl:when test="tei:cell[$cn('Team')('ORCID')] != ''">
                         <xsl:value-of select="concat('https://orcid.org/',tei:cell[$cn('Team')('ORCID')])"/>
                     </xsl:when>
-                    <xsl:otherwise>
-                        TODO get an ORCID
-                    </xsl:otherwise>
+                    <xsl:otherwise>No ORCID provided.</xsl:otherwise>
                 </xsl:choose>
             </idno>
-            <affiliation><xsl:value-of select="tei:cell[$cn('Team')('Affiliation')]"/></affiliation>
-            <note><xsl:value-of select="tei:cell[$cn('Team')('Note')]"/></note>
+            <affiliation><xsl:value-of select="tei:cell[$cn('Team')('affiliation.Element:Text')]"/></affiliation>
+            <!-- ignore because might contain internal information -->
+            <!--<note><xsl:value-of select="tei:cell[$cn('Team')('note')]"/></note>-->
         </person>
     </xsl:template>
 
-    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[1] != '']" mode="respStmtInstanceDoc">
+    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]!='']" mode="respStmtInstanceDoc">
         <!-- mode = what is the context of this run:
             * "teiCorpusDoc": this generates the master list of team members in the teiCorpus 
             * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
@@ -350,15 +430,12 @@
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
         <xsl:param name="mode"/>
         <respStmt>
-            <persName ref="corpus:{tei:cell[1]}">
-                <forename><xsl:value-of select="tei:cell[2]"/></forename>
-                <surname><xsl:value-of select="tei:cell[3]"/></surname>
-            </persName>
-            <resp><xsl:value-of select="tei:cell[4]"/></resp>
+            <persName ref="{$dmpPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}"><xsl:value-of select="tei:cell[$cn('Team')('persName')]"/></persName>
+            <resp><xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]"/></resp>
         </respStmt>
     </xsl:template>
     
-    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[1] != '']" mode="respStmtCorpusDoc">
+    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']" mode="respStmtCorpusDoc">
         <!-- mode = what is the context of this run:
             * "teiCorpusDoc": this generates the master list of team members in the teiCorpus
             * "respStmts: genereates a list of respStmts pointing to the list of team members in the TEI Corpus 
@@ -366,23 +443,18 @@
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
         <xsl:param name="mode"/>
         <respStmt>
-            <persName ref="#{tei:cell[1]}">
-                <forename><xsl:value-of select="tei:cell[2]"/></forename>
-                <surname><xsl:value-of select="tei:cell[3]"/></surname>
-            </persName>
-            <resp><xsl:value-of select="tei:cell[4]"/></resp>
+            <persName ref="{$dmpPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}"><xsl:value-of select="tei:cell[1]"/></persName>
+            <resp><xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]"/></resp>
         </respStmt>
     </xsl:template>
     
-    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[1] != '']" mode="teiInstanceDoc">
+    <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']" mode="teiInstanceDoc">
         <!-- mode = what is the context of this run:
             * "teiCorpusDoc": this generates the master list of team members in the teiCorpus
             * "respStmts: genereates a list of respStmts pointing to the list of team members 
             * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-        <person sameAs="{$teiCorpusPrefix}:{tei:cell[1]}">
-            <name type="pseudonym"><xsl:value-of select="tei:cell[1]"/></name>
-        </person>
+        <person sameAs="{$teiCorpusPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}"><xsl:value-of select="tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]"/></person>
     </xsl:template>
     
     <xsl:template match="tei:table[tei:head = 'Subjects']/tei:row[tei:cell[1] != '']" mode="teiInstanceDoc">

@@ -20,25 +20,29 @@
     <xsl:param name="pathToCorpusDoc"/>
     <xsl:variable name="input" select="."/>
     <xsl:variable name="corpusDoc" select="doc($pathToCorpusDoc)" as="document-node()"/>
-    <xsl:variable name="IDcandidates" select="$corpusDoc//*:title"/>
+    <xsl:variable name="IDcandidates" select="$corpusDoc/tei:teiCorpus/tei:TEI//tei:title[@level = 'a']"/>
     <xsl:variable name="pathSegs" select="tokenize(base-uri($input),'/')"/>
-    <xsl:variable name="recordingID" select="$IDcandidates[some $x in $pathSegs satisfies contains(lower-case($x), lower-case(.))]"/>
+    <xsl:variable name="recordingIDs" select="$IDcandidates[some $x in $pathSegs satisfies contains(lower-case($x), lower-case(.))]"/>
+    <xsl:variable name="recordingID" select="$recordingIDs[1]"/>
     <xsl:variable name="teiHeaderFromCorpus" select="$recordingID/ancestor::tei:teiHeader" as="element(tei:teiHeader)?"/>
     
     <xsl:template match="/">
+        <xsl:if test="count($recordingIDs) gt 1">
+            <xsl:message>WARNING found several matching recording IDs: <xsl:value-of select="string-join($recordingIDs, ', ')"/> - taking first one</xsl:message>
+        </xsl:if>
         <xsl:if test="normalize-space($recordingID) = ''">
-            <xsl:message select="concat('$input=',base-uri($input))"/>
+            <!--<xsl:message select="concat('$input=',base-uri($input))"/>
             <xsl:message select="concat('$pathToCorpusDoc=',$pathToCorpusDoc)"/>
             <xsl:message select="concat('$IDcandidates=',string-join($IDcandidates,', '))"/>
-            <xsl:message select="concat('$recordingID=',$recordingID)"/>
-            <xsl:message terminate="yes">$recordingID could not be determined from input filename <xsl:value-of select="tokenize(base-uri($input),'/')[last()]"/></xsl:message>
+            <xsl:message select="concat('$recordingID=',$recordingID)"/>-->
+            <xsl:message>$recordingID could not be determined from input filename <xsl:value-of select="tokenize(base-uri($input),'/')[last()]"/></xsl:message>
         </xsl:if>
         <xsl:if test="not($teiHeaderFromCorpus)">
-            <xsl:message select="concat('$input=',base-uri($input))"/>
+            <!--<xsl:message select="concat('$input=',base-uri($input))"/>
             <xsl:message select="concat('$pathToCorpusDoc=',$pathToCorpusDoc)"/>
             <xsl:message select="concat('$IDcandidates=',string-join($IDcandidates,', '))"/>
-            <xsl:message select="concat('$recordingID=',$recordingID)"/>
-            <xsl:message terminate="yes">teiHeader for recording <xsl:value-of select="$recordingID"/> not found in <xsl:value-of select="$pathToCorpusDoc"/></xsl:message>
+            <xsl:message select="concat('$recordingID=',$recordingID)"/>-->
+            <xsl:message>teiHeader for recording <xsl:value-of select="$recordingID"/> not found in <xsl:value-of select="$pathToCorpusDoc"/></xsl:message>
         </xsl:if>
         <xsl:comment>THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at<xsl:value-of select="current-dateTime()"/></xsl:comment>
         <xsl:apply-templates>
