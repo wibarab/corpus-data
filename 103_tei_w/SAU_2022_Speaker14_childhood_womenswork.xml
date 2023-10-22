@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2023-10-22T00:05:00.95328Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">SAU_2022_Speaker14_childhood_womenswork</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">SAU_2022_Speaker14_childhood_womenswork</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="06:46" type="audio">
+                  <date when="2022-03-18"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:SAU_2022_GK">Saudi Arabia Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in SAU_2022_Speaker14_childhood_womenswork</head>
+               <person sameAs="corpus:SAU_2022_Speaker14">
+                  <name type="pseudonym">SAU_2022_Speaker14</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Childhood"/>
+            <catRef target="corpus:Womenswork"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="295" since="#T0" xml:id="T1"/>
+         <when interval="2595" since="#T0" xml:id="T2"/>
+         <when interval="3423" since="#T0" xml:id="T3"/>
+         <when interval="7080" since="#T0" xml:id="T4"/>
+         <when interval="8530" since="#T0" xml:id="T5"/>
+         <when interval="13540" since="#T0" xml:id="T6"/>
+         <when interval="13680" since="#T0" xml:id="T7"/>
+         <when interval="15704" since="#T0" xml:id="T8"/>
+         <when interval="16047" since="#T0" xml:id="T9"/>
+         <when interval="20932" since="#T0" xml:id="T10"/>
+         <when interval="21208" since="#T0" xml:id="T11"/>
+         <when interval="25735" since="#T0" xml:id="T12"/>
+         <when interval="26002" since="#T0" xml:id="T13"/>
+         <when interval="28217" since="#T0" xml:id="T14"/>
+         <when interval="29191" since="#T0" xml:id="T15"/>
+         <when interval="32204" since="#T0" xml:id="T16"/>
+         <when interval="32350" since="#T0" xml:id="T17"/>
+         <when interval="36290" since="#T0" xml:id="T18"/>
+         <when interval="36717" since="#T0" xml:id="T19"/>
+         <when interval="39315" since="#T0" xml:id="T20"/>
+         <when interval="39526" since="#T0" xml:id="T21"/>
+         <when interval="43027" since="#T0" xml:id="T22"/>
+         <when interval="43257" since="#T0" xml:id="T23"/>
+         <when interval="45964" since="#T0" xml:id="T24"/>
+         <when interval="46680" since="#T0" xml:id="T25"/>
+         <when interval="51897" since="#T0" xml:id="T26"/>
+         <when interval="52936" since="#T0" xml:id="T27"/>
+         <when interval="59040" since="#T0" xml:id="T28"/>
+         <when interval="60750" since="#T0" xml:id="T29"/>
+         <when interval="65836" since="#T0" xml:id="T30"/>
+         <when interval="66151" since="#T0" xml:id="T31"/>
+         <when interval="70610" since="#T0" xml:id="T32"/>
+         <when interval="71063" since="#T0" xml:id="T33"/>
+         <when interval="72670" since="#T0" xml:id="T34"/>
+         <when interval="72736" since="#T0" xml:id="T35"/>
+         <when interval="74990" since="#T0" xml:id="T36"/>
+         <when interval="75238" since="#T0" xml:id="T37"/>
+         <when interval="78709" since="#T0" xml:id="T38"/>
+         <when interval="78923" since="#T0" xml:id="T39"/>
+         <when interval="82650" since="#T0" xml:id="T40"/>
+         <when interval="82810" since="#T0" xml:id="T41"/>
+         <when interval="89250" since="#T0" xml:id="T42"/>
+         <when interval="90944" since="#T0" xml:id="T43"/>
+         <when interval="96834" since="#T0" xml:id="T44"/>
+         <when interval="96910" since="#T0" xml:id="T45"/>
+         <when interval="101335" since="#T0" xml:id="T46"/>
+         <when interval="101508" since="#T0" xml:id="T47"/>
+         <when interval="106009" since="#T0" xml:id="T48"/>
+         <when interval="106300" since="#T0" xml:id="T49"/>
+         <when interval="110409" since="#T0" xml:id="T50"/>
+         <when interval="110689" since="#T0" xml:id="T51"/>
+         <when interval="115667" since="#T0" xml:id="T52"/>
+         <when interval="117597" since="#T0" xml:id="T53"/>
+         <when interval="122520" since="#T0" xml:id="T54"/>
+         <when interval="124227" since="#T0" xml:id="T55"/>
+         <when interval="128322" since="#T0" xml:id="T56"/>
+         <when interval="128690" since="#T0" xml:id="T57"/>
+         <when interval="134547" since="#T0" xml:id="T58"/>
+         <when interval="134821" since="#T0" xml:id="T59"/>
+         <when interval="136967" since="#T0" xml:id="T60"/>
+         <when interval="137720" since="#T0" xml:id="T61"/>
+         <when interval="143510" since="#T0" xml:id="T62"/>
+         <when interval="144657" since="#T0" xml:id="T63"/>
+         <when interval="152690" since="#T0" xml:id="T64"/>
+         <when interval="153882" since="#T0" xml:id="T65"/>
+         <when interval="157304" since="#T0" xml:id="T66"/>
+         <when interval="158010" since="#T0" xml:id="T67"/>
+         <when interval="162720" since="#T0" xml:id="T68"/>
+         <when interval="165466" since="#T0" xml:id="T69"/>
+         <when interval="168880" since="#T0" xml:id="T70"/>
+         <when interval="169458" since="#T0" xml:id="T71"/>
+         <when interval="171299" since="#T0" xml:id="T72"/>
+         <when interval="172032" since="#T0" xml:id="T73"/>
+         <when interval="175581" since="#T0" xml:id="T74"/>
+         <when interval="176481" since="#T0" xml:id="T75"/>
+         <when interval="182413" since="#T0" xml:id="T76"/>
+         <when interval="183339" since="#T0" xml:id="T77"/>
+         <when interval="185892" since="#T0" xml:id="T78"/>
+         <when interval="188984" since="#T0" xml:id="T79"/>
+         <when interval="191051" since="#T0" xml:id="T80"/>
+         <when interval="192892" since="#T0" xml:id="T81"/>
+         <when interval="194273" since="#T0" xml:id="T82"/>
+         <when interval="194909" since="#T0" xml:id="T83"/>
+         <when interval="202299" since="#T0" xml:id="T84"/>
+         <when interval="202924" since="#T0" xml:id="T85"/>
+         <when interval="204300" since="#T0" xml:id="T86"/>
+         <when interval="204725" since="#T0" xml:id="T87"/>
+         <when interval="208004" since="#T0" xml:id="T88"/>
+         <when interval="208313" since="#T0" xml:id="T89"/>
+         <when interval="213272" since="#T0" xml:id="T90"/>
+         <when interval="214636" since="#T0" xml:id="T91"/>
+         <when interval="218278" since="#T0" xml:id="T92"/>
+         <when interval="219383" since="#T0" xml:id="T93"/>
+         <when interval="222591" since="#T0" xml:id="T94"/>
+         <when interval="223474" since="#T0" xml:id="T95"/>
+         <when interval="227545" since="#T0" xml:id="T96"/>
+         <when interval="228029" since="#T0" xml:id="T97"/>
+         <when interval="231680" since="#T0" xml:id="T98"/>
+         <when interval="232973" since="#T0" xml:id="T99"/>
+         <when interval="233770" since="#T0" xml:id="T100"/>
+         <when interval="235829" since="#T0" xml:id="T101"/>
+         <when interval="248000" since="#T0" xml:id="T102"/>
+         <when interval="248210" since="#T0" xml:id="T103"/>
+         <when interval="253774" since="#T0" xml:id="T104"/>
+         <when interval="253968" since="#T0" xml:id="T105"/>
+         <when interval="259022" since="#T0" xml:id="T106"/>
+         <when interval="259100" since="#T0" xml:id="T107"/>
+         <when interval="264327" since="#T0" xml:id="T108"/>
+         <when interval="266025" since="#T0" xml:id="T109"/>
+         <when interval="270054" since="#T0" xml:id="T110"/>
+         <when interval="271810" since="#T0" xml:id="T111"/>
+         <when interval="277216" since="#T0" xml:id="T112"/>
+         <when interval="278097" since="#T0" xml:id="T113"/>
+         <when interval="283589" since="#T0" xml:id="T114"/>
+         <when interval="283810" since="#T0" xml:id="T115"/>
+         <when interval="287565" since="#T0" xml:id="T116"/>
+         <when interval="290270" since="#T0" xml:id="T117"/>
+         <when interval="293319" since="#T0" xml:id="T118"/>
+         <when interval="294239" since="#T0" xml:id="T119"/>
+         <when interval="303160" since="#T0" xml:id="T120"/>
+         <when interval="309685" since="#T0" xml:id="T121"/>
+         <when interval="314580" since="#T0" xml:id="T122"/>
+         <when interval="314862" since="#T0" xml:id="T123"/>
+         <when interval="322844" since="#T0" xml:id="T124"/>
+         <when interval="323169" since="#T0" xml:id="T125"/>
+         <when interval="328683" since="#T0" xml:id="T126"/>
+         <when interval="328853" since="#T0" xml:id="T127"/>
+         <when interval="335600" since="#T0" xml:id="T128"/>
+         <when interval="335688" since="#T0" xml:id="T129"/>
+         <when interval="337086" since="#T0" xml:id="T130"/>
+         <when interval="340728" since="#T0" xml:id="T131"/>
+         <when interval="342130" since="#T0" xml:id="T132"/>
+         <when interval="343010" since="#T0" xml:id="T133"/>
+         <when interval="344220" since="#T0" xml:id="T134"/>
+         <when interval="358454" since="#T0" xml:id="T135"/>
+         <when interval="360171" since="#T0" xml:id="T136"/>
+         <when interval="362459" since="#T0" xml:id="T137"/>
+         <when interval="363483" since="#T0" xml:id="T138"/>
+         <when interval="367170" since="#T0" xml:id="T139"/>
+         <when interval="371990" since="#T0" xml:id="T140"/>
+         <when interval="376271" since="#T0" xml:id="T141"/>
+         <when interval="381285" since="#T0" xml:id="T142"/>
+         <when interval="383576" since="#T0" xml:id="T143"/>
+         <when interval="384298" since="#T0" xml:id="T144"/>
+         <when interval="391856" since="#T0" xml:id="T145"/>
+         <when interval="392131" since="#T0" xml:id="T146"/>
+         <when interval="393595" since="#T0" xml:id="T147"/>
+         <when interval="393978" since="#T0" xml:id="T148"/>
+         <when interval="396244" since="#T0" xml:id="T149"/>
+         <when interval="396436" since="#T0" xml:id="T150"/>
+         <when interval="399629" since="#T0" xml:id="T151"/>
+         <when interval="399700" since="#T0" xml:id="T152"/>
+         <when interval="406258" since="#T0" xml:id="T153"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T153</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a1"
+                  who="WER-BIN-ICH"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000001">ʕarafti</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000002"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000004"
+                     join="right">bərsīm</w>
+                  <pc xml:id="xTok_000005">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a2"
+                  who="WER-BIN-ICH"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000006">yaxḏūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000007">yaktafūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000008"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_000010">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000011"
+                     rend="withDash">iz</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000013">zahar</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000014">ḥagga</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a3"
+                  who="WER-BIN-ICH"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000015"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000017"
+                     rend="withDash">agul</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000019">hā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000020">lik</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000021"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000023"
+                     rend="withDash">lahǧat</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000025">na</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000026">ygaṭṭʕūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000027"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_000029">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000030"
+                     rend="withDash">iz</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000032">zahar</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000033">ḥagga</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a4"
+                  who="WER-BIN-ICH"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000034">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000035"
+                     rend="withDash">yiǧmiʕūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000037">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a5"
+                  who="WER-BIN-ICH"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000038">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000039"
+                     rend="withDash">yḥaṭṭūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000041">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000042"
+                     rend="withDash">b</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000044">farša</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000045">kibīra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a6"
+                  who="WER-BIN-ICH"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000046">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000047">yaxḏūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000048">nōwʕ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000049">muʕayyin</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000050">min</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000051"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_000053">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000054">min</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000055"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000057">ḥiǧar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a7"
+                  who="WER-BIN-ICH"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000058"
+                     rend="withDash">yiǧī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000060">ki</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000061">amlas</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a8"
+                  who="WER-BIN-ICH"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000062">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000063">kibīr</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000064">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000065"
+                     rend="withDash">b</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000067">ḥiǧm</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000068"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000070">kōwb</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000071">hāḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a9"
+                  who="WER-BIN-ICH"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000072">biss</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000073">mutsāwi</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000074">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000075"
+                     rend="withDash">yiǧī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000077">ki</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000078">amlas</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a10"
+                  who="WER-BIN-ICH"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000079">aḥna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000080">kinna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000081">barḏu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000082">nsawwīha</w>
+                  <pc xml:id="xTok_000083">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000084">taḏakkart</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a11"
+                  who="WER-BIN-ICH"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000085">raǧǧaʕti</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000086">lī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000087"
+                     rend="withDash">iḏ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000089">ḏākira</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a12"
+                  who="WER-BIN-ICH"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000090">kā</w>
+                  <pc join="right" xml:id="xTok_000091">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000092"
+                     join="right">kinna</w>
+                  <pc xml:id="xTok_000093">)</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000094">naǧlis</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000095">ndig</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000096">ndig</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000097">ndig</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000098">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000099">ummi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a13"
+                  who="WER-BIN-ICH"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000100">ndig</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000101">ndig</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000102">ilā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000103">ḥadd</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000104"
+                     join="right"
+                     rend="withDash">mā</w>
+                  <pc xml:id="xTok_000106">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000107">xalāṣ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000108">titfattat</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000109"
+                     rend="withDash">iz</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000111">zahra</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000112"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000114">yinzil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000115"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000117">biḏir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a14"
+                  who="WER-BIN-ICH"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000118">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000119">kānat</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000120">tantaḏ̣ir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000121">li</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000122">ḥadd</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000123"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000125">yiǧi</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000126">hawa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000127">gawi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a15"
+                  who="WER-BIN-ICH"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000128">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000129">iḏā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000130">yōwm</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000131"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000133">ʔayyām</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000134">ǧāh</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000135"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000137">ḥawa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000138"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000140">gowi</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000141">tāxuḏ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000142">hāḏi</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000143">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000144"
+                     rend="withDash">ǧammiʕt</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000146">a</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000147">kulla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a16"
+                  who="WER-BIN-ICH"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000148"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000150">trūḥ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000151"
+                     join="right"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000153">tafriš</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000154">farša</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000155">ṯānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a17"
+                  who="WER-BIN-ICH"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000156"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000158"
+                     rend="withDash">tamsk</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000160">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000161">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000162">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000163">tigūl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000164">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a18"
+                  who="WER-BIN-ICH"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000165">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000166">kullu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000167">biḏir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000168"
+                     join="right"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000170">zahar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a19"
+                  who="WER-BIN-ICH"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000171">waraq</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000172">maṭḥun</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000173">fa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000174">kānat</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000175">tigūl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000176">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a20"
+                  who="WER-BIN-ICH"
+                  end="#T40"
+                  start="#T39">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000177"
+                     rend="withDash">f</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000179"
+                     join="right">il</w>
+                  <pc xml:id="xTok_000180">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000181"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000183"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000185">biḏir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000186">fa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000187">tgūl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000188">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000189">ššš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a21"
+                  who="WER-BIN-ICH"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000190">fa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000191"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000193">hawa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000194">yiṭayyir</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000195"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000197">awrāq</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000198">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000199">ynizzil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000200"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000202">biḏir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000203">ṣāfi</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000204">taḥat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a22"
+                  who="WER-BIN-ICH"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000205">fa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000206">xalāṣ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000207">ḥa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000208">ykīna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000209"
+                     rend="withDash">yṣir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000211">lik</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000212"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000214">biḏir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000215">ṣāfi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a23"
+                  who="WER-BIN-ICH"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000216"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000218"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000220">baqāya</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000221">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000222"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000224"
+                     rend="withDash">tabġā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000226">ha</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000227">tkūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000228">xalāṣ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000229"
+                     rend="withDash">ṭayyar</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000231">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000232"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000234">ḥawa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000235">hnā</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a24"
+                  who="WER-BIN-ICH"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000236">fa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000237">yaxḏūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000238">hāḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000239"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000241"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000243">kīlu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000244">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000245"
+                     rend="withDash">ybiʕūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000247">a</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000248">kānu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a25"
+                  who="WER-BIN-ICH"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000249">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000250">xalāṣ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000251">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000252">mawsim</w>
+                  <pc join="right" xml:id="xTok_000253">(</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000254"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000256"
+                     join="right">barsīm</w>
+                  <pc xml:id="xTok_000257">)</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000258">aywa</w>
+                  <pc xml:id="xTok_000259">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000260">fa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000261"
+                     rend="withDash">yištirūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000263">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a26"
+                  who="WER-BIN-ICH"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000264">fa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000265">kān</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000266">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000267">munḏ̣amn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000268"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000270">aʕmāl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000271">yištaġlū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000272"
+                     rend="withDash">fī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000274">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000275"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000277">ḥarīm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a27"
+                  who="WER-BIN-ICH"
+                  end="#T54"
+                  start="#T53">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000278"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000280">idbāġ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000281">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000282">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000283">yištiġlūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000284">fī</w>
+                  <pc xml:id="xTok_000285">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000286">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000287"
+                     rend="withDash">ybīʕūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000289">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a28"
+                  who="WER-BIN-ICH"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000290">ilā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000291"
+                     rend="withDash">n</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000293">nār</w>
+                  <pc join="right" xml:id="xTok_000294">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000295">Gunda</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000296">asks</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000297">about</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000298">children</w>
+                  <pc xml:id="xTok_000299">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a29"
+                  who="WER-BIN-ICH"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000300">mū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000301"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000303">aṭfāl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000304">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000305"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000307">kbār</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000308">yiššaġlūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000309"
+                     rend="withDash">maʕā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000311"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000312">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000313">aḥyānan</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000314">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000315"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000317"
+                     rend="withDash">ʕanda</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000319">hum</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000320"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000322">ḥadd</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000323">yištaġal</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000324"
+                     rend="withDash">maʕā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000326"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000327">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a30"
+                  who="WER-BIN-ICH"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000328">bass</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000329">kān</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000330">maṣdar</w>
+                  <pc xml:id="xTok_000331">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000332">maṣdar</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000333">daxīl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a31"
+                  who="WER-BIN-ICH"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000334">xuṣūṣan</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000335">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000336"
+                     rend="withDash">ʕindu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000338">hum</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000339">mazāriʕ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000340">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000341"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000343"
+                     rend="withDash">ʕandu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000345">hum</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000346"
+                     join="right"
+                     rend="withDash">mā</w>
+                  <pc xml:id="xTok_000348">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000349"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000351">yistifidūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000352">aywa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a32"
+                  who="WER-BIN-ICH"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000353">awwal</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000354">barḏu</w>
+                  <pc xml:id="xTok_000355">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000356">awwal</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000357">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000358"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000360">bināt</w>
+                  <pc join="right" xml:id="xTok_000361">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000362">strange</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000363">raising</w>
+                  <pc xml:id="xTok_000364">)</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000365"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000367"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000369">ʕiyāl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000370">ysāʕdūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000371"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000373"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000375">mazāriʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a33"
+                  who="WER-BIN-ICH"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000376">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000377">ḥatta</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000378"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000380">ʕummāl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000381">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000382">gilīl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a34"
+                  who="WER-BIN-ICH"
+                  end="#T68"
+                  start="#T67">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000383"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000385">kān</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000386">mutawaffir</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000387">fā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000388">kānu</w>
+                  <pc xml:id="xTok_000389">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000390">ay</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000391">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000392">yḥiššūn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a35"
+                  who="WER-BIN-ICH"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000393">iḥna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000394">ḥiššāna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000395">faṭra</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000396">min</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000397"
+                     rend="withDash">iz</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000399">zimin</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000400">abkar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a36"
+                  who="WER-BIN-ICH"
+                  end="#T72"
+                  start="#T71">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000401"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000403"
+                     rend="withDash">xēyr</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000405">na</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000406">kullu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a37"
+                  who="WER-BIN-ICH"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000407">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000408">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000409"
+                     rend="withDash">mazāriʕ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000411">hum</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000412"
+                     rend="withDash">ʕindu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000414">hum</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000415">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000416">yḥibb</w>
+                  <pc xml:id="xTok_000417">#</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000418">banāt</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000419"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000421">awlād</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000422">ʕādi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a38"
+                  who="WER-BIN-ICH"
+                  end="#T76"
+                  start="#T75">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000423">illi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000424"
+                     rend="withDash">mazāriʕ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000426">hum</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000427">biʕīda</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000428">yrūḥūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000429">kull</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000430">ʕāṣir</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000431"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000433">yḥiššūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000434"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000436">bərsīm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a39"
+                  who="WER-BIN-ICH"
+                  end="#T78"
+                  start="#T77">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000437">yḥiššūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000438"
+                     rend="withDash">ġanam</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000440">hum</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000441">yawmīyan</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000442">maṯalan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a40"
+                  who="WER-BIN-ICH"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000443">aḷḷa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000444"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000446">ṣalla</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000447">ʕala</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000448">muḥammad</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a41"
+                  who="WER-BIN-ICH"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000449">weyn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000450">waṣalna</w>
+                  <pc xml:id="xTok_000451">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a42"
+                  who="WER-BIN-ICH"
+                  end="#T84"
+                  start="#T83">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000452"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000454">bərsīm</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000455">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000456"
+                     rend="withDash">ybīʕūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000458">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000459"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000461"
+                     rend="withDash">is</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000463"
+                     join="right">sana</w>
+                  <pc xml:id="xTok_000464">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000465">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000466">kull</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000467">sana</w>
+                  <pc xml:id="xTok_000468">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000469"
+                     rend="withDash">in</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000471">nās</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000472">xalāṣ</w>
+                  <pc xml:id="xTok_000473">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000474">yibūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000475">yiḥarṯūn</w>
+                  <pc join="right" xml:id="xTok_000476">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000477"
+                     join="right">gahawa</w>
+                  <pc xml:id="xTok_000478">)</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000479"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000481">arḍ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000482"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000484">ysawwūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000485">bərsīm</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000486">ǧidīd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a43"
+                  who="WER-BIN-ICH"
+                  end="#T86"
+                  start="#T85">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000487">xalāṣ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000488"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000490">yrūḥūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000491">ydawwrūn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a44"
+                  who="WER-BIN-ICH"
+                  end="#T88"
+                  start="#T87">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000492">ʕind</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000493">min</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000494">bərsīm</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000495">fa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000496">ydawwrūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000497"
+                     rend="withDash">yištirūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000499">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a45"
+                  who="WER-BIN-ICH"
+                  end="#T90"
+                  start="#T89">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000500">kān</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000501">ġāli</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000502">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000503">kān</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000504">gilīl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000505">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000506">ḥatta</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000507"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000509">ḥarīm</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000510">li</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000511">yištaġlūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000512">fī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000513">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000514">gilīl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a46"
+                  who="WER-BIN-ICH"
+                  end="#T92"
+                  start="#T91">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000515">min</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000516">illi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000517"
+                     rend="withDash">ʕindu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000519">hu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000520">mazraʕa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000521">aw</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000522">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000523">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000524"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000526">ḥarīm</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000527">yihtammūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000528">fī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000529"
+                     rend="withDash">š</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000531">šay</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000532">hāḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a47"
+                  who="WER-BIN-ICH"
+                  end="#T94"
+                  start="#T93">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000533"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000535">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000536"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000538">ḥarīm</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000539">yrabbin</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000540"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000542">ḥayawanāt</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000543"
+                     rend="withDash">yrabbūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000545">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a48"
+                  who="WER-BIN-ICH"
+                  end="#T96"
+                  start="#T95">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000546"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000548">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000549">yištaġlūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000550"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000552"
+                     rend="withDash">id</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000554">diǧāǧ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000555"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000557"
+                     join="right"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000559">išyāʔ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000560">hāḏi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000561"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000563">muhtammīn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000564">fī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000565">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000566">baʕd</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000567"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000569">qura</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a49"
+                  who="WER-BIN-ICH"
+                  end="#T98"
+                  start="#T97">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000570">lamma</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000571">ǧāw</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000572"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000574">qura</w>
+                  <pc join="right" xml:id="xTok_000575">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000576"
+                     join="right">aywa</w>
+                  <pc xml:id="xTok_000577">)</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000578">yahtammu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000579"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000581"
+                     rend="withDash">id</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000583">diǧāǧ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000584">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000585"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000587">ʔarānib</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a50"
+                  who="WER-BIN-ICH"
+                  end="#T100"
+                  start="#T99">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000588">aywa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a51"
+                  who="WER-BIN-ICH"
+                  end="#T102"
+                  start="#T101">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000589">aywa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000590">yihtimmūn</w>
+                  <pc xml:id="xTok_000591">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000592">yihtimmūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000593">fīha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000594"
+                     rend="withDash">yiḏbiḥūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000596">hu</w>
+                  <pc join="right" xml:id="xTok_000597">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000599">hu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000600">refers</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000601">to</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000602">chickens</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000603">and</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000604">rabbits</w>
+                  <pc xml:id="xTok_000605">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000606">interesting</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000607">she</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000608">uses</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000609">the</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000610">sing</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000611">masc</w>
+                  <pc xml:id="xTok_000612">)</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000613">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000614">kānu</w>
+                  <pc xml:id="xTok_000615">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000616">daʔ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000617"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000619">ḥarīm</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000620"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000622">yiḏbaḥin</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000623">bass</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000624">yrabbin</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a52"
+                  who="WER-BIN-ICH"
+                  end="#T104"
+                  start="#T103">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000625">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000626">iḥna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000627">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000628">yiḏbiḥūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000629">ixwāni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000630"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000632">kbār</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000633">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a53"
+                  who="WER-BIN-ICH"
+                  end="#T106"
+                  start="#T105">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000634">mumkin</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000635">ʔamma</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000636"
+                     rend="withDash">biss</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000638"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000639">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000640"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000642">muhim</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000643"
+                     rend="withDash">minnu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000645">hum</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000646"
+                     rend="withDash">irabbūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000648">ha</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000649">mūwǧūda</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000650">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000651">ʕand</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000652">ibyūt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a54"
+                  who="WER-BIN-ICH"
+                  end="#T108"
+                  start="#T107">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000653">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000654">ḥaḏ̣irat</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000655">ġanam</w>
+                  <pc xml:id="xTok_000656">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000657">ḥaḏ̣irat</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000658">diǧāǧ</w>
+                  <pc xml:id="xTok_000659">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000660">ḥaḏ̣irat</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000661">ʔarānib</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a55"
+                  who="WER-BIN-ICH"
+                  end="#T110"
+                  start="#T109">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000662">hāḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000663"
+                     rend="withDash">z</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000665">zimān</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000666">ʕarafti</w>
+                  <pc xml:id="xTok_000667">?</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000668">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000669">ləmma</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000670">kinna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000671">aḥna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a56"
+                  who="WER-BIN-ICH"
+                  end="#T112"
+                  start="#T111">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000672">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000673">kinna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000674"
+                     rend="withDash">b</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000676">aʕmār</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000677">xamstāš</w>
+                  <pc xml:id="xTok_000678">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000679">sittāš</w>
+                  <pc xml:id="xTok_000680">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000681">sabataʕaš</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000682">kān</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000683">mutawāǧid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a57"
+                  who="WER-BIN-ICH"
+                  end="#T114"
+                  start="#T113">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000684">ləmma</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000685">ṭalaʕna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000686">xalāṣ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000687"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000689">ǧamʕat</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000690">xalāṣ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000691"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000693">ʕād</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000694">šufna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000695">xalāṣ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000696">ummi</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000697">iktafat</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000698"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000700"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000702">ġanam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a58"
+                  who="WER-BIN-ICH"
+                  end="#T116"
+                  start="#T115">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000703">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000704">ġēyr</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000705">kull</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000706">il</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000707"
+                     rend="withDash">ḥwōlē</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000709">ha</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000710">zay</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000711">kiḏa</w>
+                  <pc xml:id="xTok_000712">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000713">ʕarafti</w>
+                  <pc xml:id="xTok_000714">?</pc>
+                  <pc join="right" xml:id="xTok_000715">(</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000716">check</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000717">re</w>
+                  <pc xml:id="xTok_000718">.</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000719">the</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000720">ō</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000721">in</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000722">ḥwōl</w>
+                  <pc xml:id="xTok_000723">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a59"
+                  who="WER-BIN-ICH"
+                  end="#T118"
+                  start="#T117">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000724">kānin</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000725">mbaʕad</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000726">ysawwūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000727"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000729">gbaʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a60"
+                  who="WER-BIN-ICH"
+                  end="#T120"
+                  start="#T119">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000730">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000731">aywa</w>
+                  <pc xml:id="xTok_000732">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000733">taww</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000734">tara</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000735"
+                     rend="withDash">ḏḏakkarnā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000737">ha</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000738">ana</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000739">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000740">xiwāti</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000741">kinna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000742"
+                     rend="withDash">niḏakkar</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000744">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a61"
+                  who="WER-BIN-ICH"
+                  end="#T121"
+                  start="#T120">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000745"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000747">gbaʕa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000748"
+                     rend="withDash">mū</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000750">misfaʕ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000751"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000753">ḥina</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000754">misfaʕ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000755">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a62"
+                  who="WER-BIN-ICH"
+                  end="#T122"
+                  start="#T121">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000756">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000757">tara</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000758">tġayyar</w>
+                  <pc xml:id="xTok_000759">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000760">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000761">min</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000762">ašyā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000763">tġayyarat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a63"
+                  who="WER-BIN-ICH"
+                  end="#T124"
+                  start="#T123">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000764">kānit</w>
+                  <pc xml:id="xTok_000765">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000766">kānit</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000767">zayy</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000768"
+                     join="right"
+                     rend="withDash">al</w>
+                  <pc xml:id="xTok_000770">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000771"
+                     rend="withDash">mū</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000773">zayy</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000774"
+                     rend="withDash">ḥiǧāb</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000776">ik</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000777">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a64"
+                  who="WER-BIN-ICH"
+                  end="#T126"
+                  start="#T125">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000778">kānu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000779"
+                     rend="withDash">yxiṭūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000781">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000782"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000784">ṭarīqa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000785">inha</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000786">bass</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000787">iddaxxil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000788"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000790"
+                     join="right">waǧih</w>
+                  <pc xml:id="xTok_000791">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000792">xalāṣ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000793"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000795">hināk</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000796">tkūn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000797">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a65"
+                  who="WER-BIN-ICH"
+                  end="#T128"
+                  start="#T127">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000798">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000799">ḥīna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000800">tiǧīk</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000801">muṯallaṯa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000802">kāmla</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000803">gaṭʕa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000804">waḥda</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000805">yanʕi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000806"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000808">tigʕid</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000809">zēyna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000810">ilʔān</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000811">aḥna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000812">kiḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000813">laxaṭṭi</w>
+                  <pc xml:id="xTok_000814">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a66"
+                  who="WER-BIN-ICH"
+                  end="#T130"
+                  start="#T129">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000815">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000816">kiḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000817"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000819">xalāṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a67"
+                  who="WER-BIN-ICH"
+                  end="#T131"
+                  start="#T130">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000820">gaṭʕa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000821">waḥda</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000822"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000824">kiḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000825"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000827">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000828">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000829">xalāṣ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000830">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000831">nalbas</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000832"
+                     rend="withDash">in</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000834">niqāb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a68"
+                  who="WER-BIN-ICH"
+                  end="#T133"
+                  start="#T132">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000835">hum</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000836">lāʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a69"
+                  who="WER-BIN-ICH"
+                  end="#T135"
+                  start="#T134">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000837">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000838">ḥatta</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000839">ʕala</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000840"
+                     rend="withDash">al</w>
+                  <pc join="right" xml:id="xTok_000842">.</pc>
+                  <pc xml:id="xTok_000843">.</pc>
+                  <pc xml:id="xTok_000844">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000845">aywa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000846">hī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000847">gəṭʕa</w>
+                  <pc xml:id="xTok_000848">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000849">hī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000850">mustaḥīl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000851"
+                     rend="withDash">iǧid</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000853">ha</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000854">lik</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000855"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000857"
+                     rend="withDash">in</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000859">nit</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a70"
+                  who="WER-BIN-ICH"
+                  end="#T137"
+                  start="#T136">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000860">qubuʕ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000861">w</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000862">burga</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000863"
+                     rend="withDash">xallī</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000865">ni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000866">aktub</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a71"
+                  who="WER-BIN-ICH"
+                  end="#T139"
+                  start="#T138">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000867">burga</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000868">gidīm</w>
+                  <pc xml:id="xTok_000869">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000870">mustaḥīl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000871">inni</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000872">alga</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000873">gidīm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a72"
+                  who="WER-BIN-ICH"
+                  end="#T141"
+                  start="#T140">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000874">mustaḥīl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000875">laʔinnu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000876"
+                     rend="withDash">waṣuf</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000878">lik</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000879"
+                     rend="withDash">šākl</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000881">u</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000882">kīf</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000883">kān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a73"
+                  who="WER-BIN-ICH"
+                  end="#T143"
+                  start="#T142">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000884">hay</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000885">mašaḷḷa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000886">kirdišyān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a74"
+                  who="WER-BIN-ICH"
+                  end="#T145"
+                  start="#T144">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000887">iḥna</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000888">muhtammīn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000889"
+                     rend="withDash">awlād</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000891">i</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000892"
+                     rend="withDash">ʕand</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000894">hum</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000895"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000897">ṯiqāfa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000898"
+                     rend="withDash">t</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000900">turkiyya</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000901"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000903">ʕuṯmāniyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a75"
+                  who="WER-BIN-ICH"
+                  end="#T147"
+                  start="#T146">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000904"
+                     rend="withDash">taʕrifīn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000906"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000907">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a76"
+                  who="WER-BIN-ICH"
+                  end="#T149"
+                  start="#T148">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000908">taʕrifīn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000909">zaman</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000910"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000912"
+                     join="right">ʕuṯmāniyyīn</w>
+                  <pc xml:id="xTok_000913">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a77"
+                  who="WER-BIN-ICH"
+                  end="#T151"
+                  start="#T150">
+                  <pc xml:id="xTok_000914">.</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000915"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000917"
+                     join="right">ʕuṯmāniyyīn</w>
+                  <pc xml:id="xTok_000918">?</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000919"
+                     rend="withDash">taʕrifīn</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000921"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000922">?</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000923">ḥurūb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000924"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000926">ʕuṯmāniyyīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker14_childhood_womenswork_a78"
+                  who="WER-BIN-ICH"
+                  end="#T153"
+                  start="#T152">
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000927">maṛṛa</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000928">tabʕūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000929"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000931">aflām</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000932">xalāṣ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000933">ʕayšīn</w>
+                  <pc xml:id="xTok_000934">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000935">zaman</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000936"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000938"
+                     join="right">ʕuṯmāniyyīn</w>
+                  <pc xml:id="xTok_000939">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000940">ḥatta</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000941"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000943"
+                     join="right">ḥadīṯ</w>
+                  <pc xml:id="xTok_000944">,</pc>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000945">kānu</w>
+                  <w xml:id="SAU_2022_Speaker14_childhood_womenswork_xTok_000946">ṣār</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
