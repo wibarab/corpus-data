@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2023-10-23T08:57:31.292703Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">10_NZ_M.73_Karantina_GardenPlantsMarketVegetables</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">10_NZ_M.73_Karantina_GardenPlantsMarketVegetables</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.13472222222222222" type="audio">
+                  <date when="2023-05-16"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2023_AID LEB_2023_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 10_NZ_M.73_Karantina_GardenPlantsMarketVegetables</head>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <name type="pseudonym">LEB_KAR_2023_NZ_M.73_Speaker1</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Marketsandfoodprices"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="3567" since="#T0" xml:id="T1"/>
+         <when interval="4728" since="#T0" xml:id="T2"/>
+         <when interval="5354" since="#T0" xml:id="T3"/>
+         <when interval="6997" since="#T0" xml:id="T4"/>
+         <when interval="7773" since="#T0" xml:id="T5"/>
+         <when interval="9464" since="#T0" xml:id="T6"/>
+         <when interval="10948" since="#T0" xml:id="T7"/>
+         <when interval="14475" since="#T0" xml:id="T8"/>
+         <when interval="14826" since="#T0" xml:id="T9"/>
+         <when interval="19800" since="#T0" xml:id="T10"/>
+         <when interval="20400" since="#T0" xml:id="T11"/>
+         <when interval="23426" since="#T0" xml:id="T12"/>
+         <when interval="24163" since="#T0" xml:id="T13"/>
+         <when interval="27227" since="#T0" xml:id="T14"/>
+         <when interval="27779" since="#T0" xml:id="T15"/>
+         <when interval="33153" since="#T0" xml:id="T16"/>
+         <when interval="34336" since="#T0" xml:id="T17"/>
+         <when interval="36397" since="#T0" xml:id="T18"/>
+         <when interval="37385" since="#T0" xml:id="T19"/>
+         <when interval="41625" since="#T0" xml:id="T20"/>
+         <when interval="42949" since="#T0" xml:id="T21"/>
+         <when interval="48012" since="#T0" xml:id="T22"/>
+         <when interval="50002" since="#T0" xml:id="T23"/>
+         <when interval="54306" since="#T0" xml:id="T24"/>
+         <when interval="54401" since="#T0" xml:id="T25"/>
+         <when interval="60808" since="#T0" xml:id="T26"/>
+         <when interval="60930" since="#T0" xml:id="T27"/>
+         <when interval="69883" since="#T0" xml:id="T28"/>
+         <when interval="71223" since="#T0" xml:id="T29"/>
+         <when interval="74914" since="#T0" xml:id="T30"/>
+         <when interval="78149" since="#T0" xml:id="T31"/>
+         <when interval="80755" since="#T0" xml:id="T32"/>
+         <when interval="82205" since="#T0" xml:id="T33"/>
+         <when interval="86230" since="#T0" xml:id="T34"/>
+         <when interval="86850" since="#T0" xml:id="T35"/>
+         <when interval="91860" since="#T0" xml:id="T36"/>
+         <when interval="92211" since="#T0" xml:id="T37"/>
+         <when interval="97091" since="#T0" xml:id="T38"/>
+         <when interval="97317" since="#T0" xml:id="T39"/>
+         <when interval="99852" since="#T0" xml:id="T40"/>
+         <when interval="101079" since="#T0" xml:id="T41"/>
+         <when interval="103854" since="#T0" xml:id="T42"/>
+         <when interval="114656" since="#T0" xml:id="T43"/>
+         <when interval="116798" since="#T0" xml:id="T44"/>
+         <when interval="117569" since="#T0" xml:id="T45"/>
+         <when interval="123745" since="#T0" xml:id="T46"/>
+         <when interval="126184" since="#T0" xml:id="T47"/>
+         <when interval="127617" since="#T0" xml:id="T48"/>
+         <when interval="127829" since="#T0" xml:id="T49"/>
+         <when interval="131744" since="#T0" xml:id="T50"/>
+         <when interval="133505" since="#T0" xml:id="T51"/>
+         <when interval="137680" since="#T0" xml:id="T52"/>
+         <when interval="137872" since="#T0" xml:id="T53"/>
+         <when interval="140574" since="#T0" xml:id="T54"/>
+         <when interval="142521" since="#T0" xml:id="T55"/>
+         <when interval="143054" since="#T0" xml:id="T56"/>
+         <when interval="145063" since="#T0" xml:id="T57"/>
+         <when interval="145835" since="#T0" xml:id="T58"/>
+         <when interval="154401" since="#T0" xml:id="T59"/>
+         <when interval="154940" since="#T0" xml:id="T60"/>
+         <when interval="156856" since="#T0" xml:id="T61"/>
+         <when interval="157114" since="#T0" xml:id="T62"/>
+         <when interval="161659" since="#T0" xml:id="T63"/>
+         <when interval="161779" since="#T0" xml:id="T64"/>
+         <when interval="167141" since="#T0" xml:id="T65"/>
+         <when interval="171492" since="#T0" xml:id="T66"/>
+         <when interval="175669" since="#T0" xml:id="T67"/>
+         <when interval="175901" since="#T0" xml:id="T68"/>
+         <when interval="180837" since="#T0" xml:id="T69"/>
+         <when interval="181060" since="#T0" xml:id="T70"/>
+         <when interval="182509" since="#T0" xml:id="T71"/>
+         <when interval="183177" since="#T0" xml:id="T72"/>
+         <when interval="184345" since="#T0" xml:id="T73"/>
+         <when interval="185717" since="#T0" xml:id="T74"/>
+         <when interval="186629" since="#T0" xml:id="T75"/>
+         <when interval="188467" since="#T0" xml:id="T76"/>
+         <when interval="189898" since="#T0" xml:id="T77"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T77</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a1"
+                  who="WER-BIN-ICH"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000001">čīs</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000002">tūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a2"
+                  who="WER-BIN-ICH"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000003">w</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000004">haḏ̣āka</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000005">čīs</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000006">ḅuṣal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a3"
+                  who="WER-BIN-ICH"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000007">w</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000008">haḏ̣āka</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000009">gufaṣ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000010">ḅuṣal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a4"
+                  who="WER-BIN-ICH"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000011">w</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000012"
+                     rend="withDash">warā</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000014">ya</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000015">čīs</w>
+                  <pc join="right" xml:id="xTok_000016">.</pc>
+                  <pc xml:id="xTok_000017">.</pc>
+                  <pc xml:id="xTok_000018">.</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000019">gufaṣ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000020">baṭāṭa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a5"
+                  who="WER-BIN-ICH"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000021"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000023">na</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000024">mūna</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000025">la</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000026"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000028">ʕiǧǧān</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000029">ma</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000030">kull</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000031">yōm</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000032"
+                     rend="withDash">bidd</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000034">na</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000035">nrūʕ</w>
+                  <pc join="right" xml:id="xTok_000036">(</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000037"
+                     join="right">nrūḥ</w>
+                  <pc xml:id="xTok_000038">)</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000039">ʕa</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000040"
+                     rend="withDash">d</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000042">dukkān</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000043">ništari</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000044">ya</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000045">bint</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000046"
+                     rend="withDash">il</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000048">ḥalāl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a6"
+                  who="WER-BIN-ICH"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000049">kīlo</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000050"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000052">ḅuṣal</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000053">bi</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000054"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000056"
+                     join="right">dukkāna</w>
+                  <pc xml:id="xTok_000057">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000058">sabʕīn</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000059">ʔaləf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a7"
+                  who="WER-BIN-ICH"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000060">ʔani</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000061">ʔarūʕ</w>
+                  <pc join="right" xml:id="xTok_000062">(</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000063"
+                     join="right">ʔarūḥ</w>
+                  <pc xml:id="xTok_000064">)</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000065">ʕa</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000066">sūg</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000067"
+                     rend="withDash">il</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000069">ḥisba</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000070">ʕa</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000071"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000073">madīna</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000074"
+                     rend="withDash">ar</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000076">riyāḍiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a8"
+                  who="WER-BIN-ICH"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000077">ʔaǧīb</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000078">gufaṣ</w>
+                  <pc xml:id="xTok_000079">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000080">šēngūla</w>
+                  <pc xml:id="xTok_000081">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000082"
+                     rend="withDash">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000084">ʔarbʕīn</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000085">ʔaləf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a9"
+                  who="WER-BIN-ICH"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000086">ʔawaffir</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000087">tlǟtīn</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000088">ʔaləf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a10"
+                  who="WER-BIN-ICH"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000089">kīlo</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000090"
+                     rend="withDash">t</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000092">tūm</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000093"
+                     rend="withDash">əb</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000095">mitēn</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000096">ʔaləf</w>
+                  <pc xml:id="xTok_000097">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000098"
+                     rend="withDash">ʔažīb</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000100">o</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000101">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000102">miyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a11"
+                  who="WER-BIN-ICH"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000103"
+                     rend="withDash">ʔašammis</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000105">hin</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000106">hēn</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000107">ʔani</w>
+                  <pc xml:id="xTok_000108">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000109"
+                     rend="withDash">yikaffan</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000111">na</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000112">la</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000113">ʔāxir</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000114"
+                     rend="withDash">əṣ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000116">ṣēf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a12"
+                  who="WER-BIN-ICH"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000117">bāčir</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000118">ʔarūḥ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000119">ʔaǧīb</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000120">ḅugʕit</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000121">naʕnaʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a13"
+                  who="WER-BIN-ICH"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000122"
+                     rend="withDash">ʔašamms</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000124">o</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000125">w</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000126"
+                     rend="withDash">nufurk</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000128">o</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000129">w</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000130">bas</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000131">ətsāwi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000132">ṭaḅxāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a15"
+                  who="WER-BIN-ICH"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000133">ʔiza</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000134">sāwat</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000135"
+                     rend="withDash">al</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000137">ḥāǧǧa</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000138">kūsa</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000139">maḥši</w>
+                  <pc xml:id="xTok_000140">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000141"
+                     rend="withDash">tḥuṭṭ</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000143"
+                     rend="withDash">ill</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000145">o</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000146"
+                     rend="withDash">naʕnāḥ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000148">ḥa</w>
+                  <pc join="right" xml:id="xTok_000149">(</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000150"
+                     rend="withDash">naʕnāʕ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000152"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000153">)</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000154">yābis</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000155">w</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000156"
+                     rend="withDash">tdigg</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000158"
+                     rend="withDash">əll</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000160">o</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000161">tūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a16"
+                  who="WER-BIN-ICH"
+                  end="#T30"
+                  start="#T29">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000162"
+                     rend="withDash">māklīt</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000164">a</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000165">ha</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000166"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000168"
+                     join="right">ʔakla</w>
+                  <pc xml:id="xTok_000169">?</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000170">ma</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000171">māklä</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000172">haw</w>
+                  <pc xml:id="xTok_000173">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a17"
+                  who="WER-BIN-ICH"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000174">w</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000175"
+                     rend="withDash">il</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000177">kuḅḅa</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000178"
+                     rend="withDash">in</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000180">nəyya</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000181">māklä</w>
+                  <pc xml:id="xTok_000182">?</pc>
+                  <pc xml:id="xTok_000183">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a18"
+                  who="WER-BIN-ICH"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000184">maṭʕam</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000185"
+                     rend="withDash">iš</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000187">šams</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000188"
+                     rend="withDash">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000190">yʕamil</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000191">kibbä</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000192">nəyyä</w>
+                  <pc join="right" xml:id="xTok_000193">(</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000194"
+                     join="right">RISE</w>
+                  <pc xml:id="xTok_000195">)</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000196">w</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000197">ġēr</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000198">šikil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a19"
+                  who="WER-BIN-ICH"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000199">ṭlāʕu</w>
+                  <pc xml:id="xTok_000200">!</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000201">waḷḷa</w>
+                  <pc xml:id="xTok_000202">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000203">ʔaʕdä</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000204">min</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000205"
+                     rend="withDash">il</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000207">ʕumur</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a20"
+                  who="WER-BIN-ICH"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000208">ʔana</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000209">dǟyman</w>
+                  <pc xml:id="xTok_000210">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000211">kill</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000212">šahar</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000213">w</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000214">nuṣṣ</w>
+                  <pc xml:id="xTok_000215">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000216"
+                     rend="withDash">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000218">ǟxuḏ</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000219"
+                     rend="withDash">əl</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000221">ʕāylä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a21"
+                  who="WER-BIN-ICH"
+                  end="#T40"
+                  start="#T39">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000222"
+                     rend="withDash">mə</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000224">nġayyir</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000225">šway</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000226"
+                     rend="withDash">əž</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000228">žaww</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a22"
+                  who="WER-BIN-ICH"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000229"
+                     rend="withDash">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000231">yiʕamil</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000232">laʕbä</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000233">nḏ̣īfä</w>
+                  <pc xml:id="xTok_000234">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000235">ṭaybä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a23"
+                  who="WER-BIN-ICH"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000236">šū</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000237"
+                     rend="withDash">ḥabībt</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000239"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000240">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a24"
+                  who="WER-BIN-ICH"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000241">laʔ</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000242">warəd</w>
+                  <pc xml:id="xTok_000243">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000244"
+                     rend="withDash">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000246">yxallif</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000247">hōli</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000248">mitil</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000249">əkbūš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a25"
+                  who="WER-BIN-ICH"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000250">kbūš</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000251"
+                     rend="withDash">ət</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000253">tūt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a26"
+                  who="WER-BIN-ICH"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000254">ē</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000255">bas</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000256"
+                     rend="withDash">mann</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000258">un</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000259">əkbūš</w>
+                  <pc xml:id="xTok_000260">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000261">ya</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000262">rēt</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000263">əkbūš</w>
+                  <pc xml:id="xTok_000264">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a27"
+                  who="WER-BIN-ICH"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000265">w</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000266">illi</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000267"
+                     rend="withDash">warā</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000269">či</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000270">síǧarit</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000271">yasmīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a28"
+                  who="WER-BIN-ICH"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000272">hallaʔ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000273">šahar</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000274"
+                     rend="withDash">iž</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000276">žāyy</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000277">tballiš</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000278">tirmi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a29"
+                  who="WER-BIN-ICH"
+                  end="#T55"
+                  start="#T54">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000279"
+                     rend="withDash">rīḥət</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000281">a</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000282">ktīr</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000283">ḥilwä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a30"
+                  who="WER-BIN-ICH"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000284">w</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000285"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000287">i</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000288">sažrit</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000289">kālūnya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a31"
+                  who="WER-BIN-ICH"
+                  end="#T59"
+                  start="#T58">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000290">taʕṭi</w>
+                  <pc join="right" xml:id="xTok_000291">.</pc>
+                  <pc xml:id="xTok_000292">.</pc>
+                  <pc xml:id="xTok_000293">.</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000294">šway</w>
+                  <pc join="right" xml:id="xTok_000295">.</pc>
+                  <pc join="right" xml:id="xTok_000296">.</pc>
+                  <pc join="right" xml:id="xTok_000297">.</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000298"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000300"
+                     rend="withDash">yʔūlū</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000302"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000304">a</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000305"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000307">ʔixwān</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000308"
+                     rend="withDash">is</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000310">sūriyyīn</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000311">ʕuṭr</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000312"
+                     rend="withDash">əl</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000314">lēl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a32"
+                  who="WER-BIN-ICH"
+                  end="#T61"
+                  start="#T60">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000315">ʕutur</w>
+                  <pc xml:id="xTok_000316">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000317">ʕutr</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000318"
+                     rend="withDash">əl</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000320">lēl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a33"
+                  who="WER-BIN-ICH"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000321">hallaʔ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000322">haydi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000323">ma</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000324"
+                     rend="withDash">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000326">taʕṭi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000327">illa</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000328">ʕašīyyä</w>
+                  <pc xml:id="xTok_000329">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000330">bi</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000331"
+                     rend="withDash">s</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000333">sahra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a34"
+                  who="WER-BIN-ICH"
+                  end="#T65"
+                  start="#T64">
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000334">kālūnya</w>
+                  <pc xml:id="xTok_000335">,</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000336">taʕṭi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000337">rīḥt</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000338"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000340">kālōnya</w>
+                  <pc join="right" xml:id="xTok_000341">.</pc>
+                  <pc xml:id="xTok_000342">.</pc>
+                  <pc xml:id="xTok_000343">.</pc>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000344">ktīr</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000345"
+                     rend="withDash">rīḥət</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000347">a</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000348">ḥilwä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a35"
+                  who="WER-BIN-ICH"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000349">w</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000350">haydi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000351">gārdīnya</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000352">bas</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000353">insammət</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a36"
+                  who="WER-BIN-ICH"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000354">kint</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000355"
+                     rend="withDash">ḥāṭiṭ</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000357">ha</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000358">b</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000359">haydi</w>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000360"
+                     rend="withDash">l</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000362"
+                     join="right">fuxxāra</w>
+                  <pc xml:id="xTok_000363">,</pc>
+                  <w join="right"
+                     xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000364"
+                     rend="withDash">naʕʕalt</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000366">a</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000367">la</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000368">haydi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000369">ʔilt</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000370">haydi</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000371">ʔawsaʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a37"
+                  who="WER-BIN-ICH"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000372">insammət</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a38"
+                  who="WER-BIN-ICH"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000373">ngíhrat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a39"
+                  who="WER-BIN-ICH"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000374">ngíhrat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_a40"
+                  who="WER-BIN-ICH"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000375">yaʕni</w>
+                  <w xml:id="10_NZ_M.73_Karantina_GardenPlantsMarketVegetables_xTok_000376">zʕilat</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
