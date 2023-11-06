@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-                xmlns:xtoks="http://acdh.oeaw.ac.at/xtoks"
-                xmlns:tei="http://www.tei-c.org/ns/1.0"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xtoks="http://acdh.oeaw.ac.at/xtoks"
                 version="2.0"
                 exclude-result-prefixes="#all">
    <xsl:include href="params.xsl"/>
@@ -78,6 +78,16 @@
       <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"
                      name="topic"
                      select="string-join(//tei:textClass/tei:catRef/@target/normalize-space(), ' ')"/>
+   </xsl:template>
+   <xsl:template match="//tei:recording//tei:persName/@ref" mode="doc-attributes">
+      <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"
+                     name="researcher"
+                     select="string-join(//tei:recording//tei:persName/@ref/normalize-space(), ' ')"/>
+   </xsl:template>
+   <xsl:template match="//tei:recording/tei:p/tei:ref" mode="doc-attributes">
+      <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"
+                     name="campaign"
+                     select="string-join(//tei:recording/tei:p/tei:ref/normalize-space(), ' ')"/>
    </xsl:template>
    <xsl:template match="//tei:settingDesc/tei:place" mode="doc-attributes">
       <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"

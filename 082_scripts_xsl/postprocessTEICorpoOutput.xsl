@@ -11,8 +11,11 @@
         </xsl:copy>
     </xsl:template>
     <xsl:template match="tei:spanGrp"/>
-   <xsl:template match="@who">
+    <xsl:template match="@xml:id[matches(.,'^\d')]">
+        <xsl:attribute name="{name(.)}" select="concat(substring(parent::*/local-name(.),1,1),.)"/>
+    </xsl:template>
+    <!--   <xsl:template match="@who">
        <xsl:attribute name="who">WER-BIN-ICH</xsl:attribute>
-   </xsl:template>     
+   </xsl:template>     -->
     
 </xsl:stylesheet>

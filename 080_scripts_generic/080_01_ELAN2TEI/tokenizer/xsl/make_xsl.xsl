@@ -263,6 +263,7 @@
         
         <!-- Create the tokenizer wrapper stylesheet -->
         <xsl:result-document href="{$output-path}/wrapper_toks.xsl" indent="yes">
+            <xsl:message select="$output-path"></xsl:message>
             <xsl:element name="xsl:stylesheet" namespace="http://www.w3.org/1999/XSL/Transform">
                 <xsl:namespace name="xs">http://www.w3.org/2001/XMLSchema</xsl:namespace>
                 <xsl:namespace name="xd">http://www.oxygenxml.com/ns/doc/xsl</xsl:namespace>
