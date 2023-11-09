@@ -1,0 +1,1945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2023-11-09T16:29:59.937795Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">KUW_2022_Speaker8_lifedevelopments_cooking</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">KUW_2022_Speaker8_lifedevelopments_cooking</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="06:54" type="audio">
+                  <date when="2022-05-20"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:KUW_2022_GK">Kuwait Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in KUW_2022_Speaker8_lifedevelopments_cooking</head>
+               <person sameAs="corpus:KUW_2022_Speaker8">
+                  <name type="pseudonym">KUW_2022_Speaker8</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Dailylife"/>
+            <catRef target="corpus:Foodrecipees"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="19836" since="#T0" xml:id="T1"/>
+         <when interval="20020" since="#T0" xml:id="T175"/>
+         <when interval="23468" since="#T0" xml:id="T176"/>
+         <when interval="23604" since="#T0" xml:id="T2"/>
+         <when interval="24653" since="#T0" xml:id="T3"/>
+         <when interval="24773" since="#T0" xml:id="T177"/>
+         <when interval="30537" since="#T0" xml:id="T4"/>
+         <when interval="31197" since="#T0" xml:id="T5"/>
+         <when interval="36244" since="#T0" xml:id="T178"/>
+         <when interval="36666" since="#T0" xml:id="T6"/>
+         <when interval="36924" since="#T0" xml:id="T7"/>
+         <when interval="37122" since="#T0" xml:id="T179"/>
+         <when interval="41923" since="#T0" xml:id="T8"/>
+         <when interval="42065" since="#T0" xml:id="T9"/>
+         <when interval="46620" since="#T0" xml:id="T10"/>
+         <when interval="46831" since="#T0" xml:id="T11"/>
+         <when interval="50619" since="#T0" xml:id="T12"/>
+         <when interval="51592" since="#T0" xml:id="T180"/>
+         <when interval="54306" since="#T0" xml:id="T181"/>
+         <when interval="54449" since="#T0" xml:id="T13"/>
+         <when interval="56572" since="#T0" xml:id="T14"/>
+         <when interval="56612" since="#T0" xml:id="T15"/>
+         <when interval="60495" since="#T0" xml:id="T16"/>
+         <when interval="60707" since="#T0" xml:id="T17"/>
+         <when interval="63714" since="#T0" xml:id="T18"/>
+         <when interval="63957" since="#T0" xml:id="T19"/>
+         <when interval="68883" since="#T0" xml:id="T20"/>
+         <when interval="69199" since="#T0" xml:id="T21"/>
+         <when interval="74794" since="#T0" xml:id="T22"/>
+         <when interval="74959" since="#T0" xml:id="T23"/>
+         <when interval="77884" since="#T0" xml:id="T24"/>
+         <when interval="78037" since="#T0" xml:id="T25"/>
+         <when interval="80885" since="#T0" xml:id="T26"/>
+         <when interval="81045" since="#T0" xml:id="T27"/>
+         <when interval="84354" since="#T0" xml:id="T28"/>
+         <when interval="84546" since="#T0" xml:id="T29"/>
+         <when interval="88131" since="#T0" xml:id="T30"/>
+         <when interval="88291" since="#T0" xml:id="T31"/>
+         <when interval="91412" since="#T0" xml:id="T32"/>
+         <when interval="91573" since="#T0" xml:id="T33"/>
+         <when interval="93704" since="#T0" xml:id="T34"/>
+         <when interval="94210" since="#T0" xml:id="T35"/>
+         <when interval="98300" since="#T0" xml:id="T36"/>
+         <when interval="98806" since="#T0" xml:id="T37"/>
+         <when interval="101519" since="#T0" xml:id="T38"/>
+         <when interval="101692" since="#T0" xml:id="T39"/>
+         <when interval="105109" since="#T0" xml:id="T40"/>
+         <when interval="105276" since="#T0" xml:id="T41"/>
+         <when interval="109212" since="#T0" xml:id="T42"/>
+         <when interval="109533" since="#T0" xml:id="T182"/>
+         <when interval="109980" since="#T0" xml:id="T43"/>
+         <when interval="110125" since="#T0" xml:id="T183"/>
+         <when interval="112189" since="#T0" xml:id="T44"/>
+         <when interval="112425" since="#T0" xml:id="T45"/>
+         <when interval="117651" since="#T0" xml:id="T46"/>
+         <when interval="117826" since="#T0" xml:id="T47"/>
+         <when interval="120322" since="#T0" xml:id="T48"/>
+         <when interval="120495" since="#T0" xml:id="T49"/>
+         <when interval="125913" since="#T0" xml:id="T50"/>
+         <when interval="126138" since="#T0" xml:id="T51"/>
+         <when interval="129294" since="#T0" xml:id="T52"/>
+         <when interval="129498" since="#T0" xml:id="T53"/>
+         <when interval="133960" since="#T0" xml:id="T54"/>
+         <when interval="134125" since="#T0" xml:id="T55"/>
+         <when interval="138317" since="#T0" xml:id="T56"/>
+         <when interval="138545" since="#T0" xml:id="T57"/>
+         <when interval="143822" since="#T0" xml:id="T58"/>
+         <when interval="144148" since="#T0" xml:id="T59"/>
+         <when interval="147604" since="#T0" xml:id="T60"/>
+         <when interval="148168" since="#T0" xml:id="T61"/>
+         <when interval="153697" since="#T0" xml:id="T62"/>
+         <when interval="154023" since="#T0" xml:id="T63"/>
+         <when interval="157447" since="#T0" xml:id="T64"/>
+         <when interval="157607" since="#T0" xml:id="T65"/>
+         <when interval="164840" since="#T0" xml:id="T66"/>
+         <when interval="164951" since="#T0" xml:id="T184"/>
+         <when interval="166693" since="#T0" xml:id="T67"/>
+         <when interval="166772" since="#T0" xml:id="T185"/>
+         <when interval="167469" since="#T0" xml:id="T68"/>
+         <when interval="167795" since="#T0" xml:id="T186"/>
+         <when interval="169102" since="#T0" xml:id="T69"/>
+         <when interval="170142" since="#T0" xml:id="T70"/>
+         <when interval="170244" since="#T0" xml:id="T187"/>
+         <when interval="170693" since="#T0" xml:id="T71"/>
+         <when interval="170836" since="#T0" xml:id="T188"/>
+         <when interval="171898" since="#T0" xml:id="T72"/>
+         <when interval="172067" since="#T0" xml:id="T189"/>
+         <when interval="172408" since="#T0" xml:id="T73"/>
+         <when interval="172746" since="#T0" xml:id="T190"/>
+         <when interval="173179" since="#T0" xml:id="T74"/>
+         <when interval="174204" since="#T0" xml:id="T191"/>
+         <when interval="174775" since="#T0" xml:id="T75"/>
+         <when interval="175500" since="#T0" xml:id="T192"/>
+         <when interval="176935" since="#T0" xml:id="T76"/>
+         <when interval="177498" since="#T0" xml:id="T193"/>
+         <when interval="178258" since="#T0" xml:id="T194"/>
+         <when interval="178309" since="#T0" xml:id="T77"/>
+         <when interval="178483" since="#T0" xml:id="T195"/>
+         <when interval="178996" since="#T0" xml:id="T78"/>
+         <when interval="179877" since="#T0" xml:id="T79"/>
+         <when interval="180523" since="#T0" xml:id="T196"/>
+         <when interval="181061" since="#T0" xml:id="T80"/>
+         <when interval="181159" since="#T0" xml:id="T197"/>
+         <when interval="181763" since="#T0" xml:id="T81"/>
+         <when interval="183153" since="#T0" xml:id="T198"/>
+         <when interval="183476" since="#T0" xml:id="T82"/>
+         <when interval="185409" since="#T0" xml:id="T199"/>
+         <when interval="186739" since="#T0" xml:id="T83"/>
+         <when interval="187962" since="#T0" xml:id="T200"/>
+         <when interval="188338" since="#T0" xml:id="T84"/>
+         <when interval="188514" since="#T0" xml:id="T201"/>
+         <when interval="188898" since="#T0" xml:id="T85"/>
+         <when interval="189879" since="#T0" xml:id="T202"/>
+         <when interval="190554" since="#T0" xml:id="T86"/>
+         <when interval="192939" since="#T0" xml:id="T87"/>
+         <when interval="194821" since="#T0" xml:id="T203"/>
+         <when interval="195265" since="#T0" xml:id="T88"/>
+         <when interval="196224" since="#T0" xml:id="T89"/>
+         <when interval="197323" since="#T0" xml:id="T204"/>
+         <when interval="198678" since="#T0" xml:id="T90"/>
+         <when interval="199065" since="#T0" xml:id="T155"/>
+         <when interval="200923" since="#T0" xml:id="T156"/>
+         <when interval="200990" since="#T0" xml:id="T91"/>
+         <when interval="202862" since="#T0" xml:id="T157"/>
+         <when interval="203118" since="#T0" xml:id="T92"/>
+         <when interval="204423" since="#T0" xml:id="T158"/>
+         <when interval="204454" since="#T0" xml:id="T205"/>
+         <when interval="206013" since="#T0" xml:id="T206"/>
+         <when interval="217295" since="#T0" xml:id="T93"/>
+         <when interval="219063" since="#T0" xml:id="T94"/>
+         <when interval="223014" since="#T0" xml:id="T95"/>
+         <when interval="227544" since="#T0" xml:id="T96"/>
+         <when interval="227572" since="#T0" xml:id="T97"/>
+         <when interval="233600" since="#T0" xml:id="T98"/>
+         <when interval="233857" since="#T0" xml:id="T99"/>
+         <when interval="237577" since="#T0" xml:id="T100"/>
+         <when interval="237738" since="#T0" xml:id="T207"/>
+         <when interval="238755" since="#T0" xml:id="T101"/>
+         <when interval="239115" since="#T0" xml:id="T208"/>
+         <when interval="241561" since="#T0" xml:id="T102"/>
+         <when interval="241874" since="#T0" xml:id="T209"/>
+         <when interval="246013" since="#T0" xml:id="T103"/>
+         <when interval="246074" since="#T0" xml:id="T210"/>
+         <when interval="247913" since="#T0" xml:id="T104"/>
+         <when interval="248522" since="#T0" xml:id="T105"/>
+         <when interval="250689" since="#T0" xml:id="T106"/>
+         <when interval="251145" since="#T0" xml:id="T107"/>
+         <when interval="253729" since="#T0" xml:id="T108"/>
+         <when interval="253937" since="#T0" xml:id="T109"/>
+         <when interval="257489" since="#T0" xml:id="T211"/>
+         <when interval="259170" since="#T0" xml:id="T110"/>
+         <when interval="259385" since="#T0" xml:id="T111"/>
+         <when interval="260952" since="#T0" xml:id="T212"/>
+         <when interval="262040" since="#T0" xml:id="T213"/>
+         <when interval="262795" since="#T0" xml:id="T214"/>
+         <when interval="263825" since="#T0" xml:id="T112"/>
+         <when interval="264185" since="#T0" xml:id="T113"/>
+         <when interval="267681" since="#T0" xml:id="T114"/>
+         <when interval="267843" since="#T0" xml:id="T115"/>
+         <when interval="272025" since="#T0" xml:id="T116"/>
+         <when interval="272247" since="#T0" xml:id="T117"/>
+         <when interval="273714" since="#T0" xml:id="T118"/>
+         <when interval="274090" since="#T0" xml:id="T119"/>
+         <when interval="275769" since="#T0" xml:id="T120"/>
+         <when interval="276017" since="#T0" xml:id="T121"/>
+         <when interval="281720" since="#T0" xml:id="T215"/>
+         <when interval="281861" since="#T0" xml:id="T122"/>
+         <when interval="282186" since="#T0" xml:id="T123"/>
+         <when interval="282871" since="#T0" xml:id="T216"/>
+         <when interval="284593" since="#T0" xml:id="T124"/>
+         <when interval="284825" since="#T0" xml:id="T125"/>
+         <when interval="288698" since="#T0" xml:id="T126"/>
+         <when interval="288897" since="#T0" xml:id="T127"/>
+         <when interval="293306" since="#T0" xml:id="T217"/>
+         <when interval="294266" since="#T0" xml:id="T218"/>
+         <when interval="295905" since="#T0" xml:id="T128"/>
+         <when interval="296089" since="#T0" xml:id="T129"/>
+         <when interval="300135" since="#T0" xml:id="T130"/>
+         <when interval="300351" since="#T0" xml:id="T131"/>
+         <when interval="305705" since="#T0" xml:id="T132"/>
+         <when interval="306168" since="#T0" xml:id="T133"/>
+         <when interval="308568" since="#T0" xml:id="T219"/>
+         <when interval="309495" since="#T0" xml:id="T220"/>
+         <when interval="313680" since="#T0" xml:id="T134"/>
+         <when interval="313855" since="#T0" xml:id="T221"/>
+         <when interval="315368" since="#T0" xml:id="T135"/>
+         <when interval="315706" since="#T0" xml:id="T222"/>
+         <when interval="324456" since="#T0" xml:id="T136"/>
+         <when interval="326503" since="#T0" xml:id="T137"/>
+         <when interval="328265" since="#T0" xml:id="T159"/>
+         <when interval="329184" since="#T0" xml:id="T138"/>
+         <when interval="329428" since="#T0" xml:id="T160"/>
+         <when interval="329571" since="#T0" xml:id="T223"/>
+         <when interval="331161" since="#T0" xml:id="T161"/>
+         <when interval="332144" since="#T0" xml:id="T162"/>
+         <when interval="337875" since="#T0" xml:id="T139"/>
+         <when interval="337938" since="#T0" xml:id="T224"/>
+         <when interval="344006" since="#T0" xml:id="T140"/>
+         <when interval="344568" since="#T0" xml:id="T225"/>
+         <when interval="346565" since="#T0" xml:id="T163"/>
+         <when interval="347359" since="#T0" xml:id="T226"/>
+         <when interval="347401" since="#T0" xml:id="T141"/>
+         <when interval="351657" since="#T0" xml:id="T142"/>
+         <when interval="352111" since="#T0" xml:id="T164"/>
+         <when interval="352674" since="#T0" xml:id="T165"/>
+         <when interval="354698" since="#T0" xml:id="T166"/>
+         <when interval="355865" since="#T0" xml:id="T167"/>
+         <when interval="357625" since="#T0" xml:id="T168"/>
+         <when interval="370256" since="#T0" xml:id="T143"/>
+         <when interval="371759" since="#T0" xml:id="T144"/>
+         <when interval="372393" since="#T0" xml:id="T145"/>
+         <when interval="376055" since="#T0" xml:id="T146"/>
+         <when interval="376127" since="#T0" xml:id="T147"/>
+         <when interval="379096" since="#T0" xml:id="T148"/>
+         <when interval="379305" since="#T0" xml:id="T149"/>
+         <when interval="382604" since="#T0" xml:id="T150"/>
+         <when interval="387183" since="#T0" xml:id="T227"/>
+         <when interval="390244" since="#T0" xml:id="T228"/>
+         <when interval="392795" since="#T0" xml:id="T229"/>
+         <when interval="393244" since="#T0" xml:id="T230"/>
+         <when interval="393346" since="#T0" xml:id="T169"/>
+         <when interval="395326" since="#T0" xml:id="T170"/>
+         <when interval="399027" since="#T0" xml:id="T151"/>
+         <when interval="401607" since="#T0" xml:id="T171"/>
+         <when interval="401660" since="#T0" xml:id="T152"/>
+         <when interval="401812" since="#T0" xml:id="T153"/>
+         <when interval="403795" since="#T0" xml:id="T172"/>
+         <when interval="405156" since="#T0" xml:id="T154"/>
+         <when interval="408602" since="#T0" xml:id="T173"/>
+         <when interval="411464" since="#T0" xml:id="T174"/>
+         <when interval="412629" since="#T0" xml:id="T231"/>
+         <when interval="414068" since="#T0" xml:id="T232"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T232</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a88"
+                  who="#C_Transcription-txt"
+                  end="#T175"
+                  start="#T0"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a11"
+                  who="#B_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000001">ḥēyl</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000002">taxayyarat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000003">ḥēyl</w>
+                  <pc xml:id="xTok_000004">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000005">ḥēyl</w>
+                  <pc xml:id="xTok_000006">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000007">ḥēyl</w>
+                  <pc xml:id="xTok_000008">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000009">ḥēyl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a89"
+                  who="#C_Transcription-txt"
+                  end="#T177"
+                  start="#T176">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000010">wu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000011">šu</w>
+                  <pc xml:id="xTok_000012">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a12"
+                  who="#B_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000013">kill</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000014">šī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000015">taxayyar</w>
+                  <pc xml:id="xTok_000016">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000017">yaʕni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000018"
+                     rend="withDash">ḥayāt</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000020">na</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000021">awwal</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000022">bass</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000023">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000024">ʕala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000025"
+                     rend="withDash">t</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000027">tilfāz</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a13"
+                  who="#B_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000028">qanawāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000029">maḥdūda</w>
+                  <pc xml:id="xTok_000030">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000031"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000033">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000034">aṣlan</w>
+                  <pc join="right" xml:id="xTok_000035">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000036"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000038">sāʕa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000039">tisʕa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000040">msakkir</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000041"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000043">tilifizyōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a90"
+                  who="#C_Transcription-txt"
+                  end="#T179"
+                  start="#T178">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000044">walla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000045">msakkir</w>
+                  <pc xml:id="xTok_000046">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a14"
+                  who="#B_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000047">waḷḷa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000048">msakkir</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000049">hāḏa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000050">kinna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000051"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000053"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000055">ṯimānīnāt</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000056">sāʕa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000057">tisʕa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000058">xalāṣ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000059"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000061">axbār</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000062"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000064">mūwǧiz</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000065">xalāṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a15"
+                  who="#B_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000066">baʕdēn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000067">ṣār</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000068">leyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000069"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000071">sāʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000072"
+                     rend="withDash">ṯ</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000074">ṯnaʕaš</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000075">fī</w>
+                  <pc xml:id="xTok_000076">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000077"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000079">tisʕīnāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a16"
+                  who="#B_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000080">kān</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000081">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000082">musalsaleyn</w>
+                  <pc xml:id="xTok_000083">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000084">wāḥid</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000085">yiǧi</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000086">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000087"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000089">maġrib</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000090"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000092">wāḥid</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000093">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000094"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000096">sāʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000097"
+                     rend="withDash">t</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000099">tisʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a91"
+                  who="#C_Transcription-txt"
+                  end="#T181"
+                  start="#T180"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a17"
+                  who="#B_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000100">musalsalāt</w>
+                  <pc xml:id="xTok_000101">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000102">musalsal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a18"
+                  who="#B_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000103"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000105"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000107"
+                     join="right">tilifizyōn</w>
+                  <pc xml:id="xTok_000108">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000109">kinna</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000110">nḥibbu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000111"
+                     rend="withDash">nušāhid</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000113"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000114">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000115">bass</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a19"
+                  who="#B_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000116">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000117">akṯar</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000118">šay</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000119">tiǧi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000120"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000122">musalsalāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000123"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000125">ʔurdunīya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a20"
+                  who="#B_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000126">musalsalāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000127"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000129"
+                     join="right">maṣrīya</w>
+                  <pc xml:id="xTok_000130">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000131">kānat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000132"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000134">suʕudīya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000135"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000137"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000139"
+                     join="right">kweytīya</w>
+                  <pc xml:id="xTok_000140">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000141">yaʕni</w>
+                  <pc xml:id="xTok_000142">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000143"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000145">kweytīya</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000146">akṯar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a21"
+                  who="#B_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000147">ayy</w>
+                  <pc xml:id="xTok_000148">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000149">u</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000150">fā</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000151">kinna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000152"
+                     rend="withDash">nšāhid</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000154">ha</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000155">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000156">baʕdēn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000157">nsakkir</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000158"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000160">tilifizyōn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000161">lāʔ</w>
+                  <pc xml:id="xTok_000162">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000163"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000165">fī</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000166">ḥadd</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000167">baṛṛa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000168"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000170">beyt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a22"
+                  who="#B_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <pc xml:id="xTok_000171">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000172">trūḥ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000173"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000175">madrasa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a23"
+                  who="#B_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000176">bass</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000177">bəʕəd</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000178">ṣubḥān</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000179">aḷḷah</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000180">bəʕəd</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000181">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a24"
+                  who="#B_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000182">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000183">taġrīban</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000184">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000185"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000187">əlfeyn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a25"
+                  who="#B_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000188">tisʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000189"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000191">tisʕīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000192">čidi</w>
+                  <pc xml:id="xTok_000193">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000194">taxayyarat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000195"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000197">ḥayā</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000198">ḥēyl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a26"
+                  who="#B_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000199">ṭlaʕat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000200">mubaylāt</w>
+                  <pc join="right" xml:id="xTok_000201">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000202">ṣār</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000203"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000205">tawāṣil</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000206">ashal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a27"
+                  who="#B_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000207">wafrat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000208"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_000210">#</pc>
+                  <pc xml:id="xTok_000211">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a28"
+                  who="#B_Transcription-txt"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000212">ṣārna</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000213">nitawāṣal</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000214">ahsal</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000215">baʕdēn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000216">ṭalaʕat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000217"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000219">rasāyil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a29"
+                  who="#B_Transcription-txt"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000220">sayyimna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000221"
+                     rend="withDash">s</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000223">sīya</w>
+                  <pc xml:id="xTok_000224">#</pc>
+                  <pc xml:id="xTok_000225">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000226">ʕala</w>
+                  <pc xml:id="xTok_000227">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000228">aḥad</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000229"
+                     rend="withDash">in</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000231">nōkya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a30"
+                  who="#B_Transcription-txt"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000232">əlfeyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000233"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000235">ṯalāṯa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000236">činna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000237"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000239">əlfeyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000240"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000242">arbaʕa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000243">ṣārət</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000244">ashal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a31"
+                  who="#B_Transcription-txt"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000245">wawfar</w>
+                  <pc xml:id="xTok_000246">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000247">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000248"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000250"
+                     join="right">tilifūn</w>
+                  <pc xml:id="xTok_000251">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000252">baʕdēn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000253">ṭalaʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000254"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000256">whatsapp</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a92"
+                  who="#C_Transcription-txt"
+                  end="#T183"
+                  start="#T182">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000257">ṣaḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a32"
+                  who="#B_Transcription-txt"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000258">ṣārat</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000259">ṯawra</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000260">ʕālamīya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a33"
+                  who="#B_Transcription-txt"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000261">ṣār</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000262">šay</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000263">ḥilu</w>
+                  <pc xml:id="xTok_000264">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000265">ṣuwar</w>
+                  <pc xml:id="xTok_000266">#</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000267">nṣawwrīn</w>
+                  <pc xml:id="xTok_000268">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000269">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a34"
+                  who="#B_Transcription-txt"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000270">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000271">mfītāḥ</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000272">ʕāləmi</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000273">ṣarāḥa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a35"
+                  who="#B_Transcription-txt"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000274">ṣār</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000275"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000277">ʕāləm</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000278">kaʔannah</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000279">qarya</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000280">ṣaġīra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a36"
+                  who="#B_Transcription-txt"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000281">qarya</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000282">ṣaġīra</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000283">tuwāṣilīn</w>
+                  <pc xml:id="xTok_000284">#</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000285"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000287">surʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a37"
+                  who="#B_Transcription-txt"
+                  end="#T54"
+                  start="#T53">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000288"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000290">axbār</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000291"
+                     rend="withDash">tāṣil</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000293">ič</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000294">ʕala</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000295">ṭūl</w>
+                  <pc xml:id="xTok_000296">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a38"
+                  who="#B_Transcription-txt"
+                  end="#T56"
+                  start="#T55">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000297"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000299"
+                     join="right">xalāṣ</w>
+                  <pc xml:id="xTok_000300">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000301">yaʕni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000302"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000304">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000305">mukān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000306">tuwāṣili</w>
+                  <pc xml:id="xTok_000307">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000308">abad</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a39"
+                  who="#B_Transcription-txt"
+                  end="#T58"
+                  start="#T57">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000309"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000311">axbār</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000312"
+                     rend="withDash">tiǧī</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000314">č</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000315">ʕala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000316"
+                     rend="withDash">t</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000318">tilifūn</w>
+                  <pc join="right" xml:id="xTok_000319">#</pc>
+                  <pc xml:id="xTok_000320">#</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000321"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000323">ḥīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000324"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000326">tilifizyūn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000327">šwayya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000328"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000330"
+                     rend="withDash">nṭālaʕ</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000332">la</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000333">wāǧid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a40"
+                  who="#B_Transcription-txt"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000334">qalīl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000335">baʕad</w>
+                  <pc xml:id="xTok_000336">,</pc>
+                  <pc join="right" xml:id="xTok_000337">#</pc>
+                  <pc xml:id="xTok_000338">#</pc>
+                  <pc xml:id="xTok_000339">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a41"
+                  who="#B_Transcription-txt"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000340">ayy</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000341"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000343">ḥamdiḷḷa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000344">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000345">kill</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000346">šay</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000347">taṭawwar</w>
+                  <pc xml:id="xTok_000348">,</pc>
+                  <pc xml:id="xTok_000349">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000350">tabḥaṯīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000351">ʕanna</w>
+                  <pc join="right" xml:id="xTok_000352">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000353">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000354"
+                     rend="withDash">t</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000356">tilifūn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a42"
+                  who="#B_Transcription-txt"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000357">šay</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000358">tabḥaṯīn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000359">ʕanna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000360">ašyā</w>
+                  <pc xml:id="xTok_000361">#</pc>
+                  <pc xml:id="xTok_000362">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000363">ṭabxāṯ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a43"
+                  who="#B_Transcription-txt"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000364">kill</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000365">šay</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000366">yaʕni</w>
+                  <pc xml:id="xTok_000367">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000368">kill</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000369">šay</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000370"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000372">ḥamdiḷḷah</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000373">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000374">ṣār</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000375">awfar</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000376"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000378">aḥṣan</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000379"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000381">ashal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a93"
+                  who="#C_Transcription-txt"
+                  end="#T185"
+                  start="#T184">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000382">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000383">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000384">inti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000385">tiṭbaxīn</w>
+                  <pc xml:id="xTok_000386">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a44"
+                  who="#B_Transcription-txt"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000387">iyy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000388">aṭbax</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a94"
+                  who="#C_Transcription-txt"
+                  end="#T69"
+                  start="#T186">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000389">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000390">šū</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000391">tiṭbaxīn</w>
+                  <pc xml:id="xTok_000392">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a45"
+                  who="#B_Transcription-txt"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000393">aṭbax</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000394">kill</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000395">šay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a95"
+                  who="#C_Transcription-txt"
+                  end="#T188"
+                  start="#T187">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000396">kull</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000397">šay</w>
+                  <pc xml:id="xTok_000398">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a46"
+                  who="#B_Transcription-txt"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000399">aṭbax</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000400">ḏibāyiḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a96"
+                  who="#C_Transcription-txt"
+                  end="#T190"
+                  start="#T189">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000401">ā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000402">walla</w>
+                  <pc xml:id="xTok_000403">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a47"
+                  who="#B_Transcription-txt"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000404">waḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a97"
+                  who="#C_Transcription-txt"
+                  end="#T192"
+                  start="#T191">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000405">ḏbīḥa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000406">kamm</w>
+                  <pc xml:id="xTok_000407">#</pc>
+                  <pc xml:id="xTok_000408">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a48"
+                  who="#B_Transcription-txt"
+                  end="#T76"
+                  start="#T75">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000409">ḏbīḥa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000410">kamm</w>
+                  <pc xml:id="xTok_000411">?</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000412">aṭbax</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000413">ṯintēn</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000414">maʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000415">baʕad</w>
+                  <pc xml:id="xTok_000416">#</pc>
+                  <pc xml:id="xTok_000417">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a98"
+                  who="#C_Transcription-txt"
+                  end="#T194"
+                  start="#T193">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000418">kīf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000419">yaʕni</w>
+                  <pc xml:id="xTok_000420">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a49"
+                  who="#B_Transcription-txt"
+                  end="#T78"
+                  start="#T77">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000421">kīf</w>
+                  <pc xml:id="xTok_000422">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a99"
+                  who="#C_Transcription-txt"
+                  end="#T196"
+                  start="#T195">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000423"
+                     rend="withDash">bi</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000425">ǧidar</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000426">kṯīr</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000427">kibīr</w>
+                  <pc join="right" xml:id="xTok_000428">#</pc>
+                  <pc xml:id="xTok_000429">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a50"
+                  who="#B_Transcription-txt"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000430">ayy</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000431">kibīr</w>
+                  <pc xml:id="xTok_000432">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000433">ayy</w>
+                  <pc xml:id="xTok_000434">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000435">ayy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a100"
+                  who="#C_Transcription-txt"
+                  end="#T198"
+                  start="#T197">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000436">ʕala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000437"
+                     rend="withDash">n</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000439">nār</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000440">walla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000441"
+                     rend="withDash">ʕal</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000443"
+                     join="right">beyt</w>
+                  <pc xml:id="xTok_000444">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a51"
+                  who="#B_Transcription-txt"
+                  end="#T82"
+                  start="#T81">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000445">ʕala</w>
+                  <pc xml:id="xTok_000446">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000447">ʕala</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000448">čūl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a101"
+                  who="#C_Transcription-txt"
+                  end="#T200"
+                  start="#T199">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000449">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000450">mašalla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000451">ʕalēyč</w>
+                  <pc xml:id="xTok_000452">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a52"
+                  who="#B_Transcription-txt"
+                  end="#T84"
+                  start="#T83">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000453">inti</w>
+                  <pc join="right" xml:id="xTok_000454">#</pc>
+                  <pc xml:id="xTok_000455">#</pc>
+                  <pc xml:id="xTok_000456">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a102"
+                  who="#C_Transcription-txt"
+                  end="#T202"
+                  start="#T201">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000457">ayy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a53"
+                  who="#B_Transcription-txt"
+                  end="#T86"
+                  start="#T85">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000458">yaḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a54"
+                  who="#B_Transcription-txt"
+                  end="#T88"
+                  start="#T87"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a103"
+                  who="#C_Transcription-txt"
+                  end="#T204"
+                  start="#T203">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000459">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000460">xūḏi</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000461">inti</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000462">yumkin</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a55"
+                  who="#B_Transcription-txt"
+                  end="#T90"
+                  start="#T89">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000463">ʕašān</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000464">tšūf</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000465"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_000467">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000468">ʕašān</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000469">ənšūf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000470"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000472">ǧidir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a1"
+                  who="#A_Transcription-txt"
+                  end="#T156"
+                  start="#T155"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a56"
+                  who="#B_Transcription-txt"
+                  end="#T92"
+                  start="#T91"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a2"
+                  who="#A_Transcription-txt"
+                  end="#T158"
+                  start="#T157">
+                  <pc xml:id="xTok_000473">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000474">yištaxal</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000475">tamām</w>
+                  <pc xml:id="xTok_000476">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a104"
+                  who="#C_Transcription-txt"
+                  end="#T206"
+                  start="#T205">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000477">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000478">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000479">yištaxal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a57"
+                  who="#B_Transcription-txt"
+                  end="#T94"
+                  start="#T93"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a58"
+                  who="#B_Transcription-txt"
+                  end="#T96"
+                  start="#T95"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a59"
+                  who="#B_Transcription-txt"
+                  end="#T98"
+                  start="#T97">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000480">u</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000481">hāḏi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000482">waḥda</w>
+                  <pc xml:id="xTok_000483">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000484">u</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000485">hāḏa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000486">gidir</w>
+                  <pc xml:id="xTok_000487">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000488">ayy</w>
+                  <pc xml:id="xTok_000489">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000490">ayy</w>
+                  <pc xml:id="xTok_000491">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000492">u</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000493">hāḏa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000494">gidir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a60"
+                  who="#B_Transcription-txt"
+                  end="#T100"
+                  start="#T99">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000495">haḏa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000496">gdūr</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000497">ṭabx</w>
+                  <pc xml:id="xTok_000498">,</pc>
+                  <pc xml:id="xTok_000499">#</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000500">isawwi</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000501">u</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000502">hāḏa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000503">gidir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a105"
+                  who="#C_Transcription-txt"
+                  end="#T208"
+                  start="#T207">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000504">ayy</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000505">mašalla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a61"
+                  who="#B_Transcription-txt"
+                  end="#T102"
+                  start="#T101">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000506">ayy</w>
+                  <pc xml:id="xTok_000507">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000508">u</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000509">hāḏa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000510"
+                     rend="withDash">m</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000512"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000514">buffet</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a106"
+                  who="#C_Transcription-txt"
+                  end="#T210"
+                  start="#T209">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000515">tamām</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000516">ayy</w>
+                  <pc xml:id="xTok_000517">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000518">ayy</w>
+                  <pc xml:id="xTok_000519">,</pc>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000520">ayy</w>
+                  <pc join="right" xml:id="xTok_000521">#</pc>
+                  <pc xml:id="xTok_000522">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a62"
+                  who="#B_Transcription-txt"
+                  end="#T104"
+                  start="#T103"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a63"
+                  who="#B_Transcription-txt"
+                  end="#T106"
+                  start="#T105">
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000523">hāḏi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000524"
+                     rend="withDash">m</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000526"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000528">gahwa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000529">sawwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a64"
+                  who="#B_Transcription-txt"
+                  end="#T108"
+                  start="#T107"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a65"
+                  who="#B_Transcription-txt"
+                  end="#T110"
+                  start="#T109"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a107"
+                  who="#C_Transcription-txt"
+                  end="#T212"
+                  start="#T211"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a66"
+                  who="#B_Transcription-txt"
+                  end="#T112"
+                  start="#T111"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a108"
+                  who="#C_Transcription-txt"
+                  end="#T214"
+                  start="#T213"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a67"
+                  who="#B_Transcription-txt"
+                  end="#T114"
+                  start="#T113"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a68"
+                  who="#B_Transcription-txt"
+                  end="#T116"
+                  start="#T115"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a69"
+                  who="#B_Transcription-txt"
+                  end="#T118"
+                  start="#T117"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a70"
+                  who="#B_Transcription-txt"
+                  end="#T120"
+                  start="#T119"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a71"
+                  who="#B_Transcription-txt"
+                  end="#T122"
+                  start="#T121"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a109"
+                  who="#C_Transcription-txt"
+                  end="#T216"
+                  start="#T215"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a72"
+                  who="#B_Transcription-txt"
+                  end="#T124"
+                  start="#T123"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a73"
+                  who="#B_Transcription-txt"
+                  end="#T126"
+                  start="#T125"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a74"
+                  who="#B_Transcription-txt"
+                  end="#T128"
+                  start="#T127"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a110"
+                  who="#C_Transcription-txt"
+                  end="#T218"
+                  start="#T217"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a75"
+                  who="#B_Transcription-txt"
+                  end="#T130"
+                  start="#T129"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a76"
+                  who="#B_Transcription-txt"
+                  end="#T132"
+                  start="#T131"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a77"
+                  who="#B_Transcription-txt"
+                  end="#T134"
+                  start="#T133"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a111"
+                  who="#C_Transcription-txt"
+                  end="#T220"
+                  start="#T219"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a112"
+                  who="#C_Transcription-txt"
+                  end="#T222"
+                  start="#T221"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a78"
+                  who="#B_Transcription-txt"
+                  end="#T136"
+                  start="#T135"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a79"
+                  who="#B_Transcription-txt"
+                  end="#T138"
+                  start="#T137"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a3"
+                  who="#A_Transcription-txt"
+                  end="#T160"
+                  start="#T159"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a113"
+                  who="#C_Transcription-txt"
+                  end="#T224"
+                  start="#T223"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a4"
+                  who="#A_Transcription-txt"
+                  end="#T162"
+                  start="#T161"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a80"
+                  who="#B_Transcription-txt"
+                  end="#T140"
+                  start="#T139"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a114"
+                  who="#C_Transcription-txt"
+                  end="#T226"
+                  start="#T225"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a5"
+                  who="#A_Transcription-txt"
+                  end="#T164"
+                  start="#T163"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a81"
+                  who="#B_Transcription-txt"
+                  end="#T142"
+                  start="#T141"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a6"
+                  who="#A_Transcription-txt"
+                  end="#T166"
+                  start="#T165"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a7"
+                  who="#A_Transcription-txt"
+                  end="#T168"
+                  start="#T167"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a82"
+                  who="#B_Transcription-txt"
+                  end="#T144"
+                  start="#T143"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a83"
+                  who="#B_Transcription-txt"
+                  end="#T146"
+                  start="#T145">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000530">keyəč</w>
+                  <pc xml:id="xTok_000531">?</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000532"
+                     rend="withDash">sawwr</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000534">i</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000535">waḷḷa</w>
+                  <w xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_xTok_000536">ʕādi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a84"
+                  who="#B_Transcription-txt"
+                  end="#T148"
+                  start="#T147"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a85"
+                  who="#B_Transcription-txt"
+                  end="#T150"
+                  start="#T149"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a115"
+                  who="#C_Transcription-txt"
+                  end="#T228"
+                  start="#T227"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a116"
+                  who="#C_Transcription-txt"
+                  end="#T230"
+                  start="#T229"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a8"
+                  who="#A_Transcription-txt"
+                  end="#T170"
+                  start="#T169"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a86"
+                  who="#B_Transcription-txt"
+                  end="#T152"
+                  start="#T151"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a9"
+                  who="#A_Transcription-txt"
+                  end="#T172"
+                  start="#T171"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a87"
+                  who="#B_Transcription-txt"
+                  end="#T154"
+                  start="#T153"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a10"
+                  who="#A_Transcription-txt"
+                  end="#T174"
+                  start="#T173"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker8_lifedevelopments_cooking_a117"
+                  who="#C_Transcription-txt"
+                  end="#T232"
+                  start="#T231"/>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
