@@ -8,7 +8,7 @@
                 exclude-result-prefixes="#all">
    <xsl:output method="text"/>
    <xsl:include href="params.xsl"/>
-   <xsl:import href="xsl/vert2txt.xsl"/>
+   <xsl:include href="xsl/vert2txt.xsl"/>
    <xsl:template match="tei:annotationBlock">
       <xsl:sequence select="tei:structure(.)"/>
    </xsl:template>
@@ -23,10 +23,5 @@
    </xsl:template>
    <xsl:template match="tei:seg[@type = 'connected']">
       <xsl:sequence select="tei:structure(.)"/>
-   </xsl:template>  
-   <xsl:template name="noske-token">
-      <xsl:value-of
-         select="concat(string-join((normalize-space(normalize-unicode(., 'NFKC')), normalize-space(normalize-unicode(., 'NFD')), @xtoks:id[parent::xtoks:w], tei:sort-attrs(.)), '&#x9;'), '&#xA;')"
-      />
    </xsl:template>
 </xsl:stylesheet>
