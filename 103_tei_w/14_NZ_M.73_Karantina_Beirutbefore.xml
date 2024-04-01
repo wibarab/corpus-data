@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-04-01T10:07:22.344627Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">14_NZ_M.73_Karantina_Beirutbefore</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">14_NZ_M.73_Karantina_Beirutbefore</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.15486111111111112" type="audio">
+                  <date when="2023-05-16"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2023_AID LEB_2023_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 14_NZ_M.73_Karantina_Beirutbefore</head>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <name type="pseudonym">LEB_KAR_2023_NZ_M.73_Speaker1</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Historygeneral"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="2090" since="#T0" xml:id="T57"/>
+         <when interval="5697" since="#T0" xml:id="T58"/>
+         <when interval="6043" since="#T0" xml:id="T1"/>
+         <when interval="7611" since="#T0" xml:id="T2"/>
+         <when interval="9164" since="#T0" xml:id="T3"/>
+         <when interval="11700" since="#T0" xml:id="T4"/>
+         <when interval="13647" since="#T0" xml:id="T5"/>
+         <when interval="19687" since="#T0" xml:id="T6"/>
+         <when interval="20691" since="#T0" xml:id="T7"/>
+         <when interval="23710" since="#T0" xml:id="T8"/>
+         <when interval="24133" since="#T0" xml:id="T9"/>
+         <when interval="26893" since="#T0" xml:id="T10"/>
+         <when interval="28834" since="#T0" xml:id="T11"/>
+         <when interval="36477" since="#T0" xml:id="T12"/>
+         <when interval="36901" since="#T0" xml:id="T13"/>
+         <when interval="38813" since="#T0" xml:id="T14"/>
+         <when interval="50883" since="#T0" xml:id="T15"/>
+         <when interval="60262" since="#T0" xml:id="T16"/>
+         <when interval="62721" since="#T0" xml:id="T17"/>
+         <when interval="66800" since="#T0" xml:id="T18"/>
+         <when interval="69076" since="#T0" xml:id="T19"/>
+         <when interval="79935" since="#T0" xml:id="T20"/>
+         <when interval="84451" since="#T0" xml:id="T21"/>
+         <when interval="85432" since="#T0" xml:id="T22"/>
+         <when interval="88760" since="#T0" xml:id="T23"/>
+         <when interval="90577" since="#T0" xml:id="T24"/>
+         <when interval="93795" since="#T0" xml:id="T25"/>
+         <when interval="96989" since="#T0" xml:id="T26"/>
+         <when interval="101859" since="#T0" xml:id="T27"/>
+         <when interval="102654" since="#T0" xml:id="T28"/>
+         <when interval="112414" since="#T0" xml:id="T29"/>
+         <when interval="114989" since="#T0" xml:id="T59"/>
+         <when interval="117985" since="#T0" xml:id="T30"/>
+         <when interval="118444" since="#T0" xml:id="T60"/>
+         <when interval="126021" since="#T0" xml:id="T31"/>
+         <when interval="134635" since="#T0" xml:id="T32"/>
+         <when interval="135193" since="#T0" xml:id="T33"/>
+         <when interval="140630" since="#T0" xml:id="T34"/>
+         <when interval="141167" since="#T0" xml:id="T35"/>
+         <when interval="142910" since="#T0" xml:id="T36"/>
+         <when interval="143012" since="#T0" xml:id="T37"/>
+         <when interval="151101" since="#T0" xml:id="T38"/>
+         <when interval="151131" since="#T0" xml:id="T61"/>
+         <when interval="154830" since="#T0" xml:id="T62"/>
+         <when interval="154861" since="#T0" xml:id="T39"/>
+         <when interval="156771" since="#T0" xml:id="T40"/>
+         <when interval="163808" since="#T0" xml:id="T41"/>
+         <when interval="171997" since="#T0" xml:id="T42"/>
+         <when interval="172584" since="#T0" xml:id="T43"/>
+         <when interval="181128" since="#T0" xml:id="T44"/>
+         <when interval="184316" since="#T0" xml:id="T45"/>
+         <when interval="190488" since="#T0" xml:id="T46"/>
+         <when interval="190693" since="#T0" xml:id="T47"/>
+         <when interval="196556" since="#T0" xml:id="T48"/>
+         <when interval="198744" since="#T0" xml:id="T49"/>
+         <when interval="212674" since="#T0" xml:id="T50"/>
+         <when interval="213100" since="#T0" xml:id="T51"/>
+         <when interval="215662" since="#T0" xml:id="T52"/>
+         <when interval="217393" since="#T0" xml:id="T53"/>
+         <when interval="221691" since="#T0" xml:id="T54"/>
+         <when interval="222329" since="#T0" xml:id="T55"/>
+         <when interval="223871" since="#T0" xml:id="T56"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T56</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a6"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000001">kintu</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000002">tinzalu</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000003">ʕala</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000004">bērūt</w>
+                  <pc xml:id="xTok_000005">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a1"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000006">ē</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000007">ʔakīd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a2"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000008">bass</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000009">kīf</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000010"
+                     rend="withDash">b</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000012" join="right">ninzil</w>
+                  <pc xml:id="xTok_000013">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a3"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000014"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000016"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000018" join="right">ʕīd</w>
+                  <pc xml:id="xTok_000019">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000020">yinzal</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000021">ḥayāt</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000022"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000024">ya</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000025"
+                     rend="withDash">yištarī</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000027"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000029">i</w>
+                  <pc join="right" xml:id="xTok_000030">.</pc>
+                  <pc xml:id="xTok_000031">.</pc>
+                  <pc xml:id="xTok_000032">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a4"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000033">kānat</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000034">bērūt</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000035">ḥilwa</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000036">ya</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000037">maxlūga</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a5"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000038">wēs</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000039"
+                     rend="withDash">bə</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000041">tuṭulbi</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000042">tlāgi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a7"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000043">wlā</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000044">wlē</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000045">ya</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000046">ʕakrūt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a8"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000047">ʕam</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000048">yuʔṣuf</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000049"
+                     rend="withDash">is</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000051">sažra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a9"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000052">wlā</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000053">yalla</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000054">ʕakrūt</w>
+                  <pc xml:id="xTok_000055">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000056">yalla</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000057">wlā</w>
+                  <pc xml:id="xTok_000058">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000059">yalla</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000060">wlā</w>
+                  <pc xml:id="xTok_000061">!</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000062">yilʕankum</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000063">ʔaḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a10"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000064">ʕam</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000065">yuʔṣuf</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000066"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000068">ġuṣun</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a11"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000069">ʔaza</w>
+                  <pc xml:id="xTok_000070">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000071">bala</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000072">tirbǟyä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a12"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T21"
+                  start="#T20">
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000073"
+                     rend="withDash">yištrī</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000075"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000077">i</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000078">ḥayāt</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000079"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000081">ya</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000082">ʔuṭun</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a13"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000083">yrūʕ</w>
+                  <pc join="right" xml:id="xTok_000084">(</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000085" join="right">yrūḥ</w>
+                  <pc xml:id="xTok_000086">)</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000087">ʕala</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000088">sūʔ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000089">sursuʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a14"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T25"
+                  start="#T24">
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000090"
+                     rend="withDash">yištrī</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000092"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000094">i</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000095"
+                     rend="withDash">ʔažal</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000097"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000099">ik</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000100">ʔalla</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000101">ṣuḅḅāṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a15"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T27"
+                  start="#T26">
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000102"
+                     rend="withDash">nnawwim</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000104">in</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000105"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000107"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000109" join="right">faršä</w>
+                  <pc xml:id="xTok_000110">,</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000111"
+                     rend="withDash">nnawwim</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000113">in</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000114"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000116">na</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000117"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000119"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000121">faršä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a16"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000122">bāčir</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000123"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000125" join="right">ʕīd</w>
+                  <pc xml:id="xTok_000126">?</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000127"
+                     rend="withDash">nawwim</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000129">in</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000130"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000132" join="right">na</w>
+                  <pc xml:id="xTok_000133">,</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000134"
+                     rend="withDash">gadd</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000136">ma</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000137">nāṭrīn</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000138">la</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000139">yiṭlaʕ</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000140"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000142">ṣubuḥ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000143">la</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000144"
+                     rend="withDash">nilbas</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000146">in</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a20"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000147">šū</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000148">kintu</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000149">tʕamlu</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000150"
+                     rend="withDash">bi</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000152">bērūt</w>
+                  <pc join="right" xml:id="xTok_000153">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000154">kinto</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000155">tinzalu</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000156"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000158"
+                     rend="withDash">s</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000160" join="right">sīnima</w>
+                  <pc xml:id="xTok_000161">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a17"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000162">la</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000163">la</w>
+                  <pc join="right" xml:id="xTok_000164">.</pc>
+                  <pc join="right" xml:id="xTok_000165">.</pc>
+                  <pc join="right" xml:id="xTok_000166">.</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000167"
+                     rend="withDash">is</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000169" join="right">sīnima</w>
+                  <pc xml:id="xTok_000170">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000171">bass</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000172">ʔižīna</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000173"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000175"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000177">madīnä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a18"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000178">bass</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000179">ʔižīna</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000180">ʔaʕadna</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000181">hōn</w>
+                  <pc xml:id="xTok_000182">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000183">ṣirna</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000184">nrūḥ</w>
+                  <pc xml:id="xTok_000185">.</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000186">ninzal</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000187">ʕala</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000188">sāḥt</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000189"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000191">buruž</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a19"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000192">kǟn</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000193">fī</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000194">filǟfil</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000195">frayḥa</w>
+                  <pc xml:id="xTok_000196">,</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000197"
+                     rend="withDash">is</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000199">sandwīšä</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000200"
+                     rend="withDash">bi</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000202">rubəʕ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000203">lēra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a21"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000204">nrūḥ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000205">nǟkul</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000206">falǟfil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a22"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000207">nrūʕ</w>
+                  <pc join="right" xml:id="xTok_000208">(</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000209" join="right">nrūḥ</w>
+                  <pc xml:id="xTok_000210">)</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000211"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000213"
+                     rend="withDash">s</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000215" join="right">sīnimā</w>
+                  <pc xml:id="xTok_000216">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000217">naḥḍar</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000218"
+                     rend="withDash">is</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000220">sīnimā</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000221"
+                     rend="withDash">b</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000223">sittīn</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000224">ʔiriš</w>
+                  <pc xml:id="xTok_000225">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000226">yaʕni</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000227"
+                     rend="withDash">b</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000229">lēra</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000230">ʔilla</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000231">ʔarbʕīn</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000232">ʔiriš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a26"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T62"
+                  start="#T61">
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000233">ǧiriš</w>
+                  <pc xml:id="xTok_000234">?</pc>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000235">ʔiriš</w>
+                  <pc xml:id="xTok_000236">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a23"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000237">ǧiriš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a24"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000238">nrūh</w>
+                  <pc xml:id="xTok_000239">,</pc>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000240">nirkab</w>
+                  <pc xml:id="xTok_000241">.</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000242">kǟn</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000243">dāriǧ</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000244"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000246" join="right">mirsēdis</w>
+                  <pc xml:id="xTok_000247">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000248">taxi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a25"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T44"
+                  start="#T43">
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000249"
+                     rend="withDash">nirkab</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000251">o</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000252"
+                     rend="withDash">b</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000254">rubəʕ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000255">lēra</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000256"
+                     rend="withDash">yiwaṣṣil</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000258">na</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000259"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000261"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000263">ʔūzāʕi</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000264">mn</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000265"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000267" join="right">ʔazāriyya</w>
+                  <pc xml:id="xTok_000268">,</pc>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000269"
+                     rend="withDash">b</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000271">rubəʕ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000272">lēra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a27"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000273">walla</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000274">kānat</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000275">ʔiyyām</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000276">ḥilwä</w>
+                  <pc join="right" xml:id="xTok_000277">(</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000278" join="right">P1s</w>
+                  <pc xml:id="xTok_000279">)</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000280">kān</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000281">bī</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000282"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000284">ʕālam</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000285">tḥibb</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000286"
+                     rend="withDash">baʕaḍ</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000288">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a28"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000289">ē</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000290"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000292">yōm</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000293">ma</w>
+                  <w join="right" xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000294">fī</w>
+                  <pc xml:id="xTok_000295">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000296">kil</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000297">mīn</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000298">miltəhi</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000299"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000301"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000303" join="right">o</w>
+                  <pc xml:id="xTok_000304">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000305">ṣirna</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000306">mitl</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000307"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000309">ʔurūppiyīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a29"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000310">ʔaḅul</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000311">kinna</w>
+                  <pc join="right" xml:id="xTok_000312">(</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000313" join="right">P1s</w>
+                  <pc xml:id="xTok_000314">)</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000315">yisharu</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000316">tishar</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000317"
+                     rend="withDash">il</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000319">ʕālam</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000320">maʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000321"
+                     rend="withDash">baʕaḏ̣̣</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000323" join="right">ha</w>
+                  <pc xml:id="xTok_000324">,</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000325">ʔiza</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000326">saxan</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000327">flān</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000328">yrūḥum</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000329">yšikkum</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000330"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000332">_</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000333">́</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000334">yisʔalu</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000335">ʕan</w>
+                  <pc join="right" xml:id="xTok_000336">.</pc>
+                  <pc xml:id="xTok_000337">.</pc>
+                  <pc xml:id="xTok_000338">.</pc>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000339">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a30"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000340">ʔurūppa</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000341">ma</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000342">ḥadan</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000343"
+                     rend="withDash">b</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000345">yiḥki</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000346">maʕa</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000347"
+                     rend="withDash">t</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000349">tǟni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a31"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000350">haydi</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000351">kamǟn</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000352"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000354">ha</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000355"
+                     rend="withDash">ʔīmit</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000357">ha</w>
+                  <w join="right"
+                     xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000358"
+                     rend="withDash">l</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000360">ʔuṣṣa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u14_NZ_M.73_Karantina_Beirutbefore_a32"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000361">hāy</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000362">taqālīd</w>
+                  <w xml:id="14_NZ_M.73_Karantina_Beirutbefore_xTok_000363">ḥilwä</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
