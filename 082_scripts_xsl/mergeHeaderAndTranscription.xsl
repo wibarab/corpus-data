@@ -22,13 +22,13 @@
     <xsl:variable name="corpusDoc" select="doc($pathToCorpusDoc)" as="document-node()"/>
     <xsl:variable name="IDcandidates" select="$corpusDoc/tei:teiCorpus/tei:TEI//tei:title[@level = 'a']"/>
     <xsl:variable name="pathSegs" select="tokenize(base-uri($input),'/')"/>
-    <xsl:variable name="recordingIDs" select="$IDcandidates[some $x in $pathSegs satisfies contains(lower-case($x), lower-case(.))]"/>
-    <xsl:variable name="recordingID" select="$recordingIDs[1]"/>
+    <xsl:variable name="recordingIDfromFilename" select="substring-before(substring-after($pathSegs[starts-with(.,'ELAN_')],'ELAN_'),'.xml')"/>
+    <xsl:variable name="recordingID" select="$IDcandidates[. = $recordingIDfromFilename]"/>
     <xsl:variable name="teiHeaderFromCorpus" select="$recordingID/ancestor::tei:teiHeader" as="element(tei:teiHeader)?"/>
     
     <xsl:template match="/">
-        <xsl:if test="count($recordingIDs) gt 1">
-            <xsl:message>WARNING found several matching recording IDs: <xsl:value-of select="string-join($recordingIDs, ', ')"/> - taking first one</xsl:message>
+        <xsl:if test="count($recordingID) gt 1">
+            <xsl:message>WARNING found several matching recording IDs: <xsl:value-of select="string-join($recordingID, ', ')"/> - taking first one</xsl:message>
         </xsl:if>
         <xsl:if test="normalize-space($recordingID) = ''">
             <!--<xsl:message select="concat('$input=',base-uri($input))"/>
