@@ -1,0 +1,2988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-04-08T11:06:03.075912Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">KUW_2022_Speaker13_ConversationXrenig_1_1</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">KUW_2022_Speaker13_ConversationXrenig_1_1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="07:10" type="audio">
+                  <date when="2022-04-10"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:KUW_2022_GK">Kuwait Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in KUW_2022_Speaker13_ConversationXrenig_1_1</head>
+               <person sameAs="corpus:KUW_2022_Speaker13">
+                  <name type="pseudonym">KUW_2022_Speaker13</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Childhood"/>
+            <catRef target="corpus:Languageandidentity"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="48" since="#T0" xml:id="T35"/>
+         <when interval="25063" since="#T0" xml:id="T36"/>
+         <when interval="25638" since="#T0" xml:id="T37"/>
+         <when interval="27268" since="#T0" xml:id="T130"/>
+         <when interval="27829" since="#T0" xml:id="T38"/>
+         <when interval="28404" since="#T0" xml:id="T131"/>
+         <when interval="46829" since="#T0" xml:id="T39"/>
+         <when interval="46914" since="#T0" xml:id="T40"/>
+         <when interval="58978" since="#T0" xml:id="T41"/>
+         <when interval="59333" since="#T0" xml:id="T42"/>
+         <when interval="75467" since="#T0" xml:id="T43"/>
+         <when interval="77404" since="#T0" xml:id="T44"/>
+         <when interval="88191" since="#T0" xml:id="T45"/>
+         <when interval="89068" since="#T0" xml:id="T46"/>
+         <when interval="108700" since="#T0" xml:id="T47"/>
+         <when interval="111612" since="#T0" xml:id="T48"/>
+         <when interval="114741" since="#T0" xml:id="T132"/>
+         <when interval="114967" since="#T0" xml:id="T49"/>
+         <when interval="120870" since="#T0" xml:id="T50"/>
+         <when interval="122258" since="#T0" xml:id="T133"/>
+         <when interval="130000" since="#T0" xml:id="T51"/>
+         <when interval="131406" since="#T0" xml:id="T52"/>
+         <when interval="143964" since="#T0" xml:id="T134"/>
+         <when interval="144129" since="#T0" xml:id="T53"/>
+         <when interval="145799" since="#T0" xml:id="T54"/>
+         <when interval="147395" since="#T0" xml:id="T135"/>
+         <when interval="147575" since="#T0" xml:id="T55"/>
+         <when interval="147709" since="#T0" xml:id="T136"/>
+         <when interval="151916" since="#T0" xml:id="T137"/>
+         <when interval="154417" since="#T0" xml:id="T56"/>
+         <when interval="165915" since="#T0" xml:id="T57"/>
+         <when interval="166287" since="#T0" xml:id="T58"/>
+         <when interval="185537" since="#T0" xml:id="T59"/>
+         <when interval="185578" since="#T0" xml:id="T60"/>
+         <when interval="194654" since="#T0" xml:id="T61"/>
+         <when interval="195280" since="#T0" xml:id="T128"/>
+         <when interval="197040" since="#T0" xml:id="T62"/>
+         <when interval="197520" since="#T0" xml:id="T129"/>
+         <when interval="198120" since="#T0" xml:id="T1"/>
+         <when interval="200040" since="#T0" xml:id="T63"/>
+         <when interval="201720" since="#T0" xml:id="T2"/>
+         <when interval="204400" since="#T0" xml:id="T64"/>
+         <when interval="211240" since="#T0" xml:id="T65"/>
+         <when interval="212535" since="#T0" xml:id="T138"/>
+         <when interval="216072" since="#T0" xml:id="T66"/>
+         <when interval="216440" since="#T0" xml:id="T139"/>
+         <when interval="217182" since="#T0" xml:id="T140"/>
+         <when interval="217269" since="#T0" xml:id="T67"/>
+         <when interval="222093" since="#T0" xml:id="T141"/>
+         <when interval="222167" since="#T0" xml:id="T68"/>
+         <when interval="224840" since="#T0" xml:id="T69"/>
+         <when interval="225708" since="#T0" xml:id="T70"/>
+         <when interval="240549" since="#T0" xml:id="T71"/>
+         <when interval="241400" since="#T0" xml:id="T3"/>
+         <when interval="243145" since="#T0" xml:id="T72"/>
+         <when interval="243360" since="#T0" xml:id="T4"/>
+         <when interval="244004" since="#T0" xml:id="T5"/>
+         <when interval="247722" since="#T0" xml:id="T73"/>
+         <when interval="248612" since="#T0" xml:id="T6"/>
+         <when interval="249229" since="#T0" xml:id="T74"/>
+         <when interval="251262" since="#T0" xml:id="T7"/>
+         <when interval="251473" since="#T0" xml:id="T75"/>
+         <when interval="259260" since="#T0" xml:id="T76"/>
+         <when interval="260502" since="#T0" xml:id="T8"/>
+         <when interval="263951" since="#T0" xml:id="T77"/>
+         <when interval="266394" since="#T0" xml:id="T78"/>
+         <when interval="271265" since="#T0" xml:id="T79"/>
+         <when interval="271548" since="#T0" xml:id="T9"/>
+         <when interval="275370" since="#T0" xml:id="T80"/>
+         <when interval="275597" since="#T0" xml:id="T10"/>
+         <when interval="281062" since="#T0" xml:id="T11"/>
+         <when interval="281545" since="#T0" xml:id="T81"/>
+         <when interval="281861" since="#T0" xml:id="T82"/>
+         <when interval="282118" since="#T0" xml:id="T12"/>
+         <when interval="289888" since="#T0" xml:id="T83"/>
+         <when interval="290156" since="#T0" xml:id="T84"/>
+         <when interval="295629" since="#T0" xml:id="T85"/>
+         <when interval="295909" since="#T0" xml:id="T86"/>
+         <when interval="300902" since="#T0" xml:id="T13"/>
+         <when interval="301814" since="#T0" xml:id="T87"/>
+         <when interval="301958" since="#T0" xml:id="T88"/>
+         <when interval="302277" since="#T0" xml:id="T14"/>
+         <when interval="304212" since="#T0" xml:id="T89"/>
+         <when interval="304863" since="#T0" xml:id="T90"/>
+         <when interval="309676" since="#T0" xml:id="T91"/>
+         <when interval="310622" since="#T0" xml:id="T92"/>
+         <when interval="315422" since="#T0" xml:id="T93"/>
+         <when interval="315756" since="#T0" xml:id="T94"/>
+         <when interval="320760" since="#T0" xml:id="T15"/>
+         <when interval="321149" since="#T0" xml:id="T95"/>
+         <when interval="321897" since="#T0" xml:id="T96"/>
+         <when interval="321976" since="#T0" xml:id="T16"/>
+         <when interval="323402" since="#T0" xml:id="T97"/>
+         <when interval="323799" since="#T0" xml:id="T17"/>
+         <when interval="328680" since="#T0" xml:id="T18"/>
+         <when interval="330250" since="#T0" xml:id="T142"/>
+         <when interval="332408" since="#T0" xml:id="T19"/>
+         <when interval="332666" since="#T0" xml:id="T143"/>
+         <when interval="333067" since="#T0" xml:id="T98"/>
+         <when interval="333099" since="#T0" xml:id="T20"/>
+         <when interval="339170" since="#T0" xml:id="T21"/>
+         <when interval="339273" since="#T0" xml:id="T99"/>
+         <when interval="339556" since="#T0" xml:id="T100"/>
+         <when interval="340227" since="#T0" xml:id="T22"/>
+         <when interval="340861" since="#T0" xml:id="T101"/>
+         <when interval="342572" since="#T0" xml:id="T102"/>
+         <when interval="348152" since="#T0" xml:id="T144"/>
+         <when interval="348180" since="#T0" xml:id="T103"/>
+         <when interval="349635" since="#T0" xml:id="T104"/>
+         <when interval="349704" since="#T0" xml:id="T145"/>
+         <when interval="357792" since="#T0" xml:id="T105"/>
+         <when interval="358648" since="#T0" xml:id="T106"/>
+         <when interval="363586" since="#T0" xml:id="T107"/>
+         <when interval="363839" since="#T0" xml:id="T108"/>
+         <when interval="366359" since="#T0" xml:id="T146"/>
+         <when interval="366416" since="#T0" xml:id="T109"/>
+         <when interval="367498" since="#T0" xml:id="T110"/>
+         <when interval="367657" since="#T0" xml:id="T147"/>
+         <when interval="369262" since="#T0" xml:id="T111"/>
+         <when interval="371200" since="#T0" xml:id="T112"/>
+         <when interval="373743" since="#T0" xml:id="T23"/>
+         <when interval="374838" since="#T0" xml:id="T113"/>
+         <when interval="384366" since="#T0" xml:id="T24"/>
+         <when interval="384378" since="#T0" xml:id="T114"/>
+         <when interval="385530" since="#T0" xml:id="T25"/>
+         <when interval="385768" since="#T0" xml:id="T115"/>
+         <when interval="392833" since="#T0" xml:id="T116"/>
+         <when interval="393016" since="#T0" xml:id="T26"/>
+         <when interval="398300" since="#T0" xml:id="T117"/>
+         <when interval="398357" since="#T0" xml:id="T27"/>
+         <when interval="399365" since="#T0" xml:id="T118"/>
+         <when interval="399575" since="#T0" xml:id="T28"/>
+         <when interval="400135" since="#T0" xml:id="T119"/>
+         <when interval="400306" since="#T0" xml:id="T29"/>
+         <when interval="403831" since="#T0" xml:id="T120"/>
+         <when interval="404885" since="#T0" xml:id="T30"/>
+         <when interval="410540" since="#T0" xml:id="T31"/>
+         <when interval="410549" since="#T0" xml:id="T121"/>
+         <when interval="411966" since="#T0" xml:id="T32"/>
+         <when interval="414099" since="#T0" xml:id="T122"/>
+         <when interval="423083" since="#T0" xml:id="T33"/>
+         <when interval="423800" since="#T0" xml:id="T123"/>
+         <when interval="424733" since="#T0" xml:id="T34"/>
+         <when interval="425788" since="#T0" xml:id="T148"/>
+         <when interval="428213" since="#T0" xml:id="T124"/>
+         <when interval="428299" since="#T0" xml:id="T149"/>
+         <when interval="428832" since="#T0" xml:id="T125"/>
+         <when interval="428849" since="#T0" xml:id="T150"/>
+         <when interval="429565" since="#T0" xml:id="T126"/>
+         <when interval="429813" since="#T0" xml:id="T151"/>
+         <when interval="430222" since="#T0" xml:id="T127"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T127</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a1"
+                  who="#A_Transcription-txt"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000001">ī</w>
+                  <pc join="right" xml:id="xTok_000002">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000003"
+                     rend="withDash">mn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000005"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000007"
+                     join="right">ʕuwana</w>
+                  <pc xml:id="xTok_000008">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000009">ī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000010">naʕam</w>
+                  <pc xml:id="xTok_000011">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000012">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000013">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000014"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000016"
+                     join="right">ʕuwana</w>
+                  <pc xml:id="xTok_000017">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000018"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000020">ʕuwana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000021">šwayy</w>
+                  <pc xml:id="xTok_000022">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000023">ā</w>
+                  <pc xml:id="xTok_000024">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000025"
+                     rend="withDash">kalām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000027">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000028">basīṭa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000029">ǧiddan</w>
+                  <pc xml:id="xTok_000030">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000031">u</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000032"
+                     rend="withDash">kalām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000034">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000035"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000037">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000038">taksīr</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000039"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000041"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000043"
+                     join="right">ḥrūf</w>
+                  <pc xml:id="xTok_000044">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000045">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000046">yaḏḥurūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000047"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000049">.</pc>
+                  <pc xml:id="xTok_000050">.</pc>
+                  <pc xml:id="xTok_000051">.</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000052"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000054">kalima</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000055">manṭaq</w>
+                  <pc join="right" xml:id="xTok_000056">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000057"
+                     join="right">meaning</w>
+                  <pc xml:id="xTok_000058">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000059"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000061"
+                     join="right">ḥarf</w>
+                  <pc xml:id="xTok_000062">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000063">ē</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000064">ʕala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000065"
+                     rend="withDash">ṭabīʕt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000067">a</w>
+                  <pc join="right" xml:id="xTok_000068">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000069">in</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000070">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000071">s</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000072">natural</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000073">way</w>
+                  <pc xml:id="xTok_000074">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000075">accoridng</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000076">to</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000077">how</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000078">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000079">should</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000080">be</w>
+                  <pc xml:id="xTok_000081">)</pc>
+                  <pc xml:id="xTok_000082">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000083">ka</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000084">kalām</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000085"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000087"
+                     join="right">kwēti</w>
+                  <pc xml:id="xTok_000088">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000089"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000091">kwēti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000092"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000094">baḥḥ</w>
+                  <pc join="right" xml:id="xTok_000095">(</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000096">raw</w>
+                  <pc xml:id="xTok_000097">)</pc>
+                  <pc xml:id="xTok_000098">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000099">lā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000100">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000101">ḥḏ̣ari</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000102">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000103">lā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000104">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000105">bduwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a2"
+                  who="#A_Transcription-txt"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000106">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000107"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000109"
+                     rend="withDash">iḏ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000111">ḏāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000112"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000114"
+                     rend="withDash">qabalī</w>
+                  <pc join="right" xml:id="xTok_000116">.</pc>
+                  <pc xml:id="xTok_000117">.</pc>
+                  <pc xml:id="xTok_000118">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a13"
+                  who="#C_Transcription-txt"
+                  end="#T131"
+                  start="#T130">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000119"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000121"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000123">wasaṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a3"
+                  who="#A_Transcription-txt"
+                  end="#T39"
+                  start="#T38">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000124">ay</w>
+                  <pc xml:id="xTok_000125">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000126">aḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000127"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000129"
+                     rend="withDash">iḏ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000131"
+                     join="right">ḏāt</w>
+                  <pc xml:id="xTok_000132">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000133"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000135"
+                     join="right">ʕawana</w>
+                  <pc xml:id="xTok_000136">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000137">ē</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000138">nitkillim</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000139"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000141"
+                     join="right">luġa</w>
+                  <pc xml:id="xTok_000142">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000143">miṯil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000144"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000146"
+                     join="right">tgūlīn</w>
+                  <pc xml:id="xTok_000147">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000148">yaʕni</w>
+                  <pc xml:id="xTok_000149">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000150"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000152">ḥagg</w>
+                  <pc join="right" xml:id="xTok_000153">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000154">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000155">turth</w>
+                  <pc xml:id="xTok_000156">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000157">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000158">kalām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000159">basīṭ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000160">ǧiddan</w>
+                  <pc xml:id="xTok_000161">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000162"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000164">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000165">takassur</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000166"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000168"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000170">ḥurūf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000171">wa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000172">la</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000173">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000174">maḏāḥir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000175">niḏḥar</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000176"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000178">ḥarf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000179"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000181"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000183">.</pc>
+                  <pc join="right" xml:id="xTok_000184">.</pc>
+                  <pc xml:id="xTok_000185">.</pc>
+                  <pc xml:id="xTok_000186">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000187"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000189">ġalaṭ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000190">muʕayyin</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a4"
+                  who="#A_Transcription-txt"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000191">yaʕni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000192">maṯalan</w>
+                  <pc xml:id="xTok_000193">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000194">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000195"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000197">ʕawana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000198">law</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000199"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000201"
+                     join="right">atkallam</w>
+                  <pc xml:id="xTok_000202">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000203">qarīb</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000204">qarīb</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000205"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000207"
+                     rend="withDash">kalām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000209"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000210">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000211">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000212">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000213">nās</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000214">tintiqid</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000215">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000216">aḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000217"
+                     rend="withDash">kalām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000219">na</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000220">yarǧiʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000221"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000223"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000225">ʕirāq</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000226">išwayy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a5"
+                  who="#A_Transcription-txt"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000227">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000228">manābiḏ</w>
+                  <pc join="right" xml:id="xTok_000229">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000230"
+                     join="right">sources</w>
+                  <pc xml:id="xTok_000231">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000232">ḥurūf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000233">ʕirāqiyya</w>
+                  <pc xml:id="xTok_000234">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000235">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000236">manābiḏ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000237">ḥurūf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000238">ḥḏ̣ariyya</w>
+                  <pc xml:id="xTok_000239">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000240"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000242">ḥarf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000243"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000245"
+                     join="right">yā</w>
+                  <pc xml:id="xTok_000246">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000247">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000248"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000250">qabīlat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000251"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000253"
+                     join="right">waḥīda</w>
+                  <pc xml:id="xTok_000254">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000255"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000257"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000259"
+                     join="right">qabāliyyīn</w>
+                  <pc xml:id="xTok_000260">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000261"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000263">beyn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000264">qabāyil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000265"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000267"
+                     join="right">kwēt</w>
+                  <pc xml:id="xTok_000268">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000269"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000271"
+                     join="right">rašāyda</w>
+                  <pc xml:id="xTok_000272">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000273">illi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000274">nanṭaq</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000275">ḥarf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000276"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000278">yā</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a6"
+                  who="#A_Transcription-txt"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000279">ḥarf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000280"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000282">ya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000283">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000284">lamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000285">tgūl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000286">yāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000287"
+                     rend="withDash">ṭiflā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000289"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000290">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000291"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000293">ngūl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000294">ǧāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000295"
+                     rend="withDash">ṭiflā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000297"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000298">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000299">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000300">manāṭiq</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000301"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000303"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000305">ḥrūf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000306">ʕindina</w>
+                  <pc xml:id="xTok_000307">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000308"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000310"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000312">ḥaḏ̣ar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000313">tmīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000314"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000316"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000318">ḥaḏ̣ar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000319">išwayya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a7"
+                  who="#A_Transcription-txt"
+                  end="#T47"
+                  start="#T46">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000320">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000321">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000322">lamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000323">ḥadd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000324"
+                     rend="withDash">yismaʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000326">ni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000327"
+                     rend="withDash">at</w>
+                  <pc join="right" xml:id="xTok_000329">.</pc>
+                  <pc join="right" xml:id="xTok_000330">.</pc>
+                  <pc xml:id="xTok_000331">.</pc>
+                  <pc xml:id="xTok_000332">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000333">ī</w>
+                  <pc xml:id="xTok_000334">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000335">lamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000336">ḥadd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000337"
+                     rend="withDash">yismaʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000339">ni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000340">atkallam</w>
+                  <pc xml:id="xTok_000341">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000342"
+                     rend="withDash">ygul</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000344"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000346">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000347">inti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000348"
+                     rend="withDash">malāxd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000350">ič</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000351">ʕirāqiyya</w>
+                  <pc xml:id="xTok_000352">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000353">inti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000354"
+                     rend="withDash">malāxd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000356">ič</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000357">irāniyya</w>
+                  <pc xml:id="xTok_000358">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000359">lēš</w>
+                  <pc xml:id="xTok_000360">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000361">laʔanna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000362">uhma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000363">lamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000364">yitḥaččōn</w>
+                  <pc join="right" xml:id="xTok_000365">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000366"
+                     join="right">yaḥki</w>
+                  <pc xml:id="xTok_000367">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000368">maʕay</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000369">miṯalan</w>
+                  <pc xml:id="xTok_000370">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000371"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000373"
+                     join="right">maḥāmza</w>
+                  <pc xml:id="xTok_000374">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000375"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000377"
+                     join="right">muwāzara</w>
+                  <pc xml:id="xTok_000378">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000379"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000381"
+                     join="right">muḏābira</w>
+                  <pc xml:id="xTok_000382">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000383"
+                     rend="withDash">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000385">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000386">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000387"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000389">laḥǧa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000390"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000392">suʕūdiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000393">šwayy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a8"
+                  who="#A_Transcription-txt"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000394">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000395">ǧaṛṛ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000396"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000398"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000400"
+                     rend="withDash">ḥur</w>
+                  <pc join="right" xml:id="xTok_000402">.</pc>
+                  <pc join="right" xml:id="xTok_000403">.</pc>
+                  <pc xml:id="xTok_000404">.</pc>
+                  <pc xml:id="xTok_000405">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000406">ī</w>
+                  <pc xml:id="xTok_000407">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000408">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000409">ǧaṛṛ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000410"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000412"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000414">ḥurūf</w>
+                  <pc join="right" xml:id="xTok_000415">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000416"
+                     join="right"
+                     rend="withDash">ǧarr</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000418">pull</w>
+                  <pc xml:id="xTok_000419">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a14"
+                  who="#C_Transcription-txt"
+                  end="#T133"
+                  start="#T132">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000420">bass</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000421">hāḏa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000422">fāxḏ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000423"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000425">ʕawāna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000426">kamān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000427"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000429">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000430">ḥuḏ̣ūr</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000431"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000433"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000435">suʕūdiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000436">saḥīḥ</w>
+                  <pc xml:id="xTok_000437">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000438">laʔanna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000439">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000440">gābalt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000441">nās</w>
+                  <pc join="right" xml:id="xTok_000442">.</pc>
+                  <pc xml:id="xTok_000443">.</pc>
+                  <pc xml:id="xTok_000444">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a9"
+                  who="#A_Transcription-txt"
+                  end="#T51"
+                  start="#T50">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000445"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000447">ʕawana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000448">naʕam</w>
+                  <pc xml:id="xTok_000449">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000450">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000451"
+                     rend="withDash">kill</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000453"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000454">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000455"
+                     rend="withDash">mi</w>
+                  <pc join="right" xml:id="xTok_000457">.</pc>
+                  <pc join="right" xml:id="xTok_000458">.</pc>
+                  <pc xml:id="xTok_000459">.</pc>
+                  <pc xml:id="xTok_000460">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000461">mū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000462">miṯil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000463"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000465"
+                     join="right">ʕawāzim</w>
+                  <pc xml:id="xTok_000466">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000467"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000469">ʕawāzim</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000470"
+                     rend="withDash">taʔsīs</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000472">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000473"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000475"
+                     rend="withDash">ir</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000477"
+                     rend="withDash">r</w>
+                  <pc join="right" xml:id="xTok_000479">.</pc>
+                  <pc join="right" xml:id="xTok_000480">.</pc>
+                  <pc xml:id="xTok_000481">.</pc>
+                  <pc xml:id="xTok_000482">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000483"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000485"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000487">kweyt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a10"
+                  who="#A_Transcription-txt"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000488">uhma</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000489"
+                     rend="withDash">taʔsīs</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000491">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000492">qabaliyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000493">ūla</w>
+                  <pc xml:id="xTok_000494">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000495">hiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000496"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000498"
+                     join="right">ʕawāzim</w>
+                  <pc xml:id="xTok_000499">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000500"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000502"
+                     join="right">kwēyt</w>
+                  <pc xml:id="xTok_000503">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000504">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000505">laʔ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000506">tabʕan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000507">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000508"
+                     rend="withDash">ǧidūr</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000510">na</w>
+                  <pc join="right" xml:id="xTok_000511">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000512"
+                     join="right">roots</w>
+                  <pc xml:id="xTok_000513">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000514">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000515"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000517"
+                     join="right">suʕūdiyya</w>
+                  <pc xml:id="xTok_000518">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000519"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000521">lākin</w>
+                  <pc join="right" xml:id="xTok_000522">.</pc>
+                  <pc xml:id="xTok_000523">.</pc>
+                  <pc xml:id="xTok_000524">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a15"
+                  who="#C_Transcription-txt"
+                  end="#T135"
+                  start="#T134">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000525">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000526">zamān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000527">mawǧūdīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000528"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000530"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000532"
+                     join="right">kweyt</w>
+                  <pc xml:id="xTok_000533">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000534">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000535">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a11"
+                  who="#A_Transcription-txt"
+                  end="#T55"
+                  start="#T54">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000536">ī</w>
+                  <pc xml:id="xTok_000537">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000538">ī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000539">naʕam</w>
+                  <pc xml:id="xTok_000540">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000541">ī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000542">naʕam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a16"
+                  who="#C_Transcription-txt"
+                  end="#T137"
+                  start="#T136">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000543">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000544"
+                     rend="withDash">ʕil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000546">kum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000547">ʕalāqa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000548">mā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000549"
+                     rend="withDash">aṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000551">ṣabāḥ</w>
+                  <pc join="right" xml:id="xTok_000552">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000553">royal</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000554">family</w>
+                  <pc xml:id="xTok_000555">)</pc>
+                  <pc xml:id="xTok_000556">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000557">ṣaḥīḥ</w>
+                  <pc xml:id="xTok_000558">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a12"
+                  who="#A_Transcription-txt"
+                  end="#T57"
+                  start="#T56">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000559">ī</w>
+                  <pc xml:id="xTok_000560">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000561"
+                     rend="withDash">ʕilāqat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000563"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000564">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000565">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000566">ikṯar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000567">ʔumara</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000568"
+                     rend="withDash">qabīlat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000570">na</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000571">xuddām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000572">ṣabāḥ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000573"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000575">sālim</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a17"
+                  who="#A_Transcription-txt"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000576">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000577">mū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000578">maʕna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000579">inna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000580">xādim</w>
+                  <pc xml:id="xTok_000581">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000582">fidāwi</w>
+                  <pc join="right" xml:id="xTok_000583">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000584">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000585">doesnt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000586">mean</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000587">that</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000588">they</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000589">were</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000590">servants</w>
+                  <pc xml:id="xTok_000591">,</pc>
+                  <pc join="right" xml:id="xTok_000592">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000593">they</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000594">were</w>
+                  <pc xml:id="xTok_000595">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000596">fidāwi</w>
+                  <pc xml:id="xTok_000597">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000598">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000599">maʕna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000600">fidāwi</w>
+                  <pc xml:id="xTok_000601">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000602">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000603">raʔīs</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000604">ḥimāya</w>
+                  <pc join="right" xml:id="xTok_000605">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000606">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000607">head</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000608">of</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000609">protection</w>
+                  <pc xml:id="xTok_000610">)</pc>
+                  <pc xml:id="xTok_000611">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000612"
+                     rend="withDash">tisullu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000614">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000615">ṣultāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000616"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000618"
+                     join="right">ʔistišāra</w>
+                  <pc xml:id="xTok_000619">.</pc>
+                  <pc join="right" xml:id="xTok_000620">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000621">they</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000622">received</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000623">all</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000624">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000625">directions</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000626">of</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000627">advise</w>
+                  <pc xml:id="xTok_000628">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000629">kānu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000630">yiǧlisūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000631">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000632">maǧālis</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000633"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000635"
+                     join="right">ṣibāḥ</w>
+                  <pc xml:id="xTok_000636">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000637">kā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000638">mustašārīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000639"
+                     rend="withDash">lu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000641"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000642">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000643">kā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000644">ḥimāya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000645">luhum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000646">fidāwi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000647"
+                     rend="withDash">ysammūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000649">ha</w>
+                  <pc join="right" xml:id="xTok_000650">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000651">as</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000652">advisors</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000653">to</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000654">them</w>
+                  <pc xml:id="xTok_000655">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000656">as</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000657">protection</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000658">to</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000659">them</w>
+                  <pc xml:id="xTok_000660">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000661">thex</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000662">were</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000663">called</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000664"
+                     rend="withDash">fidāwi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000666"
+                     join="right">s</w>
+                  <pc xml:id="xTok_000667">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a18"
+                  who="#A_Transcription-txt"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000668">fdāwi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000669">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000670">ʔana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000671"
+                     rend="withDash">yal</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000673">ʔamīr</w>
+                  <pc join="right" xml:id="xTok_000674">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000675">ayyuha</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000676"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000678">amīr</w>
+                  <pc xml:id="xTok_000679">)</pc>
+                  <pc xml:id="xTok_000680">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000681">lā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000682">ǧibt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000683">maṯalan</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000684">awlād</w>
+                  <pc xml:id="xTok_000685">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000686">aṯak</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000687">fi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000688">awlādi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000689">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000690">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000691">hāḏa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000692"
+                     rend="withDash">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000694"
+                     rend="withDash">š</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000696">šaxṣ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000697"
+                     rend="withDash">irabbī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000699">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000700">tarbiya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000701">ṣālḥa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a29"
+                  who="#D_Transcription-txt"
+                  end="#T129"
+                  start="#T128">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000702">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000703">zayy</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000704">maʕūnīn</w>
+                  <pc join="right" xml:id="xTok_000705">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000706"
+                     join="right">helpers</w>
+                  <pc xml:id="xTok_000707">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000708">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a19"
+                  who="#A_Transcription-txt"
+                  end="#T63"
+                  start="#T62">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000709">muʕāwinīn</w>
+                  <pc xml:id="xTok_000710">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000711">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000712"
+                     rend="withDash">nsammī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000714">hum</w>
+                  <pc join="right" xml:id="xTok_000715">.</pc>
+                  <pc xml:id="xTok_000716">.</pc>
+                  <pc xml:id="xTok_000717">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a25"
+                  who="#B_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000718">isim</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000719"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000721"
+                     join="right">ʕawana</w>
+                  <pc xml:id="xTok_000722">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000723"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000725"
+                     rend="withDash">iḏ̣</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000727">ḏ̣abṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a20"
+                  who="#A_Transcription-txt"
+                  end="#T65"
+                  start="#T64">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000728"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000730"
+                     join="right">ʕawana</w>
+                  <pc xml:id="xTok_000731">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000732">ī</w>
+                  <pc xml:id="xTok_000733">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000734"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000736">ʕawana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000737">hiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000738">qabīla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000739">kbīra</w>
+                  <pc xml:id="xTok_000740">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000741"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000743"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000745">suʕūdiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000746">u</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000747"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000749"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000751">kweyt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a27"
+                  who="#C_Transcription-txt"
+                  end="#T139"
+                  start="#T138">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000752">hāḏi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000753"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000755">manṭaga</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000756">illi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000757">inti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000758">saknayt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000759"
+                     rend="withDash">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000761">ha</w>
+                  <pc join="right" xml:id="xTok_000762">.</pc>
+                  <pc xml:id="xTok_000763">.</pc>
+                  <pc xml:id="xTok_000764">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a21"
+                  who="#A_Transcription-txt"
+                  end="#T67"
+                  start="#T66">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000765"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000767">ṣabāḥiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a28"
+                  who="#C_Transcription-txt"
+                  end="#T141"
+                  start="#T140">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000768">ay</w>
+                  <pc xml:id="xTok_000769">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000770">akṯar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000771">šī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000772"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000774">rašāyda</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000775">walla</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000776">maxtallṭa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000777">walla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000778">kēf</w>
+                  <pc xml:id="xTok_000779">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a22"
+                  who="#A_Transcription-txt"
+                  end="#T69"
+                  start="#T68">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000780">laʔ</w>
+                  <pc xml:id="xTok_000781">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000782"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000784">aġlabiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000785"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000787">ʕawāzim</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000788">ihni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a23"
+                  who="#A_Transcription-txt"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000789">ʕawāzim</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000790"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000792">yuqārib</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000793">ikṯar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000794">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000795">sitt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000796">alāf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000797">šaxṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000798">liʔanna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000799">titbit</w>
+                  <pc join="right" xml:id="xTok_000800">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000801">proves</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000802">itbāt</w>
+                  <pc xml:id="xTok_000803">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000804"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000806"
+                     join="right">ʔintixābāt</w>
+                  <pc xml:id="xTok_000807">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000808">ʕadad</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000809"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000811">qabāyil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000812">ihni</w>
+                  <pc xml:id="xTok_000813">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000814"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000816">ūla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000817"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000819"
+                     join="right">ʕawāzim</w>
+                  <pc xml:id="xTok_000820">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000821"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000823">ṯānya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000824"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000826"
+                     join="right">ʕiǧmān</w>
+                  <pc xml:id="xTok_000827">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000828"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000830">ṯāliṯa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000831"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000833">maṭrān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a26"
+                  who="#B_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000834">aḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000835">wāḥid</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000836"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000838"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000840">ʔimya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000841">hni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a24"
+                  who="#A_Transcription-txt"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000842">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000843">laʔ</w>
+                  <pc xml:id="xTok_000844">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000845"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000847">rašāyda</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000848">hni</w>
+                  <pc xml:id="xTok_000849">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000850">tʕiddīnhum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000851">ʕala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000852"
+                     rend="withDash">asāʔbi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000854">č</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000855">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000856">rāšāyda</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000857">you</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000858">can</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000859">count</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000860">them</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000861">on</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000862">your</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000863">finger</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000864">tips</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a32"
+                  who="#B_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000865">aḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000866">makān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000867"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000869">takāṯur</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000870"
+                     rend="withDash">taʕb</w>
+                  <pc join="right" xml:id="xTok_000872">.</pc>
+                  <pc xml:id="xTok_000873">.</pc>
+                  <pc xml:id="xTok_000874">.</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000875">mālna</w>
+                  <pc join="right" xml:id="xTok_000876">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000877"
+                     join="right">ours</w>
+                  <pc xml:id="xTok_000878">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000879"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000881">farwānīya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a30"
+                  who="#A_Transcription-txt"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000882">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000883"
+                     rend="withDash">maqar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000885">na</w>
+                  <pc join="right" xml:id="xTok_000886">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000887"
+                     join="right">headquarters</w>
+                  <pc xml:id="xTok_000888">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000889"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000891">manṭaqa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000892"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000894">ṛabaʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a33"
+                  who="#B_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000895"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000897">manṭaqa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000898"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000900">ṛabaʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000901"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000903"
+                     join="right">farwānīya</w>
+                  <pc xml:id="xTok_000904">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000905"
+                     rend="withDash">iš</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000907"
+                     join="right">šbīlya</w>
+                  <pc xml:id="xTok_000908">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000909"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000911"
+                     join="right">rihāb</w>
+                  <pc xml:id="xTok_000912">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000913"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000915"
+                     join="right">ʔandalus</w>
+                  <pc xml:id="xTok_000916">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000917">hā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000918">manāṭiq</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000919"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000921">rašāyda</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000922"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000924"
+                     join="right">asāsīya</w>
+                  <pc xml:id="xTok_000925">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000926">aḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000927"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000929">beyt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000930">taqrīban</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000931"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000933">waḥīdi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000934"
+                     rend="withDash">ir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000936">rašīdi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000937">hina</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a31"
+                  who="#A_Transcription-txt"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000938">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000939">qalīla</w>
+                  <pc xml:id="xTok_000940">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000941">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000942">duxalāʔ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000943"
+                     rend="withDash">aṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000945">ṣabāḥīya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000946">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000947"
+                     rend="withDash">mil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000949">asās</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000950">kinna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000951">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000952">mangaf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a34"
+                  who="#A_Transcription-txt"
+                  end="#T79"
+                  start="#T78">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000953"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000955">mangaf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000956">ǧamb</w>
+                  <pc join="right" xml:id="xTok_000957">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000958"
+                     join="right">ǧanb</w>
+                  <pc xml:id="xTok_000959">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000960"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000962">ṣabāḥīya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000963">yafsil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000964">bēnhum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000965"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000967">ǧisir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000968">faqaṭ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000969">what</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000970">separates</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000971">them</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000972">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000973">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000974">bridge</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000975">only</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a47"
+                  who="#B_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000976">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000977">hāḏa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000978">mū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000979">manṭaqat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000980"
+                     rend="withDash">asās</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000982"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000983">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000984">aḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000985">faqaṭ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000986"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000988">beyt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000989"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000991">waḥīdi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000992">hni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a35"
+                  who="#A_Transcription-txt"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000993">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_000994"
+                     rend="withDash">ǧidd</w>
+                  <pc join="right" xml:id="xTok_000996">.</pc>
+                  <pc join="right" xml:id="xTok_000997">.</pc>
+                  <pc xml:id="xTok_000998">.</pc>
+                  <pc xml:id="xTok_000999">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001000">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001001"
+                     rend="withDash">ǧiddān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001003">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001004"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001006">yirǧiʕūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001007"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001009"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001011"
+                     join="right">bidāwa</w>
+                  <pc xml:id="xTok_001012">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001013">aḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001014"
+                     rend="withDash">ǧiddām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001016">na</w>
+                  <pc join="right" xml:id="xTok_001017">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001018"
+                     join="right">ǧiddāna</w>
+                  <pc xml:id="xTok_001019">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001020">ahl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001021"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001023">baḥar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a48"
+                  who="#B_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001024">aḥl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001025"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001027">baḥar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001028">ay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a36"
+                  who="#A_Transcription-txt"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001029">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001030">ʔašān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001031">čiḏi</w>
+                  <pc join="right" xml:id="xTok_001032">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001033"
+                     join="right">Kiḏa</w>
+                  <pc xml:id="xTok_001034">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001035">lākinna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001036"
+                     rend="withDash">f</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001038">hā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001039"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001041"
+                     join="right">manṭaqa</w>
+                  <pc xml:id="xTok_001042">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001043">ṣōb</w>
+                  <pc join="right" xml:id="xTok_001044">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001045">in</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001046">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001047">direction</w>
+                  <pc xml:id="xTok_001048">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001049"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001051"
+                     join="right">baḥar</w>
+                  <pc xml:id="xTok_001052">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001053">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001054"
+                     rend="withDash">ahal</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001056">na</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001057"
+                     rend="withDash">taʔsīs</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001059">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001060">būxlēfa</w>
+                  <pc join="right" xml:id="xTok_001061">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001062">an</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001063">area</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001064">called</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001065">būxlēfa</w>
+                  <pc xml:id="xTok_001066">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001067"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001069">mangaf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a37"
+                  who="#A_Transcription-txt"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001070">ē</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001071"
+                     rend="withDash">ǧidd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001073">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001074">kawwās</w>
+                  <pc xml:id="xTok_001075">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001076"
+                     rend="withDash">ubū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001078">y</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001079">kawwās</w>
+                  <pc xml:id="xTok_001080">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001081"
+                     rend="withDash">ǧidd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001083">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001084"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001086">kbīr</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001087">nowʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001088">hāḏa</w>
+                  <pc xml:id="xTok_001089">#</pc>
+                  <pc join="right" xml:id="xTok_001090">(</pc>
+                  <pc join="right" xml:id="xTok_001091">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001092">check</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001093">with</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001094">stephan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001096">nowʕhaḏa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001097">could</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001098">be</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001099">an</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001100">area</w>
+                  <pc xml:id="xTok_001101">)</pc>
+                  <pc xml:id="xTok_001102">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a38"
+                  who="#A_Transcription-txt"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001103">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001104">iḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001105"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001107">kinna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001108"
+                     rend="withDash">mn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001110"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_001112">.</pc>
+                  <pc xml:id="xTok_001113">.</pc>
+                  <pc xml:id="xTok_001114">.</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001115"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001117">ṣaḥra</w>
+                  <pc join="right" xml:id="xTok_001118">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001119"
+                     join="right">ṣaḥrāʔ</w>
+                  <pc xml:id="xTok_001120">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001121">ǧāyin</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001122">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001123"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001125"
+                     join="right">baṛṛ</w>
+                  <pc xml:id="xTok_001126">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001127">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001128">ruʕa</w>
+                  <pc join="right" xml:id="xTok_001129">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001130"
+                     join="right">grazing</w>
+                  <pc xml:id="xTok_001131">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001132">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001133">ġanam</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001134">u</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001135">čiḏi</w>
+                  <pc xml:id="xTok_001136">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001137">laʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a49"
+                  who="#B_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001138"
+                     rend="withDash">m</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001140"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001142">baḥar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a39"
+                  who="#A_Transcription-txt"
+                  end="#T89"
+                  start="#T88">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001143">ay</w>
+                  <pc xml:id="xTok_001144">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001145">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001146">nuwāxida</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a40"
+                  who="#A_Transcription-txt"
+                  end="#T91"
+                  start="#T90">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001147">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001148">nuwāxida</w>
+                  <pc join="right" xml:id="xTok_001149">(</pc>
+                  <pc join="right" xml:id="xTok_001150">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001151">this</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001152">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001153">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001154">plural</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001155">of</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001156">nowxida</w>
+                  <pc xml:id="xTok_001157">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001158">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001159">ʔašān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001160">čiḏi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001161">kān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001162">kill</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001163"
+                     rend="withDash">tawāǧid</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001165">na</w>
+                  <pc join="right" xml:id="xTok_001166">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001167">our</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001168">presence</w>
+                  <pc xml:id="xTok_001169">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001170"
+                     rend="withDash">aṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001172">ṣāhil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a41"
+                  who="#A_Transcription-txt"
+                  end="#T93"
+                  start="#T92">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001173">ʔana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001174"
+                     rend="withDash">ǧidd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001176">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001177">fixiḏ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001178">nowxida</w>
+                  <pc xml:id="xTok_001179">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001180">uhū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001181">barrāk</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001182">imǧaddami</w>
+                  <pc join="right" xml:id="xTok_001183">(</pc>
+                  <pc join="right" xml:id="xTok_001184">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001185">name</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001187">blur</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001188">out</w>
+                  <pc xml:id="xTok_001189">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a42"
+                  who="#A_Transcription-txt"
+                  end="#T95"
+                  start="#T94">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001190">ē</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001191"
+                     rend="withDash">ǧadd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001193">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001194">Mbārik</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001195">kān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001196"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001198">a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001199">būm</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001200">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001201">yadxala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001202"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001204">ġoṣṣ</w>
+                  <pc join="right" xml:id="xTok_001206">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001207"
+                     join="right">pearl</w>
+                  <pc xml:id="xTok_001208">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001209">diving</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a50"
+                  who="#B_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001210">safīna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001211">kibīra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a43"
+                  who="#A_Transcription-txt"
+                  end="#T97"
+                  start="#T96">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001212">ay</w>
+                  <pc xml:id="xTok_001213">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001214">ay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a51"
+                  who="#B_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001215">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001216">uhū</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001217"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001219">fixḏ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001220"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001222"
+                     join="right">ʕawana</w>
+                  <pc xml:id="xTok_001223">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001224">uhū</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001225"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001227">fixḏ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001228"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001230">badu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001231">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001232">ǧāyīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001233">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001234"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001236">baḥar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a54"
+                  who="#C_Transcription-txt"
+                  end="#T143"
+                  start="#T142">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001237">mā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001238"
+                     rend="withDash">ʕil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001240">kum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001241">ʕilāqa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001242"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001244"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_001246">.</pc>
+                  <pc xml:id="xTok_001247">.</pc>
+                  <pc xml:id="xTok_001248">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a52"
+                  who="#B_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001249"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001251"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001253">baṛṛ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a44"
+                  who="#A_Transcription-txt"
+                  end="#T99"
+                  start="#T98">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001254">la</w>
+                  <pc xml:id="xTok_001255">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001256">la</w>
+                  <pc xml:id="xTok_001257">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001258">laʔ</w>
+                  <pc xml:id="xTok_001259">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001260">iḥna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001261">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001262">gabal</w>
+                  <pc xml:id="xTok_001263">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001264"
+                     rend="withDash">ǧiddān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001266">na</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001267">baḥḥāra</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001268">xallaṣaw</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001269"
+                     rend="withDash">mn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001271"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001273"
+                     join="right">baḥar</w>
+                  <pc xml:id="xTok_001274">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001275">ftaǧhaw</w>
+                  <pc join="right" xml:id="xTok_001276">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001277">fā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001278">ittaǧahu</w>
+                  <pc xml:id="xTok_001279">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001280"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001282"
+                     rend="withDash">iz</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001284">zirāʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a53"
+                  who="#B_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001285">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001286">mazraʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a45"
+                  who="#A_Transcription-txt"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001287">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001288">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001289"
+                     rend="withDash">abū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001291">y</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a46"
+                  who="#A_Transcription-txt"
+                  end="#T103"
+                  start="#T102">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001292">akbar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001293">zarūʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001294">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001295">manṭaqa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001296"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001298">ʕašra</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001299">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001300">kān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001301">maʕrūf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a73"
+                  who="#C_Transcription-txt"
+                  end="#T145"
+                  start="#T144">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001302">u</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001303"
+                     rend="withDash">š</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001305">inu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001306">yizraʕūn</w>
+                  <pc xml:id="xTok_001307">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a55"
+                  who="#A_Transcription-txt"
+                  end="#T105"
+                  start="#T104">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001308">yizriʕūn</w>
+                  <pc xml:id="xTok_001309">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001310">mašaḷḷa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001311">arāḏ</w>
+                  <pc join="right" xml:id="xTok_001312">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001313"
+                     join="right">land</w>
+                  <pc xml:id="xTok_001314">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001315"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001317">mingaf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001318">kānat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001319"
+                     rend="withDash">kill</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001321">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001322">zirāʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001323">abūxlēfa</w>
+                  <pc xml:id="xTok_001324">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001325">yizriʕūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001326"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001328">warāqīyāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001329"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001331"
+                     rend="withDash">aškāl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001333">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001334">u</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001335"
+                     rend="withDash">anwāʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001337">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a56"
+                  who="#A_Transcription-txt"
+                  end="#T107"
+                  start="#T106">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001338">ī</w>
+                  <pc xml:id="xTok_001339">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001340"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001342"
+                     join="right">bagal</w>
+                  <pc xml:id="xTok_001343">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001344">arwād</w>
+                  <pc xml:id="xTok_001345">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001346"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001348"
+                     join="right">kuzbur</w>
+                  <pc xml:id="xTok_001349">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001350">bagdūnis</w>
+                  <pc xml:id="xTok_001351">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001352"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001354">fiǧil</w>
+                  <pc join="right" xml:id="xTok_001355">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001356"
+                     join="right">radish</w>
+                  <pc xml:id="xTok_001357">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a57"
+                  who="#A_Transcription-txt"
+                  end="#T109"
+                  start="#T108">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001358">kill</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001359">anwāʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001360"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001362"
+                     join="right">waraqīyāt</w>
+                  <pc xml:id="xTok_001363">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001364"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001366"
+                     rend="withDash">anwāʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001368">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a74"
+                  who="#C_Transcription-txt"
+                  end="#T147"
+                  start="#T146">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001369"
+                     rend="withDash">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001371">šinu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001372"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001374"
+                     join="right">bagal</w>
+                  <pc xml:id="xTok_001375">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a58"
+                  who="#A_Transcription-txt"
+                  end="#T111"
+                  start="#T110">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001376"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001378">kurrāṯ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a59"
+                  who="#A_Transcription-txt"
+                  end="#T113"
+                  start="#T112">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001379">kurrāṯ</w>
+                  <pc xml:id="xTok_001380">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001381">maḏkūr</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001382">fī</w>
+                  <pc xml:id="xTok_001383">#</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001384"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001386">qurʔān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001387"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001389">karīm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a67"
+                  who="#B_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001390">la</w>
+                  <pc xml:id="xTok_001391">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001392">la</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001393">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001394">fāḥma</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001395"
+                     rend="withDash">š</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001397">inu</w>
+                  <pc join="right" xml:id="xTok_001398">#</pc>
+                  <pc xml:id="xTok_001399">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001400"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001402">bagil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001403"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001405"
+                     join="right">abyaḏ̣</w>
+                  <pc xml:id="xTok_001406">,</pc>
+                  <pc xml:id="xTok_001407">#</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001408">rāyḥa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001409"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001411">ʔurdun</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001412">ṣaḥḥ</w>
+                  <pc xml:id="xTok_001413">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001414">aw</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001415">rāyḥa</w>
+                  <pc join="right" xml:id="xTok_001416">.</pc>
+                  <pc xml:id="xTok_001417">.</pc>
+                  <pc xml:id="xTok_001418">.</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001419"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001421"
+                     join="right">suʕūdīya</w>
+                  <pc xml:id="xTok_001422">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001423">ay</w>
+                  <pc xml:id="xTok_001424">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001425">aḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001426"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001428">bagil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001429">ʕandina</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001430">isma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001431">ṯāni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a60"
+                  who="#A_Transcription-txt"
+                  end="#T115"
+                  start="#T114">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001432">lā</w>
+                  <pc xml:id="xTok_001433">#</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001434"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001436">kurrāṯ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a68"
+                  who="#B_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001437"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001439">bagil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001440">ʕindana</w>
+                  <pc xml:id="xTok_001441">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001442">ahūwa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001443">nōʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001444">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001445">anwāʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001446">leaves</w>
+                  <pc xml:id="xTok_001447">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001448">we</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001449">eat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001450">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001451">with</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001452">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001453">food</w>
+                  <pc xml:id="xTok_001454">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001455">it</w>
+                  <pc join="right" xml:id="xTok_001456">'</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001457">s</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001458">just</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001459">green</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001460">things</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a61"
+                  who="#A_Transcription-txt"
+                  end="#T117"
+                  start="#T116">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001461"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001463"
+                     join="right">bagil</w>
+                  <pc xml:id="xTok_001464">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001465">aḥna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001466"
+                     rend="withDash">nsammi</w>
+                  <pc join="right" xml:id="xTok_001468">_</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001469">́</w>
+                  <pc join="right" xml:id="xTok_001470">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001472"
+                     join="right">h</w>
+                  <pc xml:id="xTok_001473">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001474">ʕigid</w>
+                  <pc xml:id="xTok_001475">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001476">illi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001477">hūwa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001478"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001480">ḥalīb</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001481"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001483">muǧaffaf</w>
+                  <pc join="right" xml:id="xTok_001484">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001485">curdled</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001486">milk</w>
+                  <pc xml:id="xTok_001487">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a69"
+                  who="#B_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001488">ʕigid</w>
+                  <pc xml:id="xTok_001489">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001490">ʕigid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a62"
+                  who="#A_Transcription-txt"
+                  end="#T119"
+                  start="#T118">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001491"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001493">ʕigid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a70"
+                  who="#B_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001494">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001495">ʕarafti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001496">lamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001497">gilt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001498"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001500">bagal</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001501">gilt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001502">ʔakīd</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001503">rāyḥa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001504"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001506"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_001508">.</pc>
+                  <pc xml:id="xTok_001509">.</pc>
+                  <pc xml:id="xTok_001510">.</pc>
+                  <pc join="right" xml:id="xTok_001511">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001512">when</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001513">I</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001514">said</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001515">bagal</w>
+                  <pc xml:id="xTok_001516">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001517">I</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001518">said</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001519">for</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001520">sure</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001521">you</w>
+                  <pc join="right" xml:id="xTok_001522">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001523"
+                     join="right">Gunda</w>
+                  <pc xml:id="xTok_001524">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001525">are</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001526">going</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001527">to</w>
+                  <pc join="right" xml:id="xTok_001528">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001529">another</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001530">point</w>
+                  <pc xml:id="xTok_001531">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a63"
+                  who="#A_Transcription-txt"
+                  end="#T121"
+                  start="#T120">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001532"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001534">bagil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001535">ahūwa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001536"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_001538">.</pc>
+                  <pc xml:id="xTok_001539">.</pc>
+                  <pc xml:id="xTok_001540">.</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001541"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001543">luġa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001544"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001546">ʕarabīya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001547"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001549"
+                     join="right">kurrāṯ</w>
+                  <pc xml:id="xTok_001550">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001551">luġat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001552"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001554"
+                     join="right">qurʔan</w>
+                  <pc xml:id="xTok_001555">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001556">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001557">ġitāʔiha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001558">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001559">baṭliha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001560">u</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001561">kurrāṯ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a71"
+                  who="#B_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001562">kurrāṯ</w>
+                  <pc xml:id="xTok_001563">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001564">ay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a64"
+                  who="#A_Transcription-txt"
+                  end="#T123"
+                  start="#T122">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001565">fā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001566"
+                     rend="withDash">iz</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001568">zirāʕa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001569">kānat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001570">ʕala</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001571">madār</w>
+                  <pc join="right" xml:id="xTok_001572">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001573"
+                     join="right">circumference</w>
+                  <pc xml:id="xTok_001574">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001575">abū</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001576">xlēfa</w>
+                  <pc xml:id="xTok_001577">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001578"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001580">filṭāṣ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001581"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001583"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001585">ʔgēla</w>
+                  <pc join="right" xml:id="xTok_001586">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001587">until</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001588">ʔgēla</w>
+                  <pc xml:id="xTok_001589">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001590">hāḏi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001591">kānit</w>
+                  <pc join="right" xml:id="xTok_001592">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001593"
+                     join="right">kānt</w>
+                  <pc xml:id="xTok_001594">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001595"
+                     rend="withDash">kill</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001597">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001598">manāṭiq</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001599">zirāʕīya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a72"
+                  who="#B_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001600">mangaf</w>
+                  <pc xml:id="xTok_001601">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001602">ay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a75"
+                  who="#C_Transcription-txt"
+                  end="#T149"
+                  start="#T148">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001603">maʕnat</w>
+                  <pc xml:id="xTok_001604">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001605">inti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001606">kbīrti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001607"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001609"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001611"
+                     join="right">mazraʕa</w>
+                  <pc xml:id="xTok_001612">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a65"
+                  who="#A_Transcription-txt"
+                  end="#T125"
+                  start="#T124">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001613">naʕam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a76"
+                  who="#C_Transcription-txt"
+                  end="#T151"
+                  start="#T150">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001614"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001616"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001618"
+                     join="right">mingaf</w>
+                  <pc xml:id="xTok_001619">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_a66"
+                  who="#A_Transcription-txt"
+                  end="#T127"
+                  start="#T126">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_1_xTok_001620">naʕam</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

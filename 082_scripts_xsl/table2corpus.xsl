@@ -241,7 +241,14 @@
                         <recordingStmt>
                             <!-- TODO parse duration and date -->
                             <recording dur-iso="{tei:cell[$cn('Recordings')('Length')]}" type="audio">
-                                <date when="{_:excelSerialToISO( tei:cell[$cn('Recordings')('Date')])}"/>
+                                <xsl:choose>
+                                    <xsl:when test="tei:cell[$cn('Recordings')('Date')] != ''">
+                                        <date when="{_:excelSerialToISO( tei:cell[$cn('Recordings')('Date')])}"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:comment>recording date unknown</xsl:comment>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                                 <respStmt>
                                     <resp>recording</resp>
                                     <persName ref="{$teiCorpusPrefix}:{$recordingPersonID}"><xsl:value-of select="$recordingPerson"/></persName>
