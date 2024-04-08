@@ -33,6 +33,9 @@
 </xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
+   <xsl:template match="text()" priority="1">
+      <xsl:value-of select="normalize-unicode(., 'NFD')"/>
+   </xsl:template>
    <xsl:template match="node() | @*">
       <xsl:copy>
          <xsl:apply-templates select="node() | @*"/>
