@@ -1,0 +1,3201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-04-08T10:55:27.973314Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">MOR_Zaer_AinAouda_women_2024</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">MOR_Zaer_AinAouda_women_2024</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="19:37" type="audio">
+                  <date when="2022-02-10"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:TD">Terlan Djavadova</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:MOR_2022_TD">Morocco Fieldwork Campaign Terlan Djavadova 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in MOR_Zaer_AinAouda_women_2024</head>
+               <person sameAs="corpus:MOR_Zaer_AA_F.50">
+                  <name type="pseudonym">MOR_Zaer_AA_F.50</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:TribalTraditions"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="30075" since="#T0" xml:id="T1"/>
+         <when interval="34119" since="#T0" xml:id="T2"/>
+         <when interval="43751" since="#T0" xml:id="T3"/>
+         <when interval="51502" since="#T0" xml:id="T4"/>
+         <when interval="76148" since="#T0" xml:id="T5"/>
+         <when interval="93500" since="#T0" xml:id="T6"/>
+         <when interval="100538" since="#T0" xml:id="T7"/>
+         <when interval="108404" since="#T0" xml:id="T8"/>
+         <when interval="114357" since="#T0" xml:id="T9"/>
+         <when interval="141801" since="#T0" xml:id="T10"/>
+         <when interval="160848" since="#T0" xml:id="T11"/>
+         <when interval="184607" since="#T0" xml:id="T12"/>
+         <when interval="195276" since="#T0" xml:id="T13"/>
+         <when interval="202214" since="#T0" xml:id="T14"/>
+         <when interval="208591" since="#T0" xml:id="T15"/>
+         <when interval="214236" since="#T0" xml:id="T16"/>
+         <when interval="222521" since="#T0" xml:id="T17"/>
+         <when interval="233167" since="#T0" xml:id="T18"/>
+         <when interval="239119" since="#T0" xml:id="T19"/>
+         <when interval="245404" since="#T0" xml:id="T20"/>
+         <when interval="253020" since="#T0" xml:id="T21"/>
+         <when interval="255676" since="#T0" xml:id="T22"/>
+         <when interval="258571" since="#T0" xml:id="T23"/>
+         <when interval="267542" since="#T0" xml:id="T24"/>
+         <when interval="274257" since="#T0" xml:id="T25"/>
+         <when interval="309685" since="#T0" xml:id="T26"/>
+         <when interval="323958" since="#T0" xml:id="T27"/>
+         <when interval="328100" since="#T0" xml:id="T28"/>
+         <when interval="341700" since="#T0" xml:id="T29"/>
+         <when interval="362280" since="#T0" xml:id="T30"/>
+         <when interval="377471" since="#T0" xml:id="T31"/>
+         <when interval="416402" since="#T0" xml:id="T32"/>
+         <when interval="434838" since="#T0" xml:id="T33"/>
+         <when interval="468405" since="#T0" xml:id="T34"/>
+         <when interval="478620" since="#T0" xml:id="T35"/>
+         <when interval="510177" since="#T0" xml:id="T36"/>
+         <when interval="554169" since="#T0" xml:id="T37"/>
+         <when interval="574740" since="#T0" xml:id="T38"/>
+         <when interval="618199" since="#T0" xml:id="T39"/>
+         <when interval="641167" since="#T0" xml:id="T40"/>
+         <when interval="676337" since="#T0" xml:id="T41"/>
+         <when interval="685400" since="#T0" xml:id="T42"/>
+         <when interval="720473" since="#T0" xml:id="T43"/>
+         <when interval="813024" since="#T0" xml:id="T44"/>
+         <when interval="846662" since="#T0" xml:id="T45"/>
+         <when interval="856153" since="#T0" xml:id="T46"/>
+         <when interval="868615" since="#T0" xml:id="T47"/>
+         <when interval="906000" since="#T0" xml:id="T48"/>
+         <when interval="928216" since="#T0" xml:id="T49"/>
+         <when interval="939827" since="#T0" xml:id="T50"/>
+         <when interval="950257" since="#T0" xml:id="T51"/>
+         <when interval="1040477" since="#T0" xml:id="T52"/>
+         <when interval="1073738" since="#T0" xml:id="T53"/>
+         <when interval="1114000" since="#T0" xml:id="T54"/>
+         <when interval="1143273" since="#T0" xml:id="T55"/>
+         <when interval="1146591" since="#T0" xml:id="T56"/>
+         <when interval="1158348" since="#T0" xml:id="T57"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T57</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a4"
+                  who="#A_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000001">Wlad</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000002">Gdir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a6"
+                  who="#A_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000003">kull</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000004">had</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000005"
+                     rend="withDash">dyal</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000007" join="right">i</w>
+                  <pc xml:id="xTok_000008">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000009">ziyada</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000010"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000012">xluq</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000013">ana</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000014"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000016"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000018">walid</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000019"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000021"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000023" join="right">walida</w>
+                  <pc xml:id="xTok_000024">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000025"
+                     rend="withDash">kull</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000027">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000028">zaydin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000029">hna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000030"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000032"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000034">ʕăyn</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000035">ʕăwda</w>
+                  <pc xml:id="xTok_000036">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000037">aždad</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000038">dyal</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000039">ʕăyn</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000040">ʕăwda</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a10"
+                  who="#A_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000041">kŭnna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000042">ʕayšin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000043">ʕla</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000044">qădd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000045"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000047" join="right">ḥal</w>
+                  <pc xml:id="xTok_000048">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000049"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000051"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000053">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000054"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000056">na</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000057"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000059" join="right">flus</w>
+                  <pc xml:id="xTok_000060">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000061">kŭnna</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000062">fŭqara</w>
+                  <pc xml:id="xTok_000063">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000064">kant</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000065"
+                     rend="withDash">ṃṃʷ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000067">i</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000068"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000070">ṭṭḥăn</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000071"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000073"
+                     rend="withDash">əṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000075" join="right">ṛḥa</w>
+                  <pc xml:id="xTok_000076">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000077"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000079"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000081">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000082"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000084" join="right">ṭaḥuna</w>
+                  <pc xml:id="xTok_000085">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000086"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000088">ṭṭḥăn</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000089"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000091" join="right">ṭḥin</w>
+                  <pc xml:id="xTok_000092">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a12"
+                  who="#A_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000093">kant</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000094">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000095"
+                     rend="withDash">b</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000097">əl</w>
+                  <pc join="right" xml:id="xTok_000098">.</pc>
+                  <pc xml:id="xTok_000099">.</pc>
+                  <pc xml:id="xTok_000100">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000101">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000102"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000104"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000106" join="right">ʕud</w>
+                  <pc xml:id="xTok_000107">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000108"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000110"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000112">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000113"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000115">a</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000116">hŭk</w>
+                  <pc xml:id="xTok_000117">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000118">nṭăḥnu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000119"
+                     rend="withDash">bi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000121">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000122"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000124"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000126">yxrŭž</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000127"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000129">ṭḥin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000130">baš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000131">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000132"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000134" join="right">xŭbz</w>
+                  <pc xml:id="xTok_000135">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a13"
+                  who="#A_Transcription-txt"
+                  end="#T9"
+                  start="#T8">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000136">kan</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000137"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000139">na</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000140">fəṛṛan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000141">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000142"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000144" join="right">ṭin</w>
+                  <pc xml:id="xTok_000145">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000146">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000147"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000149" join="right">ṭṛăḅ</w>
+                  <pc xml:id="xTok_000150">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000151"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000153">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000154"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000156">ṭṛăḅ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000157"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000159"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000161">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000162"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000164" join="right">ʕwad</w>
+                  <pc xml:id="xTok_000165">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a14"
+                  who="#A_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000166"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000168">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000169"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000171">ʕwad</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000172">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000173">had</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000174"
+                     rend="withDash">ž</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000176">žih</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000177"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000179"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000181">xŭbz</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000182">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000183">had</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000184"
+                     rend="withDash">ž</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000186" join="right">žih</w>
+                  <pc xml:id="xTok_000187">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000188"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000190"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000192">yṭib</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000193"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000195"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000197">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000198">hada</w>
+                  <pc join="right" xml:id="xTok_000199">.</pc>
+                  <pc xml:id="xTok_000200">.</pc>
+                  <pc xml:id="xTok_000201">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000202"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000204"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000206">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000207">waḥəd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000208"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000210">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000211"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000213">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000214"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000216" join="right">ḅăṭḅuṭ</w>
+                  <pc xml:id="xTok_000217">.</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000218">msəmmən</w>
+                  <pc xml:id="xTok_000219">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000220"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000222">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000223"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000225" join="right">ṭʕam</w>
+                  <pc xml:id="xTok_000226">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000227"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000229"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000231">š</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000232">kŭskŭs</w>
+                  <pc xml:id="xTok_000233">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000234"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000236"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000238">š</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000239">dyal</w>
+                  <pc xml:id="xTok_000240">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000241">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000242"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000244" join="right">ḥanut</w>
+                  <pc xml:id="xTok_000245">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000246"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000248">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000249"
+                     rend="withDash">b</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000251">id</w>
+                  <pc join="right" xml:id="xTok_000252">(</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000253">d</w>
+                  <pc join="right" xml:id="xTok_000254">)</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000255"
+                     rend="withDash">i</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000257">na</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000258"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000260"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000262" join="right">nṭăyyəbu</w>
+                  <pc xml:id="xTok_000263">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a15"
+                  who="#A_Transcription-txt"
+                  end="#T11"
+                  start="#T10">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000264"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000266">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000267"
+                     rend="withDash">ta</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000269">n</w>
+                  <pc join="right" xml:id="xTok_000270">.</pc>
+                  <pc xml:id="xTok_000271">.</pc>
+                  <pc xml:id="xTok_000272">.</pc>
+                  <pc join="right" xml:id="xTok_000273">[</pc>
+                  <pc join="right" xml:id="xTok_000274">.</pc>
+                  <pc join="right" xml:id="xTok_000275">.</pc>
+                  <pc xml:id="xTok_000276">.</pc>
+                  <pc xml:id="xTok_000277">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000278"
+                     rend="withDash">ma</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000280">kan</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000281"
+                     rend="withDash">ta</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000283">n</w>
+                  <pc join="right" xml:id="xTok_000284">.</pc>
+                  <pc xml:id="xTok_000285">.</pc>
+                  <pc xml:id="xTok_000286">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000287">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000288">ġir</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000289"
+                     rend="withDash">z</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000291">zəbda</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000292"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000294"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000296">ḥlib</w>
+                  <pc join="right" xml:id="xTok_000297">.</pc>
+                  <pc xml:id="xTok_000298">.</pc>
+                  <pc xml:id="xTok_000299">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000300"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000302"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000304">naklu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000305"
+                     rend="withDash">had</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000307" join="right">ši</w>
+                  <pc xml:id="xTok_000308">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000309">lli</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000310">kŭnna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000311">baš</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000312">hayšin</w>
+                  <pc xml:id="xTok_000313">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a23"
+                  who="#A_Transcription-txt"
+                  end="#T13"
+                  start="#T12">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000314">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000315"
+                     rend="withDash">ta</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000317">n</w>
+                  <pc join="right" xml:id="xTok_000318">.</pc>
+                  <pc xml:id="xTok_000319">.</pc>
+                  <pc xml:id="xTok_000320">.</pc>
+                  <pc join="right" xml:id="xTok_000321">[</pc>
+                  <pc join="right" xml:id="xTok_000322">.</pc>
+                  <pc join="right" xml:id="xTok_000323">.</pc>
+                  <pc xml:id="xTok_000324">.</pc>
+                  <pc xml:id="xTok_000325">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000326">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000327"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000329">nʕišu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000330"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000332"
+                     rend="withDash">t</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000334">tabiʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000335">bəzzaf</w>
+                  <pc join="right" xml:id="xTok_000336">[</pc>
+                  <pc join="right" xml:id="xTok_000337">.</pc>
+                  <pc join="right" xml:id="xTok_000338">.</pc>
+                  <pc xml:id="xTok_000339">.</pc>
+                  <pc xml:id="xTok_000340">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000341"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000343" join="right">ʕrubiya</w>
+                  <pc xml:id="xTok_000344">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000345">kŭnna</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000346">xaržin</w>
+                  <pc xml:id="xTok_000347">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000348">ġir</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000349"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000351" join="right">badiya</w>
+                  <pc xml:id="xTok_000352">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a24"
+                  who="#A_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000353">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000354"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000356">nʕišu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000357">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000358"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000360"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000362" join="right">ʕrubiya</w>
+                  <pc xml:id="xTok_000363">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000364"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000366"
+                     rend="withDash">ʕădd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000368"
+                     rend="withDash">na</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000370">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000371"
+                     rend="withDash">əḍ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000373" join="right">ḍăw</w>
+                  <pc xml:id="xTok_000374">,</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000375">hada</w>
+                  <pc xml:id="xTok_000376">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000377"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000379"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000381" join="right">š</w>
+                  <pc xml:id="xTok_000382">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000383">kan</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000384"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000386">na</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000387"
+                     rend="withDash">š</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000389" join="right">šmăʕ</w>
+                  <pc xml:id="xTok_000390">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a27"
+                  who="#A_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000391">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000392"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000394"
+                     rend="withDash">ʕădd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000396"
+                     rend="withDash">na</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000398">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000399"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000401" join="right">gas</w>
+                  <pc xml:id="xTok_000402">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000403">daba</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000404"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000406" join="right">ḅuṭa</w>
+                  <pc xml:id="xTok_000407">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000408">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000409"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000411">nṭăyyəbu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000412">ʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000413">ʕəl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000414"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000416" join="right">ʕwad</w>
+                  <pc xml:id="xTok_000417">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a28"
+                  who="#A_Transcription-txt"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000418">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000419"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000421">nṭăyyəbu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000422"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000424"
+                     rend="withDash">əṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000426">ṭažin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000427">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000428"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000430" join="right">ṭin</w>
+                  <pc xml:id="xTok_000431">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a29"
+                  who="#A_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000432">kan</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000433"
+                     rend="withDash">waḥəd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000435"
+                     rend="withDash">əl</w>
+                  <pc join="right" xml:id="xTok_000437">.</pc>
+                  <pc xml:id="xTok_000438">.</pc>
+                  <pc xml:id="xTok_000439">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000440"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000442">ygulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000443"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000445">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000446"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000448" join="right">ḥăwwaṛ</w>
+                  <pc xml:id="xTok_000449">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000450">huwa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000451">tta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000452">huwa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000453"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000455">ṭin</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000456"
+                     rend="withDash">had</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000458">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000459">baš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000460">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000461"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000463">nṭăyyəbu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000464">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000465"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000467" join="right">ʕwad</w>
+                  <pc xml:id="xTok_000468">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000469"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000471"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000473">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000474"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000476">na</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000477">ḅuṭa</w>
+                  <pc xml:id="xTok_000478">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000479"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000481"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000483">š</w>
+                  <pc join="right" xml:id="xTok_000484">.</pc>
+                  <pc xml:id="xTok_000485">.</pc>
+                  <pc xml:id="xTok_000486">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a30"
+                  who="#A_Transcription-txt"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000487">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000488"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000490">mmšiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000491">ʕla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000492"
+                     rend="withDash">rəžli</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000494" join="right">na</w>
+                  <pc xml:id="xTok_000495">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000496"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000498">nḥaṭbu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000499"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000501">ḥtab</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000502">ʕla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000503"
+                     rend="withDash">ḍhăr</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000505" join="right">na</w>
+                  <pc xml:id="xTok_000506">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000507"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000509" join="right">ʕwad</w>
+                  <pc xml:id="xTok_000510">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a31"
+                  who="#A_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000511">hna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000512"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000514"
+                     rend="withDash">nžibu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000516">hum</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000517">baš</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000518">nšăʕlu</w>
+                  <pc xml:id="xTok_000519">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000520">baš</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000521">naklu</w>
+                  <pc xml:id="xTok_000522">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000523"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000525"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000527">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000528"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000530">na</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000531"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000533" join="right">hwayəž</w>
+                  <pc xml:id="xTok_000534">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a32"
+                  who="#A_Transcription-txt"
+                  end="#T21"
+                  start="#T20">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000535"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000537"
+                     rend="withDash">kanu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000539">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000540"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000542">na</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000543"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000545" join="right">hwayəž</w>
+                  <pc xml:id="xTok_000546">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000547">kanu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000548"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000550"
+                     rend="withDash">yʕṭiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000552">na</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000553"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000555">hwayəž</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000556">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000557"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000559"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000561" join="right">bon</w>
+                  <pc xml:id="xTok_000562">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000563"
+                     rend="withDash">t</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000565">tub</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000566">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000567"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000569"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000571">bun</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000572"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000574"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000576" join="right">nfaṣlu</w>
+                  <pc xml:id="xTok_000577">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a33"
+                  who="#A_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000578">nxăyyəṭu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000579"
+                     rend="withDash">ṛuṣ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000581">na</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000582">baš</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000583">lləbsu</w>
+                  <pc xml:id="xTok_000584">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a34"
+                  who="#A_Transcription-txt"
+                  end="#T23"
+                  start="#T22">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000585"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000587">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000588"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000590">na</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000591">srawəl</w>
+                  <pc xml:id="xTok_000592">,</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000593">hada</w>
+                  <pc xml:id="xTok_000594">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a35"
+                  who="#A_Transcription-txt"
+                  end="#T25"
+                  start="#T24">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000595"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000597">mmšiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000598">ʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000599">ʕla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000600"
+                     rend="withDash">rəžli</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000602" join="right">na</w>
+                  <pc xml:id="xTok_000603">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000604">bġina</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000605">nəmšiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000606"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000608" join="right">Ṛḅaṭ</w>
+                  <pc xml:id="xTok_000609">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000610"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000612">mmšiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000614"
+                     rend="withDash">haša</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000616">k</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000618">ʕla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000619"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000621">bġal</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000622">wəlla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000623"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000625">ḥmaṛ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a38"
+                  who="#A_Transcription-txt"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000626">kifaš</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000627"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000629">yži</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000630"
+                     rend="withDash">ḍ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000632" join="right">ḍăyf</w>
+                  <pc xml:id="xTok_000633">?</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000634"
+                     rend="withDash">dak</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000636">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000637">lli</w>
+                  <pc join="right" xml:id="xTok_000638">.</pc>
+                  <pc xml:id="xTok_000639">.</pc>
+                  <pc xml:id="xTok_000640">.</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000641">lgina</w>
+                  <pc xml:id="xTok_000642">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000643">lli</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000644"
+                     rend="withDash">lga</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000646" join="right">h</w>
+                  <pc xml:id="xTok_000647">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000648"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000650">yaklu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000651"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000653" join="right">na</w>
+                  <pc xml:id="xTok_000654">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000655">yaklu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000656"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000658">na</w>
+                  <pc join="right" xml:id="xTok_000659">.</pc>
+                  <pc xml:id="xTok_000660">.</pc>
+                  <pc xml:id="xTok_000661">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000662">yəqḍăṛ</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000663">ybat</w>
+                  <pc xml:id="xTok_000664">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000665">yəqḍăṛ</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000666">yəbši</w>
+                  <pc xml:id="xTok_000667">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000668">ʕla</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000669">qădd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000670"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000672" join="right">ḥal</w>
+                  <pc xml:id="xTok_000673">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a39"
+                  who="#A_Transcription-txt"
+                  end="#T29"
+                  start="#T28">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000674"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000676">ndəbḥu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000677"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000679">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000680"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000682">bhima</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000683"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000685">yfăṛḥu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000686"
+                     rend="withDash">bi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000688" join="right">h</w>
+                  <pc xml:id="xTok_000689">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000690"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000692"
+                     rend="withDash">kan</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000694">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000695"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000697" join="right">hum</w>
+                  <pc xml:id="xTok_000698">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000699"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000701">ydəbḥu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000702"
+                     rend="withDash">d</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000704">džaž</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000705"
+                     rend="withDash">w</w>
+                  <pc join="right" xml:id="xTok_000707">(</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000708">y</w>
+                  <pc join="right" xml:id="xTok_000709">)</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000710">tʕăššaw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000711"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000713">ybat</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000714"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000716">hum</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000717"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000719"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000721">ṣbaḥ</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000722">yəmši</w>
+                  <pc xml:id="xTok_000723">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a40"
+                  who="#A_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000724">lla</w>
+                  <pc xml:id="xTok_000725">,</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000726">daba</w>
+                  <pc xml:id="xTok_000727">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000728"
+                     rend="withDash">kull</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000730">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000731">wəlla</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000732">zwin</w>
+                  <pc xml:id="xTok_000733">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000734">daba</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000735"
+                     rend="withDash">kull</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000737">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000738">məl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000739"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000741" join="right">ḥanut</w>
+                  <pc xml:id="xTok_000742">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000743"
+                     rend="withDash">kull</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000745">ši</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000746"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000748">na</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000749">mŭwăffăṛ</w>
+                  <pc join="right" xml:id="xTok_000750">[</pc>
+                  <pc join="right" xml:id="xTok_000751">.</pc>
+                  <pc join="right" xml:id="xTok_000752">.</pc>
+                  <pc xml:id="xTok_000753">.</pc>
+                  <pc xml:id="xTok_000754">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000755">zəʕma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000756"
+                     rend="withDash">kull</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000758">ši</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000759"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000761" join="right">na</w>
+                  <pc xml:id="xTok_000762">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000763">bġiti</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000764"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000766">tăbši</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000767">tšri</w>
+                  <pc xml:id="xTok_000768">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000769">maši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000770">bḥal</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000771">bəkri</w>
+                  <pc xml:id="xTok_000772">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000773">bəkri</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000774">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000775"
+                     rend="withDash">ḍ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000777">ḍăw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000778"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000780"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000782"
+                     rend="withDash">tṣăyyəbu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000784" join="right">š</w>
+                  <pc xml:id="xTok_000785">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000786">nqăḍṛu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000787">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000788"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000790">ʕafiya</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000791">ʕa</w>
+                  <pc join="right" xml:id="xTok_000792">.</pc>
+                  <pc xml:id="xTok_000793">.</pc>
+                  <pc xml:id="xTok_000794">.</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000795">hiya</w>
+                  <pc xml:id="xTok_000796">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000797">lli</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000798"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000800">nḍăwwu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000801"
+                     rend="withDash">bi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000803" join="right">ha</w>
+                  <pc xml:id="xTok_000804">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a42"
+                  who="#A_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000805"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000807">ʕăṛs</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000808">kŭnna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000809">la</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000810">bġa</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000811">ydžŭwwəž</w>
+                  <pc xml:id="xTok_000812">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000813">yaxŭd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000814"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000816" join="right">bənt</w>
+                  <pc xml:id="xTok_000817">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000818"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000820"
+                     rend="withDash">yšuf</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000822"
+                     rend="withDash">ha</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000824" join="right">š</w>
+                  <pc xml:id="xTok_000825">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000826"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000828"
+                     rend="withDash">tʕăṛfi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000830">š</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000831">ki</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000832">dayər</w>
+                  <pc join="right" xml:id="xTok_000833">[</pc>
+                  <pc join="right" xml:id="xTok_000834">.</pc>
+                  <pc join="right" xml:id="xTok_000835">.</pc>
+                  <pc xml:id="xTok_000836">.</pc>
+                  <pc xml:id="xTok_000837">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000838">ṣafi</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000839"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000841">yddiw</w>
+                  <pc join="right" xml:id="xTok_000842">.</pc>
+                  <pc xml:id="xTok_000843">.</pc>
+                  <pc xml:id="xTok_000844">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000845"
+                     rend="withDash">ma</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000847" join="right">tšufi</w>
+                  <pc xml:id="xTok_000848">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000849"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000851"
+                     rend="withDash">yšuf</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000853" join="right">ək</w>
+                  <pc xml:id="xTok_000854">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000855"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000857"
+                     rend="withDash">yddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000859" join="right">k</w>
+                  <pc xml:id="xTok_000860">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000861"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000863"
+                     rend="withDash">yʕṭiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000865">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000866"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000868" join="right">h</w>
+                  <pc xml:id="xTok_000869">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000870">ana</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000871"
+                     rend="withDash">ǧŭwwǧu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000873" join="right">ni</w>
+                  <pc xml:id="xTok_000874">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000875">ana</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000876"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000878"
+                     rend="withDash">ʕăṛft</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000880">š</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000881"
+                     rend="withDash">ər</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000883">ražəl</w>
+                  <pc join="right" xml:id="xTok_000884">.</pc>
+                  <pc xml:id="xTok_000885">.</pc>
+                  <pc xml:id="xTok_000886">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000887"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000889">ṛažəl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000890"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000892" join="right">u</w>
+                  <pc xml:id="xTok_000893">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000894"
+                     rend="withDash">lgit</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000896" join="right">u</w>
+                  <pc xml:id="xTok_000897">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000898"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000900">u</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000901">tnin</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000902"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000904">sittin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000905">ʕam</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000906"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000908">ana</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000909"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000911">i</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000912">səttaʕəšṛ</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000913">ʕam</w>
+                  <pc xml:id="xTok_000914">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000915"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000917"
+                     rend="withDash">ʕṛăft</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000919" join="right">u</w>
+                  <pc xml:id="xTok_000920">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000921"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000923"
+                     rend="withDash">ʕṛăf</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000925">ni</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000926"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000928"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000930">u</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000931"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000933">wlad</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000934">bəzzaf</w>
+                  <pc xml:id="xTok_000935">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000936"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000938">u</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000939"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000941">wlad</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000942"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000944"
+                     rend="withDash">ʕṭăw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000946">ni</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000947">ʕal</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000948">wla</w>
+                  <pc join="right" xml:id="xTok_000949">.</pc>
+                  <pc join="right" xml:id="xTok_000950">.</pc>
+                  <pc join="right" xml:id="xTok_000951">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000952">ʕal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000953"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000955">ṛažəl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000956"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000958" join="right">kbir</w>
+                  <pc xml:id="xTok_000959">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000960">ya</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000961">wlətt</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000962"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000964">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000965"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000967" join="right">wlad</w>
+                  <pc xml:id="xTok_000968">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a45"
+                  who="#A_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000969">iwa</w>
+                  <pc xml:id="xTok_000970">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000971">ṣafi</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000972"
+                     rend="withDash">had</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000974">ši</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000975"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000977"
+                     rend="withDash">yddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000979" join="right">k</w>
+                  <pc xml:id="xTok_000980">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000981">xălla</w>
+                  <pc join="right" xml:id="xTok_000982">.</pc>
+                  <pc xml:id="xTok_000983">.</pc>
+                  <pc xml:id="xTok_000984">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000985"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000987"
+                     rend="withDash">yʕṭiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000989" join="right">k</w>
+                  <pc xml:id="xTok_000990">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000991"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000993"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000995">tʕăṛfi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000996">tta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000997">ʕad</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_000998"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001000">ydiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001001"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001003">ʕăṛs</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001004"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001006"
+                     rend="withDash">yddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001008">k</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001009">l</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001010"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001012" join="right">ṛažəl</w>
+                  <pc xml:id="xTok_001013">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001014">kif</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001015">ma</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001016">kan</w>
+                  <pc xml:id="xTok_001017">.</pc>
+                  <pc join="right" xml:id="xTok_001018">[</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001019">walakin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001020">daba</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001021">nafs</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001022"
+                     rend="withDash">aš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001024">šay</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001025">aw</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001026">lla</w>
+                  <pc xml:id="xTok_001027">?</pc>
+                  <pc xml:id="xTok_001028">]</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001029">lla</w>
+                  <pc xml:id="xTok_001030">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001031">daba</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001032">wəlla</w>
+                  <pc xml:id="xTok_001033">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001034">lla</w>
+                  <pc join="right" xml:id="xTok_001035">.</pc>
+                  <pc xml:id="xTok_001036">.</pc>
+                  <pc xml:id="xTok_001037">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001038"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001040">ṛažəl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001041">yšuf</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001042"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001044" join="right">bənt</w>
+                  <pc xml:id="xTok_001045">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001046"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001048"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001050">bənt</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001051">tšuf</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001052"
+                     rend="withDash">əṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001054">ṛažəl</w>
+                  <pc join="right" xml:id="xTok_001055">.</pc>
+                  <pc xml:id="xTok_001056">.</pc>
+                  <pc xml:id="xTok_001057">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001058">maši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001059">bḥal</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001060">bəkri</w>
+                  <pc xml:id="xTok_001061">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001062">bəkri</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001063">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001064"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001066"
+                     rend="withDash">yšəddu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001068" join="right">k</w>
+                  <pc xml:id="xTok_001069">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001070"
+                     rend="withDash">ġămmdu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001072" join="right">k</w>
+                  <pc xml:id="xTok_001073">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001074">mən</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001075">tnašəṛ</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001076">ʕam</w>
+                  <pc xml:id="xTok_001077">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001078">təltaʕšəṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001079">ʕam</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001080"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001082">yʕṭiw</w>
+                  <pc join="right" xml:id="xTok_001083">.</pc>
+                  <pc xml:id="xTok_001084">.</pc>
+                  <pc xml:id="xTok_001085">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001086">ṣafi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001087">qăbli</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001088">lla</w>
+                  <pc xml:id="xTok_001089">,</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001090">lla</w>
+                  <pc xml:id="xTok_001091">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001092">nti</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001093">tqăbli</w>
+                  <pc xml:id="xTok_001094">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001095">mənna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001096">ʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001097">dguli</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001098"
+                     rend="withDash">ṛa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001100">h</w>
+                  <pc join="right" xml:id="xTok_001101">"</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001102"
+                     rend="withDash">ma</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001104"
+                     rend="withDash">bġăyt</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001106" join="right">š</w>
+                  <pc xml:id="xTok_001107">"</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001108">wəlla</w>
+                  <pc join="right" xml:id="xTok_001109">.</pc>
+                  <pc xml:id="xTok_001110">.</pc>
+                  <pc xml:id="xTok_001111">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001112"
+                     rend="withDash">yʕṭiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001114">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001115"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001117"
+                     rend="withDash">əṣ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001119">ṣif</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001120"
+                     rend="withDash">ʕli</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001122" join="right">k</w>
+                  <pc xml:id="xTok_001123">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a50"
+                  who="#A_Transcription-txt"
+                  end="#T35"
+                  start="#T34">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001124"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001126">ṣafi</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001127"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001129">ydiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001130"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001132">ʕăṛs</w>
+                  <pc join="right" xml:id="xTok_001133">.</pc>
+                  <pc xml:id="xTok_001134">.</pc>
+                  <pc xml:id="xTok_001135">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001136"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001138" join="right">təbši</w>
+                  <pc xml:id="xTok_001139">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001140"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001142">tbqăy</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001143">tsibi</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001144"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001146">ṛažəl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001147">tta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001148">huwa</w>
+                  <pc join="right" xml:id="xTok_001149">.</pc>
+                  <pc join="right" xml:id="xTok_001150">.</pc>
+                  <pc xml:id="xTok_001151">.</pc>
+                  <pc xml:id="xTok_001152">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001153">tqăy</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001154">tḥălbi</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001155"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001157">bgaṛ</w>
+                  <pc join="right" xml:id="xTok_001158">.</pc>
+                  <pc xml:id="xTok_001159">.</pc>
+                  <pc xml:id="xTok_001160">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001161">tḥălbi</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001162"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001164">bgaṛ</w>
+                  <pc join="right" xml:id="xTok_001165">.</pc>
+                  <pc xml:id="xTok_001166">.</pc>
+                  <pc xml:id="xTok_001167">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a52"
+                  who="#A_Transcription-txt"
+                  end="#T37"
+                  start="#T36">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001168"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001170">yžiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001171"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001173"
+                     rend="withDash">yxŭṭbu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001175">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001176"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001178"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001180">tži</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001181"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001183" join="right">mṛa</w>
+                  <pc xml:id="xTok_001184">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001185"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001187">yžiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001188">žuž</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001189">ʕialat</w>
+                  <pc xml:id="xTok_001190">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001191"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001193">yžiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001194"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001196">ək</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001197"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001199">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001200"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001202" join="right">ək</w>
+                  <pc xml:id="xTok_001203">:</pc>
+                  <pc join="right" xml:id="xTok_001204">"</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001205">bġăyna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001206">had</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001207"
+                     rend="withDash">əl</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001209">bənt</w>
+                  <pc xml:id="xTok_001210">.</pc>
+                  <pc xml:id="xTok_001211">"</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001212"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001214">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001215"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001217" join="right">walid</w>
+                  <pc xml:id="xTok_001218">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001219"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001221">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001222"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001224" join="right">a</w>
+                  <pc xml:id="xTok_001225">:</pc>
+                  <pc join="right" xml:id="xTok_001226">"</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001227" join="right">wăxxa</w>
+                  <pc xml:id="xTok_001228">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001229">ana</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001230">mtafəq</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001231"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001233" join="right">k</w>
+                  <pc xml:id="xTok_001234">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001235">ʕa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001236"
+                     rend="withDash">nʕṭi</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001238">k</w>
+                  <pc xml:id="xTok_001239">.</pc>
+                  <pc xml:id="xTok_001240">"</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001241">ṣafi</w>
+                  <pc xml:id="xTok_001242">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001243"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001245">yžiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001246"
+                     rend="withDash">yxăṭbu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001248" join="right">k</w>
+                  <pc xml:id="xTok_001249">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001250"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001252">ydir</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001253"
+                     rend="withDash">yak</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001255" join="right">ši</w>
+                  <pc xml:id="xTok_001256">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001257"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001259">yžiw</w>
+                  <pc join="right" xml:id="xTok_001260">.</pc>
+                  <pc xml:id="xTok_001261">.</pc>
+                  <pc xml:id="xTok_001262">.</pc>
+                  <pc join="right" xml:id="xTok_001263">[</pc>
+                  <pc join="right" xml:id="xTok_001264">.</pc>
+                  <pc join="right" xml:id="xTok_001265">.</pc>
+                  <pc xml:id="xTok_001266">.</pc>
+                  <pc xml:id="xTok_001267">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001268"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001270">yžibu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001271"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001273">ək</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001274"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001276" join="right">ḥwayəž</w>
+                  <pc xml:id="xTok_001277">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001278"
+                     rend="withDash">žibu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001280">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001281"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001283" join="right">ḥwayəž</w>
+                  <pc xml:id="xTok_001284">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001285"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001287" join="right">lbas</w>
+                  <pc xml:id="xTok_001288">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001289"
+                     rend="withDash">yžibu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001291">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001292"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001294" join="right">ḥənna</w>
+                  <pc xml:id="xTok_001295">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001296"
+                     rend="withDash">ydiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001298">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001299"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001301">ḥənna</w>
+                  <pc join="right" xml:id="xTok_001302">[</pc>
+                  <pc join="right" xml:id="xTok_001303">.</pc>
+                  <pc join="right" xml:id="xTok_001304">.</pc>
+                  <pc xml:id="xTok_001305">.</pc>
+                  <pc xml:id="xTok_001306">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001307">bḥal</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001308">hăkka</w>
+                  <pc xml:id="xTok_001309">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001310">ydiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001311"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001313">ək</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001314"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001316">ḥənna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001317"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001319"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001321"
+                     rend="withDash">yəṭḷiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001323">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001324"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001326"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001328">ḥənna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001329">kamla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001330"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001332">yəmšiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001333">ʕawd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001334">tani</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001335">ydŭwwəzu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001336"
+                     rend="withDash">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001338" join="right">iyyam</w>
+                  <pc xml:id="xTok_001339">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001340">yžiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001341">hama</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001342"
+                     rend="withDash">yddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001344">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001345"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001347"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001349" join="right">xmis</w>
+                  <pc xml:id="xTok_001350">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001351">ama</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001352"
+                     rend="withDash">yddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001354">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001355"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001357"
+                     rend="withDash">s</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001359" join="right">səbt</w>
+                  <pc xml:id="xTok_001360">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001361"
+                     rend="withDash">ddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001363">k</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001364">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001365">ḍaṛ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001366"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001368" join="right">ʕris</w>
+                  <pc xml:id="xTok_001369">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a54"
+                  who="#A_Transcription-txt"
+                  end="#T39"
+                  start="#T38">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001370"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001372">ydiru</w>
+                  <pc join="right" xml:id="xTok_001373">.</pc>
+                  <pc xml:id="xTok_001374">.</pc>
+                  <pc xml:id="xTok_001375">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001376"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001378" join="right">yžiw</w>
+                  <pc xml:id="xTok_001379">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001380"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001382">yžibu</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001383">bhima</w>
+                  <pc xml:id="xTok_001384">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001385"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001387"
+                     rend="withDash">ydəbḥu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001389" join="right">ha</w>
+                  <pc xml:id="xTok_001390">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001391"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001393">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001394"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001396" join="right">ək</w>
+                  <pc xml:id="xTok_001397">:</pc>
+                  <pc join="right" xml:id="xTok_001398">"</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001399">zġarid</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001400"
+                     rend="withDash">dyal</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001402" join="right">u</w>
+                  <pc xml:id="xTok_001403">"</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001404"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001406"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001408"
+                     rend="withDash">yddiw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001410" join="right">k</w>
+                  <pc xml:id="xTok_001411">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001412"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001414">tbši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001415">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001416">ḍaṛ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001417"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001419">ṛažəl</w>
+                  <pc join="right" xml:id="xTok_001420">.</pc>
+                  <pc xml:id="xTok_001421">.</pc>
+                  <pc xml:id="xTok_001422">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001423"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001425"
+                     rend="withDash">əš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001427" join="right">štăyḥ</w>
+                  <pc xml:id="xTok_001428">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001429"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001431">yšătḥu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001432"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001434"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001436" join="right">yddiw</w>
+                  <pc xml:id="xTok_001437">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001438"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001440">təbši</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001441"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001443">twadəʕ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001444"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001446">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001447"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001449" join="right">walida</w>
+                  <pc xml:id="xTok_001450">,</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001451">walid</w>
+                  <pc xml:id="xTok_001452">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001453"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001455">twadʕaw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001456"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001458" join="right">k</w>
+                  <pc xml:id="xTok_001459">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001460">baš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001461">təbši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001462">l</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001463"
+                     rend="withDash">ḍaṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001465">ŭk</w>
+                  <pc join="right" xml:id="xTok_001466">.</pc>
+                  <pc xml:id="xTok_001467">.</pc>
+                  <pc xml:id="xTok_001468">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001469">ġədda</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001470">təbši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001471">ʕawd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001472">tani</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001473"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001475">ydir</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001476"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001478">k</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001479"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001481">ṛažəl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001482"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001484">ʕăṛs</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001485"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001487"
+                     rend="withDash">š</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001489">štiḥ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001490"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001492"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001494">ġŭnnaw</w>
+                  <pc join="right" xml:id="xTok_001495">.</pc>
+                  <pc xml:id="xTok_001496">.</pc>
+                  <pc xml:id="xTok_001497">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001498"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001500" join="right">ṣafi</w>
+                  <pc xml:id="xTok_001501">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001502"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001504">tbši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001505">hadak</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001506">huwa</w>
+                  <pc xml:id="xTok_001507">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001508">lli</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001509"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001511"
+                     rend="withDash">ydir</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001513" join="right">ha</w>
+                  <pc xml:id="xTok_001514">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a56"
+                  who="#A_Transcription-txt"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001515">Zʕir</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001516">məʕṛufin</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001517"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001519"
+                     rend="withDash">əš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001521">šwa</w>
+                  <pc join="right" xml:id="xTok_001522">[</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001523"
+                     rend="withDash">sməʕt</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001525" join="right">ha</w>
+                  <pc xml:id="xTok_001526">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001527"
+                     rend="withDash">b</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001529">əlay</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001530">ḥaywan</w>
+                  <pc xml:id="xTok_001531">?</pc>
+                  <pc xml:id="xTok_001532">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001533"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001535" join="right">ġləm</w>
+                  <pc xml:id="xTok_001536">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001537"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001539">yšwiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001540"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001542"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001544">ydiru</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001545">kəskəsu</w>
+                  <pc xml:id="xTok_001546">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001547"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001549">ydiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001550"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001552">ʕărs</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001553"
+                     rend="withDash">dyal</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001555">hum</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001556"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001558"
+                     rend="withDash">əš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001560" join="right">šwa</w>
+                  <pc xml:id="xTok_001561">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001562"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001564">ydiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001565"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001567">kəskəsu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001568"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001570"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001572">lḥăm</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001573">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001574"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001576">bgaṛ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001577"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001579"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001581" join="right">xŭḍaṛ</w>
+                  <pc xml:id="xTok_001582">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001583"
+                     rend="withDash">had</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001585">ši</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001586">baš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001587">məʕṛufin</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001588">Zʕir</w>
+                  <pc join="right" xml:id="xTok_001589">[</pc>
+                  <pc join="right" xml:id="xTok_001590">.</pc>
+                  <pc join="right" xml:id="xTok_001591">.</pc>
+                  <pc xml:id="xTok_001592">.</pc>
+                  <pc xml:id="xTok_001593">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001594"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001596">rfisa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001597">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001598"
+                     rend="withDash">z</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001600" join="right">zəbda</w>
+                  <pc xml:id="xTok_001601">,</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001602">hadi</w>
+                  <pc xml:id="xTok_001603">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001604"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001606"
+                     rend="withDash">ytəbxu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001608" join="right">ha</w>
+                  <pc xml:id="xTok_001609">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001610"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001612"
+                     rend="withDash">ydiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001614">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001615"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001617"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001619" join="right">ḥăṛša</w>
+                  <pc xml:id="xTok_001620">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a57"
+                  who="#A_Transcription-txt"
+                  end="#T43"
+                  start="#T42">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001621"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001623"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001625"
+                     rend="withDash">yzăwwqu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001627">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001628"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001630"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001632">băyḍ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001633">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001634"
+                     rend="withDash">d</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001636">džaž</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001637">bəldi</w>
+                  <pc xml:id="xTok_001638">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001639"
+                     rend="withDash">r</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001641" join="right">rfisa</w>
+                  <pc xml:id="xTok_001642">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001643"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001645"
+                     rend="withDash">yzăwwqu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001647">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001648"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001650"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001652">băyḍ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001653"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001655"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001657">y</w>
+                  <pc join="right" xml:id="xTok_001658">.</pc>
+                  <pc xml:id="xTok_001659">.</pc>
+                  <pc xml:id="xTok_001660">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001661"
+                     rend="withDash">z</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001663" join="right">zəbda</w>
+                  <pc xml:id="xTok_001664">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001665"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001667">ḥlib</w>
+                  <pc join="right" xml:id="xTok_001668">[</pc>
+                  <pc join="right" xml:id="xTok_001669">.</pc>
+                  <pc join="right" xml:id="xTok_001670">.</pc>
+                  <pc xml:id="xTok_001671">.</pc>
+                  <pc xml:id="xTok_001672">]</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001673">smida</w>
+                  <pc xml:id="xTok_001674">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001675"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001677"
+                     rend="withDash">s</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001679" join="right">smida</w>
+                  <pc xml:id="xTok_001680">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001681"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001683">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001684"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001686">ḥaṛša</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001687"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001689"
+                     rend="withDash">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001691">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001692"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001694"
+                     rend="withDash">əz</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001696" join="right">zəbda</w>
+                  <pc xml:id="xTok_001697">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001698"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001700"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001702">ḥlib</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001703"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001705"
+                     rend="withDash">ndŭggu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001707">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001708"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001710">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001711"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001713"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001715" join="right">ḥlib</w>
+                  <pc xml:id="xTok_001716">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001717"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001719"
+                     rend="withDash">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001721">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001722"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001724"
+                     rend="withDash">əz</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001726">zəbda</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001727"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001729">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001730"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001732">băyḍ</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001733">məsluq</w>
+                  <pc xml:id="xTok_001734">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001735"
+                     rend="withDash">nzăwwqu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001737">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001738"
+                     rend="withDash">bi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001740" join="right">h</w>
+                  <pc xml:id="xTok_001741">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a67"
+                  who="#A_Transcription-txt"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001742">məlli</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001743">kun</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001744">bəkri</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001745">kun</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001746"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001748">nṭăyyəbu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001749">ʕla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001750"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001752" join="right">ʕafiya</w>
+                  <pc xml:id="xTok_001753">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001754">ʕla</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001755"
+                     rend="withDash">ž</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001757" join="right">žmaṛ</w>
+                  <pc xml:id="xTok_001758">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001759"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001761"
+                     rend="withDash">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001763">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001764"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001766"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001768">bərrad</w>
+                  <pc join="right" xml:id="xTok_001769">[</pc>
+                  <pc join="right" xml:id="xTok_001770">.</pc>
+                  <pc join="right" xml:id="xTok_001771">.</pc>
+                  <pc xml:id="xTok_001772">.</pc>
+                  <pc xml:id="xTok_001773">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001774"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001776">yṭăyyəb</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001777"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001779">ma</w>
+                  <pc join="right" xml:id="xTok_001780">[</pc>
+                  <pc join="right" xml:id="xTok_001781">.</pc>
+                  <pc join="right" xml:id="xTok_001782">.</pc>
+                  <pc xml:id="xTok_001783">.</pc>
+                  <pc xml:id="xTok_001784">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001785">təržəm</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001786"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001788">ya</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001789">tta</w>
+                  <pc xml:id="xTok_001790">!</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001791"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001793">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001794"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001796" join="right">ma</w>
+                  <pc xml:id="xTok_001797">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001798"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001800">yṭăyyəb</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001801"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001803" join="right">ġăllay</w>
+                  <pc xml:id="xTok_001804">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001805"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001807"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001809">ʕwad</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001810"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001812"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001814">nʕămmṛu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001815"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001817">bərrad</w>
+                  <pc join="right" xml:id="xTok_001818">[</pc>
+                  <pc join="right" xml:id="xTok_001819">.</pc>
+                  <pc join="right" xml:id="xTok_001820">.</pc>
+                  <pc xml:id="xTok_001821">.</pc>
+                  <pc xml:id="xTok_001822">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001823">ndiru</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001824">atay</w>
+                  <pc xml:id="xTok_001825">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001826"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001828"
+                     rend="withDash">nšəllu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001830">h</w>
+                  <pc join="right" xml:id="xTok_001831">[</pc>
+                  <pc join="right" xml:id="xTok_001832">.</pc>
+                  <pc join="right" xml:id="xTok_001833">.</pc>
+                  <pc join="right" xml:id="xTok_001834">.</pc>
+                  <pc xml:id="xTok_001835">]</pc>
+                  <pc xml:id="xTok_001836">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a70"
+                  who="#A_Transcription-txt"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001837"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001839">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001840"
+                     rend="withDash">bi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001842">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001843"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001845" join="right">bərrad</w>
+                  <pc xml:id="xTok_001846">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001847">aywa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001848"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001850">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001851">atay</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001852"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001854"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001856" join="right">nšəllu</w>
+                  <pc xml:id="xTok_001857">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001858">nxwiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001859"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001861">nʕawəd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001862">nšəllu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001863"
+                     rend="withDash">w</w>
+                  <pc join="right" xml:id="xTok_001865">.</pc>
+                  <pc xml:id="xTok_001866">.</pc>
+                  <pc xml:id="xTok_001867">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001868">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001869"
+                     rend="withDash">s</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001871">sŭkkaṛ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001872"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001874">nḥăṭṭu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001875"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001877" join="right">yətšăḥḥəṛ</w>
+                  <pc xml:id="xTok_001878">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a74"
+                  who="#A_Transcription-txt"
+                  end="#T49"
+                  start="#T48">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001879"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001881">nʕămmṛu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001882"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001884"
+                     rend="withDash">ən</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001886" join="right">năʕnaʕ</w>
+                  <pc xml:id="xTok_001887">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001888">nʕămmṛu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001889"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001891"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001893" join="right">lwiza</w>
+                  <pc xml:id="xTok_001894">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001895">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001896"
+                     rend="withDash">š</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001898" join="right">šiba</w>
+                  <pc xml:id="xTok_001899">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001900">kayn</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001901"
+                     rend="withDash">z</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001903" join="right">zaʕṭəṛ</w>
+                  <pc xml:id="xTok_001904">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001905">kayn</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001906"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001908">ʕašiya</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001909">dyal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001910"
+                     rend="withDash">n</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001912" join="right">năʕnaʕ</w>
+                  <pc xml:id="xTok_001913">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001914">kayn</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001915">mărdaduš</w>
+                  <pc xml:id="xTok_001916">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001917">kayn</w>
+                  <pc join="right" xml:id="xTok_001918">.</pc>
+                  <pc xml:id="xTok_001919">.</pc>
+                  <pc xml:id="xTok_001920">.</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001921">fliyu</w>
+                  <pc xml:id="xTok_001922">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001923">kayna</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001924">manta</w>
+                  <pc xml:id="xTok_001925">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001926">kayn</w>
+                  <pc join="right" xml:id="xTok_001927">.</pc>
+                  <pc join="right" xml:id="xTok_001928">.</pc>
+                  <pc join="right" xml:id="xTok_001929">.</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001930" join="right">maṛṣita</w>
+                  <pc xml:id="xTok_001931">,</pc>
+                  <pc join="right" xml:id="xTok_001932">.</pc>
+                  <pc xml:id="xTok_001933">.</pc>
+                  <pc xml:id="xTok_001934">.</pc>
+                  <pc join="right" xml:id="xTok_001935">[</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001936">maṛṣita</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001937">šnu</w>
+                  <pc xml:id="xTok_001938">?</pc>
+                  <pc xml:id="xTok_001939">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001940">bḥal</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001941"
+                     rend="withDash">n</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001943" join="right">năʕnaʕ</w>
+                  <pc xml:id="xTok_001944">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a78"
+                  who="#A_Transcription-txt"
+                  end="#T51"
+                  start="#T50">
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001945"
+                     rend="withDash">had</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001947">ši</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001948"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001950" join="right">ndiru</w>
+                  <pc xml:id="xTok_001951">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001952"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001954">ndiru</w>
+                  <pc join="right" xml:id="xTok_001955">.</pc>
+                  <pc xml:id="xTok_001956">.</pc>
+                  <pc xml:id="xTok_001957">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001958"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001960">ngulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001961"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001963">h</w>
+                  <pc join="right" xml:id="xTok_001964">.</pc>
+                  <pc xml:id="xTok_001965">.</pc>
+                  <pc xml:id="xTok_001966">.</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001967">mlăqqəm</w>
+                  <pc xml:id="xTok_001968">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001969">zəʕma</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001970">tay</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001971">mlăqqəm</w>
+                  <pc xml:id="xTok_001972">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a82"
+                  who="#A_Transcription-txt"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001973">kan</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001974"
+                     rend="withDash">ʕădd</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001976">na</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001977">waḥd</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001978"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001980">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001981"
+                     rend="withDash">li</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001983">h</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001984"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001986">fərraḥ</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001987"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001989"
+                     rend="withDash">əl</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001991">ḥăwwar</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001992"
+                     rend="withDash">w</w>
+                  <pc join="right" xml:id="xTok_001994">.</pc>
+                  <pc xml:id="xTok_001995">.</pc>
+                  <pc xml:id="xTok_001996">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001997"
+                     rend="withDash">w</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_001999">kanu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002000">la</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002001">bġaw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002002">ydwiw</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002003"
+                     rend="withDash">mʕa</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002005" join="right">k</w>
+                  <pc xml:id="xTok_002006">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002007"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002009">ygul</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002010"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002012">ək</w>
+                  <pc join="right" xml:id="xTok_002013">"</pc>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002014">way</w>
+                  <pc xml:id="xTok_002015">!</pc>
+                  <pc xml:id="xTok_002016">"</pc>
+                  <pc join="right" xml:id="xTok_002017">[</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002018">šnu</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002019">way</w>
+                  <pc xml:id="xTok_002020">?</pc>
+                  <pc xml:id="xTok_002021">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002022">hiya</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002023">zəʕma</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002024">aš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002025">gŭlti</w>
+                  <pc join="right" xml:id="xTok_002026">.</pc>
+                  <pc xml:id="xTok_002027">.</pc>
+                  <pc xml:id="xTok_002028">.</pc>
+                  <pc join="right" xml:id="xTok_002029">[</pc>
+                  <pc join="right" xml:id="xTok_002030">.</pc>
+                  <pc join="right" xml:id="xTok_002031">.</pc>
+                  <pc xml:id="xTok_002032">.</pc>
+                  <pc xml:id="xTok_002033">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002034"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002036" join="right">ʕašəq</w>
+                  <pc xml:id="xTok_002037">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002038"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002040">ygulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002041"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002043">a</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002044"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002046">mŭġrəf</w>
+                  <pc join="right" xml:id="xTok_002047">[</pc>
+                  <pc join="right" xml:id="xTok_002048">.</pc>
+                  <pc join="right" xml:id="xTok_002049">.</pc>
+                  <pc xml:id="xTok_002050">.</pc>
+                  <pc xml:id="xTok_002051">]</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002052"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002054">ygulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002055"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002057">a</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002058"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002060" join="right">mŭġrəf</w>
+                  <pc xml:id="xTok_002061">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002062"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002064">ygulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002065"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002067">a</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002068"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002070" join="right">ʕašəq</w>
+                  <pc xml:id="xTok_002071">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a85"
+                  who="#A_Transcription-txt"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002072">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002073"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002075">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002077"
+                     rend="withDash">smit</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002079">u</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002081">baš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002082">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002083"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002085" join="right">lbən</w>
+                  <pc xml:id="xTok_002086">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002087">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002088"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002090">ndiru</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002091"
+                     rend="withDash">š</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002093">šəkwa</w>
+                  <pc join="right" xml:id="xTok_002094">.</pc>
+                  <pc xml:id="xTok_002095">.</pc>
+                  <pc xml:id="xTok_002096">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002097"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002099">ndiru</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002100">məl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002101"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002103">ġălam</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002104">wəlla</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002105">məl</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002106"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002108">măʕəz</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002109"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002111"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002113"
+                     rend="withDash">nḍăḅġu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002115">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002116"
+                     rend="withDash">ž</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002118" join="right">žəlda</w>
+                  <pc xml:id="xTok_002119">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002120"
+                     rend="withDash">ta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002122"
+                     rend="withDash">nḍăḅġu</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002124">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002125"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002127"
+                     rend="withDash">d</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002129">dḅăġ</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002130">dyal</w>
+                  <pc join="right" xml:id="xTok_002131">.</pc>
+                  <pc xml:id="xTok_002132">.</pc>
+                  <pc xml:id="xTok_002133">.</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002134"
+                     rend="withDash">t</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002136" join="right">tizġa</w>
+                  <pc xml:id="xTok_002137">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002138"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002140">twəlli</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002141">ḥămṛa</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002142"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002144"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002146">nbqaw</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002147">nmăxḍu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002148"
+                     rend="withDash">bi</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002150">ha</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002151"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002153" join="right">lbən</w>
+                  <pc xml:id="xTok_002154">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="MOR_Zaer_AinAouda_women_2024_a86"
+                  who="#A_Transcription-txt"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002155">baš</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002156">kŭnna</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002157"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002159" join="right">nsăbbnu</w>
+                  <pc xml:id="xTok_002160">,</pc>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002161"
+                     rend="withDash">ta</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002163">ngulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002164"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002166">a</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002167">bstiliya</w>
+                  <pc join="right" xml:id="xTok_002168">[</pc>
+                  <pc join="right" xml:id="xTok_002169">.</pc>
+                  <pc join="right" xml:id="xTok_002170">.</pc>
+                  <pc xml:id="xTok_002171">.</pc>
+                  <pc xml:id="xTok_002172">]</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002173">hiya</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002174">žəvna</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002175">tta</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002176"
+                     rend="withDash">ma</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002178">ngulu</w>
+                  <w join="right" xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002179">žəvna</w>
+                  <pc xml:id="xTok_002180">,</pc>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002181">ngulu</w>
+                  <w join="right"
+                     xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002182"
+                     rend="withDash">l</w>
+                  <w xml:id="MOR_Zaer_AinAouda_women_2024_xTok_002184">bstiliya</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
