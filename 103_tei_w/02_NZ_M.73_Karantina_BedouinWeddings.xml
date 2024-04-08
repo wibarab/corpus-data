@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-04-08T09:51:05.848087Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">02_NZ_M.73_Karantina_BedouinWeddings</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">02_NZ_M.73_Karantina_BedouinWeddings</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.17777777777777778" type="audio">
+                  <date when="2023-05-15"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2023_AID LEB_2023_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 02_NZ_M.73_Karantina_BedouinWeddings</head>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <name type="pseudonym">LEB_KAR_2023_NZ_M.73_Speaker1</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Marriage"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="11159" since="#T0" xml:id="T1"/>
+         <when interval="17326" since="#T0" xml:id="T2"/>
+         <when interval="17589" since="#T0" xml:id="T3"/>
+         <when interval="28853" since="#T0" xml:id="T4"/>
+         <when interval="36884" since="#T0" xml:id="T5"/>
+         <when interval="37300" since="#T0" xml:id="T6"/>
+         <when interval="47779" since="#T0" xml:id="T7"/>
+         <when interval="49129" since="#T0" xml:id="T8"/>
+         <when interval="55456" since="#T0" xml:id="T9"/>
+         <when interval="55605" since="#T0" xml:id="T10"/>
+         <when interval="61603" since="#T0" xml:id="T11"/>
+         <when interval="62079" since="#T0" xml:id="T12"/>
+         <when interval="65119" since="#T0" xml:id="T13"/>
+         <when interval="66490" since="#T0" xml:id="T14"/>
+         <when interval="69085" since="#T0" xml:id="T15"/>
+         <when interval="69170" since="#T0" xml:id="T16"/>
+         <when interval="77030" since="#T0" xml:id="T17"/>
+         <when interval="78495" since="#T0" xml:id="T18"/>
+         <when interval="80884" since="#T0" xml:id="T19"/>
+         <when interval="84865" since="#T0" xml:id="T20"/>
+         <when interval="86289" since="#T0" xml:id="T21"/>
+         <when interval="88034" since="#T0" xml:id="T22"/>
+         <when interval="88834" since="#T0" xml:id="T23"/>
+         <when interval="90461" since="#T0" xml:id="T24"/>
+         <when interval="90557" since="#T0" xml:id="T25"/>
+         <when interval="93954" since="#T0" xml:id="T26"/>
+         <when interval="94159" since="#T0" xml:id="T27"/>
+         <when interval="97680" since="#T0" xml:id="T28"/>
+         <when interval="98152" since="#T0" xml:id="T29"/>
+         <when interval="100046" since="#T0" xml:id="T30"/>
+         <when interval="101676" since="#T0" xml:id="T31"/>
+         <when interval="106248" since="#T0" xml:id="T32"/>
+         <when interval="107904" since="#T0" xml:id="T33"/>
+         <when interval="113634" since="#T0" xml:id="T34"/>
+         <when interval="114062" since="#T0" xml:id="T35"/>
+         <when interval="117307" since="#T0" xml:id="T36"/>
+         <when interval="117918" since="#T0" xml:id="T37"/>
+         <when interval="123195" since="#T0" xml:id="T38"/>
+         <when interval="124205" since="#T0" xml:id="T39"/>
+         <when interval="132866" since="#T0" xml:id="T40"/>
+         <when interval="143000" since="#T0" xml:id="T41"/>
+         <when interval="143190" since="#T0" xml:id="T42"/>
+         <when interval="147011" since="#T0" xml:id="T43"/>
+         <when interval="152226" since="#T0" xml:id="T44"/>
+         <when interval="162912" since="#T0" xml:id="T45"/>
+         <when interval="163472" since="#T0" xml:id="T46"/>
+         <when interval="168336" since="#T0" xml:id="T47"/>
+         <when interval="168642" since="#T0" xml:id="T48"/>
+         <when interval="171567" since="#T0" xml:id="T49"/>
+         <when interval="171796" since="#T0" xml:id="T50"/>
+         <when interval="175023" since="#T0" xml:id="T51"/>
+         <when interval="175233" since="#T0" xml:id="T52"/>
+         <when interval="179132" since="#T0" xml:id="T53"/>
+         <when interval="182747" since="#T0" xml:id="T54"/>
+         <when interval="189076" since="#T0" xml:id="T55"/>
+         <when interval="189090" since="#T0" xml:id="T56"/>
+         <when interval="196428" since="#T0" xml:id="T57"/>
+         <when interval="197428" since="#T0" xml:id="T58"/>
+         <when interval="203739" since="#T0" xml:id="T59"/>
+         <when interval="205390" since="#T0" xml:id="T60"/>
+         <when interval="212812" since="#T0" xml:id="T61"/>
+         <when interval="213329" since="#T0" xml:id="T62"/>
+         <when interval="221423" since="#T0" xml:id="T63"/>
+         <when interval="226156" since="#T0" xml:id="T64"/>
+         <when interval="231458" since="#T0" xml:id="T65"/>
+         <when interval="232687" since="#T0" xml:id="T66"/>
+         <when interval="238711" since="#T0" xml:id="T67"/>
+         <when interval="240723" since="#T0" xml:id="T68"/>
+         <when interval="245966" since="#T0" xml:id="T69"/>
+         <when interval="249088" since="#T0" xml:id="T70"/>
+         <when interval="253368" since="#T0" xml:id="T71"/>
+         <when interval="253968" since="#T0" xml:id="T72"/>
+         <when interval="255909" since="#T0" xml:id="T73"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T73</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a1"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000001">ʕarəs</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000002"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000004">bduwi</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000005">yiballiš</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000006">sabʕət</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000007">iyyām</w>
+                  <pc xml:id="xTok_000008">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000009">sabəʕ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000010">liyāli</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000011">kamān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a2"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000012">ē</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000013"
+                     rend="withDash">kull</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000015">īna</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000016">ʕaṣrīt</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000017">nahār</w>
+                  <pc xml:id="xTok_000018">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000019">ʕaṣrīt</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000020">nahār</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000021">ʔaw</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000022"
+                     rend="withDash">bidd</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000024">ik</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000025"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000027" join="right">ġurūb</w>
+                  <pc xml:id="xTok_000028">,</pc>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000029">ġurūb</w>
+                  <pc xml:id="xTok_000030">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000031">tiǧi</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000032"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000034"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000036" join="right">ṭarrāšä</w>
+                  <pc xml:id="xTok_000037">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a3"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T5"
+                  start="#T4">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000038">il</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000039"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000041">o</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000042">šwayit</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000043">bugar</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000044"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000046">o</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000047">mʕaza</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000048"
+                     rend="withDash">yiḥalbū</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000050">hin</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000051">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000052">yitʕaššu</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000053">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000054">ətballiš</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000055"
+                     rend="withDash">it</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000057" join="right">taʕālīl</w>
+                  <pc xml:id="xTok_000058">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a4"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T7"
+                  start="#T6">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000059">tballiš</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000060">ḍarb</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000061"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000063">miǧwiz</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000064">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000065"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000067"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000069">ṭaḅul</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000070">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000071"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000073">rūʔ</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000074"
+                     rend="withDash">əl</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000076" join="right">minǧīra</w>
+                  <pc xml:id="xTok_000077">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a5"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T9"
+                  start="#T8">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000078">tḍalluuu</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000079">la</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000080"
+                     rend="withDash">s</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000082">sǟʕa</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000083">ḥdaʕāš</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000084">ətnaʕāš</w>
+                  <pc join="right" xml:id="xTok_000085">(</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000086" join="right">P2s</w>
+                  <pc xml:id="xTok_000087">)</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000088"
+                     rend="withDash">b</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000090">nuṣṣ</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000091"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000093" join="right">lēl</w>
+                  <pc xml:id="xTok_000094">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a6"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T11"
+                  start="#T10">
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000095"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000097"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000099">ʕālam</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000100">mabsūṭa</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000101">titbič</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000102">titzarġiṭ</w>
+                  <pc join="right" xml:id="xTok_000103">(</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000104" join="right">P1s</w>
+                  <pc xml:id="xTok_000105">)</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000106">tḍallu</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000107">sabʕət</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000108">iyyām</w>
+                  <pc xml:id="xTok_000109">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a7"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T13"
+                  start="#T12">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000110">baʕd</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000111"
+                     rend="withDash">is</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000113">sabʕət</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000114">iyyām</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000115">yiǧi</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000116">nahār</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000117"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000119" join="right">ʕarəs</w>
+                  <pc xml:id="xTok_000120">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a8"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T15"
+                  start="#T14">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000121">tiǧi</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000122"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000124"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000126" join="right">ʕašǟyir</w>
+                  <pc xml:id="xTok_000127">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a9"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000128">yaʕni</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000129">kull</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000130">ʕašīra</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000131">tǧīb</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000132"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000134">ha</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000135">ḏibīḥa</w>
+                  <pc xml:id="xTok_000136">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000137">ʕarifti</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000138">čēf</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000139">hu</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000140"
+                     rend="withDash">iḏ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000142">ḏibīḥa</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000143">yaʕni</w>
+                  <pc xml:id="xTok_000144">?</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000145">tǧīb</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000146">xarūf</w>
+                  <pc xml:id="xTok_000147">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a10"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000148"
+                     rend="withDash">nuqṭah</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000150">ha</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000151">hāy</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000152">la</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000153"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000155">ʕarīs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a11"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000156">hallaʔ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000157">ʔabū</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000158"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000160">ʕarīs</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000161">ykūn</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000162">əmsāwi</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000163">manāsif</w>
+                  <pc xml:id="xTok_000164">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a12"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000165">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000166">yaʕni</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000167">ma</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000168">yikallfu</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000169">šī</w>
+                  <pc xml:id="xTok_000170">,</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000171"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000173" join="right">ʕirəs</w>
+                  <pc xml:id="xTok_000174">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a13"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000175">ʔakūn</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000176">ʔani</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000177">ǧāyy</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000178"
+                     rend="withDash">bi</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000180" join="right">ḏibīḥa</w>
+                  <pc xml:id="xTok_000181">,</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a14"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000182"
+                     rend="withDash">yiṭʕamī</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000184">ni</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000185"
+                     rend="withDash">rubʕ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000187">a</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000188">ʔaw</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000189"
+                     rend="withDash">nuṣṣ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000191">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a15"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T28"
+                  start="#T27">
+                  <pc join="right" xml:id="xTok_000192">(</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000193" join="right">laughs</w>
+                  <pc xml:id="xTok_000194">)</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000195">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000196"
+                     rend="withDash">in</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000198">nuṣṣ</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000199"
+                     rend="withDash">it</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000201">tāni</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000202">yistafīd</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000203"
+                     rend="withDash">bī</w>
+                  <pc join="right" xml:id="xTok_000205">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000206">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a16"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000207">ē</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000208">ḥilwa</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000209">kānat</w>
+                  <pc xml:id="xTok_000210">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000211">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a17"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000212">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000213"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000215">ʕarīs</w>
+                  <pc join="right" xml:id="xTok_000216">(</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000217" join="right">RISE</w>
+                  <pc xml:id="xTok_000218">)</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000219"
+                     rend="withDash">yiziffū</w>
+                  <pc join="right" xml:id="xTok_000221">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000222">́</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000223">ʕala</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000224">ḍahar</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000225"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000227">faras</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a18"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000228">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000229">ʔiza</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000230"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000232">ʕarūs</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000233">min</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000234">tāni</w>
+                  <pc xml:id="xTok_000235">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000236">min</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000237">tāni</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000238">ǧarya</w>
+                  <pc xml:id="xTok_000239">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000240">min</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000241">tāni</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000242">ḍēʕa</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000243">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a19"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000244">ē</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000245">yāxḏum</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000246"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000248"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000250" join="right">buṣṭāt</w>
+                  <pc xml:id="xTok_000251">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000252">yistaʔəǧrum</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000253">buṣṭāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a20"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000254">tirkab</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000255"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000257"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000259">ʕālam</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000260">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000261">ətrūḥ</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000262"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000264">tāni</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000265">ḍēʕa</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000266">yiǧībum</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000267"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000269">ʕarūs</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000270">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000271">yiǧum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a21"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000272">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000273"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000275"
+                     rend="withDash">z</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000277">zaġārīṭ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000278">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000279">ha</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000280">l</w>
+                  <pc join="right" xml:id="xTok_000281">.</pc>
+                  <pc xml:id="xTok_000282">.</pc>
+                  <pc xml:id="xTok_000283">.</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000284">mabsūṭa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000285"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000287" join="right">ʕālam</w>
+                  <pc xml:id="xTok_000288">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000289">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000290">rašš</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000291"
+                     rend="withDash">əṛ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000293">ṛizz</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000294"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000296"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000298">ʕarīs</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000299">w</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000300">rašš</w>
+                  <pc join="right" xml:id="xTok_000301">.</pc>
+                  <pc xml:id="xTok_000302">.</pc>
+                  <pc xml:id="xTok_000303">.</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000304">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a22"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T41"
+                  start="#T40">
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000305">ʕallūka</w>
+                  <pc xml:id="xTok_000306">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000307">li</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000308">ʔana</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000309"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000311"
+                     rend="withDash">gūl</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000313"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000315">o</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000316">ʕallūka</w>
+                  <pc xml:id="xTok_000317">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000318">bōmbōn</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000319">yaʕni</w>
+                  <pc xml:id="xTok_000320">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000321">yriššu</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000322"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000324"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000326" join="right">ʕarīs</w>
+                  <pc xml:id="xTok_000327">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000328">ʕala</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000329"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000331" join="right">ʕiǧǧān</w>
+                  <pc xml:id="xTok_000332">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000333">ʕiǧǧān</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000334"
+                     rend="withDash">əṣ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000336">ṣġār</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000337">tlagwaṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a23"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000338">mabsūṭa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000339"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000341" join="right">ʕālam</w>
+                  <pc xml:id="xTok_000342">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000343">ē</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000344">waḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a24"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000345">baʕad</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000346">ʔisbūʕ</w>
+                  <pc xml:id="xTok_000347">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000348">baʕad</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000349">ʔisbūʕ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000350">tridd</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000351"
+                     rend="withDash">ʔižr</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000353">ak</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000354">ʔa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000355"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_000357">.</pc>
+                  <pc xml:id="xTok_000358">.</pc>
+                  <pc xml:id="xTok_000359">.</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000360">ʕala</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000361">bēt</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000362"
+                     rend="withDash">ʔahal</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000364">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a25"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T47"
+                  start="#T46">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000365">tiǧi</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000366">hiyya</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000367">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000368">wild</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000369"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000371" join="right">ha</w>
+                  <pc xml:id="xTok_000372">,</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000373"
+                     rend="withDash">il</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000375">ʕarī</w>
+                  <pc join="right" xml:id="xTok_000376">(</pc>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000377">s</w>
+                  <pc join="right" xml:id="xTok_000378">)</pc>
+                  <pc join="right" xml:id="xTok_000379">.</pc>
+                  <pc xml:id="xTok_000380">.</pc>
+                  <pc xml:id="xTok_000381">.</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000382">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a26"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000383">tkūn</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000384"
+                     rend="withDash">yidbaḥ</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000386"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000388">um</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000389">dibīḥa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a27"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000390">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000391">yiʕzim</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000392"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000394"
+                     rend="withDash">ǧ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000396">ǧīrān</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000397"
+                     rend="withDash">ḥawālē</w>
+                  <pc join="right" xml:id="xTok_000399">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000400">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a28"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T53"
+                  start="#T52">
+                  <pc join="right" xml:id="xTok_000401">/</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000402">impersonating</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000403">the</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000404">bride</w>
+                  <pc join="right" xml:id="xTok_000405">'</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000406">s</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000407">family</w>
+                  <pc xml:id="xTok_000408">/</pc>
+                  <pc join="right" xml:id="xTok_000409">"</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000410">ǧāyy</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000411"
+                     rend="withDash">nisīb</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000413">i</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000414"
+                     rend="withDash">l</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000416">yōm</w>
+                  <pc xml:id="xTok_000417">!</pc>
+                  <pc xml:id="xTok_000418">"</pc>
+                  <pc join="right" xml:id="xTok_000419">"</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000420">tfaḍḍalu</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000421"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000423"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000425" join="right">ġada</w>
+                  <pc xml:id="xTok_000426">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a29"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000427">yidbaḥum</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000428">rās</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000429">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000430"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000432" join="right">ġanam</w>
+                  <pc xml:id="xTok_000433">,</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000434"
+                     rend="withDash">yigaṭṭʕū</w>
+                  <pc join="right" xml:id="xTok_000436">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000437" join="right">́</w>
+                  <pc xml:id="xTok_000438">,</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000439"
+                     rend="withDash">yiḥuṭṭū</w>
+                  <pc join="right" xml:id="xTok_000441">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000442">́</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000443"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000445"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000447"
+                     rend="withDash">ǧ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000449">ǧidir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a30"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000450">nās</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000451"
+                     rend="withDash">ətgūl</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000453"
+                     rend="withDash">l</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000455">a</w>
+                  <pc join="right" xml:id="xTok_000456">.</pc>
+                  <pc xml:id="xTok_000457">.</pc>
+                  <pc xml:id="xTok_000458">.</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000459">alḥazz</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000460"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000462"
+                     rend="withDash">yigūlū</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000464"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000466">a</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000467">ḥill</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000468">bass</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000469">niḥna</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000470"
+                     rend="withDash">baʕad</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000472">na</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000473"
+                     rend="withDash">ngūl</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000475"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000477">o</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000478">ǧidir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a31"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000479">ənḥās</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000480">ǧidir</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000481">ənḥās</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000482">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000483">ǧidir</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000484">burġul</w>
+                  <pc xml:id="xTok_000485">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000486">ǧidir</w>
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000487">rizz</w>
+                  <pc join="right" xml:id="xTok_000488">.</pc>
+                  <pc xml:id="xTok_000489">.</pc>
+                  <pc xml:id="xTok_000490">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a38"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000491">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000492"
+                     rend="withDash">əǧ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000494">ǧidir</w>
+                  <pc join="right" xml:id="xTok_000495">(</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000496" join="right">RISE</w>
+                  <pc xml:id="xTok_000497">)</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000498">yikūnum</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000499">əmgaṭṭʕīn</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000500">rās</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000501"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000503">ġanam</w>
+                  <pc join="right" xml:id="xTok_000504">(</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000505" join="right">P1s</w>
+                  <pc xml:id="xTok_000506">)</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000507"
+                     rend="withDash">yisilgū</w>
+                  <pc join="right" xml:id="xTok_000509">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000510">́</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000511"
+                     rend="withDash">bī</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000513">h</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a32"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000514">bass</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000515">yistawi</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000516"
+                     rend="withDash">r</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000518">rizz</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000519">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000520"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000522" join="right">burġul</w>
+                  <pc xml:id="xTok_000523">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000524">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000525">yiḥuṭṭum</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000526"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000528"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000530" join="right">laḥam</w>
+                  <pc xml:id="xTok_000531">,</pc>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000532"
+                     rend="withDash">yiḥuṭṭū</w>
+                  <pc join="right" xml:id="xTok_000534">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000535">́</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000536"
+                     rend="withDash">b</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000538" join="right">ṣanāya</w>
+                  <pc xml:id="xTok_000539">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000540">minsaf</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000541">čibīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a33"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T65"
+                  start="#T64">
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000542"
+                     rend="withDash">yiḥuṭṭū</w>
+                  <pc join="right" xml:id="xTok_000544">_</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000545">́</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000546"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000548"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000550"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000552" join="right">minsaf</w>
+                  <pc xml:id="xTok_000553">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000554">w</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000555"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000557"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000559">laḥam</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000560"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000562"
+                     rend="withDash">waǧǧ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000564">hu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a34"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000565">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000566">ḥaṭṭum</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000567"
+                     rend="withDash">aṛ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000569" join="right">ṛās</w>
+                  <pc xml:id="xTok_000570">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000571">rās</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000572"
+                     rend="withDash">iḏ</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000574" join="right">ḏibīḥa</w>
+                  <pc xml:id="xTok_000575">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000576">la</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000577"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000579">ʕarīs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a35"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000580">yaʕni</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000581">hāḏ̣a</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000582"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000584">minsaf</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000585">mxaṣṣaṣ</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000586"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000588"
+                     rend="withDash">šaraf</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000590" join="right">o</w>
+                  <pc xml:id="xTok_000591">,</pc>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000592">hāy</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000593"
+                     rend="withDash">l</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000595">wilīma</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a36"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000596">w</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000597">hāḏ̣a</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000598">ma</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000599"
+                     rend="withDash">xabbr</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000601">ič</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000602">ya</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000603">ṭawīlt</w>
+                  <w join="right"
+                     xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000604"
+                     rend="withDash">il</w>
+                  <w xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000606">ʕumur</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u02_NZ_M.73_Karantina_BedouinWeddings_a37"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T73"
+                  start="#T72">
+                  <w join="right" xml:id="02_NZ_M.73_Karantina_BedouinWeddings_xTok_000607">maḅsūṭa</w>
+                  <pc xml:id="xTok_000608">?</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

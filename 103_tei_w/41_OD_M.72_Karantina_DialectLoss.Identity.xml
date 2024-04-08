@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-04-08T09:51:04.019377Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">41_OD_M.72_Karantina_DialectLoss.Identity</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">41_OD_M.72_Karantina_DialectLoss.Identity</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.19444444444444445" type="audio">
+                  <date when="2022-02-28"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 41_OD_M.72_Karantina_DialectLoss.Identity</head>
+               <person sameAs="corpus:LEB_KAR_2022_OD_M.72_Speaker3">
+                  <name type="pseudonym">LEB_KAR_2022_OD_M.72_Speaker3</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Languageandidentity"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="214" since="#T0" xml:id="T56"/>
+         <when interval="5642" since="#T0" xml:id="T1"/>
+         <when interval="9678" since="#T0" xml:id="T57"/>
+         <when interval="10142" since="#T0" xml:id="T58"/>
+         <when interval="11630" since="#T0" xml:id="T2"/>
+         <when interval="14471" since="#T0" xml:id="T59"/>
+         <when interval="17583" since="#T0" xml:id="T3"/>
+         <when interval="25811" since="#T0" xml:id="T4"/>
+         <when interval="26431" since="#T0" xml:id="T5"/>
+         <when interval="31496" since="#T0" xml:id="T60"/>
+         <when interval="31603" since="#T0" xml:id="T6"/>
+         <when interval="37287" since="#T0" xml:id="T7"/>
+         <when interval="38546" since="#T0" xml:id="T61"/>
+         <when interval="40597" since="#T0" xml:id="T8"/>
+         <when interval="40933" since="#T0" xml:id="T9"/>
+         <when interval="47464" since="#T0" xml:id="T10"/>
+         <when interval="47629" since="#T0" xml:id="T11"/>
+         <when interval="55795" since="#T0" xml:id="T12"/>
+         <when interval="56028" since="#T0" xml:id="T13"/>
+         <when interval="57953" since="#T0" xml:id="T62"/>
+         <when interval="59751" since="#T0" xml:id="T63"/>
+         <when interval="60108" since="#T0" xml:id="T14"/>
+         <when interval="60742" since="#T0" xml:id="T15"/>
+         <when interval="67896" since="#T0" xml:id="T16"/>
+         <when interval="67926" since="#T0" xml:id="T64"/>
+         <when interval="73997" since="#T0" xml:id="T17"/>
+         <when interval="75094" since="#T0" xml:id="T65"/>
+         <when interval="80781" since="#T0" xml:id="T66"/>
+         <when interval="81000" since="#T0" xml:id="T18"/>
+         <when interval="83350" since="#T0" xml:id="T67"/>
+         <when interval="83362" since="#T0" xml:id="T19"/>
+         <when interval="92285" since="#T0" xml:id="T20"/>
+         <when interval="92560" since="#T0" xml:id="T21"/>
+         <when interval="102870" since="#T0" xml:id="T22"/>
+         <when interval="104011" since="#T0" xml:id="T23"/>
+         <when interval="112388" since="#T0" xml:id="T24"/>
+         <when interval="112870" since="#T0" xml:id="T25"/>
+         <when interval="120751" since="#T0" xml:id="T26"/>
+         <when interval="120808" since="#T0" xml:id="T27"/>
+         <when interval="124392" since="#T0" xml:id="T28"/>
+         <when interval="148985" since="#T0" xml:id="T68"/>
+         <when interval="152763" since="#T0" xml:id="T29"/>
+         <when interval="153543" since="#T0" xml:id="T69"/>
+         <when interval="162105" since="#T0" xml:id="T30"/>
+         <when interval="164108" since="#T0" xml:id="T31"/>
+         <when interval="167286" since="#T0" xml:id="T32"/>
+         <when interval="179954" since="#T0" xml:id="T70"/>
+         <when interval="182445" since="#T0" xml:id="T71"/>
+         <when interval="182475" since="#T0" xml:id="T33"/>
+         <when interval="185076" since="#T0" xml:id="T72"/>
+         <when interval="186473" since="#T0" xml:id="T34"/>
+         <when interval="186626" since="#T0" xml:id="T73"/>
+         <when interval="188355" since="#T0" xml:id="T35"/>
+         <when interval="188691" since="#T0" xml:id="T74"/>
+         <when interval="191427" since="#T0" xml:id="T75"/>
+         <when interval="194657" since="#T0" xml:id="T36"/>
+         <when interval="195103" since="#T0" xml:id="T37"/>
+         <when interval="197999" since="#T0" xml:id="T38"/>
+         <when interval="203999" since="#T0" xml:id="T39"/>
+         <when interval="207676" since="#T0" xml:id="T40"/>
+         <when interval="215512" since="#T0" xml:id="T76"/>
+         <when interval="218816" since="#T0" xml:id="T77"/>
+         <when interval="221925" since="#T0" xml:id="T41"/>
+         <when interval="224611" since="#T0" xml:id="T78"/>
+         <when interval="226786" since="#T0" xml:id="T79"/>
+         <when interval="226843" since="#T0" xml:id="T42"/>
+         <when interval="228316" since="#T0" xml:id="T43"/>
+         <when interval="234224" since="#T0" xml:id="T44"/>
+         <when interval="234666" since="#T0" xml:id="T45"/>
+         <when interval="239867" since="#T0" xml:id="T46"/>
+         <when interval="239983" since="#T0" xml:id="T80"/>
+         <when interval="240245" since="#T0" xml:id="T47"/>
+         <when interval="242495" since="#T0" xml:id="T81"/>
+         <when interval="244495" since="#T0" xml:id="T48"/>
+         <when interval="245720" since="#T0" xml:id="T49"/>
+         <when interval="247015" since="#T0" xml:id="T50"/>
+         <when interval="247499" since="#T0" xml:id="T82"/>
+         <when interval="251846" since="#T0" xml:id="T51"/>
+         <when interval="251907" since="#T0" xml:id="T83"/>
+         <when interval="253339" since="#T0" xml:id="T84"/>
+         <when interval="254552" since="#T0" xml:id="T85"/>
+         <when interval="255636" since="#T0" xml:id="T86"/>
+         <when interval="256999" since="#T0" xml:id="T52"/>
+         <when interval="259236" since="#T0" xml:id="T87"/>
+         <when interval="262803" since="#T0" xml:id="T53"/>
+         <when interval="266247" since="#T0" xml:id="T88"/>
+         <when interval="270999" since="#T0" xml:id="T54"/>
+         <when interval="272248" since="#T0" xml:id="T89"/>
+         <when interval="272319" since="#T0" xml:id="T90"/>
+         <when interval="274590" since="#T0" xml:id="T91"/>
+         <when interval="278274" since="#T0" xml:id="T55"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T55</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a16"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000001">hallaʔ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000002">ʔani</w>
+                  <pc xml:id="xTok_000003">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000004">ṣaḥḥ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000005">ʔaḥki</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000006">bduwi</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000007">bass</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000008">miš</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000009"
+                     rend="withDash">mitl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000011"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000012">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000013">miš</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000014"
+                     rend="withDash">mitl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000016">ak</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000017">ʔaḥki</w>
+                  <pc xml:id="xTok_000018">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000019">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000020">inta</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000021">nafs</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000022"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000024">mawḍūʕ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000025">ʔin</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000026">kān</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000027"
+                     rend="withDash">bidd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000029">ak</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000030">tiḥki</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000031">mitil</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000032"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000034">k</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000035">mitil</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000036"
+                     rend="withDash">ǧidd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000038"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000039">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a1"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000040">nafs</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000041"
+                     rend="withDash">iš</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000043">šī</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000044">miš</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000045">mitil</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000046"
+                     rend="withDash">ǧidd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000048">i</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000049">miš</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000050">mitil</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000051"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000053"
+                     join="right">ya</w>
+                  <pc xml:id="xTok_000054">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000055">mbala</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000056"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000058">k</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000059">ḥagg</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a17"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000060">fa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000061">šū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000062">hiyya</w>
+                  <pc join="right" xml:id="xTok_000063">.</pc>
+                  <pc xml:id="xTok_000064">.</pc>
+                  <pc xml:id="xTok_000065">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000066">šū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000067">hiyya</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000068"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000070"
+                     rend="withDash">naẓar</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000072">ak</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000073">šū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000074">hiyya</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000075"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000077">kalimāt</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000078">li</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000079">hallaʔ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000080">infiʔdat</w>
+                  <pc xml:id="xTok_000081">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a2"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000082">la</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000083">kilmit</w>
+                  <pc join="right" xml:id="xTok_000084">"</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000085">šinīna</w>
+                  <pc xml:id="xTok_000086">"</pc>
+                  <pc xml:id="xTok_000087">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000088">wala</w>
+                  <pc join="right" xml:id="xTok_000089">"</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000090"
+                     rend="withDash">brāx</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000092">a</w>
+                  <pc xml:id="xTok_000093">"</pc>
+                  <pc xml:id="xTok_000094">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000095">wala</w>
+                  <pc join="right" xml:id="xTok_000096">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000097"
+                     join="right">rūḥ</w>
+                  <pc xml:id="xTok_000098">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000099">wala</w>
+                  <pc join="right" xml:id="xTok_000100">"</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000101">tāʕ</w>
+                  <pc xml:id="xTok_000102">"</pc>
+                  <pc xml:id="xTok_000103">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000104"
+                     rend="withDash">kull</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000106">u</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000107"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000109"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000111">madaniyya</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000112">ṣār</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a3"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000113">yaʕni</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000114">qalīl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000115">la</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000116">tifham</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000117"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000119">hum</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000120">hallaʔ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000121">tāʕ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000122">yišūfu</w>
+                  <pc join="right" xml:id="xTok_000123">.</pc>
+                  <pc xml:id="xTok_000124">.</pc>
+                  <pc xml:id="xTok_000125">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000126">bass</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000127">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000128">tifham</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000129"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000131">_</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000132">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a19"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000133">ṭab</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000134">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000135">inta</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000136"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000138"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000140">mužtamaʕ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000141"
+                     rend="withDash">it</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000143"
+                     join="right">tāni</w>
+                  <pc xml:id="xTok_000144">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000145">lamma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000146">trūḥ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000147">ʕala</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000148"
+                     rend="withDash">d</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000150">dikkēnä</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000151">ʕind</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000152">ḥada</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000153">min</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000154"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000156"
+                     join="right">bayārta</w>
+                  <pc xml:id="xTok_000157">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000158"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000160">tiḥki</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000161"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000163">o</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000164">badawi</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000165">walla</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000166"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000168">tiḥki</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000169"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000171">o</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000172">beyrūti</w>
+                  <pc xml:id="xTok_000173">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a4"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000174">lāʔ</w>
+                  <pc xml:id="xTok_000175">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000176">beyrūti</w>
+                  <pc xml:id="xTok_000177">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a5"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000178">ʔilla</w>
+                  <pc xml:id="xTok_000179">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000180">masalan</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000181">inta</w>
+                  <pc xml:id="xTok_000182">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000183">hallaʔ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000184"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000186"
+                     join="right">​naḥči</w>
+                  <pc xml:id="xTok_000187">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000188"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000190">ḥači</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000191"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000193">k</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000194">mitil</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000195">ma</w>
+                  <pc join="right" xml:id="xTok_000196">.</pc>
+                  <pc xml:id="xTok_000197">.</pc>
+                  <pc xml:id="xTok_000198">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000199"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000201"
+                     join="right">ʕarab</w>
+                  <pc xml:id="xTok_000202">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000203">ʕarifit</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000204">čēf</w>
+                  <pc xml:id="xTok_000205">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a6"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000206">bass</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000207"
+                     rend="withDash">lawn</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000209">a</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000210">bi</w>
+                  <pc join="right" xml:id="xTok_000211">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000212"
+                     join="right">ē</w>
+                  <pc xml:id="xTok_000213">"</pc>
+                  <pc join="right" xml:id="xTok_000214">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000215"
+                     join="right">hallaʔ</w>
+                  <pc xml:id="xTok_000216">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000217">walla</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000218">baʕrif</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000219">šū</w>
+                  <pc xml:id="xTok_000220">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000221">miš</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000222"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000224"
+                     join="right">ḥazz</w>
+                  <pc xml:id="xTok_000225">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000226">yaʕni</w>
+                  <pc join="right" xml:id="xTok_000227">"</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000228">hallaʔ</w>
+                  <pc xml:id="xTok_000229">"</pc>
+                  <pc xml:id="xTok_000230">,</pc>
+                  <pc join="right" xml:id="xTok_000231">"</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000232"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000234"
+                     join="right">ḥazz</w>
+                  <pc xml:id="xTok_000235">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000236">iḥna</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000237"
+                     rend="withDash">ngūl</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000239"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000241"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000242">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a7"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000243">bāčir</w>
+                  <pc xml:id="xTok_000244">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000245">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000246">ngūl</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000247">bukra</w>
+                  <pc xml:id="xTok_000248">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000249">bāčir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a106"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T63"
+                  start="#T62">
+                  <pc join="right" xml:id="xTok_000250">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000251"
+                     join="right">bāšir</w>
+                  <pc xml:id="xTok_000252">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a8"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000253">baʕad</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000254">šaharēn</w>
+                  <pc join="right" xml:id="xTok_000255">.</pc>
+                  <pc xml:id="xTok_000256">.</pc>
+                  <pc xml:id="xTok_000257">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000258">yaʕni</w>
+                  <pc xml:id="xTok_000259">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000260">ʕarifit</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000261">kīf</w>
+                  <pc xml:id="xTok_000262">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000263"
+                     rend="withDash">tḏ̣all</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000265">a</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000266">yaʕni</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000267"
+                     rend="withDash">bēn</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000269">i</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000270">w</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000271"
+                     rend="withDash">bēn</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000273"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000274">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000275"
+                     rend="withDash">ngūl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000277">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a20"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000278">ṭab</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000279">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000280">ʔiza</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000281">ʔiža</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000282">ḥada</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000283">min</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000284">barra</w>
+                  <pc xml:id="xTok_000285">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000286">bayrūti</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000287">ʔinno</w>
+                  <pc xml:id="xTok_000288">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000289">ʔāl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000290">ʔinno</w>
+                  <pc join="right" xml:id="xTok_000291">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000292">hayda</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000293">badawi</w>
+                  <pc xml:id="xTok_000294">"</pc>
+                  <pc xml:id="xTok_000295">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000296"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000298"
+                     rend="withDash">ətḥiss</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000300">a</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000301">kilmä</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000302">nāʔṣa</w>
+                  <pc xml:id="xTok_000303">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a9"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000304">la</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000305"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000307"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000309"
+                     join="right">ʕakəs</w>
+                  <pc xml:id="xTok_000310">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000311">la</w>
+                  <pc xml:id="xTok_000312">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000313">ʔaftaxir</w>
+                  <pc xml:id="xTok_000314">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000315">ṭabʕan</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000316">ʔaftaxir</w>
+                  <pc join="right" xml:id="xTok_000317">.</pc>
+                  <pc xml:id="xTok_000318">.</pc>
+                  <pc xml:id="xTok_000319">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000320"
+                     rend="withDash">ʕrūbt</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000322">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a21"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000323">bass</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000324">hinni</w>
+                  <pc xml:id="xTok_000325">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000326">hinni</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000327"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000329"
+                     rend="withDash">yʔūlū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000331">wa</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000332"
+                     rend="withDash">bi</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000334">ṭarīʔa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000335">inno</w>
+                  <pc join="right" xml:id="xTok_000336">"</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000337"
+                     join="right">badawi</w>
+                  <pc xml:id="xTok_000338">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a10"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000339">la</w>
+                  <pc xml:id="xTok_000340">!</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000341">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000342">yāklu</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000343">xara</w>
+                  <pc xml:id="xTok_000344">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000345">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000346">humma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000347">yʕarfu</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000348">inno</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000349">niḥna</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000350"
+                     rend="withDash">ʔasyād</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000352"
+                     join="right">um</w>
+                  <pc xml:id="xTok_000353">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000354">yʕarfu</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000355">inno</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000356">niḥna</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000357"
+                     rend="withDash">ʔasyād</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000359"
+                     join="right">um</w>
+                  <pc xml:id="xTok_000360">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000361">walla</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000362">ma</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000363"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000365">nkabbir</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000366"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000368"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000370">na</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000371">ʕala</w>
+                  <pc join="right" xml:id="xTok_000372">.</pc>
+                  <pc xml:id="xTok_000373">.</pc>
+                  <pc xml:id="xTok_000374">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a11"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000375"
+                     rend="withDash">gilt</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000377"
+                     rend="withDash">ill</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000379">ak</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000380">niḥna</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000381">ǧīna</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000382"
+                     rend="withDash">bi</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000384">futūḥāt</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000385">xālid</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000386">bin</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000387"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000389"
+                     join="right">walīd</w>
+                  <pc xml:id="xTok_000390">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000391"
+                     rend="withDash">baʕad</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000393">na</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000394"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000396">na</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000397"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000399">ʕawāyid</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000400">inno</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000401">nfūt</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000402"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000404"
+                     rend="withDash">s</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000406"
+                     join="right">silim</w>
+                  <pc xml:id="xTok_000407">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000408"
+                     rend="withDash">ʔislām</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000410">na</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000411">fāt</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000412"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000414"
+                     rend="withDash">s</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000416"
+                     join="right">silim</w>
+                  <pc xml:id="xTok_000417">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000418">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000419">fāt</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000420">ḏabbaḥ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000421"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000423">ʕālam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a12"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000424">ṣayfāt</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000425">w</w>
+                  <pc join="right" xml:id="xTok_000426">.</pc>
+                  <pc xml:id="xTok_000427">.</pc>
+                  <pc xml:id="xTok_000428">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000429">ḥitta</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000430">xalla</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000431"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000433">masīḥi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000434"
+                     rend="withDash">la</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000436">ḥāl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000437">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000438">kōl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000439">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000440">šrāb</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000441">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000442">li</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000443"
+                     rend="withDash">bidd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000445">ak</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000446"
+                     rend="withDash">ʔiyyā</w>
+                  <pc join="right" xml:id="xTok_000448">_</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000449">́</w>
+                  <pc join="right" xml:id="xTok_000450">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000451">w</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000452"
+                     rend="withDash">la</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000454">ḥadd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000455">hallaʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a13"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000456">bass</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000457">ʔiža</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000458">fitnit</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000459"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000461">yāhūd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000462">mitil</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000463">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000464">gūl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000465">ʔana</w>
+                  <pc join="right" xml:id="xTok_000466">*</pc>
+                  <pc join="right" xml:id="xTok_000467">*</pc>
+                  <pc join="right" xml:id="xTok_000468">*</pc>
+                  <pc join="right" xml:id="xTok_000469">*</pc>
+                  <pc join="right" xml:id="xTok_000470">*</pc>
+                  <pc join="right" xml:id="xTok_000471">*</pc>
+                  <pc xml:id="xTok_000472">*</pc>
+                  <pc xml:id="xTok_000473">*</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000474">hiyya</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000475">fātat</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000476"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000478"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000480">fasād</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a14"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000481">walla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a102"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000482">kēn</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000483"
+                     rend="withDash">badd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000485">i</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000486"
+                     rend="withDash">ʔisʔal</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000488"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000489">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000490">inta</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000491"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000493">ətʔūl</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000494">šū</w>
+                  <pc xml:id="xTok_000495">?</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000496">ʔaw</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000497"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000499">ətʔūl</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000500">šinu</w>
+                  <pc xml:id="xTok_000501">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a23"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T30"
+                  start="#T29">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000502">šinū</w>
+                  <pc xml:id="xTok_000503">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000504">šū</w>
+                  <pc xml:id="xTok_000505">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000506">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000507">hiyyi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000508"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000510">luġa</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000511"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000513">ʕarabiyya</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000514">ʔarbʕīn</w>
+                  <pc xml:id="xTok_000515">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000516">ḥarəf</w>
+                  <pc xml:id="xTok_000517">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000518"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000520">ətʔūli</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000521">ʔarbʕīn</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000522">nuṭ</w>
+                  <pc join="right" xml:id="xTok_000523">.</pc>
+                  <pc xml:id="xTok_000524">.</pc>
+                  <pc xml:id="xTok_000525">.</pc>
+                  <pc join="right" xml:id="xTok_000526">(</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000527">nuṭuq</w>
+                  <pc xml:id="xTok_000528">)</pc>
+                  <pc xml:id="xTok_000529">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000530">masalan</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000531">marḥaba</w>
+                  <pc xml:id="xTok_000532">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000533"
+                     rend="withDash">as</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000535">salāmu</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000536"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000538">kum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a24"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000539">tʔallaf</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000540">min</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000541">ʔarbʕīn</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000542">ḥarəf</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000543">w</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000544">hiyyi</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000545">tkūn</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000546">kilmä</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000547">waḥdä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a104"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000548">inta</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000549"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000551">ətʔūl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000552">bī</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000553">munfaḍa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000554">walla</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000555">fī</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000556">munfaḍa</w>
+                  <pc xml:id="xTok_000557">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a25"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000558">bī</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000559">munfaḍa</w>
+                  <pc xml:id="xTok_000560">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000561">bī</w>
+                  <pc xml:id="xTok_000562">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000563"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000565"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000567">bē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a66"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000568">bass</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000569"
+                     rend="withDash">iš</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000571">šabāb</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000572">hallaʔ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000573">fī</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a26"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000574">yaʕni</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000575"
+                     rend="withDash">ʕam</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000577"
+                     rend="withDash">gil</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000579"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000581">ak</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000582"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000584">madaniyya</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000585"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000587">tiġlub</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000588"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000590">.</pc>
+                  <pc xml:id="xTok_000591">.</pc>
+                  <pc xml:id="xTok_000592">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a67"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000593">ʕam</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000594"
+                     rend="withDash">ʕam</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000596">tinfaʔad</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000597"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000599">luġa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a27"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000600">hallaʔ</w>
+                  <pc join="right" xml:id="xTok_000601">*</pc>
+                  <pc join="right" xml:id="xTok_000602">*</pc>
+                  <pc join="right" xml:id="xTok_000603">*</pc>
+                  <pc join="right" xml:id="xTok_000604">*</pc>
+                  <pc join="right" xml:id="xTok_000605">*</pc>
+                  <pc join="right" xml:id="xTok_000606">*</pc>
+                  <pc join="right" xml:id="xTok_000607">*</pc>
+                  <pc join="right" xml:id="xTok_000608">*</pc>
+                  <pc join="right" xml:id="xTok_000609">*</pc>
+                  <pc join="right" xml:id="xTok_000610">*</pc>
+                  <pc join="right" xml:id="xTok_000611">*</pc>
+                  <pc join="right" xml:id="xTok_000612">*</pc>
+                  <pc join="right" xml:id="xTok_000613">*</pc>
+                  <pc join="right" xml:id="xTok_000614">*</pc>
+                  <pc xml:id="xTok_000615">*</pc>
+                  <pc xml:id="xTok_000616">*</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000617">ma</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000618">ḥada</w>
+                  <pc join="right" xml:id="xTok_000619">.</pc>
+                  <pc xml:id="xTok_000620">.</pc>
+                  <pc xml:id="xTok_000621">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000622"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000624">ʕArab</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a70"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000625">ʔilla</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000626">bass</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000627">ʔanṭuḳ</w>
+                  <pc xml:id="xTok_000628">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000629">inta</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000630">bduwi</w>
+                  <pc xml:id="xTok_000631">?</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000632">inta</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000633">min</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000634">ʕarab</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000635"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000637"
+                     join="right">mislax</w>
+                  <pc xml:id="xTok_000638">?</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000639">ibin</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000640">mīn</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000641">inta</w>
+                  <pc xml:id="xTok_000642">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a71"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000643">yimbasṭu</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000644">humma</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000645"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000647">ʕiǧǧān</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000648"
+                     rend="withDash">iš</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000650">šibāb</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000651">li</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000652">ṭālʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000653">yimbasṭu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a74"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000654">ʔiza</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000655">fī</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000656">ʕiǧǧān</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000657"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000659">tilʕab</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000660">barra</w>
+                  <pc xml:id="xTok_000661">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000662">niḥna</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000663">šū</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000664">nʔūl</w>
+                  <pc xml:id="xTok_000665">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a28"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000666">tiǧi</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000667">ʕala</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000668">hawa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000669">ʕiǧǧān</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000670"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000672">yilʕabum</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000673">barra</w>
+                  <pc xml:id="xTok_000674">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000675"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000677"
+                     join="right">yilʕabu</w>
+                  <pc xml:id="xTok_000678">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a98"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T79"
+                  start="#T78">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000679"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000681"
+                     join="right">yilʕabu</w>
+                  <pc xml:id="xTok_000682">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a29"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000683">hāḏōl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000684">ʕarab</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000685"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000687">əḥrūk</w>
+                  <pc join="right" xml:id="xTok_000688">.</pc>
+                  <pc xml:id="xTok_000689">.</pc>
+                  <pc xml:id="xTok_000690">.</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000691"
+                     rend="withDash">yimuḍḍū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000693"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000694">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000695"
+                     rend="withDash">yimiddū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000697"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000698">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000699">yilʕabūn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a30"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000700">ē</w>
+                  <pc xml:id="xTok_000701">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000702">ʔaw</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000703"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000705">yilʕabum</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000706"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000708"
+                     rend="withDash">yžībū</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000710">ha</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000711"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000713"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000715"
+                     join="right">mīm</w>
+                  <pc xml:id="xTok_000716">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000717">niḥna</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000718"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000720"
+                     join="right">yilʕabu</w>
+                  <pc xml:id="xTok_000721">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a80"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T81"
+                  start="#T80">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000722"
+                     rend="withDash">luġit</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000724">na</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000725">sahlä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a31"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000726">liḥna</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000727"
+                     rend="withDash">nǧīb</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000729">a</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000730">sahla</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000731">liʔanno</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000732">hayk</w>
+                  <pc xml:id="xTok_000733">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000734">hēk</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000735">tinkatab</w>
+                  <pc xml:id="xTok_000736">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000737">yilʕabu</w>
+                  <pc xml:id="xTok_000738">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a81"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T50"
+                  start="#T49">
+                  <pc join="right" xml:id="xTok_000739">/</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000740">his</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000741">daughter</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000742">just</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000743">enters</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000744">the</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000745">room</w>
+                  <pc xml:id="xTok_000746">/</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000747">ʔahlan</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000748">yāba</w>
+                  <pc xml:id="xTok_000749">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a85"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000750">w</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000751"
+                     rend="withDash">ḥaḍirt</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000753">ak</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000754">masalan</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000755"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000757">tiḥki</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000758">maʕ</w>
+                  <pc join="right" xml:id="xTok_000759">.</pc>
+                  <pc xml:id="xTok_000760">.</pc>
+                  <pc xml:id="xTok_000761">.</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000762">ʔiza</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000763"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000765">tiḥki</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000766">maʕ</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000767">ʕarab</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000768"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000770">bʔāʕ</w>
+                  <pc join="right" xml:id="xTok_000771">.</pc>
+                  <pc xml:id="xTok_000772">.</pc>
+                  <pc xml:id="xTok_000773">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a32"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T52"
+                  start="#T51">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000774"
+                     rend="withDash">mitil</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000776">na</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000777"
+                     rend="withDash">mitil</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000779"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000780">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000781">ē</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000782">hinni</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000783"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000785">yifhamu</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000786"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000788"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000789">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000790">ē</w>
+                  <pc xml:id="xTok_000791">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a87"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T85"
+                  start="#T84">
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000792"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000794">tifham</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000795"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000797">yun</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000798">ʕādi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a88"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000799">ma</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000800"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000802">ətḥiss</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000803">inno</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000804">fī</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000805">šī</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000806"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000808">yixtilif</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000809"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000811"
+                     rend="withDash">lahžit</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000813"
+                     join="right">un</w>
+                  <pc xml:id="xTok_000814">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a33"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000815">la</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000816">la</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000817">la</w>
+                  <pc xml:id="xTok_000818">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000819">la</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000820">la</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000821">la</w>
+                  <pc xml:id="xTok_000822">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000823">la</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000824">la</w>
+                  <pc xml:id="xTok_000825">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000826">liʔanno</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000827"
+                     rend="withDash">mn</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000829">əfham</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000830"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000832"
+                     join="right">baʕaḏ̣</w>
+                  <pc xml:id="xTok_000833">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a89"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T89"
+                  start="#T88">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000834">inta</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000835">ʔakīd</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000836">min</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000837"
+                     rend="withDash">il</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000839"
+                     join="right">ʕarab</w>
+                  <pc xml:id="xTok_000840">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000841">bass</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000842">kamēn</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000843"
+                     rend="withDash">b</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000845">ətḥiss</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000846"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000848">ak</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000849">libnēni</w>
+                  <pc join="right" xml:id="xTok_000850">.</pc>
+                  <pc xml:id="xTok_000851">.</pc>
+                  <pc xml:id="xTok_000852">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a34"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000853">ē</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000854">ṭabʕan</w>
+                  <pc xml:id="xTok_000855">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000856">ē</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000857">ṭabʕan</w>
+                  <pc xml:id="xTok_000858">,</pc>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000859"
+                     rend="withDash">waṭan</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000861">o</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000862"
+                     rend="withDash">l</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000864"
+                     join="right">wāḥad</w>
+                  <pc xml:id="xTok_000865">,</pc>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000866">kīf</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000867">lakān</w>
+                  <pc xml:id="xTok_000868">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u41_OD_M.72_Karantina_DialectLoss.Identity_a90"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T91"
+                  start="#T90">
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000869">yaʕni</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000870"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000872">ak</w>
+                  <w xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000873">intimēʔ</w>
+                  <w join="right"
+                     xml:id="41_OD_M.72_Karantina_DialectLoss.Identity_xTok_000874">ʔawiyye</w>
+                  <pc xml:id="xTok_000875">?</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

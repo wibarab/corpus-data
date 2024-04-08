@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-04-08T09:51:07.54023Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">09_NZ_M.73_Karantina_creditSon.picturesWedding</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">09_NZ_M.73_Karantina_creditSon.picturesWedding</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.11597222222222221" type="audio">
+                  <date when="2023-05-16"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2023_AID LEB_2023_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 09_NZ_M.73_Karantina_creditSon.picturesWedding</head>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <name type="pseudonym">LEB_KAR_2023_NZ_M.73_Speaker1</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Family"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="35" since="#T0" xml:id="T1"/>
+         <when interval="3693" since="#T0" xml:id="T2"/>
+         <when interval="5606" since="#T0" xml:id="T3"/>
+         <when interval="7195" since="#T0" xml:id="T4"/>
+         <when interval="9502" since="#T0" xml:id="T5"/>
+         <when interval="11495" since="#T0" xml:id="T6"/>
+         <when interval="11540" since="#T0" xml:id="T46"/>
+         <when interval="12520" since="#T0" xml:id="T47"/>
+         <when interval="13874" since="#T0" xml:id="T7"/>
+         <when interval="17535" since="#T0" xml:id="T8"/>
+         <when interval="18056" since="#T0" xml:id="T9"/>
+         <when interval="24897" since="#T0" xml:id="T10"/>
+         <when interval="30099" since="#T0" xml:id="T11"/>
+         <when interval="30930" since="#T0" xml:id="T12"/>
+         <when interval="30935" since="#T0" xml:id="T48"/>
+         <when interval="31810" since="#T0" xml:id="T13"/>
+         <when interval="31838" since="#T0" xml:id="T49"/>
+         <when interval="32980" since="#T0" xml:id="T14"/>
+         <when interval="38412" since="#T0" xml:id="T15"/>
+         <when interval="40122" since="#T0" xml:id="T16"/>
+         <when interval="42281" since="#T0" xml:id="T17"/>
+         <when interval="44285" since="#T0" xml:id="T18"/>
+         <when interval="44474" since="#T0" xml:id="T50"/>
+         <when interval="46665" since="#T0" xml:id="T51"/>
+         <when interval="50147" since="#T0" xml:id="T19"/>
+         <when interval="52413" since="#T0" xml:id="T20"/>
+         <when interval="52470" since="#T0" xml:id="T21"/>
+         <when interval="55601" since="#T0" xml:id="T22"/>
+         <when interval="56280" since="#T0" xml:id="T23"/>
+         <when interval="56795" since="#T0" xml:id="T24"/>
+         <when interval="57717" since="#T0" xml:id="T52"/>
+         <when interval="59062" since="#T0" xml:id="T25"/>
+         <when interval="60394" since="#T0" xml:id="T53"/>
+         <when interval="62199" since="#T0" xml:id="T54"/>
+         <when interval="62259" since="#T0" xml:id="T26"/>
+         <when interval="66153" since="#T0" xml:id="T55"/>
+         <when interval="111353" since="#T0" xml:id="T27"/>
+         <when interval="117311" since="#T0" xml:id="T28"/>
+         <when interval="118561" since="#T0" xml:id="T29"/>
+         <when interval="120090" since="#T0" xml:id="T30"/>
+         <when interval="120424" since="#T0" xml:id="T31"/>
+         <when interval="123702" since="#T0" xml:id="T32"/>
+         <when interval="125972" since="#T0" xml:id="T33"/>
+         <when interval="133083" since="#T0" xml:id="T34"/>
+         <when interval="139649" since="#T0" xml:id="T35"/>
+         <when interval="140202" since="#T0" xml:id="T36"/>
+         <when interval="142641" since="#T0" xml:id="T37"/>
+         <when interval="144416" since="#T0" xml:id="T38"/>
+         <when interval="150438" since="#T0" xml:id="T39"/>
+         <when interval="151424" since="#T0" xml:id="T40"/>
+         <when interval="157463" since="#T0" xml:id="T41"/>
+         <when interval="158570" since="#T0" xml:id="T42"/>
+         <when interval="161265" since="#T0" xml:id="T43"/>
+         <when interval="163204" since="#T0" xml:id="T44"/>
+         <when interval="165268" since="#T0" xml:id="T45"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T45</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a8"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000001">ʔibni</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000002">ʕafēf</w>
+                  <pc xml:id="xTok_000003">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000004">ʔaxaḏ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000005">qarəd</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000006">min</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000007"
+                     rend="withDash">il</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000009">ʔiskǟn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a9"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000010"
+                     rend="withDash">ʔaxaḏ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000012">o</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000013">ʕa</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000014"
+                     rend="withDash">l</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000016">libnǟni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a10"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000017">law</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000018"
+                     rend="withDash">ʔǟxḏ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000020">o</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000021">ʕa</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000022"
+                     rend="withDash">d</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000024">dólar</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000025">hilik</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000026">kǟn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a21"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000027">ē</w>
+                  <pc xml:id="xTok_000028">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000029">mnīḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a11"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000030">hallaʔ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000031">kǟn</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000032">ʔǟxid</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000033">huwwi</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000034">miyyä</w>
+                  <pc xml:id="xTok_000035">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000036">xamsa</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000037">w</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000038">tisʕīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a12"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000039">xamsa</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000040">w</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000041">tisʕīn</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000042">malyūn</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000043">min</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000044"
+                     rend="withDash">il</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000046"
+                     join="right">bank</w>
+                  <pc xml:id="xTok_000047">,</pc>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000048"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000050">ʔalf</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000051">w</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000052">xamsä</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000053">kǟn</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000054"
+                     rend="withDash">id</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000056">dólar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a22"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T12"
+                  start="#T11">
+                  <pc join="right" xml:id="xTok_000057">/</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000058">after</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000059">showing</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000060">picture</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000061">of</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000062">fiancee</w>
+                  <pc xml:id="xTok_000063">/</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000064">mahḍūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a24"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000065">ma</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000066">hēk</w>
+                  <pc xml:id="xTok_000067">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a23"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000068">mahḍūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a13"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000069">w</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000070">ḥilwä</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000071">inti</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000072">kamǟn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a14"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000073">mabrūk</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000074">inšalla</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000075">tithannu</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000076">ya</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000077">raḅḅ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a26"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000078">ʔaḷḷa</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000079">yibārik</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000080"
+                     rend="withDash">fī</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000082">k</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000083">ya</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000084">rabb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a15"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000085">bass</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000086">əmbayynä</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000087"
+                     rend="withDash">ḥadd</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000089">o</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000090">qṣayyra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a16"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000091">lēš</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000092">ma</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000093">lābsa</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000094">kaʕab</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000095">ʕāli</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000096">ya</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000097">maxlūga</w>
+                  <pc xml:id="xTok_000098">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a17"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000099"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000101"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000103">ṣūra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a27"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000104">liʔanno</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000105">huwwe</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000106">ʔaṭwal</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000107"
+                     rend="withDash">minn</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000109">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a25"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000110">ma</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000111"
+                     rend="withDash">hayyā</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000113"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000114">!</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000115">ʔilbasi</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000116">kaʕab</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000117">ʕāli</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a28"
+                  who="#A_Transcription-txt-aeb-cp"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000118">ma</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000119"
+                     rend="withDash">b</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000121">aʕrif</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000122">ʔəmši</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000123">ʔana</w>
+                  <pc xml:id="xTok_000124">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000125">ktīr</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000126"
+                     rend="withDash">b</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000128">ətfarkaš</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000129">baʕdēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a29"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000130">ʔana</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000131"
+                     rend="withDash">bint</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000133">i</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000134">mašāʔaḷḷā</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000135">žǟyyä</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000136">ʕašra</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000137"
+                     rend="withDash">š</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000139">šahar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a30"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T30"
+                  start="#T29">
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000140"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000142">a</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000143">ʔarbʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a31"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000144">žǟbət</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000145">tōm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a32"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000146">laʔ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000147">žǟbət</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000148">bannūtä</w>
+                  <pc xml:id="xTok_000149">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000150">tǟni</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000151">marra</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000152">tōm</w>
+                  <pc xml:id="xTok_000153">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000154">ṣabi</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000155">w</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000156">binit</w>
+                  <pc xml:id="xTok_000157">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000158">w</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000159">rižʕit</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000160">žǟbət</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a38"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T35"
+                  start="#T34">
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000161"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000163"
+                     rend="withDash">ill</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000165">a</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000166">wli</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000167"
+                     rend="withDash">bayy</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000169">i</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000170">raḥ</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000171">tʕamli</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000172">mitl</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000173"
+                     rend="withDash">is</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000175"
+                     join="right">sūriyyīn</w>
+                  <pc xml:id="xTok_000176">,</pc>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000177"
+                     rend="withDash">is</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000179">sūriyyīn</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000180">kill</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000181">sitt</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000182">ʔišhur</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000183"
+                     rend="withDash">b</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000185">yxallfu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a33"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T37"
+                  start="#T36">
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000186"
+                     rend="withDash">ʔālit</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000188"
+                     rend="withDash">l</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000190">i</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000191">ya</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000192"
+                     rend="withDash">bayy</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000194">i</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000195">ṭaʕmit</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000196">ʔaḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a34"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000197">ē</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000198">walla</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000199">ktīr</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000200">yā</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000201">ḥarām</w>
+                  <pc xml:id="xTok_000202">,</pc>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000203"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000205"
+                     rend="withDash">yžanninū</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000207">ha</w>
+                  <pc join="right" xml:id="xTok_000208">.</pc>
+                  <pc xml:id="xTok_000209">.</pc>
+                  <pc xml:id="xTok_000210">.</pc>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000211"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000213"
+                     rend="withDash">yžanninū</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000215">ha</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000216">yā</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000217">ḥarām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a35"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000218">ʕala</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000219">ʔasās</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000220">hiyyä</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000221">inno</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000222">ʕāmlä</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000223">biochemistry</w>
+                  <pc xml:id="xTok_000224">,</pc>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000225">muxtabar</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000226">dāmm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a36"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000227">w</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000228"
+                     rend="withDash">ṣaḥḥ</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000230"
+                     rend="withDash">ill</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000232">a</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000233">šuġul</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000234">əhnīk</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000235">ma</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000236">ʔibil</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000237"
+                     rend="withDash">žawz</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000239">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_NZ_M.73_Karantina_creditSon.picturesWedding_a37"
+                  who="#B_Transcription-txt-aeb"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000240">ma</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000241">ʔibil</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000242"
+                     rend="withDash">žawz</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000244">a</w>
+                  <w join="right"
+                     xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000245"
+                     rend="withDash">yšaġġil</w>
+                  <w xml:id="09_NZ_M.73_Karantina_creditSon.picturesWedding_xTok_000247">a</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
