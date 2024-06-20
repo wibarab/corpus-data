@@ -6,7 +6,7 @@
                 xmlns:xtoks="http://acdh.oeaw.ac.at/xtoks"
                 version="2.0"
                 exclude-result-prefixes="#all">
-   <xsl:output method="text" normalization-form="none"/>
+   <xsl:output method="text"/>
    <xsl:include href="params.xsl"/>
    <xsl:include href="xsl/vert2txt.xsl"/>
    <xsl:template match="tei:annotationBlock">
