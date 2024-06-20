@@ -5,11 +5,9 @@ ENV CORPLIST=wibarab-corpus-data \
     LANG=C.UTF8
 COPY 130_vert_plain/ /var/lib/manatee/data/verticals/wibarab-corpus-data/
 COPY nosketchengine/wibarab-corpus-data /var/lib/manatee/registry/wibarab-corpus-data
-COPY nosketchengine/conccgi.py.patch /
 # Build will not save anything in /var/lib/manatee/data/ as this is defined as VOLUME
 USER root
 RUN path=$(grep -h ^PATH $MANATEE_REGISTRY/$CORPLIST | sed -e 's/^PATH[^"]*"\(.*\)"$/\1/g'); \
-    pushd /usr/lib/python3.9/site-packages/bonito && patch -p0 < /conccgi.py.patch && popd &&\    
     mkdir -p $path && (compilecorp $CORPLIST || /bin/true) &&\
     mkdir -p /data.precompiled &&\
     mv $path /data.precompiled/ &&\
