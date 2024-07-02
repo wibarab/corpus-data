@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-07-02T08:27:07.867363Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     next="SAU_2022_Speaker10_marriage_2.xml">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">SAU_2022_Speaker10_marriage_1</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">SAU_2022_Speaker10_marriage_1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="01:08" type="audio">
+                  <date when="2022-03-13"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:SAU_2022_GK">Saudi Arabia Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in SAU_2022_Speaker10_marriage_1</head>
+               <person sameAs="corpus:SAU_2022_Speaker10">
+                  <name type="pseudonym">SAU_2022_Speaker10</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Marriage"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="579" since="#T0" xml:id="T9"/>
+         <when interval="12735" since="#T0" xml:id="T10"/>
+         <when interval="13234" since="#T0" xml:id="T11"/>
+         <when interval="17378" since="#T0" xml:id="T12"/>
+         <when interval="17542" since="#T0" xml:id="T13"/>
+         <when interval="21183" since="#T0" xml:id="T14"/>
+         <when interval="21548" since="#T0" xml:id="T15"/>
+         <when interval="28356" since="#T0" xml:id="T16"/>
+         <when interval="28723" since="#T0" xml:id="T1"/>
+         <when interval="30349" since="#T0" xml:id="T2"/>
+         <when interval="30437" since="#T0" xml:id="T17"/>
+         <when interval="31106" since="#T0" xml:id="T18"/>
+         <when interval="31367" since="#T0" xml:id="T19"/>
+         <when interval="45170" since="#T0" xml:id="T20"/>
+         <when interval="45383" since="#T0" xml:id="T21"/>
+         <when interval="50895" since="#T0" xml:id="T3"/>
+         <when interval="51217" since="#T0" xml:id="T22"/>
+         <when interval="52200" since="#T0" xml:id="T4"/>
+         <when interval="52219" since="#T0" xml:id="T23"/>
+         <when interval="61357" since="#T0" xml:id="T24"/>
+         <when interval="61380" since="#T0" xml:id="T5"/>
+         <when interval="62027" since="#T0" xml:id="T25"/>
+         <when interval="62081" since="#T0" xml:id="T6"/>
+         <when interval="62629" since="#T0" xml:id="T7"/>
+         <when interval="62639" since="#T0" xml:id="T26"/>
+         <when interval="63122" since="#T0" xml:id="T27"/>
+         <when interval="63455" since="#T0" xml:id="T8"/>
+         <when interval="69514" since="#T0" xml:id="T28"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T28</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a1"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000001">ē</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000002">maṯalan</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000003"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000005">ḥīn</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000006">tzawwaǧat</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000007">aḥda</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000008"
+                     rend="withDash">banāt</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000010">i</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000011">aw</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000012">aḥda</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000013"
+                     rend="withDash">xawāt</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000015">i</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000016">aw</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000017">aḥda</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000018">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000019"
+                     rend="withDash">qarbāʔ</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000021" join="right">i</w>
+                  <pc xml:id="xTok_000022">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000023">ē</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000024"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000026"
+                     rend="withDash">ingūl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000028">ah</w>
+                  <pc join="right" xml:id="xTok_000029">(</pc>
+                  <pc join="right" xml:id="xTok_000030">(</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000031">why</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000033">ah</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000034">for</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000035">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000036">woman</w>
+                  <pc join="right" xml:id="xTok_000037">?</pc>
+                  <pc xml:id="xTok_000038">)</pc>
+                  <pc xml:id="xTok_000039">)</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000040">alf</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000041">mabrūk</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000042"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000044">aḷḷa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000045"
+                     rend="withDash">yusād</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000047">ik</w>
+                  <pc join="right" xml:id="xTok_000048">(</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000049"
+                     rend="withDash">yusāʕid</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000051" join="right">ik</w>
+                  <pc xml:id="xTok_000052">)</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000053">duʕa</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000054">ṭabʕan</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000055"
+                     rend="withDash">at</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000057">tawfīq</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a2"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000058"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000060"
+                     rend="withDash">nwussī</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000062">ha</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000063">ʕala</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000064"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000066">gāl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000067">rasūl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000068">ṣalla</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000069">aḷḷah</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000070"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000072">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000073"
+                     rend="withDash">wa</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000075">sallam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a3"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000076">ē</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000077"
+                     rend="withDash">kūni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000079"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000081">ah</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000082">ā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000083"
+                     rend="withDash">umm</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000085">an</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000086"
+                     rend="withDash">yikūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000088"
+                     rend="withDash">li</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000090">ki</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000091"
+                     rend="withDash">ʕabd</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000093">an</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a4"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000094">ē</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000095"
+                     rend="withDash">wa</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000097">aḷḷah</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000098"
+                     rend="withDash">w</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000100">ṣalla</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000101">ʕala</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000102">muḥammad</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000103">w</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000104">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000105">kill</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000106">māl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000107"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000109"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000111">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000112"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000114">māl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000115"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000117"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000119">ki</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000120"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000122">ʕiyāl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000123">inšāʔaḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a21"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000124">ay</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000125">tamām</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000126">ḥabbeyt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a5"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000127">fahamti</w>
+                  <pc xml:id="xTok_000128">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a6"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000129">yaʕni</w>
+                  <pc xml:id="xTok_000130">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000131">maṯalan</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000132"
+                     rend="withDash">hal</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000134">ḥīn</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000135">tizawwaǧat</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000136">aḥda</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000137"
+                     rend="withDash">banāt</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000139">i</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000140">fā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000141"
+                     rend="withDash">wassī</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000143">ha</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000144">yaʕni</w>
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000145">wassiyyāt</w>
+                  <pc xml:id="xTok_000146">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000147">kēf</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000148">tkūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000149"
+                     rend="withDash">ila</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000151">h</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000152">zay</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000153"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000155">umm</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000156">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000157">tkunīn</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000158">anti</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000159"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000161"
+                     rend="withDash">umm</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000163">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000164">yaʕni</w>
+                  <pc xml:id="xTok_000165">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000166">ḥanūna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000167"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000169">h</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000170">ṭayba</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000171"
+                     rend="withDash">maʕā</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000173" join="right">h</w>
+                  <pc xml:id="xTok_000174">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000175">rafīqa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000176"
+                     rend="withDash">maʕā</w>
+                  <pc join="right" xml:id="xTok_000178">_</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000179">́</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000180"
+                     rend="withDash">b</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000182">kill</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000183">šay</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000184">tḥāfḏ̣īn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000185"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000187">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000188"
+                     rend="withDash">miṯil</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000190">mā</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000191">tḥāfaḏ̣</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000192"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000194">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000195"
+                     rend="withDash">umm</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000197">ah</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000198">yakūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000199"
+                     rend="withDash">li</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000201">ki</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000202"
+                     rend="withDash">ʕabd</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000204">an</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a7"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000205">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000206">ykūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000207"
+                     rend="withDash">li</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000209">ki</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000210">zay</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000211">mā</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000212">ytīʕ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000213"
+                     rend="withDash">umm</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000215">a</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000216">yṣīr</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000217"
+                     rend="withDash">li</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000219">ki</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000220"
+                     rend="withDash">zay</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000222" join="right">ha</w>
+                  <pc xml:id="xTok_000223">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000224">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000225">ʕabd</w>
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000226">maṯalan</w>
+                  <pc xml:id="xTok_000227">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000228">fahamti</w>
+                  <pc xml:id="xTok_000229">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a22"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000230">ay</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000231">fahamt</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000232">ay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a8"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000233">aywa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000234"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000236"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000238" join="right">hu</w>
+                  <pc xml:id="xTok_000239">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000240">hū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000241"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000243">māl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000244">hū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000245"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000247">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000248"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000250">māl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000251">li</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000252">yidfaʕ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000253"
+                     rend="withDash">it</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000255">takālif</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000256"
+                     rend="withDash">iz</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000258">zawāǧ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000259"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000261"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000263" join="right">maṣārīf</w>
+                  <pc xml:id="xTok_000264">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000265"
+                     rend="withDash">wa</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000267">hī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000268"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000270">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000271"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000273">ʕiyāl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000274"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000276">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000277"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000279" join="right">ʕiyāl</w>
+                  <pc xml:id="xTok_000280">,</pc>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000281">yitxilif</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000282"
+                     rend="withDash">li</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000284">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000285"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000287">awlād</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000288"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000290"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000292">banāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a23"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000293">aywa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a9"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000294">fahamti</w>
+                  <pc xml:id="xTok_000295">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a24"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000296">ay</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000297">mafhūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker10_marriage_1_a10"
+                  who="#SAU_2022_Speaker10_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000298">w</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000299">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000300">ṭabʕan</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000301">fī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000302"
+                     rend="withDash">s</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000304">saʔīl</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000305">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000306"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000308">muslimīn</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000309">ʕandana</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000310">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000311">muš</w>
+                  <pc join="right" xml:id="xTok_000312">(</pc>
+                  <pc join="right" xml:id="xTok_000313">(</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker10_marriage_1_xTok_000314">muš</w>
+                  <pc join="right" xml:id="xTok_000315">!</pc>
+                  <pc join="right" xml:id="xTok_000316">!</pc>
+                  <pc join="right" xml:id="xTok_000317">!</pc>
+                  <pc xml:id="xTok_000318">)</pc>
+                  <pc xml:id="xTok_000319">)</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000320"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker10_marriage_1_xTok_000322"
+                     rend="withDash">ir</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000324">rašāyda</w>
+                  <w xml:id="SAU_2022_Speaker10_marriage_1_xTok_000325">xāṣatan</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
