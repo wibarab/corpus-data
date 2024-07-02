@@ -50,6 +50,13 @@
         </xsl:apply-templates>
     </xsl:template>
     
+    <xsl:template match="tei:TEI">
+        <xsl:copy>
+            <xsl:sequence select="$teiHeaderFromCorpus/../@*"/>
+            <xsl:apply-templates/>
+        </xsl:copy>
+    </xsl:template>
+    
     <!-- TODO: make a real merge, i.e. include relelvant metadata from the ELAN export 
         and not just overwrite it with the corpus header -->
     <xsl:template match="tei:teiHeader">

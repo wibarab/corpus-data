@@ -86,6 +86,8 @@
     
     <xsl:variable name="t_Campaigns" select="//tei:table[tei:head = 'Campaigns']" as="element(tei:table)"/>
     
+    <xsl:variable name="allNexts" select="//tei:table[tei:head = 'Recordings']//tei:cell[$cn('Recordings')('Next')][.!='']"/>
+    
     <xsl:template match="/">
         <xsl:comment>THIS FILE WAS PROGRAMMATICALLY CREATED by table2corpus.xsl on/at <xsl:value-of select="current-dateTime()"/></xsl:comment>
         <xsl:result-document method="json" href="table_cell_num_mapping.json">
@@ -228,6 +230,16 @@
         <xsl:variable name="campaignID" select="$campaign/tei:cell[$cn('Campaigns')('ID')]"/>
         
         <TEI>
+            <xsl:if test="tei:cell[$cn('Recordings')('Next')]!=''">
+                <xsl:attribute name="next"><xsl:value-of select="concat(tei:cell[$cn('Recordings')('Next')],'.xml')"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="$textID = $allNexts">
+                <!-- get ID of the text where the current text is indicated to be the next one -->
+                <xsl:variable name="prevID" select="$allNexts[. = $textID]/../tei:cell[$cn('Recordings')('Text')]"/>
+                <xsl:attribute name="prev">
+                    <xsl:value-of select="concat($prevID,'.xml')"/>
+                </xsl:attribute>
+            </xsl:if>
             <teiHeader>
                 <fileDesc>
                     <xsl:call-template name="titleStmt">

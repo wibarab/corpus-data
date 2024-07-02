@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-06-21T10:50:41.293167Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">07_RD_M.61_Khalde_CustomsTribes_OralLiterature</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">07_RD_M.61_Khalde_CustomsTribes_OralLiterature</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.18402777777777779" type="audio">
+                  <date when="2022-02-25"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 07_RD_M.61_Khalde_CustomsTribes_OralLiterature</head>
+               <person sameAs="corpus:LEB_KHAL_2022_RD_M.61_Speaker1">
+                  <name type="pseudonym">LEB_KHAL_2022_RD_M.61_Speaker1</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Communityidentity"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1680" since="#T0" xml:id="T1"/>
+         <when interval="4218" since="#T0" xml:id="T2"/>
+         <when interval="4804" since="#T0" xml:id="T3"/>
+         <when interval="6026" since="#T0" xml:id="T4"/>
+         <when interval="10278" since="#T0" xml:id="T5"/>
+         <when interval="10837" since="#T0" xml:id="T6"/>
+         <when interval="17410" since="#T0" xml:id="T7"/>
+         <when interval="17523" since="#T0" xml:id="T8"/>
+         <when interval="20180" since="#T0" xml:id="T9"/>
+         <when interval="20261" since="#T0" xml:id="T10"/>
+         <when interval="21686" since="#T0" xml:id="T11"/>
+         <when interval="22596" since="#T0" xml:id="T12"/>
+         <when interval="24785" since="#T0" xml:id="T13"/>
+         <when interval="25186" since="#T0" xml:id="T14"/>
+         <when interval="27068" since="#T0" xml:id="T15"/>
+         <when interval="27186" since="#T0" xml:id="T16"/>
+         <when interval="29722" since="#T0" xml:id="T17"/>
+         <when interval="29818" since="#T0" xml:id="T18"/>
+         <when interval="33147" since="#T0" xml:id="T19"/>
+         <when interval="33250" since="#T0" xml:id="T20"/>
+         <when interval="36606" since="#T0" xml:id="T21"/>
+         <when interval="36741" since="#T0" xml:id="T22"/>
+         <when interval="40080" since="#T0" xml:id="T23"/>
+         <when interval="40176" since="#T0" xml:id="T24"/>
+         <when interval="42457" since="#T0" xml:id="T25"/>
+         <when interval="42682" since="#T0" xml:id="T26"/>
+         <when interval="46979" since="#T0" xml:id="T27"/>
+         <when interval="47121" since="#T0" xml:id="T28"/>
+         <when interval="49232" since="#T0" xml:id="T29"/>
+         <when interval="52897" since="#T0" xml:id="T30"/>
+         <when interval="53046" since="#T0" xml:id="T31"/>
+         <when interval="56731" since="#T0" xml:id="T32"/>
+         <when interval="56840" since="#T0" xml:id="T33"/>
+         <when interval="60240" since="#T0" xml:id="T34"/>
+         <when interval="60483" since="#T0" xml:id="T35"/>
+         <when interval="64130" since="#T0" xml:id="T36"/>
+         <when interval="64416" since="#T0" xml:id="T37"/>
+         <when interval="67440" since="#T0" xml:id="T38"/>
+         <when interval="67633" since="#T0" xml:id="T39"/>
+         <when interval="72102" since="#T0" xml:id="T40"/>
+         <when interval="72504" since="#T0" xml:id="T41"/>
+         <when interval="75085" since="#T0" xml:id="T42"/>
+         <when interval="75301" since="#T0" xml:id="T43"/>
+         <when interval="81501" since="#T0" xml:id="T44"/>
+         <when interval="81640" since="#T0" xml:id="T45"/>
+         <when interval="86809" since="#T0" xml:id="T46"/>
+         <when interval="86941" since="#T0" xml:id="T47"/>
+         <when interval="88572" since="#T0" xml:id="T48"/>
+         <when interval="88578" since="#T0" xml:id="T49"/>
+         <when interval="96600" since="#T0" xml:id="T50"/>
+         <when interval="96750" since="#T0" xml:id="T51"/>
+         <when interval="99418" since="#T0" xml:id="T52"/>
+         <when interval="101375" since="#T0" xml:id="T53"/>
+         <when interval="104953" since="#T0" xml:id="T54"/>
+         <when interval="105101" since="#T0" xml:id="T55"/>
+         <when interval="108465" since="#T0" xml:id="T56"/>
+         <when interval="111328" since="#T0" xml:id="T57"/>
+         <when interval="111680" since="#T0" xml:id="T58"/>
+         <when interval="115413" since="#T0" xml:id="T59"/>
+         <when interval="115527" since="#T0" xml:id="T60"/>
+         <when interval="119143" since="#T0" xml:id="T61"/>
+         <when interval="133280" since="#T0" xml:id="T62"/>
+         <when interval="140150" since="#T0" xml:id="T63"/>
+         <when interval="140271" since="#T0" xml:id="T64"/>
+         <when interval="142325" since="#T0" xml:id="T65"/>
+         <when interval="145193" since="#T0" xml:id="T66"/>
+         <when interval="145513" since="#T0" xml:id="T67"/>
+         <when interval="151718" since="#T0" xml:id="T68"/>
+         <when interval="151956" since="#T0" xml:id="T69"/>
+         <when interval="155827" since="#T0" xml:id="T70"/>
+         <when interval="155945" since="#T0" xml:id="T71"/>
+         <when interval="159502" since="#T0" xml:id="T72"/>
+         <when interval="159587" since="#T0" xml:id="T73"/>
+         <when interval="162443" since="#T0" xml:id="T74"/>
+         <when interval="166250" since="#T0" xml:id="T75"/>
+         <when interval="166316" since="#T0" xml:id="T76"/>
+         <when interval="170045" since="#T0" xml:id="T77"/>
+         <when interval="170108" since="#T0" xml:id="T78"/>
+         <when interval="173542" since="#T0" xml:id="T79"/>
+         <when interval="173633" since="#T0" xml:id="T80"/>
+         <when interval="178060" since="#T0" xml:id="T81"/>
+         <when interval="178129" since="#T0" xml:id="T82"/>
+         <when interval="181948" since="#T0" xml:id="T83"/>
+         <when interval="182078" since="#T0" xml:id="T84"/>
+         <when interval="186412" since="#T0" xml:id="T85"/>
+         <when interval="186528" since="#T0" xml:id="T86"/>
+         <when interval="191409" since="#T0" xml:id="T87"/>
+         <when interval="191553" since="#T0" xml:id="T88"/>
+         <when interval="193501" since="#T0" xml:id="T89"/>
+         <when interval="195839" since="#T0" xml:id="T90"/>
+         <when interval="201259" since="#T0" xml:id="T91"/>
+         <when interval="204409" since="#T0" xml:id="T92"/>
+         <when interval="207408" since="#T0" xml:id="T93"/>
+         <when interval="207509" since="#T0" xml:id="T94"/>
+         <when interval="210917" since="#T0" xml:id="T95"/>
+         <when interval="211022" since="#T0" xml:id="T96"/>
+         <when interval="215891" since="#T0" xml:id="T97"/>
+         <when interval="216007" since="#T0" xml:id="T98"/>
+         <when interval="221681" since="#T0" xml:id="T99"/>
+         <when interval="222252" since="#T0" xml:id="T100"/>
+         <when interval="224712" since="#T0" xml:id="T101"/>
+         <when interval="225224" since="#T0" xml:id="T102"/>
+         <when interval="229534" since="#T0" xml:id="T103"/>
+         <when interval="233067" since="#T0" xml:id="T104"/>
+         <when interval="233443" since="#T0" xml:id="T105"/>
+         <when interval="237689" since="#T0" xml:id="T106"/>
+         <when interval="242602" since="#T0" xml:id="T107"/>
+         <when interval="245075" since="#T0" xml:id="T108"/>
+         <when interval="245184" since="#T0" xml:id="T109"/>
+         <when interval="249162" since="#T0" xml:id="T110"/>
+         <when interval="249306" since="#T0" xml:id="T111"/>
+         <when interval="258013" since="#T0" xml:id="T112"/>
+         <when interval="258149" since="#T0" xml:id="T113"/>
+         <when interval="263886" since="#T0" xml:id="T114"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T114</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a1"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000001">bī</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000002">ʔawwal</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000003">šī</w>
+                  <pc xml:id="xTok_000004">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000005">šī</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000006"
+                     rend="withDash">ʔism</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000008">o</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000009">ḥida</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a2"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000010"
+                     rend="withDash">al</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000012">ḥida</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000013">šū</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000014">huwwa</w>
+                  <pc xml:id="xTok_000015">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a3"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T5"
+                  start="#T4">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000016"
+                     rend="withDash">al</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000018">ḥida</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000019">huwwa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000020">ʕibāra</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000021">ʕan</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000022">nās</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000023">žēyyīn</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000024"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000026"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000028">ʕarəs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a4"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T7"
+                  start="#T6">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000029">w</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000030">mitil</w>
+                  <pc join="right" xml:id="xTok_000031">_</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000032">ma</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000033"
+                     rend="withDash">gilt</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000035"
+                     rend="withDash">ill</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000037"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000038">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000039"
+                     rend="withDash">yōm</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000041">in</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000042"
+                     rend="withDash">tʕazmī</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000044">ni</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000045"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000047"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000049"
+                     join="right">ʕarəs</w>
+                  <pc xml:id="xTok_000050">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000051">ma</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000052"
+                     rend="withDash">ʔāxud</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000054"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000056">ik</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000057">hadiyya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000058">ramziyya</w>
+                  <pc xml:id="xTok_000059">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a5"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T9"
+                  start="#T8">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000060">ʔāxud</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000061">hadiyya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000062">qayyima</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000063">fiʕliyya</w>
+                  <pc xml:id="xTok_000064">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a6"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T11"
+                  start="#T10">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000065">ʔaxuḏ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000066">čabəš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a7"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T13"
+                  start="#T12">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000067"
+                     rend="withDash">iš</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000069">šabəš</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000070">huwwa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000071">kibīr</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000072"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000074">ġanam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a8"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T15"
+                  start="#T14">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000075">ʔāxuḏ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000076">ḏibīḥa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000077">mrattaba</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a9"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000078">hāy</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000079"
+                     rend="withDash">ḏ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000081"
+                     join="right">ḏibīḥa</w>
+                  <pc xml:id="xTok_000082">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000083">trūḥ</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000084"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000086">_</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000087">́</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000088"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000090">ʕēla</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000091"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000093">fulāniyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a10"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000094">fa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000095">ḥīn</w>
+                  <pc join="right" xml:id="xTok_000096">_</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000097">ma</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000098">trūḥ</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000099"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000101">ʕēla</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000102"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000104">fulāniyya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000105">yiṣīr</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000106">bī</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000107">ḥaḏi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a11"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000108">fa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000109"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000111">ḥaḏi</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000112">ʔamrār</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000113">ykūn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000114">ġazal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a12"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000115">ʔamrār</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000116">ykūn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000117">taḥaddi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a13"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000118">ʔamrār</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000119">ykūn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000120">šiʕr</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000121">ʕādi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a14"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T27"
+                  start="#T26">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000122"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000124">ġazal</w>
+                  <pc join="right" xml:id="xTok_000125">(</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000126"
+                     join="right">RISE</w>
+                  <pc xml:id="xTok_000127">)</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000128">yaʕni</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000129">masalan</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000130">yikūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000131"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000133"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000135"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000137">a</w>
+                  <pc join="right" xml:id="xTok_000138">.</pc>
+                  <pc xml:id="xTok_000139">.</pc>
+                  <pc xml:id="xTok_000140">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a82"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000141">maʕ</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000142"
+                     rend="withDash">əl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000144">laḥan</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000145">raḥ</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000146"
+                     rend="withDash">ʔagūl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000148"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000149">:</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a15"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000150">mašey</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000151"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000153">y</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000154">mašey</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000155"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000157">y</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a16"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000158">ma</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000159"
+                     rend="withDash">daššir</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000161">ič</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000162">titlawwaʕey</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a18"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000163">mašey</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000164"
+                     rend="withDash">mʕā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000166">y</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000167">ʕala</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000168"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000170">ǧurūd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a17"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000171">yamma</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000172"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000174">ʕuyūn</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000175"
+                     rend="withDash">əm</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000177">mčaḥḥaley</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a19"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000178">taʕāley</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000179"
+                     rend="withDash">mičr</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000181">ič</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000182"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000184"
+                     rend="withDash">ál</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000186">xuyūl</w>
+                  <pc join="right" xml:id="xTok_000187">#</pc>
+                  <pc join="right" xml:id="xTok_000188">#</pc>
+                  <pc join="right" xml:id="xTok_000189">#</pc>
+                  <pc xml:id="xTok_000190">#</pc>
+                  <pc xml:id="xTok_000191">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a20"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000192">mn</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000193"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000195"
+                     join="right">ʔawwaley</w>
+                  <pc xml:id="xTok_000196">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000197">w</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000198"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000200"
+                     join="right">ʔāxirey</w>
+                  <pc xml:id="xTok_000201">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a21"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000202">bēn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000203">kull</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000204">šaṭr</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000205">w</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000206">šaṭər</w>
+                  <pc xml:id="xTok_000207">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000208">ʔawaggif</w>
+                  <pc xml:id="xTok_000209">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a22"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000210">maši</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000211"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000213">i</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000214">maši</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000215"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000217"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000218">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000219">ʔawaggif</w>
+                  <pc xml:id="xTok_000220">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000221">yirudd</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000222">illi</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000223">wara</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000224"
+                     rend="withDash">minn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000226">i</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000227">nafs</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000228"
+                     rend="withDash">ir</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000230">radda</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000231">hāy</w>
+                  <pc xml:id="xTok_000232">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a23"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000233">ʔakaffi</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000234"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000236">ʔašṭur</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000237">haḏīk</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000238">ʔana</w>
+                  <pc xml:id="xTok_000239">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000240">lākin</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000241">humma</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000242">yiržaʕu</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000243">yiʕūdu</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000244"
+                     rend="withDash">iš</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000246">šaṭər</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000247">li</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000248"
+                     rend="withDash">gilt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000250">u</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000251"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000253"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000255"
+                     join="right">ʔawwal</w>
+                  <pc xml:id="xTok_000256">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a24"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000257">hāy</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000258">ġazal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a25"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000259">taḥaddi</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000260">masalan</w>
+                  <pc xml:id="xTok_000261">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000262">ykūn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000263">bī</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000264">bēn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000265">baʕaḏ̣</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000266"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000268">ʕiyal</w>
+                  <pc join="right" xml:id="xTok_000269">.</pc>
+                  <pc xml:id="xTok_000270">.</pc>
+                  <pc xml:id="xTok_000271">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a26"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000272">ma</w>
+                  <pc join="right" xml:id="xTok_000273">#</pc>
+                  <pc xml:id="xTok_000274">#</pc>
+                  <pc xml:id="xTok_000275">#</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000276"
+                     rend="withDash">gilt</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000278"
+                     rend="withDash">ill</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000280">iš</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000281">gaḅəl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000282">əšwayy</w>
+                  <pc join="right" xml:id="xTok_000283">#</pc>
+                  <pc join="right" xml:id="xTok_000284">#</pc>
+                  <pc join="right" xml:id="xTok_000285">#</pc>
+                  <pc xml:id="xTok_000286">#</pc>
+                  <pc xml:id="xTok_000287">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a27"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000288">ykūn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000289">bī</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000290">šwayy</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000291">barazīg</w>
+                  <pc join="right" xml:id="xTok_000292">#</pc>
+                  <pc join="right" xml:id="xTok_000293">#</pc>
+                  <pc join="right" xml:id="xTok_000294">#</pc>
+                  <pc xml:id="xTok_000295">#</pc>
+                  <pc xml:id="xTok_000296">#</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000297">bēn</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000298"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000300"
+                     join="right">ʕiyal</w>
+                  <pc xml:id="xTok_000301">,</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a28"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000302">fa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000303"
+                     rend="withDash">yigūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000305"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000307"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000308">:</pc>
+                  <pc join="right" xml:id="xTok_000309">"</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000310">ya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000311">ʕaskar</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000312">lamlim</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000313"
+                     rend="withDash">ʕaskar</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000315">ayk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a29"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000316">lamma</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000317">thalhil</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000318"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000320"
+                     rend="withDash">ǧaməʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000322"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000323">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a30"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000324">ʕarifti</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000325">kīf</w>
+                  <pc xml:id="xTok_000326">?</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000327">fāt</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000328"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000330"
+                     rend="withDash">t</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000332">taḥaddi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a31"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T59"
+                  start="#T58">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000333">ē</w>
+                  <pc xml:id="xTok_000334">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000335"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000337"
+                     rend="withDash">yiʔannʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000339"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000340">:</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000341">ya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000342">ʕaskar</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000343">lamlim</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000344">ʕaskarak</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a32"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000345">ḏ̣ubb</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000346"
+                     rend="withDash">ərǧāl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000348">ak</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000349">yaʕni</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000350">xalaṣ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000351">lamma</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000352">thalhil</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000353"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000355"
+                     rend="withDash">ǧaməʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000357"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000358">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a35"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000359">fī</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000360"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000362">ġazal</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000363">kamān</w>
+                  <pc xml:id="xTok_000364">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000365">baʕd</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000366"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000368"
+                     join="right">ġazal</w>
+                  <pc xml:id="xTok_000369">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000370">ġazal</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000371"
+                     rend="withDash">bi</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000373"
+                     join="right">taḥaddi</w>
+                  <pc xml:id="xTok_000374">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000375">ġazal</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000376"
+                     rend="withDash">bi</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000378">šōfit</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000379">ḥāl</w>
+                  <pc xml:id="xTok_000380">.</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000381"
+                     rend="withDash">ʔinn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000383">o</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000384"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000386"
+                     rend="withDash">yifaržī</w>
+                  <pc join="right" xml:id="xTok_000388">_</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000389">́</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000390"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000392"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000394"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000395">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a36"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T65"
+                  start="#T64">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000396"
+                     rend="withDash">fa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000398">šū</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000399"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000401"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000403">a</w>
+                  <pc xml:id="xTok_000404">?</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000405"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000407"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000409"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000410">:</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a37"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T66"
+                  start="#T65">
+                  <pc join="right" xml:id="xTok_000411">"</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000412">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000413"
+                     rend="withDash">bnayyat</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000415">ey</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000416">xalf</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000417"
+                     rend="withDash">al</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000419"
+                     join="right">suṭūḥ</w>
+                  <pc xml:id="xTok_000420">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a38"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000421">ya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000422">bnayya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000423">li</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000424"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000426"
+                     join="right">tšūfi</w>
+                  <pc xml:id="xTok_000427">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000428"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000430">titnaqwazi</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000431">min</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000432">xilāl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000433"
+                     rend="withDash">al</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000435">sṭūḥ</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000436"
+                     rend="withDash">al</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000438"
+                     join="right">əmbayyna</w>
+                  <pc xml:id="xTok_000439">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a39"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000440">ʔani</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000441"
+                     rend="withDash">šift</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000443"
+                     join="right">ik</w>
+                  <pc xml:id="xTok_000444">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000445">yaʕni</w>
+                  <pc xml:id="xTok_000446">.</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000447"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000449"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000451"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000453"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000454">:</pc>
+                  <pc join="right" xml:id="xTok_000455">"</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000456">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000457"
+                     rend="withDash">bnayyat</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000459">i</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000460">xalf</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000461"
+                     rend="withDash">al</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000463">suṭūḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a40"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000464">ṭulley</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000465">wi</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000466">šūfi</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000467"
+                     rend="withDash">xyūl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000469"
+                     join="right">ina</w>
+                  <pc xml:id="xTok_000470">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a41"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000471">fa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000472">hiyya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000473">ṭṭull</w>
+                  <pc xml:id="xTok_000474">,</pc>
+                  <pc join="right" xml:id="xTok_000475">#</pc>
+                  <pc join="right" xml:id="xTok_000476">#</pc>
+                  <pc join="right" xml:id="xTok_000477">#</pc>
+                  <pc xml:id="xTok_000478">#</pc>
+                  <pc xml:id="xTok_000479">#</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000480">ətgūl</w>
+                  <pc xml:id="xTok_000481">:</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a42"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000482">ṭalleyt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000483">w</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000484">gālet</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000485">ya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000486">laṭīf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a43"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000487">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000488"
+                     rend="withDash">raḅḅ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000490">ey</w>
+                  <pc join="right" xml:id="xTok_000491">#</pc>
+                  <pc join="right" xml:id="xTok_000492">#</pc>
+                  <pc join="right" xml:id="xTok_000493">#</pc>
+                  <pc join="right" xml:id="xTok_000494">#</pc>
+                  <pc join="right" xml:id="xTok_000495">#</pc>
+                  <pc join="right" xml:id="xTok_000496">#</pc>
+                  <pc join="right" xml:id="xTok_000497">#</pc>
+                  <pc join="right" xml:id="xTok_000498">#</pc>
+                  <pc join="right" xml:id="xTok_000499">#</pc>
+                  <pc join="right" xml:id="xTok_000500">#</pc>
+                  <pc join="right" xml:id="xTok_000501">#</pc>
+                  <pc join="right" xml:id="xTok_000502">#</pc>
+                  <pc join="right" xml:id="xTok_000503">#</pc>
+                  <pc xml:id="xTok_000504">#</pc>
+                  <pc xml:id="xTok_000505">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a44"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T79"
+                  start="#T78">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000506">wāḥad</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000507"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000509"
+                     rend="withDash">d</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000511">duʕā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000512">hiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a45"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000513">ya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000514">rabb</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000515">ē</w>
+                  <pc xml:id="xTok_000516">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000517"
+                     rend="withDash">yigūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000519"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000521"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000522">:</pc>
+                  <pc join="right" xml:id="xTok_000523">"</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000524">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000525"
+                     rend="withDash">raḅʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000527">i</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000528"
+                     rend="withDash">ṣall</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000530">u</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000531"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000533"
+                     rend="withDash">n</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000535">nabi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a46"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000536">w</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000537">alfēn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000538">ṣalāt</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000539"
+                     rend="withDash">ʕala</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000541"
+                     rend="withDash">n</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000543"
+                     join="right">nabi</w>
+                  <pc xml:id="xTok_000544">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a47"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000545">bāb</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000546"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000548">madīna</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000549">mgaffala</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a48"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000550">w</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000551"
+                     rend="withDash">miftāwaḥ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000553">ḥa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000554"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000556">ṣala</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000557"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000559"
+                     rend="withDash">n</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000561"
+                     join="right">nabey</w>
+                  <pc xml:id="xTok_000562">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a50"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T89"
+                  start="#T88">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000563">hāy</w>
+                  <pc xml:id="xTok_000564">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000565">dīniyya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000566">yaʕni</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000567">tṣīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a49"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T90"
+                  start="#T89">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000568">fī</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000569">ktīr</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000570">šaġlāt</w>
+                  <pc xml:id="xTok_000571">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000572">fī</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000573">ktīr</w>
+                  <pc xml:id="xTok_000574">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000575">wāḥdä</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000576">masalan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a51"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T92"
+                  start="#T91">
+                  <pc join="right" xml:id="xTok_000577">"</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000578">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000579"
+                     rend="withDash">mhayrayt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000581">i</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000582">lā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000583">tirhuǧi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a52"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T93"
+                  start="#T92">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000584">yawm</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000585"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000587">wagʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000588"
+                     rend="withDash">ḥaml</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000590">ič</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000591">ḥafiy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a53"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T95"
+                  start="#T94">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000592">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000593"
+                     rend="withDash">šrāynā</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000595"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000597">ič</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000598"
+                     rend="withDash">barš</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000600">an</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000601">ḏahaḅ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a54"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T97"
+                  start="#T96">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000602">lubb</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000603"
+                     rend="withDash">ál</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000605">ḥarīr</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000606"
+                     rend="withDash">ǧlālič</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000608"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000609">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a55"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T99"
+                  start="#T98">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000610">yaʕni</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000611"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000613"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000615"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000617"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000618">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000619"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000621">yitġazzal</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000622"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000624"
+                     rend="withDash">mhērt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000626"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000627">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000628"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000630">mhēra</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000631">li</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000632">hiyya</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000633">bint</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000634"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000636">faras</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a56"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000637">qad</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000638">yažūz</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000639">ykūn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000640">huwwa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000641"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000643">yitġazzal</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000644"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000646"
+                     rend="withDash">ʕašīrt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000648">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a57"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T103"
+                  start="#T102">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000649"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000651"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000653">a</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000654">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000655"
+                     rend="withDash">mhērt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000657">i</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000658">lā</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000659">tuhurǧi</w>
+                  <pc xml:id="xTok_000660">,</pc>
+                  <pc join="right" xml:id="xTok_000661">#</pc>
+                  <pc join="right" xml:id="xTok_000662">#</pc>
+                  <pc join="right" xml:id="xTok_000663">#</pc>
+                  <pc xml:id="xTok_000664">#</pc>
+                  <pc xml:id="xTok_000665">#</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000666">ʔiḥdi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a58"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T104"
+                  start="#T103">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000667">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000668"
+                     rend="withDash">mhērt</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000670">i</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000671">lā</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000672">tuhruǧi</w>
+                  <pc xml:id="xTok_000673">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000674">yōm</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000675"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000677">wagʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000678"
+                     rend="withDash">ḥaml</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000680">ič</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000681">ḥafi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a59"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T106"
+                  start="#T105">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000682">yōm</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000683"
+                     rend="withDash">il</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000685"
+                     join="right">miʕraka</w>
+                  <pc xml:id="xTok_000686">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000687">ʔani</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000688">raḥ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000689">ʔakūn</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000690"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000692"
+                     rend="withDash">ḏ̣ahr</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000694"
+                     join="right">ič</w>
+                  <pc xml:id="xTok_000695">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000696"
+                     rend="withDash">ḥaml</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000698">ič</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000699">ḥafi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a61"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T108"
+                  start="#T107">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000700">ya</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000701"
+                     rend="withDash">šraynā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000703">ki</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000704"
+                     rend="withDash">burš</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000706">in</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000707">dahab</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a62"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T110"
+                  start="#T109">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000708">ʔinno</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000709">niḥna</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000710"
+                     rend="withDash">štarēnā</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000712">ki</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000713"
+                     rend="withDash">bə</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000715">qrūš</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000716">dahab</w>
+                  <pc xml:id="xTok_000717">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a63"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T112"
+                  start="#T111">
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000718">lubb</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000719"
+                     rend="withDash">ál</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000721">ḥarīr</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000722"
+                     rend="withDash">žlāl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000724"
+                     join="right">ik</w>
+                  <pc xml:id="xTok_000725">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000726"
+                     rend="withDash">ʔinn</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000728">o</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000729"
+                     rend="withDash">nlabbs</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000731">ik</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000732">niḥna</w>
+                  <pc xml:id="xTok_000733">,</pc>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000734"
+                     rend="withDash">is</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000736">siriž</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000737"
+                     rend="withDash">tibaʕ</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000739">ik</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000740">ḥarīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_RD_M.61_Khalde_CustomsTribes_OralLiterature_a64"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T114"
+                  start="#T113">
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000741">ē</w>
+                  <pc xml:id="xTok_000742">,</pc>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000743">hāy</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000744"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000746"
+                     rend="withDash">yṣuf</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000748">a</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000749"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000751"
+                     rend="withDash">l</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000753">xēl</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000754">w</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000755"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000757">yiṣuf</w>
+                  <w join="right"
+                     xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000758"
+                     rend="withDash">nafs</w>
+                  <w xml:id="07_RD_M.61_Khalde_CustomsTribes_OralLiterature_xTok_000760"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000761">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

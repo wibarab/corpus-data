@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-06-21T10:50:39.292525Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">07_HD_M.31_Khalde_QuestionnairegrammarPart7</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">07_HD_M.31_Khalde_QuestionnairegrammarPart7</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="6.7361111111111108E-2" type="audio">
+                  <date when="2022-02-27"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 07_HD_M.31_Khalde_QuestionnairegrammarPart7</head>
+               <person sameAs="corpus:LEB_KHAL_2022_HD_M.31_Speaker2">
+                  <name type="pseudonym">LEB_KHAL_2022_HD_M.31_Speaker2</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Questionnaire"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="923" since="#T0" xml:id="T1"/>
+         <when interval="2691" since="#T0" xml:id="T2"/>
+         <when interval="3128" since="#T0" xml:id="T11"/>
+         <when interval="6463" since="#T0" xml:id="T12"/>
+         <when interval="8325" since="#T0" xml:id="T3"/>
+         <when interval="11988" since="#T0" xml:id="T4"/>
+         <when interval="12907" since="#T0" xml:id="T13"/>
+         <when interval="21374" since="#T0" xml:id="T14"/>
+         <when interval="21781" since="#T0" xml:id="T5"/>
+         <when interval="26383" since="#T0" xml:id="T6"/>
+         <when interval="26453" since="#T0" xml:id="T15"/>
+         <when interval="31125" since="#T0" xml:id="T16"/>
+         <when interval="39423" since="#T0" xml:id="T17"/>
+         <when interval="42491" since="#T0" xml:id="T18"/>
+         <when interval="42869" since="#T0" xml:id="T7"/>
+         <when interval="46806" since="#T0" xml:id="T8"/>
+         <when interval="51660" since="#T0" xml:id="T19"/>
+         <when interval="54911" since="#T0" xml:id="T20"/>
+         <when interval="59129" since="#T0" xml:id="T21"/>
+         <when interval="61288" since="#T0" xml:id="T22"/>
+         <when interval="78264" since="#T0" xml:id="T23"/>
+         <when interval="81770" since="#T0" xml:id="T24"/>
+         <when interval="83539" since="#T0" xml:id="T9"/>
+         <when interval="87590" since="#T0" xml:id="T10"/>
+         <when interval="91533" since="#T0" xml:id="T25"/>
+         <when interval="94920" since="#T0" xml:id="T26"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T26</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a1"
+                  who="#AID"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000001">Everyday</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000002">before</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000003">work</w>
+                  <pc xml:id="xTok_000004">,</pc>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000005">I</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000006">drink</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000007">coffee</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a10"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000008">kull</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000009">yōm</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000010">ʔašrab</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000011"
+                     rend="withDash">lə</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000013">ghawa</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000014"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000016">ṣuḅuḥ</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000017"
+                     rend="withDash">gabəl</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000019">ma</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000020">rūʕ</w>
+                  <pc join="right" xml:id="xTok_000021">(</pc>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000022"
+                     join="right">rūḥ</w>
+                  <pc xml:id="xTok_000023">)</pc>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000024"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000026"
+                     join="right">šuġul</w>
+                  <pc xml:id="xTok_000027">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a2"
+                  who="#AID"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000028">In</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000029">the</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000030">old</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000031">days</w>
+                  <pc xml:id="xTok_000032">,</pc>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000033">the</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000034">Bedouins</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000035">used</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000036">to</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000037">travel</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000038">long</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000039">distances</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000040">with</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000041">their</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000042">camels</w>
+                  <pc xml:id="xTok_000043">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a11"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000044">ʔiyyam</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000045">zimān</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000046">čānum</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000047">yirūḥu</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000048"
+                     rend="withDash">l</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000050">badu</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000051">min</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000052">minṭaga</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000053"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000055"
+                     rend="withDash">t</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000057">tānya</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000058"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000060">ḍahr</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000061"
+                     rend="withDash">iž</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000063"
+                     join="right">žmāl</w>
+                  <pc xml:id="xTok_000064">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a3"
+                  who="#AID"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000065">I</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000066">will</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000067">not</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000068">be</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000069">able</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000070">to</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000071">join</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000072">you</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000073">after</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000074">tomorrow</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000075">because</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000076">I</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000077">will</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000078">visit</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000079">my</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000080">daughter</w>
+                  <pc join="right" xml:id="xTok_000081">'</pc>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000082">s</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000083">family</w>
+                  <pc xml:id="xTok_000084">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a12"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000085">ma</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000086">raḥ</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000087">ʔagdar</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000088">ʔaži</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000089">la</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000090"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000092">ak</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000093">bāčir</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000094">liʔanno</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000095"
+                     rend="withDash">badd</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000097">i</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000098">rūḥ</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000099">ʔazūr</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000100">wlād</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000101"
+                     rend="withDash">bint</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000103"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000104">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a14"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000105">bēt</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000106"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000108">a</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000109"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000111"
+                     rend="withDash">bint</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000113"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000114">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a4"
+                  who="#AID"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000115">I</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000116">was</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000117">grinding</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000118">coffee</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000119">when</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000120">suddenly</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000121">I</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000122">heard</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000123">a</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000124">loud</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000125">noise</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a5"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000126">smiʕit</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000127">ṣōt</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000128">guwi</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000129">sāʕat</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000130">čint</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000131">ʔašrab</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000132"
+                     rend="withDash">lə</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000134">ghawa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a6"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000135">smiʕit</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000136">ṣōt</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000137">guwi</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000138">sāʕat</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000139">čint</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000140">ʔašrab</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000141"
+                     rend="withDash">lə</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000143">ghawa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a7"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000144"
+                     rend="withDash">is</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000146">sāʕa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000147">li</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000148">čint</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000149"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000151">ʔašrab</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000152"
+                     rend="withDash">lə</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000154">ghawa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000155">ʔaw</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000156">lamma</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000157">čint</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000158"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000160">ʔašrab</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000161"
+                     rend="withDash">lə</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000163">ghawa</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000164">smiʕit</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000165">ṣōt</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000166">guwi</w>
+                  <pc xml:id="xTok_000167">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a9"
+                  who="#AID"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000168">She</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000169">was</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000170">not</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000171">listening</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000172">to</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000173">me</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000174">when</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000175">I</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000176">mentioned</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000177">the</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000178">accident</w>
+                  <pc xml:id="xTok_000179">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u07_HD_M.31_Khalde_QuestionnairegrammarPart7_a13"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000180">hī</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000181">ma</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000182">čānt</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000183"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000185"
+                     rend="withDash">tismaʕ</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000187">ni</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000188">sāʕat</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000189">li</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000190">ṣār</w>
+                  <w join="right"
+                     xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000191"
+                     rend="withDash">il</w>
+                  <w xml:id="07_HD_M.31_Khalde_QuestionnairegrammarPart7_xTok_000193">ḥādis</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

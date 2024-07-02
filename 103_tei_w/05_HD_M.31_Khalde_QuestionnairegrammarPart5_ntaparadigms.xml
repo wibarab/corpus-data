@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-06-21T10:50:39.190217Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="8.6805555555555552E-2" type="audio">
+                  <date when="2022-02-27"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms</head>
+               <person sameAs="corpus:LEB_KHAL_2022_HD_M.31_Speaker2">
+                  <name type="pseudonym">LEB_KHAL_2022_HD_M.31_Speaker2</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Questionnaire"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="3761" since="#T0" xml:id="T1"/>
+         <when interval="4671" since="#T0" xml:id="T2"/>
+         <when interval="4733" since="#T0" xml:id="T3"/>
+         <when interval="8666" since="#T0" xml:id="T4"/>
+         <when interval="8808" since="#T0" xml:id="T5"/>
+         <when interval="10281" since="#T0" xml:id="T6"/>
+         <when interval="10463" since="#T0" xml:id="T7"/>
+         <when interval="11301" since="#T0" xml:id="T8"/>
+         <when interval="11363" since="#T0" xml:id="T9"/>
+         <when interval="12373" since="#T0" xml:id="T10"/>
+         <when interval="15889" since="#T0" xml:id="T11"/>
+         <when interval="16924" since="#T0" xml:id="T12"/>
+         <when interval="17568" since="#T0" xml:id="T13"/>
+         <when interval="18656" since="#T0" xml:id="T14"/>
+         <when interval="18852" since="#T0" xml:id="T15"/>
+         <when interval="19732" since="#T0" xml:id="T16"/>
+         <when interval="20033" since="#T0" xml:id="T17"/>
+         <when interval="21218" since="#T0" xml:id="T18"/>
+         <when interval="21954" since="#T0" xml:id="T19"/>
+         <when interval="28520" since="#T0" xml:id="T20"/>
+         <when interval="44256" since="#T0" xml:id="T21"/>
+         <when interval="46015" since="#T0" xml:id="T22"/>
+         <when interval="46201" since="#T0" xml:id="T23"/>
+         <when interval="47251" since="#T0" xml:id="T24"/>
+         <when interval="47336" since="#T0" xml:id="T25"/>
+         <when interval="49390" since="#T0" xml:id="T26"/>
+         <when interval="52944" since="#T0" xml:id="T27"/>
+         <when interval="55427" since="#T0" xml:id="T28"/>
+         <when interval="57499" since="#T0" xml:id="T29"/>
+         <when interval="60164" since="#T0" xml:id="T30"/>
+         <when interval="63422" since="#T0" xml:id="T31"/>
+         <when interval="65495" since="#T0" xml:id="T32"/>
+         <when interval="66066" since="#T0" xml:id="T33"/>
+         <when interval="67738" since="#T0" xml:id="T34"/>
+         <when interval="70544" since="#T0" xml:id="T35"/>
+         <when interval="75842" since="#T0" xml:id="T36"/>
+         <when interval="77551" since="#T0" xml:id="T37"/>
+         <when interval="77824" since="#T0" xml:id="T38"/>
+         <when interval="79750" since="#T0" xml:id="T39"/>
+         <when interval="83483" since="#T0" xml:id="T40"/>
+         <when interval="86792" since="#T0" xml:id="T41"/>
+         <when interval="87895" since="#T0" xml:id="T42"/>
+         <when interval="90272" since="#T0" xml:id="T43"/>
+         <when interval="90356" since="#T0" xml:id="T44"/>
+         <when interval="93077" since="#T0" xml:id="T45"/>
+         <when interval="96806" since="#T0" xml:id="T46"/>
+         <when interval="98719" since="#T0" xml:id="T47"/>
+         <when interval="98948" since="#T0" xml:id="T48"/>
+         <when interval="103379" since="#T0" xml:id="T49"/>
+         <when interval="103478" since="#T0" xml:id="T50"/>
+         <when interval="105070" since="#T0" xml:id="T51"/>
+         <when interval="107910" since="#T0" xml:id="T52"/>
+         <when interval="109294" since="#T0" xml:id="T53"/>
+         <when interval="109367" since="#T0" xml:id="T54"/>
+         <when interval="111465" since="#T0" xml:id="T55"/>
+         <when interval="111527" since="#T0" xml:id="T56"/>
+         <when interval="114318" since="#T0" xml:id="T57"/>
+         <when interval="114462" since="#T0" xml:id="T58"/>
+         <when interval="117401" since="#T0" xml:id="T59"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T59</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a1"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000001">ʔana</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000002">nṭēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a2"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000003">huwwa</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000004">ʔaʕṭa</w>
+                  <pc xml:id="xTok_000005">,</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000006">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000007"
+                     rend="withDash">b</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000009">ətṣīr</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000010">huwwa</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000011">ʔanṭa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a3"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000012">ā</w>
+                  <pc xml:id="xTok_000013">,</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000014">hū</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000015"
+                     rend="withDash">nṭā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000017">ni</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000018"
+                     rend="withDash">yā</w>
+                  <pc join="right" xml:id="xTok_000020">_</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000021"
+                     join="right">́</w>
+                  <pc xml:id="xTok_000022">,</pc>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000023">bala</w>
+                  <pc xml:id="xTok_000024">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a4"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000025">hū</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000026"
+                     rend="withDash">nṭā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000028">ni</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000029"
+                     rend="withDash">yā</w>
+                  <pc join="right" xml:id="xTok_000031">_</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000032">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a5"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000033">hiyya</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000034"
+                     rend="withDash">nṭaṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000036">ni</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000037"
+                     rend="withDash">yā</w>
+                  <pc join="right" xml:id="xTok_000039">_</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000040">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a6"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000041">ʔani</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000042"
+                     rend="withDash">nṭēṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000044">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a7"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000045">gam</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000046">huwwa</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000047"
+                     rend="withDash">nṭā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000049">ni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a8"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000050">hiyya</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000051"
+                     rend="withDash">nṭaṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000053">ni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a9"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000054">humma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000055"
+                     rend="withDash">nṭū</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000057">ni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a10"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000058">hinna</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000059"
+                     rend="withDash">nṭan</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000061"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_000062">?</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000063">ē</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000064"
+                     rend="withDash">nṭan</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000066">ni</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000067"
+                     rend="withDash">lə</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000069"
+                     join="right">ġrāḍ</w>
+                  <pc xml:id="xTok_000070">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a11"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000071">huwwa</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000072">ʔanṭa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a12"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000073">hiyya</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000074">ʔanṭat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a13"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000075">huwwa</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000076">gaʕad</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000077">yinṭi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a14"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000078">ē</w>
+                  <pc xml:id="xTok_000079">,</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000080">inti</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000081">gaʕda</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000082">ṭunṭi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a15"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000083">ʔinṭat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a16"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000084">ē</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000085">hiyya</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000086"
+                     rend="withDash">nṭaṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000088">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000089">mbāriḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a17"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000090">hiyya</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000091"
+                     rend="withDash">nṭaṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000093">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000094">mbāriḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a18"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000095">hiyya</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000096"
+                     rend="withDash">ṭunṭī</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000098">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000099">alḥazz</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a19"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000100">inti</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000101"
+                     rend="withDash">nṭiṭī</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000103">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000104">mbāriḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a20"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000105">w</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000106">inti</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000107"
+                     rend="withDash">ṭunṭī</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000109">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000110">kull</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000111">yōm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a21"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000112">intan</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000113"
+                     rend="withDash">nṭēṭan</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000115">ni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a22"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T43"
+                  start="#T42">
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000116"
+                     rend="withDash">nṭēṭan</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000118">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000119">alḥazz</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a23"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000120">ʔaw</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000121"
+                     rend="withDash">ṭunṭan</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000123">ni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a24"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T47"
+                  start="#T46">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000124">niḥna</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000125">nunṭi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a25"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000126">yaʕni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000127">masalan</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000128">niḥna</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000129">nunṭi</w>
+                  <pc join="right" xml:id="xTok_000130">.</pc>
+                  <pc xml:id="xTok_000131">.</pc>
+                  <pc xml:id="xTok_000132">.</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000133">w</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000134">niḥna</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000135">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000136"
+                     rend="withDash">nṭēnā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000138">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a26"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000139">ʔaw</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000140">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000141"
+                     rend="withDash">nunṭī</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000143">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a27"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T53"
+                  start="#T52">
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000144"
+                     rend="withDash">fī</w>
+                  <pc join="right" xml:id="xTok_000146">_</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000147">́</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000148"
+                     rend="withDash">l</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000150">ʕālam</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000151">tʔūl</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000152"
+                     rend="withDash">l</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000154">ʕā</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a28"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T55"
+                  start="#T54">
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000155">intibhi</w>
+                  <pc xml:id="xTok_000156">,</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000157">ʔinno</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000158"
+                     rend="withDash">ʕaṭēṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000160">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000161">w</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000162">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000163"
+                     rend="withDash">ʕaṭēṭ</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000165">ni</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000166">w</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000167">kaza</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a29"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000168">bass</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000169">ʔana</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000170"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000172"
+                     rend="withDash">l</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000174">ḥaki</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000175">ʔana</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000176"
+                     rend="withDash">b</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000178"
+                     join="right">ʔūl</w>
+                  <pc xml:id="xTok_000179">:</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000180">walla</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000181">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000182"
+                     rend="withDash">nṭā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000184"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_000185">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_a30"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000186">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000187"
+                     rend="withDash">b</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000189">ʔūl</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000190">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000191"
+                     rend="withDash">ʕaṭā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000193"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_000194">,</pc>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000195"
+                     rend="withDash">b</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000197">ʔūl</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000198">ma</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000199"
+                     rend="withDash">nṭā</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000201"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_000202">.</pc>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000203">ʔana</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000204">hēk</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000205"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000207"
+                     rend="withDash">əḥkī</w>
+                  <w xml:id="05_HD_M.31_Khalde_QuestionnairegrammarPart5_ntaparadigms_xTok_000209"
+                     join="right">ya</w>
+                  <pc xml:id="xTok_000210">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

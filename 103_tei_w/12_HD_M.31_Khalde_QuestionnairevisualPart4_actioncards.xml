@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-06-21T10:50:38.527704Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.3611111111111111" type="audio">
+                  <date when="2022-02-27"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards</head>
+               <person sameAs="corpus:LEB_KHAL_2022_HD_M.31_Speaker2">
+                  <name type="pseudonym">LEB_KHAL_2022_HD_M.31_Speaker2</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Questionnaire"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="5510" since="#T0" xml:id="T1"/>
+         <when interval="7585" since="#T0" xml:id="T2"/>
+         <when interval="8696" since="#T0" xml:id="T3"/>
+         <when interval="12028" since="#T0" xml:id="T4"/>
+         <when interval="15231" since="#T0" xml:id="T5"/>
+         <when interval="16796" since="#T0" xml:id="T6"/>
+         <when interval="17779" since="#T0" xml:id="T7"/>
+         <when interval="20375" since="#T0" xml:id="T8"/>
+         <when interval="26416" since="#T0" xml:id="T9"/>
+         <when interval="26505" since="#T0" xml:id="T10"/>
+         <when interval="28095" since="#T0" xml:id="T11"/>
+         <when interval="28844" since="#T0" xml:id="T12"/>
+         <when interval="31785" since="#T0" xml:id="T13"/>
+         <when interval="37139" since="#T0" xml:id="T14"/>
+         <when interval="40090" since="#T0" xml:id="T15"/>
+         <when interval="50510" since="#T0" xml:id="T16"/>
+         <when interval="55758" since="#T0" xml:id="T17"/>
+         <when interval="57493" since="#T0" xml:id="T18"/>
+         <when interval="59184" since="#T0" xml:id="T19"/>
+         <when interval="61489" since="#T0" xml:id="T20"/>
+         <when interval="64541" since="#T0" xml:id="T21"/>
+         <when interval="68128" since="#T0" xml:id="T22"/>
+         <when interval="70511" since="#T0" xml:id="T23"/>
+         <when interval="76548" since="#T0" xml:id="T24"/>
+         <when interval="78266" since="#T0" xml:id="T25"/>
+         <when interval="79263" since="#T0" xml:id="T26"/>
+         <when interval="81846" since="#T0" xml:id="T27"/>
+         <when interval="90406" since="#T0" xml:id="T28"/>
+         <when interval="92156" since="#T0" xml:id="T29"/>
+         <when interval="99425" since="#T0" xml:id="T30"/>
+         <when interval="100558" since="#T0" xml:id="T31"/>
+         <when interval="101528" since="#T0" xml:id="T32"/>
+         <when interval="102459" since="#T0" xml:id="T33"/>
+         <when interval="113341" since="#T0" xml:id="T34"/>
+         <when interval="114608" since="#T0" xml:id="T35"/>
+         <when interval="115606" since="#T0" xml:id="T36"/>
+         <when interval="116363" since="#T0" xml:id="T37"/>
+         <when interval="118811" since="#T0" xml:id="T38"/>
+         <when interval="120418" since="#T0" xml:id="T39"/>
+         <when interval="120428" since="#T0" xml:id="T40"/>
+         <when interval="122537" since="#T0" xml:id="T41"/>
+         <when interval="123010" since="#T0" xml:id="T42"/>
+         <when interval="124132" since="#T0" xml:id="T43"/>
+         <when interval="125418" since="#T0" xml:id="T44"/>
+         <when interval="128829" since="#T0" xml:id="T45"/>
+         <when interval="131445" since="#T0" xml:id="T46"/>
+         <when interval="131633" since="#T0" xml:id="T47"/>
+         <when interval="132690" since="#T0" xml:id="T48"/>
+         <when interval="138252" since="#T0" xml:id="T49"/>
+         <when interval="140121" since="#T0" xml:id="T50"/>
+         <when interval="142066" since="#T0" xml:id="T51"/>
+         <when interval="143157" since="#T0" xml:id="T52"/>
+         <when interval="143234" since="#T0" xml:id="T53"/>
+         <when interval="145642" since="#T0" xml:id="T54"/>
+         <when interval="146428" since="#T0" xml:id="T55"/>
+         <when interval="148615" since="#T0" xml:id="T56"/>
+         <when interval="150758" since="#T0" xml:id="T57"/>
+         <when interval="151755" since="#T0" xml:id="T58"/>
+         <when interval="153363" since="#T0" xml:id="T59"/>
+         <when interval="154916" since="#T0" xml:id="T60"/>
+         <when interval="156134" since="#T0" xml:id="T61"/>
+         <when interval="157209" since="#T0" xml:id="T62"/>
+         <when interval="158673" since="#T0" xml:id="T63"/>
+         <when interval="159872" since="#T0" xml:id="T64"/>
+         <when interval="164242" since="#T0" xml:id="T65"/>
+         <when interval="165681" since="#T0" xml:id="T66"/>
+         <when interval="186777" since="#T0" xml:id="T67"/>
+         <when interval="190051" since="#T0" xml:id="T68"/>
+         <when interval="199313" since="#T0" xml:id="T69"/>
+         <when interval="203032" since="#T0" xml:id="T70"/>
+         <when interval="230868" since="#T0" xml:id="T71"/>
+         <when interval="234134" since="#T0" xml:id="T72"/>
+         <when interval="236685" since="#T0" xml:id="T73"/>
+         <when interval="239385" since="#T0" xml:id="T74"/>
+         <when interval="240992" since="#T0" xml:id="T75"/>
+         <when interval="241965" since="#T0" xml:id="T76"/>
+         <when interval="243376" since="#T0" xml:id="T77"/>
+         <when interval="244576" since="#T0" xml:id="T78"/>
+         <when interval="249745" since="#T0" xml:id="T79"/>
+         <when interval="250887" since="#T0" xml:id="T80"/>
+         <when interval="259337" since="#T0" xml:id="T81"/>
+         <when interval="260782" since="#T0" xml:id="T82"/>
+         <when interval="262818" since="#T0" xml:id="T83"/>
+         <when interval="264181" since="#T0" xml:id="T84"/>
+         <when interval="267551" since="#T0" xml:id="T85"/>
+         <when interval="268788" since="#T0" xml:id="T86"/>
+         <when interval="277904" since="#T0" xml:id="T87"/>
+         <when interval="279591" since="#T0" xml:id="T88"/>
+         <when interval="292633" since="#T0" xml:id="T89"/>
+         <when interval="294947" since="#T0" xml:id="T90"/>
+         <when interval="324987" since="#T0" xml:id="T91"/>
+         <when interval="326190" since="#T0" xml:id="T92"/>
+         <when interval="326294" since="#T0" xml:id="T93"/>
+         <when interval="327325" since="#T0" xml:id="T94"/>
+         <when interval="334734" since="#T0" xml:id="T95"/>
+         <when interval="336948" since="#T0" xml:id="T96"/>
+         <when interval="337788" since="#T0" xml:id="T97"/>
+         <when interval="340096" since="#T0" xml:id="T98"/>
+         <when interval="344607" since="#T0" xml:id="T99"/>
+         <when interval="345664" since="#T0" xml:id="T100"/>
+         <when interval="349571" since="#T0" xml:id="T101"/>
+         <when interval="351011" since="#T0" xml:id="T102"/>
+         <when interval="351709" since="#T0" xml:id="T103"/>
+         <when interval="353866" since="#T0" xml:id="T104"/>
+         <when interval="354368" since="#T0" xml:id="T105"/>
+         <when interval="355407" since="#T0" xml:id="T106"/>
+         <when interval="358650" since="#T0" xml:id="T107"/>
+         <when interval="363978" since="#T0" xml:id="T108"/>
+         <when interval="363989" since="#T0" xml:id="T109"/>
+         <when interval="366928" since="#T0" xml:id="T110"/>
+         <when interval="367772" since="#T0" xml:id="T111"/>
+         <when interval="374869" since="#T0" xml:id="T112"/>
+         <when interval="378054" since="#T0" xml:id="T113"/>
+         <when interval="380661" since="#T0" xml:id="T114"/>
+         <when interval="380669" since="#T0" xml:id="T115"/>
+         <when interval="381978" since="#T0" xml:id="T116"/>
+         <when interval="385520" since="#T0" xml:id="T117"/>
+         <when interval="387132" since="#T0" xml:id="T118"/>
+         <when interval="393511" since="#T0" xml:id="T119"/>
+         <when interval="395009" since="#T0" xml:id="T120"/>
+         <when interval="399510" since="#T0" xml:id="T121"/>
+         <when interval="401153" since="#T0" xml:id="T122"/>
+         <when interval="402882" since="#T0" xml:id="T123"/>
+         <when interval="408262" since="#T0" xml:id="T124"/>
+         <when interval="408396" since="#T0" xml:id="T125"/>
+         <when interval="413516" since="#T0" xml:id="T126"/>
+         <when interval="417838" since="#T0" xml:id="T127"/>
+         <when interval="420439" since="#T0" xml:id="T128"/>
+         <when interval="421843" since="#T0" xml:id="T129"/>
+         <when interval="425143" since="#T0" xml:id="T130"/>
+         <when interval="427498" since="#T0" xml:id="T131"/>
+         <when interval="429206" since="#T0" xml:id="T132"/>
+         <when interval="429293" since="#T0" xml:id="T133"/>
+         <when interval="431247" since="#T0" xml:id="T134"/>
+         <when interval="433229" since="#T0" xml:id="T135"/>
+         <when interval="435344" since="#T0" xml:id="T136"/>
+         <when interval="438898" since="#T0" xml:id="T137"/>
+         <when interval="442608" since="#T0" xml:id="T138"/>
+         <when interval="445265" since="#T0" xml:id="T139"/>
+         <when interval="446040" since="#T0" xml:id="T140"/>
+         <when interval="448423" since="#T0" xml:id="T141"/>
+         <when interval="450811" since="#T0" xml:id="T142"/>
+         <when interval="452044" since="#T0" xml:id="T143"/>
+         <when interval="453719" since="#T0" xml:id="T144"/>
+         <when interval="457555" since="#T0" xml:id="T145"/>
+         <when interval="460238" since="#T0" xml:id="T146"/>
+         <when interval="461698" since="#T0" xml:id="T147"/>
+         <when interval="462666" since="#T0" xml:id="T148"/>
+         <when interval="502971" since="#T0" xml:id="T149"/>
+         <when interval="508458" since="#T0" xml:id="T150"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T150</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a1"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T2"
+                  start="#T1"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a2"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T3"
+                  start="#T2"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a3"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T5"
+                  start="#T4"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a4"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T7"
+                  start="#T6"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a5"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T9"
+                  start="#T8"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a6"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T11"
+                  start="#T10"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a7"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T13"
+                  start="#T12"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a9"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T15"
+                  start="#T14"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a10"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T17"
+                  start="#T16"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a11"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T19"
+                  start="#T18"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a12"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T21"
+                  start="#T20"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a13"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T23"
+                  start="#T22"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a14"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T25"
+                  start="#T24"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a15"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T27"
+                  start="#T26"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a16"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T29"
+                  start="#T28"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a17"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T31"
+                  start="#T30"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a18"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T33"
+                  start="#T32"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a19"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T35"
+                  start="#T34"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a20"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T37"
+                  start="#T36"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a21"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T39"
+                  start="#T38"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a22"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T41"
+                  start="#T40"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a23"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T43"
+                  start="#T42"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a24"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T44"
+                  start="#T43"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a25"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T46"
+                  start="#T45"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a26"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T48"
+                  start="#T47"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a27"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T50"
+                  start="#T49"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a28"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T52"
+                  start="#T51"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a29"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T54"
+                  start="#T53"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a30"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T56"
+                  start="#T55"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a31"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T58"
+                  start="#T57"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a32"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T60"
+                  start="#T59"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a33"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T62"
+                  start="#T61"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a34"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T64"
+                  start="#T63"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a35"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T66"
+                  start="#T65"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a36"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T68"
+                  start="#T67"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a37"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T70"
+                  start="#T69"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a38"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T72"
+                  start="#T71"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a39"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T74"
+                  start="#T73"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a40"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T76"
+                  start="#T75"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a41"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T78"
+                  start="#T77"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a42"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T80"
+                  start="#T79"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a43"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T82"
+                  start="#T81"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a44"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T84"
+                  start="#T83"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a45"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T86"
+                  start="#T85"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a46"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T88"
+                  start="#T87"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a47"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T90"
+                  start="#T89"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a48"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T92"
+                  start="#T91"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a49"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T94"
+                  start="#T93"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a50"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T96"
+                  start="#T95"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a51"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T98"
+                  start="#T97"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a52"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T100"
+                  start="#T99"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a53"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T102"
+                  start="#T101"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a54"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T104"
+                  start="#T103"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a55"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T106"
+                  start="#T105"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a56"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T108"
+                  start="#T107"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a57"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T110"
+                  start="#T109"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a58"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T112"
+                  start="#T111"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a59"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T114"
+                  start="#T113"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a60"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T116"
+                  start="#T115"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a61"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T118"
+                  start="#T117"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a62"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T120"
+                  start="#T119"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a63"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T122"
+                  start="#T121"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a64"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T124"
+                  start="#T123"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a65"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T126"
+                  start="#T125"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a66"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T128"
+                  start="#T127"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a67"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T130"
+                  start="#T129"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a68"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T132"
+                  start="#T131"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a69"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T134"
+                  start="#T133"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a71"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T136"
+                  start="#T135"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a72"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T138"
+                  start="#T137"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a73"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T140"
+                  start="#T139"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a74"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T142"
+                  start="#T141"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a75"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T144"
+                  start="#T143"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a76"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T146"
+                  start="#T145"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a77"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T148"
+                  start="#T147"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u12_HD_M.31_Khalde_QuestionnairevisualPart4_actioncards_a78"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T150"
+                  start="#T149"/>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

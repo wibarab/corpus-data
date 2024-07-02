@@ -1,0 +1,2929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-06-21T10:50:42.28173Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.28055555555555556" type="audio">
+                  <date when="2022-02-25"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism</head>
+               <person sameAs="corpus:LEB_KHAL_2022_RD_M.61_Speaker1">
+                  <name type="pseudonym">LEB_KHAL_2022_RD_M.61_Speaker1</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:OralliteraturePoetry"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="639" since="#T0" xml:id="T1"/>
+         <when interval="9592" since="#T0" xml:id="T2"/>
+         <when interval="10772" since="#T0" xml:id="T3"/>
+         <when interval="16789" since="#T0" xml:id="T4"/>
+         <when interval="16916" since="#T0" xml:id="T5"/>
+         <when interval="26555" since="#T0" xml:id="T6"/>
+         <when interval="31931" since="#T0" xml:id="T7"/>
+         <when interval="33830" since="#T0" xml:id="T8"/>
+         <when interval="34460" since="#T0" xml:id="T9"/>
+         <when interval="38835" since="#T0" xml:id="T10"/>
+         <when interval="39238" since="#T0" xml:id="T11"/>
+         <when interval="42555" since="#T0" xml:id="T12"/>
+         <when interval="43062" since="#T0" xml:id="T13"/>
+         <when interval="46446" since="#T0" xml:id="T14"/>
+         <when interval="46560" since="#T0" xml:id="T15"/>
+         <when interval="49007" since="#T0" xml:id="T16"/>
+         <when interval="49088" since="#T0" xml:id="T17"/>
+         <when interval="51789" since="#T0" xml:id="T18"/>
+         <when interval="52703" since="#T0" xml:id="T19"/>
+         <when interval="55856" since="#T0" xml:id="T20"/>
+         <when interval="56518" since="#T0" xml:id="T21"/>
+         <when interval="58558" since="#T0" xml:id="T22"/>
+         <when interval="58760" since="#T0" xml:id="T23"/>
+         <when interval="60611" since="#T0" xml:id="T24"/>
+         <when interval="60776" since="#T0" xml:id="T25"/>
+         <when interval="62453" since="#T0" xml:id="T26"/>
+         <when interval="62531" since="#T0" xml:id="T27"/>
+         <when interval="64168" since="#T0" xml:id="T28"/>
+         <when interval="64790" since="#T0" xml:id="T29"/>
+         <when interval="71628" since="#T0" xml:id="T30"/>
+         <when interval="72461" since="#T0" xml:id="T31"/>
+         <when interval="80424" since="#T0" xml:id="T32"/>
+         <when interval="80925" since="#T0" xml:id="T33"/>
+         <when interval="83462" since="#T0" xml:id="T34"/>
+         <when interval="83626" since="#T0" xml:id="T35"/>
+         <when interval="85764" since="#T0" xml:id="T36"/>
+         <when interval="86678" since="#T0" xml:id="T37"/>
+         <when interval="90118" since="#T0" xml:id="T38"/>
+         <when interval="90227" since="#T0" xml:id="T39"/>
+         <when interval="92789" since="#T0" xml:id="T40"/>
+         <when interval="92960" since="#T0" xml:id="T41"/>
+         <when interval="95514" since="#T0" xml:id="T42"/>
+         <when interval="96474" since="#T0" xml:id="T43"/>
+         <when interval="98849" since="#T0" xml:id="T44"/>
+         <when interval="99116" since="#T0" xml:id="T45"/>
+         <when interval="102669" since="#T0" xml:id="T46"/>
+         <when interval="103232" since="#T0" xml:id="T47"/>
+         <when interval="106049" since="#T0" xml:id="T48"/>
+         <when interval="107101" since="#T0" xml:id="T49"/>
+         <when interval="108814" since="#T0" xml:id="T50"/>
+         <when interval="109585" since="#T0" xml:id="T51"/>
+         <when interval="114210" since="#T0" xml:id="T52"/>
+         <when interval="114531" since="#T0" xml:id="T53"/>
+         <when interval="117544" since="#T0" xml:id="T54"/>
+         <when interval="118069" since="#T0" xml:id="T55"/>
+         <when interval="121734" since="#T0" xml:id="T56"/>
+         <when interval="121958" since="#T0" xml:id="T57"/>
+         <when interval="124346" since="#T0" xml:id="T58"/>
+         <when interval="124454" since="#T0" xml:id="T59"/>
+         <when interval="125808" since="#T0" xml:id="T60"/>
+         <when interval="125939" since="#T0" xml:id="T61"/>
+         <when interval="128262" since="#T0" xml:id="T62"/>
+         <when interval="128712" since="#T0" xml:id="T63"/>
+         <when interval="130968" since="#T0" xml:id="T64"/>
+         <when interval="131099" since="#T0" xml:id="T65"/>
+         <when interval="132496" since="#T0" xml:id="T66"/>
+         <when interval="132566" since="#T0" xml:id="T67"/>
+         <when interval="134930" since="#T0" xml:id="T68"/>
+         <when interval="135297" since="#T0" xml:id="T69"/>
+         <when interval="136685" since="#T0" xml:id="T70"/>
+         <when interval="136794" since="#T0" xml:id="T71"/>
+         <when interval="138685" since="#T0" xml:id="T72"/>
+         <when interval="138802" since="#T0" xml:id="T73"/>
+         <when interval="140398" since="#T0" xml:id="T74"/>
+         <when interval="140463" since="#T0" xml:id="T75"/>
+         <when interval="141315" since="#T0" xml:id="T76"/>
+         <when interval="145399" since="#T0" xml:id="T77"/>
+         <when interval="147268" since="#T0" xml:id="T78"/>
+         <when interval="147495" since="#T0" xml:id="T79"/>
+         <when interval="149776" since="#T0" xml:id="T80"/>
+         <when interval="149887" since="#T0" xml:id="T81"/>
+         <when interval="159574" since="#T0" xml:id="T82"/>
+         <when interval="161730" since="#T0" xml:id="T83"/>
+         <when interval="162079" since="#T0" xml:id="T84"/>
+         <when interval="167616" since="#T0" xml:id="T85"/>
+         <when interval="167728" since="#T0" xml:id="T86"/>
+         <when interval="170286" since="#T0" xml:id="T87"/>
+         <when interval="170421" since="#T0" xml:id="T88"/>
+         <when interval="172695" since="#T0" xml:id="T89"/>
+         <when interval="173313" since="#T0" xml:id="T90"/>
+         <when interval="177067" since="#T0" xml:id="T91"/>
+         <when interval="185162" since="#T0" xml:id="T92"/>
+         <when interval="185740" since="#T0" xml:id="T93"/>
+         <when interval="187968" since="#T0" xml:id="T94"/>
+         <when interval="188226" since="#T0" xml:id="T95"/>
+         <when interval="191584" since="#T0" xml:id="T96"/>
+         <when interval="193326" since="#T0" xml:id="T97"/>
+         <when interval="193470" since="#T0" xml:id="T98"/>
+         <when interval="195214" since="#T0" xml:id="T99"/>
+         <when interval="195721" since="#T0" xml:id="T100"/>
+         <when interval="199674" since="#T0" xml:id="T101"/>
+         <when interval="200415" since="#T0" xml:id="T102"/>
+         <when interval="204512" since="#T0" xml:id="T103"/>
+         <when interval="205782" since="#T0" xml:id="T104"/>
+         <when interval="206528" since="#T0" xml:id="T105"/>
+         <when interval="206735" since="#T0" xml:id="T106"/>
+         <when interval="211694" since="#T0" xml:id="T107"/>
+         <when interval="212117" since="#T0" xml:id="T108"/>
+         <when interval="214125" since="#T0" xml:id="T109"/>
+         <when interval="215714" since="#T0" xml:id="T110"/>
+         <when interval="215905" since="#T0" xml:id="T111"/>
+         <when interval="217447" since="#T0" xml:id="T112"/>
+         <when interval="220230" since="#T0" xml:id="T113"/>
+         <when interval="220446" since="#T0" xml:id="T114"/>
+         <when interval="222727" since="#T0" xml:id="T115"/>
+         <when interval="223190" since="#T0" xml:id="T116"/>
+         <when interval="226153" since="#T0" xml:id="T117"/>
+         <when interval="226291" since="#T0" xml:id="T118"/>
+         <when interval="233456" since="#T0" xml:id="T119"/>
+         <when interval="236448" since="#T0" xml:id="T120"/>
+         <when interval="236805" since="#T0" xml:id="T121"/>
+         <when interval="238268" since="#T0" xml:id="T122"/>
+         <when interval="240605" since="#T0" xml:id="T123"/>
+         <when interval="245327" since="#T0" xml:id="T124"/>
+         <when interval="245467" since="#T0" xml:id="T125"/>
+         <when interval="248670" since="#T0" xml:id="T126"/>
+         <when interval="249024" since="#T0" xml:id="T127"/>
+         <when interval="250164" since="#T0" xml:id="T128"/>
+         <when interval="253337" since="#T0" xml:id="T129"/>
+         <when interval="253523" since="#T0" xml:id="T130"/>
+         <when interval="255441" since="#T0" xml:id="T131"/>
+         <when interval="255670" since="#T0" xml:id="T132"/>
+         <when interval="257966" since="#T0" xml:id="T133"/>
+         <when interval="258164" since="#T0" xml:id="T134"/>
+         <when interval="262719" since="#T0" xml:id="T135"/>
+         <when interval="265029" since="#T0" xml:id="T136"/>
+         <when interval="268388" since="#T0" xml:id="T137"/>
+         <when interval="271241" since="#T0" xml:id="T138"/>
+         <when interval="271992" since="#T0" xml:id="T139"/>
+         <when interval="276214" since="#T0" xml:id="T140"/>
+         <when interval="278405" since="#T0" xml:id="T141"/>
+         <when interval="282093" since="#T0" xml:id="T142"/>
+         <when interval="283050" since="#T0" xml:id="T143"/>
+         <when interval="284820" since="#T0" xml:id="T144"/>
+         <when interval="285051" since="#T0" xml:id="T145"/>
+         <when interval="288637" since="#T0" xml:id="T146"/>
+         <when interval="293615" since="#T0" xml:id="T147"/>
+         <when interval="297885" since="#T0" xml:id="T148"/>
+         <when interval="298834" since="#T0" xml:id="T149"/>
+         <when interval="302043" since="#T0" xml:id="T150"/>
+         <when interval="302099" since="#T0" xml:id="T151"/>
+         <when interval="305297" since="#T0" xml:id="T152"/>
+         <when interval="306666" since="#T0" xml:id="T153"/>
+         <when interval="310671" since="#T0" xml:id="T154"/>
+         <when interval="311632" since="#T0" xml:id="T155"/>
+         <when interval="322540" since="#T0" xml:id="T156"/>
+         <when interval="322740" since="#T0" xml:id="T157"/>
+         <when interval="324120" since="#T0" xml:id="T158"/>
+         <when interval="324256" since="#T0" xml:id="T159"/>
+         <when interval="327191" since="#T0" xml:id="T160"/>
+         <when interval="327993" since="#T0" xml:id="T161"/>
+         <when interval="333353" since="#T0" xml:id="T162"/>
+         <when interval="333658" since="#T0" xml:id="T163"/>
+         <when interval="334686" since="#T0" xml:id="T164"/>
+         <when interval="334691" since="#T0" xml:id="T165"/>
+         <when interval="339029" since="#T0" xml:id="T166"/>
+         <when interval="339235" since="#T0" xml:id="T167"/>
+         <when interval="341511" since="#T0" xml:id="T168"/>
+         <when interval="341635" since="#T0" xml:id="T169"/>
+         <when interval="345888" since="#T0" xml:id="T170"/>
+         <when interval="350452" since="#T0" xml:id="T171"/>
+         <when interval="357683" since="#T0" xml:id="T172"/>
+         <when interval="357755" since="#T0" xml:id="T173"/>
+         <when interval="362766" since="#T0" xml:id="T174"/>
+         <when interval="362875" since="#T0" xml:id="T175"/>
+         <when interval="367723" since="#T0" xml:id="T176"/>
+         <when interval="367785" since="#T0" xml:id="T177"/>
+         <when interval="373068" since="#T0" xml:id="T178"/>
+         <when interval="373249" since="#T0" xml:id="T179"/>
+         <when interval="374807" since="#T0" xml:id="T180"/>
+         <when interval="374854" since="#T0" xml:id="T181"/>
+         <when interval="377233" since="#T0" xml:id="T182"/>
+         <when interval="377436" since="#T0" xml:id="T183"/>
+         <when interval="382159" since="#T0" xml:id="T184"/>
+         <when interval="383770" since="#T0" xml:id="T185"/>
+         <when interval="386510" since="#T0" xml:id="T186"/>
+         <when interval="386581" since="#T0" xml:id="T187"/>
+         <when interval="387857" since="#T0" xml:id="T188"/>
+         <when interval="388574" since="#T0" xml:id="T189"/>
+         <when interval="392059" since="#T0" xml:id="T190"/>
+         <when interval="393277" since="#T0" xml:id="T191"/>
+         <when interval="397971" since="#T0" xml:id="T192"/>
+         <when interval="398160" since="#T0" xml:id="T193"/>
+         <when interval="401745" since="#T0" xml:id="T194"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T194</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a1"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000001">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000002"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000004">ʕarab</w>
+                  <pc join="right" xml:id="xTok_000005">(</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000006"
+                     join="right">P3s</w>
+                  <pc xml:id="xTok_000007">)</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000008"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000010">hum</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000011"
+                     rend="withDash">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000013">ma</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000014"
+                     rend="withDash">bayna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000016">hum</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000017">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000018">masāḥat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000019"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000021">waṭan</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000022">liʔanno</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000023">hum</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000024">mawžūdīn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000025">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000026">masāḥat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000027"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000029"
+                     join="right">waṭan</w>
+                  <pc xml:id="xTok_000030">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a2"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000031">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000032">masāḥit</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000033"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000035"
+                     join="right">waṭan</w>
+                  <pc xml:id="xTok_000036">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000037"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000039">ʕarab</w>
+                  <pc join="right" xml:id="xTok_000040">(</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000041"
+                     join="right">P2s</w>
+                  <pc xml:id="xTok_000042">)</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000043">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000044">tarābuṭ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000045">ʔusari</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000046"
+                     rend="withDash">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000048">ma</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000049"
+                     rend="withDash">bayna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000051"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000052">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a3"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000053">yaʕni</w>
+                  <pc xml:id="xTok_000054">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000055">hnāk</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000056"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000058"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000060"
+                     join="right">ʕarab</w>
+                  <pc xml:id="xTok_000061">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000062">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000063">rābiṭa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000064">ġēr</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000065">muwaṯṯaqa</w>
+                  <pc xml:id="xTok_000066">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000067">ġēr</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000068">rasmiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a4"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000069"
+                     rend="withDash">iṛ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000071">ṛābiṭa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000072">šū</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000073">hiyya</w>
+                  <pc xml:id="xTok_000074">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a5"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000075">ʔiza</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000076">yṣīr</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000077">ʔiškāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000078"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000080">Wādi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000081">Xālid</w>
+                  <pc xml:id="xTok_000082">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000083">titḥarrak</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000084">kull</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000085"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000087">ʕašāyir</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000088"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000090">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a6"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000091">min</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000092"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000094"
+                     join="right">biqāʕ</w>
+                  <pc xml:id="xTok_000095">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000096"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000098"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000100"
+                     join="right">žanūb</w>
+                  <pc xml:id="xTok_000101">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000102">žabal</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000103">lubnān</w>
+                  <pc xml:id="xTok_000104">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000105">bērūt</w>
+                  <pc join="right" xml:id="xTok_000106">.</pc>
+                  <pc xml:id="xTok_000107">.</pc>
+                  <pc xml:id="xTok_000108">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a7"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000109">niḥna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000110">ṣār</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000111">ʔiškāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000112"
+                     rend="withDash">ʕand</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000114">īna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000115">min</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000116">fatra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a8"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000117">iltaffat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000118"
+                     rend="withDash">ḥuwālē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000120">na</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000121">kull</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000122"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000124">ʕašāyir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a9"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000125">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000126">ḏ̣allat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000127">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000128">ʕašīra</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000129">illa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000130">ltaffat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000131"
+                     rend="withDash">əḥwālē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000133">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a10"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000134">ʔibn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000135"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000137">ʕašīra</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000138">xalaṣ</w>
+                  <pc join="right" xml:id="xTok_000139">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000140">ʔibn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000141"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000143">ʕašīra</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000144">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000145">ltaffu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000146"
+                     rend="withDash">kull</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000148">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000149">sawa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a11"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000150">hāy</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000151">ṛābiṭa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000152">ġēr</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000153">muʕlana</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a12"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000154">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000155">hāy</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000156"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000158">ṛābiṭa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000159">tdūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a13"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000160">lēš</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000161">tdūm</w>
+                  <pc xml:id="xTok_000162">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a14"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000163">liʔanno</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000164">ma</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000165"
+                     rend="withDash">wurā</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000167">ha</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000168">muṣlaḥa</w>
+                  <pc xml:id="xTok_000169">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a15"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000170">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000171">ʔana</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000172"
+                     rend="withDash">tšūfī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000174">ni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000175">yōm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000176"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000178"
+                     join="right">ʕakkāṛ</w>
+                  <pc xml:id="xTok_000179">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000180"
+                     rend="withDash">tšūfī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000182">ni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000183">yōm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000184"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000186"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000188"
+                     join="right">biqāʕ</w>
+                  <pc xml:id="xTok_000189">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000190"
+                     rend="withDash">tšūfī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000192">ni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000193">yōm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000194"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000196">wādi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000197">xāled</w>
+                  <pc xml:id="xTok_000198">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000199"
+                     rend="withDash">tšūfī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000201">ni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000202">yōm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000203"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000205"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000207">žanūb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a16"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000208">kull</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000209"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000211">ʕarab</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000212">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000213">masāḥt</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000214"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000216"
+                     join="right">waṭan</w>
+                  <pc xml:id="xTok_000217">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000218">ma</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000219"
+                     rend="withDash">b</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000221">ʕarif</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000222">gaddēš</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000223"
+                     rend="withDash">tawāžid</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000225"
+                     join="right">um</w>
+                  <pc xml:id="xTok_000226">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000227"
+                     rend="withDash">taʕdād</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000229">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a17"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000230">tlātmiyya</w>
+                  <pc xml:id="xTok_000231">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000232">ʔarbaʕmīt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000233">ʔalf</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000234">nasma</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a18"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000235">nʕarif</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000236"
+                     rend="withDash">baʕaḏ̣</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000238">na</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000239"
+                     rend="withDash">kull</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000241">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a19"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000242">illi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000243">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000244">yʕarif</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000245"
+                     rend="withDash">ḅaʕḏ̣</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000247">u</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000248"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000250"
+                     rend="withDash">š</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000252"
+                     join="right">šōfa</w>
+                  <pc xml:id="xTok_000253">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000254">nʕarif</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000255"
+                     rend="withDash">ḅaʕaḏ̣</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000257">na</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000258"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000260"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000262">ʔisəm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a20"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000263">gaḅəl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000264"
+                     rend="withDash">it</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000266">tawāṣul</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000267"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000269">ʔižtimāʕi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a21"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000270">la</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000271">tfakkri</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000272"
+                     rend="withDash">it</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000274">tawāṣul</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000275"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000277">ʔižtimāʕi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000278"
+                     rend="withDash">garraḅ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000280">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a22"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T44"
+                  start="#T43">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000281"
+                     rend="withDash">it</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000283">tawāṣul</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000284"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000286">ʔižtimāʕi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000287">xarraḅ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000288"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000290">na</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000291"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000293">šaġlāt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000294">əkṯīra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a23"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000295"
+                     rend="withDash">in</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000297">nas</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000298">liḥgat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000299"
+                     rend="withDash">silbīt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000301">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000302">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000303">liḥgat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000304"
+                     rend="withDash">ʔīžābīt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000306">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a24"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000307">niḥna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000308">bī</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000309">šaġla</w>
+                  <pc xml:id="xTok_000310">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000311"
+                     rend="withDash">lə</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000313">bduwi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000314"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000316"
+                     rend="withDash">tʕarfī</w>
+                  <pc join="right" xml:id="xTok_000318">_</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000319">́</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000320">bduwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a25"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000321">ʕatūl</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000322">yfāʔil</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000323"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000325"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000327">xēṛ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a26"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000328">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000329">yidaḥḥig</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000330">bēn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000331"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000333">salbiyyāt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000334">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000335">ʔayya</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000336">zāwiyya</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000337">ʔīžābiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a27"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000338">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000339">yigūlūn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000340">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000341">žarīma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000342">makān</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000343"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000345">fūlāni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a28"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000346">fawran</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000347">ənšūf</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000348">ʔayna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000349"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000351">ʔīžābiyyāt</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000352"
+                     rend="withDash">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000354">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a29"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T58"
+                  start="#T57">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000355">lēš</w>
+                  <pc xml:id="xTok_000356">?</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000357">ḥitta</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000358">niḥṣul</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000359"
+                     rend="withDash">id</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000361">damm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a30"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000362">ḥitta</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000363">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000364">yiktar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a31"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000365">walla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000366">flān</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000367">xaṭaf</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000368">fulāna</w>
+                  <pc xml:id="xTok_000369">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000370">tazawwaǧ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000371">fulāna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a32"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000372">šū</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000373">ngūl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000374"
+                     rend="withDash">la</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000376">ḥitta</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000377">nxaffif</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000378">ʕala</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000379"
+                     rend="withDash">ʔanfus</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000381"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000382">,</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a33"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000383">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000384">nxaffif</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000385">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000386">ʔahal</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000387"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000389"
+                     join="right">binit</w>
+                  <pc xml:id="xTok_000390">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a34"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T68"
+                  start="#T67">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000391"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000393">ḥurra</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000394">šū</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000395">ʕamlat</w>
+                  <pc xml:id="xTok_000396">?</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000397"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000399">ḥurra</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000400">tazawwaǧat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a35"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000401">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000402">ʕamlat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000403">ʕamal</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000404">ʕaṭil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a36"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000405">rāḥat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000406">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000407">sunnit</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000408">ʔallā</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000409">wa</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000410"
+                     rend="withDash">rasūl</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000412">ih</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a37"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000413">bass</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000414">yimčin</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000415">ṛāḥat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000416">min</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000417"
+                     rend="withDash">warā</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000419">k</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a38"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T76"
+                  start="#T75">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000420">rāḥat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000421">min</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000422">wara</w>
+                  <pc join="right" xml:id="xTok_000423">.</pc>
+                  <pc xml:id="xTok_000424">.</pc>
+                  <pc xml:id="xTok_000425">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a106"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T77"
+                  start="#T76">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000426">ʔiḏan</w>
+                  <pc xml:id="xTok_000427">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000428">ʕaṭūl</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000429">ndawwir</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000430"
+                     rend="withDash">iš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000432">šaġlāt</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000433"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000435">ʔīžābiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a39"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T78"
+                  start="#T77">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000436">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000437">ənhawwin</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000438"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000440"
+                     join="right">ʔumūr</w>
+                  <pc xml:id="xTok_000441">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a40"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000442">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000443">ənhawwin</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000444"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000446"
+                     join="right">ʔumūr</w>
+                  <pc xml:id="xTok_000447">.</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000448">nbassiṭ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000449"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000451"
+                     join="right">ʔumūr</w>
+                  <pc xml:id="xTok_000452">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a41"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000453">tabsīṭ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000454"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000456">ʔumūr</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000457">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000458"
+                     rend="withDash">inn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000460">ak</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000461">tdawwir</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000462"
+                     rend="withDash">ʕala</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000464"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000466">ʔīžābiyyāt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000467">min</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000468">xilāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000469"
+                     rend="withDash">in</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000471">nār</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000472">haydi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000473">šiġla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000474">kṯīr</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000475">ḥilwa</w>
+                  <pc xml:id="xTok_000476">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000477">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000478">kṯīr</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000479">mumayyaza</w>
+                  <pc xml:id="xTok_000480">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a42"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000481">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000482"
+                     rend="withDash">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000484">č</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000485">tsayṭri</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000486"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000488"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000490">waḏ̣əʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a43"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000491">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000492">ʕatūl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000493"
+                     rend="withDash">bidd</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000495">ik</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000496">ətgūli</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000497"
+                     rend="withDash">ʔinn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000499">i</w>
+                  <pc join="right" xml:id="xTok_000500">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000501">laʔ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000502">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000503">šī</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000504">ʔakṯar</w>
+                  <pc xml:id="xTok_000505">!</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000506">laʔ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000507">miš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000508">hāḏ̣a</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000509">šī</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000510">ʕāḏ̣īm</w>
+                  <pc xml:id="xTok_000511">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000512">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000513">šī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000514">ʔaʕḏ̣am</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000515"
+                     rend="withDash">bidd</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000517">u</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000518">ysīr</w>
+                  <pc xml:id="xTok_000519">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a44"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000520">ṭālama</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000521">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000522">šī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000523">ʔaʕḏ̣am</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000524">fa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000525">ʔani</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000526">ʔirtāḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a45"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T89"
+                  start="#T88">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000527"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000529">ṣaḥḥ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000530"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000532"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000534">miškla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000535">yirtāḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a46"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T91"
+                  start="#T90">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000536">ē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000537">ḥāy</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000538"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000540">ʕādāt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000541">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000542"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000544">taqālīd</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000545">illi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000546"
+                     rend="withDash">lē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000548">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a47"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T92"
+                  start="#T91">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000549">ṭabʕan</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000550">ʔinno</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000551"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000553"
+                     join="right">ʕarab</w>
+                  <pc xml:id="xTok_000554">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000555">kān</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000556"
+                     rend="withDash">li</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000558"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000560">ʔasaf</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000561"
+                     rend="withDash">iš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000563">šadīd</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000564">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000565">kān</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000566">baʕḏ̣</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000567"
+                     rend="withDash">in</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000569">nās</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000570">yigūlūn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000571"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000573">ʕarab</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000574">qātilīn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000575"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000577">xiyam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a48"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T94"
+                  start="#T93">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000578">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000579">ma</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000580"
+                     rend="withDash">ʕand</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000582">um</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000583">ʔayya</w>
+                  <pc join="right" xml:id="xTok_000584">.</pc>
+                  <pc xml:id="xTok_000585">.</pc>
+                  <pc xml:id="xTok_000586">.</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000587"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000589"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000591">ʕaks</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a49"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T96"
+                  start="#T95">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000592"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000594">ʕarab</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000595">mašāʔallā</w>
+                  <pc xml:id="xTok_000596">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000597">yimiddu</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000598">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000599">yirḥalu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a50"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T97"
+                  start="#T96">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000600">lēs</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000601">kānu</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000602">yisəknu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000603"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000605"
+                     join="right">xiyam</w>
+                  <pc xml:id="xTok_000606">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a51"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T99"
+                  start="#T98">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000607">miš</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000608"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000610"
+                     join="right">xiyam</w>
+                  <pc xml:id="xTok_000611">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000612">byūt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000613">šaʕar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a52"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000614">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000615">bēt</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000616"
+                     rend="withDash">iš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000618">šaʕar</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000619">ṯamīn</w>
+                  <pc xml:id="xTok_000620">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000621">ṯamīn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000622"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000624"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000626">madda</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000627">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000628"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000630"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000632">qīma</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a53"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T103"
+                  start="#T102">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000633">fa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000634">čānaw</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000635"
+                     rend="withDash">yiskənūn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000637">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000638">liʔannu</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000639">yirḥalūn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000640">min</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000641">ṃakān</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000642"
+                     rend="withDash">li</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000644">ʔāxar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a54"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T105"
+                  start="#T104">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000645">buġyit</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000646"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000648">ṭurūš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a108"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T107"
+                  start="#T106">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000649">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000650">la</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000651">yazālu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000652"
+                     rend="withDash">li</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000654"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000656">yōm</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000657">yiṭlaʕu</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000658">min</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000659"
+                     rend="withDash">is</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000661">sāḥil</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000662">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000663">ḏ̣ahr</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000664"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000666">bēdar</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000667"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000669"
+                     rend="withDash">ǧ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000671">ǧibal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a55"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T109"
+                  start="#T108">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000672">ṭayyiḅ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000673">miš</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000674"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000676">kull</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000677"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000679">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000680">bināʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a109"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T110"
+                  start="#T109">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000681">niḥna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000682"
+                     rend="withDash">ʕaširit</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000684">na</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000685"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000687">a</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000688">bināʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a56"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T112"
+                  start="#T111">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000689">bass</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000690">miš</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000691"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000693">kull</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000694"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000696">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000697">bināʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a57"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T113"
+                  start="#T112">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000698">fa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000699">muṭṭaṛṛ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000700">yibni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000701">bēt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000702">šaʕar</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000703">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000704">yugʕud</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000705"
+                     rend="withDash">fī</w>
+                  <pc join="right" xml:id="xTok_000707">_</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000708">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a58"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T115"
+                  start="#T114">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000709">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000710">žalsit</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000711">bēt</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000712"
+                     rend="withDash">iš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000714">šaʕar</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000715">žalsa</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000716">ḥilwa</w>
+                  <pc xml:id="xTok_000717">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a59"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T117"
+                  start="#T116">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000718">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000719">nās</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000720"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000722"
+                     rend="withDash">š</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000724">šimāl</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000725">yiṭlaʕu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000726">ʕala</w>
+                  <pc join="right" xml:id="xTok_000727">.</pc>
+                  <pc xml:id="xTok_000728">.</pc>
+                  <pc xml:id="xTok_000729">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a60"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T119"
+                  start="#T118">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000730">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000731">masalan</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000732">ʔahal</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000733">ʕakkār</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000734">yiṭlaʕu</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000735">ḥawāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000736">qammūʕa</w>
+                  <pc xml:id="xTok_000737">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000738">ḥawāl</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000739">ʔakrūm</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000740">ḥawāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000741"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000743">minṭaga</w>
+                  <pc join="right" xml:id="xTok_000744">(</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000745">ha</w>
+                  <pc join="right" xml:id="xTok_000746">)</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000747"
+                     join="right">ḏīk</w>
+                  <pc xml:id="xTok_000748">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a61"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T120"
+                  start="#T119">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000749">yiṭlaʕu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000750"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000752"
+                     rend="withDash">ṛ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000754"
+                     join="right">ṛabīʕ</w>
+                  <pc xml:id="xTok_000755">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000756"
+                     rend="withDash">la</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000758">ḥitta</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000759">yirabbʕu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000760"
+                     rend="withDash">ṭurūš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000762">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a62"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T122"
+                  start="#T121">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000763">niḥna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000764">ya</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000765">niṭlaʕ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000766"
+                     rend="withDash">li</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000768">ḏ̣ahr</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000769"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000771">bēdar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a116"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T123"
+                  start="#T122">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000772">ʔibn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000773"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000775">biqāʕ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000776">yiži</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000777"
+                     rend="withDash">li</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000779"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000781">žabal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a63"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T124"
+                  start="#T123">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000782">ʔibn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000783"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000785">žanūb</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000786">yirtafiʕ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000787"
+                     rend="withDash">li</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000789"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000791">manāṭiq</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000792"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000794">ʕālya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a64"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T126"
+                  start="#T125">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000795">buġyat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000796">ʔinno</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000797"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000799">ṭarəš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000800">yirtāḥ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000801">w</w>
+                  <pc join="right" xml:id="xTok_000802">.</pc>
+                  <pc xml:id="xTok_000803">.</pc>
+                  <pc xml:id="xTok_000804">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a65"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T128"
+                  start="#T127">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000805">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000806">buġyat</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000807">ʔinno</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a117"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T129"
+                  start="#T128">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000808">qad</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000809">yažūz</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000810">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000811">yikūn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000812">fī</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000813">ʕišub</w>
+                  <pc xml:id="xTok_000814">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000815">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000816">yikūn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000817">fī</w>
+                  <pc xml:id="xTok_000818">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000819">bass</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000820">ʔinno</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a118"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T131"
+                  start="#T130">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000821">yāxuḏ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000822"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000824"
+                     join="right">ṭaqəs</w>
+                  <pc xml:id="xTok_000825">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000826"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000828"
+                     join="right">žaww</w>
+                  <pc xml:id="xTok_000829">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a66"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T133"
+                  start="#T132">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000830"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000832">žaww</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000833"
+                     rend="withDash">yʕamil</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000835"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000837">o</w>
+                  <pc join="right" xml:id="xTok_000838">.</pc>
+                  <pc xml:id="xTok_000839">.</pc>
+                  <pc xml:id="xTok_000840">.</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000841">ē</w>
+                  <pc xml:id="xTok_000842">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a67"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T135"
+                  start="#T134">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000843">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000844">la</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000845">nazāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000846"
+                     rend="withDash">baʕad</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000848">na</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000849">nxuḍḍ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000850"
+                     rend="withDash">is</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000852"
+                     join="right">samən</w>
+                  <pc xml:id="xTok_000853">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000854">yimkin</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000855">ṭṭawwarna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000856"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000858">xaḏ̣ḏ̣</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000859"
+                     rend="withDash">is</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000861"
+                     join="right">samən</w>
+                  <pc xml:id="xTok_000862">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a68"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T136"
+                  start="#T135">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000863">čānat</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000864"
+                     rend="withDash">in</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000866">nisā</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000867">txuḏ̣ḏ̣</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000868"
+                     rend="withDash">is</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000870">samən</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000871"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000873">žrā</w>
+                  <pc join="right" xml:id="xTok_000874">#</pc>
+                  <pc join="right" xml:id="xTok_000875">#</pc>
+                  <pc join="right" xml:id="xTok_000876">#</pc>
+                  <pc xml:id="xTok_000877">#</pc>
+                  <pc xml:id="xTok_000878">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a69"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T137"
+                  start="#T136">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000879">yimkin</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000880">ṭṭawwarna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000881">žābu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000882">ʔālāt</w>
+                  <pc xml:id="xTok_000883">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000884">žābu</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000885">ʔālāt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000886">walākin</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a70"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T138"
+                  start="#T137">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000887"
+                     rend="withDash">baʕad</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000889">a</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000890">nākul</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000891">samna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000892">ʕarabiyya</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000893">yaʕni</w>
+                  <pc xml:id="xTok_000894">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a71"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T140"
+                  start="#T139">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000895">yaʕni</w>
+                  <pc xml:id="xTok_000896">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000897">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000898">liḥagna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000899"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000901">madaniyya</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000902"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000904">kaḏḏāba</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a72"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T142"
+                  start="#T141">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000905">miš</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000906"
+                     rend="withDash">maʕnāt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000908">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000909">walla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000910">ʔani</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000911">ʔaḏimm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000912"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000914"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000916"
+                     join="right">madaniyyīn</w>
+                  <pc xml:id="xTok_000917">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000918">laʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a73"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T144"
+                  start="#T143">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000919">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000920">šī</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000921"
+                     rend="withDash">ʔism</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000923">u</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000924">madaniyya</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000925">kaḏḏāba</w>
+                  <pc xml:id="xTok_000926">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a74"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T146"
+                  start="#T145">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000927">yaʕni</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000928">niḥna</w>
+                  <pc xml:id="xTok_000929">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000930">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000931">nuṃḅuṣit</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000932">ʔilla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000933">ʔiza</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000934">kān</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000935"
+                     rend="withDash">ʕand</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000937">īna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000938">ǧaməʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a75"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T147"
+                  start="#T146">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000939">ʔilla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000940">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000941">ḏabāyiḥ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000942">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000943">manāsif</w>
+                  <pc join="right" xml:id="xTok_000944">.</pc>
+                  <pc xml:id="xTok_000945">.</pc>
+                  <pc xml:id="xTok_000946">.</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000947">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000948"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000950">ʔinsān</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000951">yisāwi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000952"
+                     rend="withDash">qudurt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000954"
+                     join="right">u</w>
+                  <pc xml:id="xTok_000955">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a76"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T148"
+                  start="#T147">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000956">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000957">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000958">dāʕi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000959"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000961">ʔinsān</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000962">yšūf</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000963"
+                     rend="withDash">nafs</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000965">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a77"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T150"
+                  start="#T149">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000966">ē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000967">fa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000968">hāy</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000969">hiyya</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000970"
+                     rend="withDash">baʕad</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000972">um</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000973">lḥamdulilla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000974">mḥāfẓīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a78"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T152"
+                  start="#T151">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000975">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000976">tilgi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000977">tilgi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000978"
+                     rend="withDash">waḥid</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000980">na</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000981"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000983"
+                     join="right">yōm</w>
+                  <pc xml:id="xTok_000984">.</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000985"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000987">yōm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000988">hāy</w>
+                  <pc xml:id="xTok_000989">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a79"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T154"
+                  start="#T153">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000990">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000991">niḥna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000992"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000994"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000996">qarn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000997"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_000999">wāḥid</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001000">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001001">tnēn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001002">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001003">ʕišrīn</w>
+                  <pc xml:id="xTok_001004">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001005">qarn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001006"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001008">wāḥid</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001009">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001010">ʕišrīn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001011">niḥna</w>
+                  <pc xml:id="xTok_001012">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a80"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T156"
+                  start="#T155">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001013"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001015"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001017"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001019">taṭawwur</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001020">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001021"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001023"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001025"
+                     join="right">tiknūlūžya</w>
+                  <pc xml:id="xTok_001026">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001027"
+                     rend="withDash">ʔinn</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001029">ik</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001030">tlāgi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001031"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001033">lubnān</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001034">nās</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001035">tḥāfiḏ̣</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001036">ʕala</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001037"
+                     rend="withDash">ṯ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001039"
+                     join="right">ṯōb</w>
+                  <pc xml:id="xTok_001040">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001041">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001042">tḥāfiẓ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001043"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001045"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001047">lahǧa</w>
+                  <pc join="right" xml:id="xTok_001048">.</pc>
+                  <pc xml:id="xTok_001049">.</pc>
+                  <pc xml:id="xTok_001050">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a81"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T158"
+                  start="#T157">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001051">la</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001052">bal</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001053">kitru</w>
+                  <pc xml:id="xTok_001054">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a82"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T160"
+                  start="#T159">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001055">čānu</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001056"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001058"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001060">ʔawwal</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001061">ʔaqall</w>
+                  <pc xml:id="xTok_001062">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001063"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001065">yōm</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001066">kitru</w>
+                  <pc xml:id="xTok_001067">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a83"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T162"
+                  start="#T161">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001068"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001070">yōm</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001071">ṣirna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001072"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001074">nšūf</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001075">walād</w>
+                  <pc xml:id="xTok_001076">!</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001077">ʔani</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001078">hāḏa</w>
+                  <pc xml:id="xTok_001079">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001080">SD</w>
+                  <pc xml:id="xTok_001081">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001082">yilbis</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001083"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001085">i</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001086">ʕarabi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001087"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001089">ṣa​ġər</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001090">yilbis</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001091"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001093">i</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001094">ʕarabi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a84"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T164"
+                  start="#T163">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001095">ʕarifti</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001096">šlōn</w>
+                  <pc xml:id="xTok_001097">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a85"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T166"
+                  start="#T165">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001098">fa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001099">ṣārit</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001100"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001102"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001104"
+                     join="right">ʕakəs</w>
+                  <pc xml:id="xTok_001105">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001106">maṭlaḅ</w>
+                  <pc xml:id="xTok_001107">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a86"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T168"
+                  start="#T167">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001108">ma</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001109">čān</w>
+                  <pc xml:id="xTok_001110">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001111">čānum</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001112"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001114"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001116">ʔawwal</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001117">yistaḥūn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001118"
+                     rend="withDash">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001120">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a87"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T170"
+                  start="#T169">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001121">yaʕni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001122">walla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001123">nāzil</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001124"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001126">Bērūt</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001127">lāzim</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001128">ʔalbis</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001129">ṭagum</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001130">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001131">grāfāt</w>
+                  <pc xml:id="xTok_001132">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a88"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T171"
+                  start="#T170">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001133">ʔani</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001134">čint</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001135">ʔalbis</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001136">ṭagəm</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001137">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001138">grāfāt</w>
+                  <pc xml:id="xTok_001139">.</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001140">čint</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001141">ʔalbis</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001142">ʔani</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001143">banṭalūn</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001144">ǧīnz</w>
+                  <pc xml:id="xTok_001145">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001146">yaʕni</w>
+                  <pc xml:id="xTok_001147">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001148">b</w>
+                  <pc join="right" xml:id="xTok_001149">.</pc>
+                  <pc xml:id="xTok_001150">.</pc>
+                  <pc xml:id="xTok_001151">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a89"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T172"
+                  start="#T171">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001152"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001154"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001156">ḥaqla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001157">ṭāliʕ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001158">ʕamul</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001159">riyāḍa</w>
+                  <pc xml:id="xTok_001160">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001161">rāyiḥ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001162">ʔarkab</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001163">xēl</w>
+                  <pc xml:id="xTok_001164">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001165">muṭṭarr</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001166">ʔalbis</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001167">banṭalōn</w>
+                  <pc xml:id="xTok_001168">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001169">muṭṭarr</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001170">ʔalbis</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001171">kaskēt</w>
+                  <pc xml:id="xTok_001172">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001173">okēy</w>
+                  <pc xml:id="xTok_001174">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a90"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T174"
+                  start="#T173">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001175">bass</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001176">ʔinni</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001177">rāyiḥ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001178">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001179">ʔižtimāʕ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001180">ʔaw</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001181">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001182">ʔiḥtifāl</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001183">ʔaw</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001184">kaḏa</w>
+                  <pc xml:id="xTok_001185">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001186">laʔ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001187">rūḥ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001188"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001190"
+                     rend="withDash">libās</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001192"
+                     join="right">i</w>
+                  <pc xml:id="xTok_001193">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a91"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T176"
+                  start="#T175">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001194">walla</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001195">nʕazamit</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001196">ʕala</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001197">muṭraḥ</w>
+                  <pc xml:id="xTok_001198">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001199">min</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001200">fatra</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001201">waǧīza</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a92"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T178"
+                  start="#T177">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001202">gāl</w>
+                  <pc xml:id="xTok_001203">:</pc>
+                  <pc join="right" xml:id="xTok_001204">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001205"
+                     join="right">AZ</w>
+                  <pc xml:id="xTok_001206">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001207">inta</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001208">maʕzūm</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001209">ʕala</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001210">makān</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001211">sifin</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001212">stār</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001213">miš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001214">fāyf</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001215">stār</w>
+                  <pc xml:id="xTok_001216">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a93"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T180"
+                  start="#T179">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001217"
+                     rend="withDash">ʔult</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001219"
+                     rend="withDash">ull</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001221">o</w>
+                  <pc join="right" xml:id="xTok_001222">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001223">naʕam</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001224">w</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001225">šū</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001226">yaʕni</w>
+                  <pc xml:id="xTok_001227">?</pc>
+                  <pc xml:id="xTok_001228">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a94"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T182"
+                  start="#T181">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001229">gāl</w>
+                  <pc join="right" xml:id="xTok_001230">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001231">nitmanna</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001232">tiži</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001233"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001235"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001237">libās</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001238"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001240"
+                     join="right">madani</w>
+                  <pc xml:id="xTok_001241">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a95"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T184"
+                  start="#T183">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001242">libās</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001243"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_001245">.</pc>
+                  <pc xml:id="xTok_001246">.</pc>
+                  <pc xml:id="xTok_001247">.</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001248">spōr</w>
+                  <pc xml:id="xTok_001249">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001250"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001252">ṭaqəm</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001253">w</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001254"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001256"
+                     join="right">grāfāt</w>
+                  <pc xml:id="xTok_001257">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001258">yaʕni</w>
+                  <pc xml:id="xTok_001259">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a96"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T186"
+                  start="#T185">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001260"
+                     rend="withDash">gult</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001262"
+                     rend="withDash">ill</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001264"
+                     join="right">o</w>
+                  <pc xml:id="xTok_001265">:</pc>
+                  <pc join="right" xml:id="xTok_001266">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001267">la</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001268"
+                     rend="withDash">tiʕzim</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001270"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_001271">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001272">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001273">fī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001274">dāʕi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001275"
+                     rend="withDash">tiʕzim</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001277"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_001278">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a97"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T188"
+                  start="#T187">
+                  <pc join="right" xml:id="xTok_001279">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001280">ʔani</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001281">miš</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001282">raḥ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001283">ʔinzal</w>
+                  <pc xml:id="xTok_001284">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a98"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T190"
+                  start="#T189">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001285">sakkart</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001286"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001288">xaṭṭ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001289"
+                     rend="withDash">mʕā</w>
+                  <pc join="right" xml:id="xTok_001291">_</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001292"
+                     join="right">́</w>
+                  <pc xml:id="xTok_001293">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001294">ṭabʕan</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001295">sakkart</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001296"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001298">xaṭṭ</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001299"
+                     rend="withDash">mʕā</w>
+                  <pc join="right" xml:id="xTok_001301">_</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001302">́</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001303"
+                     rend="withDash">bi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001305"
+                     join="right">riḏ̣a</w>
+                  <pc xml:id="xTok_001306">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a100"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T192"
+                  start="#T191">
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001307">yiržaʕ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001308">yittaṣil</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001309"
+                     rend="withDash">bī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001311">ya</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001312"
+                     rend="withDash">il</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001314">wazīr</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001315"
+                     rend="withDash">nafs</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001317"
+                     join="right">u</w>
+                  <pc xml:id="xTok_001318">,</pc>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001319"
+                     rend="withDash">gāl</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001321"
+                     rend="withDash">l</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001323">i</w>
+                  <pc join="right" xml:id="xTok_001324">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001325">laʔ</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001326">ya</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001327"
+                     rend="withDash">ʔāx</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001329"
+                     join="right">i</w>
+                  <pc xml:id="xTok_001330">,</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001331">niḥna</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001332"
+                     rend="withDash">badd</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001334">na</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001335"
+                     rend="withDash">yē</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001337">k</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001338"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001340"
+                     rend="withDash">libās</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001342">ak</w>
+                  <pc xml:id="xTok_001343">"</pc>
+                  <pc xml:id="xTok_001344">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_a101"
+                  who="#LEB_KHAL_2022_RD_M.61_Speaker1"
+                  end="#T194"
+                  start="#T193">
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001345"
+                     rend="withDash">gult</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001347"
+                     rend="withDash">ill</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001349">o</w>
+                  <pc join="right" xml:id="xTok_001350">"</pc>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001351">ma</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001352">ʔaḥad</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001353">yifruḏ̣</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001354"
+                     rend="withDash">ʕalī</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001356">ya</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001357">ʔalbis</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001358">ʕarabi</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001359">willa</w>
+                  <w xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001360">ʔalbis</w>
+                  <w join="right"
+                     xml:id="05_RD_M.61_Khalde_ArabLubnan.Identity.Seminomadism_xTok_001361">ʔifrānži</w>
+                  <pc xml:id="xTok_001362">"</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
