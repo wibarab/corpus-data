@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-09-04T08:38:35.099842Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">SAU_2022_Speaker37_henna</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">SAU_2022_Speaker37_henna</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="01:25" type="audio">
+                  <date when="2022-03-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:SAU_2022_GK">Saudi Arabia Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in SAU_2022_Speaker37_henna</head>
+               <person sameAs="corpus:SAU_2022_Gunda">
+                  <name type="pseudonym">SAU_2022_Gunda</name>
+               </person>
+               <person sameAs="corpus:SAU_2022_Speaker37">
+                  <name type="pseudonym">SAU_2022_Speaker37</name>
+               </person>
+               <person sameAs="corpus:SAU_2022_Speaker23">
+                  <name type="pseudonym">SAU_2022_Speaker23</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Henna"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="918" since="#T0" xml:id="T64"/>
+         <when interval="3123" since="#T0" xml:id="T65"/>
+         <when interval="3259" since="#T0" xml:id="T45"/>
+         <when interval="3762" since="#T0" xml:id="T46"/>
+         <when interval="4302" since="#T0" xml:id="T1"/>
+         <when interval="5415" since="#T0" xml:id="T2"/>
+         <when interval="5755" since="#T0" xml:id="T66"/>
+         <when interval="8008" since="#T0" xml:id="T3"/>
+         <when interval="9088" since="#T0" xml:id="T67"/>
+         <when interval="9949" since="#T0" xml:id="T4"/>
+         <when interval="10334" since="#T0" xml:id="T5"/>
+         <when interval="12752" since="#T0" xml:id="T6"/>
+         <when interval="14440" since="#T0" xml:id="T7"/>
+         <when interval="15122" since="#T0" xml:id="T47"/>
+         <when interval="15768" since="#T0" xml:id="T8"/>
+         <when interval="16275" since="#T0" xml:id="T48"/>
+         <when interval="16752" since="#T0" xml:id="T49"/>
+         <when interval="17476" since="#T0" xml:id="T9"/>
+         <when interval="17485" since="#T0" xml:id="T50"/>
+         <when interval="22844" since="#T0" xml:id="T10"/>
+         <when interval="22977" since="#T0" xml:id="T11"/>
+         <when interval="23773" since="#T0" xml:id="T12"/>
+         <when interval="24516" since="#T0" xml:id="T13"/>
+         <when interval="25290" since="#T0" xml:id="T14"/>
+         <when interval="25491" since="#T0" xml:id="T15"/>
+         <when interval="28622" since="#T0" xml:id="T16"/>
+         <when interval="28867" since="#T0" xml:id="T17"/>
+         <when interval="30019" since="#T0" xml:id="T18"/>
+         <when interval="30444" since="#T0" xml:id="T19"/>
+         <when interval="32293" since="#T0" xml:id="T20"/>
+         <when interval="32468" since="#T0" xml:id="T21"/>
+         <when interval="33230" since="#T0" xml:id="T22"/>
+         <when interval="33632" since="#T0" xml:id="T23"/>
+         <when interval="34778" since="#T0" xml:id="T24"/>
+         <when interval="34922" since="#T0" xml:id="T25"/>
+         <when interval="36311" since="#T0" xml:id="T26"/>
+         <when interval="36733" since="#T0" xml:id="T51"/>
+         <when interval="37604" since="#T0" xml:id="T27"/>
+         <when interval="37613" since="#T0" xml:id="T52"/>
+         <when interval="38332" since="#T0" xml:id="T28"/>
+         <when interval="40113" since="#T0" xml:id="T68"/>
+         <when interval="40452" since="#T0" xml:id="T29"/>
+         <when interval="41306" since="#T0" xml:id="T69"/>
+         <when interval="41509" since="#T0" xml:id="T30"/>
+         <when interval="42216" since="#T0" xml:id="T53"/>
+         <when interval="43196" since="#T0" xml:id="T31"/>
+         <when interval="43380" since="#T0" xml:id="T54"/>
+         <when interval="47030" since="#T0" xml:id="T32"/>
+         <when interval="49182" since="#T0" xml:id="T33"/>
+         <when interval="51981" since="#T0" xml:id="T34"/>
+         <when interval="54380" since="#T0" xml:id="T35"/>
+         <when interval="55986" since="#T0" xml:id="T36"/>
+         <when interval="56497" since="#T0" xml:id="T37"/>
+         <when interval="57772" since="#T0" xml:id="T38"/>
+         <when interval="58369" since="#T0" xml:id="T39"/>
+         <when interval="59214" since="#T0" xml:id="T55"/>
+         <when interval="59666" since="#T0" xml:id="T40"/>
+         <when interval="60280" since="#T0" xml:id="T56"/>
+         <when interval="66247" since="#T0" xml:id="T57"/>
+         <when interval="67299" since="#T0" xml:id="T58"/>
+         <when interval="68783" since="#T0" xml:id="T41"/>
+         <when interval="71252" since="#T0" xml:id="T42"/>
+         <when interval="71669" since="#T0" xml:id="T43"/>
+         <when interval="72501" since="#T0" xml:id="T59"/>
+         <when interval="73691" since="#T0" xml:id="T44"/>
+         <when interval="76958" since="#T0" xml:id="T60"/>
+         <when interval="78950" since="#T0" xml:id="T61"/>
+         <when interval="84647" since="#T0" xml:id="T62"/>
+         <when interval="88864" since="#T0" xml:id="T63"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T63</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a33"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000001">wīš</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000002">illi</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000003">ḥaṭṭa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000004">ʕala</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000005"
+                     rend="withDash">idey</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000007">ki</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a23"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000008">ḥinna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a1"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000009">nḥaṭṭa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000010"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000012">ḥinna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a34"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000013">inti</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000014">tsawwi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000015"
+                     rend="withDash">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000017"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000019">ik</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000020">mn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000021"
+                     rend="withDash">aš</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000023">šaǧara</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a2"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000024">ana</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000025">ḥūsa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000026">ḥūsa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000027">ḥūsa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000028">ḥūsa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a3"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000029">ḥūṣa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000030">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000031"
+                     rend="withDash">ad</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000033">dūsa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000034"
+                     rend="withDash">wa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000036">ḥūṣa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000037">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000038"
+                     rend="withDash">ad</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000040">dūsa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000041">lēn</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000042">nisawwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a4"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000043">nḥiṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000044">ḥinna</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000045">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a24"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T48"
+                  start="#T47">
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000046">laʔ</w>
+                  <pc xml:id="xTok_000047">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000048">ḥinna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a25"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T50"
+                  start="#T49">
+                  <pc xml:id="xTok_000049">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a5"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000050">ṣ̌ūfi</w>
+                  <pc xml:id="xTok_000051">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000052">nʕazin</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000053">ḥinna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000054"
+                     rend="withDash">xazn</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000056">a</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000057">kiḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000058"
+                     rend="withDash">nḥuṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000060" join="right">a</w>
+                  <pc xml:id="xTok_000061">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000062">hāḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000063"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000065"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000067">mazraʕa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000068"
+                     rend="withDash">ḥaggat</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000070">na</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000071">iḥna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a6"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000072"
+                     rend="withDash">mazraʕat</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000074">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a7"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000075">aywa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000076">māǧūd</w>
+                  <pc join="right" xml:id="xTok_000077">(</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000078" join="right">mawǧūd</w>
+                  <pc xml:id="xTok_000079">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a8"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000080"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000082">našri</w>
+                  <pc join="right" xml:id="xTok_000083">(</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000084">naštari</w>
+                  <pc xml:id="xTok_000085">)</pc>
+                  <pc xml:id="xTok_000086">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000087"
+                     rend="withDash">nazraʕ</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000089" join="right">a</w>
+                  <pc xml:id="xTok_000090">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000091"
+                     rend="withDash">nḥuṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000093">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000094">hin</w>
+                  <pc xml:id="xTok_000095">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000096"
+                     rend="withDash">nḥuṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000098">a</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000099">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a9"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <pc xml:id="xTok_000100">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000101"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000103">ʕirs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a10"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000104"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000106">ʕirs</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000107">yōm</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000108">yiǧi</w>
+                  <pc xml:id="xTok_000109">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000110"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000112">ʕīd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a11"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000113"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000115"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000117">ʕīd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a12"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000118">tsawwi</w>
+                  <pc xml:id="xTok_000119">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000120">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a13"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000121">tabēn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000122"
+                     rend="withDash">nḥann</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000124" join="right">ik</w>
+                  <pc xml:id="xTok_000125">?</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000126">abġa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000127">nḥanni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a26"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T52"
+                  start="#T51">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000128"
+                     rend="withDash">nḥaṭṭl</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000130">ik</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000131">ḥinna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a14"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000132"
+                     rend="withDash">nḥaṭṭl</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000134">ik</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000135">ḥinna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a35"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T69"
+                  start="#T68">
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000136">kamm</w>
+                  <pc xml:id="xTok_000137">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000138">kamm</w>
+                  <pc join="right" xml:id="xTok_000139">.</pc>
+                  <pc xml:id="xTok_000140">.</pc>
+                  <pc xml:id="xTok_000141">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a15"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000142">aywa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a27"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000143">ṯalāṯ</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000144">saʕāt</w>
+                  <pc xml:id="xTok_000145">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000146">arba</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000147">saʕāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a16"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000148">lā</w>
+                  <pc xml:id="xTok_000149">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000150">lā</w>
+                  <pc xml:id="xTok_000151">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000152">lā</w>
+                  <pc xml:id="xTok_000153">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000154">lā</w>
+                  <pc xml:id="xTok_000155">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000156">lā</w>
+                  <pc xml:id="xTok_000157">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000158">ḥawwilna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000159"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000161" join="right">ki</w>
+                  <pc xml:id="xTok_000162">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000163">bass</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000164">saʕa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000165">w</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000166">rubiʕ</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000167">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a17"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000168"
+                     rend="withDash">nḥaṭṭl</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000170">ik</w>
+                  <pc xml:id="xTok_000171">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000172">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000173"
+                     rend="withDash">yṭayyr</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000175" join="right">ik</w>
+                  <pc xml:id="xTok_000176">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000177">maṛṛa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a18"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000178">mašaḷḷah</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000179">anti</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000180">taʕrifīn</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000181">ʕarabi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a19"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000182">mašalla</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000183"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000185">k</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a20"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000186">mašalla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a28"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000187">kamm</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000188">sana</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000189"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000191"
+                     rend="withDash">is</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000193" join="right">suʕūdiyya</w>
+                  <pc xml:id="xTok_000194">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a29"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000195">hiyya</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000196">mdarrsa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000197"
+                     rend="withDash">b</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000199">gabl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a21"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000200">mitʕallma</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000201"
+                     rend="withDash">s</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000203">suʕūdiyya</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000204">mn</w>
+                  <pc join="right" xml:id="xTok_000205">(</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000206" join="right">min</w>
+                  <pc xml:id="xTok_000207">)</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000208">awwal</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000209">ḥīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a22"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000210">waḷḷa</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000211">mašaḷḷā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000212"
+                     rend="withDash">ʕaley</w>
+                  <pc join="right" xml:id="xTok_000214">_</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000215">́a</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000216">tafham</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a30"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000217">hal</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000218">taʕrifti</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000219">ʕala</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000220">aḥad</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000221">yidrus</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000222">suʕūdi</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000223">barra</w>
+                  <pc xml:id="xTok_000224">?</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000225">suʕudiyyāt</w>
+                  <pc xml:id="xTok_000226">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a31"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000227">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000228"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000230">gid</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000231">gabalti</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000232">ʕarabi</w>
+                  <pc xml:id="xTok_000233">?</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000234">ʔurduni</w>
+                  <pc xml:id="xTok_000235">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000236">falasṭīni</w>
+                  <pc xml:id="xTok_000237">?</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000238">ʕarabi</w>
+                  <pc xml:id="xTok_000239">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000240">šaxṣ</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000241">ʕarabi</w>
+                  <pc xml:id="xTok_000242">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_henna_a32"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000243">lamma</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000244">kunti</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000245"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_henna_xTok_000247"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000249">.</pc>
+                  <pc join="right" xml:id="xTok_000250">.</pc>
+                  <pc join="right" xml:id="xTok_000251">.</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000252" join="right">nimsa</w>
+                  <pc xml:id="xTok_000253">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000254">gabalti</w>
+                  <w xml:id="SAU_2022_Speaker37_henna_xTok_000255">aḥad</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_henna_xTok_000256">ʕarabi</w>
+                  <pc xml:id="xTok_000257">?</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

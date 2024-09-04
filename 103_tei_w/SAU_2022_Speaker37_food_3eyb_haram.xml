@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-09-04T08:38:48.152115Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" next="SAU_2022_3eyb_haram_2.xml">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">SAU_2022_Speaker37_food_3eyb_haram</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">SAU_2022_Speaker37_food_3eyb_haram</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="02:47" type="audio">
+                  <date when="2022-03-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:SAU_2022_GK">Saudi Arabia Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in SAU_2022_Speaker37_food_3eyb_haram</head>
+               <person sameAs="corpus:SAU_2022_Gunda">
+                  <name type="pseudonym">SAU_2022_Gunda</name>
+               </person>
+               <person sameAs="corpus:SAU_2022_Speaker37">
+                  <name type="pseudonym">SAU_2022_Speaker37</name>
+               </person>
+               <person sameAs="corpus:SAU_2022_Speaker23">
+                  <name type="pseudonym">SAU_2022_Speaker23</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:ConceptofeybandHaram"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="2516" since="#T0" xml:id="T33"/>
+         <when interval="4412" since="#T0" xml:id="T34"/>
+         <when interval="4955" since="#T0" xml:id="T35"/>
+         <when interval="6346" since="#T0" xml:id="T36"/>
+         <when interval="7181" since="#T0" xml:id="T37"/>
+         <when interval="10975" since="#T0" xml:id="T1"/>
+         <when interval="11262" since="#T0" xml:id="T38"/>
+         <when interval="11723" since="#T0" xml:id="T2"/>
+         <when interval="12753" since="#T0" xml:id="T3"/>
+         <when interval="13867" since="#T0" xml:id="T4"/>
+         <when interval="14389" since="#T0" xml:id="T39"/>
+         <when interval="14539" since="#T0" xml:id="T5"/>
+         <when interval="15238" since="#T0" xml:id="T6"/>
+         <when interval="15731" since="#T0" xml:id="T40"/>
+         <when interval="15946" since="#T0" xml:id="T7"/>
+         <when interval="20108" since="#T0" xml:id="T8"/>
+         <when interval="20491" since="#T0" xml:id="T9"/>
+         <when interval="21972" since="#T0" xml:id="T10"/>
+         <when interval="22540" since="#T0" xml:id="T11"/>
+         <when interval="26127" since="#T0" xml:id="T12"/>
+         <when interval="26194" since="#T0" xml:id="T41"/>
+         <when interval="27454" since="#T0" xml:id="T42"/>
+         <when interval="27826" since="#T0" xml:id="T13"/>
+         <when interval="30879" since="#T0" xml:id="T14"/>
+         <when interval="31676" since="#T0" xml:id="T43"/>
+         <when interval="31844" since="#T0" xml:id="T15"/>
+         <when interval="33459" since="#T0" xml:id="T16"/>
+         <when interval="34693" since="#T0" xml:id="T44"/>
+         <when interval="34719" since="#T0" xml:id="T17"/>
+         <when interval="36111" since="#T0" xml:id="T45"/>
+         <when interval="36827" since="#T0" xml:id="T18"/>
+         <when interval="40777" since="#T0" xml:id="T46"/>
+         <when interval="41817" since="#T0" xml:id="T47"/>
+         <when interval="44529" since="#T0" xml:id="T19"/>
+         <when interval="44725" since="#T0" xml:id="T48"/>
+         <when interval="46311" since="#T0" xml:id="T20"/>
+         <when interval="46585" since="#T0" xml:id="T21"/>
+         <when interval="49667" since="#T0" xml:id="T22"/>
+         <when interval="50077" since="#T0" xml:id="T23"/>
+         <when interval="51711" since="#T0" xml:id="T24"/>
+         <when interval="53269" since="#T0" xml:id="T103"/>
+         <when interval="58343" since="#T0" xml:id="T104"/>
+         <when interval="58345" since="#T0" xml:id="T25"/>
+         <when interval="58836" since="#T0" xml:id="T49"/>
+         <when interval="60734" since="#T0" xml:id="T26"/>
+         <when interval="63131" since="#T0" xml:id="T50"/>
+         <when interval="63426" since="#T0" xml:id="T51"/>
+         <when interval="66115" since="#T0" xml:id="T52"/>
+         <when interval="66881" since="#T0" xml:id="T53"/>
+         <when interval="69912" since="#T0" xml:id="T54"/>
+         <when interval="70559" since="#T0" xml:id="T55"/>
+         <when interval="72033" since="#T0" xml:id="T56"/>
+         <when interval="72692" since="#T0" xml:id="T57"/>
+         <when interval="76714" since="#T0" xml:id="T58"/>
+         <when interval="77064" since="#T0" xml:id="T59"/>
+         <when interval="79217" since="#T0" xml:id="T60"/>
+         <when interval="79333" since="#T0" xml:id="T105"/>
+         <when interval="82283" since="#T0" xml:id="T106"/>
+         <when interval="82325" since="#T0" xml:id="T61"/>
+         <when interval="83282" since="#T0" xml:id="T27"/>
+         <when interval="83371" since="#T0" xml:id="T62"/>
+         <when interval="85720" since="#T0" xml:id="T107"/>
+         <when interval="86041" since="#T0" xml:id="T28"/>
+         <when interval="86908" since="#T0" xml:id="T63"/>
+         <when interval="88211" since="#T0" xml:id="T108"/>
+         <when interval="89016" since="#T0" xml:id="T64"/>
+         <when interval="89144" since="#T0" xml:id="T65"/>
+         <when interval="93815" since="#T0" xml:id="T66"/>
+         <when interval="94342" since="#T0" xml:id="T67"/>
+         <when interval="98800" since="#T0" xml:id="T68"/>
+         <when interval="98866" since="#T0" xml:id="T69"/>
+         <when interval="101754" since="#T0" xml:id="T29"/>
+         <when interval="103716" since="#T0" xml:id="T30"/>
+         <when interval="104540" since="#T0" xml:id="T70"/>
+         <when interval="105041" since="#T0" xml:id="T31"/>
+         <when interval="105091" since="#T0" xml:id="T71"/>
+         <when interval="105707" since="#T0" xml:id="T72"/>
+         <when interval="106289" since="#T0" xml:id="T32"/>
+         <when interval="106397" since="#T0" xml:id="T73"/>
+         <when interval="111519" since="#T0" xml:id="T74"/>
+         <when interval="111960" since="#T0" xml:id="T75"/>
+         <when interval="115647" since="#T0" xml:id="T76"/>
+         <when interval="118969" since="#T0" xml:id="T77"/>
+         <when interval="121770" since="#T0" xml:id="T78"/>
+         <when interval="122139" since="#T0" xml:id="T79"/>
+         <when interval="127221" since="#T0" xml:id="T80"/>
+         <when interval="127792" since="#T0" xml:id="T81"/>
+         <when interval="131126" since="#T0" xml:id="T82"/>
+         <when interval="131586" since="#T0" xml:id="T83"/>
+         <when interval="132924" since="#T0" xml:id="T84"/>
+         <when interval="134202" since="#T0" xml:id="T109"/>
+         <when interval="134972" since="#T0" xml:id="T110"/>
+         <when interval="135235" since="#T0" xml:id="T85"/>
+         <when interval="138218" since="#T0" xml:id="T86"/>
+         <when interval="138876" since="#T0" xml:id="T87"/>
+         <when interval="142651" since="#T0" xml:id="T88"/>
+         <when interval="143225" since="#T0" xml:id="T89"/>
+         <when interval="146273" since="#T0" xml:id="T90"/>
+         <when interval="147227" since="#T0" xml:id="T91"/>
+         <when interval="150033" since="#T0" xml:id="T92"/>
+         <when interval="150719" since="#T0" xml:id="T93"/>
+         <when interval="152147" since="#T0" xml:id="T94"/>
+         <when interval="153076" since="#T0" xml:id="T95"/>
+         <when interval="157604" since="#T0" xml:id="T96"/>
+         <when interval="158187" since="#T0" xml:id="T97"/>
+         <when interval="160342" since="#T0" xml:id="T98"/>
+         <when interval="160839" since="#T0" xml:id="T99"/>
+         <when interval="163590" since="#T0" xml:id="T100"/>
+         <when interval="164561" since="#T0" xml:id="T101"/>
+         <when interval="167982" since="#T0" xml:id="T102"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T102</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a18"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000001">bnu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000002"
+                     rend="withDash">wa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000004"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000006"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000008">laḥam</w>
+                  <pc xml:id="xTok_000009">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000010">yiḏibhu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a19"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000011"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000013">kān</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000014">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000015">ṯallāǧa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a20"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000016">iḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000017"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000019">akalaw</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000020"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000022"
+                     rend="withDash">wagt</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000024" join="right">a</w>
+                  <pc xml:id="xTok_000025">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000026">ʕādi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000027"
+                     rend="withDash">yḥittūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000029">a</w>
+                  <pc xml:id="xTok_000030">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000031"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000033"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000035">ṭirīg</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a1"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000036"
+                     rend="withDash">yšarrgūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000038">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a2"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000039"
+                     rend="withDash">yšarrgūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000041">a</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000042">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a21"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T40"
+                  start="#T39">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000043"
+                     rend="withDash">yḥaṭṭūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000045">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000046"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000048"
+                     rend="withDash">iš</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000050">šams</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000051">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a3"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000052"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000054">laḥám</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a4"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000055"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000057" join="right">lḥam</w>
+                  <pc xml:id="xTok_000058">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000059"
+                     rend="withDash">yḥaṭṭūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000061" join="right">a</w>
+                  <pc xml:id="xTok_000062">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000063"
+                     rend="withDash">yaḏbaḥūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000065" join="right">a</w>
+                  <pc xml:id="xTok_000066">,</pc>
+                  <pc xml:id="xTok_000067">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000068">hni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a5"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000069"
+                     rend="withDash">yaḏbaḥūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000071">a</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000072">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000073">muyya</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000074">marag</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a6"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000075">w</w>
+                  <pc xml:id="xTok_000076">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000077">yġassḥūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000078">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000079">w</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000080">yḥaṭṭūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000081">milḥ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000082">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000083"
+                     rend="withDash">xal</w>
+                  <pc join="right" xml:id="xTok_000085">.</pc>
+                  <pc xml:id="xTok_000086">.</pc>
+                  <pc xml:id="xTok_000087">.</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000088"
+                     rend="withDash">yšarrgūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000090">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a22"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000091">ǧayyat</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000092"
+                     rend="withDash">aš</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000094">šams</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a7"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000095">baʕdēn</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000096">yābis</w>
+                  <pc xml:id="xTok_000097">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000098"
+                     rend="withDash">yaḏbaḥūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000100">a</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000101">ṯāni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000102">marra</w>
+                  <pc xml:id="xTok_000103">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a23"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000104">hāḏi</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000105">zimān</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000106">zimān</w>
+                  <pc xml:id="xTok_000107">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000108">gabal</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000109">tagrīban</w>
+                  <pc join="right" xml:id="xTok_000110">.</pc>
+                  <pc xml:id="xTok_000111">.</pc>
+                  <pc xml:id="xTok_000112">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a8"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000113"
+                     rend="withDash">yāklūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000115" join="right">a</w>
+                  <pc xml:id="xTok_000116">,</pc>
+                  <pc xml:id="xTok_000117">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a9"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000118">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000119">ʕala</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000120"
+                     rend="withDash">r</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000122">rasūl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000123"
+                     rend="withDash">at</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000125">tašrīga</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000126"
+                     rend="withDash">ar</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000128">rasūl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a24"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000129">lā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000130">laʔ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000131">fī</w>
+                  <pc xml:id="xTok_000132">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000133">ʕan</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000134"
+                     rend="withDash">nafs</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000136" join="right">a</w>
+                  <pc xml:id="xTok_000137">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000138">gabal</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000139">sittīn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000140">sana</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000141">kiḏa</w>
+                  <pc xml:id="xTok_000142">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000143"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000145">kalām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a25"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000146">baʕdēn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000147">ḥabba</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000148">ḥabba</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000149">yitġayyara</w>
+                  <pc xml:id="xTok_000150">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000151">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000152"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000154">ḥīn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000155"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000157">ṯallāǧa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a10"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000158">baʕdēn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000159">ṯallāǧāt</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000160"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000162">ḥamdiḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a11"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000163">kadrat</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000164"
+                     rend="withDash">aṯ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000166">ṯallāǧāt</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000167">nḥuṭṭ</w>
+                  <pc xml:id="xTok_000168">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000169">naḏbaḥ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000170"
+                     rend="withDash">aḏ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000172">ḏibīḥa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000173">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000174"
+                     rend="withDash">nḥuṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000176">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000177"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000179"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000181">ṯallāǧa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a12"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000182">antu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000183"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000185"
+                     rend="withDash">u</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000187">ku</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000188">ṯallāǧāt</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000189">huna</w>
+                  <pc xml:id="xTok_000190">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a53"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T104"
+                  start="#T103">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000191">biss</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000192">ʕeyb</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000193">ʔin</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000194"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000196">wāḥid</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000197">ykibb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000198"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000200">ʔakil</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000201">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000202">?</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000203">hāḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000204"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000206">yiṣlaḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a14"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000207">ayy</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000208">naʕam</w>
+                  <pc xml:id="xTok_000209">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000210"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000212">yiṣraf</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000213">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000214"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000216">fī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000217"
+                     rend="withDash">ista</w>
+                  <pc join="right" xml:id="xTok_000219">.</pc>
+                  <pc xml:id="xTok_000220">.</pc>
+                  <pc xml:id="xTok_000221">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a26"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000222">ʕala</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000223">ḥasab</w>
+                  <pc xml:id="xTok_000224">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000225">hū</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000226">ḥarām</w>
+                  <pc xml:id="xTok_000227">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000228"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000230">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000231"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000233">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000234"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000236">tkubbīna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000237"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000239"
+                     rend="withDash">il</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000241">makān</w>
+                  <pc join="right" xml:id="xTok_000242">.</pc>
+                  <pc xml:id="xTok_000243">.</pc>
+                  <pc xml:id="xTok_000244">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a27"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T52"
+                  start="#T51">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000245"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000247">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000248"
+                     rend="withDash">tgillī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000250">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000251"
+                     rend="withDash">akl</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000253">ik</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000254">aw</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000255">šayy</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000256">zayy</w>
+                  <pc join="right" xml:id="xTok_000257">.</pc>
+                  <pc xml:id="xTok_000258">.</pc>
+                  <pc xml:id="xTok_000259">.</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000260">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000261">zayy</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000262">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000263">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a28"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000264">w</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000265">iḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000266">kān</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000267">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000268">akil</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000269">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000270">tigdari</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000271">tḥabbīn</w>
+                  <pc xml:id="xTok_000272">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000273">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000274">bukra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a29"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T56"
+                  start="#T55">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000275"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000277"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000279">ṯallāǧa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000280">šayy</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000281">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000282">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a30"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000283">iḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000284">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000285">akil</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000286">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000287">ḥagg</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000288"
+                     rend="withDash">aṣ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000290" join="right">ṣufra</w>
+                  <pc xml:id="xTok_000291">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000292">tḥaṭṭīn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000293"
+                     rend="withDash">ad</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000295" join="right">daǧāǧa</w>
+                  <pc xml:id="xTok_000296">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000297"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000299" join="right">ġanam</w>
+                  <pc xml:id="xTok_000300">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000301">šayy</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000302">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000303">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a31"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000304">hāḏi</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000305">li</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000306">ḥadd</w>
+                  <pc join="right" xml:id="xTok_000307">(</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000308" join="right">ḥatta</w>
+                  <pc xml:id="xTok_000309">)</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000310">alān</w>
+                  <pc join="right" xml:id="xTok_000311">(</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000312" join="right">alʔān</w>
+                  <pc xml:id="xTok_000313">)</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000314">nsawwi</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000315">hāḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000316"
+                     rend="withDash">š</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000318">šayy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a54"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T106"
+                  start="#T105">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000319">ay</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000320">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000321">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000322"
+                     rend="withDash">ʕaraft</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000324">u</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000325">ʔinnu</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000326">ʕeyb</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000327">li</w>
+                  <pc join="right" xml:id="xTok_000328">.</pc>
+                  <pc xml:id="xTok_000329">.</pc>
+                  <pc xml:id="xTok_000330">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a32"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000331">mū</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000332">ʕeyb</w>
+                  <pc xml:id="xTok_000333">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000334">ḥarām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a15"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000335">ḥarām</w>
+                  <pc xml:id="xTok_000336">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000337">ḥarām</w>
+                  <pc xml:id="xTok_000338">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000339">ḥarām</w>
+                  <pc xml:id="xTok_000340">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000341"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000343"
+                     rend="withDash">a</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000345">na</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000346">ḥarām</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000347">hina</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a55"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T108"
+                  start="#T107">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000348">wušu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000349"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000351" join="right">farg</w>
+                  <pc xml:id="xTok_000352">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000353">beyn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000354">ḥarām</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000355">w</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000356">ʕeyb</w>
+                  <pc xml:id="xTok_000357">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a33"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T64"
+                  start="#T63">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000358"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000360">farg</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000361"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000363">ḥarām</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000364"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000366"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000368">islām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a34"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T66"
+                  start="#T65">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000369"
+                     rend="withDash">id</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000371" join="right">dīn</w>
+                  <pc xml:id="xTok_000372">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000373"
+                     rend="withDash">id</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000375">dīn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000376"
+                     rend="withDash">diyānat</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000378">na</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000379">aḥna</w>
+                  <pc xml:id="xTok_000380">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000381"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000383">u</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000384">ḥarām</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000385"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000387">akil</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000388">yitkabb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000389"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000391"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000393">arḏ̣</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a35"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000394">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000395"
+                     rend="withDash">tkabb</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000397">a</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000398">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a36"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000399">sawwa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000400"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000402" join="right">ġanam</w>
+                  <pc xml:id="xTok_000403">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000404">sawwa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000405"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_000407">.</pc>
+                  <pc join="right" xml:id="xTok_000408">.</pc>
+                  <pc join="right" xml:id="xTok_000409">.</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000410"
+                     rend="withDash">d</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000412">daǧāǧ</w>
+                  <pc xml:id="xTok_000413">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000414"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000416"
+                     rend="withDash">awlād</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000418">ik</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000419">bukra</w>
+                  <pc xml:id="xTok_000420">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000421">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000422">kiḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a16"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000423">šuw</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000424"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000426" join="right">kalb</w>
+                  <pc xml:id="xTok_000427">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000428">ṯuw</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000429"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000431">kalb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a17"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000432"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000434" join="right">kalb</w>
+                  <pc xml:id="xTok_000435">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000436"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000438">biss</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a37"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T72"
+                  start="#T71">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000439"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000441">ʕeyb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a38"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T74"
+                  start="#T73">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000442"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000444">ʕeyb</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000445">hū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000446"
+                     rend="withDash">mū</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000448" join="right">ḥarām</w>
+                  <pc xml:id="xTok_000449">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000450">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000451">mū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000452"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000454"
+                     rend="withDash">id</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000456" join="right">dīn</w>
+                  <pc xml:id="xTok_000457">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000458">bass</w>
+                  <pc xml:id="xTok_000459">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000460">ḥarām</w>
+                  <pc xml:id="xTok_000461">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000462">kēf</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000463">agūl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000464"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000466" join="right">ik</w>
+                  <pc xml:id="xTok_000467">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a39"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T76"
+                  start="#T75">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000468"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000470">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000471"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000473">gahwa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000474"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000476">ḥīn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000477"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000479" join="right">gahwa</w>
+                  <pc xml:id="xTok_000480">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000481">ana</w>
+                  <pc join="right" xml:id="xTok_000482">_</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000483">́ṣṣub</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000484"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000486">gahwa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a40"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T78"
+                  start="#T77">
+                  <pc join="right" xml:id="xTok_000487">/</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000488">addressing</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000489">another</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000490">person</w>
+                  <pc xml:id="xTok_000491">/</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000492">laʔ</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000493">hiyya</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000494">tgūl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000495"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000497">i</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000498"
+                     rend="withDash">ʕallmī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000500">ni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000501">beyn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000502"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000504">ḥarām</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000505">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000506"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000508">ʕeyb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a41"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T80"
+                  start="#T79">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000509"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000511">ḥīna</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000512">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000513">aḥna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000514"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000516"
+                     rend="withDash">a</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000518">na</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000519"
+                     rend="withDash">in</w>
+                  <pc join="right" xml:id="xTok_000521">.</pc>
+                  <pc join="right" xml:id="xTok_000522">.</pc>
+                  <pc join="right" xml:id="xTok_000523">.</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000524">ingahwi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000525"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_000527">.</pc>
+                  <pc xml:id="xTok_000528">.</pc>
+                  <pc xml:id="xTok_000529">.</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000530"
+                     rend="withDash">iḏ̣</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000532">ḏ̣eyf</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000533">kiḏa</w>
+                  <pc xml:id="xTok_000534">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000535"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000537"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000539">yadd</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000540"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000542">yamīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a42"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000543">kiḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000544">ngawwi</w>
+                  <pc join="right" xml:id="xTok_000545">(</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000546">ngahwi</w>
+                  <pc xml:id="xTok_000547">)</pc>
+                  <pc xml:id="xTok_000548">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000549">ʕēb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000550"
+                     rend="withDash">a</w>
+                  <pc join="right" xml:id="xTok_000552">.</pc>
+                  <pc xml:id="xTok_000553">.</pc>
+                  <pc xml:id="xTok_000554">.</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000555">agahwi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000556"
+                     rend="withDash">ḏ̣</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000558">ḏ̣eyf</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000559">li</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000560"
+                     rend="withDash">yadd</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000562">i</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000563">hāḏa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a43"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T84"
+                  start="#T83">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000564">mū</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000565">ḥarām</w>
+                  <pc xml:id="xTok_000566">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000567">bass</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000568">ʕēb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a56"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T110"
+                  start="#T109">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000569">wušu</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000570"
+                     rend="withDash">s</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000572" join="right">sabab</w>
+                  <pc xml:id="xTok_000573">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a44"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T86"
+                  start="#T85">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000574"
+                     rend="withDash">is</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000576">sabab</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000577"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000579">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000580"
+                     rend="withDash">f</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000582">yadd</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000583"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000585" join="right">yumna</w>
+                  <pc xml:id="xTok_000586">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000587"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000589"
+                     rend="withDash">taʕṭīn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000591">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000592"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000594"
+                     rend="withDash">yadd</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000596">ik</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000597"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000599">yusra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a45"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T88"
+                  start="#T87">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000600">iḥna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000601"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000603"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000605" join="right">islām</w>
+                  <pc xml:id="xTok_000606">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000607">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000608"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000610" join="right">u</w>
+                  <pc xml:id="xTok_000611">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000612"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000614">yadd</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000615"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000617">yumna</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000618">ʕal</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000619">kull</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000620">šayy</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000621">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a46"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T90"
+                  start="#T89">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000622"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000624">nākul</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000625"
+                     rend="withDash">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000627">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000628">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000629"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000631"
+                     rend="withDash">n</w>
+                  <pc join="right" xml:id="xTok_000633">.</pc>
+                  <pc join="right" xml:id="xTok_000634">.</pc>
+                  <pc xml:id="xTok_000635">.</pc>
+                  <pc xml:id="xTok_000636">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000637">yaʕni</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000638"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000640"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000642">yumna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a47"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T92"
+                  start="#T91">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000643"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000645">yumna</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000646">nākul</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000647"
+                     rend="withDash">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000649" join="right">ha</w>
+                  <pc xml:id="xTok_000650">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000651"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000653">yasār</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000654">aywa</w>
+                  <pc xml:id="xTok_000655">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000656"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000658">ʕaks</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a48"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T94"
+                  start="#T93">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000659">hāḏi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000660"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000662"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000664">islām</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000665">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a49"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T96"
+                  start="#T95">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000666">fa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000667"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000669">u</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000670">ʕeyb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000671"
+                     rend="withDash">it</w>
+                  <pc join="right" xml:id="xTok_000673">.</pc>
+                  <pc join="right" xml:id="xTok_000674">.</pc>
+                  <pc xml:id="xTok_000675">.</pc>
+                  <pc xml:id="xTok_000676">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000677">maṯalan</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000678">ʕeyb</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000679">š</w>
+                  <pc join="right" xml:id="xTok_000680">#</pc>
+                  <pc xml:id="xTok_000681">#</pc>
+                  <pc xml:id="xTok_000682">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a50"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T98"
+                  start="#T97">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000683">ʕeyb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000684"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_000686">#</pc>
+                  <pc xml:id="xTok_000687">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000688">kīf</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000689">agūl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000690"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000692" join="right">ik</w>
+                  <pc xml:id="xTok_000693">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a51"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T100"
+                  start="#T99">
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000694">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000695">hāḏa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000696"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000698">ʕēb</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000699">li</w>
+                  <pc join="right" xml:id="xTok_000700">_</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000701" join="right">́gūl</w>
+                  <pc xml:id="xTok_000702">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000703"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000705">ḥarām</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000706">laʔ</w>
+                  <pc xml:id="xTok_000707">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000708">ḥarām</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000709"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000711"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000713">islām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_food_3eyb_haram_a52"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T102"
+                  start="#T101">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000714"
+                     rend="withDash">inn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000716">u</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000717"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000719">akil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000720"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000722"
+                     rend="withDash">tirmiyūn</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000724">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000725"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000727"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000729" join="right">arḏ̣</w>
+                  <pc xml:id="xTok_000730">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000731">yaʕni</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000732">hāḏi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000733"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_food_3eyb_haram_xTok_000735">ašyā</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
