@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-09-23T17:36:49.851683Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">23_MA_M.71_Karantina_ArmeniansInKarantina</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">23_MA_M.71_Karantina_ArmeniansInKarantina</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="8.3333333333333329E-2" type="audio">
+                  <date when="2022-03-04"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 23_MA_M.71_Karantina_ArmeniansInKarantina</head>
+               <person sameAs="corpus:LEB_KAR_2022_MA_M.71_Speaker2">
+                  <name type="pseudonym">LEB_KAR_2022_MA_M.71_Speaker2</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Neighborcommunities"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="5687" since="#T0" xml:id="T3"/>
+         <when interval="9857" since="#T0" xml:id="T4"/>
+         <when interval="11859" since="#T0" xml:id="T1"/>
+         <when interval="14279" since="#T0" xml:id="T5"/>
+         <when interval="14906" since="#T0" xml:id="T2"/>
+         <when interval="22000" since="#T0" xml:id="T6"/>
+         <when interval="22264" since="#T0" xml:id="T7"/>
+         <when interval="33196" since="#T0" xml:id="T8"/>
+         <when interval="56987" since="#T0" xml:id="T9"/>
+         <when interval="61687" since="#T0" xml:id="T10"/>
+         <when interval="64447" since="#T0" xml:id="T11"/>
+         <when interval="67578" since="#T0" xml:id="T12"/>
+         <when interval="73651" since="#T0" xml:id="T13"/>
+         <when interval="77078" since="#T0" xml:id="T14"/>
+         <when interval="89887" since="#T0" xml:id="T15"/>
+         <when interval="98396" since="#T0" xml:id="T16"/>
+         <when interval="106954" since="#T0" xml:id="T17"/>
+         <when interval="109688" since="#T0" xml:id="T18"/>
+         <when interval="114327" since="#T0" xml:id="T19"/>
+         <when interval="120082" since="#T0" xml:id="T20"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T20</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a1"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T3"
+                  start="#T0">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000001">kān</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000002">tlǟt</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000003">ərbāʕ</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000004"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000006">munṭaga</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000007"
+                     rend="withDash">bī</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000009">ha</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000010">ʔarman</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000011">ʔaktar</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000012">šī</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a2"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000013"
+                     rend="withDash">əl</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000015">ʔarman</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000016">ištarēna</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000017">ḥna</w>
+                  <pc xml:id="xTok_000018">,</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000019"
+                     rend="withDash">il</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000021">ʕarab</w>
+                  <pc join="right" xml:id="xTok_000022">(</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000023"
+                     join="right">RISE</w>
+                  <pc xml:id="xTok_000024">)</pc>
+                  <pc join="right" xml:id="xTok_000025">(</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000026"
+                     join="right">P1s</w>
+                  <pc xml:id="xTok_000027">)</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000028">ištarēna</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000029">mn</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000030"
+                     rend="withDash">əl</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000032">ʔarman</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000033"
+                     rend="withDash">lə</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000035"
+                     join="right">byūt</w>
+                  <pc xml:id="xTok_000036">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a4"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000037"
+                     rend="withDash">il</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000039">ʕarab</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000040">ištarit</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000041">min</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000042"
+                     rend="withDash">əl</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000044"
+                     join="right">ʔarman</w>
+                  <pc xml:id="xTok_000045">,</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000046">yaʕni</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000047"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000049">ʕarman</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000050">ʔabl</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000051"
+                     rend="withDash">əl</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000053">ʕarab</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000054">kānu</w>
+                  <pc xml:id="xTok_000055">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a3"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000056">ē</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000057">maʕlūm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a5"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000058">šū</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000059"
+                     rend="withDash">bidd</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000061"
+                     join="right">ik</w>
+                  <pc xml:id="xTok_000062">?</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000063">lā</w>
+                  <pc xml:id="xTok_000064">!</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000065"
+                     rend="withDash">gāl</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000067"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000069">i</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000070">ʔiḥki</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000071">bduwi</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000072"
+                     rend="withDash">ʕalām</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000074">ik</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000075">ʕa</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000076">tḥissi</w>
+                  <pc xml:id="xTok_000077">?</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000078"
+                     rend="withDash">bidd</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000080">i</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000081">ʔaḥki</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000082">bduwi</w>
+                  <pc xml:id="xTok_000083">,</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000084">šū</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000085"
+                     rend="withDash">ʔišb</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000087"
+                     join="right">ik</w>
+                  <pc xml:id="xTok_000088">?</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000089">ē</w>
+                  <pc xml:id="xTok_000090">?</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000091">ḥāǧǧa</w>
+                  <pc xml:id="xTok_000092">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a6"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000093">ē</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000094">kānat</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000095"
+                     rend="withDash">il</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000097">ʔarman</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000098">ʔaktar</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000099">šī</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000100">hēn</w>
+                  <pc xml:id="xTok_000101">.</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000102">šuft</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000103">wēn</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000104">bēt</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000105"
+                     rend="withDash">əd</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000107"
+                     join="right">dōška</w>
+                  <pc xml:id="xTok_000108">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a7"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000109">hāy</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000110"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000112"
+                     join="right">ʔarḍ</w>
+                  <pc xml:id="xTok_000113">,</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000114"
+                     rend="withDash">kull</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000116">a</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000117">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a8"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000118">kānat</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000119"
+                     rend="withDash">nuṣṣ</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000121">a</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000122">ʔarman</w>
+                  <pc xml:id="xTok_000123">.</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000124">kān</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000125">bī</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000126">wiḥda</w>
+                  <pc xml:id="xTok_000127">,</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000128">M</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a9"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000129">kānat</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000130">wiḥda</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000131">ʔarmaniyya</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000132">tbīʕ</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000133">liban</w>
+                  <pc xml:id="xTok_000134">,</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000135">w</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000136">kabīs</w>
+                  <pc xml:id="xTok_000137">,</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000138"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000140"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000142">fuxxār</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000143"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000145"
+                     rend="withDash">il</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000147">liban</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000148"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000150"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000152"
+                     join="right">fuxxār</w>
+                  <pc xml:id="xTok_000153">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a10"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000154">hāy</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000155">ʔaḥkīk</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000156">tisʕa</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000157">w</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000158">sittīn</w>
+                  <pc xml:id="xTok_000159">,</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000160">tmǟnya</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000161">w</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000162">sittīn</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000163"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000165"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000167">guṣaṣ</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000168">hāy</w>
+                  <pc xml:id="xTok_000169">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a11"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000170">kān</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000171">tlǟt</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000172"
+                     rend="withDash">ərbāʕ</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000174">a</w>
+                  <pc join="right" xml:id="xTok_000175">.</pc>
+                  <pc xml:id="xTok_000176">.</pc>
+                  <pc xml:id="xTok_000177">.</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000178">kān</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000179">bī</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000180">knīsit</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000181">ʔarman</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000182">hōn</w>
+                  <pc xml:id="xTok_000183">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a23"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000184">wēn</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000185"
+                     rend="withDash">is</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000187">simēn</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000188">tabaʕ</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000189"
+                     rend="withDash">l</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000191"
+                     join="right">furun</w>
+                  <pc xml:id="xTok_000192">?</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000193">ē</w>
+                  <pc xml:id="xTok_000194">?</pc>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000195">hāy</w>
+                  <pc xml:id="xTok_000196">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u23_MA_M.71_Karantina_ArmeniansInKarantina_a24"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000197">hnāk</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000198">kān</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000199">bī</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000200">knīsit</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000201">ʔarman</w>
+                  <pc xml:id="xTok_000202">.</pc>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000203">kinna</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000204">niḍhar</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000205">ʕind</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000206"
+                     rend="withDash">il</w>
+                  <w xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000208">ʔarman</w>
+                  <w join="right"
+                     xml:id="23_MA_M.71_Karantina_ArmeniansInKarantina_xTok_000209">nilʕab</w>
+                  <pc xml:id="xTok_000210">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
