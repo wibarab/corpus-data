@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2024-09-04T10:31:09+01:00"
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2024-10-01T12:44:05+01:00"
     FORMAT="3.0" VERSION="3.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
@@ -91,7 +91,7 @@
     </TIME_ORDER>
     <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
         LINGUISTIC_TYPE_REF="Phrases"
-        PARTICIPANT="LEB_KAR_2022_MA_M.71_Speaker2" TIER_ID="B_Transcription-txt-aeb">
+        PARTICIPANT="LEB_KAR_2022_MA_M.71_Speaker2" TIER_ID="LEB_KAR_2022_MA_M.71_Speaker2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1"
                 TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
@@ -327,12 +327,10 @@
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
-        LINGUISTIC_TYPE_REF="Words" PARENT_REF="B_Transcription-txt-aeb"
-        PARTICIPANT="B" TIER_ID="B_Words-txt-aeb"/>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
-        LINGUISTIC_TYPE_REF="Notes" PARENT_REF="B_Transcription-txt-aeb"
-        PARTICIPANT="LEB_KAR_2022_MA_M.71_Speaker2" TIER_ID="B_Translation-gls-en">
+    <TIER ANNOTATOR="AID" DEFAULT_LOCALE="en"
+        LINGUISTIC_TYPE_REF="Notes"
+        PARENT_REF="LEB_KAR_2022_MA_M.71_Speaker2"
+        PARTICIPANT="LEB_KAR_2022_MA_M.71_Speaker2" TIER_ID="LEB_KAR_2022_MA_M.71_Speaker2_EN">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a41" ANNOTATION_REF="a1">
                 <ANNOTATION_VALUE>(There were) Arabs here. Have you seen Nejmeh Square? The petrol station. There used to be a station there were sheep would go down. </ANNOTATION_VALUE>
@@ -529,32 +527,6 @@
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="ar"
-        LINGUISTIC_TYPE_REF="Notes" PARENT_REF="B_Transcription-txt-aeb"
-        PARTICIPANT="B" TIER_ID="B_Translation-gls-ar"/>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
-        LINGUISTIC_TYPE_REF="Notes" PARENT_REF="B_Transcription-txt-aeb"
-        PARTICIPANT="B" TIER_ID="B_Participant-note-en"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="token"
-        PARENT_REF="B_Transcription-txt-aeb" PARTICIPANT="B" TIER_ID="token"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="QAF"
-        PARENT_REF="token" PARTICIPANT="B" TIER_ID="QAF"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="ǦIM"
-        PARENT_REF="token" PARTICIPANT="B" TIER_ID="ǦIM"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="KAF"
-        PARENT_REF="token" PARTICIPANT="B" TIER_ID="KAF"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="interdentals"
-        PARENT_REF="token" PARTICIPANT="B" TIER_ID="interdentals"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="KUM"
-        PARENT_REF="token" PARTICIPANT="B" TIER_ID="KUM"/>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
-        LINGUISTIC_TYPE_REF="Phrases" PARTICIPANT="AID" TIER_ID="A_Transcription-txt-aeb-cp"/>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
-        LINGUISTIC_TYPE_REF="Words"
-        PARENT_REF="A_Transcription-txt-aeb-cp" PARTICIPANT="A" TIER_ID="A_Words-txt-aeb-cp"/>
-    <TIER ANNOTATOR="Ana" DEFAULT_LOCALE="en"
-        LINGUISTIC_TYPE_REF="Notes"
-        PARENT_REF="A_Transcription-txt-aeb-cp" PARTICIPANT="AID" TIER_ID="A_Translation-gls-en-cp"/>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
         LINGUISTIC_TYPE_ID="Text" TIME_ALIGNABLE="true"/>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
@@ -595,7 +567,6 @@
         CONTROLLED_VOCABULARY_REF="kum" GRAPHIC_REFERENCES="false"
         LINGUISTIC_TYPE_ID="KUM" TIME_ALIGNABLE="false"/>
     <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
-    <LOCALE LANGUAGE_CODE="ar" VARIANT="MLT Arabic"/>
     <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
         LANG_ID="und" LANG_LABEL="undetermined (und)"/>
     <CONSTRAINT
