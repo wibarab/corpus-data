@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-10-01T10:52:39.13009Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">SAU_2022_Speaker37_camel</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">SAU_2022_Speaker37_camel</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="02:57" type="audio">
+                  <date when="2022-03-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:SAU_2022_GK">Saudi Arabia Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in SAU_2022_Speaker37_camel</head>
+               <person sameAs="corpus:SAU_2022_Gunda">
+                  <name type="pseudonym">SAU_2022_Gunda</name>
+               </person>
+               <person sameAs="corpus:SAU_2022_Speaker37">
+                  <name type="pseudonym">SAU_2022_Speaker37</name>
+               </person>
+               <person sameAs="corpus:SAU_2022_Speaker23">
+                  <name type="pseudonym">SAU_2022_Speaker23</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Herding"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="24" since="#T0" xml:id="T1"/>
+         <when interval="4042" since="#T0" xml:id="T87"/>
+         <when interval="4835" since="#T0" xml:id="T2"/>
+         <when interval="5330" since="#T0" xml:id="T3"/>
+         <when interval="6405" since="#T0" xml:id="T4"/>
+         <when interval="6904" since="#T0" xml:id="T5"/>
+         <when interval="7646" since="#T0" xml:id="T88"/>
+         <when interval="9149" since="#T0" xml:id="T6"/>
+         <when interval="10713" since="#T0" xml:id="T7"/>
+         <when interval="12841" since="#T0" xml:id="T8"/>
+         <when interval="13633" since="#T0" xml:id="T9"/>
+         <when interval="17620" since="#T0" xml:id="T10"/>
+         <when interval="18656" since="#T0" xml:id="T11"/>
+         <when interval="28349" since="#T0" xml:id="T12"/>
+         <when interval="28929" since="#T0" xml:id="T13"/>
+         <when interval="30188" since="#T0" xml:id="T14"/>
+         <when interval="30481" since="#T0" xml:id="T15"/>
+         <when interval="32160" since="#T0" xml:id="T16"/>
+         <when interval="32883" since="#T0" xml:id="T17"/>
+         <when interval="42488" since="#T0" xml:id="T18"/>
+         <when interval="43633" since="#T0" xml:id="T19"/>
+         <when interval="44478" since="#T0" xml:id="T20"/>
+         <when interval="45861" since="#T0" xml:id="T21"/>
+         <when interval="52983" since="#T0" xml:id="T22"/>
+         <when interval="53624" since="#T0" xml:id="T23"/>
+         <when interval="61918" since="#T0" xml:id="T24"/>
+         <when interval="62746" since="#T0" xml:id="T25"/>
+         <when interval="66799" since="#T0" xml:id="T26"/>
+         <when interval="66987" since="#T0" xml:id="T27"/>
+         <when interval="68014" since="#T0" xml:id="T28"/>
+         <when interval="69154" since="#T0" xml:id="T29"/>
+         <when interval="72775" since="#T0" xml:id="T30"/>
+         <when interval="73646" since="#T0" xml:id="T31"/>
+         <when interval="76577" since="#T0" xml:id="T32"/>
+         <when interval="77097" since="#T0" xml:id="T33"/>
+         <when interval="79641" since="#T0" xml:id="T34"/>
+         <when interval="80158" since="#T0" xml:id="T35"/>
+         <when interval="84778" since="#T0" xml:id="T36"/>
+         <when interval="88137" since="#T0" xml:id="T89"/>
+         <when interval="89851" since="#T0" xml:id="T90"/>
+         <when interval="90064" since="#T0" xml:id="T37"/>
+         <when interval="92445" since="#T0" xml:id="T38"/>
+         <when interval="92706" since="#T0" xml:id="T39"/>
+         <when interval="94049" since="#T0" xml:id="T91"/>
+         <when interval="95135" since="#T0" xml:id="T92"/>
+         <when interval="95188" since="#T0" xml:id="T40"/>
+         <when interval="95240" since="#T0" xml:id="T41"/>
+         <when interval="97495" since="#T0" xml:id="T42"/>
+         <when interval="98118" since="#T0" xml:id="T43"/>
+         <when interval="99215" since="#T0" xml:id="T44"/>
+         <when interval="99877" since="#T0" xml:id="T45"/>
+         <when interval="101052" since="#T0" xml:id="T46"/>
+         <when interval="102391" since="#T0" xml:id="T93"/>
+         <when interval="104735" since="#T0" xml:id="T47"/>
+         <when interval="104844" since="#T0" xml:id="T94"/>
+         <when interval="108785" since="#T0" xml:id="T48"/>
+         <when interval="109090" since="#T0" xml:id="T49"/>
+         <when interval="111256" since="#T0" xml:id="T50"/>
+         <when interval="112634" since="#T0" xml:id="T51"/>
+         <when interval="114744" since="#T0" xml:id="T52"/>
+         <when interval="116156" since="#T0" xml:id="T53"/>
+         <when interval="120000" since="#T0" xml:id="T54"/>
+         <when interval="121210" since="#T0" xml:id="T55"/>
+         <when interval="125101" since="#T0" xml:id="T56"/>
+         <when interval="126178" since="#T0" xml:id="T57"/>
+         <when interval="128503" since="#T0" xml:id="T58"/>
+         <when interval="130102" since="#T0" xml:id="T59"/>
+         <when interval="131542" since="#T0" xml:id="T60"/>
+         <when interval="135062" since="#T0" xml:id="T61"/>
+         <when interval="137801" since="#T0" xml:id="T62"/>
+         <when interval="139442" since="#T0" xml:id="T63"/>
+         <when interval="140695" since="#T0" xml:id="T64"/>
+         <when interval="141812" since="#T0" xml:id="T65"/>
+         <when interval="144447" since="#T0" xml:id="T66"/>
+         <when interval="145267" since="#T0" xml:id="T67"/>
+         <when interval="150207" since="#T0" xml:id="T68"/>
+         <when interval="150675" since="#T0" xml:id="T69"/>
+         <when interval="154001" since="#T0" xml:id="T70"/>
+         <when interval="159340" since="#T0" xml:id="T71"/>
+         <when interval="161234" since="#T0" xml:id="T72"/>
+         <when interval="161418" since="#T0" xml:id="T73"/>
+         <when interval="161966" since="#T0" xml:id="T74"/>
+         <when interval="162668" since="#T0" xml:id="T75"/>
+         <when interval="163608" since="#T0" xml:id="T76"/>
+         <when interval="163759" since="#T0" xml:id="T95"/>
+         <when interval="164203" since="#T0" xml:id="T96"/>
+         <when interval="165211" since="#T0" xml:id="T77"/>
+         <when interval="165811" since="#T0" xml:id="T78"/>
+         <when interval="166438" since="#T0" xml:id="T97"/>
+         <when interval="167897" since="#T0" xml:id="T98"/>
+         <when interval="168095" since="#T0" xml:id="T79"/>
+         <when interval="168716" since="#T0" xml:id="T80"/>
+         <when interval="169155" since="#T0" xml:id="T99"/>
+         <when interval="169741" since="#T0" xml:id="T100"/>
+         <when interval="170943" since="#T0" xml:id="T81"/>
+         <when interval="172004" since="#T0" xml:id="T82"/>
+         <when interval="172503" since="#T0" xml:id="T83"/>
+         <when interval="173297" since="#T0" xml:id="T84"/>
+         <when interval="174460" since="#T0" xml:id="T85"/>
+         <when interval="177172" since="#T0" xml:id="T86"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T86</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a1"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000001"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000003" join="right">ġanam</w>
+                  <pc xml:id="xTok_000004">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000005">nǧīb</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000006">liban</w>
+                  <pc xml:id="xTok_000007">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000008"
+                     rend="withDash">nṭaʕm</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000010">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000011"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000013"
+                     rend="withDash">is</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000015">samīd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a2"
+                  who="#SAU_2022_Speaker23_Transcription-txt"
+                  end="#T88"
+                  start="#T87">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000016">hī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000017"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000019"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000021">ǧāmʕa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000022">tadrisīn</w>
+                  <pc join="right" xml:id="xTok_000023">#</pc>
+                  <pc xml:id="xTok_000024">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a3"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000025"
+                     rend="withDash">nṭaʕm</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000027">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000028"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000030"
+                     rend="withDash">is</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000032">samīd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a4"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000033"
+                     rend="withDash">nṭaʕm</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000035" join="right">a</w>
+                  <pc xml:id="xTok_000036">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000037">baʕdēn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000038"
+                     rend="withDash">namxd</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000040">a</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000041">yaṭlaʕ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000042">saman</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a5"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000043">nzīdit</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000044">w</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000045">baʕdēn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000046">mayyaʔ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000047">yaṭlaʕ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000048">saman</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a6"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000049">ṣabbaḥi</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000050">tašt</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000051">rakba</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000052">rakīb</w>
+                  <pc xml:id="xTok_000053">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000054"
+                     rend="withDash">nagūl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000056"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000058">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000059">rakīb</w>
+                  <pc xml:id="xTok_000060">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000061">ḥinna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a7"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000062">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000063"
+                     rend="withDash">nrākb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000065">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000066">fattāš</w>
+                  <pc xml:id="xTok_000067">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000068">lēn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000069">ḥatta</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000070">yǧī</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000071">maḏ̣īr</w>
+                  <pc xml:id="xTok_000072">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000073">maḏ̣īr</w>
+                  <pc xml:id="xTok_000074">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000075"
+                     rend="withDash">yaklūn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000077">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000078"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000080" join="right">aṭfāl</w>
+                  <pc xml:id="xTok_000081">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000082"
+                     rend="withDash">yaklūn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000084">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000085"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000087" join="right">misayyīr</w>
+                  <pc xml:id="xTok_000088">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000089">yaklūn</w>
+                  <pc join="right" xml:id="xTok_000090">.</pc>
+                  <pc xml:id="xTok_000091">.</pc>
+                  <pc xml:id="xTok_000092">.</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000093"
+                     rend="withDash">nḥaṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000095">a</w>
+                  <pc xml:id="xTok_000096">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000097"
+                     rend="withDash">nḥaṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000099">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a8"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000100">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000101">li</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000102">yaṭlaʕ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000103">min</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000104"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000106">ġanam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a9"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000107"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000109">bil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000110"
+                     rend="withDash">nḥalib</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000112">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000113">ḥalīb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a10"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000114">fa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000115"
+                     rend="withDash">nṣubb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000117">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000118"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000120"
+                     rend="withDash">ir</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000122">riǧāl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000123"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000125"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000127">maǧlis</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000128">ʕala</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000129">ḏibāyiḥ</w>
+                  <pc xml:id="xTok_000130">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000131">ʕala</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000132">šayy</w>
+                  <pc xml:id="xTok_000133">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000134"
+                     rend="withDash">yašrabūn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000136">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000137"
+                     rend="withDash">r</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000139" join="right">riǧāl</w>
+                  <pc xml:id="xTok_000140">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000141">ḥagg</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000142"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000144" join="right">bil</w>
+                  <pc xml:id="xTok_000145">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000146">w</w>
+                  <pc xml:id="xTok_000147">#</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000148">ǧadd</w>
+                  <pc xml:id="xTok_000149">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000150"
+                     rend="withDash">nrakkb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000152">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000153">baʕad</w>
+                  <pc xml:id="xTok_000154">,</pc>
+                  <pc xml:id="xTok_000155">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000156"
+                     rend="withDash">nrakkb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000158">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a11"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000159">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000160">ḥagg</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000161"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000163">bil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a12"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000164">amma</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000165"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000167">ġanam</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000168">lā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000169"
+                     rend="withDash">nrakkb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000171" join="right">a</w>
+                  <pc xml:id="xTok_000172">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000173"
+                     rend="withDash">samin</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000175">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000176">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000177"
+                     rend="withDash">liban</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000179">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000180"
+                     rend="withDash">nrakkb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000182" join="right">a</w>
+                  <pc xml:id="xTok_000183">,</pc>
+                  <pc xml:id="xTok_000184">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000185"
+                     rend="withDash">aṭī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000187">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000188"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000190" join="right">xibz</w>
+                  <pc xml:id="xTok_000191">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000192"
+                     rend="withDash">tṣubbī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000194">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000195"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000197">xibz</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000198">taʕrifīn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000199"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000201" join="right">xibz</w>
+                  <pc xml:id="xTok_000202">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a13"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000203">nʕazznu</w>
+                  <pc xml:id="xTok_000204">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000205">nḥaṭṭa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000206"
+                     rend="withDash">s</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000208">saman</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000209"
+                     rend="withDash">ʕaley</w>
+                  <pc join="right" xml:id="xTok_000211">_</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000212" join="right">́</w>
+                  <pc xml:id="xTok_000213">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000214">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000215"
+                     rend="withDash">š</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000217"
+                     rend="withDash">yism</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000219" join="right">u</w>
+                  <pc xml:id="xTok_000220">?</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000221">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000222"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000224">bagal</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000225"
+                     rend="withDash">nḥaṭṭa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000227">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000228"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000230">ibzūra</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000231"
+                     rend="withDash">nḥaṭṭa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000233">h</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000234"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000236"
+                     rend="withDash">ar</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000238"
+                     rend="withDash">riǧ</w>
+                  <pc join="right" xml:id="xTok_000240">.</pc>
+                  <pc join="right" xml:id="xTok_000241">.</pc>
+                  <pc xml:id="xTok_000242">.</pc>
+                  <pc xml:id="xTok_000243">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000244"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000246"
+                     rend="withDash">aḏ̣</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000248">ḏ̣iyūf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a14"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000249">nḥaṭṭa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000250"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000252"
+                     rend="withDash">a</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000254">na</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000255"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000257"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000259">beyt</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000260"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000262">yrūḥ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000263">nḥaṭṭa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000264"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000266"
+                     rend="withDash">iḏ̣</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000268">ḏ̣uyūf</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000269">w</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000270">nḥaṭṭa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000271"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000273"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000275">ibzūr</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000276">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000277"
+                     rend="withDash">nākl</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000279">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a15"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000280">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000281">ḥagg</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000282"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000284">ġanam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a16"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000285">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000286"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000288" join="right">bil</w>
+                  <pc xml:id="xTok_000289">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000290">law</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000291">ṣabaḥ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000292"
+                     rend="withDash">aṣ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000294" join="right">ṣubiḥ</w>
+                  <pc xml:id="xTok_000295">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000296"
+                     rend="withDash">nšammil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000298">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a17"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000299"
+                     rend="withDash">nšammil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000301">ha</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000302"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000304"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000306" join="right">lēl</w>
+                  <pc xml:id="xTok_000307">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000308">nḥaṭṭa</w>
+                  <pc xml:id="xTok_000309">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000310">mayya</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000311">zayy</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000312">hāḏa</w>
+                  <pc xml:id="xTok_000313">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000314"
+                     rend="withDash">nšammil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000316">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a18"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000317">bass</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000318">lah</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000319"
+                     rend="withDash">aṣ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000321">ṣubiḥ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000322">aṭlagna</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000323"
+                     rend="withDash">ḥīrān</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000325">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000326">ʕala</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000327">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000328"
+                     rend="withDash">ḥallibnā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000330">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a19"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000331">hāḏa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000332">yūḥ</w>
+                  <pc join="right" xml:id="xTok_000333">(</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000334" join="right">yulāḥ</w>
+                  <pc xml:id="xTok_000335">)</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000336"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000338">ḥīn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000339">hāḏa</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000340">awwal</w>
+                  <pc join="right" xml:id="xTok_000341">.</pc>
+                  <pc xml:id="xTok_000342">.</pc>
+                  <pc xml:id="xTok_000343">.</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000344">awwal</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000345">w</w>
+                  <pc xml:id="xTok_000346">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000347"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000349">bil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a45"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T90"
+                  start="#T89">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000350">w</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000351">ḥalīb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000352"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000354">ibil</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000355">kēf</w>
+                  <pc xml:id="xTok_000356">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a20"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000357">ḥalīb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000358"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000360">ibil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000361"
+                     rend="withDash">našrib</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000363" join="right">a</w>
+                  <pc xml:id="xTok_000364">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000365"
+                     rend="withDash">nḥalb</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000367">a</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000368"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000370">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000371">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000372"
+                     rend="withDash">našrib</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000374">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a21"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000375">ʕala</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000376">ṭūl</w>
+                  <pc xml:id="xTok_000377">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000378">ʕala</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000379">ṭūl</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000380"
+                     rend="withDash">našrib</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000382">a</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000383">linna</w>
+                  <pc join="right" xml:id="xTok_000384">.</pc>
+                  <pc xml:id="xTok_000385">.</pc>
+                  <pc xml:id="xTok_000386">.</pc>
+                  <pc join="right" xml:id="xTok_000387">(</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000388" join="right">liʔanna</w>
+                  <pc xml:id="xTok_000389">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a46"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T92"
+                  start="#T91">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000390">šū</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000391"
+                     rend="withDash">mumayyizāt</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000393" join="right">u</w>
+                  <pc xml:id="xTok_000394">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a22"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000395">duwaʔ</w>
+                  <pc xml:id="xTok_000396">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000397">ḥalib</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000398"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000400">bil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000401">duwa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a23"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000402">waḷḷa</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000403">duwaʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a24"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000404">kwayyis</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000405">ḥalīb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000406"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000408">bil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a47"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T94"
+                  start="#T93">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000409">biss</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000410">illi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000411"
+                     rend="withDash">mū</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000413">mutʕawwid</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000414"
+                     rend="withDash">ʕaley</w>
+                  <pc join="right" xml:id="xTok_000416">_</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000417" join="right">́</w>
+                  <pc xml:id="xTok_000418">,</pc>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000419">yumkin</w>
+                  <pc join="right" xml:id="xTok_000420">.</pc>
+                  <pc xml:id="xTok_000421">.</pc>
+                  <pc xml:id="xTok_000422">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a25"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000423">lā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000424"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000426" join="right">yʕawwir</w>
+                  <pc xml:id="xTok_000427">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000428"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000430" join="right">yʕawwir</w>
+                  <pc xml:id="xTok_000431">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000432">waḷḷahi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000433"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000435" join="right">yʕawwir</w>
+                  <pc xml:id="xTok_000436">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000437">marrah</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000438">yumkin</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000439">yamġaṣ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000440">šwayy</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000441">w</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000442">irūḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a26"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T50"
+                  start="#T49">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000443"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000445">yʕawwir</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000446">waḷḷa</w>
+                  <pc xml:id="xTok_000447">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000448">ḥalīb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000449"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000451">bil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000452">duwa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a27"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000453">ḥalīb</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000454"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000456">bil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000457">diwān</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000458">ygūl</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000459">duwaʔ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000460"
+                     rend="withDash">as</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000462">sukkar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a28"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000463">duwa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000464"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000466"
+                     rend="withDash">as</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000468">sukkar</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000469">w</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000470">duwa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000471"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000473"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000475">amrāḏ̣a</w>
+                  <pc xml:id="xTok_000476">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a29"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000477">miṯil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000478">salaṭān</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000479">miṯil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000480">šayy</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000481">ygūl</w>
+                  <pc xml:id="xTok_000482">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000483"
+                     rend="withDash">hāl</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000485">ḥīn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000486">abas</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000487"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000489">bil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000490">duwa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a30"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T58"
+                  start="#T57">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000491"
+                     rend="withDash">ma</w>
+                  <pc join="right" xml:id="xTok_000493">.</pc>
+                  <pc xml:id="xTok_000494">.</pc>
+                  <pc xml:id="xTok_000495">.</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000496">maḏkūra</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000497"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000499"
+                     rend="withDash">al</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000501" join="right">qurān</w>
+                  <pc xml:id="xTok_000502">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000503">duwa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a31"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000504">dīki</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000505">darasti</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000506">ʔana</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a32"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000507">ayy</w>
+                  <w join="right" xml:id="SAU_2022_Speaker37_camel_xTok_000508">waḷḷa</w>
+                  <pc xml:id="xTok_000509">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000510"
+                     rend="withDash">taʕrifīn</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000512" join="right">a</w>
+                  <pc xml:id="xTok_000513">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000514">mašaḷḷa</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000515"
+                     rend="withDash">ʕaley</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000517">k</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000518">mašaḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a33"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000519">w</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000520"
+                     rend="withDash">š</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000522"
+                     rend="withDash">isma</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000524" join="right">hu</w>
+                  <pc xml:id="xTok_000525">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a34"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000526">baʕdēn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000527"
+                     rend="withDash">nḥuṭṭ</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000529" join="right">a</w>
+                  <pc xml:id="xTok_000530">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000531"
+                     rend="withDash">hāl</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000533" join="right">ḥīn</w>
+                  <pc xml:id="xTok_000534">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000535">ṣubyān</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000536"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000538"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000540">bil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a35"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000541">ṣabi</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000542"
+                     rend="withDash">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000544" join="right">ha</w>
+                  <pc xml:id="xTok_000545">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000546">yrūḥ</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000547"
+                     rend="withDash">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000549">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000550">w</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000551">lā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000552"
+                     rend="withDash">ǧaw</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000554">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000555">hā</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000556"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000558"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000560" join="right">bil</w>
+                  <pc xml:id="xTok_000561">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000562">yiḥlibaw</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000563"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000565" join="right">a</w>
+                  <pc xml:id="xTok_000566">,</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000567">šarbaw</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000568"
+                     rend="withDash">min</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000570">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a36"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000571">nabi</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000572">namūn</w>
+                  <pc xml:id="xTok_000573">#</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000574"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000576" join="right">a</w>
+                  <pc xml:id="xTok_000577">,</pc>
+                  <pc join="right" xml:id="xTok_000578">#</pc>
+                  <pc xml:id="xTok_000579">#</pc>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000580">namūna</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000581">xalli</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000582"
+                     rend="withDash">ṣabī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000584">ha</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000585">fī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000586">w</w>
+                  <pc join="right" xml:id="xTok_000587">#</pc>
+                  <pc xml:id="xTok_000588">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a37"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T72"
+                  start="#T71">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000589"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000591"
+                     rend="withDash">u</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000593">ku</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000594">bil</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000595">antu</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000596">bī</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000597"
+                     rend="withDash">dīrāt</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000599" join="right">ku</w>
+                  <pc xml:id="xTok_000600">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a38"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T74"
+                  start="#T73">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000601"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000603" join="right">fī</w>
+                  <pc xml:id="xTok_000604">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a39"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T76"
+                  start="#T75">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000605"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000607">taʕrifūn</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000608"
+                     rend="withDash">ál</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000610">bil</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a48"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T96"
+                  start="#T95">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000611">laʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a40"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T78"
+                  start="#T77">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000612">maṛṛa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a49"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T98"
+                  start="#T97">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000613"
+                     rend="withDash">ʕan</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000615">na</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000616"
+                     rend="withDash">l</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000618">bagar</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000619">bass</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a41"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000620">bass</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000621">bagar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a50"
+                  who="#SAU_2022_Gunda_Transcription-txt"
+                  end="#T100"
+                  start="#T99">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000622"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000624">ġanam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a42"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000625">ā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000626">ġanam</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000627"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000629"
+                     rend="withDash">u</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000631" join="right">ku</w>
+                  <pc xml:id="xTok_000632">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a43"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T84"
+                  start="#T83">
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000633"
+                     rend="withDash">ʕind</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000635"
+                     rend="withDash">u</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000637">kum</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000638">ġanam</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="SAU_2022_Speaker37_camel_a44"
+                  who="#SAU_2022_Speaker37_Transcription-txt"
+                  end="#T86"
+                  start="#T85">
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000639">iyy</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000640">bass</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000641"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000643">hī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000644">miṯil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000645"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000647">ġanam</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000648"
+                     rend="withDash">as</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000650" join="right">saʕūdi</w>
+                  <pc xml:id="xTok_000651">,</pc>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000652"
+                     rend="withDash">mā</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000654">hī</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000655">miṯil</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000656"
+                     rend="withDash">il</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000658">ġanam</w>
+                  <w join="right"
+                     xml:id="SAU_2022_Speaker37_camel_xTok_000659"
+                     rend="withDash">as</w>
+                  <w xml:id="SAU_2022_Speaker37_camel_xTok_000661">saʕūdiyya</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-10-01T10:52:58.422667Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">30_MA_M.71_Karantina_BedouinDialect.Culture</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">30_MA_M.71_Karantina_BedouinDialect.Culture</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.11458333333333333" type="audio">
+                  <date when="2022-03-04"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 30_MA_M.71_Karantina_BedouinDialect.Culture</head>
+               <person sameAs="corpus:LEB_KAR_2022_MA_M.71_Speaker2">
+                  <name type="pseudonym">LEB_KAR_2022_MA_M.71_Speaker2</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Communityidentity"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="166" since="#T0" xml:id="T17"/>
+         <when interval="4703" since="#T0" xml:id="T18"/>
+         <when interval="7580" since="#T0" xml:id="T19"/>
+         <when interval="7848" since="#T0" xml:id="T1"/>
+         <when interval="10668" since="#T0" xml:id="T2"/>
+         <when interval="10975" since="#T0" xml:id="T3"/>
+         <when interval="11629" since="#T0" xml:id="T20"/>
+         <when interval="14627" since="#T0" xml:id="T4"/>
+         <when interval="17240" since="#T0" xml:id="T21"/>
+         <when interval="17444" since="#T0" xml:id="T22"/>
+         <when interval="17468" since="#T0" xml:id="T5"/>
+         <when interval="18740" since="#T0" xml:id="T23"/>
+         <when interval="18870" since="#T0" xml:id="T24"/>
+         <when interval="20234" since="#T0" xml:id="T6"/>
+         <when interval="20484" since="#T0" xml:id="T25"/>
+         <when interval="21088" since="#T0" xml:id="T26"/>
+         <when interval="27092" since="#T0" xml:id="T27"/>
+         <when interval="28205" since="#T0" xml:id="T28"/>
+         <when interval="34669" since="#T0" xml:id="T29"/>
+         <when interval="35014" since="#T0" xml:id="T30"/>
+         <when interval="41290" since="#T0" xml:id="T31"/>
+         <when interval="41375" since="#T0" xml:id="T32"/>
+         <when interval="47240" since="#T0" xml:id="T33"/>
+         <when interval="49343" since="#T0" xml:id="T34"/>
+         <when interval="54745" since="#T0" xml:id="T35"/>
+         <when interval="54855" since="#T0" xml:id="T36"/>
+         <when interval="57188" since="#T0" xml:id="T37"/>
+         <when interval="67481" since="#T0" xml:id="T38"/>
+         <when interval="68555" since="#T0" xml:id="T39"/>
+         <when interval="69794" since="#T0" xml:id="T40"/>
+         <when interval="74153" since="#T0" xml:id="T41"/>
+         <when interval="75042" since="#T0" xml:id="T42"/>
+         <when interval="77140" since="#T0" xml:id="T43"/>
+         <when interval="78033" since="#T0" xml:id="T44"/>
+         <when interval="81766" since="#T0" xml:id="T45"/>
+         <when interval="82149" since="#T0" xml:id="T46"/>
+         <when interval="83219" since="#T0" xml:id="T47"/>
+         <when interval="83493" since="#T0" xml:id="T48"/>
+         <when interval="85555" since="#T0" xml:id="T49"/>
+         <when interval="87297" since="#T0" xml:id="T50"/>
+         <when interval="91648" since="#T0" xml:id="T51"/>
+         <when interval="93556" since="#T0" xml:id="T52"/>
+         <when interval="96703" since="#T0" xml:id="T53"/>
+         <when interval="97449" since="#T0" xml:id="T54"/>
+         <when interval="102059" since="#T0" xml:id="T55"/>
+         <when interval="102621" since="#T0" xml:id="T7"/>
+         <when interval="104356" since="#T0" xml:id="T8"/>
+         <when interval="105037" since="#T0" xml:id="T9"/>
+         <when interval="106408" since="#T0" xml:id="T56"/>
+         <when interval="106592" since="#T0" xml:id="T10"/>
+         <when interval="108220" since="#T0" xml:id="T73"/>
+         <when interval="108973" since="#T0" xml:id="T74"/>
+         <when interval="111009" since="#T0" xml:id="T57"/>
+         <when interval="111296" since="#T0" xml:id="T75"/>
+         <when interval="112941" since="#T0" xml:id="T76"/>
+         <when interval="114956" since="#T0" xml:id="T58"/>
+         <when interval="116762" since="#T0" xml:id="T59"/>
+         <when interval="116896" since="#T0" xml:id="T11"/>
+         <when interval="119489" since="#T0" xml:id="T12"/>
+         <when interval="121330" since="#T0" xml:id="T13"/>
+         <when interval="123346" since="#T0" xml:id="T14"/>
+         <when interval="123565" since="#T0" xml:id="T60"/>
+         <when interval="129422" since="#T0" xml:id="T61"/>
+         <when interval="129686" since="#T0" xml:id="T62"/>
+         <when interval="134806" since="#T0" xml:id="T63"/>
+         <when interval="134888" since="#T0" xml:id="T64"/>
+         <when interval="140926" since="#T0" xml:id="T65"/>
+         <when interval="144898" since="#T0" xml:id="T66"/>
+         <when interval="147734" since="#T0" xml:id="T67"/>
+         <when interval="157172" since="#T0" xml:id="T15"/>
+         <when interval="157222" since="#T0" xml:id="T68"/>
+         <when interval="158533" since="#T0" xml:id="T16"/>
+         <when interval="159100" since="#T0" xml:id="T69"/>
+         <when interval="160990" since="#T0" xml:id="T70"/>
+         <when interval="161286" since="#T0" xml:id="T71"/>
+         <when interval="165703" since="#T0" xml:id="T72"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T72</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a1"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000001">hōlīki</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000002"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000004"
+                     rend="withDash">yiḥkū</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000006">ki</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000007">madani</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000008">masalan</w>
+                  <pc xml:id="xTok_000009">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000010">bass</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000011">bēn</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000012">baʕaḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a2"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000013"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000015">yiḥku</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000016">bduwi</w>
+                  <pc xml:id="xTok_000017">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000018">ē</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000019">maẓbūṭ</w>
+                  <pc xml:id="xTok_000020">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a33"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000021"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000023"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000025">bʔāʕ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000026">ʔaktar</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000027">šī</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000028"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000030">yiḥku</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000031">bduwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a34"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000032"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000034">un</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000035"
+                     rend="withDash">la</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000037">hallaʔ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000038">yistaʕmlu</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000039"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000041"
+                     rend="withDash">čēf</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000043">ak</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a3"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000044">čēf</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000045"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000047"
+                     join="right">ṣaḥḥa</w>
+                  <pc xml:id="xTok_000048">?</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000049"
+                     rend="withDash">šlōn</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000051"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000052">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a4"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T23"
+                  start="#T22">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000053"
+                     rend="withDash">čēf</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000055"
+                     join="right">ak</w>
+                  <pc xml:id="xTok_000056">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a35"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000057"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000059">u</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000060"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000062">un</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000063"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000065">ḥarf</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000066">il</w>
+                  <pc join="right" xml:id="xTok_000067">.</pc>
+                  <pc xml:id="xTok_000068">.</pc>
+                  <pc xml:id="xTok_000069">.</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000070">šāʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a5"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T25"
+                  start="#T24">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000071"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000073">ḥarf</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000074"
+                     rend="withDash">iš</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000076">šēʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a6"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000077">čān</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000078">waḷḷa</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000079"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000081"
+                     rend="withDash">z</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000083">zamānāt</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000084">kānu</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000085">w</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000086">čānu</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000087">w</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000088">rāḥu</w>
+                  <pc join="right" xml:id="xTok_000089">/</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000090"
+                     join="right">laughs</w>
+                  <pc xml:id="xTok_000091">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a7"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000092">ē</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000093"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000095">aḥki</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000096">ʔana</w>
+                  <pc xml:id="xTok_000097">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000098">ʔana</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000099">ʔiza</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000100"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000102">aḥki</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000103">maʕ</w>
+                  <pc xml:id="xTok_000104">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000105"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000107">uʔʕud</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000108">maʕ</w>
+                  <pc xml:id="xTok_000109">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000110">bala</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000111">maġṣa</w>
+                  <pc xml:id="xTok_000112">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000113">hallaʔ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000114">inti</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000115">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a8"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T31"
+                  start="#T30">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000116"
+                     rend="withDash">liʔan</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000118">ku</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000119">intu</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000120">hōn</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000121">yimkin</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000122">ma</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000123"
+                     rend="withDash">ʕād</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000125">ku</w>
+                  <pc join="right" xml:id="xTok_000126">.</pc>
+                  <pc xml:id="xTok_000127">.</pc>
+                  <pc xml:id="xTok_000128">.</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000129">ma</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000130"
+                     rend="withDash">luġat</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000132">ku</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000133">ʕam</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000134"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000136">əḥki</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000137">yaʕni</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000138">nuṣṣ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000139">hēk</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000140">nuṣṣ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000141">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a9"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000142">hallaʔ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000143">ʔiza</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000144">ʔagʕud</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000145">maʕ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000146">ibən</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000147"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000149">i</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000150">ʔaḥki</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000151">hēk</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000152">bduwi</w>
+                  <pc join="right" xml:id="xTok_000153">/</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000154"
+                     join="right">laughs</w>
+                  <pc xml:id="xTok_000155">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a10"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T35"
+                  start="#T34">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000156"
+                     rend="withDash">bidd</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000158">ik</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000159">ʔaḥki</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000160">bduwi</w>
+                  <pc xml:id="xTok_000161">?</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000162">lāʔ</w>
+                  <pc xml:id="xTok_000163">!</pc>
+                  <pc join="right" xml:id="xTok_000164">/</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000165"
+                     join="right">laughs</w>
+                  <pc xml:id="xTok_000166">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a11"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000167">yaḷḷa</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000168">laḥẓa</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000169">bass</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a12"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000170">tfaḍḍali</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a13"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000171">ya</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000172">hala</w>
+                  <pc xml:id="xTok_000173">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000174">šarraftu</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000175"
+                     rend="withDash">mitil</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000177">ma</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000178">gālu</w>
+                  <pc join="right" xml:id="xTok_000179">/</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000180"
+                     join="right">laughs</w>
+                  <pc xml:id="xTok_000181">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a14"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000182">tfaḍḍal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a15"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000183">ʕārif</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000184">hallaʔ</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000185"
+                     rend="withDash">gāl</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000187"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000189">i</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000190">ǧāy</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000191">la</w>
+                  <pc join="right" xml:id="xTok_000192">.</pc>
+                  <pc xml:id="xTok_000193">.</pc>
+                  <pc xml:id="xTok_000194">.</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000195"
+                     rend="withDash">nātr</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000197">ak</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000198"
+                     rend="withDash">iz</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000200">zilama</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000201">taḥat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a16"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T47"
+                  start="#T46">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000202">tfaḍḍalu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a17"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000203">ʔahla</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000204">w</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000205">sahla</w>
+                  <pc xml:id="xTok_000206">.</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000207">šarraftu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a18"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000208">ʔiḏan</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000209"
+                     rend="withDash">faržū</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000211">ki</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000212"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000214"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000216">gahwa</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000217"
+                     rend="withDash">al</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000219">murra</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000220">kīf</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000221"
+                     rend="withDash">tišrabī</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000223">ha</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000224">kamēn</w>
+                  <pc xml:id="xTok_000225">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a19"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000226">ʔiza</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000227">ma</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000228"
+                     rend="withDash">thizzī</w>
+                  <pc join="right" xml:id="xTok_000230">_</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000231">́</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000232">hēk</w>
+                  <pc xml:id="xTok_000233">?</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000234">yḍall</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000235"
+                     rend="withDash">yṣubb</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000237"
+                     rend="withDash">əll</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000239">ik</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a20"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000240">SN</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000241"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000243"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000245">i</w>
+                  <pc join="right" xml:id="xTok_000246">"</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000247">kint</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000248"
+                     rend="withDash">dabaḥət</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000250">ni</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000251">dabəḥ</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000252"
+                     rend="withDash">miʕədt</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000254">i</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000255">ṣār</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000256"
+                     rend="withDash">kull</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000258">a</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000259">gahwa</w>
+                  <pc xml:id="xTok_000260">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a36"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000261">ʔaklat</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000262">minsaf</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000263">kamēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a37"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000264">w</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000265"
+                     rend="withDash">ḥaṭṭū</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000267"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000269">a</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000270">ḥinna</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000271"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000273">ʔīda</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a21"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000274">waḷḷa</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000275"
+                     rend="withDash">ḥannū</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000277"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000279">ik</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000280"
+                     rend="withDash">ʔīd</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000282"
+                     join="right">ik</w>
+                  <pc xml:id="xTok_000283">?</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000284">lək</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000285">ʔūmi</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000286"
+                     rend="withDash">yixuṭbū</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000288">ki</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000289">baʕad</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000290">šwayy</w>
+                  <pc xml:id="xTok_000291">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a31"
+                  who="#AID"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000292">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a32"
+                  who="#AID"
+                  end="#T76"
+                  start="#T75">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000293">mafrūḍ</w>
+                  <pc xml:id="xTok_000294">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a22"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000295">minsaf</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000296">əmlēhi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a38"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000297">ma</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000298">ʔakalna</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000299">mlēḥi</w>
+                  <pc xml:id="xTok_000300">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000301">lā</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a39"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000302">mlēḥi</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000303">laban</w>
+                  <pc xml:id="xTok_000304">,</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000305">maʕ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000306">ʕaʔde</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000307">ṣafra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a23"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T61"
+                  start="#T60">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000308"
+                     rend="withDash">lēk</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000310">i</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000311">bass</w>
+                  <pc xml:id="xTok_000312">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000313">ʔakəl</w>
+                  <pc xml:id="xTok_000314">.</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000315">ʔakəl</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000316"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000318">kēf</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000319"
+                     rend="withDash">kēf</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000321">ik</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000322">waḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a24"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000323">ē</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000324">hayda</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000325"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000327">mlēḥi</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000328">kull</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000329"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000331">ʕarab</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000332">yaʕni</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000333"
+                     rend="withDash">b</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000335">yṣīr</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000336"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000338">ʔaʕrās</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000339"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000341">un</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000342">ʔamrār</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a25"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000343">bʕīd</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000344">min</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000345">hōn</w>
+                  <pc xml:id="xTok_000346">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000347"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000349"
+                     join="right">mayyit</w>
+                  <pc xml:id="xTok_000350">.</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000351">yaʕni</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000352">nʕimil</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000353">ʔiḥna</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000354">ʔakl</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000355"
+                     rend="withDash">əl</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000357"
+                     join="right">mayyit</w>
+                  <pc xml:id="xTok_000358">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000359"
+                     rend="withDash">m</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000361">niʕmil</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000362">mlēḥi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a26"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T66"
+                  start="#T65">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000363"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000365"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000367">ʕirəs</w>
+                  <pc join="right" xml:id="xTok_000368">(</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000369"
+                     join="right">P1s</w>
+                  <pc xml:id="xTok_000370">)</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000371">hallaʔ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000372">ʕirs</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000373"
+                     rend="withDash">ʔixwāt</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000375">a</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000376"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000378"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000380">ḥažže</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000381">hōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a27"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000382">šūft</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000383"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000385"
+                     join="right">ṭarīga</w>
+                  <pc xml:id="xTok_000386">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a28"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000387">min</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000388">hāy</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000389"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000391"
+                     join="right">ʔarḍ</w>
+                  <pc xml:id="xTok_000392">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000393"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000395"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000397"
+                     join="right">gahwa</w>
+                  <pc xml:id="xTok_000398">.</pc>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000399">haddēna</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000400"
+                     rend="withDash">iš</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000402">šawādir</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000403"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000405"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000407">ǧumʕa</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000408">ḍall</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000409"
+                     rend="withDash">il</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000411">ʕirs</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000412">yiḍruḅ</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000413">ṭaḅul</w>
+                  <pc join="right" xml:id="xTok_000414">.</pc>
+                  <pc xml:id="xTok_000415">.</pc>
+                  <pc xml:id="xTok_000416">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a42"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000417">ʔayya</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000418">ʕēla</w>
+                  <pc xml:id="xTok_000419">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a29"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T70"
+                  start="#T69">
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000420"
+                     rend="withDash">xwāt</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000422"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000423">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000424"
+                     rend="withDash">l</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000426">ʕiǧūl</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000427">ʔiḥna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u30_MA_M.71_Karantina_BedouinDialect.Culture_a30"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000428">ʔiḥna</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000429"
+                     rend="withDash">xawāl</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000431">ak</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000432">ʔíntabih</w>
+                  <pc xml:id="xTok_000433">,</pc>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000434"
+                     rend="withDash">xawāl</w>
+                  <w xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000436">o</w>
+                  <w join="right"
+                     xml:id="30_MA_M.71_Karantina_BedouinDialect.Culture_xTok_000437">ḥna</w>
+                  <pc xml:id="xTok_000438">!</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
