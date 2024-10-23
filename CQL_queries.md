@@ -1,7 +1,7 @@
 # Searching the WIBARAB Corpus
 
 ## Sample Queries
-
+**NOTE**: For these queries to work, you need to have "CQL" selected as the query type in the Advanced tab of the Concordance tool
 ### How do I search for stress?
 
 `[word=".*´.*"]`
