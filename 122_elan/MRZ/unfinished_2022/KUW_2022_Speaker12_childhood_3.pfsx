@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">2284,1400</Object>
+        <Object class="java.awt.Dimension">2560,1400</Object>
     </pref>
     <prefList key="SegmentationViewer.TierOrder">
         <String>Interlinear-title</String>
@@ -22,6 +22,19 @@
     <pref key="Interlinear.Tier.Gloss">
         <String>ge</String>
     </pref>
+    <prefList key="Interlinear.VisibleTiers">
+        <String>Interlinear-title</String>
+        <String>KUW_2022_Speaker12_Transcription-txt</String>
+        <String>KUW_2022_Speaker12_Words-txt</String>
+        <String>KUW_2022_Speaker12_Translation-gls-en</String>
+        <String>KUW_2022_Speaker12_Translation-gls-ar</String>
+        <String>KUW_2022_Speaker12_Participant-note-en</String>
+        <String>KUW_2022_Gunda_Transcription-txt</String>
+        <String>KUW_2022_Gunda_Words-txt</String>
+        <String>KUW_2022_Gunda_Translation-gls-en</String>
+        <String>KUW_2022_Gunda_Translation-gls-ar</String>
+        <String>KUW_2022_Gunda_Participant-note-en</String>
+    </prefList>
     <pref key="InterlinearizationMode.LeftTopBottomSplit">
         <Double>0.14056224899598393</Double>
     </pref>
@@ -31,11 +44,14 @@
     <pref key="Annotate.Tier.Gloss">
         <String>ge</String>
     </pref>
+    <pref key="ExportPraatDialog.SelectTiersMode">
+        <String>Tier</String>
+    </pref>
     <pref key="TranscriptionTable.LastActiveRow">
-        <Int>28</Int>
+        <Int>7</Int>
     </pref>
     <pref key="SignalViewer.ZoomLevel">
-        <Float>72.24625</Float>
+        <Float>60.26656</Float>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>2</Int>
@@ -44,32 +60,29 @@
         <Int>100</Int>
     </pref>
     <prefGroup key="TranscriptionMode.Temp.TierColors">
-        <pref key="A_Words-txt">
+        <pref key="KUW_2022_Speaker12_Translation-gls-en">
             <Object class="java.awt.Color">102,102,255</Object>
         </pref>
-        <pref key="A_Translation-gls-ar">
+        <pref key="KUW_2022_Speaker12_Words-txt">
             <Object class="java.awt.Color">102,102,255</Object>
         </pref>
-        <pref key="B_Transcription-txt">
+        <pref key="KUW_2022_Speaker12_Translation-gls-ar">
+            <Object class="java.awt.Color">102,102,255</Object>
+        </pref>
+        <pref key="KUW_2022_Gunda_Translation-gls-en">
             <Object class="java.awt.Color">160,0,0</Object>
         </pref>
-        <pref key="A_Transcription-txt">
-            <Object class="java.awt.Color">102,102,255</Object>
-        </pref>
-        <pref key="B_Translation-gls-en">
+        <pref key="KUW_2022_Gunda_Transcription-txt">
             <Object class="java.awt.Color">160,0,0</Object>
         </pref>
-        <pref key="A_Translation-gls-en">
-            <Object class="java.awt.Color">102,102,255</Object>
-        </pref>
-        <pref key="A_Participant-note-en">
+        <pref key="KUW_2022_Speaker12_Transcription-txt">
             <Object class="java.awt.Color">102,102,255</Object>
         </pref>
         <pref key="Interlinear-title">
             <Object class="java.awt.Color">90,90,0</Object>
         </pref>
-        <pref key="C_Transcription-txt">
-            <Object class="java.awt.Color">160,90,0</Object>
+        <pref key="KUW_2022_Speaker12_Participant-note-en">
+            <Object class="java.awt.Color">102,102,255</Object>
         </pref>
     </prefGroup>
     <prefGroup key="TierFonts"/>
@@ -96,7 +109,7 @@
         <String>Note</String>
     </prefList>
     <pref key="SelectionBeginTime">
-        <Long>36800</Long>
+        <Long>5038</Long>
     </pref>
     <prefGroup key="Silence Recognizer MPI-PL">
         <pref key="NoiseThresholdSetManually">
@@ -114,68 +127,107 @@
         <prefGroup key="SelectionPanelPref"/>
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
+    <prefList key="Interlinear.TierOrder">
+        <String>Interlinear-title</String>
+        <String>KUW_2022_Speaker12_Transcription-txt</String>
+        <String>KUW_2022_Speaker12_Words-txt</String>
+        <String>KUW_2022_Speaker12_Translation-gls-en</String>
+        <String>KUW_2022_Speaker12_Translation-gls-ar</String>
+        <String>KUW_2022_Speaker12_Participant-note-en</String>
+        <String>KUW_2022_Gunda_Transcription-txt</String>
+        <String>KUW_2022_Gunda_Words-txt</String>
+        <String>KUW_2022_Gunda_Translation-gls-en</String>
+        <String>KUW_2022_Gunda_Translation-gls-ar</String>
+        <String>KUW_2022_Gunda_Participant-note-en</String>
+    </prefList>
     <pref key="MediaControlRate">
-        <Float>0.86</Float>
+        <Float>1.0</Float>
     </pref>
     <prefGroup key="TranscriptionTable.TierMap">
-        <prefList key="B_Transcription-txt">
-            <String>B_Transcription-txt</String>
-            <String>B_Translation-gls-en</String>
+        <prefList key="KUW_2022_Gunda_Transcription-txt">
+            <String>KUW_2022_Gunda_Transcription-txt</String>
+            <String>KUW_2022_Gunda_Translation-gls-en</String>
         </prefList>
-        <prefList key="A_Transcription-txt">
-            <String>A_Transcription-txt</String>
-            <String>A_Translation-gls-en</String>
-        </prefList>
-        <prefList key="C_Transcription-txt">
-            <String>C_Transcription-txt</String>
-            <String>C_Translation-gls-eng</String>
+        <prefList key="KUW_2022_Speaker12_Transcription-txt">
+            <String>KUW_2022_Speaker12_Transcription-txt</String>
+            <String>KUW_2022_Speaker12_Translation-gls-en</String>
         </prefList>
     </prefGroup>
     <pref key="InterlinearizationEditor.FontSize">
         <Int>12</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>36579</Long>
+        <Long>4773</Long>
     </pref>
     <pref key="MorphemeBreakCharacter.Suffix">
         <String>-=</String>
     </pref>
     <pref key="MediaTime">
-        <Long>36800</Long>
+        <Long>5038</Long>
     </pref>
     <prefGroup key="TierColors">
-        <pref key="A_Words-txt">
+        <pref key="KUW_2022_Speaker12_Translation-gls-en">
             <Object class="java.awt.Color">102,102,255</Object>
         </pref>
-        <pref key="A_Translation-gls-ar">
+        <pref key="KUW_2022_Speaker12_Words-txt">
             <Object class="java.awt.Color">102,102,255</Object>
         </pref>
-        <pref key="B_Transcription-txt">
+        <pref key="KUW_2022_Speaker12_Translation-gls-ar">
+            <Object class="java.awt.Color">102,102,255</Object>
+        </pref>
+        <pref key="KUW_2022_Gunda_Transcription-txt">
             <Object class="java.awt.Color">160,0,0</Object>
         </pref>
-        <pref key="A_Transcription-txt">
-            <Object class="java.awt.Color">102,102,255</Object>
-        </pref>
-        <pref key="A_Translation-gls-en">
-            <Object class="java.awt.Color">102,102,255</Object>
-        </pref>
-        <pref key="A_Participant-note-en">
+        <pref key="KUW_2022_Speaker12_Transcription-txt">
             <Object class="java.awt.Color">102,102,255</Object>
         </pref>
         <pref key="Interlinear-title">
             <Object class="java.awt.Color">90,90,0</Object>
         </pref>
-        <pref key="C_Transcription-txt">
-            <Object class="java.awt.Color">160,90,0</Object>
+        <pref key="KUW_2022_Speaker12_Participant-note-en">
+            <Object class="java.awt.Color">102,102,255</Object>
         </pref>
     </prefGroup>
     <prefList key="MultiTierViewer.TierOrder">
         <String>Interlinear-title</String>
+        <String>KUW_2022_Speaker12_Transcription-txt</String>
+        <String>KUW_2022_Speaker12_Words-txt</String>
+        <String>KUW_2022_Speaker12_Translation-gls-en</String>
+        <String>KUW_2022_Speaker12_Translation-gls-ar</String>
+        <String>KUW_2022_Speaker12_Participant-note-en</String>
+        <String>KUW_2022_Gunda_Transcription-txt</String>
+        <String>KUW_2022_Gunda_Words-txt</String>
+        <String>KUW_2022_Gunda_Translation-gls-en</String>
+        <String>KUW_2022_Gunda_Translation-gls-ar</String>
+        <String>KUW_2022_Gunda_Participant-note-en</String>
+    </prefList>
+    <prefGroup key="TierHighlightColors"/>
+    <pref key="LayoutManager.SplitPaneDividerLocation">
+        <Int>170</Int>
+    </pref>
+    <pref key="MorphemeBreakCharacter.Stem">
+        <String>_</String>
+    </pref>
+    <prefList key="ExportPraatDialog.HiddenTiers"/>
+    <prefList key="TranscriptionTable.HiddenTiers"/>
+    <pref key="Interlinear.Tier.Pos">
+        <String>rx</String>
+    </pref>
+    <prefGroup key="TranscriptionTable.ColumnWidth">
+        <pref key="1">
+            <Int>1062</Int>
+        </pref>
+        <pref key="2">
+            <Int>1061</Int>
+        </pref>
+    </prefGroup>
+    <prefList key="ExportPraatDialog.selectedTiers">
         <String>A_Transcription-txt</String>
         <String>A_Words-txt</String>
         <String>A_Translation-gls-en</String>
         <String>A_Translation-gls-ar</String>
         <String>A_Participant-note-en</String>
+        <String>Interlinear-title</String>
         <String>B_Transcription-txt</String>
         <String>B_Words-txt</String>
         <String>B_Translation-gls-en</String>
@@ -187,33 +239,14 @@
         <String>C_Translation-gls-ar</String>
         <String>C_Participant-note-en</String>
     </prefList>
-    <prefGroup key="TierHighlightColors"/>
-    <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>170</Int>
-    </pref>
-    <pref key="MorphemeBreakCharacter.Stem">
-        <String>_</String>
-    </pref>
-    <prefList key="TranscriptionTable.HiddenTiers"/>
-    <pref key="Interlinear.Tier.Pos">
-        <String>rx</String>
-    </pref>
-    <prefGroup key="TranscriptionTable.ColumnWidth">
-        <pref key="1">
-            <Int>796</Int>
-        </pref>
-        <pref key="2">
-            <Int>795</Int>
-        </pref>
-    </prefGroup>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>1</Int>
     </pref>
     <pref key="LayoutManager.MediaAreaWidth">
-        <Int>600</Int>
+        <Int>344</Int>
     </pref>
     <pref key="SegmentationViewer.ZoomLevel">
-        <Float>66.0</Float>
+        <Float>134.0</Float>
     </pref>
     <pref key="Interlinear.Tier.Parse">
         <String>mb</String>
@@ -223,7 +256,7 @@
     </pref>
     <prefGroup key="TranscriptionTable.ColumnOrder"/>
     <pref key="SelectionEndTime">
-        <Long>44662</Long>
+        <Long>10215</Long>
     </pref>
     <pref key="LayoutManager.MediaAreaHeight">
         <Int>97</Int>
@@ -264,7 +297,7 @@
         </pref>
     </prefGroup>
     <pref key="SegmentationViewer.ActiveTier">
-        <String>B_Transcription-txt</String>
+        <String>KUW_2022_Gunda_Transcription-txt</String>
     </pref>
     <prefList key="CommentViewer.Columns.Order">
         <String>Start Time</String>
@@ -279,14 +312,35 @@
         <String>Modification Date</String>
     </prefList>
     <pref key="MediaControlVolume">
-        <Float>1.0</Float>
+        <Float>0.9</Float>
     </pref>
     <pref key="ActiveRecognizerName">
         <String>Silence Recognizer MPI-PL</String>
     </pref>
+    <pref key="Interlinear.SelectionOnly">
+        <Boolean>false</Boolean>
+    </pref>
     <prefList key="InterlinearizationConfigurations"/>
+    <prefList key="ExportPraatDialog.TierOrder">
+        <String>A_Transcription-txt</String>
+        <String>A_Words-txt</String>
+        <String>A_Translation-gls-en</String>
+        <String>A_Translation-gls-ar</String>
+        <String>A_Participant-note-en</String>
+        <String>Interlinear-title</String>
+        <String>B_Transcription-txt</String>
+        <String>B_Words-txt</String>
+        <String>B_Translation-gls-en</String>
+        <String>B_Translation-gls-ar</String>
+        <String>B_Participant-note-en</String>
+        <String>C_Transcription-txt</String>
+        <String>C-Words-txt</String>
+        <String>C_Translation-gls-eng</String>
+        <String>C_Translation-gls-ar</String>
+        <String>C_Participant-note-en</String>
+    </prefList>
     <pref key="TM.SignalViewer.ZoomLevel">
-        <Float>11.513591</Float>
+        <Float>6.324367</Float>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="source_audio">
@@ -314,7 +368,7 @@
         </pref>
     </prefGroup>
     <pref key="TranscriptionTable.LastActiveColumn">
-        <String>Phrases</String>
+        <String>Note</String>
     </pref>
     <pref key="InterlinearizationMode.LeftRightSplit">
         <Double>0.23472222222222222</Double>
