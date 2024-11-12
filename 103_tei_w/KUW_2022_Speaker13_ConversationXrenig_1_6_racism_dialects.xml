@@ -1,0 +1,2826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-11-12T12:31:06.680323Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     next="KUW_2022_Speaker13_ConversationXrenig_1_7_mothers_secretlanguage.xml"
+     prev="KUW_2022_Speaker13_ConversationXrenig_1_5_xrenig_weddingtraditions.xml">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="07:21" type="audio">
+                  <date when="2022-04-10"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:KUW_2022_GK">Kuwait Fieldwork Campaign Gunda Kinzl 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects</head>
+               <person sameAs="corpus:KUW_2022_Speaker13">
+                  <name type="pseudonym">KUW_2022_Speaker13</name>
+               </person>
+               <person sameAs="corpus:KUW_2022_Speaker14">
+                  <name type="pseudonym">KUW_2022_Speaker14</name>
+               </person>
+               <person sameAs="corpus:KUW_2022_Inas">
+                  <name type="pseudonym">KUW_2022_Inas</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!--No place of Recording provided.-->
+         <textClass>
+            <catRef target="corpus:Languageandidentity"/>
+            <catRef target="corpus:Racism"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="136" since="#T0" xml:id="T29"/>
+         <when interval="7986" since="#T0" xml:id="T30"/>
+         <when interval="8489" since="#T0" xml:id="T31"/>
+         <when interval="11872" since="#T0" xml:id="T1"/>
+         <when interval="12891" since="#T0" xml:id="T2"/>
+         <when interval="13638" since="#T0" xml:id="T3"/>
+         <when interval="14630" since="#T0" xml:id="T32"/>
+         <when interval="15393" since="#T0" xml:id="T33"/>
+         <when interval="15680" since="#T0" xml:id="T4"/>
+         <when interval="16808" since="#T0" xml:id="T34"/>
+         <when interval="17276" since="#T0" xml:id="T5"/>
+         <when interval="21127" since="#T0" xml:id="T35"/>
+         <when interval="22258" since="#T0" xml:id="T36"/>
+         <when interval="23276" since="#T0" xml:id="T37"/>
+         <when interval="24361" since="#T0" xml:id="T38"/>
+         <when interval="26361" since="#T0" xml:id="T39"/>
+         <when interval="27574" since="#T0" xml:id="T6"/>
+         <when interval="39552" since="#T0" xml:id="T40"/>
+         <when interval="40689" since="#T0" xml:id="T41"/>
+         <when interval="49468" since="#T0" xml:id="T42"/>
+         <when interval="49993" since="#T0" xml:id="T43"/>
+         <when interval="53549" since="#T0" xml:id="T44"/>
+         <when interval="53880" since="#T0" xml:id="T45"/>
+         <when interval="63560" since="#T0" xml:id="T46"/>
+         <when interval="63703" since="#T0" xml:id="T47"/>
+         <when interval="72446" since="#T0" xml:id="T48"/>
+         <when interval="72722" since="#T0" xml:id="T49"/>
+         <when interval="79734" since="#T0" xml:id="T50"/>
+         <when interval="80095" since="#T0" xml:id="T51"/>
+         <when interval="87836" since="#T0" xml:id="T52"/>
+         <when interval="87947" since="#T0" xml:id="T7"/>
+         <when interval="88574" since="#T0" xml:id="T53"/>
+         <when interval="89787" since="#T0" xml:id="T8"/>
+         <when interval="102893" since="#T0" xml:id="T54"/>
+         <when interval="106893" since="#T0" xml:id="T55"/>
+         <when interval="119272" since="#T0" xml:id="T56"/>
+         <when interval="120425" since="#T0" xml:id="T132"/>
+         <when interval="124179" since="#T0" xml:id="T57"/>
+         <when interval="124361" since="#T0" xml:id="T133"/>
+         <when interval="136641" since="#T0" xml:id="T58"/>
+         <when interval="136846" since="#T0" xml:id="T59"/>
+         <when interval="141757" since="#T0" xml:id="T60"/>
+         <when interval="141808" since="#T0" xml:id="T61"/>
+         <when interval="149285" since="#T0" xml:id="T62"/>
+         <when interval="150721" since="#T0" xml:id="T63"/>
+         <when interval="154520" since="#T0" xml:id="T64"/>
+         <when interval="155123" since="#T0" xml:id="T65"/>
+         <when interval="159382" since="#T0" xml:id="T66"/>
+         <when interval="161489" since="#T0" xml:id="T67"/>
+         <when interval="168431" since="#T0" xml:id="T68"/>
+         <when interval="168468" since="#T0" xml:id="T69"/>
+         <when interval="172380" since="#T0" xml:id="T70"/>
+         <when interval="172775" since="#T0" xml:id="T71"/>
+         <when interval="188340" since="#T0" xml:id="T72"/>
+         <when interval="188691" since="#T0" xml:id="T73"/>
+         <when interval="191229" since="#T0" xml:id="T74"/>
+         <when interval="191914" since="#T0" xml:id="T75"/>
+         <when interval="198872" since="#T0" xml:id="T76"/>
+         <when interval="202413" since="#T0" xml:id="T77"/>
+         <when interval="212091" since="#T0" xml:id="T78"/>
+         <when interval="212284" since="#T0" xml:id="T79"/>
+         <when interval="220531" since="#T0" xml:id="T80"/>
+         <when interval="226978" since="#T0" xml:id="T81"/>
+         <when interval="229440" since="#T0" xml:id="T82"/>
+         <when interval="233845" since="#T0" xml:id="T83"/>
+         <when interval="234133" since="#T0" xml:id="T84"/>
+         <when interval="237251" since="#T0" xml:id="T85"/>
+         <when interval="238532" since="#T0" xml:id="T86"/>
+         <when interval="242233" since="#T0" xml:id="T87"/>
+         <when interval="242608" since="#T0" xml:id="T88"/>
+         <when interval="246726" since="#T0" xml:id="T89"/>
+         <when interval="247007" since="#T0" xml:id="T90"/>
+         <when interval="251614" since="#T0" xml:id="T91"/>
+         <when interval="252694" since="#T0" xml:id="T92"/>
+         <when interval="257251" since="#T0" xml:id="T93"/>
+         <when interval="258063" since="#T0" xml:id="T94"/>
+         <when interval="264811" since="#T0" xml:id="T95"/>
+         <when interval="265038" since="#T0" xml:id="T9"/>
+         <when interval="266048" since="#T0" xml:id="T10"/>
+         <when interval="266155" since="#T0" xml:id="T96"/>
+         <when interval="267836" since="#T0" xml:id="T11"/>
+         <when interval="268191" since="#T0" xml:id="T97"/>
+         <when interval="268745" since="#T0" xml:id="T134"/>
+         <when interval="270508" since="#T0" xml:id="T12"/>
+         <when interval="274036" since="#T0" xml:id="T13"/>
+         <when interval="275362" since="#T0" xml:id="T135"/>
+         <when interval="278170" since="#T0" xml:id="T98"/>
+         <when interval="279305" since="#T0" xml:id="T14"/>
+         <when interval="287914" since="#T0" xml:id="T99"/>
+         <when interval="288914" since="#T0" xml:id="T100"/>
+         <when interval="293883" since="#T0" xml:id="T101"/>
+         <when interval="294021" since="#T0" xml:id="T15"/>
+         <when interval="294067" since="#T0" xml:id="T102"/>
+         <when interval="298468" since="#T0" xml:id="T16"/>
+         <when interval="304595" since="#T0" xml:id="T103"/>
+         <when interval="305092" since="#T0" xml:id="T104"/>
+         <when interval="315594" since="#T0" xml:id="T105"/>
+         <when interval="315987" since="#T0" xml:id="T106"/>
+         <when interval="323131" since="#T0" xml:id="T107"/>
+         <when interval="323279" since="#T0" xml:id="T108"/>
+         <when interval="329254" since="#T0" xml:id="T109"/>
+         <when interval="330051" since="#T0" xml:id="T110"/>
+         <when interval="337257" since="#T0" xml:id="T111"/>
+         <when interval="337428" since="#T0" xml:id="T136"/>
+         <when interval="338978" since="#T0" xml:id="T112"/>
+         <when interval="339042" since="#T0" xml:id="T137"/>
+         <when interval="341659" since="#T0" xml:id="T113"/>
+         <when interval="346064" since="#T0" xml:id="T114"/>
+         <when interval="349950" since="#T0" xml:id="T115"/>
+         <when interval="351806" since="#T0" xml:id="T116"/>
+         <when interval="360220" since="#T0" xml:id="T117"/>
+         <when interval="360447" since="#T0" xml:id="T118"/>
+         <when interval="366851" since="#T0" xml:id="T119"/>
+         <when interval="366893" since="#T0" xml:id="T120"/>
+         <when interval="371476" since="#T0" xml:id="T121"/>
+         <when interval="371589" since="#T0" xml:id="T122"/>
+         <when interval="381212" since="#T0" xml:id="T123"/>
+         <when interval="382127" since="#T0" xml:id="T124"/>
+         <when interval="384234" since="#T0" xml:id="T125"/>
+         <when interval="388617" since="#T0" xml:id="T17"/>
+         <when interval="401196" since="#T0" xml:id="T18"/>
+         <when interval="401899" since="#T0" xml:id="T19"/>
+         <when interval="405246" since="#T0" xml:id="T20"/>
+         <when interval="405304" since="#T0" xml:id="T21"/>
+         <when interval="415619" since="#T0" xml:id="T22"/>
+         <when interval="415807" since="#T0" xml:id="T23"/>
+         <when interval="427149" since="#T0" xml:id="T126"/>
+         <when interval="429080" since="#T0" xml:id="T24"/>
+         <when interval="429125" since="#T0" xml:id="T127"/>
+         <when interval="429144" since="#T0" xml:id="T25"/>
+         <when interval="430755" since="#T0" xml:id="T128"/>
+         <when interval="432674" since="#T0" xml:id="T129"/>
+         <when interval="435022" since="#T0" xml:id="T26"/>
+         <when interval="435353" since="#T0" xml:id="T27"/>
+         <when interval="439528" since="#T0" xml:id="T28"/>
+         <when interval="439616" since="#T0" xml:id="T130"/>
+         <when interval="441018" since="#T0" xml:id="T131"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T131</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a1"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000001">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000002"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000004"
+                     join="right">ġazu</w>
+                  <pc xml:id="xTok_000005">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000006">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000007"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000009"
+                     join="right">ṯimānīn</w>
+                  <pc xml:id="xTok_000010">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000011">zādat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000012"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000014">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000015"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000017">ʕunṣuriyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a2"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000018">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000019">zādat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000020"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000022">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000023">kṯīr</w>
+                  <pc xml:id="xTok_000024">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000025">kṯīr</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000026">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000027"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000029">taʕaṣṣubāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000030"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000032">qabāliyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a54"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000033"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000035">taʕassubāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a55"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000036"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000038">kānat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000039">mawǧūda</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000040">gabl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000041"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000043">ġazu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a3"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000044"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000046">kānat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000047">mawǧūda</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000048">gabal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a56"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000049">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000050"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000052">ġazu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000053">ṣar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000054">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000055">ʕunṣuriyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000056">kinna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000057">šīʕa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000058">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000059">sinna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000060">maʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000061">baʕaḏ̣</w>
+                  <pc xml:id="xTok_000062">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000063">kinna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000064">ḥaḏ̣ar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000065">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000066">badu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000067">maʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000068">baʕāḏ̣</w>
+                  <pc xml:id="xTok_000069">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000070">bass</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000071">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000072"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000074">ġazu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000075">ṣār</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000076"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000078">mawḏ̣ūʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000079"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000081">ʕaks</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a4"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000082"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000084">nʕarif</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a5"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000085">laʔ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000086"
+                     rend="withDash">al</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000088">ḥīn</w>
+                  <pc join="right" xml:id="xTok_000089">.</pc>
+                  <pc xml:id="xTok_000090">.</pc>
+                  <pc xml:id="xTok_000091">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a6"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000092">intišar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000093">mawḏ̣ūʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000094"
+                     rend="withDash">iš</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000096"
+                     join="right">šīʕa</w>
+                  <pc xml:id="xTok_000097">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000098">intiḏ̣ir</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000099">mawḏ̣ūʕ</w>
+                  <pc xml:id="xTok_000100">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000101">intišar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000102">mawḏ̣ūʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000103"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000105"
+                     rend="withDash">ʕasa</w>
+                  <pc join="right" xml:id="xTok_000107">.</pc>
+                  <pc xml:id="xTok_000108">.</pc>
+                  <pc xml:id="xTok_000109">.</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000110"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000112">ʕaṣabiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000113"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000115"
+                     join="right">qabaliyya</w>
+                  <pc xml:id="xTok_000116">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000117">zāda</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000118"
+                     rend="withDash">t</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000120">tamassuk</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000121"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000123"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000125">lahaǧāt</w>
+                  <pc join="right" xml:id="xTok_000126">(</pc>
+                  <pc join="right" xml:id="xTok_000127">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000128">lahaǧāt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000130">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000131">this</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000132">a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000133">mistake</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000134">or</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000135">gahawa</w>
+                  <pc join="right" xml:id="xTok_000136">?</pc>
+                  <pc join="right" xml:id="xTok_000137">?</pc>
+                  <pc xml:id="xTok_000138">)</pc>
+                  <pc xml:id="xTok_000139">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000140">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000141">aṯbit</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000142">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000143"
+                     rend="withDash">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000145">u</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a7"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000146">inti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000147">ʕaǧmiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000148">yāhil</w>
+                  <pc join="right" xml:id="xTok_000149">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000150"
+                     join="right">ǧāhil</w>
+                  <pc xml:id="xTok_000151">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000152">iṣġīra</w>
+                  <pc xml:id="xTok_000153">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000154"
+                     rend="withDash">iǧī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000156">č</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000157"
+                     rend="withDash">itgul</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000159"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000161">ič</w>
+                  <pc join="right" xml:id="xTok_000162">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000163"
+                     rend="withDash">šlōn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000165"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000166">?</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000167"
+                     rend="withDash">ʕasā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000169">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000170">ṭayba</w>
+                  <pc xml:id="xTok_000171">?</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000172"
+                     rend="withDash">ʕasā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000174">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000175"
+                     rend="withDash">ib</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000177"
+                     join="right">xēr</w>
+                  <pc xml:id="xTok_000178">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000179">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000180">šlōn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000181"
+                     rend="withDash">umm</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000183"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000184">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000185">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000186">šlōn</w>
+                  <pc join="right" xml:id="xTok_000187">.</pc>
+                  <pc join="right" xml:id="xTok_000188">.</pc>
+                  <pc xml:id="xTok_000189">.</pc>
+                  <pc xml:id="xTok_000190">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a8"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000191">inti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000192">tkallimēn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000193">čiḏi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000194">ʕašān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000195">tiṯbitīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000196">li</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000197"
+                     rend="withDash">ʕinn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000199">ič</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000200">ʕāǧmiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a9"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000201"
+                     rend="withDash">aǧ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000203">īč</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000204"
+                     rend="withDash">al</w>
+                  <pc join="right" xml:id="xTok_000206">.</pc>
+                  <pc xml:id="xTok_000207">.</pc>
+                  <pc xml:id="xTok_000208">.</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000209"
+                     rend="withDash">ad</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000211">dōsiriyya</w>
+                  <pc join="right" xml:id="xTok_000212">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000213"
+                     rend="withDash">islōn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000215"
+                     join="right">is</w>
+                  <pc xml:id="xTok_000216">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000217">keyf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000218"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000220"
+                     join="right">ić</w>
+                  <pc xml:id="xTok_000221">?</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000222"
+                     rend="withDash">ʕasā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000224">s</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000225">ṭayba</w>
+                  <pc xml:id="xTok_000226">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000227">ʕašān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000228">tiṯbit</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000229">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000230">ʔana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000231">dōṣiriyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a10"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000232">fā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000233"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000235">ǧīl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000236">hāḏa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000237"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000239">ṯimānīnāt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000240">bida</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000241">yanḥuḏ̣</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000242">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000243"
+                     rend="withDash">luġat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000245"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000246">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000247">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000248"
+                     rend="withDash">ḥačy</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000250">a</w>
+                  <pc join="right" xml:id="xTok_000251">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000252"
+                     join="right">ḥaki</w>
+                  <pc xml:id="xTok_000253">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000254">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000255"
+                     rend="withDash">lahǧat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000257">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a11"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000258">ʕašān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000259">yiṯbitūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000260"
+                     rend="withDash">ʔinn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000262">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000263">ʔana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000264">aṯbit</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000265"
+                     rend="withDash">ʔinn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000267">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000268">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000269">ʕāǧmiyya</w>
+                  <pc xml:id="xTok_000270">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000271">dōsiriyya</w>
+                  <pc xml:id="xTok_000272">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000273"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000275">ʕāzmiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a12"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000276">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000277">akṯar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000278">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000279">luġa</w>
+                  <pc xml:id="xTok_000280">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000281">lahǧa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000282">lafḏ̣</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000283"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000285">ḥurūf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000286">tmuṭṭil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000287">ḥači</w>
+                  <pc join="right" xml:id="xTok_000288">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000289"
+                     join="right">ḥaki</w>
+                  <pc xml:id="xTok_000290">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000291">ʕašān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000292"
+                     rend="withDash">inn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000294">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000295">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000296">ʕāzmiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a57"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000297"
+                     rend="withDash">ʕaṭī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000299">na</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000300">waḥda</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000301">ʕāzmiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000302"
+                     rend="withDash">maṯ</w>
+                  <pc join="right" xml:id="xTok_000304">.</pc>
+                  <pc xml:id="xTok_000305">.</pc>
+                  <pc xml:id="xTok_000306">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a13"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000307">maṯalan</w>
+                  <pc join="right" xml:id="xTok_000308">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000309">yāā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000310">rīīm</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000311">anti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000312"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000314">yōm</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000315"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000317">kalti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000318">ġadāā</w>
+                  <pc xml:id="xTok_000319">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000320">anti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000321"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000323">kalti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000324"
+                     rend="withDash">ġadāā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000326">č</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000327">yāā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000328">rīīm</w>
+                  <pc xml:id="xTok_000329">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000330">anti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000331">ams</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000332">weyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000333">raḥtīī</w>
+                  <pc xml:id="xTok_000334">?</pc>
+                  <pc xml:id="xTok_000335">"</pc>
+                  <pc join="right" xml:id="xTok_000336">/</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000337">She</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000338">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000339">mimicking</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000340">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000341">dialect</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000342">of</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000343">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000344">ʕawāzim</w>
+                  <pc xml:id="xTok_000345">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a14"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000346">hāḏi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000347"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000349"
+                     join="right">ʕawāzim</w>
+                  <pc xml:id="xTok_000350">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000351">siǧīǧ</w>
+                  <pc join="right" xml:id="xTok_000352">(</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000353"
+                     rend="withDash">tiǧī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000355">č</w>
+                  <pc join="right" xml:id="xTok_000356">)</pc>
+                  <pc join="right" xml:id="xTok_000357">(</pc>
+                  <pc join="right" xml:id="xTok_000358">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000359">ask</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000360">stephan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000361">what</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000362">siǧīǧ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000363">is</w>
+                  <pc xml:id="xTok_000364">)</pc>
+                  <pc xml:id="xTok_000365">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000366">ʕaǧmiyya</w>
+                  <pc join="right" xml:id="xTok_000367">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000368">rīm</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000369"
+                     rend="withDash">š</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000371">inu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000372"
+                     rend="withDash">ġadā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000374">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000375"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000377"
+                     join="right">yowm</w>
+                  <pc xml:id="xTok_000378">?</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000379"
+                     rend="withDash">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000381"
+                     rend="withDash">gālōl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000383"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000384">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000385">riḥti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000386"
+                     rend="withDash">fdēt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000388"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000389">?</pc>
+                  <pc join="right" xml:id="xTok_000390">(</pc>
+                  <pc join="right" xml:id="xTok_000391">(</pc>
+                  <pc join="right" xml:id="xTok_000392">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000393">how</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000394">you</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000395">doing</w>
+                  <pc join="right" xml:id="xTok_000396">)</pc>
+                  <pc xml:id="xTok_000397">)</pc>
+                  <pc xml:id="xTok_000398">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000399">riḥti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000400"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000402"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000404"
+                     join="right">ṭabīb</w>
+                  <pc xml:id="xTok_000405">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000406">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000407"
+                     rend="withDash">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000409"
+                     rend="withDash">gāl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000411"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000413">iš</w>
+                  <pc xml:id="xTok_000414">?</pc>
+                  <pc xml:id="xTok_000415">"</pc>
+                  <pc join="right" xml:id="xTok_000416">/</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000417">She</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000418">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000419">mimicking</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000420">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000421">dialect</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000422">of</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000423">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000424">ʕAǧmān</w>
+                  <pc xml:id="xTok_000425">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a69"
+                  who="#KUW_2022_Inas_Transcription-txt"
+                  end="#T133"
+                  start="#T132">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000426"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000428">ʕaǧam</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000429">dāyman</w>
+                  <pc join="right" xml:id="xTok_000430">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000431">š</w>
+                  <pc xml:id="xTok_000432">"</pc>
+                  <pc xml:id="xTok_000433">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000434">šīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a15"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T58"
+                  start="#T57">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000435"
+                     rend="withDash">maʕan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000437">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000438">lā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000439">tunṣab</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000440">ila</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000441">qabīlat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000442"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000444"
+                     join="right">ʕiǧmān</w>
+                  <pc xml:id="xTok_000445">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000446"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000448"
+                     join="right">maḥāfīḏ̣</w>
+                  <pc xml:id="xTok_000449">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000450">illi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000451">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000452">aṛqa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000453">ṭabaqa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000454"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000456"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000458">ʕiǧmān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000459"
+                     rend="withDash">kalām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000461">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000462">miṯil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000463"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000465">itkallam</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000466">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000467"
+                     rend="withDash">maʕā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000469">č</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000470">čiḏi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a16"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T60"
+                  start="#T59">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000471"
+                     rend="withDash">maʕan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000473">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000474">aṣāl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000475">qabīla</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000476"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000478"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000480">ʕiǧmān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000481">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000482">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000483"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000485">maḥāfīḏ̣</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a17"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000486">sukkān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000487">abu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000488">xlēfa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000489"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000491"
+                     join="right">aṣliyyīn</w>
+                  <pc xml:id="xTok_000492">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000493">sukkān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000494"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000496">mangaf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000497"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000499"
+                     join="right">aṣliyyīn</w>
+                  <pc xml:id="xTok_000500">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000501">sukkān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000502"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000504">finṭās</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000505"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000507">aṣliyyīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a18"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000508">fixiḏ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000509">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000510">afxāḏ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000511"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000513">ʕiǧmān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000514">illi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000515">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000516"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000518">maḥāfīḏ̣</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a19"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000519">ʔamma</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000520"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000522">bāǧi</w>
+                  <pc join="right" xml:id="xTok_000523">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000524"
+                     join="right">bāqi</w>
+                  <pc xml:id="xTok_000525">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000526"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000528"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000530"
+                     join="right">asaf</w>
+                  <pc xml:id="xTok_000531">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000532">uhma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000533">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000534">yinṭuqūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000535"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000537">kalima</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a20"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T68"
+                  start="#T67">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000538"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000540"
+                     join="right">ʕiǧmān</w>
+                  <pc xml:id="xTok_000541">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000542"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000544">ʕiǧmān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000545"
+                     rend="withDash">kā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000547">hum</w>
+                  <pc join="right" xml:id="xTok_000548">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000549">look</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000550">at</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000551">them</w>
+                  <pc xml:id="xTok_000552">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000553"
+                     rend="withDash">ǧirān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000555">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000556">maḥāfīḏ̣</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000557">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000558"
+                     rend="withDash">r</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000560">ruṣṣ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000561"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000563">ʕiǧmān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000564">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000565">mnāṣbīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000566"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000568">ṣabāḥiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a21"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T70"
+                  start="#T69">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000569"
+                     rend="withDash">ʕumur</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000571">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000572">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000573">ʕāyša</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000574"
+                     rend="withDash">maʕā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000576">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000577"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000579">tlaffaḏ̣aw</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000580"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000582">ḥarf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000583"
+                     rend="withDash">aš</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000585">šīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a22"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000586">wa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000587">lākin</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000588">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000589">duxalāʔ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000590">ʕiǧmān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000591">ṯāniyyīn</w>
+                  <pc xml:id="xTok_000592">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000593">uhma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000594">gāmaw</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000595">yanṭuqūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000596"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000598"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000600">ḥurūf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000601">hāḏi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000602">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000603">uhma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000604">yirǧiʕūn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000605"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000607"
+                     join="right">aġlabiyya</w>
+                  <pc xml:id="xTok_000608">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000609">yirǧiʕūn</w>
+                  <pc xml:id="xTok_000610">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000611">tizʕal</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000612"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000614"
+                     join="right">y</w>
+                  <pc xml:id="xTok_000615">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000616">niǧrān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000617"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000619"
+                     rend="withDash">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000621">suʕūdiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a23"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000622">uhma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000623">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000624">yanṭuqūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000625">ḥarf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000626"
+                     rend="withDash">iš</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000628">šīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a24"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T76"
+                  start="#T75">
+                  <pc join="right" xml:id="xTok_000629">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000630"
+                     rend="withDash">šlōn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000632"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000633">?</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000634"
+                     rend="withDash">ʕasā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000636">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000637">ṭayba</w>
+                  <pc xml:id="xTok_000638">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000639"
+                     rend="withDash">ʕasā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000641">š</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000642"
+                     rend="withDash">ib</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000644"
+                     join="right">xēr</w>
+                  <pc xml:id="xTok_000645">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000646">kīf</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000647"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000649"
+                     join="right">iš</w>
+                  <pc xml:id="xTok_000650">?</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000651">šlōn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000652"
+                     rend="withDash">ʕiyāl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000654">iš</w>
+                  <pc xml:id="xTok_000655">?</pc>
+                  <pc xml:id="xTok_000656">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000657">ʕarafti</w>
+                  <pc xml:id="xTok_000658">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a25"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T78"
+                  start="#T77">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000659">ihī</w>
+                  <pc xml:id="xTok_000660">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000661">ī</w>
+                  <pc xml:id="xTok_000662">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000663">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000664">wāyid</w>
+                  <pc join="right" xml:id="xTok_000665">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000666"
+                     join="right">wāǧid</w>
+                  <pc xml:id="xTok_000667">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000668">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000669">intašarat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000670">maʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000671"
+                     rend="withDash">aṭfāl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000673">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000674"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000676"
+                     join="right">ḥīn</w>
+                  <pc xml:id="xTok_000677">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000678">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000679">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000680"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000682">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000683">banāt</w>
+                  <pc xml:id="xTok_000684">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000685">rīm</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000686"
+                     rend="withDash">bint</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000688">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000689"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000691"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000693">madrisa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a26"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000694">sāra</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000695"
+                     rend="withDash">agūl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000697">ha</w>
+                  <pc join="right" xml:id="xTok_000698">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000699">sāra</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000700">šinu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000701"
+                     rend="withDash">f</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000703"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000705">madrasa</w>
+                  <pc xml:id="xTok_000706">?</pc>
+                  <pc xml:id="xTok_000707">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000708">tgūl</w>
+                  <pc xml:id="xTok_000709">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000710">ana</w>
+                  <pc join="right" xml:id="xTok_000711">_</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000712">́xaf</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000713">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000714"
+                     rend="withDash">ṣādiqāt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000716">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000717">ʕawāzim</w>
+                  <pc xml:id="xTok_000718">"</pc>
+                  <pc xml:id="xTok_000719">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000720">ʕawāzīm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a27"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T81"
+                  start="#T80">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000721"
+                     rend="withDash">gitt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000723"
+                     rend="withDash">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000725">ha</w>
+                  <pc join="right" xml:id="xTok_000726">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000727"
+                     join="right">gilt</w>
+                  <pc xml:id="xTok_000728">)</pc>
+                  <pc join="right" xml:id="xTok_000729">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000730">lēš</w>
+                  <pc xml:id="xTok_000731">?</pc>
+                  <pc xml:id="xTok_000732">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000733">tgūl</w>
+                  <pc join="right" xml:id="xTok_000734">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000735">iḏa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000736"
+                     rend="withDash">mā</w>
+                  <pc join="right" xml:id="xTok_000738">_</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000739">́gūl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000740">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000741">ʕāzmiyya</w>
+                  <pc xml:id="xTok_000742">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000743"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000745"
+                     rend="withDash">ykillmūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000747"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000748">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000749"
+                     rend="withDash">yḥibbūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000751">i</w>
+                  <pc join="right" xml:id="xTok_000752">(</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000753"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000755">yḥibbūni</w>
+                  <pc xml:id="xTok_000756">)</pc>
+                  <pc xml:id="xTok_000757">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000758">šūfi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000759"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000761">ʕunṣuriyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000762">beyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000763"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000765">aṭfāl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a28"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000766">intu</w>
+                  <pc join="right" xml:id="xTok_000767">(</pc>
+                  <pc join="right" xml:id="xTok_000768">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000769">not</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000770">intum</w>
+                  <pc join="right" xml:id="xTok_000771">!</pc>
+                  <pc join="right" xml:id="xTok_000772">!</pc>
+                  <pc xml:id="xTok_000773">)</pc>
+                  <pc xml:id="xTok_000774">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000775">ṣġār</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000776">yumma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000777">čān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000778">tgūl</w>
+                  <pc join="right" xml:id="xTok_000779">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000780">lā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000781">ʔana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000782"
+                     rend="withDash">gilt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000784"
+                     rend="withDash">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000786">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000787">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000788">sāra</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000789"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000791"
+                     join="right">ʕazmiyya</w>
+                  <pc xml:id="xTok_000792">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a29"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000793">xāwfa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000794"
+                     rend="withDash">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000796">hum</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000797">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000798">ḥubbat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000799">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000800">banāt</w>
+                  <pc join="right" xml:id="xTok_000801">(</pc>
+                  <pc join="right" xml:id="xTok_000802">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000803">she</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000804">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000805">scared</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000806">of</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000807">them</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000808">and</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000809">she</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000810">loves</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000811">them</w>
+                  <pc join="right" xml:id="xTok_000812">(</pc>
+                  <pc join="right" xml:id="xTok_000813">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000814">more</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000815">than</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000816">her</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000817">family</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000818">that</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000819">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000820">why</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000821">she</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000822">cahnges</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000823">her</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000824">tribes</w>
+                  <pc join="right" xml:id="xTok_000825">)</pc>
+                  <pc join="right" xml:id="xTok_000826">)</pc>
+                  <pc xml:id="xTok_000827">)</pc>
+                  <pc xml:id="xTok_000828">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a30"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T87"
+                  start="#T86">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000829">ī</w>
+                  <pc xml:id="xTok_000830">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000831">maryam</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000832"
+                     rend="withDash">ḥaṣal</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000834">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000835">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000836">hiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000837">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000838">rabʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000839">ibtidāʔi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a31"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T89"
+                  start="#T88">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000840">mawqif</w>
+                  <pc xml:id="xTok_000841">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000842"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000844">ablāt</w>
+                  <pc join="right" xml:id="xTok_000845">(</pc>
+                  <pc join="right" xml:id="xTok_000846">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000847">abla</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000849">teacher</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000851">turkish</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000853">respectable</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000854">woman</w>
+                  <pc xml:id="xTok_000855">)</pc>
+                  <pc xml:id="xTok_000856">)</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000857"
+                     rend="withDash">yisʔilūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000859">ha</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000860">hiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000861">bēḏ̣a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000862">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000863">ḥilwa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000864">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000865">šāgra</w>
+                  <pc xml:id="xTok_000866">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000867">inti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000868">šinu</w>
+                  <pc xml:id="xTok_000869">?</pc>
+                  <pc join="right" xml:id="xTok_000870">(</pc>
+                  <pc xml:id="xTok_000871">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000872">situation</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000873">that</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000874">happened</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000875">in</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000876">front</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000877">of</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000878">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000879">teacher</w>
+                  <pc xml:id="xTok_000880">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000881">she</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000882">was</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000883">white</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000884">and</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000885">pretty</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000886">and</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000887">blonde</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000888">and</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000889">they</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000890">asked</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000891">her</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000892">what</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000893">are</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000894">you</w>
+                  <pc join="right" xml:id="xTok_000895">)</pc>
+                  <pc xml:id="xTok_000896">)</pc>
+                  <pc xml:id="xTok_000897">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a32"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T91"
+                  start="#T90">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000898">čān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000899">iṭṭāliʕ</w>
+                  <pc join="right" xml:id="xTok_000900">(</pc>
+                  <pc join="right" xml:id="xTok_000901">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000902">she</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000903">looked</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000904">at</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000905">all</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000906">her</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000907">friends</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000909">assimilation</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000910">here</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000911">of</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000912">t</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000913">ṭ</w>
+                  <pc xml:id="xTok_000914">)</pc>
+                  <pc xml:id="xTok_000915">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000916">illi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000917"
+                     rend="withDash">ṣadīqāt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000919">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000920"
+                     rend="withDash">kill</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000922">ham</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000923">əʕnūz</w>
+                  <pc xml:id="xTok_000924">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000925">čān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000926">tgūl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000927">ʔana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000928">ʕanīziyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a33"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T93"
+                  start="#T92">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000929">asās</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000930"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000932">tgūl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000933">isim</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000934"
+                     rend="withDash">qabīlat</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000936">ha</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000937"
+                     rend="withDash">yikrihūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000939">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a34"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T95"
+                  start="#T94">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000940">ʕašān</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000941"
+                     rend="withDash">ygūl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000943"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000945">ič</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000946"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000948">ʕaṣabiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000949"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000951">qabaliyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000952">baʕd</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000953"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000955"
+                     join="right">ġazu</w>
+                  <pc xml:id="xTok_000956">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000957">raḥība</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000958">ṣārit</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a58"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000959">qawwiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000960">ḥēl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a35"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T97"
+                  start="#T96">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000961"
+                     rend="withDash">yinbiḏ̣ūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000963">ič</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a59"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000964">xuṣūṣan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000965">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000966">manṭaqat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000967"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000969">ṣabāḥiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a70"
+                  who="#KUW_2022_Inas_Transcription-txt"
+                  end="#T135"
+                  start="#T134">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000970">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000971">ʔana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000972"
+                     rend="withDash">sāmḥī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000974">ni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000975">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000976">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000977">kunt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000978">fākra</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000979">in</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000980"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000982">ʕaṣābiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000983">dāyman</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000984">beyn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000985">Kwēti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000986">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000987">Wāfid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a60"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000988">laʔ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000989">laʔ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000990">abadan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000991">beyn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000992">kuwēyti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000993">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000994">nafs</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000995"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000997">qabīla</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_000998">w</w>
+                  <pc xml:id="xTok_000999">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a36"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T99"
+                  start="#T98">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001000">nafs</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001001"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001003"
+                     join="right">qabīla</w>
+                  <pc xml:id="xTok_001004">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001005"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001007">ʕaks</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001008"
+                     rend="withDash">tlāgī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001010">ni</w>
+                  <pc join="right" xml:id="xTok_001011">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001012">you</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001013">see</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001014">me</w>
+                  <pc xml:id="xTok_001015">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001016">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001017">mrāfǧa</w>
+                  <pc join="right" xml:id="xTok_001018">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001019"
+                     join="right"
+                     rend="withDash">murāfiqa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001021">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001022">befriend</w>
+                  <pc xml:id="xTok_001023">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001024">nās</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001025">ṯānya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001026"
+                     rend="withDash">wa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001028">lā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001029">mrāfǧa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001030">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001031">min</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001032"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001034">qabaliyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a37"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001035">yaʕni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001036"
+                     rend="withDash">ṣadīkt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001038">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001039"
+                     rend="withDash">tilgēn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001041">ha</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001042">libnēniyya</w>
+                  <pc xml:id="xTok_001043">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001044">maṣriyya</w>
+                  <pc xml:id="xTok_001045">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001046"
+                     rend="withDash">ǧārt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001048">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001049">čiḏi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a61"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001050">qabaliyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001051"
+                     rend="withDash">ʕand</w>
+                  <pc join="right" xml:id="xTok_001053">_</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001054">́um</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001055">ʕunṣuriyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001056">kiṯīra</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001057">ǧiddan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001058">ǧiddan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001059">ǧiddan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001060">ǧiddan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a38"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T103"
+                  start="#T102">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001061">bass</w>
+                  <pc xml:id="xTok_001062">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001063">qabaliyya</w>
+                  <pc xml:id="xTok_001064">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001065">yaʕni</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001066"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001068">ḥīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001069">maṯalan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001070">ḥatta</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001071"
+                     rend="withDash">ǧirān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001073"
+                     join="right">i</w>
+                  <pc xml:id="xTok_001074">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001075">mṭēriyya</w>
+                  <pc xml:id="xTok_001076">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001077"
+                     rend="withDash">ǧirān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001079">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001080">ʕiǧmān</w>
+                  <pc xml:id="xTok_001081">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001082"
+                     rend="withDash">ǧirān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001084">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001085">ʕawāzim</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a39"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T105"
+                  start="#T104">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001086"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001088">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001089">ǧāra</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001090">hni</w>
+                  <pc xml:id="xTok_001091">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001092">aḷḷa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001093">yistar</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001094"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001096"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_001097">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001098">sākna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001099">ʕind</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001100">ʕawāzim</w>
+                  <pc xml:id="xTok_001101">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001102">hiyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001103">mṭēriyya</w>
+                  <pc xml:id="xTok_001104">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001105">muḥabbīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001106">tgūl</w>
+                  <pc join="right" xml:id="xTok_001107">"</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001108"
+                     rend="withDash">adizz</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001110"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001112">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001113">hadāya</w>
+                  <pc xml:id="xTok_001114">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001115"
+                     rend="withDash">anazzil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001117">hum</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001118">akil</w>
+                  <pc xml:id="xTok_001119">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001120"
+                     rend="withDash">mā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001122"
+                     rend="withDash">yabūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001124"
+                     join="right">ni</w>
+                  <pc xml:id="xTok_001125">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a40"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T107"
+                  start="#T106">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001126">gilt</w>
+                  <pc join="right" xml:id="xTok_001127">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001128">yimkin</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001129">la</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001130"
+                     rend="withDash">ʕann</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001132">ač</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001133">mṭēriyya</w>
+                  <pc xml:id="xTok_001134">"</pc>
+                  <pc xml:id="xTok_001135">,</pc>
+                  <pc join="right" xml:id="xTok_001136">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001137">waḷḷa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001138">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001139"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001141">fakkarti</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001142"
+                     rend="withDash">b</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001144">hā</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001145"
+                     rend="withDash">š</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001147"
+                     join="right">šeyʔ</w>
+                  <pc xml:id="xTok_001148">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001149">gilt</w>
+                  <pc join="right" xml:id="xTok_001150">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001151">uhma</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001152">ʕawāzim</w>
+                  <pc join="right" xml:id="xTok_001153">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001154">ʕawāzim</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001155"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001157">tibi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001158">illa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001159"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001161"
+                     join="right">ʕawāzim</w>
+                  <pc xml:id="xTok_001162">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a41"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T109"
+                  start="#T108">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001163">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001164"
+                     rend="withDash">tkallam</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001166"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001168">ič</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001169">ʕan</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001170"
+                     rend="withDash">dawām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001172"
+                     join="right">i</w>
+                  <pc xml:id="xTok_001173">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001174"
+                     rend="withDash">dawām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001176">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001177">ana</w>
+                  <pc xml:id="xTok_001178">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001179">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001180"
+                     rend="withDash">giddām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001182">ič</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001183">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001184">miṯāl</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001185">ḥay</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a42"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T111"
+                  start="#T110">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001186"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001188">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001189">ʕunṣuriyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001190">kbīra</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001191"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001193"
+                     rend="withDash">id</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001195"
+                     join="right">dawām</w>
+                  <pc xml:id="xTok_001196">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001197">ʕunṣuriyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001198">kbīra</w>
+                  <pc xml:id="xTok_001199">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001200">beyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001201">šīʕa</w>
+                  <pc xml:id="xTok_001202">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001203">beyn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001204">sinna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001205">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001206">beyn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001207">qabāliyyīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a71"
+                  who="#KUW_2022_Inas_Transcription-txt"
+                  end="#T137"
+                  start="#T136">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001208">inti</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001209">weyn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001210"
+                     rend="withDash">dawām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001212">ik</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001213"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001215">ḥaqqa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a43"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T113"
+                  start="#T112">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001216">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001217"
+                     rend="withDash">dawām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001219">i</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001220"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_001222">.</pc>
+                  <pc join="right" xml:id="xTok_001223">.</pc>
+                  <pc xml:id="xTok_001224">.</pc>
+                  <pc xml:id="xTok_001225">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001226"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001228">heyʔa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001229"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001231"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001233">quwwa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001234"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001236">ʕamma</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a44"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T115"
+                  start="#T114">
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001237">ī</w>
+                  <pc xml:id="xTok_001238">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001239">heyʔa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001240"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001242"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001244">quwwa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001245"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001247">ʕamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001248">bass</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001249">ṭabʕi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001250"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001252">kwēytiyyīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001253">mū</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001254"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001256">wāfidīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a45"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T117"
+                  start="#T116">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001257">ē</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001258"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001260">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001261">šīʕa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001262">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001263">tlāgīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001264">banāt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001265">šīʕa</w>
+                  <pc xml:id="xTok_001266">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001267">li</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001268">daraǧat</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001269"
+                     rend="withDash">ʕinda</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001271">na</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001272">yōm</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001273"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001275">ayyām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001276">mufattiš</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001277">šīʕi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a46"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T119"
+                  start="#T118">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001278">yāb</w>
+                  <pc join="right" xml:id="xTok_001279">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001280"
+                     join="right">ǧāb</w>
+                  <pc xml:id="xTok_001281">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001282">ḥala</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001283"
+                     rend="withDash">ǧāyt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001285">a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001286">tarkiyya</w>
+                  <pc join="right" xml:id="xTok_001287">(</pc>
+                  <pc join="right" xml:id="xTok_001288">(</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001289">raise</w>
+                  <pc xml:id="xTok_001290">)</pc>
+                  <pc xml:id="xTok_001291">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001292">aw</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001293">šay</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001294">yāyib</w>
+                  <pc join="right" xml:id="xTok_001295">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001296"
+                     join="right">ǧāyib</w>
+                  <pc xml:id="xTok_001297">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001298">faṭāyir</w>
+                  <pc join="right" xml:id="xTok_001299">(</pc>
+                  <pc join="right" xml:id="xTok_001300">(</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001301">mimosa</w>
+                  <pc xml:id="xTok_001302">)</pc>
+                  <pc xml:id="xTok_001303">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001304">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001305">sweets</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001306">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001307">čiḏi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a47"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T121"
+                  start="#T120">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001308">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001309"
+                     rend="withDash">baʕaṯ</w>
+                  <pc join="right" xml:id="xTok_001311">_</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001312">́a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001313">maʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001314"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001316">border</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001317"
+                     rend="withDash">l</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001319"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001321">banāt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001322">dāxila</w>
+                  <pc join="right" xml:id="xTok_001323">(</pc>
+                  <pc join="right" xml:id="xTok_001324">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001325">border</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001326">might</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001327">mean</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001328">secretary</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001329">or</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001330">reception</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001331">in</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001332">this</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001333">case</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001335">this</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001336">is</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001337">from</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001338">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001339">oil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001340">rigs</w>
+                  <pc xml:id="xTok_001341">.</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001342">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001343">person</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001344">on</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001345">the</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001346">front</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001347">used</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001348">to</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001349">be</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001350">called</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001351">the</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001352">border</w>
+                  <pc xml:id="xTok_001353">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001354">so</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001355">now</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001356">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001357">has</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001358">a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001359">wider</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001360">meaning</w>
+                  <pc xml:id="xTok_001361">)</pc>
+                  <pc xml:id="xTok_001362">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a48"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T123"
+                  start="#T122">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001363">kānu</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001364">gaʕdīn</w>
+                  <pc join="right" xml:id="xTok_001365">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001366">šinu</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001367">hāḏa</w>
+                  <pc xml:id="xTok_001368">?</pc>
+                  <pc xml:id="xTok_001369">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001370">gāl</w>
+                  <pc join="right" xml:id="xTok_001371">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001372">hāḏa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001373">raʔīs</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001374">qisim</w>
+                  <pc xml:id="xTok_001375">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001376">bū</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001377">yūsif</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001378">yǧīb</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001379">sweet</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001380">w</w>
+                  <pc join="right" xml:id="xTok_001381">.</pc>
+                  <pc join="right" xml:id="xTok_001382">.</pc>
+                  <pc xml:id="xTok_001383">.</pc>
+                  <pc xml:id="xTok_001384">"</pc>
+                  <pc join="right" xml:id="xTok_001385">"</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001386">ṭallaʕ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001387">ṭallaʕ</w>
+                  <pc xml:id="xTok_001388">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001389">šīʕi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001390"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001392">nākil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001393">akil</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001394"
+                     rend="withDash">f</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001396">nafs</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001397"
+                     rend="withDash">iš</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001399"
+                     join="right">šīʕa</w>
+                  <pc xml:id="xTok_001400">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a49"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T125"
+                  start="#T124">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001401">ī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001402">waḷḷa</w>
+                  <pc xml:id="xTok_001403">!</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001404">tšūfīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001405"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001407">awwal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a62"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001408">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001409">lamma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001410">daxalt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001411"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001413"
+                     join="right">ǧāmiʕa</w>
+                  <pc xml:id="xTok_001414">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001415"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001417"
+                     join="right">AUK</w>
+                  <pc xml:id="xTok_001418">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001419">awwal</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001420">šay</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001421"
+                     rend="withDash">ʕallimūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001423">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001424">ya</w>
+                  <pc join="right" xml:id="xTok_001425">(</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001426">to</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001427">me</w>
+                  <pc xml:id="xTok_001428">)</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001429">iḥtirām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001430"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_001432">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001433"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001435">qabāʔil</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001436">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001437">iḥtirām</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001438">qubūl</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001439"
+                     rend="withDash">al</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001441">āxar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a63"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001442">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001443">hāḏi</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001444">hāḏi</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001445"
+                     rend="withDash">š</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001447">šay</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001448">ana</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001449"
+                     rend="withDash">taʕalamt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001451">a</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001452">faqaṭ</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001453"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001455"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001457">AUK</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a64"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001458">ana</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001459">sābiqan</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001460"
+                     rend="withDash">laʔan</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001462">ni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001463">kint</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001464">mitrābya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001465"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001467"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001469">ṣabāḥiyya</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001470">w</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001471"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001473">taʕṯīr</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001474"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_001476">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001477"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001479">biʕa</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001480"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001482">y</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001483">inna</w>
+                  <pc xml:id="xTok_001484">,</pc>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001485"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001487">qabaliyya</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001488"
+                     rend="withDash">ʕand</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001490">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001491">kānit</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001492">kibīra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a65"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001493">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001494">limma</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001495">daxalt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001496"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001498">AUK</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001499">šift</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001500"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001502">tanawwuʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001503">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001504">šift</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001505"
+                     rend="withDash">iṯ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001507">ṯaqāfa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001508">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001509">kān</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001510">fī</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001511">akṯar</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001512">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001513">madda</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001514"
+                     rend="withDash">taʕallim</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001516">na</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001517">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001518">naksir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001519"
+                     join="right"
+                     rend="withDash">il</w>
+                  <pc xml:id="xTok_001521">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001522">naksir</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001523"
+                     join="right"
+                     rend="withDash">il</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001525"
+                     rend="withDash">it</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001527">taʕaṣṣubāt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001528">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001529">naksir</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001530"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001532">ʕunṣuriyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a51"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T127"
+                  start="#T126">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001533">tišribīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001534">čāy</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001535">aw</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001536">gahwa</w>
+                  <pc xml:id="xTok_001537">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a66"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001538">fā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001539">bideyt</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001540">min</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001541">haḏāk</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001542"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001544">waqt</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001545"
+                     rend="withDash">inn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001547">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001548">aġayyir</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001549"
+                     rend="withDash">nafs</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001551">i</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001552">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001553">atʕallim</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001554">inna</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001555">yaʕni</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001556">aqbal</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001557"
+                     rend="withDash">il</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001559">āxar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a52"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T129"
+                  start="#T128">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001560">čay</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001561"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001563">tišrūbīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001564">čay</w>
+                  <pc xml:id="xTok_001565">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a67"
+                  who="#KUW_2022_Speaker13_Transcription-txt"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001566">w</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001567">inna</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001568"
+                     rend="withDash">mā</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001570">ykūn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001571">fī</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001572">ʕanṣuriyya</w>
+                  <pc xml:id="xTok_001573">,</pc>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001574">maʕa</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001575">madāris</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001576">sabʕ</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001577">isnīn</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001578">taġayyart</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_a53"
+                  who="#KUW_2022_Speaker14_Transcription-txt"
+                  end="#T131"
+                  start="#T130">
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001579">tifṭarīn</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001580"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001582">ina</w>
+                  <w join="right"
+                     xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001583"
+                     rend="withDash">l</w>
+                  <w xml:id="KUW_2022_Speaker13_ConversationXrenig_1_6_racism_dialects_xTok_001585"
+                     join="right">yowm</w>
+                  <pc xml:id="xTok_001586">?</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
