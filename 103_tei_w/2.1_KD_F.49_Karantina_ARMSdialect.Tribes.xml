@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2024-11-25T11:31:57.424343Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">2.1_KD_F.49_Karantina_ARMSdialect.Tribes</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>Principal investigator</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:RZ">Maria Rebecca Zarb</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:JD">Johanna Doppelbauer</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:SK">Stanley Kochem</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GiK">Gisela Kitzler</persName>
+               <resp>Post-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AT">Antonella Torzullo</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:TD">Terlan Djavadova</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CL">Claudia Laaber</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:GuK">Gunda Kinzl</persName>
+               <resp>Prae-doc researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:VE">Veronika Engler</persName>
+               <resp>Pre-MA researcher</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:CM">Charly Mörth</persName>
+               <resp>National Project Partner</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AH">Angelika Hechtl</persName>
+               <resp>Technical Staff</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">2.1_KD_F.49_Karantina_ARMSdialect.Tribes</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.21875" type="audio">
+                  <date when="2022-03-01"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during <ref target="sources:LEB_2022_AID">Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</ref>
+                  </p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 2.1_KD_F.49_Karantina_ARMSdialect.Tribes</head>
+               <person sameAs="corpus:LEB_KAR_2022_KD_F.49_Speaker14">
+                  <name type="pseudonym">LEB_KAR_2022_KD_F.49_Speaker14</name>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <setting>
+               <placeName sameAs="geo:">El-Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:TribalHistory"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="107985" since="#T0" xml:id="T1"/>
+         <when interval="115791" since="#T0" xml:id="T2"/>
+         <when interval="116211" since="#T0" xml:id="T37"/>
+         <when interval="123000" since="#T0" xml:id="T38"/>
+         <when interval="125253" since="#T0" xml:id="T39"/>
+         <when interval="126040" since="#T0" xml:id="T3"/>
+         <when interval="130014" since="#T0" xml:id="T4"/>
+         <when interval="131437" since="#T0" xml:id="T40"/>
+         <when interval="135712" since="#T0" xml:id="T41"/>
+         <when interval="135797" since="#T0" xml:id="T42"/>
+         <when interval="140959" since="#T0" xml:id="T5"/>
+         <when interval="141430" since="#T0" xml:id="T43"/>
+         <when interval="141978" since="#T0" xml:id="T44"/>
+         <when interval="141996" since="#T0" xml:id="T6"/>
+         <when interval="147104" since="#T0" xml:id="T45"/>
+         <when interval="149868" since="#T0" xml:id="T46"/>
+         <when interval="150036" since="#T0" xml:id="T47"/>
+         <when interval="151850" since="#T0" xml:id="T48"/>
+         <when interval="152310" since="#T0" xml:id="T49"/>
+         <when interval="154405" since="#T0" xml:id="T50"/>
+         <when interval="155163" since="#T0" xml:id="T51"/>
+         <when interval="156338" since="#T0" xml:id="T52"/>
+         <when interval="157872" since="#T0" xml:id="T7"/>
+         <when interval="158488" since="#T0" xml:id="T8"/>
+         <when interval="158510" since="#T0" xml:id="T53"/>
+         <when interval="158620" since="#T0" xml:id="T54"/>
+         <when interval="159772" since="#T0" xml:id="T55"/>
+         <when interval="159953" since="#T0" xml:id="T56"/>
+         <when interval="162254" since="#T0" xml:id="T57"/>
+         <when interval="162563" since="#T0" xml:id="T58"/>
+         <when interval="166638" since="#T0" xml:id="T59"/>
+         <when interval="167151" since="#T0" xml:id="T60"/>
+         <when interval="170368" since="#T0" xml:id="T61"/>
+         <when interval="170438" since="#T0" xml:id="T62"/>
+         <when interval="173024" since="#T0" xml:id="T63"/>
+         <when interval="173214" since="#T0" xml:id="T64"/>
+         <when interval="175179" since="#T0" xml:id="T65"/>
+         <when interval="175758" since="#T0" xml:id="T66"/>
+         <when interval="176941" since="#T0" xml:id="T67"/>
+         <when interval="176958" since="#T0" xml:id="T9"/>
+         <when interval="178380" since="#T0" xml:id="T68"/>
+         <when interval="178512" since="#T0" xml:id="T10"/>
+         <when interval="179788" since="#T0" xml:id="T69"/>
+         <when interval="179869" since="#T0" xml:id="T70"/>
+         <when interval="183746" since="#T0" xml:id="T71"/>
+         <when interval="185351" since="#T0" xml:id="T72"/>
+         <when interval="185514" since="#T0" xml:id="T73"/>
+         <when interval="188029" since="#T0" xml:id="T74"/>
+         <when interval="188176" since="#T0" xml:id="T75"/>
+         <when interval="189765" since="#T0" xml:id="T76"/>
+         <when interval="189990" since="#T0" xml:id="T77"/>
+         <when interval="192180" since="#T0" xml:id="T78"/>
+         <when interval="192283" since="#T0" xml:id="T11"/>
+         <when interval="193012" since="#T0" xml:id="T12"/>
+         <when interval="193402" since="#T0" xml:id="T79"/>
+         <when interval="194344" since="#T0" xml:id="T80"/>
+         <when interval="194433" since="#T0" xml:id="T81"/>
+         <when interval="198417" since="#T0" xml:id="T82"/>
+         <when interval="198887" since="#T0" xml:id="T13"/>
+         <when interval="199545" since="#T0" xml:id="T83"/>
+         <when interval="199761" since="#T0" xml:id="T14"/>
+         <when interval="201134" since="#T0" xml:id="T15"/>
+         <when interval="201560" since="#T0" xml:id="T84"/>
+         <when interval="201899" since="#T0" xml:id="T85"/>
+         <when interval="202030" since="#T0" xml:id="T16"/>
+         <when interval="203452" since="#T0" xml:id="T17"/>
+         <when interval="203539" since="#T0" xml:id="T86"/>
+         <when interval="205742" since="#T0" xml:id="T87"/>
+         <when interval="206936" since="#T0" xml:id="T18"/>
+         <when interval="208223" since="#T0" xml:id="T88"/>
+         <when interval="214164" since="#T0" xml:id="T89"/>
+         <when interval="216833" since="#T0" xml:id="T90"/>
+         <when interval="216932" since="#T0" xml:id="T91"/>
+         <when interval="219185" since="#T0" xml:id="T92"/>
+         <when interval="219284" since="#T0" xml:id="T93"/>
+         <when interval="221991" since="#T0" xml:id="T94"/>
+         <when interval="222152" since="#T0" xml:id="T95"/>
+         <when interval="223010" since="#T0" xml:id="T19"/>
+         <when interval="223244" since="#T0" xml:id="T96"/>
+         <when interval="224579" since="#T0" xml:id="T97"/>
+         <when interval="225365" since="#T0" xml:id="T20"/>
+         <when interval="229283" since="#T0" xml:id="T98"/>
+         <when interval="230315" since="#T0" xml:id="T99"/>
+         <when interval="230434" since="#T0" xml:id="T100"/>
+         <when interval="231948" since="#T0" xml:id="T101"/>
+         <when interval="232118" since="#T0" xml:id="T21"/>
+         <when interval="234340" since="#T0" xml:id="T22"/>
+         <when interval="234492" since="#T0" xml:id="T102"/>
+         <when interval="236776" since="#T0" xml:id="T103"/>
+         <when interval="237063" since="#T0" xml:id="T23"/>
+         <when interval="238815" since="#T0" xml:id="T24"/>
+         <when interval="239010" since="#T0" xml:id="T104"/>
+         <when interval="241258" since="#T0" xml:id="T25"/>
+         <when interval="241396" since="#T0" xml:id="T105"/>
+         <when interval="244424" since="#T0" xml:id="T106"/>
+         <when interval="245683" since="#T0" xml:id="T26"/>
+         <when interval="245784" since="#T0" xml:id="T27"/>
+         <when interval="246313" since="#T0" xml:id="T107"/>
+         <when interval="247293" since="#T0" xml:id="T108"/>
+         <when interval="247669" since="#T0" xml:id="T28"/>
+         <when interval="248665" since="#T0" xml:id="T109"/>
+         <when interval="248686" since="#T0" xml:id="T29"/>
+         <when interval="254212" since="#T0" xml:id="T110"/>
+         <when interval="255059" since="#T0" xml:id="T30"/>
+         <when interval="257529" since="#T0" xml:id="T111"/>
+         <when interval="257682" since="#T0" xml:id="T112"/>
+         <when interval="260880" since="#T0" xml:id="T113"/>
+         <when interval="261089" since="#T0" xml:id="T114"/>
+         <when interval="263701" since="#T0" xml:id="T115"/>
+         <when interval="264039" since="#T0" xml:id="T116"/>
+         <when interval="265480" since="#T0" xml:id="T117"/>
+         <when interval="265751" since="#T0" xml:id="T118"/>
+         <when interval="266491" since="#T0" xml:id="T119"/>
+         <when interval="266566" since="#T0" xml:id="T120"/>
+         <when interval="268759" since="#T0" xml:id="T121"/>
+         <when interval="268825" since="#T0" xml:id="T122"/>
+         <when interval="272764" since="#T0" xml:id="T123"/>
+         <when interval="272823" since="#T0" xml:id="T124"/>
+         <when interval="273850" since="#T0" xml:id="T125"/>
+         <when interval="275295" since="#T0" xml:id="T126"/>
+         <when interval="275370" since="#T0" xml:id="T127"/>
+         <when interval="276671" since="#T0" xml:id="T128"/>
+         <when interval="276767" since="#T0" xml:id="T129"/>
+         <when interval="281170" since="#T0" xml:id="T130"/>
+         <when interval="281428" since="#T0" xml:id="T31"/>
+         <when interval="282505" since="#T0" xml:id="T131"/>
+         <when interval="282828" since="#T0" xml:id="T32"/>
+         <when interval="283630" since="#T0" xml:id="T132"/>
+         <when interval="283759" since="#T0" xml:id="T133"/>
+         <when interval="285582" since="#T0" xml:id="T134"/>
+         <when interval="285647" since="#T0" xml:id="T135"/>
+         <when interval="290023" since="#T0" xml:id="T136"/>
+         <when interval="290641" since="#T0" xml:id="T137"/>
+         <when interval="294865" since="#T0" xml:id="T138"/>
+         <when interval="296377" since="#T0" xml:id="T139"/>
+         <when interval="297342" since="#T0" xml:id="T33"/>
+         <when interval="298208" since="#T0" xml:id="T140"/>
+         <when interval="298981" since="#T0" xml:id="T141"/>
+         <when interval="299741" since="#T0" xml:id="T34"/>
+         <when interval="302452" since="#T0" xml:id="T142"/>
+         <when interval="302519" since="#T0" xml:id="T143"/>
+         <when interval="307014" since="#T0" xml:id="T144"/>
+         <when interval="307508" since="#T0" xml:id="T145"/>
+         <when interval="307988" since="#T0" xml:id="T146"/>
+         <when interval="308387" since="#T0" xml:id="T147"/>
+         <when interval="310812" since="#T0" xml:id="T35"/>
+         <when interval="310905" since="#T0" xml:id="T148"/>
+         <when interval="311985" since="#T0" xml:id="T149"/>
+         <when interval="312281" since="#T0" xml:id="T36"/>
+         <when interval="314283" since="#T0" xml:id="T150"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T150</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a62"
+                  who="#CL"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000001"
+                     rend="withDash">bidd</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000003">i</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000004"
+                     rend="withDash">ʔasʔal</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000006">ik</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000007">ʔiza</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000008"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000010">taʕrfi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000011">ʔaktar</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000012">ʕan</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000013"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000015">lahžāt</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000016"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000018">badawiyya</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000019"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000021"
+                     join="right">lubnān</w>
+                  <pc xml:id="xTok_000022">.</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000023">wēn</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000024"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000026">tinḥaka</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000027">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000028">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000029">farq</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000030">bēn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000031">hāy</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000032"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000034"
+                     join="right">lahžāt</w>
+                  <pc xml:id="xTok_000035">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a1"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000036">lēki</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000037">ʔaktar</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000038">šī</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000039">niḥna</w>
+                  <pc xml:id="xTok_000040">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000041">yaʕn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000042">i</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000043">niḥna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000044">mʔarrabīn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000045">min</w>
+                  <pc join="right" xml:id="xTok_000046">.</pc>
+                  <pc xml:id="xTok_000047">.</pc>
+                  <pc xml:id="xTok_000048">.</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000049">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000050">falasṭīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a2"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000051">liʔan</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000052">niḥna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000053">žazīra</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000054">ʕarabiyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a63"
+                  who="#CL"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000055">bass</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000056">ʔinti</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000057">ʔaṣlan</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000058">min</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000059"
+                     rend="withDash">is</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000061"
+                     join="right">sʕūdiyye</w>
+                  <pc xml:id="xTok_000062">.</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000063">miš</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000064">inti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000065">bass</w>
+                  <pc join="right" xml:id="xTok_000066">.</pc>
+                  <pc xml:id="xTok_000067">.</pc>
+                  <pc xml:id="xTok_000068">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a3"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T41"
+                  start="#T40">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000069"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000071">yʔūlu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000072">sažarat</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000073"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000075"
+                     join="right">ʕāyle</w>
+                  <pc xml:id="xTok_000076">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000077">ma</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000078"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000080">yʔūlu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000081">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000082">sažra</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000083"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000085"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000087"
+                     join="right">ʕāyle</w>
+                  <pc xml:id="xTok_000088">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a4"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000089">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000090">niḥna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000091">ʔiza</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000092"
+                     rend="withDash">m</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000094">niržaʕ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000095"
+                     rend="withDash">m</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000097">niržaʕ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000098"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000100"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000102">ʔadīm</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000103"
+                     rend="withDash">əl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000105">ʔadīm</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000106"
+                     rend="withDash">əl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000108"
+                     join="right">ʔadīm</w>
+                  <pc xml:id="xTok_000109">,</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000110"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000112">yʔūlu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000113">ʔinno</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000114">sʕūdiyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a64"
+                  who="#CL"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000115"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000117">ʕanaza</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a5"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000118">min</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000119">ʕaneza</w>
+                  <pc xml:id="xTok_000120">.</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000121">ʕarifti</w>
+                  <pc xml:id="xTok_000122">?</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000123">yaʕni</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000124"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000126">ʔabīle</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000127">hayde</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000128">hēke</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000129"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000131">ətkūn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000132">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000133">hunīke</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a6"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000134">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000135">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000136">wāḥad</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000137">tfarraʔu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a7"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000138">illi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000139">ʔiža</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000140"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000142">libnēn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000143">illi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000144">rāḥ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000145">ʕala</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a8"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T50"
+                  start="#T49">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000146">sūriyya</w>
+                  <pc xml:id="xTok_000147">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000148">hallaʔ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000149"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000151">i</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000152"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000154">sūriyya</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000155">ʔarāyib</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a9"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T52"
+                  start="#T51">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000156"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000158"
+                     rend="withDash">yiʔrabū</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000160">ni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a10"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000161">bass</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000162">ʔinno</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000163">hinni</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000164"
+                     rend="withDash">mann</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000166">un</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000167">libnāniyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a65"
+                  who="#CL"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000168">OK</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a11"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000169">hinni</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000170">sūriyyīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a12"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000171">falasṭīn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000172">fī</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000173"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000175">na</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000176">ʔarāyib</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000177">niḥna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a13"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000178">yaʕni</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000179">waʔta</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000180">niḥna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000181">šufna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000182">sažart</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000183"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000185"
+                     join="right">ʕāyle</w>
+                  <pc xml:id="xTok_000186">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000187">ʕala</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000188"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000190">gūgel</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000191"
+                     rend="withDash">ṭallaʕnē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000193">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a14"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000194">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000195">ṭuliʕ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000196">ʔinno</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000197">ktīr</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000198">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000199">bēt</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000200"
+                     rend="withDash">la</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000202">nʔūl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a15"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000203">la</w>
+                  <pc join="right" xml:id="xTok_000204">.</pc>
+                  <pc xml:id="xTok_000205">.</pc>
+                  <pc xml:id="xTok_000206">.</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000207"
+                     rend="withDash">is</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000209">sawālma</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a16"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000210">hinni</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000211"
+                     rend="withDash">is</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000213">sawālma</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a17"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T67"
+                  start="#T66">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000214">ʕašīra</w>
+                  <pc xml:id="xTok_000215">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000216">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a66"
+                  who="#CL"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000217">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000218">ʕarab</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000219"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000221"
+                     join="right">maslax</w>
+                  <pc xml:id="xTok_000222">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a18"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000223">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000224">ʕarab</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000225"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000227">maslax</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a19"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000228">ē</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000229">hallaʔ</w>
+                  <pc xml:id="xTok_000230">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000231">huwwe</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000232">ʕarnūsi</w>
+                  <pc xml:id="xTok_000233">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000234">ʕarifti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000235">kīf</w>
+                  <pc xml:id="xTok_000236">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a20"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000237">ʔana</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000238">lāʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a21"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000239">hallaʔ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000240">hāda</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000241"
+                     rend="withDash">š</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000243">šābb</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000244">kamēn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000245">min</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000246"
+                     rend="withDash">əl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000248"
+                     join="right">ʕarānsa</w>
+                  <pc xml:id="xTok_000249">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a22"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T76"
+                  start="#T75">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000250">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000251">nʕīmāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a23"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T78"
+                  start="#T77">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000252">ḥkīti</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000253">maʕ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000254">ḥada</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000255">nʕēmi</w>
+                  <pc xml:id="xTok_000256">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a67"
+                  who="#CL"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000257">ā</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a24"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000258">ḥkīti</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000259">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a25"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000260">fī</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000261">nʕīmāt</w>
+                  <pc xml:id="xTok_000262">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000263">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000264">zrēžāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a68"
+                  who="#CL"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000265">zreyqāt</w>
+                  <pc xml:id="xTok_000266">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a26"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T84"
+                  start="#T83">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000267"
+                     rend="withDash">iz</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000269"
+                     join="right">zreyqāt</w>
+                  <pc xml:id="xTok_000270">?</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000271">huwwe</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000272">niḥna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a69"
+                  who="#CL"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000273">fi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000274">xalde</w>
+                  <pc xml:id="xTok_000275">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a27"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T86"
+                  start="#T85">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000276">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000277">niḥna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000278">hinni</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000279">kamēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a70"
+                  who="#CL"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000280">ā</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000281">ok</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000282">fi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000283">karantīna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a28"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T88"
+                  start="#T87">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000284">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000285">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000286">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000287">niḥna</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000288"
+                     rend="withDash">minn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000290">un</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a29"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T89"
+                  start="#T88">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000291">ʕarifti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000292">kīf</w>
+                  <pc xml:id="xTok_000293">?</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000294">ma</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000295">ʕam</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000296"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000298"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000300">ik</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000301"
+                     rend="withDash">iž</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000303"
+                     join="right">židd</w>
+                  <pc xml:id="xTok_000304">,</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000305">bass</w>
+                  <pc xml:id="xTok_000306">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000307">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000308">židd</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000309">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000310">ʔaw</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000311">židd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a30"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T90"
+                  start="#T89">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000312">haydōle</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000313">rāḥu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000314">hēk</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000315">haydōl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000316">rāḥu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000317">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a31"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T92"
+                  start="#T91">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000318">bass</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000319">ma</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000320"
+                     rend="withDash">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000322">un</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000323">wāḥad</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a32"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T94"
+                  start="#T93">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000324"
+                     rend="withDash">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000326">um</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000327">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000328">nafs</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000329"
+                     rend="withDash">iž</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000331">židd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a33"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T96"
+                  start="#T95">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000332">haydi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000333">hiyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a71"
+                  who="#CL"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000334"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000336">lubnān</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000337">fī</w>
+                  <pc join="right" xml:id="xTok_000338">.</pc>
+                  <pc join="right" xml:id="xTok_000339">.</pc>
+                  <pc xml:id="xTok_000340">.</pc>
+                  <pc xml:id="xTok_000341">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a34"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T98"
+                  start="#T97">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000342">əktīr</w>
+                  <pc xml:id="xTok_000343">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000344">fī</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000345">ē</w>
+                  <pc xml:id="xTok_000346">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000347">fī</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000348"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000350">ṭrāḅlus</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000351">əktīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a35"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T99"
+                  start="#T98">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000352">fī</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000353"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000355"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000357">bʔāʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a36"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000358">ṭlaʕti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000359"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000361"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000363"
+                     join="right">bʔāʕ</w>
+                  <pc xml:id="xTok_000364">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a72"
+                  who="#CL"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000365"
+                     rend="withDash">fi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000367"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000369">ʔusbūʕ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000370"
+                     rend="withDash">əž</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000372">žēyy</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000373">nšaḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a37"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T103"
+                  start="#T102">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000374"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000376"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000378">bʔāʕ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000379">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000380">kammiyye</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000381">kbīre</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a73"
+                  who="#CL"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000382"
+                     rend="withDash">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000384">inti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000385"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000387">tifhami</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000388"
+                     rend="withDash">kull</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000390"
+                     join="right">hum</w>
+                  <pc xml:id="xTok_000391">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a38"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T105"
+                  start="#T104">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000392">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000393">ē</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000394"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000396">ifham</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000397"
+                     rend="withDash">luġit</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000399">un</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a74"
+                  who="#CL"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000400">bass</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000401">inti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000402"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000404">tiḥki</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000405">lahǧa</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000406">badawiyya</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000407">šwayy</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000408">maʕ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000409"
+                     rend="withDash">ʕāylt</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000411">ik</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000412">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000413">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a39"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T107"
+                  start="#T106">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000414">ē</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000415">maʕ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000416"
+                     rend="withDash">ʕāylt</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000418">i</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000419">ṣaḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a75"
+                  who="#CL"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000420">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000421">lamma</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000422">kunt</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000423">ṣġīre</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000424">kamān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a40"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T109"
+                  start="#T108">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000425">ṣaḥḥ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000426">ʔakīd</w>
+                  <pc xml:id="xTok_000427">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000428">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a76"
+                  who="#CL"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000429">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000430">lēš</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000431">ma</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000432"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000434">tiḥki</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000435"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000437">lahǧa</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000438"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000440">badawiyye</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000441">ma</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000442"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000444">aʕrif</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000445">masalan</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000446">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000447">Beyrūt</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000448">ʔaw</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a41"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T111"
+                  start="#T110">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000449">lāʔ</w>
+                  <pc xml:id="xTok_000450">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000451">miš</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000452">hēke</w>
+                  <pc xml:id="xTok_000453">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000454">liʔanno</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000455">niḥna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a42"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T113"
+                  start="#T112">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000456">yaʕni</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000457">niḥna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000458">kinna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000459">ʔawwal</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000460">šī</w>
+                  <pc xml:id="xTok_000461">,</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000462"
+                     rend="withDash">ʔimm</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000464">i</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000465">w</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000466"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000468">y</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a43"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T115"
+                  start="#T114">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000469">w</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000470"
+                     rend="withDash">əxwāl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000472">i</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000473">w</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000474"
+                     rend="withDash">ʕmūm</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000476">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a44"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T117"
+                  start="#T116">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000477">kānu</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000478"
+                     rend="withDash">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000480">un</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000481">maʕ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000482">baʕaḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a45"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T119"
+                  start="#T118">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000483">māši</w>
+                  <pc xml:id="xTok_000484">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a46"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T121"
+                  start="#T120">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000485"
+                     rend="withDash">əl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000487">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000488">kān</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000489">hōn</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000490"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000492"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000494">karantīna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a47"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T123"
+                  start="#T122">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000495">kēn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000496">ʕalaṭūl</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000497"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000499"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000501">ḥaki</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000502"
+                     rend="withDash">yḍall</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000504">o</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000505">pratīk</w>
+                  <pc join="right" xml:id="xTok_000506">(</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000507">pratique</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000508">FR</w>
+                  <pc xml:id="xTok_000509">)</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a48"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T125"
+                  start="#T124">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000510">ma</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000511">hēn</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000512"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000514">ənʔūl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a49"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T126"
+                  start="#T125">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000515">ʔinno</w>
+                  <pc xml:id="xTok_000516">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000517">yinḥaka</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a50"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T128"
+                  start="#T127">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000518">tʕawwadu</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000519"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000521">ha</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000522"
+                     rend="withDash">š</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000524">šī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000525">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a51"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T130"
+                  start="#T129">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000526">waʔta</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000527">ṣār</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000528"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000530">ḥarəb</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000531"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000533"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000535">karantīna</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000536">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000537">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000538">wāḥad</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000539">rāḥ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000540"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000542">mayle</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a77"
+                  who="#CL"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000543"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000545">ḥarb</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000546"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000548"
+                     join="right">ʔahliyye</w>
+                  <pc xml:id="xTok_000549">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a52"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T132"
+                  start="#T131">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000550"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000552">ḥarb</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000553"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000555">ʔahliyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a53"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T134"
+                  start="#T133">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000556">w</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000557">kill</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000558">wāḥad</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000559"
+                     rend="withDash">minn</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000561">un</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000562">rāḥ</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000563"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000565">mayle</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a54"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T136"
+                  start="#T135">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000566">hallaʔ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000567">inti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000568">ʔižbāri</w>
+                  <pc xml:id="xTok_000569">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000570">kīf</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000571">ʔinti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000572"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000574">titʕawwadi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000575">ʕala</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000576">ʔakəl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000577">libnān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a55"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T138"
+                  start="#T137">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000578">ʔižbāri</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000579"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000581">yṣīr</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000582"
+                     rend="withDash">lisān</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000584">ik</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000585"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000587"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000589">o</w>
+                  <pc join="right" xml:id="xTok_000590">.</pc>
+                  <pc xml:id="xTok_000591">.</pc>
+                  <pc xml:id="xTok_000592">.</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000593"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000595">yibrum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a56"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T140"
+                  start="#T139">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000596">fī</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000597">taṭawwur</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000598"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000600"
+                     rend="withDash">l</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000602">luġa</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000603"
+                     rend="withDash">b</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000605">ətṣīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a78"
+                  who="#CL"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000606">ḥasab</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000607"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000609">nās</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000610"
+                     rend="withDash">ḥawāley</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000612">ki</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000613">w</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000614">il</w>
+                  <pc join="right" xml:id="xTok_000615">.</pc>
+                  <pc xml:id="xTok_000616">.</pc>
+                  <pc xml:id="xTok_000617">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a57"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T142"
+                  start="#T141">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000618">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000619">,</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000620">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000621">,</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000622"
+                     rend="withDash">il</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000624"
+                     join="right">madrase</w>
+                  <pc xml:id="xTok_000625">,</pc>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000626">il</w>
+                  <pc join="right" xml:id="xTok_000627">.</pc>
+                  <pc xml:id="xTok_000628">.</pc>
+                  <pc xml:id="xTok_000629">.</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000630">šiġil</w>
+                  <pc join="right" xml:id="xTok_000631">.</pc>
+                  <pc xml:id="xTok_000632">.</pc>
+                  <pc xml:id="xTok_000633">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a58"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T144"
+                  start="#T143">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000634"
+                     rend="withDash">ir</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000636">rižžēl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000637">li</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000638"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000640"
+                     rend="withDash">titžawwazī</w>
+                  <pc join="right" xml:id="xTok_000642">_</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000643">́</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000644">ʔabəl</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000645">kānu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000646">yitžawwazu</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000647">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000648">baʕaḍ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000649">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000650">baʕaḍ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000651">min</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000652">baʕaḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a59"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T146"
+                  start="#T145">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000653">ktīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a60"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T148"
+                  start="#T147">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000654">yaʕni</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000655">mamnūʕ</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000656">titžawwazi</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000657">ʔilla</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000658">ʔibən</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000659"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000661">ik</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a79"
+                  who="#CL"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000662">ok</w>
+                  <pc xml:id="xTok_000663">,</pc>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000664">ʔinti</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000665">kamān</w>
+                  <pc xml:id="xTok_000666">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.1_KD_F.49_Karantina_ARMSdialect.Tribes_a61"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T150"
+                  start="#T149">
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000667">ʔana</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000668">tǧawwazt</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000669">ibən</w>
+                  <w join="right"
+                     xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000670"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000672">i</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000673">bass</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000674">ṭallaʔət</w>
+                  <w xml:id="2.1_KD_F.49_Karantina_ARMSdialect.Tribes_xTok_000675">əržaʕət</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
