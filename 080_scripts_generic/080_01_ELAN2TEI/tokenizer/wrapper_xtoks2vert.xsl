@@ -84,10 +84,10 @@
                      name="researcher"
                      select="string-join(//tei:recording//tei:persName/@ref/normalize-space(), ' ')"/>
    </xsl:template>
-   <xsl:template match="//tei:settingDesc/@ref" mode="doc-attributes">
+   <xsl:template match="//tei:recording/tei:p/tei:ref" mode="doc-attributes">
       <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"
                      name="campaign"
-                     select="substring-after(//tei:settingDesc/@ref, 'source:')"/>
+                     select="string-join(//tei:recording/tei:p/tei:ref/normalize-space(), ' ')"/>
    </xsl:template>
    <xsl:template match="//tei:settingDesc/tei:place" mode="doc-attributes">
       <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"
