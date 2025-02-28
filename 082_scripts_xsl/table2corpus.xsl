@@ -225,9 +225,10 @@
             </xsl:if>
             </xsl:when>
             <xsl:otherwise>
-                <!-- TODO add fields from Recordings table -->
-                <xsl:apply-templates select="$allTeam"
-                                     mode="respStmtCorpusDoc" />
+                <respStmt>
+                    <persName ref="{$teiCorpusPrefix}:SP">Stephan Procházka</persName>
+                    <resp>principal</resp>
+                </respStmt>
             </xsl:otherwise>
         </xsl:choose>
         <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
@@ -274,13 +275,12 @@
                 </particDesc>
             </profileDesc>
         </teiHeader>
-        <!-- replaced by DMP document -->
-        <!-- <standOff>
+        <standOff>
                 <listPerson>
                     <head>Project Team</head>
                     <xsl:apply-templates select="$allTeam" mode="teiCorpusDoc"/>
                 </listPerson>
-            </standOff> -->
+            </standOff>
         <xsl:apply-templates select="tei:row[position() gt 1][tei:cell[1] != '']" />
     </teiCorpus>
 </xsl:template>
@@ -606,43 +606,6 @@
         <!-- ignore because might contain internal information -->
         <!-- <note><xsl:value-of select="tei:cell[$cn('Team')('note')]"/></note> -->
     </person>
-</xsl:template>
-<!-- old code -->
-<!-- <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]!='']"
-              mode="respStmtInstanceDoc"> -->
-<!-- mode = what is the context of this run:
-            * "teiCorpusDoc": this generates the master list of team members in the teiCorpus 
-            * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
-            * "respStmtsCorpusDoc: genereates a list of respStmts in the TEI Corpus Header
-            * "respStmtsInstanceDoc: genereates a list of respStmts pointing to the list of team members in the TEI Corpus
-            thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-<!-- <xsl:param name="mode" />
-    <respStmt>
-        <persName ref="{$dmpPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}">
-            <xsl:value-of select="tei:cell[$cn('Team')('persName')]" />
-        </persName>
-        <resp>
-            <xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]" />
-        </resp>
-    </respStmt>
-</xsl:template> -->
-<!-- END old code -->
-<xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']"
-              mode="respStmtCorpusDoc">
-    <!-- mode = what is the context of this run:
-            * "teiCorpusDoc": this generates the master list of team members in the teiCorpus
-            * "respStmts: genereates a list of respStmts pointing to the list of team members in the TEI Corpus 
-            * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
-            thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-    <xsl:param name="mode" />
-    <respStmt>
-        <persName ref="{$dmpPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}">
-            <xsl:value-of select="tei:cell[1]" />
-        </persName>
-        <resp>
-            <xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]" />
-        </resp>
-    </respStmt>
 </xsl:template>
 <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']"
               mode="teiInstanceDoc">
