@@ -165,6 +165,10 @@
     <xsl:param name="textID" />
     <xsl:param name="recordingPerson" />
     <xsl:param name="recordingPersonID" />
+    <xsl:param name="transcribingPerson" />
+    <xsl:param name="transcriptionChecker" />
+    <xsl:param name="translator" />
+    <xsl:param name="translationChecker" />
     <titleStmt>
         <xsl:if test="$textID != ''">
             <title level="a">
@@ -187,6 +191,38 @@
                     </persName>
                     <resp>recording</resp>
                 </respStmt>
+                <xsl:if test="$transcribingPerson != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($transcribingPerson)}">
+                        <xsl:value-of select="$transcribingPerson"/>
+                    </persName>
+                    <resp>transcription</resp>
+                </respStmt>
+            </xsl:if>
+            <xsl:if test="$transcriptionChecker != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($transcriptionChecker)}">
+                        <xsl:value-of select="$transcriptionChecker"/>
+                    </persName>
+                    <resp>transcription check</resp>
+                </respStmt>
+            </xsl:if>
+            <xsl:if test="$translator != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($translator)}">
+                        <xsl:value-of select="$translator"/>
+                    </persName>
+                    <resp>translation</resp>
+                </respStmt>
+            </xsl:if>
+            <xsl:if test="$translationChecker != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($translationChecker)}">
+                        <xsl:value-of select="$translationChecker"/>
+                    </persName>
+                    <resp>translation check</resp>
+                </respStmt>
+            </xsl:if>
             </xsl:when>
             <xsl:otherwise>
                 <!-- TODO add fields from Recordings table -->
@@ -268,6 +304,10 @@
                   select="normalize-space(tei:cell[$cn('Recordings')('Rec. person')])" />
     <xsl:variable name="recordingPersonID"
                   select="_:personReferenceByName($recordingPerson)" />
+    <xsl:variable name="transcribingPerson" select="normalize-space(tei:cell[$cn('Recordings')('transcribed by')])"/>
+    <xsl:variable name="transcriptionChecker" select="normalize-space(tei:cell[$cn('Recordings')('transcription checked by')])"/>
+    <xsl:variable name="translator" select="normalize-space(tei:cell[$cn('Recordings')('translated by')])"/>
+    <xsl:variable name="translationChecker" select="normalize-space(tei:cell[$cn('Recordings')('translation checked by')])"/>
     <!-- place -->
     <xsl:variable name="placeName"
                   select="tei:cell[$cn('Recordings')('Place')]" />
@@ -307,6 +347,14 @@
                                     select="$recordingPersonID" />
                     <xsl:with-param name="recordingPerson"
                                     select="$recordingPerson" />
+                    <xsl:with-param name="transcribingPerson"
+                                    select="$transcribingPerson" />
+                    <xsl:with-param name="transcriptionChecker"
+                                    select="$transcriptionChecker" />
+                    <xsl:with-param name="translator"
+                                    select="$translator" />
+                    <xsl:with-param name="translationChecker"
+                                    select="$translationChecker" />
                 </xsl:call-template>
                 <xsl:call-template name="publicationStmt">
                     <xsl:with-param name="textID"
