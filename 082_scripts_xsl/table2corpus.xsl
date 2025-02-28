@@ -267,7 +267,7 @@
             <profileDesc>
                 <particDesc>
                     <listPerson>
-                        <head>All Speakers in the SHAWI Corpus</head>
+                        <head>All Speakers in the WIBARAB Corpus</head>
                         <xsl:apply-templates select="$allSpeakers"
                                              mode="teiCorpusDoc" />
                     </listPerson>
@@ -483,15 +483,20 @@
                             select="tei:cell[7]" />
             <xsl:with-param name="ageGroupComment" select="tei:cell[5]"/>
         </xsl:call-template>
-        <xsl:if test="tei:cell[4] != ''">
+        <xsl:if test="tei:cell[6] != ''">
             <langKnowledge>
                 <xsl:for-each select="tokenize(tei:cell[6], ',')">
                     <langKnown tag="{.}" />
                 </xsl:for-each>
             </langKnowledge>
         </xsl:if>
+        <xsl:if test="tei:cell[9] != 'N/A'">
+            <xsl:for-each select="tokenize(tei:cell[9], ',')">
+                <ptr type="participatedIn" target="#{normalize-space(.)}"/>
+            </xsl:for-each>
+        </xsl:if>
         <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
-        <!-- <note><xsl:value-of select="tei:cell[5]"/></note> -->
+        <!-- <note><xsl:value-of select="tei:cell[8]"/></note> -->
     </person>
 </xsl:template>
 <xsl:template name="parseBirth">
