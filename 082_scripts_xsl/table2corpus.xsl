@@ -472,7 +472,7 @@
             * "teiInstanceDoc": this generates the list of speakers in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
     <person xml:id="{tei:cell[1]}"
-            sex="{tei:cell[2]}">
+            sex="{tei:cell[2]}" age="{tei:cell[4]}">
         <idno>
             <xsl:value-of select="tei:cell[1]" />
         </idno>
@@ -480,11 +480,12 @@
             <xsl:with-param name="yearOfBirth"
                             select="tei:cell[3]" />
             <xsl:with-param name="placeOfOrigin"
-                            select="tei:cell[5]" />
+                            select="tei:cell[7]" />
+            <xsl:with-param name="ageGroupComment" select="tei:cell[5]"/>
         </xsl:call-template>
         <xsl:if test="tei:cell[4] != ''">
             <langKnowledge>
-                <xsl:for-each select="tokenize(tei:cell[4], ',')">
+                <xsl:for-each select="tokenize(tei:cell[6], ',')">
                     <langKnown tag="{.}" />
                 </xsl:for-each>
             </langKnowledge>
@@ -496,6 +497,7 @@
 <xsl:template name="parseBirth">
     <xsl:param name="yearOfBirth" />
     <xsl:param name="placeOfOrigin" />
+    <xsl:param name="ageGroupComment" />
     <xsl:choose>
         <xsl:when test="matches($yearOfBirth,'^\d+$')">
             <birth>
@@ -506,6 +508,11 @@
                     <placeName>
                         <xsl:value-of select="$placeOfOrigin" />
                     </placeName>
+                </xsl:if>
+                <xsl:if test="$ageGroupComment != ''">
+                    <note>
+                        <xsl:value-of select="$ageGroupComment" />
+                    </note>
                 </xsl:if>
             </birth>
         </xsl:when>
