@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2025-02-28T16:06:32.197997Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">09_HD_M.31_Khalde_QuestionnairevisualPart1</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="dmp:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="dmp:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">09_HD_M.31_Khalde_QuestionnairevisualPart1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.25972222222222224" type="audio">
+                  <date when="2022-02-27"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 09_HD_M.31_Khalde_QuestionnairevisualPart1</head>
+               <person sameAs="corpus:LEB_KHAL_2022_HD_M.31_Speaker2">
+                  <idno>LEB_KHAL_2022_HD_M.31_Speaker2</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Questionnaire"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1460" since="#T0" xml:id="T1"/>
+         <when interval="4671" since="#T0" xml:id="T2"/>
+         <when interval="5627" since="#T0" xml:id="T3"/>
+         <when interval="7558" since="#T0" xml:id="T4"/>
+         <when interval="9187" since="#T0" xml:id="T5"/>
+         <when interval="10807" since="#T0" xml:id="T6"/>
+         <when interval="11992" since="#T0" xml:id="T7"/>
+         <when interval="16150" since="#T0" xml:id="T8"/>
+         <when interval="16907" since="#T0" xml:id="T9"/>
+         <when interval="18162" since="#T0" xml:id="T10"/>
+         <when interval="19062" since="#T0" xml:id="T11"/>
+         <when interval="28182" since="#T0" xml:id="T12"/>
+         <when interval="29650" since="#T0" xml:id="T13"/>
+         <when interval="39767" since="#T0" xml:id="T14"/>
+         <when interval="45488" since="#T0" xml:id="T15"/>
+         <when interval="53466" since="#T0" xml:id="T16"/>
+         <when interval="55948" since="#T0" xml:id="T17"/>
+         <when interval="59235" since="#T0" xml:id="T18"/>
+         <when interval="61864" since="#T0" xml:id="T19"/>
+         <when interval="63403" since="#T0" xml:id="T20"/>
+         <when interval="66214" since="#T0" xml:id="T21"/>
+         <when interval="72519" since="#T0" xml:id="T22"/>
+         <when interval="75188" since="#T0" xml:id="T23"/>
+         <when interval="75321" since="#T0" xml:id="T24"/>
+         <when interval="78486" since="#T0" xml:id="T25"/>
+         <when interval="85474" since="#T0" xml:id="T26"/>
+         <when interval="87014" since="#T0" xml:id="T27"/>
+         <when interval="89388" since="#T0" xml:id="T28"/>
+         <when interval="91740" since="#T0" xml:id="T29"/>
+         <when interval="96728" since="#T0" xml:id="T30"/>
+         <when interval="102158" since="#T0" xml:id="T31"/>
+         <when interval="104017" since="#T0" xml:id="T32"/>
+         <when interval="110113" since="#T0" xml:id="T33"/>
+         <when interval="115654" since="#T0" xml:id="T34"/>
+         <when interval="116904" since="#T0" xml:id="T35"/>
+         <when interval="119343" since="#T0" xml:id="T36"/>
+         <when interval="120435" since="#T0" xml:id="T37"/>
+         <when interval="122297" since="#T0" xml:id="T38"/>
+         <when interval="124013" since="#T0" xml:id="T39"/>
+         <when interval="126494" since="#T0" xml:id="T40"/>
+         <when interval="127739" since="#T0" xml:id="T41"/>
+         <when interval="128332" since="#T0" xml:id="T42"/>
+         <when interval="132642" since="#T0" xml:id="T43"/>
+         <when interval="134578" since="#T0" xml:id="T44"/>
+         <when interval="136412" since="#T0" xml:id="T45"/>
+         <when interval="137199" since="#T0" xml:id="T46"/>
+         <when interval="138363" since="#T0" xml:id="T47"/>
+         <when interval="140351" since="#T0" xml:id="T48"/>
+         <when interval="141559" since="#T0" xml:id="T49"/>
+         <when interval="161856" since="#T0" xml:id="T50"/>
+         <when interval="163403" since="#T0" xml:id="T51"/>
+         <when interval="163633" since="#T0" xml:id="T52"/>
+         <when interval="165529" since="#T0" xml:id="T53"/>
+         <when interval="166145" since="#T0" xml:id="T54"/>
+         <when interval="168646" since="#T0" xml:id="T55"/>
+         <when interval="172404" since="#T0" xml:id="T56"/>
+         <when interval="178617" since="#T0" xml:id="T57"/>
+         <when interval="179108" since="#T0" xml:id="T58"/>
+         <when interval="179830" since="#T0" xml:id="T59"/>
+         <when interval="188655" since="#T0" xml:id="T60"/>
+         <when interval="191599" since="#T0" xml:id="T61"/>
+         <when interval="191669" since="#T0" xml:id="T62"/>
+         <when interval="196139" since="#T0" xml:id="T63"/>
+         <when interval="204730" since="#T0" xml:id="T64"/>
+         <when interval="205656" since="#T0" xml:id="T65"/>
+         <when interval="216776" since="#T0" xml:id="T66"/>
+         <when interval="217587" since="#T0" xml:id="T67"/>
+         <when interval="228163" since="#T0" xml:id="T68"/>
+         <when interval="229649" since="#T0" xml:id="T69"/>
+         <when interval="229737" since="#T0" xml:id="T70"/>
+         <when interval="231504" since="#T0" xml:id="T71"/>
+         <when interval="231705" since="#T0" xml:id="T72"/>
+         <when interval="233823" since="#T0" xml:id="T73"/>
+         <when interval="233954" since="#T0" xml:id="T74"/>
+         <when interval="236145" since="#T0" xml:id="T75"/>
+         <when interval="236400" since="#T0" xml:id="T76"/>
+         <when interval="237722" since="#T0" xml:id="T77"/>
+         <when interval="243374" since="#T0" xml:id="T78"/>
+         <when interval="247940" since="#T0" xml:id="T79"/>
+         <when interval="250992" since="#T0" xml:id="T80"/>
+         <when interval="254621" since="#T0" xml:id="T81"/>
+         <when interval="260119" since="#T0" xml:id="T82"/>
+         <when interval="261444" since="#T0" xml:id="T83"/>
+         <when interval="266075" since="#T0" xml:id="T84"/>
+         <when interval="267235" since="#T0" xml:id="T85"/>
+         <when interval="270378" since="#T0" xml:id="T86"/>
+         <when interval="272333" since="#T0" xml:id="T87"/>
+         <when interval="276614" since="#T0" xml:id="T88"/>
+         <when interval="278063" since="#T0" xml:id="T89"/>
+         <when interval="278239" since="#T0" xml:id="T90"/>
+         <when interval="279373" since="#T0" xml:id="T91"/>
+         <when interval="279539" since="#T0" xml:id="T92"/>
+         <when interval="281292" since="#T0" xml:id="T93"/>
+         <when interval="288025" since="#T0" xml:id="T94"/>
+         <when interval="289464" since="#T0" xml:id="T95"/>
+         <when interval="289779" since="#T0" xml:id="T96"/>
+         <when interval="292334" since="#T0" xml:id="T97"/>
+         <when interval="294395" since="#T0" xml:id="T98"/>
+         <when interval="295433" since="#T0" xml:id="T99"/>
+         <when interval="302092" since="#T0" xml:id="T100"/>
+         <when interval="307537" since="#T0" xml:id="T101"/>
+         <when interval="308175" since="#T0" xml:id="T102"/>
+         <when interval="309476" since="#T0" xml:id="T103"/>
+         <when interval="319148" since="#T0" xml:id="T104"/>
+         <when interval="322002" since="#T0" xml:id="T105"/>
+         <when interval="327594" since="#T0" xml:id="T106"/>
+         <when interval="330145" since="#T0" xml:id="T107"/>
+         <when interval="336628" since="#T0" xml:id="T108"/>
+         <when interval="338089" since="#T0" xml:id="T109"/>
+         <when interval="338954" since="#T0" xml:id="T110"/>
+         <when interval="341412" since="#T0" xml:id="T111"/>
+         <when interval="343558" since="#T0" xml:id="T112"/>
+         <when interval="345519" since="#T0" xml:id="T113"/>
+         <when interval="346672" since="#T0" xml:id="T114"/>
+         <when interval="348376" since="#T0" xml:id="T115"/>
+         <when interval="349872" since="#T0" xml:id="T116"/>
+         <when interval="351380" since="#T0" xml:id="T117"/>
+         <when interval="358660" since="#T0" xml:id="T118"/>
+         <when interval="362075" since="#T0" xml:id="T119"/>
+         <when interval="365426" since="#T0" xml:id="T120"/>
+         <when interval="370126" since="#T0" xml:id="T121"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T121</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a1"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T1"
+                  start="#T0">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000001"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000003">yirguṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a2"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T3"
+                  start="#T2">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000004"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000006">yiġanni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a3"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T5"
+                  start="#T4">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000007">birdān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a4"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T7"
+                  start="#T6">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000008"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000010">yiguḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a5"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T9"
+                  start="#T8">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000011"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000013">yišrab</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a6"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T11"
+                  start="#T10">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000014"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000016">yiḅzuq</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a7"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T13"
+                  start="#T12">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000017"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000019">yixabbi</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000020">ġaraḍ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000021">ṭaḥt</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000022"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000024">ṭāwla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a8"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T15"
+                  start="#T14">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000025"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000027">yikubb</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000028">ġaraḍ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000029">ʕala</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000030">ʔibən</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000031"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000033"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000034">,</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000035"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000037">yikubb</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000038">ġaraḍ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000039">ʕala</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000040"
+                     rend="withDash">ṣāḥb</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000042"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000043">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a9"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000044">kinna</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000045"
+                     rend="withDash">nʕaḍḍī</w>
+                  <pc join="right" xml:id="xTok_000047">(</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000048">y</w>
+                  <pc join="right" xml:id="xTok_000049">)</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000050">a</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000051">nkiḅḅ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000052">əḥǧār</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000053"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000055"
+                     rend="withDash">ḅaʕaḍ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000057">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a10"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000058"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000060">yikuḅḅ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000061">ḥaǧar</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000062">ʕala</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000063">ʔibən</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000064"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000066"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000067">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000068">masalan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a11"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T21"
+                  start="#T20">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000069"
+                     rend="withDash">fišax</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000071">o</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000072"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000074"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000076">ḥažar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a12"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000077">žāb</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000078"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000080">.</pc>
+                  <pc xml:id="xTok_000081">.</pc>
+                  <pc xml:id="xTok_000082">.</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000083">hāy</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000084">žarra</w>
+                  <pc xml:id="xTok_000085">!</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000086">ḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000087"
+                     rend="withDash">iǧ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000089">ǧarra</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000090"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000092"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000094">ṭāwla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a13"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T25"
+                  start="#T24">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000095">žarra</w>
+                  <pc xml:id="xTok_000096">,</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000097"
+                     rend="withDash">šakl</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000099">a</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000100">žarra</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000101">ʔaw</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000102">žāb</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000103"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000105">laqṭīn</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000106">hāy</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000107">laqṭīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a14"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000108">ḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000109"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000111">ḥažra</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000112"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000114"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000116">ṭāwla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a15"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000117">hēn</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000118">fišax</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000119"
+                     rend="withDash">ṣāḥb</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000121">o</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000122"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000124"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000126">ḥažar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a16"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T31"
+                  start="#T30">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000127"
+                     rend="withDash">kabb</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000129">a</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000130">ʕala</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000131"
+                     rend="withDash">ṣāḥb</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000133"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000134">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000135">ʕala</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000136">ʔibən</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000137"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000139">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a17"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T33"
+                  start="#T32">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000140"
+                     rend="withDash">ḥimal</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000142">a</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000143">w</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000144"
+                     rend="withDash">ḥaṭṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000146">a</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000147"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000149"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000151">ḥašīšāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a18"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T35"
+                  start="#T34">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000152"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000154">yismaʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a19"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000155">nžiraḥ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000156"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000158">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a20"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T39"
+                  start="#T38">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000159"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000161">yinzif</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a21"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000162">xāyfān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a22"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000163">ʔaw</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000164">nigzān</w>
+                  <pc xml:id="xTok_000165">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000166">bass</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000167">xāyfān</w>
+                  <pc xml:id="xTok_000168">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000169">marʕūb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a23"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000170">zaʕlān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a24"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000171"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000173">yibči</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a25"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T49"
+                  start="#T48">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000174"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000176">yišūf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a26"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T51"
+                  start="#T50">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000177"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000179">yidaḥḥig</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a27"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T53"
+                  start="#T52">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000180"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000182">ʔadīm</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000183"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000185">yidaḥḥig</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a28"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000186">masalan</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000187">daḥḥag</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000188">ġād</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a29"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000189">ṭallaʕ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000190">kīf</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000191">hū</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000192">ʔāʕid</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000193">ʔaw</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000194">yigūlu</w>
+                  <pc join="right" xml:id="xTok_000195">.</pc>
+                  <pc xml:id="xTok_000196">.</pc>
+                  <pc xml:id="xTok_000197">.</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000198">tšīli</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000199"
+                     rend="withDash">iǧ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000201">ǧīm</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000202">daḥḥ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000203">čēf</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000204">hū</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000205">gāʕid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a30"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000206">ē</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000207">daḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a31"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000208">ṭallaʕ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000209">ʔaw</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000210">šūf</w>
+                  <pc xml:id="xTok_000211">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000212">liʔanno</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000213">hāḏa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000214"
+                     rend="withDash">žīl</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000216">na</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000217">niḥna</w>
+                  <pc xml:id="xTok_000218">,</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000219"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000221">žīl</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000222"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000224">ʔadīm</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000225"
+                     rend="withDash">b</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000227">yʔūlu</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000228"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000230">daḥḥig</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a32"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000231">čān</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000232"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000234">yidaḥḥig</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000235"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000237">_</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000238">́</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000239">w</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000240"
+                     rend="withDash">šāf</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000242">o</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000243">fall</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000244"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000246"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000248"
+                     join="right">bēt</w>
+                  <pc xml:id="xTok_000249">.</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000250">čān</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000251"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000253">yidaḥḥig</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000254"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000256">_</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000257">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a33"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T65"
+                  start="#T64">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000258"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000260">yākul</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a34"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T67"
+                  start="#T66">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000261"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000263">yiqra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a36"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000264">humma</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000265"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000267">yiqru</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a37"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T71"
+                  start="#T70">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000268"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000270">yiqru</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000271">qurʔān</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000272"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000274">yiqru</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a38"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000275">ē</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000276">hāy</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000277">tiṭḅax</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a39"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T75"
+                  start="#T74">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000278"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000280">tḥarrik</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000281"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000283">ṭaḅxa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a40"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T77"
+                  start="#T76">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000284"
+                     rend="withDash">tḥarrik</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000286">a</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000287"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000289"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000291">ṭaḅxa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a41"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T79"
+                  start="#T78">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000292">hallaʔ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000293"
+                     rend="withDash">əž</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000295">žīl</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000296">hāḏ̣ā</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000297"
+                     rend="withDash">b</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000299">yʔūlu</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000300">kafkīr</w>
+                  <pc xml:id="xTok_000301">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000302">bass</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000303"
+                     rend="withDash">la</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000305">l</w>
+                  <pc join="right" xml:id="xTok_000306">.</pc>
+                  <pc xml:id="xTok_000307">.</pc>
+                  <pc xml:id="xTok_000308">.</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000309">šū</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000310"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000312"
+                     rend="withDash">yʔūlū</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000314"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000316"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000317">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a42"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T81"
+                  start="#T80">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000318">xašūga</w>
+                  <pc xml:id="xTok_000319">,</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000320"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000322">maʕlaʔa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000323"
+                     rend="withDash">z</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000325">ẓġīre</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000326">xašūga</w>
+                  <pc xml:id="xTok_000327">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000328">bass</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000329">hāy</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000330">miš</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000331">xašūga</w>
+                  <pc xml:id="xTok_000332">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000333">hāy</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000334"
+                     rend="withDash">b</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000336">tiži</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000337">xašab</w>
+                  <pc join="right" xml:id="xTok_000338">.</pc>
+                  <pc xml:id="xTok_000339">.</pc>
+                  <pc xml:id="xTok_000340">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a43"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000341">ē</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000342"
+                     rend="withDash">taʕ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000344">yšīmm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a44"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T85"
+                  start="#T84">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000345"
+                     rend="withDash">diʔar</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000347">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a45"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000348">ʔaw</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000349"
+                     rend="withDash">nikaz</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000351">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a46"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T89"
+                  start="#T88">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000352">nāyim</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a47"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T91"
+                  start="#T90">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000353"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000355">yišaxxir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a48"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T93"
+                  start="#T92">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000356">ynām</w>
+                  <pc xml:id="xTok_000357">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000358">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a49"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T95"
+                  start="#T94">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000359">nḅuṣaṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a50"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T97"
+                  start="#T96">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000360">čān</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000361">zaʕlān</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000362">w</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000363">nḅuṣaṭ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000364">yaʕni</w>
+                  <pc xml:id="xTok_000365">?</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000366">mubtisim</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a51"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T99"
+                  start="#T98">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000367">rāyiḥ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000368">žāy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a52"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000369">masalan</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000370"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000372">ġabra</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000373"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000375"
+                     join="right">na</w>
+                  <pc xml:id="xTok_000376">,</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000377"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000379"
+                     join="right">ġabra</w>
+                  <pc xml:id="xTok_000380">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000381">fī</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000382">ʕalam</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000383"
+                     rend="withDash">b</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000385">yʔūlu</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000386">ʕaǧāǧ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a53"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T103"
+                  start="#T102">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000387"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000389">ġabra</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000390">ʕaǧāǧ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a54"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T105"
+                  start="#T104">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000391">ǧāy</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000392"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000394"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000396">bēt</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000397">hāḏ̣a</w>
+                  <pc xml:id="xTok_000398">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000399">žāy</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000400">misriʕ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000401"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000403"
+                     rend="withDash">l</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000405">bēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a55"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T107"
+                  start="#T106">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000406"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000408">yinuṭṭ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000409">hāḏ̣a</w>
+                  <pc xml:id="xTok_000410">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000411">naṭṭ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000412">min</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000413">fōg</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000414"
+                     rend="withDash">il</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000416">ṃāyy</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000417">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a56"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T109"
+                  start="#T108">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000418">bistān</w>
+                  <pc xml:id="xTok_000419">,</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000420">ṭaḅīʕa</w>
+                  <pc xml:id="xTok_000421">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a57"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T111"
+                  start="#T110">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000422">šaməs</w>
+                  <pc xml:id="xTok_000423">?</pc>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000424"
+                     rend="withDash">š</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000426">šaməs</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000427">ṭalʕa</w>
+                  <pc xml:id="xTok_000428">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a58"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T113"
+                  start="#T112">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000429">šta</w>
+                  <pc xml:id="xTok_000430">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000431">mitil</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000432">ma</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000433"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000435"
+                     rend="withDash">ill</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000437">ik</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a59"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T115"
+                  start="#T114">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000438"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000440"
+                     join="right">yiḍḥak</w>
+                  <pc xml:id="xTok_000441">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000442">maḅsūṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a60"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T117"
+                  start="#T116">
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000443"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000445">yiḍḥak</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a61"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T119"
+                  start="#T118">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000446">rāyiḥ</w>
+                  <pc join="right" xml:id="xTok_000447">.</pc>
+                  <pc xml:id="xTok_000448">.</pc>
+                  <pc xml:id="xTok_000449">.</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000450">rāyiʕ</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000451"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000453"
+                     rend="withDash">š</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000455">šuġul</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000456">masalan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u09_HD_M.31_Khalde_QuestionnairevisualPart1_a62"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T121"
+                  start="#T120">
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000457">hāḏ̣a</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000458">rāyiḥ</w>
+                  <pc xml:id="xTok_000459">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000460">rāyiḥ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000461">w</w>
+                  <w join="right"
+                     xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000462">rāžiʕ</w>
+                  <pc xml:id="xTok_000463">,</pc>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000464">masalan</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000465">rāyiḥ</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000466">w</w>
+                  <w xml:id="09_HD_M.31_Khalde_QuestionnairevisualPart1_xTok_000467">žāy</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

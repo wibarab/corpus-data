@@ -165,6 +165,10 @@
     <xsl:param name="textID" />
     <xsl:param name="recordingPerson" />
     <xsl:param name="recordingPersonID" />
+    <xsl:param name="transcribingPerson" />
+    <xsl:param name="transcriptionChecker" />
+    <xsl:param name="translator" />
+    <xsl:param name="translationChecker" />
     <titleStmt>
         <xsl:if test="$textID != ''">
             <title level="a">
@@ -187,11 +191,44 @@
                     </persName>
                     <resp>recording</resp>
                 </respStmt>
+                <xsl:if test="$transcribingPerson != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($transcribingPerson)}">
+                        <xsl:value-of select="$transcribingPerson"/>
+                    </persName>
+                    <resp>transcription</resp>
+                </respStmt>
+            </xsl:if>
+            <xsl:if test="$transcriptionChecker != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($transcriptionChecker)}">
+                        <xsl:value-of select="$transcriptionChecker"/>
+                    </persName>
+                    <resp>transcription check</resp>
+                </respStmt>
+            </xsl:if>
+            <xsl:if test="$translator != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($translator)}">
+                        <xsl:value-of select="$translator"/>
+                    </persName>
+                    <resp>translation</resp>
+                </respStmt>
+            </xsl:if>
+            <xsl:if test="$translationChecker != ''">
+                <respStmt>
+                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($translationChecker)}">
+                        <xsl:value-of select="$translationChecker"/>
+                    </persName>
+                    <resp>translation check</resp>
+                </respStmt>
+            </xsl:if>
             </xsl:when>
             <xsl:otherwise>
-                <!-- TODO add fields from Recordings table -->
-                <xsl:apply-templates select="$allTeam"
-                                     mode="respStmtCorpusDoc" />
+                <respStmt>
+                    <persName ref="{$teiCorpusPrefix}:SP">Stephan Procházka</persName>
+                    <resp>principal</resp>
+                </respStmt>
             </xsl:otherwise>
         </xsl:choose>
         <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
@@ -231,20 +268,19 @@
             <profileDesc>
                 <particDesc>
                     <listPerson>
-                        <head>All Speakers in the SHAWI Corpus</head>
+                        <head>All Speakers in the WIBARAB Corpus</head>
                         <xsl:apply-templates select="$allSpeakers"
                                              mode="teiCorpusDoc" />
                     </listPerson>
                 </particDesc>
             </profileDesc>
         </teiHeader>
-        <!-- replaced by DMP document -->
-        <!-- <standOff>
+        <standOff>
                 <listPerson>
                     <head>Project Team</head>
                     <xsl:apply-templates select="$allTeam" mode="teiCorpusDoc"/>
                 </listPerson>
-            </standOff> -->
+            </standOff>
         <xsl:apply-templates select="tei:row[position() gt 1][tei:cell[1] != '']" />
     </teiCorpus>
 </xsl:template>
@@ -268,6 +304,10 @@
                   select="normalize-space(tei:cell[$cn('Recordings')('Rec. person')])" />
     <xsl:variable name="recordingPersonID"
                   select="_:personReferenceByName($recordingPerson)" />
+    <xsl:variable name="transcribingPerson" select="normalize-space(tei:cell[$cn('Recordings')('transcribed by')])"/>
+    <xsl:variable name="transcriptionChecker" select="normalize-space(tei:cell[$cn('Recordings')('transcription checked by')])"/>
+    <xsl:variable name="translator" select="normalize-space(tei:cell[$cn('Recordings')('translated by')])"/>
+    <xsl:variable name="translationChecker" select="normalize-space(tei:cell[$cn('Recordings')('translation checked by')])"/>
     <!-- place -->
     <xsl:variable name="placeName"
                   select="tei:cell[$cn('Recordings')('Place')]" />
@@ -307,6 +347,14 @@
                                     select="$recordingPersonID" />
                     <xsl:with-param name="recordingPerson"
                                     select="$recordingPerson" />
+                    <xsl:with-param name="transcribingPerson"
+                                    select="$transcribingPerson" />
+                    <xsl:with-param name="transcriptionChecker"
+                                    select="$transcriptionChecker" />
+                    <xsl:with-param name="translator"
+                                    select="$translator" />
+                    <xsl:with-param name="translationChecker"
+                                    select="$translationChecker" />
                 </xsl:call-template>
                 <xsl:call-template name="publicationStmt">
                     <xsl:with-param name="textID"
@@ -424,7 +472,7 @@
             * "teiInstanceDoc": this generates the list of speakers in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
     <person xml:id="{tei:cell[1]}"
-            sex="{tei:cell[2]}">
+            sex="{tei:cell[2]}" age="{tei:cell[4]}">
         <idno>
             <xsl:value-of select="tei:cell[1]" />
         </idno>
@@ -432,22 +480,29 @@
             <xsl:with-param name="yearOfBirth"
                             select="tei:cell[3]" />
             <xsl:with-param name="placeOfOrigin"
-                            select="tei:cell[5]" />
+                            select="tei:cell[7]" />
+            <xsl:with-param name="ageGroupComment" select="tei:cell[5]"/>
         </xsl:call-template>
-        <xsl:if test="tei:cell[4] != ''">
+        <xsl:if test="tei:cell[6] != ''">
             <langKnowledge>
-                <xsl:for-each select="tokenize(tei:cell[4], ',')">
+                <xsl:for-each select="tokenize(tei:cell[6], ',')">
                     <langKnown tag="{.}" />
                 </xsl:for-each>
             </langKnowledge>
         </xsl:if>
+        <xsl:if test="tei:cell[9] != 'N/A'">
+            <xsl:for-each select="tokenize(tei:cell[9], ',')">
+                <ptr type="participatedIn" target="#{normalize-space(.)}"/>
+            </xsl:for-each>
+        </xsl:if>
         <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
-        <!-- <note><xsl:value-of select="tei:cell[5]"/></note> -->
+        <!-- <note><xsl:value-of select="tei:cell[8]"/></note> -->
     </person>
 </xsl:template>
 <xsl:template name="parseBirth">
     <xsl:param name="yearOfBirth" />
     <xsl:param name="placeOfOrigin" />
+    <xsl:param name="ageGroupComment" />
     <xsl:choose>
         <xsl:when test="matches($yearOfBirth,'^\d+$')">
             <birth>
@@ -458,6 +513,11 @@
                     <placeName>
                         <xsl:value-of select="$placeOfOrigin" />
                     </placeName>
+                </xsl:if>
+                <xsl:if test="$ageGroupComment != ''">
+                    <note>
+                        <xsl:value-of select="$ageGroupComment" />
+                    </note>
                 </xsl:if>
             </birth>
         </xsl:when>
@@ -546,43 +606,6 @@
         <!-- ignore because might contain internal information -->
         <!-- <note><xsl:value-of select="tei:cell[$cn('Team')('note')]"/></note> -->
     </person>
-</xsl:template>
-<!-- old code -->
-<!-- <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]!='']"
-              mode="respStmtInstanceDoc"> -->
-<!-- mode = what is the context of this run:
-            * "teiCorpusDoc": this generates the master list of team members in the teiCorpus 
-            * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
-            * "respStmtsCorpusDoc: genereates a list of respStmts in the TEI Corpus Header
-            * "respStmtsInstanceDoc: genereates a list of respStmts pointing to the list of team members in the TEI Corpus
-            thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-<!-- <xsl:param name="mode" />
-    <respStmt>
-        <persName ref="{$dmpPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}">
-            <xsl:value-of select="tei:cell[$cn('Team')('persName')]" />
-        </persName>
-        <resp>
-            <xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]" />
-        </resp>
-    </respStmt>
-</xsl:template> -->
-<!-- END old code -->
-<xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']"
-              mode="respStmtCorpusDoc">
-    <!-- mode = what is the context of this run:
-            * "teiCorpusDoc": this generates the master list of team members in the teiCorpus
-            * "respStmts: genereates a list of respStmts pointing to the list of team members in the TEI Corpus 
-            * "teiInstanceDoc": this generates the list of team members in one TEI instance, 
-            thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-    <xsl:param name="mode" />
-    <respStmt>
-        <persName ref="{$dmpPrefix}:{tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')]}">
-            <xsl:value-of select="tei:cell[1]" />
-        </persName>
-        <resp>
-            <xsl:value-of select="tei:cell[$cn('Team')('Attribute:role')]" />
-        </resp>
-    </respStmt>
 </xsl:template>
 <xsl:template match="tei:table[tei:head = 'Team']/tei:row[tei:cell[$cn('Team')('http://www.w3.org/XML/1998/namespace.Attribute:id')] != '']"
               mode="teiInstanceDoc">
