@@ -492,7 +492,7 @@
         </xsl:if>
         <xsl:if test="tei:cell[9] != 'N/A'">
             <xsl:for-each select="tokenize(tei:cell[9], ',')">
-                <ptr type="participatedIn" target="#{normalize-space(.)}"/>
+                <ptr type="participatedIn" target="{$teiCorpusPrefix}:{normalize-space(.)}"/>
             </xsl:for-each>
         </xsl:if>
         <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
