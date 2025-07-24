@@ -1,0 +1,2762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2025-06-22T14:30:34.815848Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">36_MA_M.71_Karantina_PortExplosion</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">36_MA_M.71_Karantina_PortExplosion</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.26041666666666669" type="audio">
+                  <date when="2022-03-04"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 36_MA_M.71_Karantina_PortExplosion</head>
+               <person sameAs="corpus:LEB_KAR_2022_MA_M.71_Speaker2">
+                  <idno>LEB_KAR_2022_MA_M.71_Speaker2</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2022_AA_F.69_Speaker13">
+                  <idno>LEB_KAR_2022_AA_F.69_Speaker13</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:PortExplosion"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="2296" since="#T0" xml:id="T120"/>
+         <when interval="2611" since="#T0" xml:id="T121"/>
+         <when interval="5472" since="#T0" xml:id="T5"/>
+         <when interval="5903" since="#T0" xml:id="T122"/>
+         <when interval="6092" since="#T0" xml:id="T123"/>
+         <when interval="7059" since="#T0" xml:id="T6"/>
+         <when interval="7220" since="#T0" xml:id="T7"/>
+         <when interval="9672" since="#T0" xml:id="T124"/>
+         <when interval="11000" since="#T0" xml:id="T8"/>
+         <when interval="12490" since="#T0" xml:id="T125"/>
+         <when interval="12883" since="#T0" xml:id="T9"/>
+         <when interval="14477" since="#T0" xml:id="T126"/>
+         <when interval="16015" since="#T0" xml:id="T10"/>
+         <when interval="16831" since="#T0" xml:id="T11"/>
+         <when interval="18312" since="#T0" xml:id="T12"/>
+         <when interval="18457" since="#T0" xml:id="T13"/>
+         <when interval="21399" since="#T0" xml:id="T14"/>
+         <when interval="21528" since="#T0" xml:id="T15"/>
+         <when interval="25741" since="#T0" xml:id="T16"/>
+         <when interval="25942" since="#T0" xml:id="T17"/>
+         <when interval="28125" since="#T0" xml:id="T127"/>
+         <when interval="29586" since="#T0" xml:id="T18"/>
+         <when interval="31265" since="#T0" xml:id="T19"/>
+         <when interval="31567" since="#T0" xml:id="T128"/>
+         <when interval="36627" since="#T0" xml:id="T20"/>
+         <when interval="37165" since="#T0" xml:id="T1"/>
+         <when interval="39586" since="#T0" xml:id="T2"/>
+         <when interval="39594" since="#T0" xml:id="T129"/>
+         <when interval="41254" since="#T0" xml:id="T130"/>
+         <when interval="41510" since="#T0" xml:id="T131"/>
+         <when interval="42332" since="#T0" xml:id="T3"/>
+         <when interval="43648" since="#T0" xml:id="T132"/>
+         <when interval="43721" since="#T0" xml:id="T4"/>
+         <when interval="46222" since="#T0" xml:id="T133"/>
+         <when interval="47877" since="#T0" xml:id="T134"/>
+         <when interval="48317" since="#T0" xml:id="T135"/>
+         <when interval="50425" since="#T0" xml:id="T136"/>
+         <when interval="51813" since="#T0" xml:id="T21"/>
+         <when interval="52634" since="#T0" xml:id="T137"/>
+         <when interval="53225" since="#T0" xml:id="T22"/>
+         <when interval="55183" since="#T0" xml:id="T138"/>
+         <when interval="55185" since="#T0" xml:id="T139"/>
+         <when interval="58434" since="#T0" xml:id="T140"/>
+         <when interval="60133" since="#T0" xml:id="T141"/>
+         <when interval="60316" since="#T0" xml:id="T142"/>
+         <when interval="65045" since="#T0" xml:id="T143"/>
+         <when interval="65199" since="#T0" xml:id="T144"/>
+         <when interval="67055" since="#T0" xml:id="T23"/>
+         <when interval="68551" since="#T0" xml:id="T145"/>
+         <when interval="69148" since="#T0" xml:id="T24"/>
+         <when interval="72425" since="#T0" xml:id="T146"/>
+         <when interval="75017" since="#T0" xml:id="T25"/>
+         <when interval="75963" since="#T0" xml:id="T26"/>
+         <when interval="75993" since="#T0" xml:id="T147"/>
+         <when interval="76332" since="#T0" xml:id="T27"/>
+         <when interval="80384" since="#T0" xml:id="T148"/>
+         <when interval="82846" since="#T0" xml:id="T149"/>
+         <when interval="84518" since="#T0" xml:id="T28"/>
+         <when interval="84795" since="#T0" xml:id="T29"/>
+         <when interval="88296" since="#T0" xml:id="T30"/>
+         <when interval="88476" since="#T0" xml:id="T31"/>
+         <when interval="90981" since="#T0" xml:id="T32"/>
+         <when interval="95253" since="#T0" xml:id="T33"/>
+         <when interval="95899" since="#T0" xml:id="T34"/>
+         <when interval="99907" since="#T0" xml:id="T35"/>
+         <when interval="105666" since="#T0" xml:id="T36"/>
+         <when interval="106505" since="#T0" xml:id="T37"/>
+         <when interval="113587" since="#T0" xml:id="T38"/>
+         <when interval="114347" since="#T0" xml:id="T39"/>
+         <when interval="122008" since="#T0" xml:id="T40"/>
+         <when interval="122105" since="#T0" xml:id="T41"/>
+         <when interval="127807" since="#T0" xml:id="T42"/>
+         <when interval="127922" since="#T0" xml:id="T43"/>
+         <when interval="130777" since="#T0" xml:id="T44"/>
+         <when interval="133147" since="#T0" xml:id="T45"/>
+         <when interval="133615" since="#T0" xml:id="T46"/>
+         <when interval="137796" since="#T0" xml:id="T47"/>
+         <when interval="142533" since="#T0" xml:id="T48"/>
+         <when interval="143499" since="#T0" xml:id="T49"/>
+         <when interval="147273" since="#T0" xml:id="T50"/>
+         <when interval="147342" since="#T0" xml:id="T51"/>
+         <when interval="148666" since="#T0" xml:id="T150"/>
+         <when interval="150451" since="#T0" xml:id="T52"/>
+         <when interval="151295" since="#T0" xml:id="T53"/>
+         <when interval="151520" since="#T0" xml:id="T151"/>
+         <when interval="151664" since="#T0" xml:id="T152"/>
+         <when interval="153840" since="#T0" xml:id="T54"/>
+         <when interval="154795" since="#T0" xml:id="T55"/>
+         <when interval="157568" since="#T0" xml:id="T153"/>
+         <when interval="161870" since="#T0" xml:id="T56"/>
+         <when interval="161962" since="#T0" xml:id="T154"/>
+         <when interval="165722" since="#T0" xml:id="T155"/>
+         <when interval="167499" since="#T0" xml:id="T57"/>
+         <when interval="168185" since="#T0" xml:id="T156"/>
+         <when interval="174425" since="#T0" xml:id="T58"/>
+         <when interval="177407" since="#T0" xml:id="T157"/>
+         <when interval="182173" since="#T0" xml:id="T158"/>
+         <when interval="193480" since="#T0" xml:id="T59"/>
+         <when interval="194284" since="#T0" xml:id="T60"/>
+         <when interval="194497" since="#T0" xml:id="T61"/>
+         <when interval="196999" since="#T0" xml:id="T62"/>
+         <when interval="197010" since="#T0" xml:id="T63"/>
+         <when interval="200904" since="#T0" xml:id="T64"/>
+         <when interval="201454" since="#T0" xml:id="T65"/>
+         <when interval="203325" since="#T0" xml:id="T66"/>
+         <when interval="204376" since="#T0" xml:id="T67"/>
+         <when interval="206478" since="#T0" xml:id="T68"/>
+         <when interval="208366" since="#T0" xml:id="T69"/>
+         <when interval="211185" since="#T0" xml:id="T70"/>
+         <when interval="214970" since="#T0" xml:id="T71"/>
+         <when interval="215075" since="#T0" xml:id="T72"/>
+         <when interval="219653" since="#T0" xml:id="T73"/>
+         <when interval="221465" since="#T0" xml:id="T74"/>
+         <when interval="224663" since="#T0" xml:id="T75"/>
+         <when interval="225068" since="#T0" xml:id="T76"/>
+         <when interval="227376" since="#T0" xml:id="T77"/>
+         <when interval="229413" since="#T0" xml:id="T78"/>
+         <when interval="233327" since="#T0" xml:id="T79"/>
+         <when interval="236101" since="#T0" xml:id="T80"/>
+         <when interval="243685" since="#T0" xml:id="T81"/>
+         <when interval="246888" since="#T0" xml:id="T82"/>
+         <when interval="247925" since="#T0" xml:id="T83"/>
+         <when interval="250357" since="#T0" xml:id="T84"/>
+         <when interval="251138" since="#T0" xml:id="T85"/>
+         <when interval="252964" since="#T0" xml:id="T86"/>
+         <when interval="253089" since="#T0" xml:id="T87"/>
+         <when interval="257193" since="#T0" xml:id="T88"/>
+         <when interval="257316" since="#T0" xml:id="T89"/>
+         <when interval="259410" since="#T0" xml:id="T90"/>
+         <when interval="259520" since="#T0" xml:id="T91"/>
+         <when interval="268179" since="#T0" xml:id="T92"/>
+         <when interval="268591" since="#T0" xml:id="T159"/>
+         <when interval="271214" since="#T0" xml:id="T93"/>
+         <when interval="271351" since="#T0" xml:id="T160"/>
+         <when interval="273168" since="#T0" xml:id="T161"/>
+         <when interval="274617" since="#T0" xml:id="T94"/>
+         <when interval="278201" since="#T0" xml:id="T162"/>
+         <when interval="279036" since="#T0" xml:id="T95"/>
+         <when interval="285543" since="#T0" xml:id="T96"/>
+         <when interval="285695" since="#T0" xml:id="T97"/>
+         <when interval="289510" since="#T0" xml:id="T98"/>
+         <when interval="290355" since="#T0" xml:id="T99"/>
+         <when interval="292952" since="#T0" xml:id="T100"/>
+         <when interval="293213" since="#T0" xml:id="T101"/>
+         <when interval="297856" since="#T0" xml:id="T102"/>
+         <when interval="300945" since="#T0" xml:id="T103"/>
+         <when interval="301030" since="#T0" xml:id="T104"/>
+         <when interval="301759" since="#T0" xml:id="T163"/>
+         <when interval="303934" since="#T0" xml:id="T105"/>
+         <when interval="305166" since="#T0" xml:id="T106"/>
+         <when interval="306745" since="#T0" xml:id="T164"/>
+         <when interval="309579" since="#T0" xml:id="T107"/>
+         <when interval="312666" since="#T0" xml:id="T108"/>
+         <when interval="315899" since="#T0" xml:id="T109"/>
+         <when interval="316966" since="#T0" xml:id="T110"/>
+         <when interval="321980" since="#T0" xml:id="T111"/>
+         <when interval="330832" since="#T0" xml:id="T112"/>
+         <when interval="330940" since="#T0" xml:id="T113"/>
+         <when interval="332583" since="#T0" xml:id="T114"/>
+         <when interval="332723" since="#T0" xml:id="T115"/>
+         <when interval="334703" since="#T0" xml:id="T116"/>
+         <when interval="339570" since="#T0" xml:id="T117"/>
+         <when interval="342598" since="#T0" xml:id="T165"/>
+         <when interval="347293" since="#T0" xml:id="T166"/>
+         <when interval="347401" since="#T0" xml:id="T118"/>
+         <when interval="351018" since="#T0" xml:id="T119"/>
+         <when interval="351989" since="#T0" xml:id="T167"/>
+         <when interval="355485" since="#T0" xml:id="T168"/>
+         <when interval="355678" since="#T0" xml:id="T169"/>
+         <when interval="361685" since="#T0" xml:id="T170"/>
+         <when interval="361836" since="#T0" xml:id="T171"/>
+         <when interval="364839" since="#T0" xml:id="T172"/>
+         <when interval="364945" since="#T0" xml:id="T173"/>
+         <when interval="367347" since="#T0" xml:id="T174"/>
+         <when interval="367498" since="#T0" xml:id="T175"/>
+         <when interval="371102" since="#T0" xml:id="T176"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T176</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a64"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T120"
+                  start="#T0">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000001">ʔaddē</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000002">nraʕabna</w>
+                  <pc xml:id="xTok_000003">?</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000004">mitil</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000005">raʕbit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000006"
+                     rend="withDash">iṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000008">ṭayāra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000009">li</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000010">ḍirḅit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000011"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000013">pōr</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000014">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000015">nraʕabna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a65"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T122"
+                  start="#T121">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000016"
+                     rend="withDash">ʕan</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000018" join="right">žadd</w>
+                  <pc xml:id="xTok_000019">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000020">murʔit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000021">min</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000022">fōʔ</w>
+                  <pc xml:id="xTok_000023">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000024">min</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000025">hōn</w>
+                  <pc xml:id="xTok_000026">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a1"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000027">ē</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000028">ṭiyyāra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000029">ʔani</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000030">wāgif</w>
+                  <pc xml:id="xTok_000031">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000032">ʔani</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a66"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T124"
+                  start="#T123">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000033">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000034">laṭīf</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000035">hazzēna</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000036"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000038">binay</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000039"
+                     rend="withDash">kill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000041">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a2"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000042">wāʔif</w>
+                  <pc xml:id="xTok_000043">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000044">wāgif</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000045"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000047"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000049">balkōn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000050">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000051">w</w>
+                  <pc join="right" xml:id="xTok_000052">.</pc>
+                  <pc xml:id="xTok_000053">.</pc>
+                  <pc xml:id="xTok_000054">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a3"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T9"
+                  start="#T8">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000055">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000056">kint</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000057">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000058">mart</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000059">yūyū</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a67"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T126"
+                  start="#T125">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000060"
+                     rend="withDash">kill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000062">na</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000063">barra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a4"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000064">kinna</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000065">kinna</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000066">baʕd</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000067">wāgfīn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000068">barra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000069">ʕa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000070">ʔaḥki</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000071">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000072">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000073">mart</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000074">yūyū</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000075">hnāk</w>
+                  <pc xml:id="xTok_000076">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a5"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T12"
+                  start="#T11">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000077"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000079"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000081">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000082">waḷḷa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000083">ṣōt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000084">ṭayarān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a6"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000085">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000086">ʔamzaḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000087">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000088"
+                     rend="withDash">gūl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000090"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000092">a</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000093">ʔuḏ̣urbi</w>
+                  <pc xml:id="xTok_000094">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000095">ʔuḍrub</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a7"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000096">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000097">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000098">daʔīʔa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000099">ʔilla</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000100">simʕat</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000101"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000103">kilma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000104">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000105">ḍarabat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a8"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000106">tlāʔi</w>
+                  <pc join="right" xml:id="xTok_000107">.</pc>
+                  <pc xml:id="xTok_000108">.</pc>
+                  <pc xml:id="xTok_000109">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a68"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T128"
+                  start="#T127">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000110">binēyēt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000111">hēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000112">rāḥit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000113">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000114">ʔižit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000115">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a9"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000116">nizlat</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000117">ḥadīde</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000118"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000120">na</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000121"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000123"
+                     rend="withDash">d</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000125">daraž</w>
+                  <pc join="right" xml:id="xTok_000126">.</pc>
+                  <pc xml:id="xTok_000127">.</pc>
+                  <pc xml:id="xTok_000128">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000129">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000130">law</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000131">nizlat</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000132"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000134">rās</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000135">wāḥad</w>
+                  <pc join="right" xml:id="xTok_000136">.</pc>
+                  <pc xml:id="xTok_000137">.</pc>
+                  <pc xml:id="xTok_000138">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a97"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000139">hinne</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000140">kān</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000141"
+                     rend="withDash">ʕam</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000143"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000145">yʔūlu</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000146">ṣōt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000147">firʔēʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000148">miš</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000149">ṣōṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000150">ṭiyārān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a69"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T130"
+                  start="#T129">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000151">lāʔ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000152">kān</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000153">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000154">ʔuwwāṣ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000155"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000157"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000159">ʔawwal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a70"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T132"
+                  start="#T131">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000160"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000162"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000164">ʔawwal</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000165">ṣār</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000166">əʔwwāṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a98"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000167">huwwe</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000168">firʔēʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a71"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T133"
+                  start="#T132">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000169">lāʔ</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000170">ʔwās</w>
+                  <pc xml:id="xTok_000171">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000172"
+                     rend="withDash">ʔālit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000174"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000176">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000177">mart</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000178">yūyū</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a72"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T134"
+                  start="#T133">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000179"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000181"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000183">ʔawwal</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000184">ḥarīʔa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a73"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T136"
+                  start="#T135">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000185"
+                     rend="withDash">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000187">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000188">mart</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000189">yūyū</w>
+                  <pc xml:id="xTok_000190">:</pc>
+                  <pc join="right" xml:id="xTok_000191">"</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000192">taʕi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000193">šūfi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000194">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000195">mart</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000196"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000198">i</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000199">ḥarīʔa</w>
+                  <pc xml:id="xTok_000200">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a74"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T137"
+                  start="#T136">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000201"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000203"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000205">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000206">ykūn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000207">zbēle</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000208">ʕam</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000209"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000211"
+                     rend="withDash">yiḥirʔū</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000213">wun</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a10"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000214">kān</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000215">daxne</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000216">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a75"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T138"
+                  start="#T137">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000217">rižaʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000218">ṭulʕat</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000219"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000221" join="right">ʔirṣāṣ</w>
+                  <pc xml:id="xTok_000222">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000223"
+                     rend="withDash">ʔālit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000225"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000227">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000228">ʔwwāṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a76"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T140"
+                  start="#T139">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000229"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000231"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000233">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000234">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000235"
+                     rend="withDash">taʕrfī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000237" join="right">ha</w>
+                  <pc xml:id="xTok_000238">?</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000239"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000241"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000243">balad</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000244">ʕalaṭūl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000245"
+                     rend="withDash">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000247">yo</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000248">rṣāṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a77"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T141"
+                  start="#T140">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000249">ʔāl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000250">bass</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000251">rṣāṣ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000252"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000254">yxawwif</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000255">miš</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000256">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a78"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T143"
+                  start="#T142">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000257">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000258">šī</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000259"
+                     rend="withDash">ism</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000261">o</w>
+                  <pc join="right" xml:id="xTok_000262">.</pc>
+                  <pc xml:id="xTok_000263">.</pc>
+                  <pc xml:id="xTok_000264">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000265">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000266">kaffat</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000267"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000269">kilma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000270"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000272">murʔat</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000273"
+                     rend="withDash">əṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000275">ṭiyāra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000276">min</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000277">hōn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000278">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000279">laṭīf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a79"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T145"
+                  start="#T144">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000280">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000281">bi</w>
+                  <pc join="right" xml:id="xTok_000282">.</pc>
+                  <pc xml:id="xTok_000283">.</pc>
+                  <pc xml:id="xTok_000284">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000285">mitsaṭḥa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000286">hēn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000287">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000288">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000289">bint</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000290">yūyū</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000291">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000292">hayde</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000293">ṭulʕat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a11"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000294">hēn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000295">kēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a80"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T146"
+                  start="#T145">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000296"
+                     rend="withDash">daxīl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000298">ik</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000299">ya</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000300">tēta</w>
+                  <pc xml:id="xTok_000301">!</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000302"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000304"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000306">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000307">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000308">txāfi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000309">hallaʔ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000310">ninzal</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000311"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000313">taḥət</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000314"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000316"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000318">ṭābiʔ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000319"
+                     rend="withDash">it</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000321">taḥtāni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a81"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T147"
+                  start="#T146">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000322">baʕəd</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000323">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000324"
+                     rend="withDash">bidd</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000326">na</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000327">ninzal</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000328">ʔilla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a12"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000329">ḍarbat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a13"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000330">tlāgi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000331">hēn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000332"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000334">kinn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000335">ḥarb</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000336">yaʕni</w>
+                  <pc xml:id="xTok_000337">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000338">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000339"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000341"
+                     rend="withDash">yʔūlū</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000343"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000345">ak</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000346">hiyye</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000347">hāy</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000348">tēlit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000349">ḍarbe</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000350"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000352"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000354">ʕālam</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000355"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000357"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000359">ʔinfiǧār</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000360">hayda</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000361"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000363">ʔawwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a82"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T149"
+                  start="#T148">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000364">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000365">maḥla</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000366"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000368">ḥarb</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000369">ʕan</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000370"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000372"
+                     rend="withDash">ḍ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000374" join="right">ḍirba</w>
+                  <pc xml:id="xTok_000375">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a14"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000376">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000377">ʔaḷḷa</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000378">satar</w>
+                  <pc xml:id="xTok_000379">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000380">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000381">ʔaḷḷa</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000382">satar</w>
+                  <pc xml:id="xTok_000383">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000384">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000385">rāḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000386">ʔutala</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a15"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000387">rāḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000388">wāḥid</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000389">sūri</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000390">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000391">ḥarām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a16"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000392">huwwe</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000393">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000394">rāyiḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000395"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000397"
+                     rend="withDash">l</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000399">bē</w>
+                  <pc join="right" xml:id="xTok_000400">(</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000401">t</w>
+                  <pc join="right" xml:id="xTok_000402">)</pc>
+                  <pc xml:id="xTok_000403">#</pc>
+                  <pc xml:id="xTok_000404">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000405">wēn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000406">širkit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000407"
+                     rend="withDash">in</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000409" join="right">nēt</w>
+                  <pc xml:id="xTok_000410">?</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000411">hayde</w>
+                  <pc xml:id="xTok_000412">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a17"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000413">ṭār</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000414">lōḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000415">huwwe</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000416">w</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000417">māriʔ</w>
+                  <pc xml:id="xTok_000418">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000419"
+                     rend="withDash">ṭaraʔ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000421">o</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000422">min</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000423">hōn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000424">hēk</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000425"
+                     rend="withDash">rās</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000427" join="right">o</w>
+                  <pc xml:id="xTok_000428">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a18"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000429">ya</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000430">ḥarām</w>
+                  <pc xml:id="xTok_000431">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000432">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000433"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000435"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000437">ʔarḍ</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000438">hū</w>
+                  <pc xml:id="xTok_000439">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000440">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000441"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000443">lwēḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000444">li</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000445">ṭāro</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000446"
+                     rend="withDash">ġaṭṭū</w>
+                  <pc join="right" xml:id="xTok_000448">_</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000449" join="right">́</w>
+                  <pc xml:id="xTok_000450">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000451">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000452">baʔa</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000453">bayyan</w>
+                  <pc xml:id="xTok_000454">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a19"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000455">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000456">ḥaram</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000457"
+                     rend="withDash">mart</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000459">o</w>
+                  <pc join="right" xml:id="xTok_000460">.</pc>
+                  <pc xml:id="xTok_000461">.</pc>
+                  <pc xml:id="xTok_000462">.</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000463">tʔaxxar</w>
+                  <pc xml:id="xTok_000464">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000465">talfanit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000466"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000468"
+                     rend="withDash">mʕallm</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000470">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000471">ʔinno</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000472"
+                     rend="withDash">wēn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000474" join="right">o</w>
+                  <pc xml:id="xTok_000475">?</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000476"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000478"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000480">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000481">ḍahar</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000482">min</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000483">zamē​n</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a20"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000484">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000485">wāḥid</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000486"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000488"
+                     rend="withDash">yʔil</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000490"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000492" join="right">un</w>
+                  <pc xml:id="xTok_000493">:</pc>
+                  <pc xml:id="xTok_000494">"</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000495">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000496">wāḥid</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000497">hōn</w>
+                  <pc xml:id="xTok_000498">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000499">ya</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000500"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000502" join="right">i</w>
+                  <pc xml:id="xTok_000503">,</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000504">tanak</w>
+                  <pc xml:id="xTok_000505">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000506"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000508">wāḥid</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000509">tanak</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000510"
+                     rend="withDash">ġāṭṭit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000512">o</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000513">yimkin</w>
+                  <pc join="right" xml:id="xTok_000514">.</pc>
+                  <pc join="right" xml:id="xTok_000515">.</pc>
+                  <pc xml:id="xTok_000516">.</pc>
+                  <pc xml:id="xTok_000517">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a21"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000518">ḥarām</w>
+                  <pc xml:id="xTok_000519">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000520"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000522">yiṭlaʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000523">hayda</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000524"
+                     rend="withDash">s</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000526" join="right">sūri</w>
+                  <pc xml:id="xTok_000527">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000528">ʔamma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000529"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000531">bēʔi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000532"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000534">manṭʔa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000535"
+                     rend="withDash">kill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000537">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000538">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000539">žuraḥa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a22"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000540">illi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000541">rāḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000542"
+                     rend="withDash">bayt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000544" join="right">o</w>
+                  <pc xml:id="xTok_000545">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000546">illi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000547">rāḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000548"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000550">ʔiʔzēz</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a23"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000551">sayarāt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000552">taḥət</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000553">itkassarit</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a24"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000554">siyārāt</w>
+                  <pc xml:id="xTok_000555">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000556">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000557">siyārti</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000558"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000560"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000562" join="right">nuṣṣ</w>
+                  <pc xml:id="xTok_000563">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000564">siyāra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000565">min</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000566">hōn</w>
+                  <pc xml:id="xTok_000567">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000568">siyāra</w>
+                  <pc join="right" xml:id="xTok_000569">.</pc>
+                  <pc xml:id="xTok_000570">.</pc>
+                  <pc xml:id="xTok_000571">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000572">tkassaru</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000573"
+                     rend="withDash">kull</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000575" join="right">un</w>
+                  <pc xml:id="xTok_000576">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a25"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000577">hallaʔ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000578"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000580">a</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000581"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000583">hallaʔ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000584"
+                     rend="withDash">siyārt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000586">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000587">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000588">maḍrūba</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000589">min</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000590">fōʔ</w>
+                  <pc xml:id="xTok_000591">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000592"
+                     rend="withDash">is</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000594" join="right">saʔəf</w>
+                  <pc xml:id="xTok_000595">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000596"
+                     rend="withDash">kull</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000598">u</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000599">maṭʕūž</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a26"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000600">yaʕni</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000601">hayda</w>
+                  <pc xml:id="xTok_000602">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000603">hayda</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000604">kēn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000605">əǧdīd</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000606"
+                     rend="withDash">rakkabnā</w>
+                  <pc join="right" xml:id="xTok_000608">_</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000609">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a27"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000610">kēn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000611"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000613">lōḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000614"
+                     rend="withDash">tḍall</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000616">ak</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000617">ṭār</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a83"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T151"
+                  start="#T150">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000618">lawḥāt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000619">ʔūḍt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000620"
+                     rend="withDash">in</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000622">nōm</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000623">kān</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000624">wiʔaʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000625">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000626"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000628">na</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000629">xabar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a28"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000630">ḥēṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000631">kamēn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000632"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000634">na</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000635">ʔūḍt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000636"
+                     rend="withDash">in</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000638">nōm</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a84"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T153"
+                  start="#T152">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000639"
+                     rend="withDash">law</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000641">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000642"
+                     rend="withDash">lə</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000644">mhandis</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000645">ʕa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000646">yisāwi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000647"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000649">bināy</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000650"
+                     rend="withDash">it</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000652" join="right">tānye</w>
+                  <pc xml:id="xTok_000653">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000654"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000656"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000658">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000659">raḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000660">yrūḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000661"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000663">ḥēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000664"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000666"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000668">un</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000669"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000671"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000673">bēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a29"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000674">ē</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000675">taʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000676"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000678"
+                     rend="withDash">faržī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000680">k</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000681"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000683">maḥall</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000684">ha</w>
+                  <pc xml:id="xTok_000685">?</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000686">ʕafwan</w>
+                  <pc xml:id="xTok_000687">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000688">ʔana</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000689">mṣawwar</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000690"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000692">maḥall</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000693">taḥət</w>
+                  <pc xml:id="xTok_000694">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000695"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000697">na</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000698"
+                     rend="withDash">maḥall</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000700">ēn</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000701">haydōl</w>
+                  <pc xml:id="xTok_000702">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000703">ʔinta</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000704">law</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000705"
+                     rend="withDash">tšūf</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000707">un</w>
+                  <pc join="right" xml:id="xTok_000708">.</pc>
+                  <pc xml:id="xTok_000709">.</pc>
+                  <pc xml:id="xTok_000710">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a85"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T155"
+                  start="#T154">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000711"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000713">maḥall</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000714">nfitaḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000715">ʕala</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000716">bēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000717"
+                     rend="withDash">iž</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000719">žīrān</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000720">illi</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000721">taḥat</w>
+                  <pc xml:id="xTok_000722">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a86"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T156"
+                  start="#T155">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000723">wuʔaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000724"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000726">ḥēṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000727">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000728">bayyan</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000729">bēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000730"
+                     rend="withDash">iž</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000732">žīrān</w>
+                  <pc join="right" xml:id="xTok_000733">.</pc>
+                  <pc xml:id="xTok_000734">.</pc>
+                  <pc xml:id="xTok_000735">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a30"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000736">ʔani</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000737"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000739"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000741">o</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000742">xōd</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000743">rkōdən</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000744">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000745"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000747">yūssif</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000748">ʔiṭlaʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000749">ʕind</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000750">bēt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000751">ʕārif</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000752">yalla</w>
+                  <pc xml:id="xTok_000753">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000754">rūḥu</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000755">rūḥu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a87"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T158"
+                  start="#T157">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000756">maraʔ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000757"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000759">na</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000760">ḥarəb</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000761">əktīr</w>
+                  <pc xml:id="xTok_000762">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000763">bass</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000764">laʔ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000765">mitil</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000766"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000768"
+                     rend="withDash">ḍ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000770">ḍarba</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000771">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000772">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000773">maraʔ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000774"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000776">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a31"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T60"
+                  start="#T59">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000777"
+                     rend="withDash">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000779">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a32"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000780">lēk</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000781">hayde</w>
+                  <pc xml:id="xTok_000782">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a33"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000783">hōn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000784"
+                     rend="withDash">iḍ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000786">ḍarbe</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000787"
+                     rend="withDash">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000789" join="right">i</w>
+                  <pc xml:id="xTok_000790">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000791">ʔana</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000792">hōn</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000793">ha</w>
+                  <pc xml:id="xTok_000794">?</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000795">hayda</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000796"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000798"
+                     rend="withDash">š</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000800">šōrt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a34"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000801">hōn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000802"
+                     rend="withDash">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000804">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000805">hayda</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000806">huwwi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a35"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000807">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000808">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000809">lēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a36"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T70"
+                  start="#T69">
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000810">hayda</w>
+                  <pc xml:id="xTok_000811">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000812">maḥall</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000813">taḥət</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000814">hāy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a37"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T71"
+                  start="#T70">
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000815">yaʕni</w>
+                  <pc xml:id="xTok_000816">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000817"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000819"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000821" join="right">o</w>
+                  <pc xml:id="xTok_000822">!</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000823">maxāzin</w>
+                  <pc xml:id="xTok_000824">?</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000825"
+                     rend="withDash">kull</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000827">u</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000828">ṭār</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a38"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000829">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000830">kīf</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000831">min</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000832"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000834"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000836">meyl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000837">waʔaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000838"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000840"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000842"
+                     rend="withDash">z</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000844" join="right">zarūba</w>
+                  <pc xml:id="xTok_000845">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000846">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000847">hāy</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000848">bēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000849"
+                     rend="withDash">iz</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000851">zalame</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000852">žuwwa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000853">hnīk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a39"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000854">ya</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000855"
+                     rend="withDash">xayy</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000857">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000858">hōn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000859">ʔalla</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000860">satar</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000861">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000862">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000863"
+                     rend="withDash">rāḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000865"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000867">o</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000868">šī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000869">ḥada</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000870">hōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a40"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000871">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000872">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000873">ʔilla</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000874">hayda</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000875">ʔaḷḷa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000876"
+                     rend="withDash">yirḥam</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000878">o</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000879"
+                     rend="withDash">s</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000881">sūri</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000882">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000883">ḥarām</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a41"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T79"
+                  start="#T78">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000884">haydi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000885">tālit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000886">ḍārbe</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000887"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000889"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000891">ʕālam</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000892"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000894"
+                     rend="withDash">yʔūlū</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000896"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000898">ak</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000899">hārūšīma</w>
+                  <pc xml:id="xTok_000900">?</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000901">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000902"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000904">ʕarif</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a42"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000905">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000906">rāḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000907">ḥawāli</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000908">mītēn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000909">w</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000910">xamsīn</w>
+                  <pc xml:id="xTok_000911">.</pc>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000912">taʕrif</w>
+                  <pc xml:id="xTok_000913">?</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000914">law</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000915">ʔaḷḷa</w>
+                  <pc join="right" xml:id="xTok_000916">.</pc>
+                  <pc xml:id="xTok_000917">.</pc>
+                  <pc xml:id="xTok_000918">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000919">law</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000920">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000921">fī</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000922"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000924">baḥar</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000925"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000927"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000929" join="right">hāḏa</w>
+                  <pc xml:id="xTok_000930">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000931"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000933"
+                     rend="withDash">d</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000935">dār</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000936">tabaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000937"
+                     rend="withDash">əl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000939" join="right">ʔaməḥ</w>
+                  <pc xml:id="xTok_000940">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a43"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000941">lawinno</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000942"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000944">ak</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000945">kān</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000946">rāḥit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000947">tlēt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000948">ərbēʕ</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000949">beyrūt</w>
+                  <pc xml:id="xTok_000950">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a44"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T84"
+                  start="#T83">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000951"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000953">ʔašrafiyye</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000954">tʔazzit</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000955">fōʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a45"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T86"
+                  start="#T85">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000956">mār</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000957">əmxāyyil</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000958">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a46"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T88"
+                  start="#T87">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000959">hōn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000960">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000961">tʔazzayna</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000962">ḥna</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000963">ʔaktar</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000964">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000965">tʔazzu</w>
+                  <pc join="right" xml:id="xTok_000966">.</pc>
+                  <pc xml:id="xTok_000967">.</pc>
+                  <pc xml:id="xTok_000968">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000969">fī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000970">ʔutala</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000971">rāḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000972">fōʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a47"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T90"
+                  start="#T89">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000973">maẓbūṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000974">willa</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000975">laʔ</w>
+                  <pc xml:id="xTok_000976">?</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000977">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a48"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T92"
+                  start="#T91">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000978"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000980"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000982" join="right">ṣayfi</w>
+                  <pc xml:id="xTok_000983">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000984"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000986">mār</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000987">əmxayyil</w>
+                  <pc xml:id="xTok_000988">,</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000989"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000991"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000993" join="right">ʔašrafiyye</w>
+                  <pc xml:id="xTok_000994">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000995">ḥatta</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000996"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000998">mistašfa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_000999"
+                     rend="withDash">r</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001001">rūm</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001002">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001003">žiʕtēwi</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001004">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001005">ziʕtēwi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001006"
+                     rend="withDash">kull</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001008">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001009">tḍaʕbat</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001010"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001012">bināyāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a88"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T160"
+                  start="#T159">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001013"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001015"
+                     rend="withDash">yʔūlū</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001017"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001019">ik</w>
+                  <pc join="right" xml:id="xTok_001020">"</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001021">ʔaḷḷa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001022">miš</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001023">ṭayyāra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001024">miš</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001025">ṭayyāra</w>
+                  <pc xml:id="xTok_001026">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a49"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T94"
+                  start="#T93">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001027">lā</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001028">ʔana</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001029"
+                     rend="withDash">smiʕt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001031">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001032">ṭayyāra</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001033">ʔana</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001034">wēʔif</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001035">hōn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001036"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001038"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001040">bālkōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a89"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T162"
+                  start="#T161">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001041">kill</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001042"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001044">ʕālam</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001045">illi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001046"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001048">mar</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001049">mxāyyil</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001050"
+                     rend="withDash">kill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001052">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001053">ṭulʕit</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001054"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001056"
+                     rend="withDash">t</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001058">tilfizyūn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001059">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001060">ʔālit</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001061">ṭayyāra</w>
+                  <pc xml:id="xTok_001062">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a50"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T96"
+                  start="#T95">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001063">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001064">wāʔif</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001065"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001067"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001069">balkōn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001070">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001071">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001072"
+                     rend="withDash">bint</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001074">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001075">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001076"
+                     rend="withDash">ʔaḥkī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001078" join="right">ya</w>
+                  <pc xml:id="xTok_001079">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001080">waḷḷa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001081">ʕa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001082"
+                     rend="withDash">ʔaḥkī</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001084">ha</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001085">ʔinno</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001086">ṣōt</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001087">ṭayarā​n</w>
+                  <pc xml:id="xTok_001088">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a51"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T98"
+                  start="#T97">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001089"
+                     rend="withDash">b</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001091" join="right">ḥiss</w>
+                  <pc xml:id="xTok_001092">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001093">nʔaṭaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001094"
+                     rend="withDash">lə</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001096">xṭūṭ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001097"
+                     rend="withDash">it</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001099">tilifūnāt</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001100">inʔaṭaʕat</w>
+                  <pc xml:id="xTok_001101">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a52"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T100"
+                  start="#T99">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001102">ʕam</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001103">duʔʔ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001104"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001106">ʕārif</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001107">wala</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001108">šī</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a53"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T102"
+                  start="#T101">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001109">ʔālu</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001110">ḍarbe</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001111"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001113"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001115">karantīna</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001116"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001118"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001120">əmdawwar</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001121">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001122">mār</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001123">əmxayyil</w>
+                  <pc xml:id="xTok_001124">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a54"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T103"
+                  start="#T102">
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001125">infiǧār</w>
+                  <pc xml:id="xTok_001126">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001127">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001128">laṭīf</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001129">tulṭuf</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a55"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T105"
+                  start="#T104">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001130">ḍallēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001131"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001133"
+                     rend="withDash">s</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001135">sēʕa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001136">ʕidaʕāš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a90"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T164"
+                  start="#T163">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001137"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001139"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001141">ʔawwal</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001142">ʔālu</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001143"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001145"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001147">bēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001148"
+                     rend="withDash">əl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001150">wasaṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001151">ʕind</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001152">saʕad</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001153"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001155">ḥarīri</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a56"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T107"
+                  start="#T106">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001156">ʔālu</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001157"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001159"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001161">bēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001162"
+                     rend="withDash">əl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001164">wasaṭ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001165">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001166">bēt</w>
+                  <pc join="right" xml:id="xTok_001167">.</pc>
+                  <pc xml:id="xTok_001168">.</pc>
+                  <pc xml:id="xTok_001169">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001170">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a57"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T109"
+                  start="#T108">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001171"
+                     rend="withDash">lə</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001173">byūt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001174">tḍaḍaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001175"
+                     rend="withDash">kill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001177" join="right">a</w>
+                  <pc xml:id="xTok_001178">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a58"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T111"
+                  start="#T110">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001179"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001181"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001183">o</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001184"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001186"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001188">y</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001189">yigūm</w>
+                  <pc xml:id="xTok_001190">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001191">yiṭlaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001192"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001194" join="right">un</w>
+                  <pc xml:id="xTok_001195">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001196"
+                     rend="withDash">gāl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001198"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001200" join="right">i</w>
+                  <pc xml:id="xTok_001201">:</pc>
+                  <pc join="right" xml:id="xTok_001202">"</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001203">lā</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001204">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001205">bī</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001206">šī</w>
+                  <pc xml:id="xTok_001207">.</pc>
+                  <pc xml:id="xTok_001208">"</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001209">nām</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001210"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001212"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001214" join="right">bēt</w>
+                  <pc xml:id="xTok_001215">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a59"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T112"
+                  start="#T111">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001216">ʔani</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001217">ḍallēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001218"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001220"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001222">ʕidaʕāš</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001223"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001225"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001227">bēt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001228">hēn</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001229"
+                     rend="withDash">la</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001231">ẓaḅḅaṭət</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001232"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001234">bēt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001235"
+                     rend="withDash">sakkart</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001237">o</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001238">mšān</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001239">yaʕni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001240">ʔiza</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001241"
+                     rend="withDash">bidd</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001243">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001244">ʔuṭlaʕ</w>
+                  <pc join="right" xml:id="xTok_001245">.</pc>
+                  <pc xml:id="xTok_001246">.</pc>
+                  <pc xml:id="xTok_001247">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a60"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T114"
+                  start="#T113">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001248">ʔāl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001249">lā</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001250">lā</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001251">ṭlāʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a61"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T116"
+                  start="#T115">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001252">sakkarna</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001253"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001255">bāb</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001256">w</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001257">ʔaffalna</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a62"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T117"
+                  start="#T116">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001258">ǧīt</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001259">tāni</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001260">yōm</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001261"
+                     rend="withDash">iṣ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001263">ṣubuḥ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001264"
+                     rend="withDash">is</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001266">sāʕa</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001267">xamsa</w>
+                  <pc xml:id="xTok_001268">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001269">ṭallaʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001270">inta</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001271">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001272">tšūf</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001273">ḥada</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001274">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a91"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T166"
+                  start="#T165">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001275">yaʕni</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001276">ḥārəb</w>
+                  <pc xml:id="xTok_001277">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001278"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001280"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001282" join="right">ḥarəb</w>
+                  <pc xml:id="xTok_001283">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001284">ḥarəb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a63"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T119"
+                  start="#T118">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001285">ya</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001286">laṭīf</w>
+                  <pc xml:id="xTok_001287">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001288">ya</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001289">laṭīf</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001290">tulṭuf</w>
+                  <pc xml:id="xTok_001291">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a92"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T168"
+                  start="#T167">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001292">ʔana</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001293">ḥāṭṭa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001294">xzēne</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001295">ma</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001296">šāyfa</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001297"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001299">ḥēṭ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001300"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_001302">.</pc>
+                  <pc xml:id="xTok_001303">.</pc>
+                  <pc xml:id="xTok_001304">.</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001305">ʔūḍt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001306"
+                     rend="withDash">in</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001308" join="right">nōm</w>
+                  <pc xml:id="xTok_001309">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a93"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T170"
+                  start="#T169">
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001310">law</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001311">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001312"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001314">haydōl</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001315">li</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001316">ʕam</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001317">byiḏ̣abbṭu</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001318"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001320" join="right">binayēt</w>
+                  <pc xml:id="xTok_001321">.</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001322"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001324"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001326" join="right">i</w>
+                  <pc xml:id="xTok_001327">:</pc>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001328"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001330">i</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001331">raḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001332">yūʔaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001333"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001335">ḥēṭ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001336"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001338">kun</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001339">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001340"
+                     rend="withDash">šēyfīn</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001342" join="right">o</w>
+                  <pc xml:id="xTok_001343">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a94"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T172"
+                  start="#T171">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001344"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001346"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001348">o</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001349">wēn</w>
+                  <pc xml:id="xTok_001350">?</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001351">ʔāl</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001352">taʕ</w>
+                  <pc xml:id="xTok_001353">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001354">ziḥna</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001355"
+                     rend="withDash">lə</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001357">xzēne</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001358">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001359"
+                     rend="withDash">šēf</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001361">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a95"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T174"
+                  start="#T173">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001362"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001364"
+                     rend="withDash">l</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001366">i</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001367"
+                     rend="withDash">lēk</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001369" join="right">i</w>
+                  <pc xml:id="xTok_001370">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001371">raḥ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001372">yūʔaʕ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001373"
+                     rend="withDash">il</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001375">ḥēṭ</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001376"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001378"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001380">kun</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u36_MA_M.71_Karantina_PortExplosion_a96"
+                  who="#LEB_KAR_2022_AA_F.69_Speaker13"
+                  end="#T176"
+                  start="#T175">
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001381"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001383"
+                     rend="withDash">ill</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001385">a</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001386">ma</w>
+                  <w join="right"
+                     xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001387"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001389">na</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001390">xabar</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001391">yaʕni</w>
+                  <pc xml:id="xTok_001392">,</pc>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001393">liʔanno</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001394">ḥāṭṭa</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001395">xzēne</w>
+                  <w xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001396">ma</w>
+                  <w join="right" xml:id="36_MA_M.71_Karantina_PortExplosion_xTok_001397">mbayyin</w>
+                  <pc xml:id="xTok_001398">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

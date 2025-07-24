@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2025-06-22T14:30:34.542991Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.19791666666666666" type="audio">
+                  <date when="2022-03-04"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs</head>
+               <person sameAs="corpus:LEB_KAR_2022_MA_M.71_Speaker2">
+                  <idno>LEB_KAR_2022_MA_M.71_Speaker2</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2022_KZ_M.27_Speaker12">
+                  <idno>LEB_KAR_2022_KZ_M.27_Speaker12</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Neighborhood"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="74" since="#T0" xml:id="T11"/>
+         <when interval="4611" since="#T0" xml:id="T12"/>
+         <when interval="4618" since="#T0" xml:id="T13"/>
+         <when interval="11618" since="#T0" xml:id="T14"/>
+         <when interval="16744" since="#T0" xml:id="T15"/>
+         <when interval="23989" since="#T0" xml:id="T16"/>
+         <when interval="30077" since="#T0" xml:id="T17"/>
+         <when interval="30308" since="#T0" xml:id="T18"/>
+         <when interval="34504" since="#T0" xml:id="T19"/>
+         <when interval="34697" since="#T0" xml:id="T20"/>
+         <when interval="38533" since="#T0" xml:id="T21"/>
+         <when interval="38631" since="#T0" xml:id="T22"/>
+         <when interval="44763" since="#T0" xml:id="T23"/>
+         <when interval="44858" since="#T0" xml:id="T24"/>
+         <when interval="50642" since="#T0" xml:id="T25"/>
+         <when interval="50762" since="#T0" xml:id="T26"/>
+         <when interval="58766" since="#T0" xml:id="T27"/>
+         <when interval="62466" since="#T0" xml:id="T28"/>
+         <when interval="62482" since="#T0" xml:id="T29"/>
+         <when interval="67422" since="#T0" xml:id="T30"/>
+         <when interval="70043" since="#T0" xml:id="T1"/>
+         <when interval="70222" since="#T0" xml:id="T31"/>
+         <when interval="70987" since="#T0" xml:id="T32"/>
+         <when interval="71221" since="#T0" xml:id="T2"/>
+         <when interval="74282" since="#T0" xml:id="T3"/>
+         <when interval="75284" since="#T0" xml:id="T33"/>
+         <when interval="78727" since="#T0" xml:id="T4"/>
+         <when interval="79097" since="#T0" xml:id="T34"/>
+         <when interval="87261" since="#T0" xml:id="T5"/>
+         <when interval="88100" since="#T0" xml:id="T35"/>
+         <when interval="89180" since="#T0" xml:id="T6"/>
+         <when interval="89538" since="#T0" xml:id="T36"/>
+         <when interval="91788" since="#T0" xml:id="T37"/>
+         <when interval="91830" since="#T0" xml:id="T38"/>
+         <when interval="96774" since="#T0" xml:id="T39"/>
+         <when interval="98705" since="#T0" xml:id="T40"/>
+         <when interval="104853" since="#T0" xml:id="T41"/>
+         <when interval="106482" since="#T0" xml:id="T42"/>
+         <when interval="112129" since="#T0" xml:id="T43"/>
+         <when interval="112489" since="#T0" xml:id="T44"/>
+         <when interval="121116" since="#T0" xml:id="T45"/>
+         <when interval="128240" since="#T0" xml:id="T46"/>
+         <when interval="129974" since="#T0" xml:id="T47"/>
+         <when interval="138644" since="#T0" xml:id="T48"/>
+         <when interval="142588" since="#T0" xml:id="T49"/>
+         <when interval="143158" since="#T0" xml:id="T50"/>
+         <when interval="151337" since="#T0" xml:id="T51"/>
+         <when interval="151463" since="#T0" xml:id="T52"/>
+         <when interval="156388" since="#T0" xml:id="T53"/>
+         <when interval="162389" since="#T0" xml:id="T54"/>
+         <when interval="164321" since="#T0" xml:id="T55"/>
+         <when interval="164504" since="#T0" xml:id="T56"/>
+         <when interval="172510" since="#T0" xml:id="T57"/>
+         <when interval="172517" since="#T0" xml:id="T58"/>
+         <when interval="178807" since="#T0" xml:id="T59"/>
+         <when interval="179150" since="#T0" xml:id="T7"/>
+         <when interval="183433" since="#T0" xml:id="T8"/>
+         <when interval="184746" since="#T0" xml:id="T60"/>
+         <when interval="190772" since="#T0" xml:id="T9"/>
+         <when interval="192400" since="#T0" xml:id="T61"/>
+         <when interval="194032" since="#T0" xml:id="T62"/>
+         <when interval="194866" since="#T0" xml:id="T10"/>
+         <when interval="196688" since="#T0" xml:id="T63"/>
+         <when interval="197055" since="#T0" xml:id="T64"/>
+         <when interval="199490" since="#T0" xml:id="T65"/>
+         <when interval="199700" since="#T0" xml:id="T66"/>
+         <when interval="202601" since="#T0" xml:id="T67"/>
+         <when interval="202766" since="#T0" xml:id="T68"/>
+         <when interval="207391" since="#T0" xml:id="T69"/>
+         <when interval="216029" since="#T0" xml:id="T70"/>
+         <when interval="221322" since="#T0" xml:id="T71"/>
+         <when interval="222137" since="#T0" xml:id="T72"/>
+         <when interval="225222" since="#T0" xml:id="T73"/>
+         <when interval="234555" since="#T0" xml:id="T74"/>
+         <when interval="236263" since="#T0" xml:id="T75"/>
+         <when interval="240944" since="#T0" xml:id="T76"/>
+         <when interval="241528" since="#T0" xml:id="T77"/>
+         <when interval="247733" since="#T0" xml:id="T78"/>
+         <when interval="255055" since="#T0" xml:id="T79"/>
+         <when interval="260388" since="#T0" xml:id="T80"/>
+         <when interval="260455" since="#T0" xml:id="T81"/>
+         <when interval="263111" since="#T0" xml:id="T82"/>
+         <when interval="265135" since="#T0" xml:id="T83"/>
+         <when interval="267611" since="#T0" xml:id="T84"/>
+         <when interval="272085" since="#T0" xml:id="T85"/>
+         <when interval="275500" since="#T0" xml:id="T86"/>
+         <when interval="280644" since="#T0" xml:id="T87"/>
+         <when interval="281211" since="#T0" xml:id="T88"/>
+         <when interval="285309" since="#T0" xml:id="T89"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T89</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a1"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000001">kalēna</w>
+                  <pc join="right" xml:id="xTok_000002">.</pc>
+                  <pc xml:id="xTok_000003">.</pc>
+                  <pc xml:id="xTok_000004">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000005">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000006"
+                     rend="withDash">gūl</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000008"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000010">ak</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000011">šī</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000012"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000014">yiftaḥ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000015"
+                     rend="withDash">in</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000017">nafəs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a2"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000018">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000019">ʔayyām</w>
+                  <pc xml:id="xTok_000020">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000021">hallaʔ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000022">tākul</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000023"
+                     rend="withDash">lə</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000025"
+                     join="right">xyāra</w>
+                  <pc xml:id="xTok_000026">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000027">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000028">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000029">ma</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000030"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000032">a</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000033">ṭaʕme</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a3"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T15"
+                  start="#T14">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000034"
+                     rend="withDash">bi</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000036">ʔawwal</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000037">tēkul</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000038"
+                     rend="withDash">lə</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000040"
+                     join="right">xyāra</w>
+                  <pc xml:id="xTok_000041">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000042">tistalizz</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000043"
+                     rend="withDash">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000045"
+                     join="right">ha</w>
+                  <pc xml:id="xTok_000046">.</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000047"
+                     rend="withDash">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000049">ha</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000050">riḥit</w>
+                  <pc join="right" xml:id="xTok_000051">.</pc>
+                  <pc xml:id="xTok_000052">.</pc>
+                  <pc xml:id="xTok_000053">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a4"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000054">ḥayyālla</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000055">xuḍra</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000056">hallaʔ</w>
+                  <pc xml:id="xTok_000057">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000058"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000060">lūbye</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000061">willa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000062"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000064">kūsa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000065">willa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000066"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000068">xasse</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000069">tlēʔi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000070"
+                     rend="withDash">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000072">ha</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000073">hallaʔ</w>
+                  <pc join="right" xml:id="xTok_000074">.</pc>
+                  <pc xml:id="xTok_000075">.</pc>
+                  <pc xml:id="xTok_000076">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a5"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000077">bass</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000078"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000080"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000082">ʔawwal</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000083">kē​n</w>
+                  <pc join="right" xml:id="xTok_000084">.</pc>
+                  <pc xml:id="xTok_000085">.</pc>
+                  <pc xml:id="xTok_000086">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000087">ya</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000088"
+                     rend="withDash">ʕamm</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000090">i</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000091"
+                     rend="withDash">tšīl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000093">a</w>
+                  <pc join="right" xml:id="xTok_000094">.</pc>
+                  <pc xml:id="xTok_000095">.</pc>
+                  <pc xml:id="xTok_000096">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000097">kinna</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000098">nākul</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000099">ḥammēḍa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000100">min</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000101"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000103">ʔarḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a6"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000104">ʔigbaʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000105"
+                     rend="withDash">əl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000107">ḥammēḍa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000108">hiyya</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000109">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000110"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000112"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000114">ʔarəḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a7"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000115">kinna</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000116">nākul</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000117">min</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000118"
+                     rend="withDash">iz</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000120">zbāla</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000121">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000122"
+                     rend="withDash">gūl</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000124"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000126">ak</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000127">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000128"
+                     rend="withDash">nlāgī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000130">ha</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000131">ṭayba</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a8"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T23"
+                  start="#T22">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000132"
+                     rend="withDash">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000134">aḷḷāhi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000135"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000137"
+                     join="right">ʕazīm</w>
+                  <pc xml:id="xTok_000138">!</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000139">niṭlaʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000140"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000142"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000144">kamyūn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000145">nilḥag</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000146"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000148">kamyūn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000149"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000151"
+                     rend="withDash">z</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000153">zbāla</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000154">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000155">hōn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000156"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000158">ykubbu</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000159"
+                     rend="withDash">lə</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000161">zbēle</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000162"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000164"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000166"
+                     join="right">baḥar</w>
+                  <pc xml:id="xTok_000167">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a9"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000168">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000169">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000170">kēn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000171">maʕmal</w>
+                  <pc xml:id="xTok_000172">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000173">kēn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000174">hōn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000175">hēk</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000176"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000178">šaṭṭ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000179"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000181">baḥar</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000182"
+                     rend="withDash">la</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000184">fōg</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000185">hēk</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000186">ʕāli</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000187"
+                     rend="withDash">la</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000189">taḥat</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000190">ykūn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a10"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000191">šū</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000192"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000194"
+                     rend="withDash">əṭ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000196"
+                     join="right">ṭayyāra</w>
+                  <pc xml:id="xTok_000197">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000198">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000199">waʔaʕ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000200">hayda</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000201"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000203"
+                     join="right">bistēni</w>
+                  <pc xml:id="xTok_000204">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000205">ʔayyēm</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000206">zamēn</w>
+                  <pc xml:id="xTok_000207">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000208">waʔaʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000209"
+                     rend="withDash">əṭ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000211">ṭayyāra</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000212">hōn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000213">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000214">mēt</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000215">hōn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000216"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000218"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_000220">.</pc>
+                  <pc xml:id="xTok_000221">.</pc>
+                  <pc xml:id="xTok_000222">.</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000223">ē</w>
+                  <pc xml:id="xTok_000224">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000225"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000227"
+                     join="right">bistēni</w>
+                  <pc xml:id="xTok_000228">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a11"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000229">ʔimīl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000230">bistēni</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000231">mēt</w>
+                  <pc xml:id="xTok_000232">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000233">waʔaʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000234"
+                     rend="withDash">əṭ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000236">ṭayyāra</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000237">hōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a12"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000238">marra</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000239">bāxra</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000240">ḥašīš</w>
+                  <pc xml:id="xTok_000241">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000242">ḥašīš</w>
+                  <pc xml:id="xTok_000243">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a13"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000244">ḥašīš</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000245">ḥašīš</w>
+                  <pc xml:id="xTok_000246">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000247">bāxra</w>
+                  <pc xml:id="xTok_000248">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000249"
+                     rend="withDash">kabbū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000251">ha</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000252">hōn</w>
+                  <pc xml:id="xTok_000253">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000254">ḥašīš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a50"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000255">šū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000256">ʕamiltu</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000257"
+                     rend="withDash">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000259"
+                     join="right">hun</w>
+                  <pc xml:id="xTok_000260">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a14"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000261">lak</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000262">šū</w>
+                  <pc xml:id="xTok_000263">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000264">saṭṭalat</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000265"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000267"
+                     join="right">munṭaga</w>
+                  <pc xml:id="xTok_000268">.</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000269"
+                     rend="withDash">wallaʕnā</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000271">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a51"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000272"
+                     rend="withDash">wallaʕū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000274">hun</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000275"
+                     rend="withDash">žābū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000277">hun</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000278"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000280"
+                     rend="withDash">s</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000282">sēḥa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000283">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000284"
+                     rend="withDash">wallaʕū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000286">hun</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000287"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000289"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000291">manṭʔa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000292"
+                     rend="withDash">kill</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000294">a</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000295">saṭṭalit</w>
+                  <pc xml:id="xTok_000296">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a15"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000297">ē</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000298">liʔanno</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000299">bāxrit</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000300">ḥašīs</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000301">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000302">bī</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000303">duxxān</w>
+                  <pc xml:id="xTok_000304">!</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000305">bāxrit</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000306">duxxān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000307">ṣār</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000308">šū</w>
+                  <pc xml:id="xTok_000309">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000310">kull</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000311">wāḥad</w>
+                  <pc join="right" xml:id="xTok_000312">.</pc>
+                  <pc xml:id="xTok_000313">.</pc>
+                  <pc xml:id="xTok_000314">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a52"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000315">ṭab</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000316">lē</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000317"
+                     rend="withDash">wallaʕtū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000319">hun</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000320"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000322"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000324"
+                     join="right">ḥašīš</w>
+                  <pc xml:id="xTok_000325">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a16"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T37"
+                  start="#T36">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000326"
+                     rend="withDash">xayy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000328">i</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000329">mayy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000330">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000331">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000332">mayy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000333">šū</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000334"
+                     rend="withDash">bidd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000336">na</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000337">nʕamil</w>
+                  <pc xml:id="xTok_000338">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a17"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000339">gimna</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000340">šū</w>
+                  <pc xml:id="xTok_000341">?</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000342"
+                     rend="withDash">xallī</w>
+                  <pc join="right" xml:id="xTok_000344">_</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000345">́</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000346">yidūxu</w>
+                  <pc xml:id="xTok_000347">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000348">min</w>
+                  <pc join="right" xml:id="xTok_000349">.</pc>
+                  <pc xml:id="xTok_000350">.</pc>
+                  <pc xml:id="xTok_000351">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000352">ʔaḥsan</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000353">ma</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000354"
+                     rend="withDash">yišrabū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000356">ha</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000357">yidūxu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a18"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000358">dawaxān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000359">kān</w>
+                  <pc xml:id="xTok_000360">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000361">waḷḷāhi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000362">yaʕni</w>
+                  <pc xml:id="xTok_000363">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000364">ḥašīš</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000365">ʕam</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000366"
+                     rend="withDash">gūl</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000368"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000370">ak</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000371">dāxat</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000372"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000374"
+                     join="right">munṭaga</w>
+                  <pc xml:id="xTok_000375">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a19"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000376">yaʕni</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000377"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000379"
+                     join="right">mustašfa</w>
+                  <pc xml:id="xTok_000380">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000381">taḥat</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000382"
+                     rend="withDash">minn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000384">īna</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000385">kānat</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000386"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000388"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000390">baḥar</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000391">taḥt</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000392"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000394"
+                     join="right">mustašfa</w>
+                  <pc xml:id="xTok_000395">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a20"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T45"
+                  start="#T44">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000396"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000398">mayy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000399">hōn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000400"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000402"
+                     join="right">baḥar</w>
+                  <pc xml:id="xTok_000403">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000404">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000405">mayy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000406">ḥilwa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000407">hōn</w>
+                  <pc xml:id="xTok_000408">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000409">waḷḷahi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000410"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000412"
+                     join="right">ʕaẓīm</w>
+                  <pc xml:id="xTok_000413">.</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000414"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000416"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000418">baḥar</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000419">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000420">mayy</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000421">ḥilwe</w>
+                  <pc xml:id="xTok_000422">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000423">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000424">mayyit</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000425">baḥar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a21"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000426">waḷḷahi</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000427">kinna</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000428">nišrab</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000429"
+                     rend="withDash">minn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000431"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000432">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000433">lək</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000434"
+                     rend="withDash">ḥadd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000436">a</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000437"
+                     rend="withDash">ḥadd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000439"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000440">!</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000441">subḥān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000442">ʔaḷḷā</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000443">yaʕni</w>
+                  <pc xml:id="xTok_000444">!</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000445">mayyit</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000446">šurub</w>
+                  <pc xml:id="xTok_000447">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a22"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000448">yaʕni</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000449">ʔayyām</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000450">zamān</w>
+                  <pc xml:id="xTok_000451">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000452">ənnūṭṭ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000453">naṭṭ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000454">yaʕni</w>
+                  <pc xml:id="xTok_000455">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000456">kinna</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000457">nrūḥ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000458"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000460"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000462">bāxra</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000463">waḷḷa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000464"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000466">nuṣṣ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000467"
+                     rend="withDash">əl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000469"
+                     join="right">baḥar</w>
+                  <pc xml:id="xTok_000470">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000471">nrūḥ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000472"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000474">ha</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000475">sbāḥa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000476">niṭlaʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000477"
+                     rend="withDash">la</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000479">fōg</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000480"
+                     rend="withDash">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000482">ənnuṭṭ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000483">min</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000484"
+                     rend="withDash">fōg</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000486">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a23"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000487">nūʔaf</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000488">min</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000489">fōʔ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000490">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000491">ənnuṭṭ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000492">waḷḷahi</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000493">ʔiyyām</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000494">zimān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a24"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000495">hāy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000496">ʔaḥkīk</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000497">tisʕa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000498">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000499">sittīn</w>
+                  <pc xml:id="xTok_000500">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000501">tmēna</w>
+                  <pc join="right" xml:id="xTok_000502">.</pc>
+                  <pc xml:id="xTok_000503">.</pc>
+                  <pc xml:id="xTok_000504">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000505">kēn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000506"
+                     rend="withDash">ʕumur</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000508">na</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000509">siṭṭaʕāš</w>
+                  <pc xml:id="xTok_000510">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000511">sabʕaṭʕāšar</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000512">sina</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000513">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a25"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T53"
+                  start="#T52">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000514">ʔayyām</w>
+                  <pc xml:id="xTok_000515">!</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000516"
+                     rend="withDash">rižžaʕat</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000518">ni</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000519"
+                     rend="withDash">la</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000521">wara</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a26"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000522">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000523">hāḏ̣a</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000524"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000526">masīḥi</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000527">hēn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000528">yišarrib</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000529"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000531">ġanam</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000532"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000534"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000536">miʕza</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000537">yāxud</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000538">ʔažār</w>
+                  <pc xml:id="xTok_000539">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a27"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000540">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000541">ʔādami</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a28"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000542">bass</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000543">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000544">bī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000545">žābya</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000546">mayy</w>
+                  <pc xml:id="xTok_000547">,</pc>
+                  <pc join="right" xml:id="xTok_000548">"</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000549">ʔabū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000550">fuʔād</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000551">dawwir</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000552"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000554"
+                     join="right">mayy</w>
+                  <pc xml:id="xTok_000555">"</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000556">ma</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000557">tšūf</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000558">ʔilla</w>
+                  <pc join="right" xml:id="xTok_000559">.</pc>
+                  <pc xml:id="xTok_000560">.</pc>
+                  <pc xml:id="xTok_000561">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000562">dawwar</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000563"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000565">hēk</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000566"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000568"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000570">ġanam</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000571">tirkud</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000572">raked</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000573"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000575"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000577">miʕza</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a29"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T59"
+                  start="#T58"/>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a53"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000578">milʕab</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000579"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000581">fuṭbōl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000582">wēn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000583">kān</w>
+                  <pc xml:id="xTok_000584">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000585">ʔadīman</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a30"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000586">wēn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000587"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000589"
+                     join="right">ḥāžiz</w>
+                  <pc xml:id="xTok_000590">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000591">bī</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000592">hāžiz</w>
+                  <pc xml:id="xTok_000593">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000594">hāy</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000595"
+                     rend="withDash">is</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000597">sāḥa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000598"
+                     rend="withDash">kull</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000600">a</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000601">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000602">yilʕabu</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000603">fuṭbōl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a54"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000604">ʔana</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000605">ʔismaʕ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000606">liʔanno</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000607"
+                     rend="withDash">ʔabū</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000609">yi</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000610">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000611"
+                     rend="withDash">yiʔul</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000613"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000615"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000616">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000617">ykūn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000618">ʕa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000619">yilʕab</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000620">fuṭbōl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a31"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000621">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000622">bēt</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000623"
+                     rend="withDash">ǧidd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000625">ak</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000626"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000628">wužž</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000629"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000631">bēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a32"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000632">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000633"
+                     rend="withDash">ḥadd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000635">o</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000636"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000638">AFT</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a33"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000639">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000640">wāḥad</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000641"
+                     rend="withDash">ism</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000643">o</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000644">AFT</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a34"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000645">yaʕni</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000646">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000647"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000649"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000651"
+                     join="right">ṣēf</w>
+                  <pc xml:id="xTok_000652">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000653">šū</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000654">yibīʕ</w>
+                  <pc xml:id="xTok_000655">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000656">lēmūnāḍa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000657"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000659"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000661"
+                     join="right">mislax</w>
+                  <pc xml:id="xTok_000662">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a35"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000663">yiftaḥ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000664"
+                     rend="withDash">is</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000666">sāʕa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000667">tintēn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000668">yinzal</w>
+                  <pc xml:id="xTok_000669">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000670">lāmūnāḍa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000671"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000673"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000675">marəṭbān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000676"
+                     rend="withDash">əl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000678">ʔəʔzaz</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000679">hēk</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000680">yiḥuṭṭ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000681"
+                     rend="withDash">əb</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000683"
+                     rend="withDash">ʔalb</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000685">o</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000686">lōḥ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000687">taləž</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000688">hēk</w>
+                  <pc xml:id="xTok_000689">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a36"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000690">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000691"
+                     rend="withDash">ʕāmil</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000693"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000695">o</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000696">ḥanafiyya</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000697">masalan</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000698"
+                     rend="withDash">yiʕabbī</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000700"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000702">ak</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000703">kāsa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000704"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000706">rubəʕ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000707">līra</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000708">yimkin</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000709">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000710">kaʕak</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a37"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T73"
+                  start="#T72">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000711"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000713"
+                     rend="withDash">š</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000715"
+                     join="right">šita</w>
+                  <pc xml:id="xTok_000716">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000717"
+                     rend="withDash">yʕamil</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000719"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000721">ak</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000722">saḥlab</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000723">ʔaw</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000724">ʔašṭaliyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a38"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000725">ʕam</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000726"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000728">əḥkīk</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000729">ǧadd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000730">yaʕni</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000731">hayda</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000732">kēn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000733">fētiḥ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000734"
+                     rend="withDash">bayt</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000736">o</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000737">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000738">bāʕ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000739">hēk</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000740">lāmūnāḍa</w>
+                  <pc xml:id="xTok_000741">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000742">lāmūnāḍa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000743"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000745"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000747">ṣēf</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000748">w</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000749"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000751"
+                     rend="withDash">š</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000753">šiti</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000754">saḥlab</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000755">w</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000756">ʔašṭaliyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a39"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T76"
+                  start="#T75">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000757">kān</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000758">fī</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000759"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000761"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000763">balad</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000764">žlaylāti</w>
+                  <pc xml:id="xTok_000765">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000766">yimkin</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000767">sēmʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000768"
+                     rend="withDash">fī</w>
+                  <pc join="right" xml:id="xTok_000770">_</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000771">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a40"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T78"
+                  start="#T77">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000772">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000773">žlaylāti</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000774"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000776">ku</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000777"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000779">sāḥit</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000780">sāssīn</w>
+                  <pc xml:id="xTok_000781">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000782">inte</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000783">min</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000784">sāḥit</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000785">sāssīn</w>
+                  <pc xml:id="xTok_000786">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000787">sāḥit</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000788">sāssīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a41"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T79"
+                  start="#T78">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000789">ʔabadan</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000790"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000792"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000794"
+                     rend="withDash">z</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000796"
+                     join="right">zarūb</w>
+                  <pc xml:id="xTok_000797">!</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000798">yaʕni</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000799"
+                     rend="withDash">fī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000801">yo</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000802">žleylāti</w>
+                  <pc xml:id="xTok_000803">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000804">žleylāti</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000805">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000806">yaʕni</w>
+                  <pc xml:id="xTok_000807">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000808">trūḥ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000809">tākul</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000810">qaṭāyif</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000811">kān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a42"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T80"
+                  start="#T79">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000812">willa</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000813">fōʔ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000814"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000816"
+                     join="right">marrūš</w>
+                  <pc xml:id="xTok_000817">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000818">marrūš</w>
+                  <pc xml:id="xTok_000819">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000820">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000821"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000823"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000825">baladiyyit</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000826">Beyrūt</w>
+                  <pc xml:id="xTok_000827">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000828">wēn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000829"
+                     rend="withDash">il</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000831"
+                     join="right">baladiyye</w>
+                  <pc xml:id="xTok_000832">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a43"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T82"
+                  start="#T81">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000833">hāy</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000834">ʕam</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000835">ʔaḥkīk</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000836"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000838"
+                     rend="withDash">s</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000840">sabʕīn</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000841">ha</w>
+                  <pc xml:id="xTok_000842">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a44"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T83"
+                  start="#T82">
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000843"
+                     rend="withDash">b</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000845">rūḥ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000846">nitrawwaʔ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000847">li</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000848">xallaṣ</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000849">ybīʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000850"
+                     rend="withDash">əl</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000852"
+                     join="right">ġanam</w>
+                  <pc xml:id="xTok_000853">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a45"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T84"
+                  start="#T83">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000854">ninzal</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000855">nitrawwaʔ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000856">fūl</w>
+                  <pc xml:id="xTok_000857">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a46"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000858">ʔanīnt</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000859"
+                     rend="withDash">iz</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000861">zēt</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000862"
+                     rend="withDash">ḥāṭiṭ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000864"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000866">ak</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000867">hiyye</w>
+                  <pc xml:id="xTok_000868">.</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000869">ʔanīnt</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000870"
+                     rend="withDash">iz</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000872">zēt</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000873"
+                     rend="withDash">ḥāṭiṭ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000875"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000877">ak</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000878">hiyye</w>
+                  <pc xml:id="xTok_000879">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a47"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T86"
+                  start="#T85">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000880">miš</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000881">mitil</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000882">hallaʔ</w>
+                  <pc xml:id="xTok_000883">,</pc>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000884"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000886"
+                     rend="withDash">y</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000888"
+                     rend="withDash">ḥuṭṭ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000890"
+                     rend="withDash">ill</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000892">ak</w>
+                  <pc join="right" xml:id="xTok_000893">.</pc>
+                  <pc xml:id="xTok_000894">.</pc>
+                  <pc xml:id="xTok_000895">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a48"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000896">waḷḷa</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000897"
+                     rend="withDash">ʔaḥkī</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000899">k</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000900">žadd</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000901">kān</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000902"
+                     rend="withDash">ḥagg</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000904">o</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000905">lēra</w>
+                  <pc xml:id="xTok_000906">,</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000907">lērtēn</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000908">hēk</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000909">šī</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_a49"
+                  who="#LEB_KAR_2022_MA_M.71_Speaker2"
+                  end="#T89"
+                  start="#T88">
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000910">lək</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000911">šū</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000912">ʔayyām</w>
+                  <pc xml:id="xTok_000913">?</pc>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000914">ya</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000915">rēt</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000916">tiržaʕ</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000917"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000919"
+                     rend="withDash">l</w>
+                  <w xml:id="34_MA_M.71_Karantina_StoriesofPreWarKarantina.Boat.Drugs_xTok_000921"
+                     join="right">ʔiyyām</w>
+                  <pc xml:id="xTok_000922">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

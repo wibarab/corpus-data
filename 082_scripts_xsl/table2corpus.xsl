@@ -182,18 +182,18 @@
                                      mode="respStmtInstanceDoc" /> -->
                 <!-- which prefix to use? corpus prefix or dmp prefix -->
                 <respStmt>
-                    <persName ref="{$dmpPrefix}:SP">Stephan Procházka</persName>
+                    <persName ref="{$teiCorpusPrefix}:SP">Stephan Procházka</persName>
                     <resp>principal</resp>
                 </respStmt>
                 <respStmt>
-                    <persName ref="{$dmpPrefix}:{$recordingPersonID}">
+                    <persName ref="{$teiCorpusPrefix}:{$recordingPersonID}">
                         <xsl:value-of select="$recordingPerson" />
                     </persName>
                     <resp>recording</resp>
                 </respStmt>
                 <xsl:if test="$transcribingPerson != ''">
                 <respStmt>
-                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($transcribingPerson)}">
+                    <persName ref="{$teiCorpusPrefix}:{_:personReferenceByName($transcribingPerson)}">
                         <xsl:value-of select="$transcribingPerson"/>
                     </persName>
                     <resp>transcription</resp>
@@ -201,7 +201,7 @@
             </xsl:if>
             <xsl:if test="$transcriptionChecker != ''">
                 <respStmt>
-                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($transcriptionChecker)}">
+                    <persName ref="{$teiCorpusPrefix}:{_:personReferenceByName($transcriptionChecker)}">
                         <xsl:value-of select="$transcriptionChecker"/>
                     </persName>
                     <resp>transcription check</resp>
@@ -209,7 +209,7 @@
             </xsl:if>
             <xsl:if test="$translator != ''">
                 <respStmt>
-                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($translator)}">
+                    <persName ref="{$teiCorpusPrefix}:{_:personReferenceByName($translator)}">
                         <xsl:value-of select="$translator"/>
                     </persName>
                     <resp>translation</resp>
@@ -217,7 +217,7 @@
             </xsl:if>
             <xsl:if test="$translationChecker != ''">
                 <respStmt>
-                    <persName ref="{$dmpPrefix}:{_:personReferenceByName($translationChecker)}">
+                    <persName ref="{$teiCorpusPrefix}:{_:personReferenceByName($translationChecker)}">
                         <xsl:value-of select="$translationChecker"/>
                     </persName>
                     <resp>translation check</resp>
@@ -492,7 +492,7 @@
         </xsl:if>
         <xsl:if test="tei:cell[9] != 'N/A'">
             <xsl:for-each select="tokenize(tei:cell[9], ',')">
-                <ptr type="participatedIn" target="#{normalize-space(.)}"/>
+                <ptr type="participatedIn" target="{$teiCorpusPrefix}:{normalize-space(.)}"/>
             </xsl:for-each>
         </xsl:if>
         <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
