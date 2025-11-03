@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v5
-      - name: get python 3.12
+      - name: get python 3.13
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.13'
           cache: "pipenv"
       - name: convert ELAN to TEI
         env:
