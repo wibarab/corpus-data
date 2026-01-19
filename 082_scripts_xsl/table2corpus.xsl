@@ -324,7 +324,7 @@
                   select="$t_Campaigns//tei:row[tei:cell[$cn('Campaigns')('Campaign')]=$campaignName]" />
     <xsl:variable name="campaignID"
                   select="$campaign/tei:cell[$cn('Campaigns')('ID')]" />
-    <TEI>
+    <TEI xml:id="{$textID}">
         <xsl:if test="tei:cell[$cn('Recordings')('Next')]!=''">
             <xsl:attribute name="next">
                 <xsl:value-of select="concat(tei:cell[$cn('Recordings')('Next')],'.xml')" />
