@@ -312,7 +312,7 @@
     <xsl:variable name="placeName"
                   select="tei:cell[$cn('Recordings')('Place')]" />
     <xsl:variable name="placeID"
-                  select="$t_Places//tei:row[tei:cell[$cn('Places')('PlaceName')] = $placeName]/tei:cell[$cn('Places')('ID')]" />
+                  select="$t_Places//tei:row[tei:cell[$cn('Places')('Placename')] = $placeName]/tei:cell[$cn('Places')('ID')]" />
     <!-- path to Audio files -->
     <xsl:variable name="audioFilename"
                   select="tei:cell[$cn('Recordings')('Trascribed Audio-file')]" />
