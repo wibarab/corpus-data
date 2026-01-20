@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:59:09.071695Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T15_NZ_M.73_Karantina_ProphetstoryValues">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">15_NZ_M.73_Karantina_ProphetstoryValues</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">15_NZ_M.73_Karantina_ProphetstoryValues</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="5.2083333333333336E-2" type="audio">
+                  <date when="2023-05-16"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 15_NZ_M.73_Karantina_ProphetstoryValues</head>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <idno>LEB_KAR_2023_NZ_M.73_Speaker1</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Religion"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1466" since="#T0" xml:id="T1"/>
+         <when interval="5299" since="#T0" xml:id="T2"/>
+         <when interval="9986" since="#T0" xml:id="T3"/>
+         <when interval="16736" since="#T0" xml:id="T4"/>
+         <when interval="17256" since="#T0" xml:id="T5"/>
+         <when interval="25500" since="#T0" xml:id="T6"/>
+         <when interval="26558" since="#T0" xml:id="T7"/>
+         <when interval="34330" since="#T0" xml:id="T8"/>
+         <when interval="35099" since="#T0" xml:id="T9"/>
+         <when interval="36763" since="#T0" xml:id="T10"/>
+         <when interval="40345" since="#T0" xml:id="T11"/>
+         <when interval="41200" since="#T0" xml:id="T12"/>
+         <when interval="48269" since="#T0" xml:id="T13"/>
+         <when interval="48534" since="#T0" xml:id="T14"/>
+         <when interval="54968" since="#T0" xml:id="T15"/>
+         <when interval="55536" since="#T0" xml:id="T16"/>
+         <when interval="62845" since="#T0" xml:id="T17"/>
+         <when interval="63660" since="#T0" xml:id="T18"/>
+         <when interval="69683" since="#T0" xml:id="T19"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T19</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a1"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000001"
+                     rend="withDash">ər</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000003"
+                     join="right">rasūl</w>
+                  <pc xml:id="xTok_000004">,</pc>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000005"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000007">_</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000008">́</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000009"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000011">ṣalāt</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000012"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000014"
+                     rend="withDash">əs</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000016">salām</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000017">kān</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000018"
+                     rend="withDash">ǧār</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000020">o</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000021">yahūdi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a2"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000022">w</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000023">kill</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000024">yōm</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000025"
+                     rend="withDash">il</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000027">yahūdi</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000028">yšīl</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000029">čīs</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000030"
+                     rend="withDash">il</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000032">əzbǟla</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000033">w</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000034"
+                     rend="withDash">yzitt</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000036">a</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000037">ǧiddām</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000038">bēt</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000039"
+                     rend="withDash">ər</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000041">rasūl</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a3"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000042">yōm</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000043">min</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000044"
+                     rend="withDash">əl</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000046">ʔiyyǟm</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000047">gām</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000048"
+                     rend="withDash">sayyid</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000050">na</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000051">muḥammad</w>
+                  <pc xml:id="xTok_000052">,</pc>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000053"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000055">_</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000056">́</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000057"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000059">ṣalāt</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000060"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000062"
+                     rend="withDash">əs</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000064"
+                     join="right">salām</w>
+                  <pc xml:id="xTok_000065">,</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000066">ma</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000067">lāga</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000068">čīs</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000069"
+                     rend="withDash">iz</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000071"
+                     join="right">zbǟla</w>
+                  <pc xml:id="xTok_000072">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a5"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000073"
+                     rend="withDash">gāl</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000075"
+                     rend="withDash">l</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000077"
+                     join="right">um</w>
+                  <pc xml:id="xTok_000078">:</pc>
+                  <pc join="right" xml:id="xTok_000079">"</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000080">wēš</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000081">xabar</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000082">hāḏ̣a</w>
+                  <pc join="right" xml:id="xTok_000083">.</pc>
+                  <pc xml:id="xTok_000084">.</pc>
+                  <pc xml:id="xTok_000085">.</pc>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000086">ʕīsa</w>
+                  <pc xml:id="xTok_000087">?</pc>
+                  <pc xml:id="xTok_000088">"</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000089">Mūsa</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000090">mə</w>
+                  <pc join="right" xml:id="xTok_000091">_</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000092">dri</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000093">ʕīsa</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000094">waḷḷa</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000095">ma</w>
+                  <pc join="right" xml:id="xTok_000096">_</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000097"
+                     join="right">dri</w>
+                  <pc xml:id="xTok_000098">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a6"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T10"
+                  start="#T9">
+                  <pc join="right" xml:id="xTok_000099">"</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000100">ma</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000101">bayyan</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000102"
+                     rend="withDash">il</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000104"
+                     join="right">yōm</w>
+                  <pc xml:id="xTok_000105">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a7"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T11"
+                  start="#T10">
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000106"
+                     rend="withDash">gālū</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000108"
+                     rend="withDash">l</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000110">o</w>
+                  <pc join="right" xml:id="xTok_000111">"</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000112">waḷḷa</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000113">sāxin</w>
+                  <pc xml:id="xTok_000114">,</pc>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000115">murīḍ</w>
+                  <pc xml:id="xTok_000116">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a8"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T13"
+                  start="#T12">
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000117">gām</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000118">rāḥ</w>
+                  <pc xml:id="xTok_000119">,</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000120">ṣalāt</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000121"
+                     rend="withDash">in</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000123">nabi</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000124"
+                     rend="withDash">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000126">_</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000127"
+                     join="right">́</w>
+                  <pc xml:id="xTok_000128">,</pc>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000129"
+                     rend="withDash">zār</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000131">o</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000132"
+                     rend="withDash">sayyid</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000134">na</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000135">Muḥammad</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a9"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T15"
+                  start="#T14">
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000136">šūfi</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000137"
+                     rend="withDash">l</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000139">qiyyam</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000140"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000142"
+                     rend="withDash">il</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000144"
+                     join="right">ʔaxlāg</w>
+                  <pc xml:id="xTok_000145">.</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000146">kān</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000147"
+                     rend="withDash">yikubb</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000149"
+                     rend="withDash">l</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000151">i</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000152"
+                     rend="withDash">ʕalī</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000154">ya</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000155"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000157">bāb</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000158"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000160">.</pc>
+                  <pc xml:id="xTok_000161">.</pc>
+                  <pc xml:id="xTok_000162">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a10"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T17"
+                  start="#T16">
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000163"
+                     rend="withDash">il</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000165"
+                     join="right">yōm</w>
+                  <pc xml:id="xTok_000166">,</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000167">li</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000168">ykubb</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000169"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000171"
+                     rend="withDash">bāb</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000173">i</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000174">zbǟla</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000175"
+                     rend="withDash">ʔagawwṣ</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000177"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000178">.</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000179">yilʕan</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000180"
+                     rend="withDash">ʔabū</w>
+                  <pc join="right" xml:id="xTok_000182">_</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000183">́</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000184">w</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000185"
+                     rend="withDash">milk</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000187"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000188">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u15_NZ_M.73_Karantina_ProphetstoryValues_a11"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000189">kānat</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000190">ʔiyyām</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000191">ḥilwä</w>
+                  <pc xml:id="xTok_000192">.</pc>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000193">fī</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000194">qiyam</w>
+                  <w xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000195">fī</w>
+                  <w join="right"
+                     xml:id="15_NZ_M.73_Karantina_ProphetstoryValues_xTok_000196">taqālīd</w>
+                  <pc join="right" xml:id="xTok_000197">.</pc>
+                  <pc xml:id="xTok_000198">.</pc>
+                  <pc xml:id="xTok_000199">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:58:31.568029Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="4.6527777777777779E-2" type="audio">
+                  <date when="2022-02-27"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion</head>
+               <person sameAs="corpus:LEB_KHAL_2022_HD_M.31_Speaker2">
+                  <idno>LEB_KHAL_2022_HD_M.31_Speaker2</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:khalde">Khalde</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Questionnaire"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1081" since="#T0" xml:id="T3"/>
+         <when interval="4115" since="#T0" xml:id="T4"/>
+         <when interval="4590" since="#T0" xml:id="T5"/>
+         <when interval="6364" since="#T0" xml:id="T6"/>
+         <when interval="6485" since="#T0" xml:id="T7"/>
+         <when interval="8021" since="#T0" xml:id="T8"/>
+         <when interval="8136" since="#T0" xml:id="T9"/>
+         <when interval="9604" since="#T0" xml:id="T10"/>
+         <when interval="10200" since="#T0" xml:id="T11"/>
+         <when interval="11160" since="#T0" xml:id="T12"/>
+         <when interval="11302" since="#T0" xml:id="T13"/>
+         <when interval="12475" since="#T0" xml:id="T14"/>
+         <when interval="27741" since="#T0" xml:id="T15"/>
+         <when interval="28983" since="#T0" xml:id="T16"/>
+         <when interval="29102" since="#T0" xml:id="T17"/>
+         <when interval="31779" since="#T0" xml:id="T18"/>
+         <when interval="31932" since="#T0" xml:id="T19"/>
+         <when interval="33245" since="#T0" xml:id="T20"/>
+         <when interval="33918" since="#T0" xml:id="T21"/>
+         <when interval="35654" since="#T0" xml:id="T22"/>
+         <when interval="36447" since="#T0" xml:id="T23"/>
+         <when interval="37659" since="#T0" xml:id="T24"/>
+         <when interval="37776" since="#T0" xml:id="T25"/>
+         <when interval="40497" since="#T0" xml:id="T26"/>
+         <when interval="41521" since="#T0" xml:id="T27"/>
+         <when interval="41589" since="#T0" xml:id="T28"/>
+         <when interval="42612" since="#T0" xml:id="T29"/>
+         <when interval="43262" since="#T0" xml:id="T1"/>
+         <when interval="44120" since="#T0" xml:id="T2"/>
+         <when interval="44180" since="#T0" xml:id="T30"/>
+         <when interval="49691" since="#T0" xml:id="T31"/>
+         <when interval="49711" since="#T0" xml:id="T32"/>
+         <when interval="50807" since="#T0" xml:id="T33"/>
+         <when interval="50871" since="#T0" xml:id="T34"/>
+         <when interval="51928" since="#T0" xml:id="T35"/>
+         <when interval="51986" since="#T0" xml:id="T36"/>
+         <when interval="54296" since="#T0" xml:id="T37"/>
+         <when interval="54703" since="#T0" xml:id="T38"/>
+         <when interval="56180" since="#T0" xml:id="T39"/>
+         <when interval="56294" since="#T0" xml:id="T40"/>
+         <when interval="57644" since="#T0" xml:id="T41"/>
+         <when interval="60417" since="#T0" xml:id="T42"/>
+         <when interval="64695" since="#T0" xml:id="T43"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T43</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a1"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000001">ʔani</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000002">ʔakalət</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000003">ʔani</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000004">kalēt</w>
+                  <pc xml:id="xTok_000005">,</pc>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000006">ʔani</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000007">kalēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a2"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000008">inta</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000009">kalēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a3"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000010">huwwa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000011">kila</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a4"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000012">hiyya</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000013">kilat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a5"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000014">hinna</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000015">kilan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a6"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000016">humma</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000017">kilu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a13"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000018">ʔani</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000019">ʔākul</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a14"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000020">inta</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000021"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000023">tākul</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a15"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000024">inti</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000025"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000027">tākli</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a16"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000028">huwwa</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000029"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000031">yākul</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a17"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000032">hiyya</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000033"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000035">tākul</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a18"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000036">niḥna</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000037"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000039">nākul</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a19"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T27"
+                  start="#T26">
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000040"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000042">yāklum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a20"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000043">w</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000044"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000046">yāklan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a22"
+                  who="#AID"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000047"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000049"
+                     join="right">yāklum</w>
+                  <pc xml:id="xTok_000050">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a21"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000051">humma</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000052"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000054">yaklu</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000055">ʔaw</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000056"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000058"
+                     join="right">yāklum</w>
+                  <pc xml:id="xTok_000059">,</pc>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000060">bass</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000061">ʔaktar</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000062">inno</w>
+                  <pc join="right" xml:id="xTok_000063">.</pc>
+                  <pc xml:id="xTok_000064">.</pc>
+                  <pc xml:id="xTok_000065">.</pc>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000066">bidūn</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000067">mīm</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000068">ḥatta</w>
+                  <pc xml:id="xTok_000069">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a23"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000070">humma</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000071"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000073">yāklu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a24"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000074">w</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000075">hinna</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000076"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000078">yāklan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a25"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000079">w</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000080">intum</w>
+                  <pc xml:id="xTok_000081">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a26"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000082">ʔintum</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000083"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000085"
+                     join="right">tāklu</w>
+                  <pc xml:id="xTok_000086">,</pc>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000087">masalan</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000088">intu</w>
+                  <pc join="right" xml:id="xTok_000089">.</pc>
+                  <pc xml:id="xTok_000090">.</pc>
+                  <pc xml:id="xTok_000091">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a27"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000092">šū</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000093"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000095"
+                     join="right">tāklu</w>
+                  <pc xml:id="xTok_000096">?</pc>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000097">bidūn</w>
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000098">mīm</w>
+                  <pc xml:id="xTok_000099">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_a29"
+                  who="#LEB_KHAL_2022_HD_M.31_Speaker2"
+                  end="#T43"
+                  start="#T42">
+                  <w join="right"
+                     xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000100"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="03_HD_M.31_Khalde_QuestionnairegrammarPart3_akalparadigms_ipfv3plmdiscussion_xTok_000102"
+                     join="right">tāklan</w>
+                  <pc xml:id="xTok_000103">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

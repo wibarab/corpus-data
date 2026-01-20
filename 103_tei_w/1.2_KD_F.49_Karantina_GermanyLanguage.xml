@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:58:54.923141Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T1.2_KD_F.49_Karantina_GermanyLanguage">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">1.2_KD_F.49_Karantina_GermanyLanguage</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">1.2_KD_F.49_Karantina_GermanyLanguage</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.15902777777777777" type="audio">
+                  <date when="2022-03-01"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 1.2_KD_F.49_Karantina_GermanyLanguage</head>
+               <person sameAs="corpus:LEB_KAR_2022_KD_F.49_Speaker14">
+                  <idno>LEB_KAR_2022_KD_F.49_Speaker14</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Languageandidentity"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1631" since="#T0" xml:id="T31"/>
+         <when interval="3081" since="#T0" xml:id="T32"/>
+         <when interval="3140" since="#T0" xml:id="T33"/>
+         <when interval="4947" since="#T0" xml:id="T1"/>
+         <when interval="5045" since="#T0" xml:id="T34"/>
+         <when interval="7089" since="#T0" xml:id="T2"/>
+         <when interval="7105" since="#T0" xml:id="T35"/>
+         <when interval="7736" since="#T0" xml:id="T36"/>
+         <when interval="7802" since="#T0" xml:id="T3"/>
+         <when interval="11518" since="#T0" xml:id="T37"/>
+         <when interval="11535" since="#T0" xml:id="T4"/>
+         <when interval="14373" since="#T0" xml:id="T38"/>
+         <when interval="15698" since="#T0" xml:id="T39"/>
+         <when interval="16261" since="#T0" xml:id="T5"/>
+         <when interval="17518" since="#T0" xml:id="T40"/>
+         <when interval="17614" since="#T0" xml:id="T6"/>
+         <when interval="17830" since="#T0" xml:id="T7"/>
+         <when interval="18939" since="#T0" xml:id="T8"/>
+         <when interval="19132" since="#T0" xml:id="T41"/>
+         <when interval="20647" since="#T0" xml:id="T42"/>
+         <when interval="21105" since="#T0" xml:id="T9"/>
+         <when interval="21717" since="#T0" xml:id="T43"/>
+         <when interval="24175" since="#T0" xml:id="T15"/>
+         <when interval="24473" since="#T0" xml:id="T10"/>
+         <when interval="25453" since="#T0" xml:id="T44"/>
+         <when interval="26052" since="#T0" xml:id="T16"/>
+         <when interval="27023" since="#T0" xml:id="T17"/>
+         <when interval="27267" since="#T0" xml:id="T45"/>
+         <when interval="31261" since="#T0" xml:id="T18"/>
+         <when interval="31395" since="#T0" xml:id="T46"/>
+         <when interval="35052" since="#T0" xml:id="T47"/>
+         <when interval="36710" since="#T0" xml:id="T48"/>
+         <when interval="38865" since="#T0" xml:id="T49"/>
+         <when interval="38978" since="#T0" xml:id="T50"/>
+         <when interval="40441" since="#T0" xml:id="T51"/>
+         <when interval="44150" since="#T0" xml:id="T52"/>
+         <when interval="44388" since="#T0" xml:id="T19"/>
+         <when interval="46111" since="#T0" xml:id="T20"/>
+         <when interval="47957" since="#T0" xml:id="T53"/>
+         <when interval="51375" since="#T0" xml:id="T54"/>
+         <when interval="52605" since="#T0" xml:id="T21"/>
+         <when interval="54244" since="#T0" xml:id="T55"/>
+         <when interval="54693" since="#T0" xml:id="T22"/>
+         <when interval="54722" since="#T0" xml:id="T23"/>
+         <when interval="55103" since="#T0" xml:id="T56"/>
+         <when interval="55326" since="#T0" xml:id="T24"/>
+         <when interval="56044" since="#T0" xml:id="T57"/>
+         <when interval="60425" since="#T0" xml:id="T58"/>
+         <when interval="61080" since="#T0" xml:id="T59"/>
+         <when interval="63580" since="#T0" xml:id="T60"/>
+         <when interval="65299" since="#T0" xml:id="T61"/>
+         <when interval="69106" since="#T0" xml:id="T62"/>
+         <when interval="73343" since="#T0" xml:id="T63"/>
+         <when interval="75220" since="#T0" xml:id="T64"/>
+         <when interval="75549" since="#T0" xml:id="T65"/>
+         <when interval="77555" since="#T0" xml:id="T66"/>
+         <when interval="77693" since="#T0" xml:id="T67"/>
+         <when interval="79517" since="#T0" xml:id="T68"/>
+         <when interval="81480" since="#T0" xml:id="T69"/>
+         <when interval="83298" since="#T0" xml:id="T70"/>
+         <when interval="84898" since="#T0" xml:id="T71"/>
+         <when interval="87708" since="#T0" xml:id="T72"/>
+         <when interval="87979" since="#T0" xml:id="T73"/>
+         <when interval="91303" since="#T0" xml:id="T74"/>
+         <when interval="92925" since="#T0" xml:id="T75"/>
+         <when interval="94899" since="#T0" xml:id="T76"/>
+         <when interval="96862" since="#T0" xml:id="T77"/>
+         <when interval="97188" since="#T0" xml:id="T78"/>
+         <when interval="98841" since="#T0" xml:id="T79"/>
+         <when interval="99974" since="#T0" xml:id="T80"/>
+         <when interval="101601" since="#T0" xml:id="T11"/>
+         <when interval="101616" since="#T0" xml:id="T81"/>
+         <when interval="104300" since="#T0" xml:id="T82"/>
+         <when interval="104699" since="#T0" xml:id="T12"/>
+         <when interval="109263" since="#T0" xml:id="T13"/>
+         <when interval="111455" since="#T0" xml:id="T83"/>
+         <when interval="113160" since="#T0" xml:id="T84"/>
+         <when interval="113719" since="#T0" xml:id="T14"/>
+         <when interval="116267" since="#T0" xml:id="T85"/>
+         <when interval="116393" since="#T0" xml:id="T86"/>
+         <when interval="118668" since="#T0" xml:id="T87"/>
+         <when interval="119316" since="#T0" xml:id="T88"/>
+         <when interval="121236" since="#T0" xml:id="T89"/>
+         <when interval="121331" since="#T0" xml:id="T90"/>
+         <when interval="123376" since="#T0" xml:id="T91"/>
+         <when interval="127245" since="#T0" xml:id="T92"/>
+         <when interval="127634" since="#T0" xml:id="T93"/>
+         <when interval="129902" since="#T0" xml:id="T94"/>
+         <when interval="130637" since="#T0" xml:id="T95"/>
+         <when interval="132659" since="#T0" xml:id="T96"/>
+         <when interval="132914" since="#T0" xml:id="T97"/>
+         <when interval="134443" since="#T0" xml:id="T98"/>
+         <when interval="134573" since="#T0" xml:id="T99"/>
+         <when interval="138509" since="#T0" xml:id="T100"/>
+         <when interval="138781" since="#T0" xml:id="T101"/>
+         <when interval="140713" since="#T0" xml:id="T102"/>
+         <when interval="141079" since="#T0" xml:id="T152"/>
+         <when interval="143156" since="#T0" xml:id="T153"/>
+         <when interval="143210" since="#T0" xml:id="T103"/>
+         <when interval="146056" since="#T0" xml:id="T104"/>
+         <when interval="146368" since="#T0" xml:id="T105"/>
+         <when interval="151642" since="#T0" xml:id="T106"/>
+         <when interval="152986" since="#T0" xml:id="T107"/>
+         <when interval="153208" since="#T0" xml:id="T108"/>
+         <when interval="154721" since="#T0" xml:id="T109"/>
+         <when interval="155037" since="#T0" xml:id="T110"/>
+         <when interval="156895" since="#T0" xml:id="T111"/>
+         <when interval="157769" since="#T0" xml:id="T112"/>
+         <when interval="161754" since="#T0" xml:id="T113"/>
+         <when interval="161883" since="#T0" xml:id="T114"/>
+         <when interval="162710" since="#T0" xml:id="T115"/>
+         <when interval="164806" since="#T0" xml:id="T116"/>
+         <when interval="165098" since="#T0" xml:id="T117"/>
+         <when interval="166473" since="#T0" xml:id="T118"/>
+         <when interval="166792" since="#T0" xml:id="T119"/>
+         <when interval="169326" since="#T0" xml:id="T120"/>
+         <when interval="174446" since="#T0" xml:id="T121"/>
+         <when interval="176152" since="#T0" xml:id="T122"/>
+         <when interval="176268" since="#T0" xml:id="T123"/>
+         <when interval="179658" since="#T0" xml:id="T124"/>
+         <when interval="180048" since="#T0" xml:id="T125"/>
+         <when interval="184157" since="#T0" xml:id="T126"/>
+         <when interval="186989" since="#T0" xml:id="T127"/>
+         <when interval="187063" since="#T0" xml:id="T128"/>
+         <when interval="190994" since="#T0" xml:id="T129"/>
+         <when interval="191068" since="#T0" xml:id="T130"/>
+         <when interval="192833" since="#T0" xml:id="T25"/>
+         <when interval="192984" since="#T0" xml:id="T131"/>
+         <when interval="193350" since="#T0" xml:id="T132"/>
+         <when interval="194452" since="#T0" xml:id="T26"/>
+         <when interval="195337" since="#T0" xml:id="T27"/>
+         <when interval="196560" since="#T0" xml:id="T133"/>
+         <when interval="196730" since="#T0" xml:id="T134"/>
+         <when interval="197412" since="#T0" xml:id="T28"/>
+         <when interval="198477" since="#T0" xml:id="T135"/>
+         <when interval="200337" since="#T0" xml:id="T136"/>
+         <when interval="200621" since="#T0" xml:id="T137"/>
+         <when interval="204622" since="#T0" xml:id="T138"/>
+         <when interval="206948" since="#T0" xml:id="T139"/>
+         <when interval="208247" since="#T0" xml:id="T140"/>
+         <when interval="208673" since="#T0" xml:id="T141"/>
+         <when interval="211100" since="#T0" xml:id="T142"/>
+         <when interval="212068" since="#T0" xml:id="T143"/>
+         <when interval="216322" since="#T0" xml:id="T144"/>
+         <when interval="217045" since="#T0" xml:id="T145"/>
+         <when interval="219101" since="#T0" xml:id="T146"/>
+         <when interval="220101" since="#T0" xml:id="T147"/>
+         <when interval="220240" since="#T0" xml:id="T29"/>
+         <when interval="221354" since="#T0" xml:id="T30"/>
+         <when interval="221416" since="#T0" xml:id="T148"/>
+         <when interval="225933" since="#T0" xml:id="T149"/>
+         <when interval="226263" since="#T0" xml:id="T150"/>
+         <when interval="229400" since="#T0" xml:id="T151"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T151</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a1"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000001">ḥkīna</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000002">ʕarab</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a2"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000003">hāy</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000004">hiyye</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000005"
+                     rend="withDash">lahžit</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000007">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a64"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000008">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000009">bass</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000010">ʔinti</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000011"
+                     rend="withDash">nakkahtī</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000013">ha</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000014">ktīr</w>
+                  <pc xml:id="xTok_000015">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a3"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000016">kīf</w>
+                  <pc xml:id="xTok_000017">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a82"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000018"
+                     rend="withDash">nakkahtī</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000020">ha</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000021"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000023"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000025">ḥaki</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000026"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000028" join="right">madani</w>
+                  <pc xml:id="xTok_000029">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000030">yaʕni</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000031"
+                     rend="withDash">mitil</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000033">ma</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000034">ʔana</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000035"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000037">əḥki</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a76"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000038">lēk</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000039"
+                     rend="withDash">ḥabīb</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000041">i</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000042">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000043">bass</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000044">ma</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000045">ʔana</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000046"
+                     rend="withDash">mann</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000048">i</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000049">ʕāyše</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000050">hōne</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000051"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000053">lubnān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a77"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000054">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000055">ʕāyše</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000056"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000058">ʔalmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a65"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000059">ā</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000060">mwālīd</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000061">ʔalmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a6"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000062">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000063">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000064">mawālīd</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000065">ʔalmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a66"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000066"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000068">tiḥki</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000069">ʔalmāni</w>
+                  <pc xml:id="xTok_000070">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a7"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000071">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000072">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000073">min</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000074">ʔalmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a8"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000075">w</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000076">ʔižīt</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000077"
+                     rend="withDash">la</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000079">hōne</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a67"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000080">ʔiḥki</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000081">maʕ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000082">clāwdya</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000083">ʔalmāni</w>
+                  <pc xml:id="xTok_000084">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000085">ʔinti</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000086"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000088">tiḥki</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000089">ʔalmāni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a70"
+                  who="#CL"
+                  end="#T16"
+                  start="#T15">
+                  <pc join="right" xml:id="xTok_000090">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000091">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000092">German</w>
+                  <pc xml:id="xTok_000093">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000094">Wo</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000095">wohnst</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000096">du</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000097">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000098">Deutschland</w>
+                  <pc xml:id="xTok_000099">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a9"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T45"
+                  start="#T44">
+                  <pc join="right" xml:id="xTok_000100">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000101">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000102">German</w>
+                  <pc xml:id="xTok_000103">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000104">In</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000105">Trier</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a71"
+                  who="#CL"
+                  end="#T18"
+                  start="#T17">
+                  <pc join="right" xml:id="xTok_000106">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000107">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000108">German</w>
+                  <pc xml:id="xTok_000109">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000110">In</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000111">Trier</w>
+                  <pc xml:id="xTok_000112">?</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000113">Wie</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000114">lange</w>
+                  <pc xml:id="xTok_000115">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a10"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T47"
+                  start="#T46">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000116">ʕʔadt</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000117">tiʔrīban</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000118">ʔana</w>
+                  <pc join="right" xml:id="xTok_000119">.</pc>
+                  <pc xml:id="xTok_000120">.</pc>
+                  <pc xml:id="xTok_000121">.</pc>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000122">yaʕni</w>
+                  <pc join="right" xml:id="xTok_000123">.</pc>
+                  <pc xml:id="xTok_000124">.</pc>
+                  <pc xml:id="xTok_000125">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a11"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000126">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000127">ʕišt</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000128"
+                     rend="withDash">əb</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000130">ʔalmānya</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000131">mʔaṭṭaš</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a12"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T51"
+                  start="#T50">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000132"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000134">iṭlaʕ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000135">w</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000136"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000138">inzal</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000139"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000141">iṭlaʕ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000142">w</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000143"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000145">inzal</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a78"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000146">yaʕni</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000147">kill</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000148">li</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000149"
+                     rend="withDash">ʕišt</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000151">un</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000152">yimkin</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000153">ši</w>
+                  <pc join="right" xml:id="xTok_000154">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000155">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000156">German</w>
+                  <pc xml:id="xTok_000157">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000158">Zehn</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000159">Monat</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a72"
+                  who="#CL"
+                  end="#T20"
+                  start="#T19">
+                  <pc join="right" xml:id="xTok_000160">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000161">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000162">German</w>
+                  <pc xml:id="xTok_000163">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000164">Zehn</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000165">Monate</w>
+                  <pc xml:id="xTok_000166">?</pc>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000167">Ok</w>
+                  <pc xml:id="xTok_000168">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a13"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T54"
+                  start="#T53">
+                  <pc join="right" xml:id="xTok_000169">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000170">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000171">German</w>
+                  <pc xml:id="xTok_000172">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000173">Schön</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000174">Deutschland</w>
+                  <pc xml:id="xTok_000175">.</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000176">Ich</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000177">liebe</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000178">Deutschland</w>
+                  <pc xml:id="xTok_000179">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a73"
+                  who="#CL"
+                  end="#T22"
+                  start="#T21">
+                  <pc join="right" xml:id="xTok_000180">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000181">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000182">German</w>
+                  <pc xml:id="xTok_000183">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000184">Und</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000185">wann</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000186">gehst</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000187">du</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000188">wieder</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000189">zurrück</w>
+                  <pc xml:id="xTok_000190">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a79"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T56"
+                  start="#T55">
+                  <pc join="right" xml:id="xTok_000191">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000192">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000193">German</w>
+                  <pc xml:id="xTok_000194">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000195">Ja</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a83"
+                  who="#CL"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000196">OK</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a14"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000197">ktīr</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000198">šaʕab</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000199">rāḳi</w>
+                  <pc xml:id="xTok_000200">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000201">əktīr</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000202">šaʕab</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000203">əmhazzab</w>
+                  <pc xml:id="xTok_000204">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000205">əktīr</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000206">šaʕab</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000207">muḥtaram</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a15"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T60"
+                  start="#T59">
+                  <pc join="right" xml:id="xTok_000208">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000209">speaking</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000210">about</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000211">the</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000212">children</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000213">outside</w>
+                  <pc xml:id="xTok_000214">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000215">ḥarām</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000216">hallaʔ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000217">xāyfīn</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000218">mpargīn</w>
+                  <pc join="right" xml:id="xTok_000219">#</pc>
+                  <pc join="right" xml:id="xTok_000220">#</pc>
+                  <pc xml:id="xTok_000221">#</pc>
+                  <pc xml:id="xTok_000222">#</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000223">ʕam</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000224">yuhurbu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a16"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000225">ʕam</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000226"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000228">yismaʕu</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000229">ṣōt</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000230">il</w>
+                  <pc join="right" xml:id="xTok_000231">.</pc>
+                  <pc xml:id="xTok_000232">.</pc>
+                  <pc xml:id="xTok_000233">.</pc>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000234">ṭayarān</w>
+                  <pc xml:id="xTok_000235">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a17"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000236">taʕu</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000237"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000239"
+                     rend="withDash">ṭalləʕ</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000241"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000243">ku</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000244">ʕind</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000245"
+                     rend="withDash">il</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000247">bāba</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a18"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000248">tifhamu</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000249"
+                     rend="withDash">lahəžt</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000251">o</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000252">ʔaktar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a19"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000253">ʔiza</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000254"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000256">ko</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a20"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000257">yaʕni</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000258">niḥna</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000259"
+                     rend="withDash">fī</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000261">na</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000262">šaġle</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000263">masalan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a21"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000264">hallaʔ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000265">huwwe</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000266">ʔēʕid</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000267">masalan</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000268"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000270">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a80"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000271">ʔintu</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000272">ġuraba</w>
+                  <pc xml:id="xTok_000273">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000274">miš</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000275">ġuraba</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000276">ʔakīd</w>
+                  <pc xml:id="xTok_000277">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000278">ʔintu</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000279"
+                     rend="withDash">wlēd</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000281">i</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000282">min</w>
+                  <pc join="right" xml:id="xTok_000283">.</pc>
+                  <pc xml:id="xTok_000284">.</pc>
+                  <pc xml:id="xTok_000285">.</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000286"
+                     rend="withDash">əl</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000288">bēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a22"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T74"
+                  start="#T73">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000289">masalan</w>
+                  <pc xml:id="xTok_000290">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000291">ma</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000292"
+                     rend="withDash">bidd</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000294">i</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000295"
+                     rend="withDash">yē</w>
+                  <pc join="right" xml:id="xTok_000297">_</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000298">́</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000299">yiḥki</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000300"
+                     rend="withDash">ʔiddēm</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000302">ku</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000303">kilme</w>
+                  <pc xml:id="xTok_000304">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000305">fī</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000306"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000308">na</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000309">kilmit</w>
+                  <pc join="right" xml:id="xTok_000310">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000311" join="right">ǧaʕʕif</w>
+                  <pc xml:id="xTok_000312">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a23"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T76"
+                  start="#T75">
+                  <pc join="right" xml:id="xTok_000313">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000314" join="right">ǧaʕʕif</w>
+                  <pc xml:id="xTok_000315">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a24"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T77"
+                  start="#T76">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000316">ē</w>
+                  <pc xml:id="xTok_000317">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000318">ʔinno</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000319">skōt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a25"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T79"
+                  start="#T78">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000320">ʔaw</w>
+                  <pc join="right" xml:id="xTok_000321">.</pc>
+                  <pc xml:id="xTok_000322">.</pc>
+                  <pc xml:id="xTok_000323">.</pc>
+                  <pc join="right" xml:id="xTok_000324">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000325" join="right">ʕawwīk</w>
+                  <pc xml:id="xTok_000326">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a26"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000327">ʔinno</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000328">kamēn</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000329">skōt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a68"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000330">kīf</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000331">li</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000332"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000334"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000336">ik</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000337"
+                     rend="withDash">ʔiyyā</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000339">ha</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000340">H</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000341">taʕīt</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000342"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000344">brēxi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000345"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000347"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000349">brēxiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a27"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000350">brēxi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000351"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000353"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000355">brēxiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a69"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000356"
+                     rend="withDash">ʔāl</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000358"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000360">ik</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000361">H</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000362">fī</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000363">kōd</w>
+                  <pc xml:id="xTok_000364">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000365">baʕdēn</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000366"
+                     rend="withDash">m</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000368">niržaʕ</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000369"
+                     rend="withDash">m</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000371"
+                     rend="withDash">niḥkī</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000373"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000375">ik</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000376"
+                     rend="withDash">ʔiyyā</w>
+                  <pc join="right" xml:id="xTok_000378">_</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000379">́</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000380">liʔan</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000381">ma</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000382"
+                     rend="withDash">fī</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000384">na</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000385"
+                     rend="withDash">niḥkī</w>
+                  <pc join="right" xml:id="xTok_000387">_</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000388">́</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000389"
+                     rend="withDash">la</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000391">ḥadan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a28"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000392">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000393">hayde</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000394">baynēt</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000395"
+                     rend="withDash">baʕaḍ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000397">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a29"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000398">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000399">masalan</w>
+                  <pc join="right" xml:id="xTok_000400">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000401">ʔiža</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000402"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000404" join="right">žlēḥi</w>
+                  <pc xml:id="xTok_000405">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a30"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T89"
+                  start="#T88">
+                  <pc join="right" xml:id="xTok_000406">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000407">ʔiža</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000408"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000410" join="right">žlēḥi</w>
+                  <pc xml:id="xTok_000411">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000412">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a31"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T91"
+                  start="#T90">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000413">masalan</w>
+                  <pc xml:id="xTok_000414">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000415">ʔiža</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000416">šaxuṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a32"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T92"
+                  start="#T91">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000417">ē</w>
+                  <pc xml:id="xTok_000418">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000419">masalan</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000420">ʔēʕde</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000421">ʔana</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000422"
+                     rend="withDash">w</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000424"
+                     rend="withDash">iyyē</w>
+                  <pc join="right" xml:id="xTok_000426">_</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000427">́</w>
+                  <pc join="right" xml:id="xTok_000428">.</pc>
+                  <pc xml:id="xTok_000429">.</pc>
+                  <pc xml:id="xTok_000430">.</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000431">niḥna</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000432">bass</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000433">li</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000434"
+                     rend="withDash">m</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000436"
+                     rend="withDash">naʕrif</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000438">a</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000439">hāy</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000440"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000442">luġa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a33"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T94"
+                  start="#T93">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000443">ē</w>
+                  <pc xml:id="xTok_000444">,</pc>
+                  <pc join="right" xml:id="xTok_000445">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000446">ṭab</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000447">lēk</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000448">ʔiža</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000449"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000451">žlēḥi</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000452">hallaʔ</w>
+                  <pc xml:id="xTok_000453">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a34"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T96"
+                  start="#T95">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000454">inti</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000455">ma</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000456"
+                     rend="withDash">ḥa</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000458">taʕərfi</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000459">šū</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000460">yaʕni</w>
+                  <pc join="right" xml:id="xTok_000461">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000462" join="right">žlēḥi</w>
+                  <pc xml:id="xTok_000463">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a35"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T98"
+                  start="#T97">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000464">ʔaw</w>
+                  <pc join="right" xml:id="xTok_000465">"</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000466"
+                     rend="withDash">lə</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000468" join="right">žlēḥiyya</w>
+                  <pc xml:id="xTok_000469">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a36"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T100"
+                  start="#T99">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000470">ʔinno</w>
+                  <pc xml:id="xTok_000471">,</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000472"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000474">ʔunṯa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a37"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T102"
+                  start="#T101">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000475">šī</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000476">ḥilu</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000477">ktīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a63"
+                  who="#AID"
+                  end="#T153"
+                  start="#T152">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000478"
+                     rend="withDash">w</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000480">inti</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000481">masalan</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000482"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000484">tilfuẓi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000485"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000487" join="right">gā</w>
+                  <pc xml:id="xTok_000488">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a38"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T104"
+                  start="#T103">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000489"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000491">i</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000492"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000494"
+                     rend="withDash">yilfuẓ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000496">a</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000497">ktīr</w>
+                  <pc xml:id="xTok_000498">,</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000499"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000501">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a39"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T106"
+                  start="#T105">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000502"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000504">i</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000505">ktīr</w>
+                  <pc xml:id="xTok_000506">.</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000507">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000508">ʕaṭūl</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000509"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000511"
+                     rend="withDash">ʔil</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000513"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000515">o</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000516">ʔinno</w>
+                  <pc join="right" xml:id="xTok_000517">"</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000518"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000520">i</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000521">xalaṣ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000522">ṭab</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000523">qa</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000524">qa</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000525">qa</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000526"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000528"
+                     rend="withDash">l</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000530">qa</w>
+                  <pc xml:id="xTok_000531">"</pc>
+                  <pc xml:id="xTok_000532">.</pc>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000533">ʕarifti</w>
+                  <pc xml:id="xTok_000534">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a40"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T107"
+                  start="#T106">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000535"
+                     rend="withDash">kill</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000537">u</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000538"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000540"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000542">qa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a41"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T109"
+                  start="#T108">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000543">ʔinno</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000544"
+                     rend="withDash">la</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000546" join="right">šū</w>
+                  <pc xml:id="xTok_000547">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a42"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T111"
+                  start="#T110">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000548">xalaṣ</w>
+                  <pc xml:id="xTok_000549">!</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000550">hinni</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000551">hēke</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a43"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T113"
+                  start="#T112">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000552">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000553">ma</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000554"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000556">izʕal</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000557"
+                     rend="withDash">minn</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000559">o</w>
+                  <pc join="right" xml:id="xTok_000560">.</pc>
+                  <pc xml:id="xTok_000561">.</pc>
+                  <pc xml:id="xTok_000562">.</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000563">ʔinno</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000564"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000566"
+                     rend="withDash">ḥibb</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000568">a</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000569">bass</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000570">ʔinno</w>
+                  <pc join="right" xml:id="xTok_000571">.</pc>
+                  <pc xml:id="xTok_000572">.</pc>
+                  <pc xml:id="xTok_000573">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a44"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T115"
+                  start="#T114">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000574"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000576"
+                     rend="withDash">yʔawwū</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000578" join="right">ha</w>
+                  <pc xml:id="xTok_000579">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a81"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T116"
+                  start="#T115">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000580">ʔinno</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000581">hinni</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000582">kēnu</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000583">hēk</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000584">ʕāyšīn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a45"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T118"
+                  start="#T117">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000585">bass</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000586">inno</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000587">ʔakīd</w>
+                  <pc join="right" xml:id="xTok_000588">.</pc>
+                  <pc xml:id="xTok_000589">.</pc>
+                  <pc xml:id="xTok_000590">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a46"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T120"
+                  start="#T119">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000591">hallaʔ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000592">inti</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000593">bass</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000594">tuṭlaʕi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000595"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000597"
+                     rend="withDash">balad</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000599" join="right">ik</w>
+                  <pc xml:id="xTok_000600">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000601">kīf</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000602"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000604">ətkūn</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000605"
+                     rend="withDash">luġt</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000607" join="right">ik</w>
+                  <pc xml:id="xTok_000608">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a47"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T122"
+                  start="#T121">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000609">hallaʔ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000610">mitil</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000611"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000613">ʔalmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a48"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T124"
+                  start="#T123">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000614">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000615">kint</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000616">ʕāyše</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000617"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000619"
+                     rend="withDash">d</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000621">dorf</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000622"
+                     rend="withDash">b</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000624">ʔalmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a49"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T126"
+                  start="#T125">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000625">masalan</w>
+                  <pc xml:id="xTok_000626">,</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000627"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000629"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000631">madīne</w>
+                  <pc join="right" xml:id="xTok_000632">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000633">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000634">German</w>
+                  <pc xml:id="xTok_000635">/</pc>
+                  <pc join="right" xml:id="xTok_000636">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000637">Ich</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000638">liebe</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000639">dich</w>
+                  <pc xml:id="xTok_000640">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a50"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T127"
+                  start="#T126">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000641">ok</w>
+                  <pc xml:id="xTok_000642">?</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000643">ʔiza</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000644"
+                     rend="withDash">bidd</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000646">ik</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000647">tʔūli</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000648"
+                     rend="withDash">la</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000650">ḥada</w>
+                  <pc join="right" xml:id="xTok_000651">"</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000652"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000654"
+                     rend="withDash">ḥibb</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000656">ik</w>
+                  <pc xml:id="xTok_000657">"</pc>
+                  <pc xml:id="xTok_000658">:</pc>
+                  <pc join="right" xml:id="xTok_000659">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000660">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000661">German</w>
+                  <pc xml:id="xTok_000662">/</pc>
+                  <pc join="right" xml:id="xTok_000663">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000664">ich</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000665">liebe</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000666">dich</w>
+                  <pc xml:id="xTok_000667">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a51"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T129"
+                  start="#T128">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000668"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000670"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000672">ʔalmāni</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000673"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000675" join="right">qarawi</w>
+                  <pc xml:id="xTok_000676">,</pc>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000677"
+                     rend="withDash">iḍ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000679">ḍayʕa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a52"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T131"
+                  start="#T130">
+                  <pc join="right" xml:id="xTok_000680">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000681">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000682">German</w>
+                  <pc xml:id="xTok_000683">/</pc>
+                  <pc join="right" xml:id="xTok_000684">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000685">Ich</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000686">han</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000687">dich</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000688">gern</w>
+                  <pc xml:id="xTok_000689">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a74"
+                  who="#CL"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000690">ṣaḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a53"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T133"
+                  start="#T132">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000691">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000692">?</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000693">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a75"
+                  who="#CL"
+                  end="#T28"
+                  start="#T27">
+                  <pc join="right" xml:id="xTok_000694">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000695">han</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000696">dich</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000697">ist</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000698">hab</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000699">dich</w>
+                  <pc xml:id="xTok_000700">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a54"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T135"
+                  start="#T134">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000701">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000702">ṣaḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a55"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T136"
+                  start="#T135">
+                  <pc join="right" xml:id="xTok_000703">/</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000704">in</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000705">German</w>
+                  <pc xml:id="xTok_000706">/</pc>
+                  <pc join="right" xml:id="xTok_000707">"</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000708">Ich</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000709">han</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000710">dich</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000711">gern</w>
+                  <pc xml:id="xTok_000712">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a56"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T138"
+                  start="#T137">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000713">ē</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000714">yaʕni</w>
+                  <pc xml:id="xTok_000715">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000716">šūfi</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000717">ʔaddē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000718">ʔaddē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000719">bʕīde</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000720">ʕan</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000721"
+                     rend="withDash">baʕaḍ</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000723">un</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a57"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T140"
+                  start="#T139">
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000724"
+                     rend="withDash">il</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000726">dyalekte</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a58"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T142"
+                  start="#T141">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000727">ʔarībe</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000728"
+                     rend="withDash">n</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000730">namsēwi</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000731"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000733"
+                     rend="withDash">l</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000735">ʔalmāni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a59"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T144"
+                  start="#T143">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000736">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000737">bala</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000738">fī</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000739">fī</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000740">šwayy</w>
+                  <pc xml:id="xTok_000741">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000742">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a60"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T146"
+                  start="#T145">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000743">ē</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000744">lahžāt</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000745">əktīr</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000746">mixtilfe</w>
+                  <pc xml:id="xTok_000747">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000748">ṣaḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a84"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T147"
+                  start="#T146">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000749">ʔana</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000750">riḥt</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000751"
+                     rend="withDash">in</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000753">namsa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a85"
+                  who="#CL"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000754">ā</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000755">wēn</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000756">kunt</w>
+                  <pc xml:id="xTok_000757">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a61"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T149"
+                  start="#T148">
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000758">ma</w>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000759">ktīr</w>
+                  <pc xml:id="xTok_000760">,</pc>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000761">ʕʔadt</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000762">yawmēn</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000763">yaʕni</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000764">fitit</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000765">min</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000766">yūġuslāvia</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000767"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000769"
+                     rend="withDash">n</w>
+                  <w xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000771">namsa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.2_KD_F.49_Karantina_GermanyLanguage_a62"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T151"
+                  start="#T150">
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000772">lā</w>
+                  <pc xml:id="xTok_000773">,</pc>
+                  <w join="right" xml:id="1.2_KD_F.49_Karantina_GermanyLanguage_xTok_000774">bērme</w>
+                  <pc xml:id="xTok_000775">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

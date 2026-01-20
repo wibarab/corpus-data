@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:58:40.107704Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T45_KS_M.65_Karantina_Bedouincoffee">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">45_KS_M.65_Karantina_Bedouincoffee</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">45_KS_M.65_Karantina_Bedouincoffee</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.125" type="audio">
+                  <date when="2022-02-26"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 45_KS_M.65_Karantina_Bedouincoffee</head>
+               <person sameAs="corpus:LEB_KAR_2022_KS_M.65_Speaker5">
+                  <idno>LEB_KAR_2022_KS_M.65_Speaker5</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:TribalTraditions"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="754" since="#T0" xml:id="T1"/>
+         <when interval="6854" since="#T0" xml:id="T2"/>
+         <when interval="7063" since="#T0" xml:id="T3"/>
+         <when interval="9406" since="#T0" xml:id="T4"/>
+         <when interval="9831" since="#T0" xml:id="T5"/>
+         <when interval="12176" since="#T0" xml:id="T6"/>
+         <when interval="18251" since="#T0" xml:id="T7"/>
+         <when interval="18428" since="#T0" xml:id="T8"/>
+         <when interval="22274" since="#T0" xml:id="T9"/>
+         <when interval="22532" since="#T0" xml:id="T10"/>
+         <when interval="33584" since="#T0" xml:id="T11"/>
+         <when interval="33683" since="#T0" xml:id="T12"/>
+         <when interval="37384" since="#T0" xml:id="T13"/>
+         <when interval="49421" since="#T0" xml:id="T14"/>
+         <when interval="54480" since="#T0" xml:id="T15"/>
+         <when interval="54656" since="#T0" xml:id="T16"/>
+         <when interval="60304" since="#T0" xml:id="T17"/>
+         <when interval="60472" since="#T0" xml:id="T18"/>
+         <when interval="68128" since="#T0" xml:id="T19"/>
+         <when interval="68805" since="#T0" xml:id="T20"/>
+         <when interval="70154" since="#T0" xml:id="T21"/>
+         <when interval="70379" since="#T0" xml:id="T22"/>
+         <when interval="72314" since="#T0" xml:id="T23"/>
+         <when interval="74746" since="#T0" xml:id="T24"/>
+         <when interval="76704" since="#T0" xml:id="T25"/>
+         <when interval="80664" since="#T0" xml:id="T26"/>
+         <when interval="84294" since="#T0" xml:id="T27"/>
+         <when interval="85988" since="#T0" xml:id="T28"/>
+         <when interval="95477" since="#T0" xml:id="T29"/>
+         <when interval="96772" since="#T0" xml:id="T30"/>
+         <when interval="100770" since="#T0" xml:id="T31"/>
+         <when interval="110367" since="#T0" xml:id="T32"/>
+         <when interval="113276" since="#T0" xml:id="T33"/>
+         <when interval="114404" since="#T0" xml:id="T34"/>
+         <when interval="118314" since="#T0" xml:id="T35"/>
+         <when interval="123351" since="#T0" xml:id="T36"/>
+         <when interval="123999" since="#T0" xml:id="T37"/>
+         <when interval="130004" since="#T0" xml:id="T38"/>
+         <when interval="130249" since="#T0" xml:id="T39"/>
+         <when interval="132230" since="#T0" xml:id="T40"/>
+         <when interval="134372" since="#T0" xml:id="T41"/>
+         <when interval="136605" since="#T0" xml:id="T42"/>
+         <when interval="137526" since="#T0" xml:id="T43"/>
+         <when interval="143851" since="#T0" xml:id="T44"/>
+         <when interval="147659" since="#T0" xml:id="T45"/>
+         <when interval="154653" since="#T0" xml:id="T46"/>
+         <when interval="154867" since="#T0" xml:id="T47"/>
+         <when interval="161904" since="#T0" xml:id="T48"/>
+         <when interval="162010" since="#T0" xml:id="T49"/>
+         <when interval="165423" since="#T0" xml:id="T50"/>
+         <when interval="166672" since="#T0" xml:id="T51"/>
+         <when interval="179917" since="#T0" xml:id="T52"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T52</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a1"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000001">kinna</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000002">ʔabəl</w>
+                  <pc join="right" xml:id="xTok_000003">.</pc>
+                  <pc xml:id="xTok_000004">.</pc>
+                  <pc xml:id="xTok_000005">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000006">kānu</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000007"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000009">gahwa</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000010"
+                     rend="withDash">yuṭubxū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000012">a</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000013">ṭabux</w>
+                  <pc join="right" xml:id="xTok_000014">.</pc>
+                  <pc xml:id="xTok_000015">.</pc>
+                  <pc xml:id="xTok_000016">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000017">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000018">ʕarabiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a2"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000019"
+                     rend="withDash">yižībū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000021">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000022">näyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a3"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000023"
+                     rend="withDash">yiḥammṣū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000025">ha</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000026"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000028"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000030">miḥmāṣ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a4"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T7"
+                  start="#T6">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000031"
+                     rend="withDash">əl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000033">miḥmāṣ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000034">kān</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000035">yiži</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000036">mitil</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000037">zinid</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000038">hēk</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000039">ṭawīl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000040">w</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000041"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000043">o</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000044">hōn</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000045">ʔāxir</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000046">šī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000047">mitiḷ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000048">ṣaḥan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a5"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T9"
+                  start="#T8">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000049">yiḥuṭṭu</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000050"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000052">bann</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000053"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000055"
+                     rend="withDash">galb</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000057">o</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000058">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000059">yṣīru</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000060"
+                     rend="withDash">yiḥammṣū</w>
+                  <pc join="right" xml:id="xTok_000062">_</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000063">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a6"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T11"
+                  start="#T10">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000064">yaʕni</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000065">bī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000066">nās</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000067"
+                     rend="withDash">yiḥammṣū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000069">hin</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000070">ʔawwal</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000071">tiḥmīṣa</w>
+                  <pc xml:id="xTok_000072">,</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000073"
+                     rend="withDash">yiḥammṣū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000075">hin</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000076">sūd</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000077">w</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000078"
+                     rend="withDash">it</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000080">tānya</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000081"
+                     rend="withDash">yiḥammṣū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000083">hin</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000084">šugur</w>
+                  <pc xml:id="xTok_000085">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000086">šwayy</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000087">ġāmgāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a7"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T13"
+                  start="#T12">
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000088">ē</w>
+                  <pc join="right" xml:id="xTok_000089">.</pc>
+                  <pc xml:id="xTok_000090">.</pc>
+                  <pc xml:id="xTok_000091">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000092">yaʕni</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000093"
+                     rend="withDash">lann</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000095">in</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000096">šugur</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000097">šugur</w>
+                  <pc xml:id="xTok_000098">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000099">wala</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000100"
+                     rend="withDash">lann</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000102">in</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000103">sūd</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a9"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T15"
+                  start="#T14">
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000104">ā</w>
+                  <pc join="right" xml:id="xTok_000105">.</pc>
+                  <pc xml:id="xTok_000106">.</pc>
+                  <pc xml:id="xTok_000107">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000108">ḥatta</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000109"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000111">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000112">tiṭlaʕ</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000113"
+                     rend="withDash">ṭaʕmət</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000115">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000116">ṭayba</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000117">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000118">tʕallim</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000119">ʕa</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000120"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000122">finǧān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a10"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000123">ʔiza</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000124"
+                     rend="withDash">bidd</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000126">o</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000127"
+                     rend="withDash">yiʕamlū</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000129">wa</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000130"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000132">gahwa</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000133">šagra</w>
+                  <pc join="right" xml:id="xTok_000134">.</pc>
+                  <pc xml:id="xTok_000135">.</pc>
+                  <pc xml:id="xTok_000136">.</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000137"
+                     rend="withDash">tigūl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000139"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000141">o</w>
+                  <pc join="right" xml:id="xTok_000142">"</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000143">ya</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000144">wāl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000145">ya</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000146">wāl</w>
+                  <pc join="right" xml:id="xTok_000147">.</pc>
+                  <pc xml:id="xTok_000148">.</pc>
+                  <pc xml:id="xTok_000149">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000150">ma</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000151"
+                     rend="withDash">tšaggir</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000153" join="right">ha</w>
+                  <pc xml:id="xTok_000154">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a11"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000155"
+                     rend="withDash">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000157">iza</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000158"
+                     rend="withDash">bidd</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000160">o</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000161"
+                     rend="withDash">yā</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000163">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000164">tiṭlaʕ</w>
+                  <pc join="right" xml:id="xTok_000165">(</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000166"
+                     rend="withDash">əṭ</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000168">ṭa</w>
+                  <pc join="right" xml:id="xTok_000169">.</pc>
+                  <pc join="right" xml:id="xTok_000170">.</pc>
+                  <pc xml:id="xTok_000171">.</pc>
+                  <pc xml:id="xTok_000172">)</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000173">yaʕni</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000174">ma</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000175"
+                     rend="withDash">bī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000177">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000178">ḥmūḍa</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000179"
+                     rend="withDash">yigūl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000181"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000183" join="right">o</w>
+                  <pc xml:id="xTok_000184">:</pc>
+                  <pc join="right" xml:id="xTok_000185">"</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000186">ya</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000187">wāl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000188">la</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000189"
+                     rend="withDash">tiḥárgi</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000191">ha</w>
+                  <pc xml:id="xTok_000192">!</pc>
+                  <pc xml:id="xTok_000193">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a12"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000194">la</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000195"
+                     rend="withDash">tiḥárgi</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000197">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a13"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000198">yaʕni</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000199">ma</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000200"
+                     rend="withDash">tḥammiṣ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000202">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000203">zyāda</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a14"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000204">taʕṭi</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000205">ʕarge</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000206">ḥmūḍa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a15"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T27"
+                  start="#T26">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000207"
+                     rend="withDash">il</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000209">hēl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000210">yaʕṭi</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000211"
+                     rend="withDash">n</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000213">nakha</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000214"
+                     rend="withDash">la</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000216">tiṭbux</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000217">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000218">tʕaggid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a16"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000219">hiyya</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000220"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000222">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000223">bass</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000224"
+                     rend="withDash">tʕaggid</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000226">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000227">ʕa</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000228"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000230">faḥam</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000231">šufət</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000232">kīf</w>
+                  <pc xml:id="xTok_000233">?</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000234">w</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000235"
+                     rend="withDash">tḥuṭṭ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000237">a</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000238"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000240"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000242">finžān</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000243">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000244">tḥīl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000245"
+                     rend="withDash">əl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000247">finžān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a17"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000248">bass</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000249">ətʕallim</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000250"
+                     rend="withDash">miʕnāt</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000252">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000253">ʔinno</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000254"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000256">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000257">xalaṣ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000258">istawat</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000259"
+                     rend="withDash">ḅī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000261">k</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000262">tḍayyif</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000263"
+                     rend="withDash">min</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000265">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a18"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T33"
+                  start="#T32">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000266"
+                     rend="withDash">əl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000268">gahwa</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000269"
+                     rend="withDash">bidd</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000271">ik</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000272">ē</w>
+                  <pc join="right" xml:id="xTok_000273">.</pc>
+                  <pc xml:id="xTok_000274">.</pc>
+                  <pc xml:id="xTok_000275">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000276">nḍall</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000277"
+                     rend="withDash">niṭḅux</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000279">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000280">yōmēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a19"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T35"
+                  start="#T34">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000281"
+                     rend="withDash">əl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000283">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000284">ma</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000285"
+                     rend="withDash">nḍayyif</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000287">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000288">ʔilla</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000289"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000291"
+                     rend="withDash">niṭḅux</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000293">a</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000294">yōmēn</w>
+                  <pc xml:id="xTok_000295">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000296">tkūn</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000297">maṭḅūxa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000298">gabl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000299"
+                     rend="withDash">əb</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000301">yōmēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a20"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T36"
+                  start="#T35">
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000302">túnṭaḅix</w>
+                  <pc xml:id="xTok_000303">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000304">yinšāl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000305"
+                     rend="withDash">min</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000307">ha</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000308">tišrība</w>
+                  <pc xml:id="xTok_000309">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000310">yinšāl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000311"
+                     rend="withDash">min</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000313">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000314">ghawa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a21"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000315">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000316">tāni</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000317">yōm</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000318"
+                     rend="withDash">il</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000320">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000321">li</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000322"
+                     rend="withDash">šilnā</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000324">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000325">niržaʕ</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000326"
+                     rend="withDash">niġlī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000328">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000329">w</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000330"
+                     rend="withDash">nḥuṭṭ</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000332"
+                     rend="withDash">ill</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000334">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000335">hēl</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000336"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000338"
+                     rend="withDash">nʕaggid</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000340">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a22"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000341">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000342">illi</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000343">ṭuḅaxna</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000344"
+                     rend="withDash">bī</w>
+                  <pc join="right" xml:id="xTok_000346">_</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000347">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a23"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000348">tʕaggid</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a24"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000349">ʔinti</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000350">bas</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000351">tiṭubxi</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000352">yaxne</w>
+                  <pc xml:id="xTok_000353">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000354">ma</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000355"
+                     rend="withDash">b</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000357">ətʔūle</w>
+                  <pc join="right" xml:id="xTok_000358">.</pc>
+                  <pc xml:id="xTok_000359">.</pc>
+                  <pc xml:id="xTok_000360">.</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000361"
+                     rend="withDash">ʕaʔʔdī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000363">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000364">la</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000365"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000367" join="right">ṭabxa</w>
+                  <pc xml:id="xTok_000368">?</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000369">ma</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000370"
+                     rend="withDash">txallī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000372">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000373">ṣāyta</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000374">māyta</w>
+                  <pc xml:id="xTok_000375">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a25"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000376">baʔa</w>
+                  <pc join="right" xml:id="xTok_000377">.</pc>
+                  <pc xml:id="xTok_000378">.</pc>
+                  <pc xml:id="xTok_000379">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000380">yaʕni</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000381"
+                     rend="withDash">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000383">illi</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000384">ṭabaxna</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000385"
+                     rend="withDash">fī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000387">ha</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000388"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000390">ʕahwe</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000391">ʔawwal</w>
+                  <w join="right" xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000392">marra</w>
+                  <pc xml:id="xTok_000393">,</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000394"
+                     rend="withDash">m</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000396">nʕamil</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000397"
+                     rend="withDash">minn</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000399">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000400">tišrībe</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a26"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T48"
+                  start="#T47">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000401"
+                     rend="withDash">m</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000403"
+                     rend="withDash">ənṣaffī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000405" join="right">ha</w>
+                  <pc xml:id="xTok_000406">,</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000407"
+                     rend="withDash">m</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000409">ənkibb</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000410"
+                     rend="withDash">əl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000412">bann</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000413">il</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000414">ṭabaxna</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000415"
+                     rend="withDash">fī</w>
+                  <pc join="right" xml:id="xTok_000417">_</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000418">́</w>
+                  <pc xml:id="xTok_000419">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000420">w</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000421"
+                     rend="withDash">it</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000423">tišrība</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000424">hiyya</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000425"
+                     rend="withDash">zāt</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000427">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000428">nirǧaʕ​</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000429">nʕamil</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000430"
+                     rend="withDash">bī</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000432">ha</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000433">ghawa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a27"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T50"
+                  start="#T49">
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000434"
+                     rend="withDash">nḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000436"
+                     rend="withDash">ill</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000438">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000439">bann</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000440">ṭāza</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000441">w</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000442"
+                     rend="withDash">niṭḅux</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000444">a</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000445"
+                     rend="withDash">bī</w>
+                  <pc join="right" xml:id="xTok_000447">_</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000448">́</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u45_KS_M.65_Karantina_Bedouincoffee_a28"
+                  who="#LEB_KAR_2022_KS_M.65_Speaker5"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000449">sqaft</w>
+                  <pc join="right" xml:id="xTok_000450">(</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000451"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000453" join="right">ʔahw</w>
+                  <pc xml:id="xTok_000454">)</pc>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000455"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000457" join="right">gahwa</w>
+                  <pc xml:id="xTok_000458">,</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000459">li</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000460">yiʕarif</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000461"
+                     rend="withDash">qimət</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000463">a</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000464">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000465">yiʕarif</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000466"
+                     rend="withDash">ʕawāyid</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000468">a</w>
+                  <pc join="right" xml:id="xTok_000469">.</pc>
+                  <pc xml:id="xTok_000470">.</pc>
+                  <pc xml:id="xTok_000471">.</pc>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000472">w</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000473">ḳraw</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000474"
+                     rend="withDash">əḍ</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000476">ḍēf</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000477">li</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000478">ʕārif</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000479"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000481">o</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000482">ʔinno</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000483">makrūm</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000484">min</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000485"
+                     rend="withDash">əl</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000487">gahwa</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000488">l</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000489"
+                     rend="withDash">titgaddam</w>
+                  <w join="right"
+                     xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000491"
+                     rend="withDash">l</w>
+                  <w xml:id="45_KS_M.65_Karantina_Bedouincoffee_xTok_000493">o</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

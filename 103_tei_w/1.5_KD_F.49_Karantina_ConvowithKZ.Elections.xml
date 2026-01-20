@@ -1,0 +1,2690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:58:54.499966Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T1.5_KD_F.49_Karantina_ConvowithKZ.Elections">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">1.5_KD_F.49_Karantina_ConvowithKZ.Elections</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">1.5_KD_F.49_Karantina_ConvowithKZ.Elections</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.20555555555555555" type="audio">
+                  <date when="2022-03-01"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 1.5_KD_F.49_Karantina_ConvowithKZ.Elections</head>
+               <person sameAs="corpus:LEB_KAR_2022_KZ_M.27_Speaker12">
+                  <idno>LEB_KAR_2022_KZ_M.27_Speaker12</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2022_KD_F.49_Speaker14">
+                  <idno>LEB_KAR_2022_KD_F.49_Speaker14</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Dailylife"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1301" since="#T0" xml:id="T39"/>
+         <when interval="2727" since="#T0" xml:id="T40"/>
+         <when interval="3345" since="#T0" xml:id="T1"/>
+         <when interval="5632" since="#T0" xml:id="T2"/>
+         <when interval="8933" since="#T0" xml:id="T3"/>
+         <when interval="10410" since="#T0" xml:id="T4"/>
+         <when interval="14256" since="#T0" xml:id="T5"/>
+         <when interval="15376" since="#T0" xml:id="T6"/>
+         <when interval="18655" since="#T0" xml:id="T7"/>
+         <when interval="21017" since="#T0" xml:id="T8"/>
+         <when interval="21691" since="#T0" xml:id="T9"/>
+         <when interval="25007" since="#T0" xml:id="T41"/>
+         <when interval="25262" since="#T0" xml:id="T10"/>
+         <when interval="26551" since="#T0" xml:id="T11"/>
+         <when interval="26571" since="#T0" xml:id="T42"/>
+         <when interval="27749" since="#T0" xml:id="T12"/>
+         <when interval="28104" since="#T0" xml:id="T13"/>
+         <when interval="30455" since="#T0" xml:id="T14"/>
+         <when interval="30804" since="#T0" xml:id="T15"/>
+         <when interval="31492" since="#T0" xml:id="T43"/>
+         <when interval="32095" since="#T0" xml:id="T16"/>
+         <when interval="34526" since="#T0" xml:id="T44"/>
+         <when interval="35067" since="#T0" xml:id="T45"/>
+         <when interval="36758" since="#T0" xml:id="T46"/>
+         <when interval="38311" since="#T0" xml:id="T47"/>
+         <when interval="40167" since="#T0" xml:id="T48"/>
+         <when interval="41275" since="#T0" xml:id="T49"/>
+         <when interval="44642" since="#T0" xml:id="T50"/>
+         <when interval="44775" since="#T0" xml:id="T51"/>
+         <when interval="46696" since="#T0" xml:id="T52"/>
+         <when interval="47013" since="#T0" xml:id="T17"/>
+         <when interval="48180" since="#T0" xml:id="T53"/>
+         <when interval="48576" since="#T0" xml:id="T18"/>
+         <when interval="49786" since="#T0" xml:id="T19"/>
+         <when interval="50557" since="#T0" xml:id="T54"/>
+         <when interval="52737" since="#T0" xml:id="T20"/>
+         <when interval="53318" since="#T0" xml:id="T55"/>
+         <when interval="56171" since="#T0" xml:id="T56"/>
+         <when interval="56275" since="#T0" xml:id="T57"/>
+         <when interval="60042" since="#T0" xml:id="T58"/>
+         <when interval="60123" since="#T0" xml:id="T59"/>
+         <when interval="61976" since="#T0" xml:id="T60"/>
+         <when interval="62055" since="#T0" xml:id="T61"/>
+         <when interval="63198" since="#T0" xml:id="T62"/>
+         <when interval="63268" since="#T0" xml:id="T63"/>
+         <when interval="65043" since="#T0" xml:id="T64"/>
+         <when interval="65105" since="#T0" xml:id="T65"/>
+         <when interval="67606" since="#T0" xml:id="T66"/>
+         <when interval="67692" since="#T0" xml:id="T67"/>
+         <when interval="71098" since="#T0" xml:id="T68"/>
+         <when interval="71685" since="#T0" xml:id="T69"/>
+         <when interval="73179" since="#T0" xml:id="T70"/>
+         <when interval="73263" since="#T0" xml:id="T71"/>
+         <when interval="75776" since="#T0" xml:id="T72"/>
+         <when interval="75843" since="#T0" xml:id="T73"/>
+         <when interval="77216" since="#T0" xml:id="T74"/>
+         <when interval="79847" since="#T0" xml:id="T75"/>
+         <when interval="82278" since="#T0" xml:id="T76"/>
+         <when interval="84262" since="#T0" xml:id="T77"/>
+         <when interval="84370" since="#T0" xml:id="T78"/>
+         <when interval="86709" since="#T0" xml:id="T79"/>
+         <when interval="87378" since="#T0" xml:id="T80"/>
+         <when interval="89994" since="#T0" xml:id="T81"/>
+         <when interval="90256" since="#T0" xml:id="T82"/>
+         <when interval="91499" since="#T0" xml:id="T83"/>
+         <when interval="91645" since="#T0" xml:id="T84"/>
+         <when interval="93766" since="#T0" xml:id="T85"/>
+         <when interval="95270" since="#T0" xml:id="T21"/>
+         <when interval="98149" since="#T0" xml:id="T22"/>
+         <when interval="98273" since="#T0" xml:id="T23"/>
+         <when interval="98565" since="#T0" xml:id="T86"/>
+         <when interval="98916" since="#T0" xml:id="T87"/>
+         <when interval="100975" since="#T0" xml:id="T88"/>
+         <when interval="101737" since="#T0" xml:id="T24"/>
+         <when interval="102808" since="#T0" xml:id="T89"/>
+         <when interval="102914" since="#T0" xml:id="T90"/>
+         <when interval="103131" since="#T0" xml:id="T25"/>
+         <when interval="105852" since="#T0" xml:id="T26"/>
+         <when interval="106081" since="#T0" xml:id="T91"/>
+         <when interval="108000" since="#T0" xml:id="T92"/>
+         <when interval="108639" since="#T0" xml:id="T27"/>
+         <when interval="110939" since="#T0" xml:id="T93"/>
+         <when interval="110942" since="#T0" xml:id="T94"/>
+         <when interval="113217" since="#T0" xml:id="T199"/>
+         <when interval="113391" since="#T0" xml:id="T95"/>
+         <when interval="113934" since="#T0" xml:id="T96"/>
+         <when interval="114391" since="#T0" xml:id="T200"/>
+         <when interval="115809" since="#T0" xml:id="T97"/>
+         <when interval="116599" since="#T0" xml:id="T98"/>
+         <when interval="121151" since="#T0" xml:id="T99"/>
+         <when interval="121285" since="#T0" xml:id="T100"/>
+         <when interval="122764" since="#T0" xml:id="T101"/>
+         <when interval="123884" since="#T0" xml:id="T102"/>
+         <when interval="128658" since="#T0" xml:id="T103"/>
+         <when interval="128768" since="#T0" xml:id="T104"/>
+         <when interval="130901" since="#T0" xml:id="T105"/>
+         <when interval="133568" since="#T0" xml:id="T106"/>
+         <when interval="133747" since="#T0" xml:id="T107"/>
+         <when interval="136258" since="#T0" xml:id="T108"/>
+         <when interval="136761" since="#T0" xml:id="T109"/>
+         <when interval="139721" since="#T0" xml:id="T110"/>
+         <when interval="139917" since="#T0" xml:id="T111"/>
+         <when interval="141825" since="#T0" xml:id="T112"/>
+         <when interval="142316" since="#T0" xml:id="T113"/>
+         <when interval="143634" since="#T0" xml:id="T114"/>
+         <when interval="143884" since="#T0" xml:id="T115"/>
+         <when interval="144795" since="#T0" xml:id="T116"/>
+         <when interval="144864" since="#T0" xml:id="T117"/>
+         <when interval="147209" since="#T0" xml:id="T118"/>
+         <when interval="147636" since="#T0" xml:id="T119"/>
+         <when interval="151159" since="#T0" xml:id="T120"/>
+         <when interval="152138" since="#T0" xml:id="T121"/>
+         <when interval="153727" since="#T0" xml:id="T122"/>
+         <when interval="154044" since="#T0" xml:id="T123"/>
+         <when interval="159134" since="#T0" xml:id="T124"/>
+         <when interval="159385" since="#T0" xml:id="T125"/>
+         <when interval="161557" since="#T0" xml:id="T126"/>
+         <when interval="164300" since="#T0" xml:id="T127"/>
+         <when interval="164486" since="#T0" xml:id="T128"/>
+         <when interval="167958" since="#T0" xml:id="T129"/>
+         <when interval="168091" since="#T0" xml:id="T130"/>
+         <when interval="172797" since="#T0" xml:id="T131"/>
+         <when interval="172898" since="#T0" xml:id="T132"/>
+         <when interval="175711" since="#T0" xml:id="T133"/>
+         <when interval="175875" since="#T0" xml:id="T134"/>
+         <when interval="178420" since="#T0" xml:id="T135"/>
+         <when interval="178963" since="#T0" xml:id="T136"/>
+         <when interval="180170" since="#T0" xml:id="T137"/>
+         <when interval="181426" since="#T0" xml:id="T138"/>
+         <when interval="183313" since="#T0" xml:id="T139"/>
+         <when interval="183991" since="#T0" xml:id="T140"/>
+         <when interval="186508" since="#T0" xml:id="T141"/>
+         <when interval="188475" since="#T0" xml:id="T142"/>
+         <when interval="188632" since="#T0" xml:id="T143"/>
+         <when interval="190361" since="#T0" xml:id="T144"/>
+         <when interval="191407" since="#T0" xml:id="T145"/>
+         <when interval="193426" since="#T0" xml:id="T146"/>
+         <when interval="195456" since="#T0" xml:id="T147"/>
+         <when interval="196612" since="#T0" xml:id="T148"/>
+         <when interval="198739" since="#T0" xml:id="T149"/>
+         <when interval="199634" since="#T0" xml:id="T150"/>
+         <when interval="201476" since="#T0" xml:id="T151"/>
+         <when interval="202484" since="#T0" xml:id="T152"/>
+         <when interval="204338" since="#T0" xml:id="T153"/>
+         <when interval="204598" since="#T0" xml:id="T154"/>
+         <when interval="205838" since="#T0" xml:id="T155"/>
+         <when interval="207163" since="#T0" xml:id="T156"/>
+         <when interval="209377" since="#T0" xml:id="T157"/>
+         <when interval="211006" since="#T0" xml:id="T28"/>
+         <when interval="213168" since="#T0" xml:id="T29"/>
+         <when interval="213339" since="#T0" xml:id="T30"/>
+         <when interval="217172" since="#T0" xml:id="T31"/>
+         <when interval="219265" since="#T0" xml:id="T32"/>
+         <when interval="219295" since="#T0" xml:id="T33"/>
+         <when interval="223622" since="#T0" xml:id="T34"/>
+         <when interval="224367" since="#T0" xml:id="T158"/>
+         <when interval="227519" since="#T0" xml:id="T35"/>
+         <when interval="228668" since="#T0" xml:id="T159"/>
+         <when interval="229064" since="#T0" xml:id="T36"/>
+         <when interval="230292" since="#T0" xml:id="T160"/>
+         <when interval="232417" since="#T0" xml:id="T161"/>
+         <when interval="232748" since="#T0" xml:id="T37"/>
+         <when interval="233764" since="#T0" xml:id="T162"/>
+         <when interval="233798" since="#T0" xml:id="T38"/>
+         <when interval="234998" since="#T0" xml:id="T163"/>
+         <when interval="235125" since="#T0" xml:id="T164"/>
+         <when interval="236951" since="#T0" xml:id="T165"/>
+         <when interval="237573" since="#T0" xml:id="T166"/>
+         <when interval="239408" since="#T0" xml:id="T167"/>
+         <when interval="241379" since="#T0" xml:id="T168"/>
+         <when interval="242947" since="#T0" xml:id="T169"/>
+         <when interval="247680" since="#T0" xml:id="T170"/>
+         <when interval="251685" since="#T0" xml:id="T171"/>
+         <when interval="251775" since="#T0" xml:id="T172"/>
+         <when interval="253819" since="#T0" xml:id="T173"/>
+         <when interval="253994" since="#T0" xml:id="T174"/>
+         <when interval="255631" since="#T0" xml:id="T175"/>
+         <when interval="255716" since="#T0" xml:id="T176"/>
+         <when interval="259522" since="#T0" xml:id="T177"/>
+         <when interval="260696" since="#T0" xml:id="T178"/>
+         <when interval="261983" since="#T0" xml:id="T179"/>
+         <when interval="262078" since="#T0" xml:id="T180"/>
+         <when interval="263626" since="#T0" xml:id="T181"/>
+         <when interval="270948" since="#T0" xml:id="T182"/>
+         <when interval="273572" since="#T0" xml:id="T183"/>
+         <when interval="274719" since="#T0" xml:id="T201"/>
+         <when interval="277336" since="#T0" xml:id="T184"/>
+         <when interval="277538" since="#T0" xml:id="T202"/>
+         <when interval="278721" since="#T0" xml:id="T185"/>
+         <when interval="280518" since="#T0" xml:id="T186"/>
+         <when interval="280650" since="#T0" xml:id="T187"/>
+         <when interval="283470" since="#T0" xml:id="T188"/>
+         <when interval="283596" since="#T0" xml:id="T189"/>
+         <when interval="284297" since="#T0" xml:id="T203"/>
+         <when interval="284954" since="#T0" xml:id="T190"/>
+         <when interval="285065" since="#T0" xml:id="T191"/>
+         <when interval="285161" since="#T0" xml:id="T204"/>
+         <when interval="286080" since="#T0" xml:id="T205"/>
+         <when interval="286484" since="#T0" xml:id="T192"/>
+         <when interval="287014" since="#T0" xml:id="T193"/>
+         <when interval="287614" since="#T0" xml:id="T206"/>
+         <when interval="288936" since="#T0" xml:id="T194"/>
+         <when interval="289081" since="#T0" xml:id="T195"/>
+         <when interval="291431" since="#T0" xml:id="T196"/>
+         <when interval="292378" since="#T0" xml:id="T197"/>
+         <when interval="294136" since="#T0" xml:id="T198"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T198</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a1"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000001">ē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000002">šū</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000003"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000005">tištiġil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000006">ʔinta</w>
+                  <pc xml:id="xTok_000007">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a88"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000008">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000009">txarražət</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000010">banking</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000011">and</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000012">finance</w>
+                  <pc xml:id="xTok_000013">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a89"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T3"
+                  start="#T2">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000014">kint</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000015"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000017">ištiġil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000018"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000020">širkit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000021">finance</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000022">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000023">hallaʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000024">sakkarit</w>
+                  <pc xml:id="xTok_000025">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a90"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T5"
+                  start="#T4">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000026">fa</w>
+                  <pc join="right" xml:id="xTok_000027">.</pc>
+                  <pc xml:id="xTok_000028">.</pc>
+                  <pc xml:id="xTok_000029">.</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000030"
+                     rend="withDash">ṣar</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000032"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000034">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000035">taʔrīban</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000036">ši</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000037">šahrēn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000038">mwaʔʔaf</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000039">min</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000040"
+                     rend="withDash">iš</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000042">širke</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a91"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T7"
+                  start="#T6">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000043">kint</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000044">nēwi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000045">kaffi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000046">mastēr</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000047"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000049"
+                     join="right">ʔilmānya</w>
+                  <pc xml:id="xTok_000050">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000051">kēn</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000052"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000054">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000055">ʔiṭlaʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000056">ʕala</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000057">ʔilmānya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a92"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000058">darasət</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000059">sini</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000060">mastēr</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000061"
+                     rend="withDash">bidd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000063">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000064">ʔiṭlaʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000065">w</w>
+                  <pc join="right" xml:id="xTok_000066">.</pc>
+                  <pc xml:id="xTok_000067">.</pc>
+                  <pc xml:id="xTok_000068">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a93"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000069"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000071"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000073">ik</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000074">niḥna</w>
+                  <pc join="right" xml:id="xTok_000075">.</pc>
+                  <pc xml:id="xTok_000076">.</pc>
+                  <pc xml:id="xTok_000077">.</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000078"
+                     rend="withDash">mitil</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000080">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000081">ʔinti</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000082">ʔilti</w>
+                  <pc xml:id="xTok_000083">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000084">niḥna</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000085">hōn</w>
+                  <pc join="right" xml:id="xTok_000086">(</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000087">bid</w>
+                  <pc join="right" xml:id="xTok_000088">)</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000089"
+                     rend="withDash">d</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000091">na</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000092">nḍall</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000093">hōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a2"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000094">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000095">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000096">mīn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000097">mēši</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000098">ʔintixābēt</w>
+                  <pc xml:id="xTok_000099">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a94"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T12"
+                  start="#T11">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000100">ʔintixābēt</w>
+                  <pc xml:id="xTok_000101">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a95"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000102">hallaʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000103"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000105"
+                     rend="withDash">ətfakkrī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000107">ni</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000108">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000109">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000110"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000112"
+                     rend="withDash">žāml</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000114">ik</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000115">yimkin</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a96"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000116">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000117">kamēn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000118">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000119">pōla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a3"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000120">yī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000121">daxīl</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000122"
+                     rend="withDash">ʕayn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000124"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000125">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000126">daxīl</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000127"
+                     rend="withDash">ʔalb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000129">ak</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000130"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000132"
+                     rend="withDash">šrāyīn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000134">i</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000135"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000137"
+                     rend="withDash">əxdim</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000139">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000140">hāy</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a4"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000141"
+                     rend="withDash">ʕamlit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000143"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000145">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000146">ʕirəs</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000147"
+                     rend="withDash">bint</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000149">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a5"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T48"
+                  start="#T47">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000150"
+                     rend="withDash">ʕamlit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000152"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000154">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000155">bēt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000156"
+                     rend="withDash">bint</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000158">i</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000159"
+                     rend="withDash">kill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000161">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a6"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000162">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000163">titxayyali</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000164"
+                     rend="withDash">ha</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000166"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000168">maxlūʔa</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000169">ʔaddēš</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000170">sēʕadit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000171">hāy</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000172"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000174">manṭʔa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a7"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000175">ʔinta</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000176"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000178">taʕrif</w>
+                  <pc join="right" xml:id="xTok_000179">.</pc>
+                  <pc join="right" xml:id="xTok_000180">.</pc>
+                  <pc xml:id="xTok_000181">.</pc>
+                  <pc xml:id="xTok_000182">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a97"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000183">pōla</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000184">yaʕḳūbyān</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a8"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000185">ʔinta</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000186"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000188">taʕrif</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000189">ənhār</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000190"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000192">ʔinfižār</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a98"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000193">hiyye</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000194"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000196">waḥīde</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000197">yilli</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000198">staʔālit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000199">min</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000200"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000202">mažlis</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a9"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000203">hiyye</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000204"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000206">waḥīde</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000207">nhār</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000208"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000210">ʔinfižār</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000211">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000212">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000213">ṭālʕa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000214"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000216"
+                     rend="withDash">ṭ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000218">ṭarīʔ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a10"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000219">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000220"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000222">aʕrif</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000223">kīf</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000224"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000226"
+                     rend="withDash">ḥāl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000228">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000229">laʔaṭṭ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000230"
+                     rend="withDash">it</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000232">tilifōn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000233">ṣurt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000234"
+                     rend="withDash">diʔʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000236"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000238">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a11"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T60"
+                  start="#T59">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000239"
+                     rend="withDash">daʔʔayt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000241"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000243">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000244"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000246"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000248"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000249">:</pc>
+                  <pc join="right" xml:id="xTok_000250">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000251">ʔinti</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000252">mnīḥa</w>
+                  <pc xml:id="xTok_000253">?</pc>
+                  <pc xml:id="xTok_000254">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a12"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T62"
+                  start="#T61">
+                  <pc join="right" xml:id="xTok_000255">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000256">ʔinti</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000257"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000259">ki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000260">šī</w>
+                  <pc xml:id="xTok_000261">?</pc>
+                  <pc xml:id="xTok_000262">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a13"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T64"
+                  start="#T63">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000263"
+                     rend="withDash">la</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000265">hallaʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000266"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000268">tiḥki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000269"
+                     rend="withDash">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000271">ya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a14"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000272">yaʕni</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000273">kē</w>
+                  <pc join="right" xml:id="xTok_000274">(</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000275"
+                     join="right">n</w>
+                  <pc xml:id="xTok_000276">)</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000277"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000279">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000280">ši</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000281">ʕašər</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000282">ədʔāyiʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000283"
+                     rend="withDash">əl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000285">ʔinfižār</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000286">ṭāliʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a15"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T68"
+                  start="#T67">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000287">w</w>
+                  <pc join="right" xml:id="xTok_000288">.</pc>
+                  <pc xml:id="xTok_000289">.</pc>
+                  <pc xml:id="xTok_000290">.</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000291">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000292">diġri</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000293">ʔižt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000294"
+                     rend="withDash">əb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000296">rāsi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000297"
+                     rend="withDash">ʔadd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000299">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000300">hiyye</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000301">mnīḥa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a16"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000302">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000303">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000304">ḥada</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a17"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000305">lək</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000306">nizlit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000307"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000309">na</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000310">tšīl</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000311"
+                     rend="withDash">ir</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000313">radəm</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000314">ʕan</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000315"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000317">ʔaruḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a18"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T74"
+                  start="#T73">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000318">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000319">ḥada</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000320"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000322"
+                     rend="withDash">yʕamil</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000324">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a19"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T76"
+                  start="#T75">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000325">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000326">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000327">ʔilla</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000328">hiyye</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000329"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000331">waḥīde</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000332">li</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000333">nizlit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000334"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000336"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000338">ʔarəḍ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000339"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000341"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000343">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a20"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000344">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000345">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000346">ʔinno</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000347">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000348">štaġalt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000349"
+                     rend="withDash">ḍudd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000351">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a21"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T79"
+                  start="#T78">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000352">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000353">haydīk</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000354"
+                     rend="withDash">id</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000356">dawra</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000357">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000358">kint</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000359">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000360"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000362">ištíġil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000363"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000365">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a22"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000366">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000367">ktīr</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000368">ʔištaġalt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000369"
+                     rend="withDash">ḍudd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000371">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000372"
+                     rend="withDash">liʔann</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000374">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000375">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000376">kint</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000377"
+                     rend="withDash">ʔaʕrif</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000379">ha</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a23"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T83"
+                  start="#T82">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000380">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000381">bʕīde</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000382"
+                     rend="withDash">ʕann</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000384">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a24"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T85"
+                  start="#T84">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000385">ē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000386">bass</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000387">hallaʔ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000388">lāʔ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000389">pōla</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000390">ʔakīd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000391">pōla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a99"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000392">bass</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000393">ʔana</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000394"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000396">ʔūl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000397">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000398"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000400">tistaḥiʔʔ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000401">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000402"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000404"
+                     rend="withDash">tistaḥiʔʔ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000406">na</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000407"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000409"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000411">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a100"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000412">niḥna</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000413">yaʕni</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000414">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000415">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000416"
+                     rend="withDash">naʕṭī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000418">ha</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000419"
+                     rend="withDash">ʔadd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000421">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000422">lēzim</w>
+                  <pc join="right" xml:id="xTok_000423">.</pc>
+                  <pc xml:id="xTok_000424">.</pc>
+                  <pc xml:id="xTok_000425">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a25"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000426">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a26"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T89"
+                  start="#T88">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000427"
+                     rend="withDash">ʔadd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000429">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000430">hiyye</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000431">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000432"
+                     rend="withDash">ṭaʕṭī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000434">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a101"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000435">miyye</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000436"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000438"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000440">miyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a27"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T91"
+                  start="#T90">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000441"
+                     rend="withDash">ʔadd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000443">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000444">hiyye</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000445"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000447">tiḥki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000448"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000450">waḥīde</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000451">li</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000452"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000454">tiḥki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000455"
+                     rend="withDash">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000457">na</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000458">w</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000459"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000461">tiḥki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000462"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000464"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000466">ʕarab</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a102"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000467">ʔaddē</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000468"
+                     rend="withDash">ṣār</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000470"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000472">na</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000473">ḥna</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000474">mhammašīn</w>
+                  <pc xml:id="xTok_000475">?</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000476">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000477">ḥada</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000478">ḥaki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000479"
+                     rend="withDash">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000481">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a28"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T93"
+                  start="#T92">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000482">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000483">ḥada</w>
+                  <pc xml:id="xTok_000484">,</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000485"
+                     rend="withDash">kill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000487">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000488">ṭulʕit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000489">muʔābale</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000490"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000492">tiḥki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000493"
+                     rend="withDash">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000495">hum</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a29"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T95"
+                  start="#T94">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000496"
+                     rend="withDash">kill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000498">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000499">ʕamlit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000500">šī</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000501"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000503">tiḥki</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000504"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000506">ʕarab</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000507"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000509">maslax</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a84"
+                  who="#AID"
+                  end="#T200"
+                  start="#T199">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000510">bass</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000511">hiyye</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000512">mn</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000513"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000515"
+                     join="right">ʕarab</w>
+                  <pc xml:id="xTok_000516">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a30"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T97"
+                  start="#T96">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000517">lāʔ</w>
+                  <pc xml:id="xTok_000518">!</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000519">hiyye</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000520">ʔarmaniyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a31"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T99"
+                  start="#T98">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000521">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000522"
+                     rend="withDash">xāṣṣ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000524">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000525">bass</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000526">ʔinsēne</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000527">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000528">titxayyali</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000529"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000531">tinšarab</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000532">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000533">mayy</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000534"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000536">ʕikra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a32"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T101"
+                  start="#T100">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000537">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000538">mara</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000539"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000541"
+                     rend="withDash">ḥibb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000543">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a33"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T103"
+                  start="#T102">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000544">ʔižit</w>
+                  <pc join="right" xml:id="xTok_000545">.</pc>
+                  <pc xml:id="xTok_000546">.</pc>
+                  <pc xml:id="xTok_000547">.</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000548"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000550"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000552">un</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000553">ʔana</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000554"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000556"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000558"
+                     join="right">kill</w>
+                  <pc xml:id="xTok_000559">.</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000560">ʔižu</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000561"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000563"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000565"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000566">,</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000567"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000569"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000571"
+                     join="right">un</w>
+                  <pc xml:id="xTok_000572">:</pc>
+                  <pc join="right" xml:id="xTok_000573">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000574">rūḥu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000575">sətfīdu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000576">min</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000577">kill</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000578"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000580"
+                     join="right">ʕālam</w>
+                  <pc xml:id="xTok_000581">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a34"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T105"
+                  start="#T104">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000582">ʔinta</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000583"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000585">taʕrif</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000586">hallaʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000587"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000589">waḍuʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a35"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T106"
+                  start="#T105">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000590">yaʕni</w>
+                  <pc xml:id="xTok_000591">,</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000592"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000594">ʔaḅaḍāy</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000595">illi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000596">mhaddi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000597"
+                     rend="withDash">ʔižrē</w>
+                  <pc join="right" xml:id="xTok_000599">_</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000600">́</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000601"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000603"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000605">bēt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a36"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T108"
+                  start="#T107">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000606">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000607">?</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000608">illi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000609">ʕam</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000610">yiʔdar</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000611">yižīb</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000612"
+                     rend="withDash">ʔakl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000614">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000615">w</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000616"
+                     rend="withDash">širb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000618">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a37"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T110"
+                  start="#T109">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000619"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000621"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000623"
+                     join="right">un</w>
+                  <pc xml:id="xTok_000624">:</pc>
+                  <pc join="right" xml:id="xTok_000625">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000626">rūḥu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000627">ʕmilu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000628">li</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000629"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000631">ku</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000632"
+                     rend="withDash">yē</w>
+                  <pc join="right" xml:id="xTok_000634">_</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000635">́</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000636">bass</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a38"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T112"
+                  start="#T111">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000637">ʔiza</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000638"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000640"
+                     join="right">ətrīdu</w>
+                  <pc xml:id="xTok_000641">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000642">ʔiza</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000643"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000645">ku</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000646">ḍamīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a39"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T114"
+                  start="#T113">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000647">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000648">hāy</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000649"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000651">maxlūʔa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a40"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T116"
+                  start="#T115">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000652">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000653">ʕamlit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000654">ġalaṭ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a41"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T118"
+                  start="#T117">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000655">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000656">ḥada</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000657">daʔʔ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000658"
+                     rend="withDash">bēb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000660">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000661">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000662">sakkar</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000663">bēb</w>
+                  <pc xml:id="xTok_000664">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a42"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T120"
+                  start="#T119">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000665">ʔawwal</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000666">m</w>
+                  <pc join="right" xml:id="xTok_000667">.</pc>
+                  <pc xml:id="xTok_000668">.</pc>
+                  <pc xml:id="xTok_000669">.</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000670">min</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000671">ʔarbaʕt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000672">iyyēm</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000673">ənzilit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000674"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000676"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000678">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a43"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T122"
+                  start="#T121">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000679">fī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000680">ʔibən</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000681">GA</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a44"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T124"
+                  start="#T123">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000682">šū</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000683"
+                     rend="withDash">ʔism</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000685"
+                     join="right">o</w>
+                  <pc xml:id="xTok_000686">?</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000687">A</w>
+                  <pc xml:id="xTok_000688">.</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000689">A</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000690">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000691"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000693">yintixib</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000694"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000696">haydi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000697"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000699">manṭʔa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a45"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T126"
+                  start="#T125">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000700"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000702">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000703">ši</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000704">miškli</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000705"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000707"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000709">ʔaləb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a46"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T127"
+                  start="#T126">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000710">w</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000711"
+                     rend="withDash">ʕamalīt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000713">o</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000714"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000716">ətkallif</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000717">ʔalf</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000718">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000719">šwayy</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000720">dolar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a47"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T129"
+                  start="#T128">
+                  <pc join="right" xml:id="xTok_000721">(</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000722">bid</w>
+                  <pc join="right" xml:id="xTok_000723">)</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000724"
+                     rend="withDash">d</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000726">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000727">yaʕmul</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000728">mīl</w>
+                  <pc xml:id="xTok_000729">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000730">w</w>
+                  <pc join="right" xml:id="xTok_000731">.</pc>
+                  <pc xml:id="xTok_000732">.</pc>
+                  <pc xml:id="xTok_000733">.</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000734">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000735"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000737">aʕrif</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000738">šū</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000739"
+                     rend="withDash">bidd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000741">o</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000742"
+                     rend="withDash">yaʕmil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000744"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000746">o</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000747"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000749">doktor</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a48"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T131"
+                  start="#T130">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000750">nzilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000751"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000753"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000755">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000756"
+                     rend="withDash">ʔilt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000758"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000760"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000761">:</pc>
+                  <pc join="right" xml:id="xTok_000762">"</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000763"
+                     rend="withDash">sitt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000765">na</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000766"
+                     rend="withDash">ʔuṣṣt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000768">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000769">hēk</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000770">hēk</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000771">hēk</w>
+                  <pc xml:id="xTok_000772">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a49"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T133"
+                  start="#T132">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000773">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000774">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000775">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000776"
+                     rend="withDash">limm</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000778"
+                     rend="withDash">ill</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000780">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000781">maṣāri</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000782"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000784"
+                     rend="withDash">ha</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000786">šābb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a50"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T135"
+                  start="#T134">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000787">šēlit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000788">xamsmīt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000789">dolar</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000790">w</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000791"
+                     rend="withDash">ʔālit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000793"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000795"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000796">:</pc>
+                  <pc join="right" xml:id="xTok_000797">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000798"
+                     join="right">xidi</w>
+                  <pc xml:id="xTok_000799">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a51"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T137"
+                  start="#T136">
+                  <pc join="right" xml:id="xTok_000800">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000801">rūḥu</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000802"
+                     rend="withDash">fawwtū</w>
+                  <pc join="right" xml:id="xTok_000804">_</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000805">́</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000806"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000808"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000810"
+                     join="right">mustašfa</w>
+                  <pc xml:id="xTok_000811">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a52"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T139"
+                  start="#T138">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000812">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000813">ʕimlit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000814">wasṭa</w>
+                  <pc xml:id="xTok_000815">,</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000816"
+                     rend="withDash">xaffaḍit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000818"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000820">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a53"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T141"
+                  start="#T140">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000821">min</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000822">mistašfa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000823">žʕitēwi</w>
+                  <pc xml:id="xTok_000824">,</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000825"
+                     rend="withDash">il</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000827">mablaġ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a54"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T142"
+                  start="#T141">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000828">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000829">hū</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000830">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000831"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000833"
+                     rend="withDash">yṣawwiṭ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000835"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000837"
+                     join="right">a</w>
+                  <pc xml:id="xTok_000838">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000839">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a55"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T144"
+                  start="#T143">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000840">miš</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000841">min</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000842"
+                     rend="withDash">dēyrit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000844">na</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a56"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T146"
+                  start="#T145">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000845">hiyye</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000846">ʔinsēniyye</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a57"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T147"
+                  start="#T146">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000847">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000848">illi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000849"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000851">o</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000852">ḍamīr</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000853"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000855"
+                     rend="withDash">yṣawwiṭ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000857"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000859">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a58"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T149"
+                  start="#T148">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000860">ma</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000861">titxayyal</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000862">ʔaddē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000863">ʔawiyye</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000864"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000866"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000868">ʔarəḍ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000869">bass</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a59"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T151"
+                  start="#T150">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000870">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000871">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000872"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000874">ištíġil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000875"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000877"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000879">makana</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a60"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T153"
+                  start="#T152">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000880"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000882">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000883"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000885">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000886">šaʕbiyye</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000887">kṯīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a61"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T155"
+                  start="#T154">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000888">ṭāyra</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a62"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T157"
+                  start="#T156">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000889">ṭabb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000890">šūf</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000891"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000893">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000894">barke</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000895"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000897">ətdabbir</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000898">ši</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000899">šaġle</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a103"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000900">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000901">kint</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000902"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000904">ištíġil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000905"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000907">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000908">ʔabəl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000909">kamēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a104"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000910">miš</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000911">šəġəl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000912">šəġəl</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000913">yaʕni</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000914">kint</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000915"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000917">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000918"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000920"
+                     join="right"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_000922">.</pc>
+                  <pc xml:id="xTok_000923">.</pc>
+                  <pc xml:id="xTok_000924">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a105"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000925"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000927"
+                     join="right"
+                     rend="withDash">l</w>
+                  <pc join="right" xml:id="xTok_000929">.</pc>
+                  <pc xml:id="xTok_000930">.</pc>
+                  <pc xml:id="xTok_000931">.</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000932">ē</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000933"
+                     rend="withDash">bi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000935">dafa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a106"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000936">baʕdēn</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000937"
+                     rend="withDash">ṣaḥḥ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000939"
+                     rend="withDash">all</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000941">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000942">šī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000943">ʔaḥsan</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000944"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000946"
+                     rend="withDash">šhēdt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000948"
+                     join="right">i</w>
+                  <pc xml:id="xTok_000949">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000950">ržiʕit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000951">waʔʔafət</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000952">riḥt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000953"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000955"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000957">šhēde</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000958"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000960"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000962">finance</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a63"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T159"
+                  start="#T158">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000963">ṭabb</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000964">w</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000965">ržēʕ</w>
+                  <pc xml:id="xTok_000966">!</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000967">ṭayyib</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000968">waḷḷa</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000969">ḥilu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000970">taḥət</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000971">kabbaru</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000972">w</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000973">ʕimlu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000974">šī</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000975">ḥilo</w>
+                  <pc xml:id="xTok_000976">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a107"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000977">ʔana</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000978"
+                     rend="withDash">bayt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000980">i</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000981"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000983"
+                     rend="withDash">n</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000985">niʕme</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a64"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T161"
+                  start="#T160">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000986">ʔinta</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000987"
+                     rend="withDash">bayt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000989">ak</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000990"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000992"
+                     rend="withDash">n</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000994"
+                     join="right">niʕme</w>
+                  <pc xml:id="xTok_000995">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a108"
+                  who="#LEB_KAR_2022_KZ_M.27_Speaker12"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000996">bʕīde</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000997"
+                     rend="withDash">ʕalē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_000999">yi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a65"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T163"
+                  start="#T162">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001000">ē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001001">ṭabʕan</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001002">bʕīde</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a66"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T165"
+                  start="#T164">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001003">ʔaddē</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001004"
+                     rend="withDash">bidd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001006">ak</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001007">tḥuṭṭ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001008">binzīn</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001009">ṣaḥḥ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a67"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T167"
+                  start="#T166">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001010">šufti</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001011">kīf</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001012">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001013"
+                     rend="withDash">niḥsib</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001015">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001016">ṣirna</w>
+                  <pc xml:id="xTok_001017">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a68"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T169"
+                  start="#T168">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001018">hēk</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001019">ṣirna</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001020">ʕam</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001021"
+                     rend="withDash">niḥsib</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001023"
+                     join="right">a</w>
+                  <pc xml:id="xTok_001024">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a69"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T171"
+                  start="#T170">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001025">ē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001026">ē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001027">kēnt</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001028"
+                     rend="withDash">ʔimm</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001030">i</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001031">tʔūl</w>
+                  <pc join="right" xml:id="xTok_001032">.</pc>
+                  <pc xml:id="xTok_001033">.</pc>
+                  <pc xml:id="xTok_001034">.</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001035"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001037">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a70"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T173"
+                  start="#T172">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001038">kēn</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001039"
+                     rend="withDash">yiʔil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001041"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001043">i</w>
+                  <pc join="right" xml:id="xTok_001044">.</pc>
+                  <pc xml:id="xTok_001045">.</pc>
+                  <pc xml:id="xTok_001046">.</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001047"
+                     rend="withDash">yiʔil</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001049"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001051">a</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001052"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001054">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a71"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T175"
+                  start="#T174">
+                  <pc join="right" xml:id="xTok_001055">"</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001056">lēki</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001057">yā</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001058"
+                     rend="withDash">bint</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001060"
+                     join="right">i</w>
+                  <pc xml:id="xTok_001061">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a72"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T177"
+                  start="#T176">
+                  <pc join="right" xml:id="xTok_001062">"</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001063"
+                     rend="withDash">fašxit</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001065">na</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001066"
+                     rend="withDash">ḥaʔʔ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001068">a</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001069">maṣāri</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001070"
+                     rend="withDash">bidd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001072">u</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001073">yiṣīr</w>
+                  <pc xml:id="xTok_001074">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001075">līrit</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001076">dahab</w>
+                  <pc xml:id="xTok_001077">"</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a73"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T179"
+                  start="#T178">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001078">yaʕni</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001079">ʕarifti</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001080">kīf</w>
+                  <pc xml:id="xTok_001081">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a74"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T181"
+                  start="#T180">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001082">ē</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001083"
+                     rend="withDash">wṣūlnā</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001085"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001087">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a75"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T183"
+                  start="#T182">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001088">ʔahla</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001089"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001091"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001093">ṣabāya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a85"
+                  who="#AID"
+                  end="#T202"
+                  start="#T201">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001094">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001095"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001097">na</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001098">nēxud</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001099">min</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001100"
+                     rend="withDash">waʔt</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001102">ik</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a76"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T185"
+                  start="#T184">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001103">ʔana</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001104">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001105"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001107">i</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001108">šī</w>
+                  <pc xml:id="xTok_001109">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001110">ʔēʕde</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a77"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T186"
+                  start="#T185">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001111">ʔintu</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001112">šū</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001113"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001115"
+                     join="right">ko</w>
+                  <pc xml:id="xTok_001116">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001117">ʔana</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001118"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001120">aʔmur</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a78"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T188"
+                  start="#T187">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001121"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001123">ik</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001124">tšūfi</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001125"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001127"
+                     join="right">bāba</w>
+                  <pc xml:id="xTok_001128">,</pc>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001129"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001131">ik</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001132">taʕmli</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001133">šī</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001134">baʕəd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001135">maʕ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001136">ḥada</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a79"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T190"
+                  start="#T189">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001137">šū</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001138"
+                     rend="withDash">badd</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001140"
+                     join="right">ik</w>
+                  <pc xml:id="xTok_001141">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a86"
+                  who="#AID"
+                  end="#T204"
+                  start="#T203">
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001142"
+                     rend="withDash">bayy</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001144">ik</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001145">hōn</w>
+                  <pc xml:id="xTok_001146">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a80"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T192"
+                  start="#T191">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001147">ē</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001148">fōʔ</w>
+                  <pc join="right" xml:id="xTok_001149">/</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001150"
+                     join="right">laughs</w>
+                  <pc xml:id="xTok_001151">/</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a87"
+                  who="#AID"
+                  end="#T206"
+                  start="#T205">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001152">bass</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001153">nēyim</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001154">ʔaw</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001155">šī</w>
+                  <pc xml:id="xTok_001156">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a81"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T194"
+                  start="#T193">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001157">ma</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001158"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001160"
+                     join="right">aʕrif</w>
+                  <pc xml:id="xTok_001161">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001162">ʔūmi</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001163">niṭlaʕ</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001164"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001166"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001168">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a82"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T196"
+                  start="#T195">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001169">niḥna</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001170"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001172">əndiʔʔ</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001173">w</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001174"
+                     rend="withDash">b</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001176">ənfūt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u1.5_KD_F.49_Karantina_ConvowithKZ.Elections_a83"
+                  who="#LEB_KAR_2022_KD_F.49_Speaker14"
+                  end="#T198"
+                  start="#T197">
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001177">hāy</w>
+                  <w join="right"
+                     xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001178"
+                     rend="withDash">l</w>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001180"
+                     join="right">ʕarab</w>
+                  <pc xml:id="xTok_001181">,</pc>
+                  <w xml:id="1.5_KD_F.49_Karantina_ConvowithKZ.Elections_xTok_001182">taʕ</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

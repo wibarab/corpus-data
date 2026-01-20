@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:59:09.671037Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T08_NZ_M.73_Karantina_hisFamily">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">08_NZ_M.73_Karantina_hisFamily</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">08_NZ_M.73_Karantina_hisFamily</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.16180555555555556" type="audio">
+                  <date when="2023-05-16"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 08_NZ_M.73_Karantina_hisFamily</head>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <idno>LEB_KAR_2023_NZ_M.73_Speaker1</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Family"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1803" since="#T0" xml:id="T1"/>
+         <when interval="6158" since="#T0" xml:id="T2"/>
+         <when interval="7692" since="#T0" xml:id="T3"/>
+         <when interval="17215" since="#T0" xml:id="T4"/>
+         <when interval="19132" since="#T0" xml:id="T5"/>
+         <when interval="21369" since="#T0" xml:id="T6"/>
+         <when interval="23480" since="#T0" xml:id="T7"/>
+         <when interval="24692" since="#T0" xml:id="T8"/>
+         <when interval="25969" since="#T0" xml:id="T9"/>
+         <when interval="30346" since="#T0" xml:id="T10"/>
+         <when interval="31730" since="#T0" xml:id="T11"/>
+         <when interval="34749" since="#T0" xml:id="T12"/>
+         <when interval="37344" since="#T0" xml:id="T13"/>
+         <when interval="40644" since="#T0" xml:id="T14"/>
+         <when interval="40860" since="#T0" xml:id="T15"/>
+         <when interval="45080" since="#T0" xml:id="T16"/>
+         <when interval="46043" since="#T0" xml:id="T17"/>
+         <when interval="51111" since="#T0" xml:id="T18"/>
+         <when interval="52446" since="#T0" xml:id="T19"/>
+         <when interval="55505" since="#T0" xml:id="T20"/>
+         <when interval="56245" since="#T0" xml:id="T21"/>
+         <when interval="58384" since="#T0" xml:id="T22"/>
+         <when interval="58877" since="#T0" xml:id="T23"/>
+         <when interval="62542" since="#T0" xml:id="T24"/>
+         <when interval="63516" since="#T0" xml:id="T25"/>
+         <when interval="66018" since="#T0" xml:id="T26"/>
+         <when interval="66080" since="#T0" xml:id="T27"/>
+         <when interval="72173" since="#T0" xml:id="T28"/>
+         <when interval="75047" since="#T0" xml:id="T29"/>
+         <when interval="75406" since="#T0" xml:id="T30"/>
+         <when interval="77555" since="#T0" xml:id="T31"/>
+         <when interval="81749" since="#T0" xml:id="T32"/>
+         <when interval="83461" since="#T0" xml:id="T33"/>
+         <when interval="85397" since="#T0" xml:id="T34"/>
+         <when interval="86427" since="#T0" xml:id="T35"/>
+         <when interval="88269" since="#T0" xml:id="T36"/>
+         <when interval="89328" since="#T0" xml:id="T37"/>
+         <when interval="90674" since="#T0" xml:id="T38"/>
+         <when interval="92946" since="#T0" xml:id="T39"/>
+         <when interval="98309" since="#T0" xml:id="T40"/>
+         <when interval="104180" since="#T0" xml:id="T41"/>
+         <when interval="111711" since="#T0" xml:id="T42"/>
+         <when interval="113139" since="#T0" xml:id="T43"/>
+         <when interval="115445" since="#T0" xml:id="T44"/>
+         <when interval="116119" since="#T0" xml:id="T45"/>
+         <when interval="121705" since="#T0" xml:id="T46"/>
+         <when interval="121979" since="#T0" xml:id="T47"/>
+         <when interval="134942" since="#T0" xml:id="T48"/>
+         <when interval="138868" since="#T0" xml:id="T49"/>
+         <when interval="147538" since="#T0" xml:id="T50"/>
+         <when interval="152576" since="#T0" xml:id="T51"/>
+         <when interval="152848" since="#T0" xml:id="T52"/>
+         <when interval="159741" since="#T0" xml:id="T53"/>
+         <when interval="160521" since="#T0" xml:id="T54"/>
+         <when interval="166846" since="#T0" xml:id="T55"/>
+         <when interval="174557" since="#T0" xml:id="T56"/>
+         <when interval="175355" since="#T0" xml:id="T57"/>
+         <when interval="176398" since="#T0" xml:id="T58"/>
+         <when interval="177644" since="#T0" xml:id="T59"/>
+         <when interval="185794" since="#T0" xml:id="T60"/>
+         <when interval="186508" since="#T0" xml:id="T61"/>
+         <when interval="188384" since="#T0" xml:id="T62"/>
+         <when interval="193442" since="#T0" xml:id="T63"/>
+         <when interval="197999" since="#T0" xml:id="T64"/>
+         <when interval="208576" since="#T0" xml:id="T65"/>
+         <when interval="208776" since="#T0" xml:id="T66"/>
+         <when interval="214646" since="#T0" xml:id="T67"/>
+         <when interval="215019" since="#T0" xml:id="T68"/>
+         <when interval="218326" since="#T0" xml:id="T69"/>
+         <when interval="220615" since="#T0" xml:id="T70"/>
+         <when interval="221846" since="#T0" xml:id="T71"/>
+         <when interval="223118" since="#T0" xml:id="T72"/>
+         <when interval="223841" since="#T0" xml:id="T73"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T73</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a1"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000001">ʔana</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000002">ʔibni</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000003"
+                     rend="withDash">ʕumr</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000005">o</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000006">xamsa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000007">w</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000008">tlǟtīn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000009">w</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000010"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000012">o</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000013">ma</w>
+                  <pc join="right" xml:id="xTok_000014">.</pc>
+                  <pc xml:id="xTok_000015">.</pc>
+                  <pc xml:id="xTok_000016">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a2"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000017">w</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000018"
+                     rend="withDash">bi</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000020">ma</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000021">ʔinno</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000022"
+                     rend="withDash">taqālīd</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000024">na</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000025">niḥnä</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000026">bass</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000027">yiṣīr</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000028"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000030">wāḥad</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000031">ʕišrīn</w>
+                  <pc xml:id="xTok_000032">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000033">tnēn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000034">w</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000035">ʕišrīn</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000036">sinä</w>
+                  <pc xml:id="xTok_000037">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000038"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000040"
+                     rend="withDash">yžawwzū</w>
+                  <pc join="right" xml:id="xTok_000042">_</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000043">́</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000044"
+                     rend="withDash">ʔahl</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000046">o</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000047">mišān</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000048">yšūfum</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000049">banāt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a3"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000050">ʔāx</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000051">ya</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000052"
+                     rend="withDash">bayy</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000054">i</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000055">ya</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000056">ḥabībi</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a4"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000057">ma</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000058"
+                     rend="withDash">bidd</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000060">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a5"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000061"
+                     rend="withDash">bi</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000063">ma</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000064">ʔinno</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000065">šǟri</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000066">šiʔʔa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000067"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000069"
+                     rend="withDash">s</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000071">saʕdiyyǟt</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a6"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000072">šiʔʔa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000073">ḥilwä</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000074">šǟri</w>
+                  <pc xml:id="xTok_000075">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000076">ši</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000077">miyyä</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000078">w</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000079">sabʕīn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000080">mitir</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a7"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000081"
+                     rend="withDash">ʔaxaḏ</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000083">a</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000084">miyyä</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000085">w</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000086">ʔarbʕīn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000087">ʔalf</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000088">dōlar</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000089">walla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a8"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000090">ʔabəl</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000091">ma</w>
+                  <pc join="right" xml:id="xTok_000092">.</pc>
+                  <pc xml:id="xTok_000093">.</pc>
+                  <pc xml:id="xTok_000094">.</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000095"
+                     rend="withDash">il</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000097">ʔazmit</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000098"
+                     rend="withDash">il</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000100">korōna</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000101">hōn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a9"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000102">ʔūli</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000103">lḥamdiḷḷā</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000104">hū</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000105"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000107">yíštiġil</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000108">prospektēr</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000109"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000111">širkit</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000112">ʔadwiyä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a10"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000113">xaməst</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000114">iyyǟm</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000115"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000117"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000119" join="right">ʔusbūʕ</w>
+                  <pc xml:id="xTok_000120">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000121">sabət</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000122">w</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000123">ʔaḥad</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000124">ma</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000125"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000127">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a11"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000128">ē</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000129">luk</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000130">ya</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000131"
+                     rend="withDash">bayy</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000133">i</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000134">ya</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000135"
+                     rend="withDash">ḥabīb</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000137">i</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a12"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000138">ʔana</w>
+                  <pc xml:id="xTok_000139">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000140">haydi</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000141"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000143">i</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000144">bəyūtiyyä</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a13"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000145">bəyūtiyyä</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000146">ktīr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a14"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000147">ma</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000148"
+                     rend="withDash">bə</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000150">trūḥ</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000151">masalan</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000152">tʕamil</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000153">ziyāra</w>
+                  <pc xml:id="xTok_000154">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000155">tʕamil</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000156">suḅḥiyya</w>
+                  <pc xml:id="xTok_000157">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000158">ē</w>
+                  <pc join="right" xml:id="xTok_000159">.</pc>
+                  <pc xml:id="xTok_000160">.</pc>
+                  <pc xml:id="xTok_000161">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a15"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T29"
+                  start="#T28">
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000162"
+                     rend="withDash">ən</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000164">nasāwīn</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000165">yirūḥan</w>
+                  <pc join="right" xml:id="xTok_000166">(</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000167" join="right">i</w>
+                  <pc xml:id="xTok_000168">)</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000169">sawa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000170"
+                     rend="withDash">is</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000172">suḅḥiyya</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a16"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000173">yiballšan</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000174">yisōlfan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a17"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000175">šū</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000176">ngūl</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000177">niḥna</w>
+                  <pc xml:id="xTok_000178">?</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000179">ʕa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000180">ylūṣən</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000181">ʕa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000182">ylūṣən</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a18"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T34"
+                  start="#T33">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000183">ē</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000184">ē</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000185">ʕam</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000186">yilatiltu</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a19"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000187">hāya</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000188"
+                     rend="withDash">nʕaṭī</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000190">ki</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000191">hiyyä</w>
+                  <pc xml:id="xTok_000192">#</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a20"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000193">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000194"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000196">ylūṣu</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000197">ē</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a21"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000198">yaʕni</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000199"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000201">yiḥku</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000202"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000204"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000206">ʕālam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000207"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000209">yḥiḅḅu</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000210">namīmä</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000211">hēke</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a22"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000212">ma</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000213">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000214"
+                     rend="withDash">gūl</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000216"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000218">ik</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000219">ysōlfan</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000220">flāna</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000221">w</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000222">flān</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000223">w</w>
+                  <pc join="right" xml:id="xTok_000224">.</pc>
+                  <pc xml:id="xTok_000225">.</pc>
+                  <pc xml:id="xTok_000226">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a23"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000227">yrakkban</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000228">muwal</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000229"
+                     rend="withDash">il</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000231">ʕālam</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000232">yaʕni</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a24"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000233">ʔana</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000234">li</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000235"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000237">i</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000238">ʔana</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000239">ma</w>
+                  <pc join="right" xml:id="xTok_000240">.</pc>
+                  <pc xml:id="xTok_000241">.</pc>
+                  <pc xml:id="xTok_000242">.</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000243">ma</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000244"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000246">tiṭlaʕ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a25"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000247">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000248"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000250"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000252"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000254">a</w>
+                  <pc join="right" xml:id="xTok_000255">"</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000256">lək</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000257">ya</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000258">maxlūʔa</w>
+                  <pc xml:id="xTok_000259">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000260">ktīr</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000261">əktīr</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000262">min</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000263"
+                     rend="withDash">žamiʕit</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000265">na</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000266">sāfaru</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000267"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000269"
+                     rend="withDash">s</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000271" join="right">swēd</w>
+                  <pc xml:id="xTok_000272">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000273"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000275"
+                     rend="withDash">n</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000277">narūž</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000278"
+                     rend="withDash">ʕa</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000280">ilṃānya</w>
+                  <pc join="right" xml:id="xTok_000281">.</pc>
+                  <pc xml:id="xTok_000282">.</pc>
+                  <pc xml:id="xTok_000283">.</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000284"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000286"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000288">feysbūk</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000289"
+                     rend="withDash">il</w>
+                  <pc join="right" xml:id="xTok_000291">.</pc>
+                  <pc xml:id="xTok_000292">.</pc>
+                  <pc xml:id="xTok_000293">.</pc>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000294">ya</w>
+                  <pc join="right" xml:id="xTok_000295">.</pc>
+                  <pc xml:id="xTok_000296">.</pc>
+                  <pc xml:id="xTok_000297">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a26"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T50"
+                  start="#T49">
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000298">lā</w>
+                  <pc xml:id="xTok_000299">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000300">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000301"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000303"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000305">ik</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000306"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000308"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000310">feysbūk</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000311">šabb</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000312">ʕam</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000313">yitʕarraf</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000314">ʕala</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000315">ṣabīyyä</w>
+                  <pc xml:id="xTok_000316">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000317"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000319">yiḥku</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000320">maʕ</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000321">baʕaḍ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a27"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T51"
+                  start="#T50">
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000322"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000324">yinzil</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000325">min</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000326"
+                     rend="withDash">in</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000328" join="right">narūž</w>
+                  <pc xml:id="xTok_000329">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000330"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000332">yiži</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000333"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000335" join="right">libnǟn</w>
+                  <pc xml:id="xTok_000336">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000337"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000339">yiži</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000340"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000342"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000344" join="right">mislax</w>
+                  <pc xml:id="xTok_000345">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000346"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000348">yixṭuḅ</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a28"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000349">baʕad</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000350">šahrēn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000351">tlǟtä</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000352"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000354">ykūn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000355">ʕāmil</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000356"
+                     rend="withDash">muʕāmalǟt</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000358" join="right">o</w>
+                  <pc xml:id="xTok_000359">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000360"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000362">yitžawwaz</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000363">w</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000364"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000366"
+                     rend="withDash">yēxəd</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000368">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a29"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000369">ya</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000370">maxlūʔa</w>
+                  <pc xml:id="xTok_000371">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000372">alli</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000373">ʕam</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000374">yiǧu</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000375">min</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000376">barra</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000377">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000378"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000380" join="right">ydabbru</w>
+                  <pc xml:id="xTok_000381">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000382">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000383"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000385">ydabbru</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000386">ʕarāyis</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a30"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000387">dabbri</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000388"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000390"
+                     rend="withDash">ʔibn</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000392" join="right">ik</w>
+                  <pc xml:id="xTok_000393">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000394">rūḥi</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000395">ʕind</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000396"
+                     rend="withDash">it</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000398">tǟni</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000399">šūfi</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000400">ʔiza</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000401"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000403">ha</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000404">ši</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000405">ʕaǧǧiya</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000406">ḥilwa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a31"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T58"
+                  start="#T57">
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000407">mniyya</w>
+                  <pc xml:id="xTok_000408">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a32"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T60"
+                  start="#T59">
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000409">lāʔ</w>
+                  <pc xml:id="xTok_000410">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000411">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000412"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000414"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000416">ik</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000417"
+                     rend="withDash">mart</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000419" join="right">i</w>
+                  <pc xml:id="xTok_000420">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000421">ʕam</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000422"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000424"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000426"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000428">a</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000429">ʔinno</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000430">rūḥi</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000431"
+                     rend="withDash">dabbrī</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000433"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000435">o</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000436">ʕarūs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a33"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000437">hayde</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000438">šaġlit</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000439">niswǟn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a34"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000440">ʔana</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000441">ma</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000442"
+                     rend="withDash">b</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000444">yiṭlaʕ</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000445"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000447"
+                     rend="withDash">ʔīd</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000449">i</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000450">ʔinno</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000451">ʔana</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000452">rūʕ</w>
+                  <pc join="right" xml:id="xTok_000453">(</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000454" join="right">rūḥ</w>
+                  <pc xml:id="xTok_000455">)</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000456"
+                     rend="withDash">fattiš</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000458"
+                     rend="withDash">l</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000460">o</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000461"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000463">ʕarūs</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a35"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000464">miš</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000465">hēk</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000466">yaʕni</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000467"
+                     rend="withDash">mann</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000469">a</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000470">maʔlūfa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000471">ʔinno</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000472">ʔani</w>
+                  <pc join="right" xml:id="xTok_000473">.</pc>
+                  <pc xml:id="xTok_000474">.</pc>
+                  <pc xml:id="xTok_000475">.</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000476">ʔaǧi</w>
+                  <pc join="right" xml:id="xTok_000477">.</pc>
+                  <pc xml:id="xTok_000478">.</pc>
+                  <pc xml:id="xTok_000479">.</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000480"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000482" join="right">flān</w>
+                  <pc xml:id="xTok_000483">.</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000484">yimkin</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000485"
+                     rend="withDash">ʔaxlaʔ</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000487">a</w>
+                  <pc join="right" xml:id="xTok_000488">.</pc>
+                  <pc xml:id="xTok_000489">.</pc>
+                  <pc xml:id="xTok_000490">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a36"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000491">bass</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000492">hiyya</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000493">trūḥ</w>
+                  <w join="right" xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000494">masalan</w>
+                  <pc xml:id="xTok_000495">,</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000496">tʕamul</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000497">soḅḥiyya</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000498">tišrab</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000499">ʔah</w>
+                  <pc join="right" xml:id="xTok_000500">(</pc>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000501" join="right">ʔahwä</w>
+                  <pc xml:id="xTok_000502">)</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000503"
+                     rend="withDash">bə</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000505"
+                     rend="withDash">tšūf</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000507">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a37"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T69"
+                  start="#T68">
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000508"
+                     rend="withDash">bə</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000510">tšūf</w>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000511"
+                     rend="withDash">ʔaxlāʔ</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000513" join="right">a</w>
+                  <pc xml:id="xTok_000514">,</pc>
+                  <w join="right"
+                     xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000515"
+                     rend="withDash">bə</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000517">tšūf</w>
+                  <pc join="right" xml:id="xTok_000518">.</pc>
+                  <pc xml:id="xTok_000519">.</pc>
+                  <pc xml:id="xTok_000520">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a38"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000521">ma</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000522">bī</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u08_NZ_M.73_Karantina_hisFamily_a39"
+                  who="#LEB_KAR_2023_NZ_M.73_Speaker1"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000523">ma</w>
+                  <w xml:id="08_NZ_M.73_Karantina_hisFamily_xTok_000524">bī</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

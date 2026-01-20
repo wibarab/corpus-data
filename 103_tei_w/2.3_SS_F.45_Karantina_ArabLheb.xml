@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:59:00.900244Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T2.3_SS_F.45_Karantina_ArabLheb">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">2.3_SS_F.45_Karantina_ArabLheb</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">2.3_SS_F.45_Karantina_ArabLheb</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="8.0555555555555561E-2" type="audio">
+                  <date when="2023-05-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 2.3_SS_F.45_Karantina_ArabLheb</head>
+               <person sameAs="corpus:LEB_KAR_2023_AS_F.56_Speaker8">
+                  <idno>LEB_KAR_2023_AS_F.56_Speaker8</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_IS_F.55_Speaker9">
+                  <idno>LEB_KAR_2023_IS_F.55_Speaker9</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_SS_F.45_Speaker10">
+                  <idno>LEB_KAR_2023_SS_F.45_Speaker10</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Communityidentity"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="10570" since="#T0" xml:id="T1"/>
+         <when interval="12404" since="#T0" xml:id="T2"/>
+         <when interval="12511" since="#T0" xml:id="T3"/>
+         <when interval="12778" since="#T0" xml:id="T21"/>
+         <when interval="14675" since="#T0" xml:id="T22"/>
+         <when interval="16389" since="#T0" xml:id="T4"/>
+         <when interval="16534" since="#T0" xml:id="T5"/>
+         <when interval="17443" since="#T0" xml:id="T23"/>
+         <when interval="18577" since="#T0" xml:id="T6"/>
+         <when interval="18654" since="#T0" xml:id="T7"/>
+         <when interval="20012" since="#T0" xml:id="T24"/>
+         <when interval="20023" since="#T0" xml:id="T25"/>
+         <when interval="20535" since="#T0" xml:id="T8"/>
+         <when interval="26222" since="#T0" xml:id="T9"/>
+         <when interval="26511" since="#T0" xml:id="T26"/>
+         <when interval="28178" since="#T0" xml:id="T27"/>
+         <when interval="29274" since="#T0" xml:id="T10"/>
+         <when interval="30642" since="#T0" xml:id="T28"/>
+         <when interval="37120" since="#T0" xml:id="T29"/>
+         <when interval="43059" since="#T0" xml:id="T56"/>
+         <when interval="43325" since="#T0" xml:id="T30"/>
+         <when interval="45352" since="#T0" xml:id="T31"/>
+         <when interval="46440" since="#T0" xml:id="T19"/>
+         <when interval="47107" since="#T0" xml:id="T57"/>
+         <when interval="48890" since="#T0" xml:id="T32"/>
+         <when interval="49148" since="#T0" xml:id="T20"/>
+         <when interval="50269" since="#T0" xml:id="T11"/>
+         <when interval="51050" since="#T0" xml:id="T33"/>
+         <when interval="51952" since="#T0" xml:id="T34"/>
+         <when interval="52481" since="#T0" xml:id="T12"/>
+         <when interval="52609" since="#T0" xml:id="T13"/>
+         <when interval="54059" since="#T0" xml:id="T58"/>
+         <when interval="54459" since="#T0" xml:id="T35"/>
+         <when interval="56857" since="#T0" xml:id="T14"/>
+         <when interval="57328" since="#T0" xml:id="T59"/>
+         <when interval="63071" since="#T0" xml:id="T60"/>
+         <when interval="65464" since="#T0" xml:id="T36"/>
+         <when interval="67511" since="#T0" xml:id="T61"/>
+         <when interval="67967" since="#T0" xml:id="T37"/>
+         <when interval="72682" since="#T0" xml:id="T38"/>
+         <when interval="73353" since="#T0" xml:id="T62"/>
+         <when interval="75769" since="#T0" xml:id="T39"/>
+         <when interval="79083" since="#T0" xml:id="T40"/>
+         <when interval="80096" since="#T0" xml:id="T63"/>
+         <when interval="80392" since="#T0" xml:id="T41"/>
+         <when interval="80706" since="#T0" xml:id="T64"/>
+         <when interval="82392" since="#T0" xml:id="T42"/>
+         <when interval="85285" since="#T0" xml:id="T43"/>
+         <when interval="85392" since="#T0" xml:id="T44"/>
+         <when interval="85607" since="#T0" xml:id="T65"/>
+         <when interval="88419" since="#T0" xml:id="T45"/>
+         <when interval="91250" since="#T0" xml:id="T66"/>
+         <when interval="91467" since="#T0" xml:id="T67"/>
+         <when interval="95300" since="#T0" xml:id="T46"/>
+         <when interval="96410" since="#T0" xml:id="T15"/>
+         <when interval="96508" since="#T0" xml:id="T47"/>
+         <when interval="96826" since="#T0" xml:id="T68"/>
+         <when interval="98650" since="#T0" xml:id="T69"/>
+         <when interval="99217" since="#T0" xml:id="T16"/>
+         <when interval="100641" since="#T0" xml:id="T17"/>
+         <when interval="101367" since="#T0" xml:id="T70"/>
+         <when interval="102444" since="#T0" xml:id="T18"/>
+         <when interval="102467" since="#T0" xml:id="T71"/>
+         <when interval="102490" since="#T0" xml:id="T48"/>
+         <when interval="103988" since="#T0" xml:id="T72"/>
+         <when interval="109319" since="#T0" xml:id="T49"/>
+         <when interval="109756" since="#T0" xml:id="T50"/>
+         <when interval="111616" since="#T0" xml:id="T51"/>
+         <when interval="112293" since="#T0" xml:id="T52"/>
+         <when interval="113865" since="#T0" xml:id="T53"/>
+         <when interval="114060" since="#T0" xml:id="T54"/>
+         <when interval="116622" since="#T0" xml:id="T55"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T55</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a1"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000001">ʕarab</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000002">lhēb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a2"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000003">bass</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000004">kinna</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000005"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000007">ṣayda</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000008">kān</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000009">fī</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000010"
+                     rend="withDash">ḥadd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000012">na</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000013">ʕarab</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000014">lhēb</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a5"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000015">ʕarab</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000016">lhēb</w>
+                  <pc join="right" xml:id="xTok_000017">.</pc>
+                  <pc xml:id="xTok_000018">.</pc>
+                  <pc xml:id="xTok_000019">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a3"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000020">hiyyi</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000021">yaʕni</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000022"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000024">tilʕab</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000025"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000027">un</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a6"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000028">yaʕni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000029">kān</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000030"
+                     rend="withDash">rifʔāt</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000032">i</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000033">hēk</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a4"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000034">wlī</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000035">ya</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000036">fāṭmä</w>
+                  <pc xml:id="xTok_000037">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000038">šīli</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000039"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000041" join="right">manāʔīš</w>
+                  <pc xml:id="xTok_000042">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a8"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000043">masalan</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000044">ʕam</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000045">nilʕab</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000046"
+                     rend="withDash">maʕ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000048">un</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000049">w</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000050">hēk</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000051">w</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000052">ʔiǧit</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000053"
+                     rend="withDash">ʔuxt</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000055">a</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000056">w</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000057">hēk</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000058">ma</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000059"
+                     rend="withDash">bidd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000061">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000062"
+                     rend="withDash">yā</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000064">ni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000065">ʔintibih</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000066">ʔimma</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000067">šī</w>
+                  <pc xml:id="xTok_000068">,</pc>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000069"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000071">tiḥki</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000072"
+                     rend="withDash">š</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000074">šīt</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000075"
+                     rend="withDash">tʔəl</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000077"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000079">a</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000080">snād</w>
+                  <pc xml:id="xTok_000081">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a7"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000082">hiyya</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000083"
+                     rend="withDash">bidd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000085">a</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000086">ʕarab</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000087"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000089">maslax</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000090">ma</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000091"
+                     rend="withDash">bidd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000093">a</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000094">ʕarab</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000095">lhēb</w>
+                  <pc xml:id="xTok_000096">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a9"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000097">ma</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000098">ʕam</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000099"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000101"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000103"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000105">ik</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000106">fī</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000107">kalimǟt</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000108">ʔinno</w>
+                  <pc join="right" xml:id="xTok_000109">.</pc>
+                  <pc xml:id="xTok_000110">.</pc>
+                  <pc xml:id="xTok_000111">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a11"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000112">niḥna</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000113">lā</w>
+                  <pc join="right" xml:id="xTok_000114">.</pc>
+                  <pc xml:id="xTok_000115">.</pc>
+                  <pc xml:id="xTok_000116">.</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000117">niḥna</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000118"
+                     rend="withDash">m</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000120">ənʔūl</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000121">ḥatta</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000122">law</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000123">kinna</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000124">niḥki</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000125"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000127">lahǧe</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000128"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000130" join="right">ʕarab</w>
+                  <pc xml:id="xTok_000131">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000132">ʔarḳa</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000133"
+                     rend="withDash">minn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000135">un</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a10"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000136">ma</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000137">tuliʕ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000138">ʔarḳa</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000139">šī</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000140">ʕarab</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000141"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000143" join="right">maslax</w>
+                  <pc xml:id="xTok_000144">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a13"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000145">niḥna</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000146">ʔarḳa</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000147"
+                     rend="withDash">minn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000149" join="right">un</w>
+                  <pc xml:id="xTok_000150">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a12"
+                  who="#AID"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000151">lē</w>
+                  <pc xml:id="xTok_000152">?</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000153">ġēr</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000154">hunīk</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000155"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000157">ḥayēt</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000158">masalan</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000159">ʕarab</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000160"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000162" join="right">hēb</w>
+                  <pc xml:id="xTok_000163">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a26"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000164">ē</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000165">masalan</w>
+                  <pc xml:id="xTok_000166">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000167">kīf</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000168">ē</w>
+                  <pc join="right" xml:id="xTok_000169">.</pc>
+                  <pc xml:id="xTok_000170">.</pc>
+                  <pc xml:id="xTok_000171">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a14"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000172">ʕarab</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000173"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000175">hēb</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000176">ġanēya</w>
+                  <pc xml:id="xTok_000177">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a27"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000178">ġanēya</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000179">w</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000180">ṣāru</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000181"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000183" join="right">ʔiḷṃānya</w>
+                  <pc xml:id="xTok_000184">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a15"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000185">ʔaġniya</w>
+                  <pc xml:id="xTok_000186">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a16"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000187">layku</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000188">ʕāyšīn</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000189"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000191" join="right">baʕabda</w>
+                  <pc xml:id="xTok_000192">!</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000193">kamān</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000194"
+                     rend="withDash">kill</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000196">u</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000197">baʕabda</w>
+                  <pc xml:id="xTok_000198">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000199">baʕabda</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000200">yaʕni</w>
+                  <pc join="right" xml:id="xTok_000201">.</pc>
+                  <pc xml:id="xTok_000202">.</pc>
+                  <pc xml:id="xTok_000203">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a17"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000204">niḥna</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000205"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000207">karantīna</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000208"
+                     rend="withDash">bint</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000210">i</w>
+                  <pc join="right" xml:id="xTok_000211">.</pc>
+                  <pc xml:id="xTok_000212">.</pc>
+                  <pc xml:id="xTok_000213">.</pc>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000214"
+                     rend="withDash">kaʔann</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000216">ik</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000217">ḍayʕa</w>
+                  <pc xml:id="xTok_000218">,</pc>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000219"
+                     rend="withDash">kaʔann</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000221">o</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000222">ši</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000223">minzu</w>
+                  <pc xml:id="xTok_000224">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a18"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000225">hinni</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000226"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000228">baʕabda</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000229">šī</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000230"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000232"
+                     rend="withDash">š</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000234">šēriʕ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000235">w</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000236"
+                     rend="withDash">šəft</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000238"
+                     rend="withDash">ill</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000240">ik</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000241"
+                     rend="withDash">byūt</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000243">un</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000244">ḥilwīn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000245">w</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000246">hēk</w>
+                  <pc xml:id="xTok_000247">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a28"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T37"
+                  start="#T36">
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000248"
+                     rend="withDash">byūt</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000250">un</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000251">ḥilwä</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000252">ē</w>
+                  <pc xml:id="xTok_000253">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a19"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000254">baʕdēn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000255">yaʕni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000256">mʕāšrīn</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000257"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000259">diyanāt</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000260"
+                     rend="withDash">it</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000262">tēnye</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000263"
+                     rend="withDash">kill</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000265">a</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000266">w</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000267"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000269">yzūru</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000270">baʕḍ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000271">w</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000272"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000274">yġannu</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000275"
+                     rend="withDash">la</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000277">baʕḍ</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000278">w</w>
+                  <pc join="right" xml:id="xTok_000279">.</pc>
+                  <pc xml:id="xTok_000280">.</pc>
+                  <pc xml:id="xTok_000281">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a29"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000282">yaʕni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000283">masalan</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000284">lēki</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a20"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T63"
+                  start="#T62">
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000285"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000287" join="right">a</w>
+                  <pc xml:id="xTok_000288">,</pc>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000289"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000291">u</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000292"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000294">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000295"
+                     rend="withDash">id</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000297">dabke</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000298"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000300"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000302" join="right">ʔaʕrās</w>
+                  <pc xml:id="xTok_000303">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000304">w</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000305"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000307">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000308"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000310">ʕarəs</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000311"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000313">yinmǟdd</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000314"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000316">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000317"
+                     rend="withDash">id</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000319">daḅāyiḥ</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000320"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000322" join="right">un</w>
+                  <pc xml:id="xTok_000323">,</pc>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000324">niḥna</w>
+                  <pc join="right" xml:id="xTok_000325">.</pc>
+                  <pc xml:id="xTok_000326">.</pc>
+                  <pc xml:id="xTok_000327">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a30"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000328">lēki</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000329">masalan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a21"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T65"
+                  start="#T64">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000330">ē</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000331">niḥna</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000332">ma</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000333"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000335">na</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000336"
+                     rend="withDash">yā</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000338">hun</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000339">hōn</w>
+                  <pc xml:id="xTok_000340">.</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000341">niḥna</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000342">laʔ</w>
+                  <pc xml:id="xTok_000343">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000344">ṣār</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000345"
+                     rend="withDash">ʕin</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000347">na</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000348">šū</w>
+                  <pc xml:id="xTok_000349">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a31"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000350">ē</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000351">lēki</w>
+                  <pc xml:id="xTok_000352">,</pc>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000353"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000355"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000357"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000359">ik</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000360">šū</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000361">ʕam</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000362">yiḥku</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000363">hinni</w>
+                  <pc xml:id="xTok_000364">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a32"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T45"
+                  start="#T44">
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000365"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000367">yiḥku</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000368">masīḥi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000369"
+                     rend="withDash">ʕa</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000371" join="right">mkassar</w>
+                  <pc xml:id="xTok_000372">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a22"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000373">ʔiza</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000374"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000376">taʕmli</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000377"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000379"
+                     rend="withDash">s</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000381">sahra</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000382">masalan</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000383">taḥət</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000384">dabke</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000385"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000387" join="right">yōm</w>
+                  <pc xml:id="xTok_000388">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000389">tǟni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000390">yōm</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000391"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000393"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000395" join="right">ṣāla</w>
+                  <pc xml:id="xTok_000396">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a23"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T68"
+                  start="#T67">
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000397"
+                     rend="withDash">b</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000399">ətrūḥi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000400"
+                     rend="withDash">ʕa</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000402"
+                     rend="withDash">ṣ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000404" join="right">ṣāla</w>
+                  <pc xml:id="xTok_000405">.</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000406">hinni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000407">ma</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000408"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000410">un</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000411">ṣāla</w>
+                  <pc join="right" xml:id="xTok_000412">.</pc>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000413"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000415">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000416"
+                     rend="withDash">il</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000418">ʕarəs</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000419">w</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000420"
+                     rend="withDash">is</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000422" join="right">sahra</w>
+                  <pc xml:id="xTok_000423">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a33"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T47"
+                  start="#T46">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000424">ʔimān</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000425"
+                     rend="withDash">maṭraḥ</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000427" join="right">ku</w>
+                  <pc xml:id="xTok_000428">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a34"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000429">ʔimān</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000430">ṣāru</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000431">ʔaġniyāʔ</w>
+                  <pc xml:id="xTok_000432">!</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000433">kīf</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000434">ma</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000435"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000437" join="right">un</w>
+                  <pc xml:id="xTok_000438">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a24"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T70"
+                  start="#T69">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000439">ma</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000440">smaʕt</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000441">bī</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000442">nās</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000443">hēk</w>
+                  <pc xml:id="xTok_000444">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000445">ʕam</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000446"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000448"
+                     rend="withDash">l</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000450" join="right">ik</w>
+                  <pc xml:id="xTok_000451">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a35"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T18"
+                  start="#T17">
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000452">lā</w>
+                  <pc xml:id="xTok_000453">,</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000454">ʔaġna</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000455"
+                     rend="withDash">minn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000457" join="right">ik</w>
+                  <pc xml:id="xTok_000458">!</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a25"
+                  who="#LEB_KAR_2023_IS_F.55_Speaker9"
+                  end="#T72"
+                  start="#T71">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000459">lamma</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000460">kinna</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000461"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000463"
+                     rend="withDash">n</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000465" join="right">niʕme</w>
+                  <pc xml:id="xTok_000466">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a36"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000467">ṣāru</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000468">ʔaġna</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000469">min</w>
+                  <pc join="right" xml:id="xTok_000470">.</pc>
+                  <pc xml:id="xTok_000471">.</pc>
+                  <pc xml:id="xTok_000472">.</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000473">ṣāru</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000474">ktīr</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000475">ġanǟya</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000476">w</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000477">ʕammaru</w>
+                  <pc join="right" xml:id="xTok_000478">.</pc>
+                  <pc xml:id="xTok_000479">.</pc>
+                  <pc xml:id="xTok_000480">.</pc>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000481">štaru</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000482"
+                     rend="withDash">bi</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000484"
+                     rend="withDash">r</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000486">rmayle</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000487">ʔabəl</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000488">ṣayda</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000489"
+                     rend="withDash">kill</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000491">a</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000492"
+                     rend="withDash">la</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000494"
+                     rend="withDash">ʔil</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000496">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000497"
+                     rend="withDash">mʕammrīn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000499" join="right">u</w>
+                  <pc xml:id="xTok_000500">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a37"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000501">ē</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000502">bass</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000503"
+                     rend="withDash">baʕd</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000505">un</w>
+                  <w join="right"
+                     xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000506"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000508" join="right">ʔiḷṃānya</w>
+                  <pc xml:id="xTok_000509">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a38"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000510">ṣāru</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000511">ġanǟya</w>
+                  <pc xml:id="xTok_000512">.</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.3_SS_F.45_Karantina_ArabLheb_a39"
+                  who="#LEB_KAR_2023_AS_F.56_Speaker8"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000513">yaʕni</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000514">mištarīn</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000515">w</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000516">ṭṭawwaru</w>
+                  <w xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000517">w</w>
+                  <w join="right" xml:id="2.3_SS_F.45_Karantina_ArabLheb_xTok_000518">hēk</w>
+                  <pc xml:id="xTok_000519">.</pc>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>

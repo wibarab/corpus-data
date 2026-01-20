@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-01-20T14:59:00.536898Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T2.12_SS_F.45_Karantina_Exfiancee">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">2.12_SS_F.45_Karantina_Exfiancee</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date when="????-??-??">TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">2.12_SS_F.45_Karantina_Exfiancee</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="2.5694444444444443E-2" type="audio">
+                  <date when="2023-05-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 2.12_SS_F.45_Karantina_Exfiancee</head>
+               <person sameAs="corpus:LEB_KAR_2023_SS_F.45_Speaker10">
+                  <idno>LEB_KAR_2023_SS_F.45_Speaker10</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:">
+            <setting>
+               <placeName sameAs="geo:">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef target="corpus:Storiesjokesandtales"/>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="855" since="#T0" xml:id="T1"/>
+         <when interval="4646" since="#T0" xml:id="T2"/>
+         <when interval="5528" since="#T0" xml:id="T3"/>
+         <when interval="11162" since="#T0" xml:id="T4"/>
+         <when interval="12185" since="#T0" xml:id="T5"/>
+         <when interval="12412" since="#T0" xml:id="T22"/>
+         <when interval="13917" since="#T0" xml:id="T6"/>
+         <when interval="14123" since="#T0" xml:id="T7"/>
+         <when interval="14329" since="#T0" xml:id="T23"/>
+         <when interval="14938" since="#T0" xml:id="T8"/>
+         <when interval="15369" since="#T0" xml:id="T24"/>
+         <when interval="16175" since="#T0" xml:id="T9"/>
+         <when interval="16664" since="#T0" xml:id="T25"/>
+         <when interval="17051" since="#T0" xml:id="T10"/>
+         <when interval="17763" since="#T0" xml:id="T26"/>
+         <when interval="18351" since="#T0" xml:id="T11"/>
+         <when interval="19197" since="#T0" xml:id="T12"/>
+         <when interval="19422" since="#T0" xml:id="T13"/>
+         <when interval="22319" since="#T0" xml:id="T14"/>
+         <when interval="22744" since="#T0" xml:id="T27"/>
+         <when interval="26947" since="#T0" xml:id="T15"/>
+         <when interval="28392" since="#T0" xml:id="T28"/>
+         <when interval="28885" since="#T0" xml:id="T16"/>
+         <when interval="30101" since="#T0" xml:id="T29"/>
+         <when interval="30266" since="#T0" xml:id="T17"/>
+         <when interval="30358" since="#T0" xml:id="T18"/>
+         <when interval="32671" since="#T0" xml:id="T19"/>
+         <when interval="33378" since="#T0" xml:id="T20"/>
+         <when interval="33882" since="#T0" xml:id="T30"/>
+         <when interval="34297" since="#T0" xml:id="T21"/>
+         <when interval="36270" since="#T0" xml:id="T31"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T31</note>
+            </head>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a1"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000001"
+                     rend="withDash">faržī</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000003">ha</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000004"
+                     rend="withDash">xaṭīb</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000006">a</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000007">ḥilo</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000008"
+                     rend="withDash">b</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000010" join="right">ʔafrīʔya</w>
+                  <pc xml:id="xTok_000011">,</pc>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000012">w</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000013">min</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000014"
+                     rend="withDash">əl</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000016">ʕarab</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000017">kamēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a2"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000018">ē</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000019"
+                     rend="withDash">bi</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000021">ʔafrīʔya</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000022"
+                     rend="withDash">ʕind</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000024">o</w>
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000025">šērke</w>
+                  <pc xml:id="xTok_000026">,</pc>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000027">šērket</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000028">mitil</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000029">pōr</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a3"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000030">tirkit</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a13"
+                  who="#LEB_KAR_2023_CB_F.18_Speaker11"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000031">tarakət</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000032">ʔabəl</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000033"
+                     rend="withDash">ʕars</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000035">i</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000036"
+                     rend="withDash">b</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000038">šahar</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a4"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000039">habla</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a14"
+                  who="#LEB_KAR_2023_CB_F.18_Speaker11"
+                  end="#T9"
+                  start="#T24">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000040">lē</w>
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000041">habla</w>
+                  <pc xml:id="xTok_000042">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a5"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000043"
+                     rend="withDash">habəlt</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000045">ēn</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a15"
+                  who="#LEB_KAR_2023_CB_F.18_Speaker11"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000046">ma</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000047"
+                     rend="withDash">bidd</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000049">i</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000050"
+                     rend="withDash">yē</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000052">h</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a6"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000053">ē</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000054">waḷḷa</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a7"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000055">ma</w>
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000056">habla</w>
+                  <pc xml:id="xTok_000057">?</pc>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000058">šūfi</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000059">šū</w>
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000060">ḥilo</w>
+                  <pc xml:id="xTok_000061">.</pc>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000062">ʔana</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000063"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000065"
+                     rend="withDash">ḥibb</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000067">o</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000068"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000070"
+                     rend="withDash">yuʔrab</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000072">ni</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000073">liʔan</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a16"
+                  who="#LEB_KAR_2023_CB_F.18_Speaker11"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000074"
+                     rend="withDash">leyk</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000076">u</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000077">lē</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000078"
+                     rend="withDash">bə</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000080"
+                     rend="withDash">tḥibb</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000082" join="right">o</w>
+                  <pc xml:id="xTok_000083">?</pc>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000084">liʔan</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000085">ma</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000086">kēnit</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000087"
+                     rend="withDash">ʔəl</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000089"
+                     rend="withDash">l</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000091">a</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000092">ʕa</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000093">šū</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000094">kinna</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000095">nitxānaʔ</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000096">w</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000097">kill</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000098"
+                     rend="withDash">mašākil</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000100">na</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000101">w</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000102">hēk</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000103">ma</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000104"
+                     rend="withDash">b</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000106"
+                     rend="withDash">xabbir</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000108">un</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000109">la</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000110">ḥada</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a8"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000111">ma</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000112">kēnit</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000113"
+                     rend="withDash">tʔil</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000115"
+                     rend="withDash">l</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000117">i</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000118"
+                     rend="withDash">mašākil</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000120">a</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a17"
+                  who="#LEB_KAR_2023_CB_F.18_Speaker11"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000121">kirmēl</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000122">hēk</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000123">ḍallit</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000124"
+                     rend="withDash">tḥibb</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000126">o</w>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a9"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000127">miš</w>
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000128">ġulṭit</w>
+                  <pc xml:id="xTok_000129">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a10"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000130">miš</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000131">ġulṭit</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000132">lāzim</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000133"
+                     rend="withDash">tʔil</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000135"
+                     rend="withDash">l</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000137">i</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000138">ʔana</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000139"
+                     rend="withDash">ʔimm</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000141" join="right">a</w>
+                  <pc xml:id="xTok_000142">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a11"
+                  who="#LEB_KAR_2023_SS_F.45_Speaker10"
+                  end="#T21"
+                  start="#T20">
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000143">ṣaḥḥ</w>
+                  <pc xml:id="xTok_000144">?</pc>
+               </u>
+            </annotationBlock>
+            <annotationBlock>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u2.12_SS_F.45_Karantina_Exfiancee_a12"
+                  who="#AID"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000145">yimkin</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000146">ma</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000147"
+                     rend="withDash">badd</w>
+                  <w join="right" xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000149">a</w>
+                  <pc join="right" xml:id="xTok_000150">.</pc>
+                  <pc xml:id="xTok_000151">.</pc>
+                  <pc xml:id="xTok_000152">.</pc>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000153">hēke</w>
+                  <w join="right"
+                     xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000154"
+                     rend="withDash">tzaʕʕl</w>
+                  <w xml:id="2.12_SS_F.45_Karantina_Exfiancee_xTok_000156">ik</w>
+               </u>
+            </annotationBlock>
+         </div>
+      </body>
+   </text>
+</TEI>
