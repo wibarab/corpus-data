@@ -144,11 +144,13 @@
       </xsl:for-each-group>
    </xsl:template>
    <xsl:template match="xtoks:w[exists(following-sibling::*) and not(following-sibling::*[1]/self::xtoks:ws)]">
+      <xsl:variable name="rawID" select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
       <xsl:copy copy-namespaces="no">
          <xsl:copy-of select="@* except @xml:id"/>
          <xsl:attribute name="xtoks:id"
-                        select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
+                        select="if (matches($rawID,'^\d')) then concat('w',$rawID) else $rawID"/>
          <xsl:attribute name="join">right</xsl:attribute>
+         <xsl:attribute name="xtoks:lang" select="'ar-acm-x-shawi-vicav'"/>
          <xsl:if test="following-sibling::*[1]/self::xtoks:pc[. = '-']">
             <xsl:attribute name="rend">withDash</xsl:attribute>
          </xsl:if>
@@ -157,13 +159,15 @@
    </xsl:template>
    <xsl:template match="xtoks:w">
       <xsl:param tunnel="yes" name="join"/>
+      <xsl:variable name="rawID" select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
       <xsl:copy copy-namespaces="no">
          <xsl:copy-of select="@* except @xtoks:id"/>
          <xsl:if test="$join != ''">
             <xsl:attribute name="join" select="$join"/>
          </xsl:if>
          <xsl:attribute name="xtoks:id"
-                        select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
+                        select="if (matches($rawID,'^\d')) then concat('w',$rawID) else $rawID"/>
+         <xsl:attribute name="xtoks:lang" select="'ar-acm-x-shawi-vicav'"/>
          <xsl:apply-templates/>
       </xsl:copy>
    </xsl:template>

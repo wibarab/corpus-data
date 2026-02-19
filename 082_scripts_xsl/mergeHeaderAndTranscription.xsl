@@ -71,13 +71,13 @@
     </xsl:template>
     
     <xsl:template match="tei:annotationBlock">
-        <annotationBlock>
+        <div>
             <xsl:apply-templates select="node()"/>
-        </annotationBlock>
+        </div>
     </xsl:template>
     
     <xsl:template match="tei:u">
-        <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{concat($recordingID,'_',../@xml:id)}" who="{concat('#', ../@who)}">
+        <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{concat($recordingID,'_',../@xml:id)}" who="{concat('corpus:', ../@who)}">
           <xsl:apply-templates select="../@* except (../@xml:id, ../@who)"/>
           <xsl:apply-templates select="tei:seg"/>
         </u>

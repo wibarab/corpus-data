@@ -145,7 +145,7 @@
         <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
         <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
         <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
-        <date when="????-??-??">TODO Set publication date here</date>
+        <date>TODO Set publication date here</date>
         <address>
             <addrLine>Bäckerstraße 13</addrLine>
             <addrLine>1010 Vienna</addrLine>
@@ -231,7 +231,7 @@
                 </respStmt>
             </xsl:otherwise>
         </xsl:choose>
-        <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>.</funder>
+        <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno></funder>
     </titleStmt>
 </xsl:template>
 <!-- The /Recordings/ table is converted to our TEI Corpus document -->
@@ -418,11 +418,11 @@
         <settingDesc corresp="{$sourcesPrefix}:{$campaignID}">
             <xsl:choose>
                 <xsl:when test="$placeName != ''">
-                    <setting>
-                        <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
+                    <place sameAs="{$vicavGeoListPrefix}:{$placeID}">
+                        <placeName>
                             <xsl:value-of select="$placeName" />
                         </placeName>
-                    </setting>
+                    </place>
                 </xsl:when>
                 <xsl:otherwise>
                     <p>No place of Recording provided.</p>
