@@ -144,7 +144,8 @@
       </xsl:for-each-group>
    </xsl:template>
    <xsl:template match="xtoks:w[exists(following-sibling::*) and not(following-sibling::*[1]/self::xtoks:ws)]">
-      <xsl:variable name="rawID" select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
+      <xsl:variable name="rawID"
+                    select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
       <xsl:copy copy-namespaces="no">
          <xsl:copy-of select="@* except @xml:id"/>
          <xsl:attribute name="xtoks:id"
@@ -159,7 +160,8 @@
    </xsl:template>
    <xsl:template match="xtoks:w">
       <xsl:param tunnel="yes" name="join"/>
-      <xsl:variable name="rawID" select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
+      <xsl:variable name="rawID"
+                    select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
       <xsl:copy copy-namespaces="no">
          <xsl:copy-of select="@* except @xtoks:id"/>
          <xsl:if test="$join != ''">
