@@ -413,21 +413,20 @@
                 </xsl:for-each>
             </listPerson>
         </particDesc>
-        <!-- TODO find ID -->
         <!-- TODO fetch additional metadata from place list -->
         <settingDesc corresp="{$sourcesPrefix}:{$campaignID}">
+            <setting>
             <xsl:choose>
                 <xsl:when test="$placeName != ''">
-                    <place sameAs="{$vicavGeoListPrefix}:{$placeID}">
-                        <placeName>
+                    <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
                             <xsl:value-of select="$placeName" />
-                        </placeName>
-                    </place>
+                    </placeName>
                 </xsl:when>
                 <xsl:otherwise>
                     <p>No place of Recording provided.</p>
                 </xsl:otherwise>
             </xsl:choose>
+            </setting>
         </settingDesc>
         <textClass>
             <xsl:for-each select="$subjects_in_recording">
