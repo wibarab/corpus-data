@@ -470,27 +470,52 @@
             * "teiCorpusDoc": this generates the master list of speakers in the teiCorpus  
             * "teiInstanceDoc": this generates the list of speakers in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-    <person xml:id="{tei:cell[1]}"
-            sex="{tei:cell[2]}" age="{tei:cell[4]}">
+    <person xml:id="{tei:cell[1]}">
+        <xsl:attribute name="sex">
+          <xsl:choose>
+            <xsl:when test="lower-case(tei:cell[3]) = ('f', 'm')">
+              <xsl:value-of select="lower-case(tei:cell[3])"/>
+            </xsl:when>
+            <xsl:otherwise>missing</xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+        <xsl:attribute name="age">
+          <xsl:choose>
+            <xsl:when test="normalize-space(tei:cell[5]) ne ''">
+              <xsl:value-of select="tei:cell[5]"/>
+            </xsl:when>
+            <xsl:otherwise>missing</xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+        <state type="consent">
+          <xsl:choose>
+            <xsl:when test="lower-case(tei:cell[2]) = ('yes', 'no')">
+              <label><xsl:value-of select="lower-case(tei:cell[2])"/></label>
+            </xsl:when>
+            <xsl:otherwise>
+              <label>missing</label>
+            </xsl:otherwise>
+          </xsl:choose>
+        </state>
         <idno>
             <xsl:value-of select="tei:cell[1]" />
         </idno>
         <xsl:call-template name="parseBirth">
             <xsl:with-param name="yearOfBirth"
-                            select="tei:cell[3]" />
+                            select="tei:cell[4]" />
             <xsl:with-param name="placeOfOrigin"
-                            select="tei:cell[7]" />
-            <xsl:with-param name="ageGroupComment" select="tei:cell[5]"/>
+                            select="tei:cell[8]" />
+            <xsl:with-param name="ageGroupComment" select="tei:cell[6]"/>
         </xsl:call-template>
-        <xsl:if test="tei:cell[6] != ''">
+        <xsl:if test="tei:cell[7] != ''">
             <langKnowledge>
-                <xsl:for-each select="tokenize(tei:cell[6], ',')">
+                <xsl:for-each select="tokenize(tei:cell[7], ',')">
                     <langKnown tag="{.}" />
                 </xsl:for-each>
             </langKnowledge>
         </xsl:if>
         <xsl:if test="tei:cell[9] != 'N/A'">
-            <xsl:for-each select="tokenize(tei:cell[9], ',')">
+            <xsl:for-each select="tokenize(tei:cell[10], ',')">
                 <ptr type="participatedIn" target="{$teiCorpusPrefix}:{normalize-space(.)}"/>
             </xsl:for-each>
         </xsl:if>
