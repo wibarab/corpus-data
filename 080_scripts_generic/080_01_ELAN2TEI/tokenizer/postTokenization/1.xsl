@@ -153,7 +153,7 @@
          <xsl:attribute name="join">right</xsl:attribute>
          <xsl:attribute name="xtoks:lang" select="'ar-acm-x-shawi-vicav'"/>
          <xsl:if test="following-sibling::*[1]/self::xtoks:pc[. = '-']">
-            <xsl:attribute name="rend">withDash</xsl:attribute>
+            <xsl:attribute name="rendition">rend:dashAfter</xsl:attribute>
          </xsl:if>
          <xsl:apply-templates/>
       </xsl:copy>
