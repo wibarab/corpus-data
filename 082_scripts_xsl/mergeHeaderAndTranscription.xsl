@@ -71,7 +71,9 @@
     </spanGrp>
 </xsl:template>
 <xsl:template match="tei:u">
-    <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{concat($recordingID,'_',../@xml:id)}" who="{concat('corpus:', ../@who)}">
+    <!-- remove _Transcription-txt suffix from tier names and add corpus: prefix to make it a resolvable URI -->
+    <xsl:variable name="who" select="replace(../@who, '_Transcription-txt$', '')" />
+    <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{concat($recordingID,'_',../@xml:id)}" who="{concat('corpus:', $who)}">
         <xsl:apply-templates select="../@* except (../@xml:id, ../@who)" />
         <xsl:apply-templates select="tei:seg" />
     </u>
