@@ -23,13 +23,13 @@
         <prefixDef ident="{$sharePrefix}" matchPattern="^(.+)$" replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
             <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
         </prefixDef>
-        <prefixDef ident="{$vicavGeoListPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_geodata.xml#$1">
-            <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+        <prefixDef ident="{$vicavGeoListPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+            <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
         </prefixDef>
         <prefixDef ident="{$dmpPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
             <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
         </prefixDef>
-        <prefixDef ident="{$vicavZoteroGroupPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/vicav_biblio_tei_zotero.xml#$1">
+        <prefixDef ident="{$vicavZoteroGroupPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
             <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
         </prefixDef>
         <prefixDef ident="{$sourcesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
@@ -111,6 +111,7 @@
 </xsl:template>
 <xsl:template name="titleStmt">
     <xsl:param name="textID" />
+    <xsl:param name="title" />
     <xsl:param name="recordingPerson" />
     <xsl:param name="recordingPersonID" />
     <xsl:param name="transcribingPerson" />
@@ -118,9 +119,9 @@
     <xsl:param name="translator" />
     <xsl:param name="translationChecker" />
     <titleStmt>
-        <xsl:if test="$textID != ''">
+        <xsl:if test="$title != ''">
             <title level="a">
-                <xsl:value-of select="$textID" />
+                <xsl:value-of select="$title" />
             </title>
         </xsl:if>
         <title level="s">WIBARAB Corpus</title>
@@ -242,6 +243,7 @@
 </xsl:template>
 <xsl:template match="tei:table[tei:head = 'Recordings']/tei:row[normalize-space(tei:cell[$cn('Recordings')('Rec. person')]) ne '']" priority="0">
     <xsl:variable name="textID" select="tei:cell[$cn('Recordings')('Text')]" />
+    <xsl:variable name="title" select="tei:cell[$cn('Recordings')('Title')]" />
     <!-- find all rows with the matching text ID and take "the other" cell of the row, which is the speaker ID -->
     <xsl:variable name="speakerIDs" select="$t_Speakers_in_Recordings//tei:row[tei:cell = $textID]/tei:cell[. != $textID]" />
     <xsl:variable name="speakers_in_recording" select="$allSpeakers[tei:cell[$cn('Recordings')('Text')] = $speakerIDs]" as="element(tei:row)*" />
@@ -280,6 +282,7 @@
             <fileDesc>
                 <xsl:call-template name="titleStmt">
                     <xsl:with-param name="textID" select="$textID" />
+                    <xsl:with-param name="title" select="$title" />
                     <xsl:with-param name="recordingPersonID" select="$recordingPersonID" />
                     <xsl:with-param name="recordingPerson" select="$recordingPerson" />
                     <xsl:with-param name="transcribingPerson" select="$transcribingPerson" />
