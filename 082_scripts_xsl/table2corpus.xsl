@@ -256,6 +256,7 @@
     <xsl:variable name="translator" select="normalize-space(tei:cell[$cn('Recordings')('translated by')])" />
     <xsl:variable name="translationChecker" select="normalize-space(tei:cell[$cn('Recordings')('translation checked by')])" />
     <xsl:variable name="documentType" select="normalize-space(tei:cell[$cn('Recordings')('Document Type')])" />
+    <xsl:variable name="rawDate" select="normalize-space(tei:cell[$cn('Recordings')('Date')])" />
     <!-- place -->
     <xsl:variable name="placeName" select="tei:cell[$cn('Recordings')('Place')]" />
     <xsl:variable name="placeID" select="$t_Places//tei:row[tei:cell[$cn('Places')('Placename')] = $placeName]/tei:cell[$cn('Places')('ID')]" />
@@ -298,81 +299,94 @@
                     <recordingStmt>
                         <!-- TODO parse duration and date -->
                         <recording dur-iso="{tei:cell[$cn('Recordings')('Length')]}" type="audio">
-                            <xsl:choose>
+                            <!-- <xsl:choose>
                                 <xsl:when test="tei:cell[$cn('Recordings')('Date')] != ''">
                                     <date when="{_:excelSerialToISO( tei:cell[$cn('Recordings')('Date')])}" />
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:comment>recording date unknown</xsl:comment>
                                 </xsl:otherwise>
-                            </xsl:choose>
-                            <respStmt>
-                                <resp>recording</resp>
-                                <persName ref="{$teiCorpusPrefix}:{$recordingPersonID}">
-                                    <xsl:value-of select="$recordingPerson" />
-                                </persName>
-                            </respStmt>
-                            <!-- TODO The audio files on the share need to be re-organised to match the replacementPattern in the header -->
-                            <xsl:if test="$audioFilename!=''">
-                                <media url="{$sharePrefix}:{$audioFilename}" mimeType="audio/wav" type="master" />
-                            </xsl:if>
-                            <xsl:if test="$campaignName != ''">
-                                <p>Recorded during <xsl:value-of select="$campaignName" />
-                            </p>
+                            </xsl:choose> -->
+                            <xsl:choose>
+                                <xsl:when test="$rawDate = ''">
+                                    <xsl:comment>recording date unknown</xsl:comment>
+                                </xsl:when>
+                                <xsl:when test="matches($rawDate, '^\d+$')">
+                                    <date when="{_:excelSerialToISO(xs:int($rawDate))}" />
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:message>WARNING invalid Date serial: textID=<xsl:value-of select="$textID" />; title=<xsl:value-of select="$title" />; rawDate=<xsl:value-of select="$rawDate" />
+                                </xsl:message>
+                                <xsl:comment>recording date invalid in source table</xsl:comment>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <respStmt>
+                            <resp>recording</resp>
+                            <persName ref="{$teiCorpusPrefix}:{$recordingPersonID}">
+                                <xsl:value-of select="$recordingPerson" />
+                            </persName>
+                        </respStmt>
+                        <!-- TODO The audio files on the share need to be re-organised to match the replacementPattern in the header -->
+                        <xsl:if test="$audioFilename!=''">
+                            <media url="{$sharePrefix}:{$audioFilename}" mimeType="audio/wav" type="master" />
                         </xsl:if>
-                    </recording>
-                </recordingStmt>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <listPrefixDef>
-                <xsl:sequence select="$prefixDefs" />
-            </listPrefixDef>
-        </encodingDesc>
-        <profileDesc>
-            <particDesc>
-                <listPerson>
-                    <head>Speakers in <xsl:value-of select="$textID" />
-                </head>
-                <xsl:if test="count($speakers_in_recording) eq 0">
-                    <xsl:comment>TODO Add Speakers to Speakers_in_Recording Table</xsl:comment>
-                </xsl:if>
-                <xsl:for-each select="$speakers_in_recording">
-                    <xsl:apply-templates select="." mode="teiInstanceDoc" />
+                        <xsl:if test="$campaignName != ''">
+                            <p>Recorded during <xsl:value-of select="$campaignName" />
+                        </p>
+                    </xsl:if>
+                </recording>
+            </recordingStmt>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <listPrefixDef>
+            <xsl:sequence select="$prefixDefs" />
+        </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+        <particDesc>
+            <listPerson>
+                <head>Speakers in <xsl:value-of select="$textID" />
+            </head>
+            <xsl:if test="count($speakers_in_recording) eq 0">
+                <xsl:comment>TODO Add Speakers to Speakers_in_Recording Table</xsl:comment>
+            </xsl:if>
+            <xsl:for-each select="$speakers_in_recording">
+                <xsl:apply-templates select="." mode="teiInstanceDoc" />
+            </xsl:for-each>
+        </listPerson>
+    </particDesc>
+    <!-- TODO fetch additional metadata from place list -->
+    <settingDesc corresp="{$sourcesPrefix}:{$campaignID}">
+        <setting>
+            <xsl:choose>
+                <xsl:when test="$placeName != ''">
+                    <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
+                        <xsl:value-of select="$placeName" />
+                    </placeName>
+                </xsl:when>
+                <xsl:otherwise>
+                    <p>No place of Recording provided.</p>
+                </xsl:otherwise>
+            </xsl:choose>
+        </setting>
+    </settingDesc>
+    <textClass>
+        <xsl:if test="$documentType ne ''">
+            <catRef scheme="{$teiCorpusPrefix}:wibarabDocumentTypes" target="{$teiCorpusPrefix}:textClass.WIBARAB.{replace($documentType,'[^A-Za-z]','')}" />
+        </xsl:if>
+        <xsl:if test="exists($subjects_in_recording)">
+            <keywords scheme="{$teiCorpusPrefix}:wibarabSubjects">
+                <xsl:for-each select="$subjects_in_recording">
+                    <xsl:sort select="_:sortKey(tei:cell[$cn('Subjects')('Label')])" />
+                    <term>
+                        <xsl:value-of select="tei:cell[$cn('Subjects')('Label')]" />
+                    </term>
                 </xsl:for-each>
-            </listPerson>
-        </particDesc>
-        <!-- TODO fetch additional metadata from place list -->
-        <settingDesc corresp="{$sourcesPrefix}:{$campaignID}">
-            <setting>
-                <xsl:choose>
-                    <xsl:when test="$placeName != ''">
-                        <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
-                            <xsl:value-of select="$placeName" />
-                        </placeName>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <p>No place of Recording provided.</p>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </setting>
-        </settingDesc>
-        <textClass>
-            <xsl:if test="$documentType ne ''">
-                <catRef scheme="{$teiCorpusPrefix}:wibarabDocumentTypes" target="{$teiCorpusPrefix}:textClass.WIBARAB.{replace($documentType,'[^A-Za-z]','')}" />
-            </xsl:if>
-            <xsl:if test="exists($subjects_in_recording)">
-                <keywords scheme="{$teiCorpusPrefix}:wibarabSubjects">
-                    <xsl:for-each select="$subjects_in_recording">
-                        <xsl:sort select="_:sortKey(tei:cell[$cn('Subjects')('Label')])" />
-                        <term>
-                            <xsl:value-of select="tei:cell[$cn('Subjects')('Label')]" />
-                        </term>
-                    </xsl:for-each>
-                </keywords>
-            </xsl:if>
-        </textClass>
-    </profileDesc>
+            </keywords>
+        </xsl:if>
+    </textClass>
+</profileDesc>
 </teiHeader>
 <text>
     <body>

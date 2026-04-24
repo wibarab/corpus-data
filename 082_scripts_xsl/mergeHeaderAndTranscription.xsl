@@ -11,14 +11,19 @@
     <xsl:param name="pathToCorpusDoc" />
     <xsl:variable name="input" select="." />
     <xsl:variable name="corpusDoc" select="doc($pathToCorpusDoc)" as="document-node()" />
-    <xsl:variable name="IDcandidates" select="$corpusDoc/tei:teiCorpus/tei:TEI//tei:title[@level = 'a']" />
+    <xsl:variable name="TEIcandidates" select="$corpusDoc/tei:teiCorpus/tei:TEI[@xml:id]" as="element(tei:TEI)*" />
     <xsl:variable name="pathSegs" select="tokenize(base-uri($input),'/')" />
     <xsl:variable name="recordingIDfromFilename" select="substring-before(substring-after($pathSegs[starts-with(.,'ELAN_')],'ELAN_'),'.xml')" />
-    <xsl:variable name="recordingID" select="$IDcandidates[. = $recordingIDfromFilename]" />
-    <xsl:variable name="teiHeaderFromCorpus" select="$recordingID/ancestor::tei:teiHeader" as="element(tei:teiHeader)?" />
+    <xsl:variable name="recordingTEI" select="$TEIcandidates[@xml:id = $recordingIDfromFilename]" as="element(tei:TEI)*" />
+    <xsl:variable name="recordingID" select="string(($recordingTEI/@xml:id)[1])" as="xs:string" />
+    <xsl:variable name="teiHeaderFromCorpus" select="$recordingTEI[1]/tei:teiHeader" as="element(tei:teiHeader)?" />
     <xsl:template match="/">
-        <xsl:if test="count($recordingID) gt 1">
-            <xsl:message>WARNING found several matching recording IDs: <xsl:value-of select="string-join($recordingID, ', ')" /> - taking first one</xsl:message>
+        <xsl:if test="count($recordingTEI) gt 1">
+            <xsl:message>                
+                WARNING found several TEI elements with the same xml:id:
+            <xsl:value-of select="string-join(($recordingTEI/@xml:id) ! string(.), ', ')" />                
+                - taking first one
+            </xsl:message>
         </xsl:if>
         <xsl:if test="normalize-space($recordingID) = ''">
             <!-- <xsl:message select="concat('$input=',base-uri($input))"/>
