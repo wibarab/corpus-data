@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-04-24T09:28:50.156063Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T42_OD_M.72_Karantina_Picturesprepositions">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – OD (M.72) – Pictures; Prepositions</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">42_OD_M.72_Karantina_Picturesprepositions</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="0.14652777777777778" type="audio">
+                  <date when="2022-02-28"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 42_OD_M.72_Karantina_Picturesprepositions</head>
+               <person sameAs="corpus:LEB_KAR_2022_OD_M.72_Speaker3">
+                  <idno>LEB_KAR_2022_OD_M.72_Speaker3</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:wibarabDocumentTypes"
+                    target="corpus:textClass.WIBARAB.Elicitation"/>
+            <keywords scheme="corpus:wibarabSubjects">
+               <term>Visual elicitation</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="272" since="#T0" xml:id="T1"/>
+         <when interval="2558" since="#T0" xml:id="T2"/>
+         <when interval="19601" since="#T0" xml:id="T3"/>
+         <when interval="21160" since="#T0" xml:id="T4"/>
+         <when interval="23345" since="#T0" xml:id="T5"/>
+         <when interval="25836" since="#T0" xml:id="T6"/>
+         <when interval="35571" since="#T0" xml:id="T7"/>
+         <when interval="37107" since="#T0" xml:id="T8"/>
+         <when interval="40326" since="#T0" xml:id="T9"/>
+         <when interval="45290" since="#T0" xml:id="T10"/>
+         <when interval="49689" since="#T0" xml:id="T11"/>
+         <when interval="52640" since="#T0" xml:id="T12"/>
+         <when interval="53595" since="#T0" xml:id="T13"/>
+         <when interval="56095" since="#T0" xml:id="T14"/>
+         <when interval="56813" since="#T0" xml:id="T15"/>
+         <when interval="58861" since="#T0" xml:id="T16"/>
+         <when interval="58938" since="#T0" xml:id="T17"/>
+         <when interval="61237" since="#T0" xml:id="T18"/>
+         <when interval="69140" since="#T0" xml:id="T19"/>
+         <when interval="70957" since="#T0" xml:id="T20"/>
+         <when interval="73607" since="#T0" xml:id="T21"/>
+         <when interval="74964" since="#T0" xml:id="T22"/>
+         <when interval="81750" since="#T0" xml:id="T23"/>
+         <when interval="88392" since="#T0" xml:id="T24"/>
+         <when interval="88900" since="#T0" xml:id="T25"/>
+         <when interval="95470" since="#T0" xml:id="T26"/>
+         <when interval="103428" since="#T0" xml:id="T27"/>
+         <when interval="108071" since="#T0" xml:id="T28"/>
+         <when interval="108745" since="#T0" xml:id="T29"/>
+         <when interval="110779" since="#T0" xml:id="T30"/>
+         <when interval="115713" since="#T0" xml:id="T31"/>
+         <when interval="118290" since="#T0" xml:id="T32"/>
+         <when interval="131000" since="#T0" xml:id="T33"/>
+         <when interval="135769" since="#T0" xml:id="T34"/>
+         <when interval="150261" since="#T0" xml:id="T35"/>
+         <when interval="153431" since="#T0" xml:id="T36"/>
+         <when interval="159699" since="#T0" xml:id="T37"/>
+         <when interval="160692" since="#T0" xml:id="T38"/>
+         <when interval="162767" since="#T0" xml:id="T39"/>
+         <when interval="165238" since="#T0" xml:id="T40"/>
+         <when interval="169796" since="#T0" xml:id="T41"/>
+         <when interval="171793" since="#T0" xml:id="T42"/>
+         <when interval="176017" since="#T0" xml:id="T43"/>
+         <when interval="178076" since="#T0" xml:id="T44"/>
+         <when interval="186937" since="#T0" xml:id="T45"/>
+         <when interval="188654" since="#T0" xml:id="T46"/>
+         <when interval="194418" since="#T0" xml:id="T47"/>
+         <when interval="195665" since="#T0" xml:id="T48"/>
+         <when interval="198452" since="#T0" xml:id="T49"/>
+         <when interval="202772" since="#T0" xml:id="T50"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T50</note>
+            </head>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a1"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔalla</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000002"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yinaǧǧḥ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav">raḅḅ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a1"
+                        xml:id="a28">May God make you succeed, oh Lord.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a2"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000008"
+                     xml:lang="ar-acm-x-shawi-vicav">kālsi</w>
+                  <pc xml:id="xTok_000009">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav">mbala</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a2"
+                        xml:id="a29">This is a sock, yes.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a3"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭābä</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a3"
+                        xml:id="a30">A ball</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a4"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000012"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧabal</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav">sižara</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a4"
+                        xml:id="a31">A mountain and a tree</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a5"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T10"
+                  start="#T9">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000015"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000020"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibal</w>
+                  <pc xml:id="xTok_000021">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000022"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000025"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000027"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibal</w>
+                  <pc xml:id="xTok_000028">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕāli</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000034"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibal</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a5"
+                        xml:id="a32">On the top of the mountain</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a7"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000035"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000036"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">as</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000038"
+                     xml:lang="ar-acm-x-shawi-vicav">sižara</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000041"
+                     xml:lang="ar-acm-x-shawi-vicav">nuṣṣ</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000042"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibal</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a7"
+                        xml:id="a33">I mean, the tree is (right) in the middle of the mountain</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a8"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000046"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔāxir</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000049"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibal</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a8"
+                        xml:id="a34">Here, (it is) at the end of the mountain</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a9"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000050"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarifti</w>
+                  <pc xml:id="xTok_000051">?</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000053"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000057"
+                     xml:lang="ar-acm-x-shawi-vicav">wādi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a9"
+                        xml:id="a35">You know? Here, (it is) on the valley</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a10"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000059"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000061"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ənsammī</w>
+                  <pc join="right" xml:id="xTok_000063">_</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav">wādi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a10"
+                        xml:id="a36">This, we call valley</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a11"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000066"
+                     xml:lang="ar-acm-x-shawi-vicav">bāxra</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a11"
+                        xml:id="a27">A boat</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a12"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000069"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000071"
+                     xml:lang="ar-acm-x-shawi-vicav">baḥar</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a12"
+                        xml:id="a37">In the sea</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a13"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav">xanǧar</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000073"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣a</w>
+                  <pc xml:id="xTok_000074">.</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000077"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarabi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ysammū</w>
+                  <pc join="right" xml:id="xTok_000084">_</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000085"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000086"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕiddit</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔišya</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a13"
+                        xml:id="a38">This is a dagger. In Arabic they call it different things.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a14"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000090"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ysammū</w>
+                  <pc join="right" xml:id="xTok_000092">_</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000094"
+                     xml:lang="ar-acm-x-shawi-vicav">muhannad</w>
+                  <pc xml:id="xTok_000095">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000096"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ysammū</w>
+                  <pc join="right" xml:id="xTok_000100">_</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000101"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000102"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣēf</w>
+                  <pc xml:id="xTok_000103">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000104"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000106"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ysammū</w>
+                  <pc join="right" xml:id="xTok_000108">_</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000109"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <pc join="right" xml:id="xTok_000110">.</pc>
+                  <pc xml:id="xTok_000111">.</pc>
+                  <pc xml:id="xTok_000112">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a14"
+                        xml:id="a39">They call it ponniard, they call it sword.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a15"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000113"
+                     xml:lang="ar-acm-x-shawi-vicav">lamḅa</w>
+                  <pc xml:id="xTok_000114">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000115"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯrāǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000116"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiḥna</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000117"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000119"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ənʔul</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000124"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣a</w>
+                  <pc xml:id="xTok_000125">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000128"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000130"
+                     xml:lang="ar-acm-x-shawi-vicav">badawi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000131"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯirāǧ</w>
+                  <pc xml:id="xTok_000132">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a15"
+                        xml:id="a40">A lamp. "Chandelier" we also call it, in Bedouin we say chandelier.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a16"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯirāǧ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a16"
+                        xml:id="a41">Yes, Chandelier</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a17"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">fōg</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iṭ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000138"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭāwla</w>
+                  <pc xml:id="xTok_000139">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav">fōg</w>
+                  <pc xml:id="xTok_000141">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a17"
+                        xml:id="a42">On the table, on.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a18"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000142"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔuṭṭa</w>
+                  <pc xml:id="xTok_000143">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">bsaynä</w>
+                  <pc xml:id="xTok_000145">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000146"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav">nafs</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav">luġa</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000151"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav">binti</w>
+                  <pc xml:id="xTok_000153">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a18"
+                        xml:id="a43">Cat, Kitty, I mean, it is the same language.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a19"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000154"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000156">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">riǧil</w>
+                  <pc xml:id="xTok_000158">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000159"
+                     xml:lang="ar-acm-x-shawi-vicav">riǧil</w>
+                  <pc xml:id="xTok_000160">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000161"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000162">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a19"
+                        xml:id="a44">Yes, foot, foot, yes.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a20"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000163"
+                     xml:lang="ar-acm-x-shawi-vicav">mā</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000164"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">šāyif</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000166"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <pc xml:id="xTok_000167">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a20"
+                        xml:id="a45">I cannot see it.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a21"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T40"
+                  start="#T39">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav">ġēm</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav">fōg</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000172"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000174"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibal</w>
+                  <pc xml:id="xTok_000175">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a21"
+                        xml:id="a46">The cloud is above the mountain.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a22"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000177">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000178"
+                     xml:lang="ar-acm-x-shawi-vicav">tiyāb</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav">mʕallaga</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a22"
+                        xml:id="a47">Hung clothes.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a23"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav">tiyāb</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav">mʕallaga</w>
+                  <pc xml:id="xTok_000182">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000183"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a23"
+                        xml:id="a48">Hung clothes, yes.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a24"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000185"
+                     xml:lang="ar-acm-x-shawi-vicav">yitdaffa</w>
+                  <pc xml:id="xTok_000186">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a24"
+                        xml:id="a49">He is warming up.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a25"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav">zálama</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000188"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000189">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a25"
+                        xml:id="a50">Man, yes.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u42_OD_M.72_Karantina_Picturesprepositions_a26"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000190"
+                     xml:lang="ar-acm-x-shawi-vicav">zlima</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000193"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">z</w>
+                  <w xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000195"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">zi</w>
+                  <pc xml:id="xTok_000196">.</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Pictures; Prepositions_xTok_000197"
+                     xml:lang="ar-acm-x-shawi-vicav">zlima</w>
+                  <pc xml:id="xTok_000198">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#42_OD_M.72_Karantina_Picturesprepositions_a26"
+                        xml:id="a51">A man</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

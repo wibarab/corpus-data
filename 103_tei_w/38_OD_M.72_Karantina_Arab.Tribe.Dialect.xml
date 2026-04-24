@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-04-24T09:28:50.357967Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T38_OD_M.72_Karantina_Arab.Tribe.Dialect">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – OD (M.72) – Arab; Tribe; Dialect</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">38_OD_M.72_Karantina_Arab.Tribe.Dialect</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="6.8750000000000006E-2" type="audio">
+                  <date when="2022-02-28"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 38_OD_M.72_Karantina_Arab.Tribe.Dialect</head>
+               <person sameAs="corpus:LEB_KAR_2022_OD_M.72_Speaker3">
+                  <idno>LEB_KAR_2022_OD_M.72_Speaker3</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2022_KZ_M.27_Speaker12">
+                  <idno>LEB_KAR_2022_KZ_M.27_Speaker12</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:wibarabDocumentTypes"
+                    target="corpus:textClass.WIBARAB.FreeSpeech"/>
+            <keywords scheme="corpus:wibarabSubjects">
+               <term>Tribal History</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="3375" since="#T0" xml:id="T1"/>
+         <when interval="6844" since="#T0" xml:id="T2"/>
+         <when interval="16723" since="#T0" xml:id="T3"/>
+         <when interval="22331" since="#T0" xml:id="T4"/>
+         <when interval="22523" since="#T0" xml:id="T5"/>
+         <when interval="25493" since="#T0" xml:id="T6"/>
+         <when interval="27090" since="#T0" xml:id="T7"/>
+         <when interval="28987" since="#T0" xml:id="T8"/>
+         <when interval="32513" since="#T0" xml:id="T9"/>
+         <when interval="39263" since="#T0" xml:id="T10"/>
+         <when interval="39482" since="#T0" xml:id="T11"/>
+         <when interval="43744" since="#T0" xml:id="T12"/>
+         <when interval="44039" since="#T0" xml:id="T13"/>
+         <when interval="50118" since="#T0" xml:id="T14"/>
+         <when interval="50694" since="#T0" xml:id="T15"/>
+         <when interval="54325" since="#T0" xml:id="T16"/>
+         <when interval="54499" since="#T0" xml:id="T17"/>
+         <when interval="67506" since="#T0" xml:id="T18"/>
+         <when interval="67631" since="#T0" xml:id="T19"/>
+         <when interval="78819" since="#T0" xml:id="T20"/>
+         <when interval="79534" since="#T0" xml:id="T21"/>
+         <when interval="83653" since="#T0" xml:id="T22"/>
+         <when interval="84304" since="#T0" xml:id="T23"/>
+         <when interval="88215" since="#T0" xml:id="T24"/>
+         <when interval="89081" since="#T0" xml:id="T25"/>
+         <when interval="97779" since="#T0" xml:id="T26"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T26</note>
+            </head>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a1"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">baʕad</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">nḍall</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav">naḥči</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000008"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav">mudun</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a1"
+                        xml:id="a15">We still speak like this in the cities.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a3"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000015">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiḥna</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav">mn</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000020"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarab</w>
+                  <pc xml:id="xTok_000021">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000022"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000023"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔabb</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000025"
+                     xml:lang="ar-acm-x-shawi-vicav">an</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕan</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧidd</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a3"
+                        xml:id="a16">Yes, we are from the ʕArab and we have been here for generations.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a4"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000030"
+                     xml:lang="ar-acm-x-shawi-vicav">wʕīna</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarab</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a4"
+                        xml:id="a17">We were born ʕArab.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a5"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000033"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000034"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕāšīrit</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000035"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000037"
+                     xml:lang="ar-acm-x-shawi-vicav">sawālmä</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a5"
+                        xml:id="a18">From the Sawalma tribe.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a6"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000038"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav">blād</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000040"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000042"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">xalīž</w>
+                  <pc xml:id="xTok_000043">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iǧ</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧazīrä</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000048"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000050"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarabiyyä</w>
+                  <pc xml:id="xTok_000051">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav">mnēn</w>
+                  <pc xml:id="xTok_000053">?</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000057"
+                     xml:lang="ar-acm-x-shawi-vicav">nʕarif</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a6"
+                        xml:id="a19">From the Gulf lands, from the Arabian Peninsula. Where (exactly) are we from? We do not know.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a7"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav">nʕarif</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000059"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧīna</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000061"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕ</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000062"
+                     xml:lang="ar-acm-x-shawi-vicav">futūḥāt</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000063"
+                     xml:lang="ar-acm-x-shawi-vicav">xālid</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav">bin</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav">walīd</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000069"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">it</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000071"
+                     xml:lang="ar-acm-x-shawi-vicav">tārīx</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000074"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">yʔūl</w>
+                  <pc xml:id="xTok_000075">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a7"
+                        xml:id="a20">We know that we came with the conquests of Xaled Ibn Al-Walid, that is what history tells.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a8"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000076"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000077">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiyyām</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000081"
+                     xml:lang="ar-acm-x-shawi-vicav">futūḥāt</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000084"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔislāmiyyä</w>
+                  <pc xml:id="xTok_000085">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000086"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaywa</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav">maẓbūṭ</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav">taḥki</w>
+                  <pc xml:id="xTok_000089">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a8"
+                        xml:id="a21">Yes, in the days of the Islamic conquests. Yes, what you say is true.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a9"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000090"
+                     xml:lang="ar-acm-x-shawi-vicav">kānu</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000091"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">msammīn</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000094"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000095"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000096"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav">murābiṭūn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a9"
+                        xml:id="a22">They used to call us "Al-Murābiṭūn" here.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a10"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T18"
+                  start="#T17">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000099"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000100">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000101"
+                     xml:lang="ar-acm-x-shawi-vicav">kānu</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000102"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">msammīn</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000104"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc join="right" xml:id="xTok_000105">.</pc>
+                  <pc xml:id="xTok_000106">.</pc>
+                  <pc xml:id="xTok_000107">.</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000108"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarab</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000111"
+                     xml:lang="ar-acm-x-shawi-vicav">kānu</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yiḥuṭṭū</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000114"
+                     xml:lang="ar-acm-x-shawi-vicav">hun</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000115"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000116"
+                     xml:lang="ar-acm-x-shawi-vicav">xṭūṭ</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000117"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000119"
+                     xml:lang="ar-acm-x-shawi-vicav">sawāḥil</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000120"
+                     xml:lang="ar-acm-x-shawi-vicav">mšān</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">ġarəb</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000124"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav">yfūt</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000127"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <pc join="right" xml:id="xTok_000129">.</pc>
+                  <pc xml:id="xTok_000130">.</pc>
+                  <pc xml:id="xTok_000131">.</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕin</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <pc join="right" xml:id="xTok_000138">.</pc>
+                  <pc xml:id="xTok_000139">.</pc>
+                  <pc xml:id="xTok_000140">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000141"
+                     xml:lang="ar-acm-x-shawi-vicav">waʔt</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000142"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">futūḥāt</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔislāmiyyä</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <pc xml:id="xTok_000149">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarifti</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000151"
+                     xml:lang="ar-acm-x-shawi-vicav">kīf</w>
+                  <pc xml:id="xTok_000152">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a10"
+                        xml:id="a23">Yes, they used to call us ... The ʕArab (Bedouins), they used to place them along the coastline so that the West would not enter (invade) to our territory (lit.to ours) in the days of the Islamic conquests. You know?</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a11"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T20"
+                  start="#T19">
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000154">,</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000156"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">sammū</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc join="right" xml:id="xTok_000159">.</pc>
+                  <pc xml:id="xTok_000160">.</pc>
+                  <pc xml:id="xTok_000161">.</pc>
+                  <pc join="right" xml:id="xTok_000162">(</pc>
+                  <pc join="right" xml:id="xTok_000163">.</pc>
+                  <pc join="right" xml:id="xTok_000164">.</pc>
+                  <pc xml:id="xTok_000165">.</pc>
+                  <pc xml:id="xTok_000166">)</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000167"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000169"
+                     xml:lang="ar-acm-x-shawi-vicav">sāḥil</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000172"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000173"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000175"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">ətʔūli</w>
+                  <pc join="right" xml:id="xTok_000177">.</pc>
+                  <pc xml:id="xTok_000178">.</pc>
+                  <pc xml:id="xTok_000179">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav">šarəg</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav">turkiyya</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000182"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000183"
+                     xml:lang="ar-acm-x-shawi-vicav">šarəg</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav">maṣr</w>
+                  <pc xml:id="xTok_000185">.</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000186"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000188"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000189"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <pc xml:id="xTok_000190">,</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000193"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000194"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarab</w>
+                  <pc xml:id="xTok_000195">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a11"
+                        xml:id="a24">And they called us... (...) All along the coast, you can say from the east of Turkey to the east of Egypt, all of this is full of ʕArab.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a12"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000197"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕ</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000200"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiyyām</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav">rāḥit</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a12"
+                        xml:id="a25">But as time passed... It (all) disappeared.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a13"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000202"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000203"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000206"
+                     xml:lang="ar-acm-x-shawi-vicav">tunṭafi</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000207"
+                     xml:lang="ar-acm-x-shawi-vicav">šwayy</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000208"
+                     xml:lang="ar-acm-x-shawi-vicav">šwayy</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a13"
+                        xml:id="a26">I mean, it is dying out little by little.</span>
+               </spanGrp>
+            </div>
+            <div>
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  xml:id="u38_OD_M.72_Karantina_Arab.Tribe.Dialect_a14"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000209"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000212"
+                     xml:lang="ar-acm-x-shawi-vicav">mudun</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000213"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000215"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">mudun</w>
+                  <pc xml:id="xTok_000216">.</pc>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000217"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav">madaniyyä</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav">fātit</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000221"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000223"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕawāyid</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000226"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000228"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔadīmä</w>
+                  <pc xml:id="xTok_000229">.</pc>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000230"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000231"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <w join="right"
+                     xml:id="Karantina – OD (M.72) – Arab; Tribe; Dialect_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyyi</w>
+                  <pc xml:id="xTok_000233">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#38_OD_M.72_Karantina_Arab.Tribe.Dialect_a14"
+                        xml:id="a27">Cities, it is cities.The urban (dialect/life) got in the way of old traditions. This is it.</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
