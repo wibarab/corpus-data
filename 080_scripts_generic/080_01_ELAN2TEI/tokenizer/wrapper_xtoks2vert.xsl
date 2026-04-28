@@ -63,10 +63,10 @@
          </xsl:copy>
       </xsl:if>
    </xsl:template>
-   <xsl:template match="//tei:title[@level='a']" mode="doc-attributes">
+   <xsl:template match="//tei:TEI/@xml:id" mode="doc-attributes">
       <xsl:attribute namespace="http://acdh.oeaw.ac.at/xtoks"
                      name="id"
-                     select="string-join(//tei:title[@level='a']/normalize-space(), ' ')"/>
+                     select="string-join(//tei:TEI/@xml:id/normalize-space(), ' ')"/>
    </xsl:template>
    <xsl:template match="//tei:sourceDesc/tei:recording/tei:media/@url"
                  mode="doc-attributes">
