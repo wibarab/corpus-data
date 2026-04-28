@@ -373,7 +373,7 @@
     </settingDesc>
     <textClass>
         <xsl:if test="$documentType ne ''">
-            <catRef scheme="{$teiCorpusPrefix}:wibarabDocumentTypes" target="{$teiCorpusPrefix}:textClass.WIBARAB.{replace($documentType,'[^A-Za-z]','')}" />
+            <catRef scheme="{$teiCorpusPrefix}:wibarabDataTypes" target="{$teiCorpusPrefix}:textClass.WIBARAB.{replace($documentType,'[^A-Za-z]','')}" />
         </xsl:if>
         <xsl:if test="exists($subjects_in_recording)">
             <keywords scheme="{$teiCorpusPrefix}:wibarabSubjects">
