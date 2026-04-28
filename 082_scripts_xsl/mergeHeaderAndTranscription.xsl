@@ -65,7 +65,7 @@
     </xsl:copy>
 </xsl:template>
 <xsl:template match="tei:annotationBlock">
-    <div xml:id="{concat($recordingID,'_',../@xml:id)}">
+    <div xml:id="{concat($recordingID, '_', @xml:id)}">
         <xsl:apply-templates select="node()" />
     </div>
 </xsl:template>
