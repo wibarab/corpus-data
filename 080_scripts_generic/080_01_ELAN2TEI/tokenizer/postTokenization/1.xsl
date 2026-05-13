@@ -11,26 +11,19 @@
    <xsl:param name="debug"/>
    <xsl:template match="/">
       <xsl:processing-instruction name="xml-stylesheet">type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:processing-instruction name="xslt">inPathSegment="\010_manannot\" outPathSegment="\106_html\"</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:processing-instruction name="processor">name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:processing-instruction name="snippets">fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:processing-instruction name="standoff">fn="shawi_standoff.xml" path=""</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:processing-instruction name="attributeAssignments">fn="shawi_attributes.xml" path="{filePath}/../880_conf/"</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:processing-instruction name="shortCuts">fn="shawi_shortCuts" path="{filePath}/../880_conf/"</xsl:processing-instruction>
-      <xsl:text>
-</xsl:text>
+      <xsl:text/>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="text()" priority="1">
@@ -82,7 +75,7 @@
                   </xsl:otherwise>
                </xsl:choose>
             </xsl:when>
-            <!-- first token != ws, last token = pc  -->
+            <!-- first token != ws, last token = pc -->
             <xsl:when test="not($first-is-ws) and $last-is-pc">
                <xsl:choose>
                   <xsl:when test="count(current-group() except current-group()[last()]) gt 1">
@@ -144,8 +137,7 @@
       </xsl:for-each-group>
    </xsl:template>
    <xsl:template match="xtoks:w[exists(following-sibling::*) and not(following-sibling::*[1]/self::xtoks:ws)]">
-      <xsl:variable name="rawID"
-                    select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
+      <xsl:variable name="rawID" select="concat(root()//tei:TEI/@xml:id,'_',@xtoks:id)"/>
       <xsl:copy copy-namespaces="no">
          <xsl:copy-of select="@* except @xml:id"/>
          <xsl:attribute name="xtoks:id"
@@ -153,15 +145,14 @@
          <xsl:attribute name="join">right</xsl:attribute>
          <xsl:attribute name="xtoks:lang" select="'ar-acm-x-shawi-vicav'"/>
          <xsl:if test="following-sibling::*[1]/self::xtoks:pc[. = '-']">
-            <xsl:attribute name="rend">withDash</xsl:attribute>
+            <xsl:attribute name="rendition">rend:dashAfter</xsl:attribute>
          </xsl:if>
          <xsl:apply-templates/>
       </xsl:copy>
    </xsl:template>
    <xsl:template match="xtoks:w">
       <xsl:param tunnel="yes" name="join"/>
-      <xsl:variable name="rawID"
-                    select="concat(root()//tei:title[@level ='a'],'_',@xtoks:id)"/>
+      <xsl:variable name="rawID" select="concat(root()//tei:TEI/@xml:id,'_',@xtoks:id)"/>
       <xsl:copy copy-namespaces="no">
          <xsl:copy-of select="@* except @xtoks:id"/>
          <xsl:if test="$join != ''">
