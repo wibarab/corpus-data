@@ -1,15 +1,14 @@
 name: Validate corpus files
 on:
-  push: {}
-  repository_dispatch:
-    types: [run]
   workflow_dispatch: {}
   workflow_run:
     workflows: ["Convert ELAN to TEI"]
+    branches: [main]
     types: [completed]
 jobs:
   build:
     name: Validate corpus files
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
