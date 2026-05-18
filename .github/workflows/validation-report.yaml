@@ -1,0 +1,50 @@
+name: Validate corpus files
+on:
+  push: {}
+  repository_dispatch:
+    types: [run]
+  workflow_dispatch: {}
+  workflow_run:
+    workflows: ["Convert ELAN to TEI"]
+    types: [completed]
+jobs:
+  build:
+    name: Validate corpus files
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          path: main
+          submodules: "true"
+      - name: Checkout gh_pages
+        uses: actions/checkout@v6
+        with:
+          ref: gh_pages
+          path: gh_pages
+      - name: Get python 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: "pipenv"
+      - name: Validate corpus files
+        run: |
+          python --version
+          python -m pip install pipenv
+          cd main/080_scripts_generic/080_02_validation
+          pipenv install
+          pipenv run jupyter nbconvert --to script validate_corpus.ipynb
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} pipenv run python validate_corpus.py
+      - name: Commit errors to gh_pages
+        run: |
+          cp main/080_scripts_generic/080_02_validation/tmp/validation_report.html gh_pages/validation.html
+          cd gh_pages
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *.html
+          git commit -m "New validation results" -a || true
+      - name: Push changes back to GitHub
+        uses: ad-m/github-push-action@master
+        with:
+          branch: gh_pages
+          directory: gh_pages
