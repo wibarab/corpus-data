@@ -32,11 +32,11 @@ jobs:
           python -m pip install pipenv
           cd main/080_scripts_generic/080_02_validation
           pipenv install
-          pipenv run jupyter nbconvert --to script validate_corpus.ipynb
+          pipenv run jupyter nbconvert --to python validate_corpus.ipynb
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} pipenv run python validate_corpus.py
       - name: Commit errors to gh_pages
         run: |
-          cp main/080_scripts_generic/080_02_validation/tmp/validation_report.html gh_pages/validation.html
+          cp main/080_scripts_generic/080_02_validation/tmp/validation_report.html gh_pages/index.html
           cd gh_pages
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
