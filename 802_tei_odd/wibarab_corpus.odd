@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" 
-    xmlns:tei="http://www.tei-c.org/ns/1.0" 
-    xmlns:s="http://purl.oclc.org/dsdl/schematron">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -14,7 +11,9 @@
                 <pubPlace>Vienna</pubPlace>
                 <date>2026</date>
                 <availability status="restricted">
-                    <p><ref type="license" target="http://creativecommons.org/licenses/by-nc-sa/3.0/"/></p>
+                    <p>
+                        <ref type="license" target="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+                    </p>
                 </availability>
                 <idno type="WIBARABCorpusID">wibarab.corpus.odd</idno>
             </publicationStmt>
@@ -25,22 +24,19 @@
     </teiHeader>
     <text>
         <body>
-            <schemaSpec ident="wibarab_corpus"
-                source="https://raw.githubusercontent.com/acdh-oeaw/vicav-content/master/tools/802_tei_odd/vicav_corpus.expanded.odd" start="TEI teiCorpus">
-                <!-- We copy all modules from VICAV corpus  -->
-                <moduleRef key="header" include="availability catRef change distributor encodingDesc fileDesc funder idno licence listPrefixDef prefixDef profileDesc publicationStmt rendition revisionDesc sourceDesc tagsDecl teiHeader textClass titleStmt"/>
-                <moduleRef key="core" include="address addrLine author bibl biblStruct cit corr date desc editor gap graphic head hi imprint media milestone monogr name note p publisher pubPlace quote ref respStmt resp rs series title"/>
-                <moduleRef key="tei"/>
-                <moduleRef key="tagdocs" include="att code gi"/>
-                <moduleRef key="namesdates" include="forename listPerson orgName person persName place placeName surname"></moduleRef>
-                <moduleRef key="textstructure" include="body div TEI text"/>
-                <moduleRef key="corpus"/>
-                <moduleRef key="analysis" include="pc span spanGrp w"/>
-                <moduleRef key="linking" include="anchor seg timeline when"/>
-                <moduleRef key="spoken" include="pause recording recordingStmt shift u vocal"></moduleRef>
-                
-                <!-- WIBARAB specific rules -->              
-
+            <schemaSpec ident="wibarab_corpus" source="https://raw.githubusercontent.com/acdh-oeaw/vicav-content/master/tools/802_tei_odd/vicav_corpus.expanded.odd" start="TEI teiCorpus">
+                <!-- We copy all modules from VICAV corpus -->
+                <moduleRef key="header" include="availability catRef keywords change distributor encodingDesc fileDesc funder idno licence listPrefixDef prefixDef profileDesc publicationStmt rendition revisionDesc sourceDesc tagsDecl teiHeader textClass titleStmt" />
+                <moduleRef key="core" include="address addrLine author bibl biblStruct cit corr date desc editor gap graphic head hi imprint media milestone monogr name note p publisher pubPlace quote ref respStmt resp rs series title term" />
+                <moduleRef key="tei" />
+                <moduleRef key="tagdocs" include="att code gi" />
+                <moduleRef key="namesdates" include="forename listPerson orgName person persName place placeName surname" />
+                <moduleRef key="textstructure" include="body div TEI text" />
+                <moduleRef key="corpus" />
+                <moduleRef key="analysis" include="pc span spanGrp w" />
+                <moduleRef key="linking" include="anchor seg timeline when" />
+                <moduleRef key="spoken" include="pause recording recordingStmt shift u vocal" />
+                <!-- WIBARAB specific rules -->
                 <elementSpec ident="publicationStmt" module="header" mode="change">
                     <constraintSpec ident="publStmtIdnoType" scheme="schematron">
                         <desc>Restricts idno type within publicationStmt</desc>
@@ -50,7 +46,7 @@
                             </s:rule>
                         </constraint>
                     </constraintSpec>
-                </elementSpec>                
+                </elementSpec>
             </schemaSpec>
         </body>
     </text>
