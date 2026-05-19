@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs tei" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:_="https://wibarab.acdh.oeaw.ac.at" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs tei _" version="2.0">
     <xsl:output method="xml" indent="yes" />
     <!-- This stylesheet merges the metadata from the Corpus document and the 
         TEI-represenation of the ELAN transcriptions. 
@@ -9,12 +9,29 @@
         Author: Daniel Schopper
         Created: 2022-03-12 -->
     <xsl:param name="pathToCorpusDoc" />
+    <xsl:function name="_:ensureNCName" as="xs:string">
+        <xsl:param name="value" as="xs:string?" />
+        <xsl:param name="prefix" as="xs:string" />
+        <xsl:variable name="v" select="normalize-space($value)" />
+        <xsl:choose>
+            <xsl:when test="$v = ''">
+                <xsl:value-of select="concat($prefix, 'missing')" />
+            </xsl:when>
+            <xsl:when test="matches($v, '^[A-Za-z_]')">
+                <xsl:value-of select="$v" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="concat($prefix, $v)" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
     <xsl:variable name="input" select="." />
     <xsl:variable name="corpusDoc" select="doc($pathToCorpusDoc)" as="document-node()" />
     <xsl:variable name="TEIcandidates" select="$corpusDoc/tei:teiCorpus/tei:TEI[@xml:id]" as="element(tei:TEI)*" />
     <xsl:variable name="pathSegs" select="tokenize(base-uri($input),'/')" />
-    <xsl:variable name="recordingIDfromFilename" select="substring-before(substring-after($pathSegs[starts-with(.,'ELAN_')],'ELAN_'),'.xml')" />
-    <xsl:variable name="recordingTEI" select="$TEIcandidates[@xml:id = $recordingIDfromFilename]" as="element(tei:TEI)*" />
+    <xsl:variable name="recordingIDfromFilename_raw" select="substring-before(substring-after($pathSegs[starts-with(.,'ELAN_')],'ELAN_'),'.xml')" />
+    <xsl:variable name="recordingIDfromFilename" select="_:ensureNCName($recordingIDfromFilename_raw, 'T')" as="xs:string" />
+    <xsl:variable name="recordingTEI" select="$TEIcandidates[@xml:id = ($recordingIDfromFilename_raw, $recordingIDfromFilename)]" as="element(tei:TEI)*" />
     <xsl:variable name="recordingID" select="string(($recordingTEI/@xml:id)[1])" as="xs:string" />
     <xsl:variable name="teiHeaderFromCorpus" select="$recordingTEI[1]/tei:teiHeader" as="element(tei:teiHeader)?" />
     <xsl:template match="/">
@@ -65,7 +82,8 @@
     </xsl:copy>
 </xsl:template>
 <xsl:template match="tei:annotationBlock">
-    <div xml:id="{concat($recordingID, '_', @xml:id)}">
+    <xsl:variable name="annotationId" select="_:ensureNCName(concat($recordingID, '_', @xml:id), 'd')" as="xs:string" />
+    <div xml:id="{$annotationId}">
         <xsl:apply-templates select="node()" />
     </div>
 </xsl:template>
@@ -81,7 +99,7 @@
     </xsl:variable>
     <!-- remove _Transcription-txt suffix from tier names and add corpus: prefix to make it a resolvable URI -->
     <xsl:variable name="who" select="replace(../@who, '_Transcription-txt$', '')" />
-    <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{concat($recordingID,'_',../@xml:id,'_u', $num)}" who="{concat('corpus:', $who)}">
+    <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{_:ensureNCName(concat($recordingID,'_',../@xml:id,'_u', $num), 'u')}" who="{concat('corpus:', $who)}">
         <xsl:apply-templates select="../@* except (../@xml:id, ../@who)" />
         <xsl:apply-templates select="tei:seg" />
     </u>
@@ -90,7 +108,7 @@
     <xsl:apply-templates select="node()" />
 </xsl:template>
 <xsl:template match="tei:span">
-    <span xml:lang="en" target="{concat('#', $recordingID,'_',substring(@target, 2))}">
+    <span xml:lang="en" target="{concat('#', _:ensureNCName(concat($recordingID,'_',substring(@target, 2)), 'd'))}">
         <xsl:apply-templates select="@* except @target | node()" />
     </span>
 </xsl:template>
