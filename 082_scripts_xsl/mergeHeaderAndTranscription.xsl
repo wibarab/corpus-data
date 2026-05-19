@@ -9,6 +9,7 @@
         Author: Daniel Schopper
         Created: 2022-03-12 -->
     <xsl:param name="pathToCorpusDoc" />
+    <xsl:variable name="whoSuffixes" as="xs:string*" select="('_Transcription-txt', '_Transcription', '_Transcription-txt')" />
     <xsl:function name="_:ensureNCName" as="xs:string">
         <xsl:param name="value" as="xs:string?" />
         <xsl:param name="prefix" as="xs:string" />
@@ -22,6 +23,19 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="concat($prefix, $v)" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    <xsl:function name="_:stripWhoSuffix" as="xs:string">
+        <xsl:param name="value" as="xs:string?" />
+        <xsl:variable name="v" select="normalize-space($value)" />
+        <xsl:variable name="matchedSuffix" select="($whoSuffixes[ends-with($v, .)])[1]" as="xs:string?" />
+        <xsl:choose>
+            <xsl:when test="exists($matchedSuffix)">
+                <xsl:value-of select="substring($v, 1, string-length($v) - string-length($matchedSuffix))" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$v" />
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -97,8 +111,8 @@
     <xsl:variable name="num">
         <xsl:number level="any" from="tei:annotationBlock" count="tei:u" format="1" />
     </xsl:variable>
-    <!-- remove _Transcription-txt suffix from tier names and add corpus: prefix to make it a resolvable URI -->
-    <xsl:variable name="who" select="replace(../@who, '_Transcription-txt$', '')" />
+    <!-- Remove configured tier suffixes and add corpus: prefix to make it a resolvable URI. -->
+    <xsl:variable name="who" select="_:stripWhoSuffix(../@who)" />
     <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{_:ensureNCName(concat($recordingID,'_',../@xml:id,'_u', $num), 'u')}" who="{concat('corpus:', $who)}">
         <xsl:apply-templates select="../@* except (../@xml:id, ../@who)" />
         <xsl:apply-templates select="tei:seg" />
