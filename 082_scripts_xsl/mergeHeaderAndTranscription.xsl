@@ -10,6 +10,7 @@
         Created: 2022-03-12 -->
     <xsl:param name="pathToCorpusDoc" />
     <xsl:variable name="whoSuffixes" as="xs:string*" select="('_Transcription-txt', '_Transcription', '_Transcription-txt')" />
+    <xsl:variable name="translationSuffixes" as="xs:string*" select="('_Translation-gls-en', '_EN')" />
     <xsl:function name="_:ensureNCName" as="xs:string">
         <xsl:param name="value" as="xs:string?" />
         <xsl:param name="prefix" as="xs:string" />
@@ -97,8 +98,21 @@
 </xsl:template>
 <xsl:template match="tei:annotationBlock">
     <xsl:variable name="annotationId" select="_:ensureNCName(concat($recordingID, '_', @xml:id), 'd')" as="xs:string" />
+    <xsl:variable name="spanGrps" select="tei:spanGrp" as="element(tei:spanGrp)*" />
+    <xsl:variable name="selectedSpanGrp" as="element(tei:spanGrp)?">
+        <!-- when there are multiple spanGrp elements, select the one with a type ending in a known translation suffix, ignore the rest -->
+        <xsl:choose>
+            <xsl:when test="count($spanGrps) gt 1">
+                <xsl:sequence select="($spanGrps[some $s in $translationSuffixes satisfies ends-with(@type, $s)])[1]" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:sequence select="$spanGrps[1]" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
     <div xml:id="{$annotationId}">
-        <xsl:apply-templates select="node()" />
+        <xsl:apply-templates select="node() except tei:spanGrp" />
+        <xsl:apply-templates select="$selectedSpanGrp" />
     </div>
 </xsl:template>
 <xsl:template match="tei:spanGrp">
