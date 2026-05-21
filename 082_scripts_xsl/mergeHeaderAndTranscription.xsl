@@ -98,7 +98,7 @@
 </xsl:template>
 <xsl:template match="tei:annotationBlock">
     <xsl:variable name="annotationId" select="_:ensureNCName(concat($recordingID, '_', @xml:id), 'd')" as="xs:string" />
-    <xsl:variable name="spanGrps" select="tei:spanGrp" as="element(tei:spanGrp)*" />
+    <xsl:variable name="spanGrps" select="tei:spanGrp[@type != 'token']" as="element(tei:spanGrp)*" />
     <xsl:variable name="selectedSpanGrp" as="element(tei:spanGrp)?">
         <!-- when there are multiple spanGrp elements, select the one with a type ending in a known translation suffix, ignore the rest -->
         <xsl:choose>
