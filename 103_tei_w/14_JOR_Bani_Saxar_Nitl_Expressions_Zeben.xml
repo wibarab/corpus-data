@@ -1,0 +1,2473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-05-26T14:17:39.159765Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben"
+     next=" .xml">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Jordan – Bani Saxar – Niṭl Expressions (Zeben)</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AT">Antonella Torzullo</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AT">Antonella Torzullo</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AT">Antonella Torzullo</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">14_JOR_Bani_Saxar_Nitl_Expressions_Zeben</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="19:22" type="audio">
+                  <date when="2023-09-20"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AT">Antonella Torzullo</persName>
+                  </respStmt>
+                  <p>Recorded during Jordan Fieldwork Campaign Antonella Torzullo 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 14_JOR_Bani_Saxar_Nitl_Expressions_Zeben</head>
+               <person sameAs="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl">
+                  <idno>JOR_Bani Saxar_AAZ_F_1990s_Nitl</idno>
+               </person>
+               <person sameAs="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl">
+                  <idno>JOR_Bani Saxar_IAZ_F_1990s_Nitl</idno>
+               </person>
+               <person sameAs="corpus:AT">
+                  <idno>AT</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:JOR_2023_AT">
+            <setting>
+               <placeName sameAs="geo:natl">Natl</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:wibarabDataTypes"
+                    target="corpus:textClass.WIBARAB.WIBARABQuestionnaire"/>
+            <keywords scheme="corpus:wibarabSubjects">
+               <term>Grammar</term>
+               <term>Lexicon</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="612" since="#T0" xml:id="T1"/>
+         <when interval="3151" since="#T0" xml:id="T57"/>
+         <when interval="3384" since="#T0" xml:id="T2"/>
+         <when interval="5846" since="#T0" xml:id="T3"/>
+         <when interval="6105" since="#T0" xml:id="T58"/>
+         <when interval="7461" since="#T0" xml:id="T59"/>
+         <when interval="7718" since="#T0" xml:id="T4"/>
+         <when interval="19076" since="#T0" xml:id="T60"/>
+         <when interval="27461" since="#T0" xml:id="T5"/>
+         <when interval="27473" since="#T0" xml:id="T61"/>
+         <when interval="30999" since="#T0" xml:id="T62"/>
+         <when interval="31076" since="#T0" xml:id="T6"/>
+         <when interval="34923" since="#T0" xml:id="T21"/>
+         <when interval="40113" since="#T0" xml:id="T22"/>
+         <when interval="46264" since="#T0" xml:id="T63"/>
+         <when interval="46273" since="#T0" xml:id="T23"/>
+         <when interval="48851" since="#T0" xml:id="T64"/>
+         <when interval="48972" since="#T0" xml:id="T7"/>
+         <when interval="50055" since="#T0" xml:id="T8"/>
+         <when interval="54837" since="#T0" xml:id="T24"/>
+         <when interval="56978" since="#T0" xml:id="T25"/>
+         <when interval="60416" since="#T0" xml:id="T65"/>
+         <when interval="60802" since="#T0" xml:id="T26"/>
+         <when interval="69230" since="#T0" xml:id="T27"/>
+         <when interval="76091" since="#T0" xml:id="T9"/>
+         <when interval="76307" since="#T0" xml:id="T28"/>
+         <when interval="76720" since="#T0" xml:id="T10"/>
+         <when interval="76832" since="#T0" xml:id="T29"/>
+         <when interval="81582" since="#T0" xml:id="T66"/>
+         <when interval="82250" since="#T0" xml:id="T30"/>
+         <when interval="93168" since="#T0" xml:id="T67"/>
+         <when interval="93200" since="#T0" xml:id="T68"/>
+         <when interval="97047" since="#T0" xml:id="T69"/>
+         <when interval="97248" since="#T0" xml:id="T11"/>
+         <when interval="101225" since="#T0" xml:id="T12"/>
+         <when interval="110019" since="#T0" xml:id="T70"/>
+         <when interval="111209" since="#T0" xml:id="T71"/>
+         <when interval="116933" since="#T0" xml:id="T13"/>
+         <when interval="116967" since="#T0" xml:id="T72"/>
+         <when interval="119197" since="#T0" xml:id="T14"/>
+         <when interval="121041" since="#T0" xml:id="T15"/>
+         <when interval="121978" since="#T0" xml:id="T73"/>
+         <when interval="121998" since="#T0" xml:id="T74"/>
+         <when interval="124018" since="#T0" xml:id="T16"/>
+         <when interval="145643" since="#T0" xml:id="T75"/>
+         <when interval="154984" since="#T0" xml:id="T76"/>
+         <when interval="167272" since="#T0" xml:id="T77"/>
+         <when interval="168980" since="#T0" xml:id="T78"/>
+         <when interval="175006" since="#T0" xml:id="T79"/>
+         <when interval="177288" since="#T0" xml:id="T80"/>
+         <when interval="180054" since="#T0" xml:id="T81"/>
+         <when interval="185703" since="#T0" xml:id="T31"/>
+         <when interval="189301" since="#T0" xml:id="T32"/>
+         <when interval="189367" since="#T0" xml:id="T33"/>
+         <when interval="192022" since="#T0" xml:id="T17"/>
+         <when interval="193152" since="#T0" xml:id="T18"/>
+         <when interval="197008" since="#T0" xml:id="T34"/>
+         <when interval="197053" since="#T0" xml:id="T35"/>
+         <when interval="213251" since="#T0" xml:id="T36"/>
+         <when interval="216552" since="#T0" xml:id="T19"/>
+         <when interval="217542" since="#T0" xml:id="T20"/>
+         <when interval="222696" since="#T0" xml:id="T37"/>
+         <when interval="230939" since="#T0" xml:id="T38"/>
+         <when interval="230960" since="#T0" xml:id="T39"/>
+         <when interval="236905" since="#T0" xml:id="T82"/>
+         <when interval="237276" since="#T0" xml:id="T40"/>
+         <when interval="238199" since="#T0" xml:id="T41"/>
+         <when interval="246308" since="#T0" xml:id="T42"/>
+         <when interval="246346" since="#T0" xml:id="T43"/>
+         <when interval="252039" since="#T0" xml:id="T44"/>
+         <when interval="252067" since="#T0" xml:id="T45"/>
+         <when interval="272825" since="#T0" xml:id="T46"/>
+         <when interval="272868" since="#T0" xml:id="T47"/>
+         <when interval="278119" since="#T0" xml:id="T48"/>
+         <when interval="278279" since="#T0" xml:id="T49"/>
+         <when interval="284618" since="#T0" xml:id="T50"/>
+         <when interval="284770" since="#T0" xml:id="T51"/>
+         <when interval="292853" since="#T0" xml:id="T52"/>
+         <when interval="292930" since="#T0" xml:id="T53"/>
+         <when interval="295545" since="#T0" xml:id="T54"/>
+         <when interval="296153" since="#T0" xml:id="T55"/>
+         <when interval="296923" since="#T0" xml:id="T56"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T56</note>
+            </head>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a1_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav">Law</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000002"
+                     xml:lang="ar-acm-x-shawi-vicav">samaḥti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav">kamān</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav">marra</w>
+                  <pc xml:id="xTok_000005">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000008"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <pc xml:id="xTok_000009">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a1"
+                        xml:id="a56"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a12_u1"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav">gām</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav">ytaʕazaz</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000012"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav">gām</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav">ataʕazaz</w>
+               </u>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a2_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000015"
+                     xml:lang="ar-acm-x-shawi-vicav">gāmi</w>
+                  <pc xml:id="xTok_000016">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav">ok</w>
+                  <pc xml:id="xTok_000018">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000019"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav">gām</w>
+               </u>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a13_u1"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000021"
+                     xml:lang="ar-acm-x-shawi-vicav">hassa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000022"
+                     xml:lang="ar-acm-x-shawi-vicav">miš</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000023"
+                     xml:lang="ar-acm-x-shawi-vicav">gām</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav">gām</w>
+                  <pc xml:id="xTok_000025">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <pc xml:id="xTok_000027">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav">gām</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav">yitʕazaz</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000030"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">gāmt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">ataʕazaz</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000033"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000034"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārat</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000035"
+                     xml:lang="ar-acm-x-shawi-vicav">keyf</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000036"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000037"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000038"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000040"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000042"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000043"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000046"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000048"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000049"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000050"
+                     xml:lang="ar-acm-x-shawi-vicav">dāyman</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000051"
+                     xml:lang="ar-acm-x-shawi-vicav">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000053"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000056"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+               </u>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a14_u1"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000057"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000061"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000063"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav">kamma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000069"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣaru</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000070"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav">aham</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000073"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ysawwū</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000076"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000077"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣirt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000081"
+                     xml:lang="ar-acm-x-shawi-vicav">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000083"
+                     xml:lang="ar-acm-x-shawi-vicav">mā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000084"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000086"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav">fa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav">aḥna</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000089"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000090"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000091"
+                     xml:lang="ar-acm-x-shawi-vicav">tʕazaz</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000092"
+                     xml:lang="ar-acm-x-shawi-vicav">gāmt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav">tʕazaz</w>
+               </u>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a3">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a3_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000094"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+                  <pc xml:id="xTok_000095">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000096"
+                     xml:lang="ar-acm-x-shawi-vicav">zay</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000097"
+                     xml:lang="ar-acm-x-shawi-vicav">āna</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav">aḥki</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000099"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000101"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <pc xml:id="xTok_000102">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000103"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000105"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <pc xml:id="xTok_000106">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000107"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000108"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000111"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕdēn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a3"
+                        xml:id="a54"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a15_u1"
+                  end="#T21"
+                  start="#T62">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000113"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <pc xml:id="xTok_000114">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000115"
+                     xml:lang="ar-acm-x-shawi-vicav">yṣīru</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000116"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000118"
+                     xml:lang="ar-acm-x-shawi-vicav">hum</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000119"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yǧībū</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000124"
+                     xml:lang="ar-acm-x-shawi-vicav">illi</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000127"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000128"
+                     xml:lang="ar-acm-x-shawi-vicav">iyya</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000129"
+                     xml:lang="ar-acm-x-shawi-vicav">tṣīri</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000130"
+                     xml:lang="ar-acm-x-shawi-vicav">tgūli</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000131"
+                     xml:lang="ar-acm-x-shawi-vicav">xalaṣ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">mā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a15"
+                        xml:id="a60">اه بس يصيروا بدهم يجيبولك اللي انتي ودك اياه تصيري تقولي خلص ما ودي</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a31">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a31_u1"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārat</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000138"
+                     xml:lang="ar-acm-x-shawi-vicav">tʕazaz</w>
+                  <pc xml:id="xTok_000139">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000141"
+                     xml:lang="ar-acm-x-shawi-vicav">šūfi</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000142"
+                     xml:lang="ar-acm-x-shawi-vicav">islām</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000143"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000146"
+                     xml:lang="ar-acm-x-shawi-vicav">yalla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕArīn</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav">xallīn</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000149"
+                     xml:lang="ar-acm-x-shawi-vicav">nrūḥ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000151"
+                     xml:lang="ar-acm-x-shawi-vicav">Antonella</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a31"
+                        xml:id="a67">نقول صارت تعزز.. مثلاً شوفي إسلام تقولي يلا عرين خلينا نروح</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a32">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a32_u1"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav">yalla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav">yalla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000154"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">lah</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav">lāʔ</w>
+                  <pc xml:id="xTok_000159">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000160"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕdēn</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000161"
+                     xml:lang="ar-acm-x-shawi-vicav">lamma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000162"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000163"
+                     xml:lang="ar-acm-x-shawi-vicav">wāfagt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000164"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000165"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000167"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000169"
+                     xml:lang="ar-acm-x-shawi-vicav">xalaṣ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav">mā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000173"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a32"
+                        xml:id="a68">يلا يلا انا اقوله لا بعدين لما أنا وافقت هي تقولي لأ خلص ما ودي</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a16_u1"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000174"
+                     xml:lang="ar-acm-x-shawi-vicav">tṣīr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000175"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">gāmat</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000177"
+                     xml:lang="ar-acm-x-shawi-vicav">tatʕazaz</w>
+               </u>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a4">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a4_u1"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000178"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭayyib</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav">lamma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav">nšūf</w>
+                  <pc join="right" xml:id="xTok_000181">.</pc>
+                  <pc xml:id="xTok_000182">.</pc>
+                  <pc xml:id="xTok_000183">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a4"
+                        xml:id="a55"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a17_u1"
+                  end="#T24"
+                  start="#T8">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000185"
+                     xml:lang="ar-acm-x-shawi-vicav">hilūa</w>
+                  <pc xml:id="xTok_000186">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">taʕaǧb</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000189"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000190"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav">kṯīr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000192"
+                     xml:lang="ar-acm-x-shawi-vicav">hilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000193"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000194"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥda</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav">tgūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000197"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000200"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000203">_</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a17"
+                        xml:id="a62">شغلة حلوة تعجبك، شغلة كثير حلوة او وحدة حلوة تقول يالله ذتسرك (ذكرك) عليه</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a33">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a33_u1"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000205"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000206"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">inn</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000208"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000209"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav">gāʕid</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000211"
+                     xml:lang="ar-acm-x-shawi-vicav">aḏkar</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000212"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a33"
+                        xml:id="a69">يعني انه انا قاعد اذكر الله</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a18_u1"
+                  end="#T65"
+                  start="#T25">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000213"
+                     xml:lang="ar-acm-x-shawi-vicav">zayy</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000214"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000215"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000217">_</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000218"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a18"
+                        xml:id="a63">زي ما شاء الله عليه</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a34">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a34_u1"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav">aḥna</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕinna</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000221"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯālan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000222"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000223"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000227"
+                     xml:lang="ar-acm-x-shawi-vicav">islām</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000228"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯālan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000229"
+                     xml:lang="ar-acm-x-shawi-vicav">nšūf</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000230"
+                     xml:lang="ar-acm-x-shawi-vicav">iši</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000231"
+                     xml:lang="ar-acm-x-shawi-vicav">hīlu</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav">lāzim</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000233"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a34"
+                        xml:id="a70">هسا احنا عنا مثلاً يعني بالإسلام مثلاً نشوف اشي حلو لازم نقول ما شاء الله</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a35">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a35_u1"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000235"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">liʔann</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000237"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000238"
+                     xml:lang="ar-acm-x-shawi-vicav">iḏa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000239"
+                     xml:lang="ar-acm-x-shawi-vicav">mā</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000240"
+                     xml:lang="ar-acm-x-shawi-vicav">gult</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000241"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000242"
+                     xml:lang="ar-acm-x-shawi-vicav">yimkin</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000243"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000245"
+                     xml:lang="ar-acm-x-shawi-vicav">iši</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000246"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000247"
+                     xml:lang="ar-acm-x-shawi-vicav">yixrab</w>
+                  <pc xml:id="xTok_000248">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000249"
+                     xml:lang="ar-acm-x-shawi-vicav">yinḏ̣ar</w>
+                  <pc xml:id="xTok_000250">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000251"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000252"
+                     xml:lang="ar-acm-x-shawi-vicav">yrūḥ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000253"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000254"
+                     xml:lang="ar-acm-x-shawi-vicav">iši</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000255"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000256"
+                     xml:lang="ar-acm-x-shawi-vicav">yinkisir</w>
+                  <pc xml:id="xTok_000257">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000258"
+                     xml:lang="ar-acm-x-shawi-vicav">fahimti</w>
+                  <pc xml:id="xTok_000259">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a35"
+                        xml:id="a71">لانه إذا ما قلت ما شاء الله يمكن الاشي هذا يخرب، ينضر، او يروح او اشي او ينكسر فهمتي</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a5_u1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000260"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a5"
+                        xml:id="a72"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a36">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a36_u1"
+                  end="#T30"
+                  start="#T29">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000261"
+                     xml:lang="ar-acm-x-shawi-vicav">lāzim</w>
+                  <pc xml:id="xTok_000262">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000263"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000264"
+                     xml:lang="ar-acm-x-shawi-vicav">lamma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000265"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000266"
+                     xml:lang="ar-acm-x-shawi-vicav">šuft</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000267"
+                     xml:lang="ar-acm-x-shawi-vicav">iši</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000268"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilu</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000269"
+                     xml:lang="ar-acm-x-shawi-vicav">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000270"
+                     xml:lang="ar-acm-x-shawi-vicav">māšaḷḷa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a36"
+                        xml:id="a89">لازم يعني لما انا شفت اشي حلو اقول ما شاء الله</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a19_u1"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000271"
+                     xml:lang="ar-acm-x-shawi-vicav">fa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000272"
+                     xml:lang="ar-acm-x-shawi-vicav">tgūli</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000273"
+                     xml:lang="ar-acm-x-shawi-vicav">yāḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000274"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000276"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000277"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalī</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000279"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000280"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000281"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏikr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000282"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000283"
+                     xml:lang="ar-acm-x-shawi-vicav">alli</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000284"
+                     xml:lang="ar-acm-x-shawi-vicav">hū</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000285"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+                  <pc xml:id="xTok_000286">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000287"
+                     xml:lang="ar-acm-x-shawi-vicav">yāḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000288"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000290"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000291"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalī</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000293"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <pc xml:id="xTok_000294">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000295"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000296"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000297"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣāliḥ</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000298"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000300"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000301"
+                     xml:lang="ar-acm-x-shawi-vicav">bint</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000302"
+                     xml:lang="ar-acm-x-shawi-vicav">tḥil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000303"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000304"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥibal</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000305"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000307"
+                     xml:lang="ar-acm-x-shawi-vicav">mašnaga</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000308"
+                     xml:lang="ar-acm-x-shawi-vicav">inno</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000309"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000310"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕani</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a19"
+                        xml:id="a78">ف تقول يا الله ذتسرك عليه يعني ذكر الله اللي هو ما شاء الله.. ياالله ذتسرك عليه .. يعني مثلاً صالح عنده بنت تحل عن حبل المشنقة انه حلوة يعني</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a20_u1"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000311"
+                     xml:lang="ar-acm-x-shawi-vicav">yā</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000313"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000315"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000316"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalī</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000318"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a20"
+                        xml:id="a79">يالله ذتسرك عليه</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a6_u1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000319"
+                     xml:lang="ar-acm-x-shawi-vicav">Bint</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000320"
+                     xml:lang="ar-acm-x-shawi-vicav">mazyuna</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a6"
+                        xml:id="a73">بنت مزيونة</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a21">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a21_u1"
+                  end="#T70"
+                  start="#T12">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000321"
+                     xml:lang="ar-acm-x-shawi-vicav">Aywa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000322"
+                     xml:lang="ar-acm-x-shawi-vicav">mazyūna</w>
+                  <pc xml:id="xTok_000323">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000324"
+                     xml:lang="ar-acm-x-shawi-vicav">aḥana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000325"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000326"
+                     xml:lang="ar-acm-x-shawi-vicav">fi</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000327"
+                     xml:lang="ar-acm-x-shawi-vicav">taʕabīr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000328"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯāni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000329"
+                     xml:lang="ar-acm-x-shawi-vicav">tḥil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000330"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000331"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥibal</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000332"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000334"
+                     xml:lang="ar-acm-x-shawi-vicav">mašnaga</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000335"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000336"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000337"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000338"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000339"
+                     xml:lang="ar-acm-x-shawi-vicav">kṯīr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000340"
+                     xml:lang="ar-acm-x-shawi-vicav">fa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000341"
+                     xml:lang="ar-acm-x-shawi-vicav">tḥil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000342"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000343"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥibal</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000344"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000346"
+                     xml:lang="ar-acm-x-shawi-vicav">mašnaga</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a21"
+                        xml:id="a80">ايوا مزيونة احنا نقول في تعبير ثاني تحل عن حبل المشنقة يعني حلوة حلوة حلوة كثير ف تحل عن حبل المشنقة قد مهي حلوة</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a22">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a22_u1"
+                  end="#T72"
+                  start="#T71">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000347"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+                  <pc xml:id="xTok_000348">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000349"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000350"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000351"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalī</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000353"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a22"
+                        xml:id="a81">حلوة نقول يالله ذتسرك عليه يالله ما شاء الله عليتس،ذتسر الله عليه، اه هيك</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a7_u1"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000354"
+                     xml:lang="ar-acm-x-shawi-vicav">zayy</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000355"
+                     xml:lang="ar-acm-x-shawi-vicav">naḥki</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000356"
+                     xml:lang="ar-acm-x-shawi-vicav">inti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000357"
+                     xml:lang="ar-acm-x-shawi-vicav">mazyūna</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a7"
+                        xml:id="a74"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a23">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a23_u1"
+                  end="#T73"
+                  start="#T14">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000358"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000359"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000360"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000361"
+                     xml:lang="ar-acm-x-shawi-vicav">sawwēt</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000362"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <pc xml:id="xTok_000363">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000364"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000365"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000366"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000368"
+                     xml:lang="ar-acm-x-shawi-vicav">ć</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a23"
+                        xml:id="a82">او مثلاً انا سويت شغله ... ذتسر الله عليتش</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a8_u1"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000369"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <pc xml:id="xTok_000370">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000371"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000372"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <pc xml:id="xTok_000373">?</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000374"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000376"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ć</w>
+                  <pc xml:id="xTok_000377">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000378"
+                     xml:lang="ar-acm-x-shawi-vicav">aywa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a8"
+                        xml:id="a75"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a24">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a24_u1"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000379"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000380"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000381"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000383"
+                     xml:lang="ar-acm-x-shawi-vicav">ć</w>
+                  <pc join="right" xml:id="xTok_000384">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000385"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000386"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000387"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000389"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ć</w>
+                  <pc xml:id="xTok_000390">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000391"
+                     xml:lang="ar-acm-x-shawi-vicav">sawwēt</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000392"
+                     xml:lang="ar-acm-x-shawi-vicav">šaġla</w>
+                  <pc xml:id="xTok_000393">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000394"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000395"
+                     xml:lang="ar-acm-x-shawi-vicav">beyt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000396"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilū</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000397"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000398"
+                     xml:lang="ar-acm-x-shawi-vicav">sayyāra</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000399"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilūa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000400"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000401"
+                     xml:lang="ar-acm-x-shawi-vicav">ayy</w>
+                  <pc xml:id="xTok_000402">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000403"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000404"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000405"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000406"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000408"
+                     xml:lang="ar-acm-x-shawi-vicav">iši</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000409"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilu</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000410"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000411"
+                     xml:lang="ar-acm-x-shawi-vicav">inta</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000412"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">widd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000414"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000415"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏikr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000416"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000417"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000419">_</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000420"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <pc xml:id="xTok_000421">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000422"
+                     xml:lang="ar-acm-x-shawi-vicav">mū</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000423"
+                     xml:lang="ar-acm-x-shawi-vicav">šarṭ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000424"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥida</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000425"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000426"
+                     xml:lang="ar-acm-x-shawi-vicav">wāḥid</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000427"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000428"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000429"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000431">_</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000432"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <pc xml:id="xTok_000433">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000434"
+                     xml:lang="ar-acm-x-shawi-vicav">ḏićr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000435"
+                     xml:lang="ar-acm-x-shawi-vicav">aḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000436"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000437"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">hā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000439"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000441"
+                     xml:lang="ar-acm-x-shawi-vicav">sayyāra</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000442"
+                     xml:lang="ar-acm-x-shawi-vicav">zayy</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000443"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000444"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000445"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000446"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000447"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">hā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000449"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000451"
+                     xml:lang="ar-acm-x-shawi-vicav">sayyāra</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000452"
+                     xml:lang="ar-acm-x-shawi-vicav">mašaḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000453"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000454"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">hā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000456"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000458"
+                     xml:lang="ar-acm-x-shawi-vicav">beyt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000459"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilu</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000460"
+                     xml:lang="ar-acm-x-shawi-vicav">zayy</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000461"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a24"
+                        xml:id="a83">ذتسر الله عليتس ، سويت شغلة، او بيت حلو او سيارة حلوة او اي ، شو ما كان الاشي حلو وانت ودك تذكر الله عليه مو شرط وحده او واحد ذتسر الله عليه، ذتسر الله ع هالسيارة زي هيك يعني ما شاء الله ع هالسيارة ما شتء الله ع هالبيت حلو زي هيك</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a25">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a25_u1"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000462"
+                     xml:lang="ar-acm-x-shawi-vicav">mant</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000463"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣari</w>
+                  <pc xml:id="xTok_000464">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000465"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000466"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mu</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000468"
+                     xml:lang="ar-acm-x-shawi-vicav">hū</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000469"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣari</w>
+                  <pc xml:id="xTok_000470">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000471"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000472"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mi</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000474"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000475"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣariyya</w>
+                  <pc xml:id="xTok_000476">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000477"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000478"
+                     xml:lang="ar-acm-x-shawi-vicav">mū</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000479"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕāgla</w>
+                  <pc xml:id="xTok_000480">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000481"
+                     xml:lang="ar-acm-x-shawi-vicav">fi</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000482"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000484"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000485"
+                     xml:lang="ar-acm-x-shawi-vicav">muškila</w>
+                  <pc xml:id="xTok_000486">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000487"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000488"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">inn</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000490"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000491"
+                     xml:lang="ar-acm-x-shawi-vicav">flāna</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000492"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mi</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000494"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000495"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣariyya</w>
+               </u>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a26">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a26_u1"
+                  end="#T79"
+                  start="#T78">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000496"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mi</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000498"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000499"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣariyya</w>
+                  <pc xml:id="xTok_000500">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000501"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000502"
+                     xml:lang="ar-acm-x-shawi-vicav">hibla</w>
+                  <pc xml:id="xTok_000503">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000504"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000505"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000507"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000508"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣariyya</w>
+                  <pc xml:id="xTok_000509">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000510"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000511"
+                     xml:lang="ar-acm-x-shawi-vicav">manta</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000512"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣari</w>
+                  <pc xml:id="xTok_000513">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000514"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000515"
+                     xml:lang="ar-acm-x-shawi-vicav">hū</w>
+                  <pc xml:id="xTok_000516">?</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000517"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000519"
+                     xml:lang="ar-acm-x-shawi-vicav">hū</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000520"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣari</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a26"
+                        xml:id="a85">مهي صريه يعني هبله و الله مهي صريه ، و الله منت(ما انت(لست)) صري، مهو صري</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a27">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a27_u1"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000521"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000522"
+                     xml:lang="ar-acm-x-shawi-vicav">keyf</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000523"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000525"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">lahǧa</w>
+                  <pc xml:id="xTok_000526">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000527"
+                     xml:lang="ar-acm-x-shawi-vicav">keyf</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000528"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000530"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">muṣṭalaḥāt</w>
+                  <pc xml:id="xTok_000531">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a27"
+                        xml:id="a86">بس كيف اللهجة كيف المصطلحات ؟</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a38">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a38_u1"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000532"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyya</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000533"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000534"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000536"
+                     xml:lang="ar-acm-x-shawi-vicav">Mawgar</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a38"
+                        xml:id="a91">هي من الموقر</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a39">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a39_u1"
+                  end="#T17"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000537"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕAbdaḷḷa</w>
+                  <pc xml:id="xTok_000538">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000539"
+                     xml:lang="ar-acm-x-shawi-vicav">taʕarif</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000540"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕAbdaḷḷa</w>
+                  <pc xml:id="xTok_000541">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000542"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕAbdaḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000543"
+                     xml:lang="ar-acm-x-shawi-vicav">alli</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000544"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧīti</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000545"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">maʕa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000547"
+                     xml:lang="ar-acm-x-shawi-vicav">ho</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a39"
+                        xml:id="a92">عبدالله تعرف عبدالله؟.. عبدالله اللي جيتي معه</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a9_u1"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000548"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕakīd</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a9"
+                        xml:id="a76"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a40">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a40_u1"
+                  end="#T34"
+                  start="#T18">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000549"
+                     xml:lang="ar-acm-x-shawi-vicav">Min</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000550"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000552"
+                     xml:lang="ar-acm-x-shawi-vicav">Mwagar</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000553"
+                     xml:lang="ar-acm-x-shawi-vicav">tagrab</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000554"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000556"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕAbdaḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000557"
+                     xml:lang="ar-acm-x-shawi-vicav">hum</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000558"
+                     xml:lang="ar-acm-x-shawi-vicav">yaḥku</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000559"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000561"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000563"
+                     xml:lang="ar-acm-x-shawi-vicav">ič</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a40"
+                        xml:id="a93">من الموقر تقرب لعبدالله هم يحكوا بالاتش</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a41">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a41_u1"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000564"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyya</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000565"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000566"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000568"
+                     xml:lang="ar-acm-x-shawi-vicav">bint</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000569"
+                     xml:lang="ar-acm-x-shawi-vicav">kṯīr</w>
+                  <pc join="right" xml:id="xTok_000570">(</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000571"
+                     xml:lang="ar-acm-x-shawi-vicav">t</w>
+                  <pc join="right" xml:id="xTok_000572">)</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000573"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḏ̣aḥḥ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000575"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000576"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000578"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000579"
+                     xml:lang="ar-acm-x-shawi-vicav">kalimāt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000580"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000581"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧiddat</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000583"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000584"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000586"
+                     xml:lang="ar-acm-x-shawi-vicav">hin</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000587"
+                     xml:lang="ar-acm-x-shawi-vicav">gabīl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000588"
+                     xml:lang="ar-acm-x-shawi-vicav">kānat</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000589"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000591"
+                     xml:lang="ar-acm-x-shawi-vicav">hin</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000592"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000593"
+                     xml:lang="ar-acm-x-shawi-vicav">tiṭlaʕ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000594"
+                     xml:lang="ar-acm-x-shawi-vicav">tgūli</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000595"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <pc xml:id="xTok_000596">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000597"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000599"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000600"
+                     xml:lang="ar-acm-x-shawi-vicav">ēš</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000601"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣a</w>
+                  <pc xml:id="xTok_000602">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000603"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕād</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000604"
+                     xml:lang="ar-acm-x-shawi-vicav">ēš</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000605"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕdēn</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000606"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tfahim</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000608"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000609"
+                     xml:lang="ar-acm-x-shawi-vicav">ēš</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000610"
+                     xml:lang="ar-acm-x-shawi-vicav">šu</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000611"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">maʕana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000613"
+                     xml:lang="ar-acm-x-shawi-vicav">h</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a41"
+                        xml:id="a94">هي هاي البنت كثير تضحّك، عليها كلمات يعني جدتي تقولهن قبل كانت تقولهن هاذي تطلع تقولي هيك، اقوله ايش هذا؟ عاد ايش بعدين تفهمني ايش شو معناه</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a42">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a42_u1"
+                  end="#T19"
+                  start="#T36">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000614"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+                  <pc xml:id="xTok_000615">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000616"
+                     xml:lang="ar-acm-x-shawi-vicav">inno</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000617"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <pc xml:id="xTok_000618">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000619"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000621"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000622"
+                     xml:lang="ar-acm-x-shawi-vicav">inti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000623"
+                     xml:lang="ar-acm-x-shawi-vicav">dagga</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000624"
+                     xml:lang="ar-acm-x-shawi-vicav">gdīma</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a42"
+                        xml:id="a95">اه انه يعني، اقوله انتي دقّة قديمة</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AT"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a10_u1"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000625"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕašān</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000626"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a10"
+                        xml:id="a77"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a43">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a43_u1"
+                  end="#T37"
+                  start="#T20">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000627"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000628"
+                     xml:lang="ar-acm-x-shawi-vicav">inti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000629"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000630"
+                     xml:lang="ar-acm-x-shawi-vicav">gḏima</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000631"
+                     xml:lang="ar-acm-x-shawi-vicav">kṯīr</w>
+                  <pc xml:id="xTok_000632">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000633"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyya</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000634"
+                     xml:lang="ar-acm-x-shawi-vicav">mawlīd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000635"
+                     xml:lang="ar-acm-x-shawi-vicav">gaddīš</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000636"
+                     xml:lang="ar-acm-x-shawi-vicav">Islām</w>
+                  <pc xml:id="xTok_000637">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a43"
+                        xml:id="a96">.. اه انتي قديمة كثير هي مواليد قديش يا اسلام؟</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a44">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a44_u1"
+                  end="#T38"
+                  start="#T37">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000638"
+                     xml:lang="ar-acm-x-shawi-vicav">2001</w>
+                  <pc xml:id="xTok_000639">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000640"
+                     xml:lang="ar-acm-x-shawi-vicav">mawlīd</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000641"
+                     xml:lang="ar-acm-x-shawi-vicav">2001</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000642"
+                     xml:lang="ar-acm-x-shawi-vicav">aṣġar</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000643"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">min</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000645"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <pc xml:id="xTok_000646">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000647"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯaman</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000648"
+                     xml:lang="ar-acm-x-shawi-vicav">snīn</w>
+                  <pc xml:id="xTok_000649">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000650"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000652"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000653"
+                     xml:lang="ar-acm-x-shawi-vicav">inti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000654"
+                     xml:lang="ar-acm-x-shawi-vicav">dagga</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000655"
+                     xml:lang="ar-acm-x-shawi-vicav">gdīma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000656"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000657"
+                     xml:lang="ar-acm-x-shawi-vicav">miṯl</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000658"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">giddat</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000660"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a44"
+                        xml:id="a97">٢٠٠١ مزاليد ٢٠٠١ اصغر مني ب ٨ (ثمن) سنين اقوله انتي دقة قديمة يعني مثل جدتي</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a45">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a45_u1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000661"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000662"
+                     xml:lang="ar-acm-x-shawi-vicav">yā</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000663"
+                     xml:lang="ar-acm-x-shawi-vicav">harām</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000664"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000665"
+                     xml:lang="ar-acm-x-shawi-vicav">hassa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000666"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">umm</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000668"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <pc xml:id="xTok_000669">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000670"
+                     xml:lang="ar-acm-x-shawi-vicav">Islām</w>
+                  <pc join="right" xml:id="xTok_000671">*</pc>
+                  <pc xml:id="xTok_000672">*</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000673"
+                     xml:lang="ar-acm-x-shawi-vicav">ylaʕan</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000674"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">šīṭān</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000676"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a45"
+                        xml:id="a98">بس يا حرام هي هسا امها .. اسلام الله يلعن شيطانك</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a28">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_IAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a28_u1"
+                  end="#T41"
+                  start="#T82">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000677"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">gūlīl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000679"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000680"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000681"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tḥadr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000683"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000684"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000686"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">maʕana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000688"
+                     xml:lang="ar-acm-x-shawi-vicav">h</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a28"
+                        xml:id="a87">قوليلها ما تحدره وش معناها</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a46">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a46_u1"
+                  end="#T42"
+                  start="#T41">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000689"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000690"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tḥadr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000692"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000693"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <pc xml:id="xTok_000694">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000695"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000696"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tḥadr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000698"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000699"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000700"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a46"
+                        xml:id="a99">ما تحدره يعني مثلاً</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a47">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a47_u1"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000701"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000702"
+                     xml:lang="ar-acm-x-shawi-vicav">akun</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000703"
+                     xml:lang="ar-acm-x-shawi-vicav">muxabbiyya</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000704"
+                     xml:lang="ar-acm-x-shawi-vicav">iši</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000705"
+                     xml:lang="ar-acm-x-shawi-vicav">akil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000706"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000707"
+                     xml:lang="ar-acm-x-shawi-vicav">šrub</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000708"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000710"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a47"
+                        xml:id="a100">انا أكون مخبية اشي اكل او شرب إلي</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a48">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a48_u1"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000711"
+                     xml:lang="ar-acm-x-shawi-vicav">iǧa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000712"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥada</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000713"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yāxḏ</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000715"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000716"
+                     xml:lang="ar-acm-x-shawi-vicav">bdūn</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000717"
+                     xml:lang="ar-acm-x-shawi-vicav">mā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000718"
+                     xml:lang="ar-acm-x-shawi-vicav">yaṭlub</w>
+                  <pc xml:id="xTok_000719">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000720"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000722"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">agūl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000724"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ū</w>
+                  <pc xml:id="xTok_000725">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000726"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000727"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tḥadr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000729"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <pc xml:id="xTok_000730">!</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000731"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000732"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕīd</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000733"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">aš</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000735"
+                     xml:lang="ar-acm-x-shawi-vicav">šarr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000736"
+                     xml:lang="ar-acm-x-shawi-vicav">tamūt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000737"
+                     xml:lang="ar-acm-x-shawi-vicav">gabil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000738"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000739"
+                     xml:lang="ar-acm-x-shawi-vicav">inno</w>
+                  <pc xml:id="xTok_000740">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000741"
+                     xml:lang="ar-acm-x-shawi-vicav">hassa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000742"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000743"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tḥadr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000745"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000746"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000747"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000748"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tnazl</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000750"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000751"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000752"
+                     xml:lang="ar-acm-x-shawi-vicav">inno</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000753"
+                     xml:lang="ar-acm-x-shawi-vicav">lamma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000754"
+                     xml:lang="ar-acm-x-shawi-vicav">yrūḥ</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000755"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000757"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000759"
+                     xml:lang="ar-acm-x-shawi-vicav">hammām</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000760"
+                     xml:lang="ar-acm-x-shawi-vicav">fahimti</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000761"
+                     xml:lang="ar-acm-x-shawi-vicav">keyf</w>
+                  <pc xml:id="xTok_000762">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000763"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000764"
+                     xml:lang="ar-acm-x-shawi-vicav">inta</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000765"
+                     xml:lang="ar-acm-x-shawi-vicav">tmūt</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000766"
+                     xml:lang="ar-acm-x-shawi-vicav">gabil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000767"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000768"
+                     xml:lang="ar-acm-x-shawi-vicav">trūḥ</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000769"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000771"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000773"
+                     xml:lang="ar-acm-x-shawi-vicav">hammām</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a48"
+                        xml:id="a101">اجا حدا ياخذه بدون ما يطلب شو اقوله! ما تحدّره .. يعني بعيد الشر تموت قبل لا انه .. هسا ما تحدره يعني ما تنزله يعني انه لما يروح ع الحمام، فهمتي كيف! انه ما تحدره يعني انت تموت قبل لا تروح ع الحمام</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a49">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a49_u1"
+                  end="#T48"
+                  start="#T47">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000774"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000776"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000777"
+                     xml:lang="ar-acm-x-shawi-vicav">lahǧa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000778"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kill</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000780"
+                     xml:lang="ar-acm-x-shawi-vicav">ah</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a49"
+                        xml:id="a102">علينا لهجة..</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a50">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a50_u1"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000781"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000782"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tḥadr</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000784"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <pc xml:id="xTok_000785">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000786"
+                     xml:lang="ar-acm-x-shawi-vicav">ēš</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000787"
+                     xml:lang="ar-acm-x-shawi-vicav">kamān</w>
+                  <pc xml:id="xTok_000788">?</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000789"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000790"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tṣarrf</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000792"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a50"
+                        xml:id="a103">ما تحدره وايش كمان ما تصرّفه</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a51">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a51_u1"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000793"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000794"
+                     xml:lang="ar-acm-x-shawi-vicav">trūḥi</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000795"
+                     xml:lang="ar-acm-x-shawi-vicav">inno</w>
+                  <pc xml:id="xTok_000796">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000797"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000798"
+                     xml:lang="ar-acm-x-shawi-vicav">inti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000799"
+                     xml:lang="ar-acm-x-shawi-vicav">inšaḷḷa</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000800"
+                     xml:lang="ar-acm-x-shawi-vicav">tmūti</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000801"
+                     xml:lang="ar-acm-x-shawi-vicav">gabil</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000802"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000803"
+                     xml:lang="ar-acm-x-shawi-vicav">trūḥ</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000804"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000806"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000808"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">hammām</w>
+                  <pc xml:id="xTok_000809">,</pc>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000810"
+                     xml:lang="ar-acm-x-shawi-vicav">fahimti</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000811"
+                     xml:lang="ar-acm-x-shawi-vicav">keyf</w>
+                  <pc xml:id="xTok_000812">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a51"
+                        xml:id="a104">ما تروح انه.. يعني انت ان شاء الله تموت قبل لا تروح ع الحمام فهمتي كيف؟</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a52">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a52_u1"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000813"
+                     xml:lang="ar-acm-x-shawi-vicav">andāri</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000814"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕan</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000816"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000817">,</pc>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000818"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">aṣub</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000820"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000822"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000823"
+                     xml:lang="ar-acm-x-shawi-vicav">šāy</w>
+                  <pc xml:id="xTok_000824">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a52"
+                        xml:id="a105">انداري عنا، اصبلك شاي</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a53">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:JOR_Bani Saxar_AAZ_F_1990s_Nitl"
+                  xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a53_u1"
+                  end="#T56"
+                  start="#T55">
+                  <w join="right"
+                     xml:id="T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_xTok_000825"
+                     xml:lang="ar-acm-x-shawi-vicav">gahwa</w>
+                  <pc xml:id="xTok_000826">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T14_JOR_Bani_Saxar_Nitl_Expressions_Zeben_a53"
+                        xml:id="a106">قهوة</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
