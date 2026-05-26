@@ -82,6 +82,22 @@
     <xsl:param name="value" as="element(tei:cell)" />
     <xsl:value-of select="replace(lower-case($value),'^(a|the)\s','')" />
 </xsl:function>
+<xsl:function name="_:ensureNCName" as="xs:string">
+    <xsl:param name="value" as="xs:string?" />
+    <xsl:param name="prefix" as="xs:string" />
+    <xsl:variable name="v" select="normalize-space($value)" />
+    <xsl:choose>
+        <xsl:when test="$v = ''">
+            <xsl:value-of select="concat($prefix, 'missing')" />
+        </xsl:when>
+        <xsl:when test="matches($v, '^[A-Za-z_]')">
+            <xsl:value-of select="$v" />
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="concat($prefix, $v)" />
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:function>
 <xsl:function name="_:personReferenceByName" as="element(tei:person)?">
     <xsl:param name="persName" as="xs:string" />
     <xsl:variable name="tei:row" select="($allTeam[tei:cell[$cn('Team')('persName')] = $persName], $allSpeakers[tei:cell[$cn('Speakers')('Speaker')] = $persName])[1]" />
@@ -243,6 +259,7 @@
 </xsl:template>
 <xsl:template match="tei:table[tei:head = 'Recordings']/tei:row[normalize-space(tei:cell[$cn('Recordings')('Rec. person')]) ne '']" priority="0">
     <xsl:variable name="textID" select="tei:cell[$cn('Recordings')('Text')]" />
+    <xsl:variable name="textID_NC" select="_:ensureNCName($textID, 'T')" />
     <xsl:variable name="title" select="tei:cell[$cn('Recordings')('Title')]" />
     <!-- find all rows with the matching text ID and take "the other" cell of the row, which is the speaker ID -->
     <xsl:variable name="speakerIDs" select="$t_Speakers_in_Recordings//tei:row[tei:cell = $textID]/tei:cell[. != $textID]" />
@@ -266,7 +283,7 @@
     <xsl:variable name="campaignName" select="tei:cell[$cn('Recordings')('Campaign')]" />
     <xsl:variable name="campaign" select="$t_Campaigns//tei:row[tei:cell[$cn('Campaigns')('Campaign')]=$campaignName]" />
     <xsl:variable name="campaignID" select="$campaign/tei:cell[$cn('Campaigns')('ID')]" />
-    <TEI xml:id="{$textID}">
+    <TEI xml:id="{$textID_NC}">
         <xsl:if test="tei:cell[$cn('Recordings')('Next')]!=''">
             <xsl:attribute name="next">
                 <xsl:value-of select="concat(tei:cell[$cn('Recordings')('Next')],'.xml')" />
