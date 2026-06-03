@@ -9,7 +9,7 @@
         Author: Daniel Schopper
         Created: 2022-03-12 -->
     <xsl:param name="pathToCorpusDoc" />
-    <xsl:variable name="whoSuffixes" as="xs:string*" select="('_Transcription-txt', '_Transcription', '_Transcription-txt')" />
+    <xsl:variable name="whoSuffixes" as="xs:string*" select="('_Transcription-txt', '_Transcription', '_Transcriptions-txt')" />
     <xsl:variable name="translationSuffixes" as="xs:string*" select="('_Translation-gls-en', '_EN')" />
     <xsl:function name="_:ensureNCName" as="xs:string">
         <xsl:param name="value" as="xs:string?" />
@@ -125,11 +125,19 @@
     <xsl:variable name="num">
         <xsl:number level="any" from="tei:annotationBlock" count="tei:u" format="1" />
     </xsl:variable>
-    <!-- Remove configured tier suffixes and add corpus: prefix to make it a resolvable URI. -->
     <xsl:variable name="who" select="_:stripWhoSuffix(../@who)" />
+    <xsl:variable name="consent" select="$corpusDoc//tei:person[@xml:id = $who]/tei:state[@type='consent']/tei:label" />
     <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{_:ensureNCName(concat($recordingID,'_',../@xml:id,'_u', $num), 'u')}" who="{concat('corpus:', $who)}">
         <xsl:apply-templates select="../@* except (../@xml:id, ../@who)" />
-        <xsl:apply-templates select="tei:seg" />
+        <xsl:choose>
+            <!-- hide utterances from persons with no consent form -->
+            <xsl:when test="lower-case(string($consent)) = 'no'">
+                <gap reason="unconsented" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="tei:seg" />
+            </xsl:otherwise>
+        </xsl:choose>
     </u>
 </xsl:template>
 <xsl:template match="tei:seg">
