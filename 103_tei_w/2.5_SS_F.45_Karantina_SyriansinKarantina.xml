@@ -1,0 +1,2290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T08:36:08.674119Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – SS (F.45) – Syrians in Karantina (2.5)</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">2.5_SS_F.45_Karantina_SyriansinKarantina</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="02:59" type="audio">
+                  <date when="2023-05-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 2.5_SS_F.45_Karantina_SyriansinKarantina</head>
+               <person sameAs="corpus:AID">
+                  <idno>AID</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_AS_F.56_Speaker8">
+                  <idno>LEB_KAR_2023_AS_F.56_Speaker8</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_IS_F.55_Speaker9">
+                  <idno>LEB_KAR_2023_IS_F.55_Speaker9</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_SS_F.45_Speaker10">
+                  <idno>LEB_KAR_2023_SS_F.45_Speaker10</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_CB_F.18_Speaker11">
+                  <idno>LEB_KAR_2023_CB_F.18_Speaker11</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2023_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.FreeSpeech"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Migration and diaspora</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="3590" since="#T0" xml:id="T94"/>
+         <when interval="6114" since="#T0" xml:id="T50"/>
+         <when interval="7409" since="#T0" xml:id="T95"/>
+         <when interval="7681" since="#T0" xml:id="T96"/>
+         <when interval="7791" since="#T0" xml:id="T51"/>
+         <when interval="8031" since="#T0" xml:id="T1"/>
+         <when interval="9111" since="#T0" xml:id="T2"/>
+         <when interval="9294" since="#T0" xml:id="T3"/>
+         <when interval="10502" since="#T0" xml:id="T4"/>
+         <when interval="10892" since="#T0" xml:id="T97"/>
+         <when interval="11171" since="#T0" xml:id="T52"/>
+         <when interval="11705" since="#T0" xml:id="T98"/>
+         <when interval="12523" since="#T0" xml:id="T99"/>
+         <when interval="13360" since="#T0" xml:id="T53"/>
+         <when interval="17329" since="#T0" xml:id="T5"/>
+         <when interval="18509" since="#T0" xml:id="T100"/>
+         <when interval="22238" since="#T0" xml:id="T62"/>
+         <when interval="22890" since="#T0" xml:id="T6"/>
+         <when interval="23382" since="#T0" xml:id="T7"/>
+         <when interval="24814" since="#T0" xml:id="T63"/>
+         <when interval="26335" since="#T0" xml:id="T64"/>
+         <when interval="28561" since="#T0" xml:id="T65"/>
+         <when interval="28734" since="#T0" xml:id="T66"/>
+         <when interval="29868" since="#T0" xml:id="T8"/>
+         <when interval="29946" since="#T0" xml:id="T38"/>
+         <when interval="30301" since="#T0" xml:id="T9"/>
+         <when interval="30545" since="#T0" xml:id="T67"/>
+         <when interval="32809" since="#T0" xml:id="T10"/>
+         <when interval="33603" since="#T0" xml:id="T11"/>
+         <when interval="33687" since="#T0" xml:id="T68"/>
+         <when interval="34194" since="#T0" xml:id="T39"/>
+         <when interval="35437" since="#T0" xml:id="T40"/>
+         <when interval="36688" since="#T0" xml:id="T12"/>
+         <when interval="36729" since="#T0" xml:id="T69"/>
+         <when interval="36910" since="#T0" xml:id="T54"/>
+         <when interval="38216" since="#T0" xml:id="T41"/>
+         <when interval="39386" since="#T0" xml:id="T42"/>
+         <when interval="39408" since="#T0" xml:id="T101"/>
+         <when interval="39656" since="#T0" xml:id="T55"/>
+         <when interval="41102" since="#T0" xml:id="T13"/>
+         <when interval="42619" since="#T0" xml:id="T102"/>
+         <when interval="42705" since="#T0" xml:id="T14"/>
+         <when interval="42869" since="#T0" xml:id="T15"/>
+         <when interval="43820" since="#T0" xml:id="T43"/>
+         <when interval="51869" since="#T0" xml:id="T16"/>
+         <when interval="53643" since="#T0" xml:id="T17"/>
+         <when interval="54058" since="#T0" xml:id="T18"/>
+         <when interval="55267" since="#T0" xml:id="T19"/>
+         <when interval="56182" since="#T0" xml:id="T20"/>
+         <when interval="59224" since="#T0" xml:id="T21"/>
+         <when interval="59475" since="#T0" xml:id="T70"/>
+         <when interval="60249" since="#T0" xml:id="T71"/>
+         <when interval="60947" since="#T0" xml:id="T72"/>
+         <when interval="61918" since="#T0" xml:id="T103"/>
+         <when interval="62482" since="#T0" xml:id="T56"/>
+         <when interval="62979" since="#T0" xml:id="T73"/>
+         <when interval="65295" since="#T0" xml:id="T104"/>
+         <when interval="66895" since="#T0" xml:id="T22"/>
+         <when interval="67012" since="#T0" xml:id="T57"/>
+         <when interval="68371" since="#T0" xml:id="T74"/>
+         <when interval="69892" since="#T0" xml:id="T23"/>
+         <when interval="72363" since="#T0" xml:id="T75"/>
+         <when interval="72536" since="#T0" xml:id="T76"/>
+         <when interval="75348" since="#T0" xml:id="T77"/>
+         <when interval="75464" since="#T0" xml:id="T78"/>
+         <when interval="80269" since="#T0" xml:id="T79"/>
+         <when interval="80364" since="#T0" xml:id="T80"/>
+         <when interval="81470" since="#T0" xml:id="T24"/>
+         <when interval="83062" since="#T0" xml:id="T81"/>
+         <when interval="85360" since="#T0" xml:id="T25"/>
+         <when interval="88137" since="#T0" xml:id="T82"/>
+         <when interval="88367" since="#T0" xml:id="T83"/>
+         <when interval="91737" since="#T0" xml:id="T84"/>
+         <when interval="99448" since="#T0" xml:id="T85"/>
+         <when interval="99528" since="#T0" xml:id="T86"/>
+         <when interval="103599" since="#T0" xml:id="T87"/>
+         <when interval="103654" since="#T0" xml:id="T88"/>
+         <when interval="104295" since="#T0" xml:id="T26"/>
+         <when interval="105295" since="#T0" xml:id="T89"/>
+         <when interval="107442" since="#T0" xml:id="T90"/>
+         <when interval="107901" since="#T0" xml:id="T44"/>
+         <when interval="108540" since="#T0" xml:id="T27"/>
+         <when interval="111143" since="#T0" xml:id="T91"/>
+         <when interval="113409" since="#T0" xml:id="T105"/>
+         <when interval="114196" since="#T0" xml:id="T45"/>
+         <when interval="117901" since="#T0" xml:id="T106"/>
+         <when interval="119657" since="#T0" xml:id="T28"/>
+         <when interval="121295" since="#T0" xml:id="T107"/>
+         <when interval="122199" since="#T0" xml:id="T92"/>
+         <when interval="123284" since="#T0" xml:id="T29"/>
+         <when interval="124655" since="#T0" xml:id="T108"/>
+         <when interval="126408" since="#T0" xml:id="T93"/>
+         <when interval="128852" since="#T0" xml:id="T109"/>
+         <when interval="128871" since="#T0" xml:id="T110"/>
+         <when interval="133469" since="#T0" xml:id="T111"/>
+         <when interval="133752" since="#T0" xml:id="T112"/>
+         <when interval="135377" since="#T0" xml:id="T30"/>
+         <when interval="139540" since="#T0" xml:id="T31"/>
+         <when interval="141681" since="#T0" xml:id="T32"/>
+         <when interval="144962" since="#T0" xml:id="T58"/>
+         <when interval="144983" since="#T0" xml:id="T33"/>
+         <when interval="145093" since="#T0" xml:id="T34"/>
+         <when interval="145819" since="#T0" xml:id="T46"/>
+         <when interval="145965" since="#T0" xml:id="T59"/>
+         <when interval="146131" since="#T0" xml:id="T35"/>
+         <when interval="146836" since="#T0" xml:id="T47"/>
+         <when interval="147011" since="#T0" xml:id="T60"/>
+         <when interval="147293" since="#T0" xml:id="T48"/>
+         <when interval="147398" since="#T0" xml:id="T61"/>
+         <when interval="148957" since="#T0" xml:id="T36"/>
+         <when interval="149286" since="#T0" xml:id="T49"/>
+         <when interval="156491" since="#T0" xml:id="T37"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T37</note>
+            </head>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a1_u1"
+                  end="#T95"
+                  start="#T94">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyīn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕāyšīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000007"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">lubnān</w>
+                  <pc xml:id="xTok_000008">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav">lubnāniyyi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕāyšīn</w>
+                  <pc xml:id="xTok_000012">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a29">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a29_u1"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav">yfillu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kill</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000019"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a2_u1"
+                  end="#T97"
+                  start="#T96">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000021"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000022"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000024"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">yfillu</w>
+                  <pc xml:id="xTok_000025">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔablānīn</w>
+                  <pc xml:id="xTok_000028">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000030"
+                     xml:lang="ar-acm-x-shawi-vicav">maḅsūṭīn</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a3">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a3_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000033"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000035"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">yfillu</w>
+                  <pc xml:id="xTok_000036">!</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a5_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000037"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav">taʕrfi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000040"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥada</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000041"
+                     xml:lang="ar-acm-x-shawi-vicav">fall</w>
+                  <pc xml:id="xTok_000042">?</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a8_u1"
+                  end="#T98"
+                  start="#T97">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000043"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav">yfillu</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a30">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a30_u1"
+                  end="#T53"
+                  start="#T52">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000048"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <pc xml:id="xTok_000049">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000050"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000051"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000053"
+                     xml:lang="ar-acm-x-shawi-vicav">yfillu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000056"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">libnāniyyi</w>
+                  <pc xml:id="xTok_000057">,</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000062"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔūl</w>
+                  <pc xml:id="xTok_000063">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a9_u1"
+                  end="#T100"
+                  start="#T99">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000066"
+                     xml:lang="ar-acm-x-shawi-vicav">libnāniyyi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000070"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tiftaḥī</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000074"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000076"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav">yfillu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav">harībe</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav">kaān</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000081"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000084"
+                     xml:lang="ar-acm-x-shawi-vicav">ymūtu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000085"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000089"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">baḥar</w>
+                  <pc xml:id="xTok_000090">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a6_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000091"
+                     xml:lang="ar-acm-x-shawi-vicav">mbǟriḥ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000092"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔana</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000095"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iyyǟ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000097"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav">kinna</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000099"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕind</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000100"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔixt</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000102"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000103"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔāʕdīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000104"
+                     xml:lang="ar-acm-x-shawi-vicav">taḥat</w>
+                  <pc xml:id="xTok_000105">.</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000106"
+                     xml:lang="ar-acm-x-shawi-vicav">kīf</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000107"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000109"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyyīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔižu</w>
+                  <pc xml:id="xTok_000111">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000113"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <pc join="right" xml:id="xTok_000114">.</pc>
+                  <pc xml:id="xTok_000115">.</pc>
+                  <pc xml:id="xTok_000116">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a11">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a11_u1"
+                  end="#T63"
+                  start="#T62">
+                  <pc join="right" xml:id="xTok_000117">"</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000118"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">man</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000120"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav">rāyḥīn</w>
+                  <pc xml:id="xTok_000122">,</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥa</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav">nḍall</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <pc xml:id="xTok_000127">"</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a7_u1"
+                  end="#T8"
+                  start="#T7">
+                  <pc xml:id="xTok_000128">"</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000129"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">man</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000131"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">rāyḥīn</w>
+                  <pc xml:id="xTok_000133">,</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥa</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">nḍall</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <pc join="right" xml:id="xTok_000138">"</pc>
+                  <pc xml:id="xTok_000139">.</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">maʕ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000142"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000143"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kill</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc join="right" xml:id="xTok_000146">.</pc>
+                  <pc xml:id="xTok_000147">.</pc>
+                  <pc xml:id="xTok_000148">.</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000149"
+                     xml:lang="ar-acm-x-shawi-vicav">nʔahart</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔana</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000151"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000154"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">balad</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000156"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000160"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000162"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ətʔūlu</w>
+                  <pc xml:id="xTok_000163">?</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a12_u1"
+                  end="#T65"
+                  start="#T64">
+                  <pc join="right" xml:id="xTok_000164">"</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000165"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">man</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000167"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav">rāyḥīn</w>
+                  <pc xml:id="xTok_000169">,</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">samaḥū</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000172"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000174"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000175">"</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a13_u1"
+                  end="#T67"
+                  start="#T66">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000177"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔāʕdīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000178"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ġaṣb</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav">an</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕan</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000183"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000184">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_CB_F.18_Speaker11"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a14_u1"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000185"
+                     xml:lang="ar-acm-x-shawi-vicav">ktīr</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000186"
+                     xml:lang="ar-acm-x-shawi-vicav">mustafizzīn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000188"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000190"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ətḍall</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000192"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000193"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">rīḥt</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭālʕa</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a15_u1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000197"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav">ktīr</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000199"
+                     xml:lang="ar-acm-x-shawi-vicav">mustafizzīn</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a16_u1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000200"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav">mižwiyīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000202"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">byūt</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000205"
+                     xml:lang="ar-acm-x-shawi-vicav">mižwiyye</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000206"
+                     xml:lang="ar-acm-x-shawi-vicav">miʔirfīn</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a31">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a31_u1"
+                  end="#T69"
+                  start="#T68">
+                  <pc join="right" xml:id="xTok_000207">"</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000208"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000209"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔāʕdīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000212"
+                     xml:lang="ar-acm-x-shawi-vicav">lubnēn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000213"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000214"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">man</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000216"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000217"
+                     xml:lang="ar-acm-x-shawi-vicav">rāyḥīn</w>
+                  <pc xml:id="xTok_000218">"</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_CB_F.18_Speaker11"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a17_u1"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000222"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000224"
+                     xml:lang="ar-acm-x-shawi-vicav">yižu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yinaḍḍfū</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000227"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000229"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000230"
+                     xml:lang="ar-acm-x-shawi-vicav">hōne</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000231"
+                     xml:lang="ar-acm-x-shawi-vicav">taḥat</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">suklīn</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a19_u1"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000235"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000236"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔižu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000237"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000238"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000240"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000242"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaḥdēs</w>
+                  <pc xml:id="xTok_000243">?</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_CB_F.18_Speaker11"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a18_u1"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000244"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000245"
+                     xml:lang="ar-acm-x-shawi-vicav">hinni</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000246"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000248"
+                     xml:lang="ar-acm-x-shawi-vicav">ywa</w>
+                  <pc join="right" xml:id="xTok_000249">.</pc>
+                  <pc xml:id="xTok_000250">.</pc>
+                  <pc xml:id="xTok_000251">.</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000252"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000254"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000256"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000257"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000259"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yḍall</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000261"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <pc join="right" xml:id="xTok_000262">.</pc>
+                  <pc xml:id="xTok_000263">.</pc>
+                  <pc xml:id="xTok_000264">.</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000265"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000267"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000269"
+                     xml:lang="ar-acm-x-shawi-vicav">šēriʕ</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a24">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a24_u1"
+                  end="#T102"
+                  start="#T101">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000270"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000271"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabl</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000272"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000274"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaḥdǟs</w>
+                  <pc xml:id="xTok_000275">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a20_u1"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000276"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000277"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabl</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000278"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000280"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaḥdǟs</w>
+                  <pc xml:id="xTok_000281">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a21">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a21_u1"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000282"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000283"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000285"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">infiǧār</w>
+                  <pc xml:id="xTok_000286">.</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000287"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000288"
+                     xml:lang="ar-acm-x-shawi-vicav">infižār</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000289"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000291"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">pōr</w>
+                  <pc xml:id="xTok_000292">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000293"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔam</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000294"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣāru</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000295"
+                     xml:lang="ar-acm-x-shawi-vicav">yibʕatu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000296"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">warā</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000298"
+                     xml:lang="ar-acm-x-shawi-vicav">hun</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000299"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000300"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyya</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000301"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000303"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">yižu</w>
+                  <pc xml:id="xTok_000304">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000305"
+                     xml:lang="ar-acm-x-shawi-vicav">liʔan</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000306"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔižu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000307"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ž</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000309"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">žamaʕiyyāt</w>
+                  <pc xml:id="xTok_000310">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000311"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">walla</w>
+                  <pc xml:id="xTok_000313">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a22">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a22_u1"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000314"
+                     xml:lang="ar-acm-x-shawi-vicav">ktir</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000315"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕiyal</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000316"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔižit</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000317"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000318"
+                     xml:lang="ar-acm-x-shawi-vicav">wara</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000319"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000321"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">infižār</w>
+                  <pc xml:id="xTok_000322">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a23">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a23_u1"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000323"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000324"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyya</w>
+                  <pc xml:id="xTok_000325">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a25">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a25_u1"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000326"
+                     xml:lang="ar-acm-x-shawi-vicav">kill</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000327"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥde</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000328"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000330"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000331"
+                     xml:lang="ar-acm-x-shawi-vicav">walad</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000332"
+                     xml:lang="ar-acm-x-shawi-vicav">marīḍ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000333"
+                     xml:lang="ar-acm-x-shawi-vicav">muʕāḳ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000334"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ətžīb</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000336"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000337"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000338"
+                     xml:lang="ar-acm-x-shawi-vicav">təʔḅaḍ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000339"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000341">_</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000342"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <pc xml:id="xTok_000343">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a27">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a27_u1"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000344"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a28">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a28_u1"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000345"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕimlu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000346"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000348"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕamālä</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a26">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a26_u1"
+                  end="#T104"
+                  start="#T103">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000349"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">lēk</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000351"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000352"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000354"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iž</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000356"
+                     xml:lang="ar-acm-x-shawi-vicav">žamaʕiyyēt</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000357"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000359"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔažānib</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a34">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a34_u1"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000360"
+                     xml:lang="ar-acm-x-shawi-vicav">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000361"
+                     xml:lang="ar-acm-x-shawi-vicav">NGOs</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000362"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000363"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000365"
+                     xml:lang="ar-acm-x-shawi-vicav">ykūnu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000366"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000368"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000370"
+                     xml:lang="ar-acm-x-shawi-vicav">ysāʕdu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000371"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000372"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔahl</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000373"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000375"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">karantīna</w>
+                  <pc xml:id="xTok_000376">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a32">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a32_u1"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000377"
+                     xml:lang="ar-acm-x-shawi-vicav">hinni</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000378"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000380"
+                     xml:lang="ar-acm-x-shawi-vicav">ybʕatu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000381"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">warā</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000383"
+                     xml:lang="ar-acm-x-shawi-vicav">hun</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000384"
+                     xml:lang="ar-acm-x-shawi-vicav">ēh</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a35">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a35_u1"
+                  end="#T75"
+                  start="#T74">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000385"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">lēk</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000387"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000388"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000389"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000391"
+                     xml:lang="ar-acm-x-shawi-vicav">yṣīru</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000392"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000394"
+                     xml:lang="ar-acm-x-shawi-vicav">yibku</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000395"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000397"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ž</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000399"
+                     xml:lang="ar-acm-x-shawi-vicav">žamaʕiyyēt</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000400"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000401"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a36">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a36_u1"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000402"
+                     xml:lang="ar-acm-x-shawi-vicav">hadīk</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000403"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000405"
+                     xml:lang="ar-acm-x-shawi-vicav">marra</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000406"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000407"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000408"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000410"
+                     xml:lang="ar-acm-x-shawi-vicav">yṣawwru</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000411"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000413"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000415"
+                     xml:lang="ar-acm-x-shawi-vicav">malʕab</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a37">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a37_u1"
+                  end="#T79"
+                  start="#T78">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000416"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāṭṭīn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000417"
+                     xml:lang="ar-acm-x-shawi-vicav">kāmira</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000418"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">lāʔū</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000420"
+                     xml:lang="ar-acm-x-shawi-vicav">hun</w>
+                  <pc join="right" xml:id="xTok_000421">.</pc>
+                  <pc xml:id="xTok_000422">.</pc>
+                  <pc xml:id="xTok_000423">.</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000424"
+                     xml:lang="ar-acm-x-shawi-vicav">lē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000425"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔintu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000426"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000428"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">t</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000430"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḍall</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000432"
+                     xml:lang="ar-acm-x-shawi-vicav">ku</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000433"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔēʕdīn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000434"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000436"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000438"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">malʕab</w>
+                  <pc xml:id="xTok_000439">?</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a38">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a38_u1"
+                  end="#T81"
+                  start="#T80">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000440"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyyīn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000441"
+                     xml:lang="ar-acm-x-shawi-vicav">niswēn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000442"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000443"
+                     xml:lang="ar-acm-x-shawi-vicav">wlēd</w>
+                  <pc xml:id="xTok_000444">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a48">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a48_u1"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000445"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000446"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000447"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yisʔalū</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000449"
+                     xml:lang="ar-acm-x-shawi-vicav">hun</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000450"
+                     xml:lang="ar-acm-x-shawi-vicav">lē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000451"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔāʕdīn</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a43">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a43_u1"
+                  end="#T82"
+                  start="#T81">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000452"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔalū</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000454"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000456"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000457"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">m</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000459"
+                     xml:lang="ar-acm-x-shawi-vicav">nuhrub</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000460"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000461"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000463"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <pc xml:id="xTok_000464">,</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000465"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000467"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000468"
+                     xml:lang="ar-acm-x-shawi-vicav">rṭūbe</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000469"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000470"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kill</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000472"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000473"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a44">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a44_u1"
+                  end="#T84"
+                  start="#T83">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000474"
+                     xml:lang="ar-acm-x-shawi-vicav">huwwi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000475"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000476"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000478"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yʔil</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000480"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000482"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000483"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinnu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000484"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000485"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000486"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥarām</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000487"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔēʕdīn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000488"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000489"
+                     xml:lang="ar-acm-x-shawi-vicav">žēyy</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000490"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tfaržī</w>
+                  <pc join="right" xml:id="xTok_000492">_</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000493"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a45">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a45_u1"
+                  end="#T85"
+                  start="#T84">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000494"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔult</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000496"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ill</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000498"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000499"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000500"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000502"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yʕamlū</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000504"
+                     xml:lang="ar-acm-x-shawi-vicav">wa</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000505"
+                     xml:lang="ar-acm-x-shawi-vicav">dawriyye</w>
+                  <pc xml:id="xTok_000506">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000507"
+                     xml:lang="ar-acm-x-shawi-vicav">yuʔʕudu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000508"
+                     xml:lang="ar-acm-x-shawi-vicav">xamse</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000509"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000510"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕaḍ</w>
+                  <pc xml:id="xTok_000511">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000512"
+                     xml:lang="ar-acm-x-shawi-vicav">kill</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000513"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥde</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000514"
+                     xml:lang="ar-acm-x-shawi-vicav">tnēm</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000515"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000516"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">žawz</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000518"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000519"
+                     xml:lang="ar-acm-x-shawi-vicav">tfūt</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000520"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥde</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000521"
+                     xml:lang="ar-acm-x-shawi-vicav">tiṭlaʕ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000522"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥde</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a46">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a46_u1"
+                  end="#T87"
+                  start="#T86">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000523"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000524"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <pc xml:id="xTok_000525">.</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000526"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000527"
+                     xml:lang="ar-acm-x-shawi-vicav">lē</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000528"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000530"
+                     xml:lang="ar-acm-x-shawi-vicav">ətkazzbu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000531"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000532"
+                     xml:lang="ar-acm-x-shawi-vicav">mn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000533"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ir</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000535"
+                     xml:lang="ar-acm-x-shawi-vicav">rṭūbe</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000536"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔēʕdīn</w>
+                  <pc xml:id="xTok_000537">?</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a47">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a47_u1"
+                  end="#T89"
+                  start="#T88">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000538"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000540"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000542"
+                     xml:lang="ar-acm-x-shawi-vicav">šamis</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000543"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000544"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000546"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a49">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a49_u1"
+                  end="#T27"
+                  start="#T26">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000547"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000549"
+                     xml:lang="ar-acm-x-shawi-vicav">yixlaṣ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000550"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000551"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000553"
+                     xml:lang="ar-acm-x-shawi-vicav">yiʕīšu</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000554"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000556"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000557"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000559"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔūḍa</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000560"
+                     xml:lang="ar-acm-x-shawi-vicav">waḥde</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000561"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000563"
+                     xml:lang="ar-acm-x-shawi-vicav">yixlaṣ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000564"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">dawr</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000566"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000567"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000569"
+                     xml:lang="ar-acm-x-shawi-vicav">haydīk</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a51">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a51_u1"
+                  end="#T91"
+                  start="#T90">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000570"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000572"
+                     xml:lang="ar-acm-x-shawi-vicav">yiḥabbil</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000573"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">it</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000575"
+                     xml:lang="ar-acm-x-shawi-vicav">tēnye</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000576"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000577"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000579"
+                     xml:lang="ar-acm-x-shawi-vicav">yiži</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000580"
+                     xml:lang="ar-acm-x-shawi-vicav">wāḥad</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000581"
+                     xml:lang="ar-acm-x-shawi-vicav">tēni</w>
+                  <pc join="right" xml:id="xTok_000582">.</pc>
+                  <pc xml:id="xTok_000583">.</pc>
+                  <pc xml:id="xTok_000584">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a52">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_CB_F.18_Speaker11"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a52_u1"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000585"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000586"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000587"
+                     xml:lang="ar-acm-x-shawi-vicav">wēḥde</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000588"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000589"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000590"
+                     xml:lang="ar-acm-x-shawi-vicav">wēḥde</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000591"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000593"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">baṭn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000595"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000596"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000597"
+                     xml:lang="ar-acm-x-shawi-vicav">kēmšīn</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000598"
+                     xml:lang="ar-acm-x-shawi-vicav">tnēn</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000599"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000601"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔīdey</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000603"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a50">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a50_u1"
+                  end="#T106"
+                  start="#T105">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000604"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000605"
+                     xml:lang="ar-acm-x-shawi-vicav">liʔan</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000606"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000608"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔumam</w>
+                  <pc join="right" xml:id="xTok_000609">.</pc>
+                  <pc xml:id="xTok_000610">.</pc>
+                  <pc xml:id="xTok_000611">.</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000612"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyyi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000613"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000615"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əthidd</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000617"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000619"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000620"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭarīʔ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000621"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000623"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əthidd</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000625"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000627"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000628"
+                     xml:lang="ar-acm-x-shawi-vicav">nadi</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000629"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000631"
+                     xml:lang="ar-acm-x-shawi-vicav">maṣāri</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a53">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a53_u1"
+                  end="#T107"
+                  start="#T106">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000632"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000634"
+                     xml:lang="ar-acm-x-shawi-vicav">yuʔbaḍu</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000635"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000636"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000638"
+                     xml:lang="ar-acm-x-shawi-vicav">walad</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000639"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕašān</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000640"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000641"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000642"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000644"
+                     xml:lang="ar-acm-x-shawi-vicav">yxallfu</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a54">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a54_u1"
+                  end="#T29"
+                  start="#T28">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000645"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000647"
+                     xml:lang="ar-acm-x-shawi-vicav">yʕammru</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000648"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000650"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyya</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000651"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000652"
+                     xml:lang="ar-acm-x-shawi-vicav">yištaru</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000653"
+                     xml:lang="ar-acm-x-shawi-vicav">dahab</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a59">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_AS_F.56_Speaker8"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a59_u1"
+                  end="#T93"
+                  start="#T92">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000654"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000655"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔālit</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000657"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000659"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <pc xml:id="xTok_000660">,</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000661"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔālit</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000663"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000665"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <pc join="right" xml:id="xTok_000666">"</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000667"
+                     xml:lang="ar-acm-x-shawi-vicav">law</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000668"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000669"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">m</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000671"
+                     xml:lang="ar-acm-x-shawi-vicav">nuʔbaḍ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000672"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">m</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000674"
+                     xml:lang="ar-acm-x-shawi-vicav">ənxallif</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000675"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <pc xml:id="xTok_000676">?</pc>
+                  <pc xml:id="xTok_000677">"</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a55">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a55_u1"
+                  end="#T109"
+                  start="#T108">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000678"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔālit</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000680"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000682"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <pc join="right" xml:id="xTok_000683">"</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000684"
+                     xml:lang="ar-acm-x-shawi-vicav">law</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000685"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000686"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">m</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000688"
+                     xml:lang="ar-acm-x-shawi-vicav">nuʔbaḍ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000689"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000690"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000691"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">m</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000693"
+                     xml:lang="ar-acm-x-shawi-vicav">ənxallif</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000694"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000696"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">lubnān</w>
+                  <pc xml:id="xTok_000697">"</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a57">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a57_u1"
+                  end="#T111"
+                  start="#T110">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000698"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000699"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000701"
+                     xml:lang="ar-acm-x-shawi-vicav">lubnāniyye</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000702"
+                     xml:lang="ar-acm-x-shawi-vicav">waʔʔafit</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000703"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000705"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">xalīfe</w>
+                  <pc xml:id="xTok_000706">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000707"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000708"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <pc xml:id="xTok_000709">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000710"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000711"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">fī</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000713"
+                     xml:lang="ar-acm-x-shawi-vicav">ki</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000714"
+                     xml:lang="ar-acm-x-shawi-vicav">inti</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000715"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000717"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tžībī</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000719"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000721"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc join="right" xml:id="xTok_000722">.</pc>
+                  <pc xml:id="xTok_000723">.</pc>
+                  <pc xml:id="xTok_000724">.</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a58">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_IS_F.55_Speaker9"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a58_u1"
+                  end="#T30"
+                  start="#T112">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000725"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000726"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <pc xml:id="xTok_000727">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000728"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a56">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a56_u1"
+                  end="#T31"
+                  start="#T30">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000729"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">layk</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000731"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000732"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000733"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000735"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyyīn</w>
+                  <pc join="right" xml:id="xTok_000736">.</pc>
+                  <pc xml:id="xTok_000737">.</pc>
+                  <pc xml:id="xTok_000738">.</pc>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000739"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧārt</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000741"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000742"
+                     xml:lang="ar-acm-x-shawi-vicav">sūriyye</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000743"
+                     xml:lang="ar-acm-x-shawi-vicav">lābse</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000744"
+                     xml:lang="ar-acm-x-shawi-vicav">sinsāl</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000745"
+                     xml:lang="ar-acm-x-shawi-vicav">dahab</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a60">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a60_u1"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000746"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000747"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tʔil</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000749"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000751"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000752"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyyi</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000753"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000754"
+                     xml:lang="ar-acm-x-shawi-vicav">inxaṭabit</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000755"
+                     xml:lang="ar-acm-x-shawi-vicav">lē</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000756"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000757"
+                     xml:lang="ar-acm-x-shawi-vicav">daššarit</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a63">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a63_u1"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000758"
+                     xml:lang="ar-acm-x-shawi-vicav">xaṭabti</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000759"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <pc xml:id="xTok_000760">?</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a61">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a61_u1"
+                  end="#T35"
+                  start="#T34">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000761"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔāl</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000763"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000765"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a66">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_CB_F.18_Speaker11"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a66_u1"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000766"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000767">,</pc>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000768"
+                     xml:lang="ar-acm-x-shawi-vicav">baʔa</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000769"
+                     xml:lang="ar-acm-x-shawi-vicav">tarakət</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a64">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a64_u1"
+                  end="#T61"
+                  start="#T60">
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000770"
+                     xml:lang="ar-acm-x-shawi-vicav">āh</w>
+                  <pc xml:id="xTok_000771">!</pc>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a69">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_CB_F.18_Speaker11"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a69_u1"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000772"
+                     xml:lang="ar-acm-x-shawi-vicav">haydīk</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000773"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000775"
+                     xml:lang="ar-acm-x-shawi-vicav">sine</w>
+               </u>
+            </div>
+            <div xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a67">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_SS_F.45_Speaker10"
+                  xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_a67_u1"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000776"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000777"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tʔil</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000779"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000781"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000782"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔimm</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000784"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000785"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔilbus</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000786"
+                     xml:lang="ar-acm-x-shawi-vicav">mitil</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000787"
+                     xml:lang="ar-acm-x-shawi-vicav">maryam</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000788"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔal</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000789"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">žib</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000791"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000793"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000794"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">xaṭīb</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000796"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000797"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T2.5_SS_F.45_Karantina_SyriansinKarantina_xTok_000798"
+                     xml:lang="ar-acm-x-shawi-vicav">sinsāl</w>
+               </u>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

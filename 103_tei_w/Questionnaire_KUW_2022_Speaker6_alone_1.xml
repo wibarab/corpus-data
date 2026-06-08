@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T08:34:56.119066Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1"
+     next="Questionnaire_KUW_2022_Speaker3_alone_1.xml"
+     prev="Questionnaire_KUW_2022_Speaker3_Speaker6_4.xml">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Kuwait 2022 – Questionnaire – Speaker 6 (Alone) (Part 1)</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:GuK">Gunda Kinzl</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:RZ">Maria Rebecca Zarb</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">Questionnaire_KUW_2022_Speaker6_alone_1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="05:25" type="audio">
+                  <date when="2022-05-10"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:GuK">Gunda Kinzl</persName>
+                  </respStmt>
+                  <p>Recorded during Kuwait Fieldwork Campaign Gunda Kinzl 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in Questionnaire_KUW_2022_Speaker6_alone_1</head>
+               <person sameAs="corpus:KUW_2022_Speaker6">
+                  <idno>KUW_2022_Speaker6</idno>
+               </person>
+               <person sameAs="corpus:KUW_2022_Gunda">
+                  <idno>KUW_2022_Gunda</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:KUW_2022_GK">
+            <setting>
+               <placeName sameAs="geo:kuwait_city">Kuwait City</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.WIBARABQuestionnaire"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Questionnaire</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="449" since="#T0" xml:id="T1"/>
+         <when interval="1729" since="#T0" xml:id="T2"/>
+         <when interval="15700" since="#T0" xml:id="T3"/>
+         <when interval="17453" since="#T0" xml:id="T4"/>
+         <when interval="27019" since="#T0" xml:id="T5"/>
+         <when interval="30523" since="#T0" xml:id="T6"/>
+         <when interval="32427" since="#T0" xml:id="T7"/>
+         <when interval="40017" since="#T0" xml:id="T8"/>
+         <when interval="50687" since="#T0" xml:id="T9"/>
+         <when interval="52345" since="#T0" xml:id="T10"/>
+         <when interval="60273" since="#T0" xml:id="T11"/>
+         <when interval="63716" since="#T0" xml:id="T12"/>
+         <when interval="73570" since="#T0" xml:id="T13"/>
+         <when interval="75961" since="#T0" xml:id="T14"/>
+         <when interval="84140" since="#T0" xml:id="T15"/>
+         <when interval="88005" since="#T0" xml:id="T16"/>
+         <when interval="101890" since="#T0" xml:id="T17"/>
+         <when interval="109484" since="#T0" xml:id="T18"/>
+         <when interval="120482" since="#T0" xml:id="T19"/>
+         <when interval="126454" since="#T0" xml:id="T20"/>
+         <when interval="132760" since="#T0" xml:id="T21"/>
+         <when interval="139461" since="#T0" xml:id="T22"/>
+         <when interval="139943" since="#T0" xml:id="T57"/>
+         <when interval="144961" since="#T0" xml:id="T58"/>
+         <when interval="148179" since="#T0" xml:id="T23"/>
+         <when interval="152939" since="#T0" xml:id="T24"/>
+         <when interval="163278" since="#T0" xml:id="T25"/>
+         <when interval="171649" since="#T0" xml:id="T26"/>
+         <when interval="178070" since="#T0" xml:id="T27"/>
+         <when interval="183671" since="#T0" xml:id="T28"/>
+         <when interval="187252" since="#T0" xml:id="T59"/>
+         <when interval="192800" since="#T0" xml:id="T60"/>
+         <when interval="192823" since="#T0" xml:id="T29"/>
+         <when interval="197696" since="#T0" xml:id="T30"/>
+         <when interval="205388" since="#T0" xml:id="T31"/>
+         <when interval="207320" since="#T0" xml:id="T32"/>
+         <when interval="216100" since="#T0" xml:id="T33"/>
+         <when interval="220411" since="#T0" xml:id="T34"/>
+         <when interval="227300" since="#T0" xml:id="T35"/>
+         <when interval="228190" since="#T0" xml:id="T36"/>
+         <when interval="230718" since="#T0" xml:id="T37"/>
+         <when interval="234140" since="#T0" xml:id="T38"/>
+         <when interval="245220" since="#T0" xml:id="T39"/>
+         <when interval="250520" since="#T0" xml:id="T40"/>
+         <when interval="258853" since="#T0" xml:id="T41"/>
+         <when interval="261016" since="#T0" xml:id="T42"/>
+         <when interval="264191" since="#T0" xml:id="T43"/>
+         <when interval="267420" since="#T0" xml:id="T44"/>
+         <when interval="273581" since="#T0" xml:id="T45"/>
+         <when interval="275158" since="#T0" xml:id="T46"/>
+         <when interval="288790" since="#T0" xml:id="T47"/>
+         <when interval="293034" since="#T0" xml:id="T48"/>
+         <when interval="300743" since="#T0" xml:id="T49"/>
+         <when interval="302670" since="#T0" xml:id="T50"/>
+         <when interval="306330" since="#T0" xml:id="T51"/>
+         <when interval="307749" since="#T0" xml:id="T52"/>
+         <when interval="317940" since="#T0" xml:id="T53"/>
+         <when interval="321384" since="#T0" xml:id="T54"/>
+         <when interval="324521" since="#T0" xml:id="T55"/>
+         <when interval="325906" since="#T0" xml:id="T56"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T56</note>
+            </head>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a41">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a41_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mā</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav">muškila</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a41"
+                        xml:id="a49">There's no problem</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a1_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav">šinu</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥuṭṭayt</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000009"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <pc xml:id="xTok_000010">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a1"
+                        xml:id="a21">What did you put in it?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a2_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">zōǧ</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav">yalbas</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000015"
+                     xml:lang="ar-acm-x-shawi-vicav">finīla</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav">bēḏ̣a</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav">ina</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000021"
+                     xml:lang="ar-acm-x-shawi-vicav">siyyāra</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000022"
+                     xml:lang="ar-acm-x-shawi-vicav">bēḏ̣a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a2"
+                        xml:id="a22">My husband wears a white shirt and we have a white car</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a42">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a42_u1"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000023"
+                     xml:lang="ar-acm-x-shawi-vicav">ay</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav">finīla</w>
+                  <pc xml:id="xTok_000025">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <pc join="right" xml:id="xTok_000029">.</pc>
+                  <pc xml:id="xTok_000030">.</pc>
+                  <pc xml:id="xTok_000031">.</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">anḏ̣ari</w>
+                  <pc xml:id="xTok_000033">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000034"
+                     xml:lang="ar-acm-x-shawi-vicav">finīla</w>
+                  <pc xml:id="xTok_000035">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000036"
+                     xml:lang="ar-acm-x-shawi-vicav">qamīṣ</w>
+                  <pc xml:id="xTok_000037">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000038"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000040"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">šērt</w>
+                  <pc xml:id="xTok_000041">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000042"
+                     xml:lang="ar-acm-x-shawi-vicav">killa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000043"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav">asām</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yistaxdimūn</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a42"
+                        xml:id="a50">Yes, "finīla"... Look, "finīla, qamīṣ, tī-šērt" all of these names are used for shirt</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a43">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a43_u1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000048"
+                     xml:lang="ar-acm-x-shawi-vicav">marra</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000049"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯānya</w>
+                  <pc xml:id="xTok_000050">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a43"
+                        xml:id="a51">Can you repeat?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a3">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a3_u1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000051"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧāw</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav">rākbīn</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000053"
+                     xml:lang="ar-acm-x-shawi-vicav">sitt</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav">nāgāt</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav">bēḏ̣a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a3"
+                        xml:id="a23">They rode in on six white camels</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a4">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a4_u1"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000056"
+                     xml:lang="ar-acm-x-shawi-vicav">tbayyaḏ̣</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000057"
+                     xml:lang="ar-acm-x-shawi-vicav">waǧh</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">umm</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000061"
+                     xml:lang="ar-acm-x-shawi-vicav">lamma</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000062"
+                     xml:lang="ar-acm-x-shawi-vicav">txarraǧt</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a4"
+                        xml:id="a24">When I graduated my mother’s face turned white with pride</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a5_u1"
+                  end="#T16"
+                  start="#T15">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000063"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mā</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">taʕǧib</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000070"
+                     xml:lang="ar-acm-x-shawi-vicav">finīla</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000071"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000073"
+                     xml:lang="ar-acm-x-shawi-vicav">sōda</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000074"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">wa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000077"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav">siyyāra</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000081"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000083"
+                     xml:lang="ar-acm-x-shawi-vicav">sōda</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a5"
+                        xml:id="a25">I don’t like this black shirt nor the black car</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a44">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a44_u1"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000084"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000085"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <pc xml:id="xTok_000086">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000089"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">nafs</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000091"
+                     xml:lang="ar-acm-x-shawi-vicav">aha</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000092"
+                     xml:lang="ar-acm-x-shawi-vicav">maṯalan</w>
+                  <pc xml:id="xTok_000093">,</pc>
+                  <pc join="right" xml:id="xTok_000094">"</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000095"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏi</w>
+                  <pc xml:id="xTok_000096">"</pc>
+                  <pc xml:id="xTok_000097">,</pc>
+                  <pc join="right" xml:id="xTok_000098">"</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000099"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏa</w>
+                  <pc xml:id="xTok_000100">"</pc>
+                  <pc xml:id="xTok_000101">,</pc>
+                  <pc join="right" xml:id="xTok_000102">"</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000103"
+                     xml:lang="ar-acm-x-shawi-vicav">haḏāk</w>
+                  <pc xml:id="xTok_000104">"</pc>
+                  <pc xml:id="xTok_000105">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000106"
+                     xml:lang="ar-acm-x-shawi-vicav">kiḏa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000107"
+                     xml:lang="ar-acm-x-shawi-vicav">killa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000108"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥaggat</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000109"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕišāra</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a44"
+                        xml:id="a52">This are the same things, for example "hāḏi, hāḏa, haḏāk", they are all demonstratives</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a45">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a45_u1"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav">šeyx</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000111"
+                     xml:lang="ar-acm-x-shawi-vicav">gabīlat</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav">walad</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000113"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕali</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000114"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕand</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000116"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <pc xml:id="xTok_000117">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000118"
+                     xml:lang="ar-acm-x-shawi-vicav">pardon</w>
+                  <pc xml:id="xTok_000119">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000120"
+                     xml:lang="ar-acm-x-shawi-vicav">šinu</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav">galt</w>
+                  <pc xml:id="xTok_000122">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">kamm</w>
+                  <pc xml:id="xTok_000124">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a45"
+                        xml:id="a53">The sheikh of the tribe Walad ʕAli has, pardon me, what did you say, how many?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a6_u1"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav">šeyx</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav">gabīlat</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000127"
+                     xml:lang="ar-acm-x-shawi-vicav">walad</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000128"
+                     xml:lang="ar-acm-x-shawi-vicav">abū</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000129"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕali</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000130"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕand</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav">xamsa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav">aḥṣana</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">sōda</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">xamsa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000138"
+                     xml:lang="ar-acm-x-shawi-vicav">frūs</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000139"
+                     xml:lang="ar-acm-x-shawi-vicav">sōda</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a6"
+                        xml:id="a26">The sheikh of the tribe Walad Abu ʕAli has 5 black stallions and 5 black mares</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a56">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Gunda"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a56_u1"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav">wēš</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000141"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000143"
+                     xml:lang="ar-acm-x-shawi-vicav">farq</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">beyn</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥiṣān</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000149"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000151"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">faris</w>
+                  <pc xml:id="xTok_000152">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav">taʕrif</w>
+                  <pc xml:id="xTok_000154">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a56"
+                        xml:id="a58">What's the difference between a "ḥiṣān" and a "faris", do you know?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a46">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a46_u1"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav">huwwa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000156"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">farq</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000159"
+                     xml:lang="ar-acm-x-shawi-vicav">ana</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000160"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000162"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ism</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000164"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <pc xml:id="xTok_000165">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000166"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mā</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕand</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav">xibra</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000172"
+                     xml:lang="ar-acm-x-shawi-vicav">wāǧid</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000173"
+                     xml:lang="ar-acm-x-shawi-vicav">lanna</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000174"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ism</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000178"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a46"
+                        xml:id="a54">There is a difference, but I am not so knowledgable about this</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a47">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a47_u1"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iz</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav">zōǧa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000182"
+                     xml:lang="ar-acm-x-shawi-vicav">ištarat</w>
+                  <pc xml:id="xTok_000183">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav">nunṭaqa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000185"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000189"
+                     xml:lang="ar-acm-x-shawi-vicav">qamīṣ</w>
+                  <pc join="right" xml:id="xTok_000190">#</pc>
+                  <pc xml:id="xTok_000191">#</pc>
+               </u>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a7_u1"
+                  end="#T28"
+                  start="#T27">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000192"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">zōǧt</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000194"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav">ištarat</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000199"
+                     xml:lang="ar-acm-x-shawi-vicav">finīla</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000200"
+                     xml:lang="ar-acm-x-shawi-vicav">wardiyya</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000202"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧanṭa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000203"
+                     xml:lang="ar-acm-x-shawi-vicav">wardiyya</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a7"
+                        xml:id="a27">My wife bought herself a pink shirt and a pink bag</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a57">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Gunda"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a57_u1"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav">tasdaxdmūn</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000205"
+                     xml:lang="ar-acm-x-shawi-vicav">kilmat</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000206"
+                     xml:lang="ar-acm-x-shawi-vicav">zahri</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000207"
+                     xml:lang="ar-acm-x-shawi-vicav">kamān</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000208"
+                     xml:lang="ar-acm-x-shawi-vicav">walla</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000209"
+                     xml:lang="ar-acm-x-shawi-vicav">wardi</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000211"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭūl</w>
+                  <pc xml:id="xTok_000212">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a57"
+                        xml:id="a59">Do you also use the word "zahri" for pink or just "wardi"?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a48">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a48_u1"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000213"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000214"
+                     xml:lang="ar-acm-x-shawi-vicav">zahri</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000215"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mā</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000217"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000218"
+                     xml:lang="ar-acm-x-shawi-vicav">istixdām</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000222"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000224"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥaya</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000227"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕādiyya</w>
+                  <pc xml:id="xTok_000228">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000229"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">fī</w>
+                  <pc join="right" xml:id="xTok_000231">_</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav">́a</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000233"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">wardi</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000235"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūl</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a48"
+                        xml:id="a55">No we don't use "zahri" normally, we only use "wardi"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a8_u1"
+                  end="#T32"
+                  start="#T31">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000236"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyya</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000237"
+                     xml:lang="ar-acm-x-shawi-vicav">talbas</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000238"
+                     xml:lang="ar-acm-x-shawi-vicav">sirwāl</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000239"
+                     xml:lang="ar-acm-x-shawi-vicav">raṣāṣi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a8"
+                        xml:id="a28">She is wearing grey pants</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a9_u1"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000240"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000242"
+                     xml:lang="ar-acm-x-shawi-vicav">finīla</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000243"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000245"
+                     xml:lang="ar-acm-x-shawi-vicav">burtuqāliyya</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000246"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">taʕǧib</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000248"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000249"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000250"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">it</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000252"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000254"
+                     xml:lang="ar-acm-x-shawi-vicav">šērt</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000255"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000257"
+                     xml:lang="ar-acm-x-shawi-vicav">burtuqāli</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a9"
+                        xml:id="a29">I like this orange shirt</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a10_u1"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000258"
+                     xml:lang="ar-acm-x-shawi-vicav">lōn</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000259"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">it</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000261"
+                     xml:lang="ar-acm-x-shawi-vicav">trāb</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a10"
+                        xml:id="a30">The colour of soil?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a11">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a11_u1"
+                  end="#T38"
+                  start="#T37">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000262"
+                     xml:lang="ar-acm-x-shawi-vicav">huwwa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000263"
+                     xml:lang="ar-acm-x-shawi-vicav">trābi</w>
+                  <pc xml:id="xTok_000264">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000265"
+                     xml:lang="ar-acm-x-shawi-vicav">ngūlu</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000266"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕaley</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000268"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">h</w>
+                  <pc xml:id="xTok_000269">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000270"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <pc join="right" xml:id="xTok_000272">.</pc>
+                  <pc xml:id="xTok_000273">.</pc>
+                  <pc xml:id="xTok_000274">.</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000275"
+                     xml:lang="ar-acm-x-shawi-vicav">iyya</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000276"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">t</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000278"
+                     xml:lang="ar-acm-x-shawi-vicav">trābi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a11"
+                        xml:id="a31">We call it "trābi" (soil colour), yes "trābi"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a12_u1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000279"
+                     xml:lang="ar-acm-x-shawi-vicav">lōn</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000280"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000282"
+                     xml:lang="ar-acm-x-shawi-vicav">xašab</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000283"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000285"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000287"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕada</w>
+                  <pc xml:id="xTok_000288">?</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000289"
+                     xml:lang="ar-acm-x-shawi-vicav">bunni</w>
+                  <pc xml:id="xTok_000290">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000291"
+                     xml:lang="ar-acm-x-shawi-vicav">bunni</w>
+                  <pc xml:id="xTok_000292">,</pc>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000293"
+                     xml:lang="ar-acm-x-shawi-vicav">xašabi</w>
+                  <pc xml:id="xTok_000294">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000295"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥatta</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000296"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">fī</w>
+                  <pc join="right" xml:id="xTok_000298">_</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000299"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a12"
+                        xml:id="a32">The colour of wood normally? Brown, wood-coloured, even for it</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a13_u1"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000300"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000302"
+                     xml:lang="ar-acm-x-shawi-vicav">mazāriʕ</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000303"
+                     xml:lang="ar-acm-x-shawi-vicav">xaḏ̣ra</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000304"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000306"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iṛ</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000308"
+                     xml:lang="ar-acm-x-shawi-vicav">ṛabīʕ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a13"
+                        xml:id="a33">The pastures are green in spring</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a14_u1"
+                  end="#T44"
+                  start="#T43">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000309"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000311"
+                     xml:lang="ar-acm-x-shawi-vicav">samāʔ</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">muzarqa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000313"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000315"
+                     xml:lang="ar-acm-x-shawi-vicav">yowm</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000316"
+                     xml:lang="ar-acm-x-shawi-vicav">aw</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000317"
+                     xml:lang="ar-acm-x-shawi-vicav">zarqāʔ</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000318"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000320"
+                     xml:lang="ar-acm-x-shawi-vicav">yowm</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a14"
+                        xml:id="a34">The sky is blue today</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a15_u1"
+                  end="#T46"
+                  start="#T45">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000321"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iṭ</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000323"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭamāṭim</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000324"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥamra</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a15"
+                        xml:id="a35">The tomatoes are red</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a16_u1"
+                  end="#T48"
+                  start="#T47">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000325"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000327"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṣaff</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000329"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000330"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000331"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯalāṯīn</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000332"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭālib</w>
+                  <pc xml:id="xTok_000333">,</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000334"
+                     xml:lang="ar-acm-x-shawi-vicav">biss</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000335"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">m</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000337"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000339"
+                     xml:lang="ar-acm-x-shawi-vicav">qāʕa</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000340"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000341"
+                     xml:lang="ar-acm-x-shawi-vicav">biss</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000342"
+                     xml:lang="ar-acm-x-shawi-vicav">xamstaʕš</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a16"
+                        xml:id="a36">There are 13 students in the class, but only 13 are in the classroom</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a17_u1"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000343"
+                     xml:lang="ar-acm-x-shawi-vicav">rāḥ</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000344"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">nzūr</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000346"
+                     xml:lang="ar-acm-x-shawi-vicav">kum</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000347"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕad</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000348"
+                     xml:lang="ar-acm-x-shawi-vicav">šahreyn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a17"
+                        xml:id="a37">We will visit you (pl.f.) in 2 months.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a18_u1"
+                  end="#T52"
+                  start="#T51">
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000349"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mā</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000351"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000352"
+                     xml:lang="ar-acm-x-shawi-vicav">mušākil</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000353"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bēn</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000355"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a18"
+                        xml:id="a38">There is no quarrel between us</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a19_u1"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000356"
+                     xml:lang="ar-acm-x-shawi-vicav">uṣalu</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000357"
+                     xml:lang="ar-acm-x-shawi-vicav">gabl</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000358"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000360"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000361"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṯ</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000363"
+                     xml:lang="ar-acm-x-shawi-vicav">ṯnāš</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a19"
+                        xml:id="a39">They arrived before midnight</span>
+               </spanGrp>
+            </div>
+            <div xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:KUW_2022_Speaker6"
+                  xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_a20_u1"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000364"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧatt</w>
+                  <pc xml:id="xTok_000365">#</pc>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000366"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕa</w>
+                  <w join="right"
+                     xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000367"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">banāt</w>
+                  <w xml:id="Questionnaire_KUW_2022_Speaker6_alone_1_xTok_000369"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#Questionnaire_KUW_2022_Speaker6_alone_1_a20"
+                        xml:id="a40">She came with her daughters</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T08:36:12.384616Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – MA (M.71) – Maslakh (1): Daily Routine</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">24_MA_M.71_Karantina_Maslax1.dailyRoutine</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="02:15" type="audio">
+                  <date when="2022-03-04"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 24_MA_M.71_Karantina_Maslax1.dailyRoutine</head>
+               <person sameAs="corpus:LEB_KAR_2022_MA_M.71_Speaker2">
+                  <idno>LEB_KAR_2022_MA_M.71_Speaker2</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2022_KZ_M.27_Speaker12">
+                  <idno>LEB_KAR_2022_KZ_M.27_Speaker12</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.FreeSpeech"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Slaughterhouse</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="4430" since="#T0" xml:id="T9"/>
+         <when interval="8968" since="#T0" xml:id="T10"/>
+         <when interval="9386" since="#T0" xml:id="T11"/>
+         <when interval="12767" since="#T0" xml:id="T12"/>
+         <when interval="14206" since="#T0" xml:id="T13"/>
+         <when interval="26708" since="#T0" xml:id="T14"/>
+         <when interval="26762" since="#T0" xml:id="T15"/>
+         <when interval="28901" since="#T0" xml:id="T16"/>
+         <when interval="38777" since="#T0" xml:id="T17"/>
+         <when interval="46444" since="#T0" xml:id="T18"/>
+         <when interval="53374" since="#T0" xml:id="T19"/>
+         <when interval="54520" since="#T0" xml:id="T20"/>
+         <when interval="59583" since="#T0" xml:id="T21"/>
+         <when interval="59977" since="#T0" xml:id="T22"/>
+         <when interval="62499" since="#T0" xml:id="T23"/>
+         <when interval="63843" since="#T0" xml:id="T24"/>
+         <when interval="68988" since="#T0" xml:id="T1"/>
+         <when interval="69316" since="#T0" xml:id="T25"/>
+         <when interval="72243" since="#T0" xml:id="T26"/>
+         <when interval="72658" since="#T0" xml:id="T2"/>
+         <when interval="76050" since="#T0" xml:id="T27"/>
+         <when interval="76055" since="#T0" xml:id="T28"/>
+         <when interval="81118" since="#T0" xml:id="T29"/>
+         <when interval="81399" since="#T0" xml:id="T30"/>
+         <when interval="87283" since="#T0" xml:id="T31"/>
+         <when interval="88088" since="#T0" xml:id="T3"/>
+         <when interval="90182" since="#T0" xml:id="T4"/>
+         <when interval="90409" since="#T0" xml:id="T32"/>
+         <when interval="93410" since="#T0" xml:id="T5"/>
+         <when interval="94277" since="#T0" xml:id="T6"/>
+         <when interval="94573" since="#T0" xml:id="T33"/>
+         <when interval="94755" since="#T0" xml:id="T34"/>
+         <when interval="98688" since="#T0" xml:id="T35"/>
+         <when interval="99312" since="#T0" xml:id="T36"/>
+         <when interval="102980" since="#T0" xml:id="T7"/>
+         <when interval="103835" since="#T0" xml:id="T37"/>
+         <when interval="106444" since="#T0" xml:id="T38"/>
+         <when interval="106968" since="#T0" xml:id="T8"/>
+         <when interval="108957" since="#T0" xml:id="T39"/>
+         <when interval="109437" since="#T0" xml:id="T40"/>
+         <when interval="111547" since="#T0" xml:id="T41"/>
+         <when interval="116388" since="#T0" xml:id="T42"/>
+         <when interval="122086" since="#T0" xml:id="T43"/>
+         <when interval="122133" since="#T0" xml:id="T44"/>
+         <when interval="129211" since="#T0" xml:id="T45"/>
+         <when interval="129332" since="#T0" xml:id="T46"/>
+         <when interval="135115" since="#T0" xml:id="T47"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T47</note>
+            </head>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a1_u1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000002"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav">mislax</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <pc xml:id="xTok_000006">,</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000011"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">lēl</w>
+                  <pc xml:id="xTok_000012">,</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">nhār</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000015"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a1"
+                        xml:id="a28"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a2_u1"
+                  end="#T12"
+                  start="#T11">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav">lēl</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000021"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ənhār</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000023"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000025"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">nhār</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav">lēl</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a2"
+                        xml:id="a29"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a3">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a3_u1"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav">lē</w>
+                  <pc xml:id="xTok_000030">?</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">níštaġil</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000033"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000035"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <pc join="right" xml:id="xTok_000036">.</pc>
+                  <pc xml:id="xTok_000037">.</pc>
+                  <pc xml:id="xTok_000038">.</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav">ninzal</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000040"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000042"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">d</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav">dabeḥ</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000047"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">masa</w>
+                  <pc xml:id="xTok_000048">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000049"
+                     xml:lang="ar-acm-x-shawi-vicav">nḍall</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000050"
+                     xml:lang="ar-acm-x-shawi-vicav">sahranīn</w>
+                  <pc xml:id="xTok_000051">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭūl</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000053"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav">lēl</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000056"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000057"
+                     xml:lang="ar-acm-x-shawi-vicav">šāwi</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav">kalāwi</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000059"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav">mandāwīšāt</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000061"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭūl</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000062"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav">lēl</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṣ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000069"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣuḅuḥ</w>
+                  <pc xml:id="xTok_000070">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a3"
+                        xml:id="a30">ninzal (not ninzil)- shawi kalawi? mandawishat?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a4">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a4_u1"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000071"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav">niži</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000073"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000077"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav">ənnām</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a4"
+                        xml:id="a31"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a5_u1"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav">yiži</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥḥāma</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000083"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000085"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000086"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔarbʕa</w>
+                  <pc xml:id="xTok_000087">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav">yāxḏu</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000089"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000091"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥam</w>
+                  <pc join="right" xml:id="xTok_000092">.</pc>
+                  <pc xml:id="xTok_000093">.</pc>
+                  <pc xml:id="xTok_000094">.</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000095"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000096"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">n</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav">nūriyya</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000099"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000101"
+                     xml:lang="ar-acm-x-shawi-vicav">sūʔ</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000102"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">in</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000104"
+                     xml:lang="ar-acm-x-shawi-vicav">nūriyya</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000105"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000107"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000109"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">balad</w>
+                  <pc xml:id="xTok_000110">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a5"
+                        xml:id="a34"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a6_u1"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000111"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000113"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">barlamān</w>
+                  <pc xml:id="xTok_000114">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000115"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000116"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000117"
+                     xml:lang="ar-acm-x-shawi-vicav">sūʔ</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000118"
+                     xml:lang="ar-acm-x-shawi-vicav">əhnīk</w>
+                  <pc xml:id="xTok_000119">.</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000120"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧibnä</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000122"
+                     xml:lang="ar-acm-x-shawi-vicav">labnä</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000124"
+                     xml:lang="ar-acm-x-shawi-vicav">xuḍra</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥam</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000127"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <pc join="right" xml:id="xTok_000128">.</pc>
+                  <pc xml:id="xTok_000129">.</pc>
+                  <pc xml:id="xTok_000130">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a6"
+                        xml:id="a35"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a7_u1"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000131"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">kill</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav">yōm</w>
+                  <pc xml:id="xTok_000134">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">kinna</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">nidbaḥ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">ši</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000138"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔalfēn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000139"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <pc xml:id="xTok_000140">,</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000141"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000143"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕtēn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">yixlaṣ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a7"
+                        xml:id="a36"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a8_u1"
+                  end="#T23"
+                  start="#T22">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔalfēn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000146"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000149"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕtēn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a8"
+                        xml:id="a37"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a9_u1"
+                  end="#T24"
+                  start="#T23">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">makanāt</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a9"
+                        xml:id="a38"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a10_u1"
+                  end="#T25"
+                  start="#T24">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav">hayda</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000159"
+                     xml:lang="ar-acm-x-shawi-vicav">kēn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000160"
+                     xml:lang="ar-acm-x-shawi-vicav">tēlit</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000161"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000162"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000164"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000166"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕālam</w>
+                  <pc xml:id="xTok_000167">,</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000173"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000175"
+                     xml:lang="ar-acm-x-shawi-vicav">makanāt</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a10"
+                        xml:id="a39"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a12_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔana</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000177"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">baʕad</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000182"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav">aʕrif</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000185"
+                     xml:lang="ar-acm-x-shawi-vicav">wēn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000186"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000188"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ẓ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000190"
+                     xml:lang="ar-acm-x-shawi-vicav">ẓaḅəṭ</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000193"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+                  <pc xml:id="xTok_000194">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav">muṭraḥ</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iž</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav">žēš</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000199"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <pc xml:id="xTok_000200">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a12"
+                        xml:id="a49"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a13_u1"
+                  end="#T27"
+                  start="#T26">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav">lak</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000202"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000203"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣a</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc join="right" xml:id="xTok_000205">.</pc>
+                  <pc xml:id="xTok_000206">.</pc>
+                  <pc xml:id="xTok_000207">.</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000208"
+                     xml:lang="ar-acm-x-shawi-vicav">hayda</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000209"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000211"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000213"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔawwal</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000215"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a13"
+                        xml:id="a40"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a14_u1"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000216"
+                     xml:lang="ar-acm-x-shawi-vicav">hayda</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000217"
+                     xml:lang="ar-acm-x-shawi-vicav">xazzān</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000218"
+                     xml:lang="ar-acm-x-shawi-vicav">ṃayy</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav">kǟn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000221"
+                     xml:lang="ar-acm-x-shawi-vicav">ṃayy</w>
+                  <pc join="right" xml:id="xTok_000222">.</pc>
+                  <pc xml:id="xTok_000223">.</pc>
+                  <pc xml:id="xTok_000224">.</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000227"
+                     xml:lang="ar-acm-x-shawi-vicav">yʕaṭi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000228"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000230"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">taḥət</w>
+                  <pc xml:id="xTok_000231">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav">tlǟt</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000233"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭwāḅiʔ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000235"
+                     xml:lang="ar-acm-x-shawi-vicav">taḥət</w>
+                  <pc xml:id="xTok_000236">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a14"
+                        xml:id="a32"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a15_u1"
+                  end="#T31"
+                  start="#T30">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000237"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000239"
+                     xml:lang="ar-acm-x-shawi-vicav">ynāzlu</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000240"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">lə</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000242"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">krūš</w>
+                  <pc xml:id="xTok_000243">,</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000244"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔižrēn</w>
+                  <pc xml:id="xTok_000245">,</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000246"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yisulxū</w>
+                  <pc join="right" xml:id="xTok_000248">_</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000249"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000250"
+                     xml:lang="ar-acm-x-shawi-vicav">salux</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a15"
+                        xml:id="a33">MM</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a21">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a21_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000251"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭab</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000252"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000254"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000255"
+                     xml:lang="ar-acm-x-shawi-vicav">fikra</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000256"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔamtīn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000257"
+                     xml:lang="ar-acm-x-shawi-vicav">tʕammar</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000258"
+                     xml:lang="ar-acm-x-shawi-vicav">hayda</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000259"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000261"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+                  <pc xml:id="xTok_000262">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a21"
+                        xml:id="a50"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a17_u1"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000263"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000264"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔəl</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000266"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000268"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000269"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000270"
+                     xml:lang="ar-acm-x-shawi-vicav">sabʕa</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000271"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000272"
+                     xml:lang="ar-acm-x-shawi-vicav">sittīn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a17"
+                        xml:id="a41"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a22">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a22_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000273"
+                     xml:lang="ar-acm-x-shawi-vicav">trammam</w>
+                  <pc xml:id="xTok_000274">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a22"
+                        xml:id="a51"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a18_u1"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000275"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000276"
+                     xml:lang="ar-acm-x-shawi-vicav">trammam</w>
+                  <pc xml:id="xTok_000277">!</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000278"
+                     xml:lang="ar-acm-x-shawi-vicav">trammam</w>
+                  <pc xml:id="xTok_000279">?</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000280"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <pc xml:id="xTok_000281">!</pc>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000282"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕammarū</w>
+                  <pc join="right" xml:id="xTok_000284">_</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000285"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a18"
+                        xml:id="a42"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a19_u1"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000286"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000287"
+                     xml:lang="ar-acm-x-shawi-vicav">huwwi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000288"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000290"
+                     xml:lang="ar-acm-x-shawi-vicav">xamsa</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000291"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000292"
+                     xml:lang="ar-acm-x-shawi-vicav">sittīn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000293"
+                     xml:lang="ar-acm-x-shawi-vicav">kǟn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000294"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧǟhiz</w>
+                  <pc xml:id="xTok_000295">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000296"
+                     xml:lang="ar-acm-x-shawi-vicav">sitta</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000297"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000298"
+                     xml:lang="ar-acm-x-shawi-vicav">sittīn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a19"
+                        xml:id="a43"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a23">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a23_u1"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000299"
+                     xml:lang="ar-acm-x-shawi-vicav">liʔanno</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000300"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔižit</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000301"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕlūmä</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000302"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000303"
+                     xml:lang="ar-acm-x-shawi-vicav">marra</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000304"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000305"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔiddām</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000307"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000308"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000309"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000311"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕusmāniyyīn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">hinni</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000313"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000314"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕammarū</w>
+                  <pc join="right" xml:id="xTok_000316">_</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000317"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000318"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000320"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000322"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a23"
+                        xml:id="a52"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a20_u1"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000323"
+                     xml:lang="ar-acm-x-shawi-vicav">lā</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000324"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000325"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ha</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000327"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000329"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥaki</w>
+                  <pc xml:id="xTok_000330">?</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000331"
+                     xml:lang="ar-acm-x-shawi-vicav">hayda</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000332"
+                     xml:lang="ar-acm-x-shawi-vicav">miš</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000333"
+                     xml:lang="ar-acm-x-shawi-vicav">hayda</w>
+                  <pc xml:id="xTok_000334">!</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a20"
+                        xml:id="a44"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a24">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a24_u1"
+                  end="#T41"
+                  start="#T40">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000335"
+                     xml:lang="ar-acm-x-shawi-vicav">ykūn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000336"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕammaru</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000337"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔabl</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000339"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a24"
+                        xml:id="a45"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a25">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a25_u1"
+                  end="#T43"
+                  start="#T42">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000340"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000341"
+                     xml:lang="ar-acm-x-shawi-vicav">kǟn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000342"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000343"
+                     xml:lang="ar-acm-x-shawi-vicav">wāḥad</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000344"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000345"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000347"
+                     xml:lang="ar-acm-x-shawi-vicav">wišš</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000348"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">beyt</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000350"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000351">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000352"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000353"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔahl</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000355"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000356"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <pc xml:id="xTok_000357">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000358"
+                     xml:lang="ar-acm-x-shawi-vicav">kint</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000359"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000360"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔahl</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000362"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000363"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔani</w>
+                  <pc xml:id="xTok_000364">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a25"
+                        xml:id="a46"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a26">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a26_u1"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000365"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000366"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000367"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000368"
+                     xml:lang="ar-acm-x-shawi-vicav">nidbaḥ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000369"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000370"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000371"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000372"
+                     xml:lang="ar-acm-x-shawi-vicav">riǧiʕ</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000373"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000374"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+                  <pc xml:id="xTok_000375">,</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000376"
+                     xml:lang="ar-acm-x-shawi-vicav">wēn</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000377"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iž</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000379"
+                     xml:lang="ar-acm-x-shawi-vicav">žēš</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000380"
+                     xml:lang="ar-acm-x-shawi-vicav">illi</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000381"
+                     xml:lang="ar-acm-x-shawi-vicav">wāʔif</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000382"
+                     xml:lang="ar-acm-x-shawi-vicav">əhnīk</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000383"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiddām</w>
+                  <pc xml:id="xTok_000384">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a26"
+                        xml:id="a47"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a27">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_MA_M.71_Speaker2"
+                  xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a27_u1"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000385"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">is</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000387"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">sǟḥa</w>
+                  <pc xml:id="xTok_000388">?</pc>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000389"
+                     xml:lang="ar-acm-x-shawi-vicav">tinzal</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000390"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000392"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">n</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000394"
+                     xml:lang="ar-acm-x-shawi-vicav">nazlä</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000395"
+                     xml:lang="ar-acm-x-shawi-vicav">kǟn</w>
+                  <w xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000396"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w join="right"
+                     xml:id="T24_MA_M.71_Karantina_Maslax1.dailyRoutine_xTok_000397"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+                  <pc xml:id="xTok_000398">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T24_MA_M.71_Karantina_Maslax1.dailyRoutine_a27"
+                        xml:id="a48"/>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

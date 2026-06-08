@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T08:35:30.634219Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T39_OD_M.72_Karantina_CivilWar">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – OD (M.72) – Civil War</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">39_OD_M.72_Karantina_CivilWar</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="02:22" type="audio">
+                  <date when="2022-02-28"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 39_OD_M.72_Karantina_CivilWar</head>
+               <person sameAs="corpus:LEB_KAR_2022_OD_M.72_Speaker3">
+                  <idno>LEB_KAR_2022_OD_M.72_Speaker3</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2022_KZ_M.27_Speaker12">
+                  <idno>LEB_KAR_2022_KZ_M.27_Speaker12</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.FreeSpeech"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Civil War</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="2220" since="#T0" xml:id="T9"/>
+         <when interval="5580" since="#T0" xml:id="T1"/>
+         <when interval="6512" since="#T0" xml:id="T10"/>
+         <when interval="11795" since="#T0" xml:id="T11"/>
+         <when interval="12679" since="#T0" xml:id="T2"/>
+         <when interval="16254" since="#T0" xml:id="T3"/>
+         <when interval="16359" since="#T0" xml:id="T12"/>
+         <when interval="20094" since="#T0" xml:id="T4"/>
+         <when interval="20121" since="#T0" xml:id="T13"/>
+         <when interval="23806" since="#T0" xml:id="T14"/>
+         <when interval="25906" since="#T0" xml:id="T15"/>
+         <when interval="26354" since="#T0" xml:id="T16"/>
+         <when interval="30138" since="#T0" xml:id="T17"/>
+         <when interval="30245" since="#T0" xml:id="T18"/>
+         <when interval="31898" since="#T0" xml:id="T19"/>
+         <when interval="32233" since="#T0" xml:id="T20"/>
+         <when interval="37725" since="#T0" xml:id="T21"/>
+         <when interval="41734" since="#T0" xml:id="T22"/>
+         <when interval="42119" since="#T0" xml:id="T23"/>
+         <when interval="45377" since="#T0" xml:id="T24"/>
+         <when interval="45582" since="#T0" xml:id="T25"/>
+         <when interval="48616" since="#T0" xml:id="T26"/>
+         <when interval="49492" since="#T0" xml:id="T27"/>
+         <when interval="53860" since="#T0" xml:id="T28"/>
+         <when interval="54519" since="#T0" xml:id="T29"/>
+         <when interval="60679" since="#T0" xml:id="T30"/>
+         <when interval="62353" since="#T0" xml:id="T31"/>
+         <when interval="62377" since="#T0" xml:id="T32"/>
+         <when interval="64917" since="#T0" xml:id="T33"/>
+         <when interval="65775" since="#T0" xml:id="T34"/>
+         <when interval="68327" since="#T0" xml:id="T35"/>
+         <when interval="68674" since="#T0" xml:id="T36"/>
+         <when interval="72207" since="#T0" xml:id="T37"/>
+         <when interval="73639" since="#T0" xml:id="T38"/>
+         <when interval="77352" since="#T0" xml:id="T39"/>
+         <when interval="80908" since="#T0" xml:id="T40"/>
+         <when interval="81111" since="#T0" xml:id="T41"/>
+         <when interval="85183" since="#T0" xml:id="T42"/>
+         <when interval="85717" since="#T0" xml:id="T43"/>
+         <when interval="89782" since="#T0" xml:id="T44"/>
+         <when interval="90189" since="#T0" xml:id="T45"/>
+         <when interval="93139" since="#T0" xml:id="T46"/>
+         <when interval="93144" since="#T0" xml:id="T47"/>
+         <when interval="97045" since="#T0" xml:id="T48"/>
+         <when interval="97356" since="#T0" xml:id="T49"/>
+         <when interval="102217" since="#T0" xml:id="T50"/>
+         <when interval="102471" since="#T0" xml:id="T51"/>
+         <when interval="104741" since="#T0" xml:id="T52"/>
+         <when interval="105379" since="#T0" xml:id="T53"/>
+         <when interval="109244" since="#T0" xml:id="T54"/>
+         <when interval="110279" since="#T0" xml:id="T5"/>
+         <when interval="112160" since="#T0" xml:id="T55"/>
+         <when interval="112766" since="#T0" xml:id="T6"/>
+         <when interval="117904" since="#T0" xml:id="T56"/>
+         <when interval="118073" since="#T0" xml:id="T57"/>
+         <when interval="124578" since="#T0" xml:id="T58"/>
+         <when interval="130190" since="#T0" xml:id="T59"/>
+         <when interval="131874" since="#T0" xml:id="T60"/>
+         <when interval="133354" since="#T0" xml:id="T61"/>
+         <when interval="136358" since="#T0" xml:id="T7"/>
+         <when interval="137783" since="#T0" xml:id="T62"/>
+         <when interval="138001" since="#T0" xml:id="T8"/>
+         <when interval="142400" since="#T0" xml:id="T63"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T63</note>
+            </head>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a1_u1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyya</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000002"
+                     xml:lang="ar-acm-x-shawi-vicav">ballašat</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav">xamsa</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000008"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav">sabʕīn</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000012"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav">sitta</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000015"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav">sabʕīn</w>
+                  <pc xml:id="xTok_000017">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav">maẓḅūṭ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a1"
+                        xml:id="a32">It started in 1975 until 1976, true.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a2_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000019"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔana</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000022"
+                     xml:lang="ar-acm-x-shawi-vicav">sarāḥa</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000023"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">əsmaʕ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav">šwayy</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000030"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔurāybīn</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000033"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000034"
+                     xml:lang="ar-acm-x-shawi-vicav">waʔta</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000035"
+                     xml:lang="ar-acm-x-shawi-vicav">txaḅḅu</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000036"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000038"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000040"
+                     xml:lang="ar-acm-x-shawi-vicav">maṭḥana</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000041"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000042"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000043"
+                     xml:lang="ar-acm-x-shawi-vicav">fī</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000046"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔištibākāt</w>
+                  <pc join="right" xml:id="xTok_000047">.</pc>
+                  <pc xml:id="xTok_000048">.</pc>
+                  <pc xml:id="xTok_000049">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a2"
+                        xml:id="a60">Honestly, I heard from my relatives that when you hid in the mill and there were clashes...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a3">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a3_u1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000050"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000051"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">xayy</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000053"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000056"
+                     xml:lang="ar-acm-x-shawi-vicav">hēka</w>
+                  <pc xml:id="xTok_000057">.</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000059"
+                     xml:lang="ar-acm-x-shawi-vicav">ḍaḥku</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000062"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a3"
+                        xml:id="a33">Brother, we are not like this. We were laughed at.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a69">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a69_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000063"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <pc xml:id="xTok_000066">?</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000069"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000070"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ẓ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000074"
+                     xml:lang="ar-acm-x-shawi-vicav">ẓaḅəṭ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav">kīf</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000076"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥatta</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav">fāt</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav">katāʔib</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000083"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000085"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">hōn</w>
+                  <pc xml:id="xTok_000086">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a69"
+                        xml:id="a70">What happened? What happened exactly? How come the Phalangists got all the way in?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a4">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a4_u1"
+                  end="#T14"
+                  start="#T13">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000089"
+                     xml:lang="ar-acm-x-shawi-vicav">katāʔib</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000090"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kill</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000092"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕāyšīn</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000094"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕa</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000095"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕaḍ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000096"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiḥna</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a4"
+                        xml:id="a34">The Phalangists were all living together with us.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a63">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a63_u1"
+                  end="#T15"
+                  start="#T14">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000097"
+                     xml:lang="ar-acm-x-shawi-vicav">fātat</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000100"
+                     xml:lang="ar-acm-x-shawi-vicav">falasṭīniyya</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a63"
+                        xml:id="a65">The Palestinians entered.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a64">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a64_u1"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000101"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārat</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000102"
+                     xml:lang="ar-acm-x-shawi-vicav">mawwit</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000103"
+                     xml:lang="ar-acm-x-shawi-vicav">wāḥad</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000104"
+                     xml:lang="ar-acm-x-shawi-vicav">əhnāk</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000105"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000107"
+                     xml:lang="ar-acm-x-shawi-vicav">ytmawwit</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000108"
+                     xml:lang="ar-acm-x-shawi-vicav">wāḥad</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000109"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a64"
+                        xml:id="a66">It started to be like "someone died there and then someone would die here",</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a5_u1"
+                  end="#T19"
+                  start="#T18">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav">inšaʕlat</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000113"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000115"
+                     xml:lang="ar-acm-x-shawi-vicav">fitna</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a5"
+                        xml:id="a35">and this stirred up discord.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a6_u1"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000116"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧam</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000117"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000119"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕin</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000122"
+                     xml:lang="ar-acm-x-shawi-vicav">malyūn</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">marra</w>
+                  <pc xml:id="xTok_000124">.</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav">lək</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000127"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕamm</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000129"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000130"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000131"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕaḍ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">lubnāniyya</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000138"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000139"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a6"
+                        xml:id="a36">They came here many times! Look, brother we are all together and we are all Lebanese and we are this and that...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a7_u1"
+                  end="#T22"
+                  start="#T21">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav">ōb</w>
+                  <pc xml:id="xTok_000141">!</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000142"
+                     xml:lang="ar-acm-x-shawi-vicav">xuwana</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000143"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔallāhu</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔakbar</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav">talaʕ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000146"
+                     xml:lang="ar-acm-x-shawi-vicav">čiddāb</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav">yilʕan</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">dīn</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000150"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc xml:id="xTok_000151">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a7"
+                        xml:id="a37">Ha! Traitors, God is the greatest, and he turns out to be a liar, may God curse his religion</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a8_u1"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣāru</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav">yifūtu</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000154"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">falasṭīniyyä</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ġarrū</w>
+                  <pc join="right" xml:id="xTok_000160">(</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000161"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <pc join="right" xml:id="xTok_000162">)</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000163"
+                     xml:lang="ar-acm-x-shawi-vicav">un</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000164"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000166"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav">māl</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a8"
+                        xml:id="a38">They started to enter with the Palestinians, they (the Palestinians) lured them with money</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a9_u1"
+                  end="#T26"
+                  start="#T25">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000169"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔurṭit</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav">əḥneygəl</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000172"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000173"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥneygəl</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a9"
+                        xml:id="a39">What a bunch of tricky traitors.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a10_u1"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000174"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <pc join="right" xml:id="xTok_000175">"</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭlāʕ</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000177"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <pc xml:id="xTok_000182">"</pc>
+                  <pc xml:id="xTok_000183">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṭallʕū</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000186"
+                     xml:lang="ar-acm-x-shawi-vicav">hum</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000188"
+                     xml:lang="ar-acm-x-shawi-vicav">kānu</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000189"
+                     xml:lang="ar-acm-x-shawi-vicav">yiṭlaʕu</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000190"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔāxir</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav">šī</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000192"
+                     xml:lang="ar-acm-x-shawi-vicav">fātum</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a10"
+                        xml:id="a40">"Go back to your land", they kicked them out, but they wouldn't leave, and at the end they left (lit. you.m.pl left).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a11">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a11_u1"
+                  end="#T30"
+                  start="#T29">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000193"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕamlū</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭāyfīyya</w>
+                  <pc xml:id="xTok_000197">.</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000199"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yzitt</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000202"
+                     xml:lang="ar-acm-x-shawi-vicav">hənāk</w>
+                  <pc xml:id="xTok_000203">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav">wāḥad</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000205"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yṣawwbū</w>
+                  <pc join="right" xml:id="xTok_000207">_</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000208"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000209"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔasās</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000211"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yzittū</w>
+                  <pc join="right" xml:id="xTok_000213">_</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000214"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a11"
+                        xml:id="a41">They made it a sectarian issue. Sometimes they would throw them there, they would target someone to throw him away...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a12_u1"
+                  end="#T31"
+                  start="#T30">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000215"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000216"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yizitt</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000218"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000222"
+                     xml:lang="ar-acm-x-shawi-vicav">īk</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a12"
+                        xml:id="a42">And sometimes here, at yours.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a13_u1"
+                  end="#T33"
+                  start="#T32">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000223"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav">inta</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000226"
+                     xml:lang="ar-acm-x-shawi-vicav">walad</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000227"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔawwal</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000228"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṭalʕat</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000230"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a13"
+                        xml:id="a43">And you would be then just a child, a teen.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a14_u1"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000231"
+                     xml:lang="ar-acm-x-shawi-vicav">xarīṭ</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">blād</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000235"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000236"
+                     xml:lang="ar-acm-x-shawi-vicav">xāriǧ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000237"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥaṛuḅ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a14"
+                        xml:id="a44">Do you think that the geography of our country is worthy of a war?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a15_u1"
+                  end="#T37"
+                  start="#T36">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000238"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000239"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭalliʕ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000240"
+                     xml:lang="ar-acm-x-shawi-vicav">iḥna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000241"
+                     xml:lang="ar-acm-x-shawi-vicav">malla</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000242"
+                     xml:lang="ar-acm-x-shawi-vicav">ṃunṭaga</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000243"
+                     xml:lang="ar-acm-x-shawi-vicav">gāʕdīn</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000244"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bī</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000246"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <pc xml:id="xTok_000247">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000248"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭalliʕ</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000249"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000251"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000253"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧbāl</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000254"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">warā</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000256"
+                     xml:lang="ar-acm-x-shawi-vicav">k</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a15"
+                        xml:id="a45">Just look at the area we are in, look at the mountains behind you.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a16_u1"
+                  end="#T39"
+                  start="#T38">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000257"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000258"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārat</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000259"
+                     xml:lang="ar-acm-x-shawi-vicav">ḳaṣīfa</w>
+                  <pc join="right" xml:id="xTok_000260">.</pc>
+                  <pc xml:id="xTok_000261">.</pc>
+                  <pc xml:id="xTok_000262">.</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000263"
+                     xml:lang="ar-acm-x-shawi-vicav">yigizbu</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000264"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000266"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a16"
+                        xml:id="a46">With every bombing... They would lie to us.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a17_u1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000267"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyyi</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000268"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārat</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000269"
+                     xml:lang="ar-acm-x-shawi-vicav">wēn</w>
+                  <pc xml:id="xTok_000270">?</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000271"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000273"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000275"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ḅirḅāṛ</w>
+                  <pc xml:id="xTok_000276">.</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000277"
+                     xml:lang="ar-acm-x-shawi-vicav">hī</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000278"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣāṛ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000279"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000280"
+                     xml:lang="ar-acm-x-shawi-vicav">liḥna</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000281"
+                     xml:lang="ar-acm-x-shawi-vicav">nṣaddiḳ</w>
+                  <pc xml:id="xTok_000282">!</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a17"
+                        xml:id="a47">"What happened where?" "In Birbār!" "It happened" And we believe it!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a18_u1"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000283"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000284">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000285"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔamtāl</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000286"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000288"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥẓāt</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000289"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000290"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧābū</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000292"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a18"
+                        xml:id="a48">Yes, yes, (these are) some examples of the moments they brought (with them).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a19_u1"
+                  end="#T44"
+                  start="#T43">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000293"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <pc xml:id="xTok_000294">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000295"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">xiḏaw</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000297"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000298"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṭallaʕū</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000300"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000301"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāfāya</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000302"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕārāya</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000303"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000304"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tšūfī</w>
+                  <pc join="right" xml:id="xTok_000306">_</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000307"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000308"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000310"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṛ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">ṛās</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a19"
+                        xml:id="a49">Yes, they took us, and they kicked us out completely barefoot, stark naked.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a20_u1"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000313"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000314"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000315"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥada</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000316"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭallaʕ</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000317"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bī</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000319"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000320"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000321"
+                     xml:lang="ar-acm-x-shawi-vicav">tṣaddiḳ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a20"
+                        xml:id="a50">And no one looked at us (cared about us), you would not believe it.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a21">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a21_u1"
+                  end="#T48"
+                  start="#T47">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000322"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000324"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">u</w>
+                  <pc xml:id="xTok_000325">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000326"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧidd</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000328"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000329"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000330"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧidd</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000332"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000333"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000334"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔani</w>
+                  <pc xml:id="xTok_000335">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000336"
+                     xml:lang="ar-acm-x-shawi-vicav">kunna</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000337"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000338"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000340"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔīd</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000342"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000343"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a21"
+                        xml:id="a51">Everyone, your grandfather my grandfather and myself, we were all, it was all in our hands.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a22">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a22_u1"
+                  end="#T50"
+                  start="#T49">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000344"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣārat</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000345"
+                     xml:lang="ar-acm-x-shawi-vicav">tilḥag</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000346"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iš</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000348"
+                     xml:lang="ar-acm-x-shawi-vicav">šibāb</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000349"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000351"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaḥzāb</w>
+                  <pc xml:id="xTok_000352">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000353"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏa</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000354"
+                     xml:lang="ar-acm-x-shawi-vicav">yifūt</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000355"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔištirāki</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000356"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣a</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000357"
+                     xml:lang="ar-acm-x-shawi-vicav">yfūt</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000358"
+                     xml:lang="ar-acm-x-shawi-vicav">fatəḥ</w>
+                  <pc xml:id="xTok_000359">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000360"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāḏ̣a</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000361"
+                     xml:lang="ar-acm-x-shawi-vicav">yfūt</w>
+                  <pc join="right" xml:id="xTok_000362">.</pc>
+                  <pc xml:id="xTok_000363">.</pc>
+                  <pc xml:id="xTok_000364">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a22"
+                        xml:id="a52">Then the youngsters started affiliating with the parties... One would go with the socialists, one would go with Fatah, one would go with...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a23">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a23_u1"
+                  end="#T52"
+                  start="#T51">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000365"
+                     xml:lang="ar-acm-x-shawi-vicav">la</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000366"
+                     xml:lang="ar-acm-x-shawi-vicav">yākul</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000367"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000369"
+                     xml:lang="ar-acm-x-shawi-vicav">yišrab</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000370"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000372"
+                     xml:lang="ar-acm-x-shawi-vicav">yiḥmi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000373"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">rās</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000375"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a23"
+                        xml:id="a53">to secure food, water and a roof over his head (lit. to eat, drink and protect his head).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a24">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a24_u1"
+                  end="#T54"
+                  start="#T53">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000376"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥaṛuḅ</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000377"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000379"
+                     xml:lang="ar-acm-x-shawi-vicav">libnāniyya</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000380"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000382"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000383"
+                     xml:lang="ar-acm-x-shawi-vicav">kizb</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000384"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000386"
+                     xml:lang="ar-acm-x-shawi-vicav">kizb</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000387"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000389"
+                     xml:lang="ar-acm-x-shawi-vicav">kizb</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000390"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000392"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">kizəb</w>
+                  <pc xml:id="xTok_000393">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a24"
+                        xml:id="a54">The Lebanese (civil) War is all a big fat lie.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a25">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a25_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000394"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000395"
+                     xml:lang="ar-acm-x-shawi-vicav">huwwi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000396"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000398"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥaʔʔ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000399"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔawwal</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000400"
+                     xml:lang="ar-acm-x-shawi-vicav">šī</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000401"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000403"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000405"
+                     xml:lang="ar-acm-x-shawi-vicav">falasṭīni</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000406"
+                     xml:lang="ar-acm-x-shawi-vicav">miš</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000407"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000409"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000411"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔištirāki</w>
+                  <pc xml:id="xTok_000412">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a25"
+                        xml:id="a61">So the ones to blame are the Palestinians first, and not the socialists.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a26">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a26_u1"
+                  end="#T56"
+                  start="#T55">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000413"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000414"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000416"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000418"
+                     xml:lang="ar-acm-x-shawi-vicav">falasṭīni</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000419"
+                     xml:lang="ar-acm-x-shawi-vicav">fāt</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000420"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000422"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">hēn</w>
+                  <pc xml:id="xTok_000423">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000424"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000425"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000427"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥitta</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000428"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiǧa</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000429"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕišrīn</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000430"
+                     xml:lang="ar-acm-x-shawi-vicav">marra</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000431"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000433"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaḥzāb</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000434"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000436"
+                     xml:lang="ar-acm-x-shawi-vicav">katāʔib</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000437"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000439"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ġēr</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000441"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a26"
+                        xml:id="a55">Yes, the Palestinian (who) entered and even came a million times, (like) the parties, the Phalange and others...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a27">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a27_u1"
+                  end="#T58"
+                  start="#T57">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000442"
+                     xml:lang="ar-acm-x-shawi-vicav">yiǧi</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000443"
+                     xml:lang="ar-acm-x-shawi-vicav">xuwana</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000444"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔallāhu</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000445"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔakbar</w>
+                  <pc xml:id="xTok_000446">!</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000447"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiza</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000448"
+                     xml:lang="ar-acm-x-shawi-vicav">inta</w>
+                  <pc join="right" xml:id="xTok_000449">(</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000450"
+                     xml:lang="ar-acm-x-shawi-vicav">bid</w>
+                  <pc join="right" xml:id="xTok_000451">)</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000452"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">d</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000454"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000455"
+                     xml:lang="ar-acm-x-shawi-vicav">tfūt</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000456"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000458"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṣ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000460"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣuluḥ</w>
+                  <pc xml:id="xTok_000461">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000462"
+                     xml:lang="ar-acm-x-shawi-vicav">kīf</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000463"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000464"
+                     xml:lang="ar-acm-x-shawi-vicav">inta</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000465"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧāyī</w>
+                  <pc join="right" xml:id="xTok_000467">(</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000468"
+                     xml:lang="ar-acm-x-shawi-vicav">y</w>
+                  <pc join="right" xml:id="xTok_000469">)</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000470"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <pc join="right" xml:id="xTok_000471">.</pc>
+                  <pc xml:id="xTok_000472">.</pc>
+                  <pc xml:id="xTok_000473">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a27"
+                        xml:id="a56">They are really traitors, God is great! If you want to enter (somewhere) peacefully, just like you are doing now ....</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a28">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a28_u1"
+                  end="#T60"
+                  start="#T59">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000474"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000475"
+                     xml:lang="ar-acm-x-shawi-vicav">rāḥat</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000476"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">id</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000478"
+                     xml:lang="ar-acm-x-shawi-vicav">dinya</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000479"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000481"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔáhal</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000483"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a28"
+                        xml:id="a57">And then everything and everyone was lost.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a29">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a29_u1"
+                  end="#T62"
+                  start="#T61">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000484"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000485"
+                     xml:lang="ar-acm-x-shawi-vicav">walla</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000486"
+                     xml:lang="ar-acm-x-shawi-vicav">rāḥ</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000487"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">id</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000489"
+                     xml:lang="ar-acm-x-shawi-vicav">dinya</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000490"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000492"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔáhal</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000494"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <pc xml:id="xTok_000495">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000496"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ǧidd</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000498"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <pc xml:id="xTok_000499">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000500"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">baʕad</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000502"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000503">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000504"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000506"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥadd</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000507"
+                     xml:lang="ar-acm-x-shawi-vicav">hallaʔ</w>
+                  <pc xml:id="xTok_000508">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a29"
+                        xml:id="a58">Yes, then everything and everyone was lost, my boy.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a31">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a31_u1"
+                  end="#T8"
+                  start="#T7">
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000509"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000510"
+                     xml:lang="ar-acm-x-shawi-vicav">mhammašīn</w>
+                  <pc xml:id="xTok_000511">,</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000512"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarab</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000513"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000515"
+                     xml:lang="ar-acm-x-shawi-vicav">maslax</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a31"
+                        xml:id="a62">We, ʕArab il-Maslax, we are marginalized.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T39_OD_M.72_Karantina_CivilWar_a30">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_OD_M.72_Speaker3"
+                  xml:id="T39_OD_M.72_Karantina_CivilWar_a30_u1"
+                  end="#T63"
+                  start="#T8">
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000516"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">baʕad</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000518"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000519">,</pc>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000520"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">nḍall</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000522"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000523"
+                     xml:lang="ar-acm-x-shawi-vicav">mhammišīn</w>
+                  <pc xml:id="xTok_000524">.</pc>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000525"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000526"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000527"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000529"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000530"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000532"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000533"
+                     xml:lang="ar-acm-x-shawi-vicav">nkūn</w>
+                  <w join="right"
+                     xml:id="T39_OD_M.72_Karantina_CivilWar_xTok_000534"
+                     xml:lang="ar-acm-x-shawi-vicav">qunnāra</w>
+                  <pc xml:id="xTok_000535">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T39_OD_M.72_Karantina_CivilWar_a30"
+                        xml:id="a59">We are still marginalized. Well, we all want to be "the bigger fish in the pond".</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
