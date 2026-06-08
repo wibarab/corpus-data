@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T07:51:18.555825Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Naameh – AD (F.67) – Maslakh Before (1)</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">01_AD_F.67_Naameh_Maslaxbefore1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="01:15" type="audio">
+                  <date when="2023-05-17"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 01_AD_F.67_Naameh_Maslaxbefore1</head>
+               <person sameAs="corpus:LEB_KAR_2022_KZ_M.27_Speaker12">
+                  <idno>LEB_KAR_2022_KZ_M.27_Speaker12</idno>
+               </person>
+               <person sameAs="corpus:LEB_NAA_2023_AD_F.67_Speaker1">
+                  <idno>LEB_NAA_2023_AD_F.67_Speaker1</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2023_AID">
+            <setting>
+               <placeName sameAs="geo:naameh">Naameh</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.FreeSpeech"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Childhood</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="3410" since="#T0" xml:id="T7"/>
+         <when interval="8280" since="#T0" xml:id="T1"/>
+         <when interval="8675" since="#T0" xml:id="T8"/>
+         <when interval="14293" since="#T0" xml:id="T9"/>
+         <when interval="14606" since="#T0" xml:id="T2"/>
+         <when interval="16334" since="#T0" xml:id="T3"/>
+         <when interval="16729" since="#T0" xml:id="T10"/>
+         <when interval="18040" since="#T0" xml:id="T11"/>
+         <when interval="19756" since="#T0" xml:id="T4"/>
+         <when interval="20134" since="#T0" xml:id="T5"/>
+         <when interval="21115" since="#T0" xml:id="T12"/>
+         <when interval="22533" since="#T0" xml:id="T13"/>
+         <when interval="23513" since="#T0" xml:id="T6"/>
+         <when interval="27971" since="#T0" xml:id="T14"/>
+         <when interval="30266" since="#T0" xml:id="T15"/>
+         <when interval="36497" since="#T0" xml:id="T16"/>
+         <when interval="38369" since="#T0" xml:id="T17"/>
+         <when interval="42601" since="#T0" xml:id="T18"/>
+         <when interval="45907" since="#T0" xml:id="T19"/>
+         <when interval="50069" since="#T0" xml:id="T20"/>
+         <when interval="54624" since="#T0" xml:id="T21"/>
+         <when interval="58184" since="#T0" xml:id="T22"/>
+         <when interval="59860" since="#T0" xml:id="T23"/>
+         <when interval="62830" since="#T0" xml:id="T24"/>
+         <when interval="68992" since="#T0" xml:id="T25"/>
+         <when interval="75285" since="#T0" xml:id="T26"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T26</note>
+            </head>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a1_u1"
+                  end="#T7"
+                  start="#T0">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a1"
+                        xml:id="a44">We lived... approximately seven years.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a2_u1"
+                  end="#T8"
+                  start="#T7">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a2"
+                        xml:id="a23">that's all. I grow up in al-Maslakh and in al-Zaatar.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a6_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaywa</w>
+                  <pc xml:id="xTok_000002">.</pc>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔayye</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav">sine</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000008"
+                     xml:lang="ar-acm-x-shawi-vicav">fallēti</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000012"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">mislax</w>
+                  <pc xml:id="xTok_000013">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a6"
+                        xml:id="a24">Aha. Which year did you leave al-Maslax?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a4">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a4_u1"
+                  end="#T10"
+                  start="#T9">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a4"
+                        xml:id="a29">I was approximately eleven, twelve years old.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a7_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000014"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔē</w>
+                  <pc xml:id="xTok_000015">.</pc>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav">mitzakkara</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav">šī</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000019"
+                     xml:lang="ar-acm-x-shawi-vicav">yōm</w>
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000022"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">mislax</w>
+                  <pc xml:id="xTok_000023">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a7"
+                        xml:id="a25">yes. do you remember something from al-Maslakh?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a5_u1"
+                  end="#T12"
+                  start="#T11">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a5"
+                        xml:id="a28">yes. what do you want?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KZ_M.27_Speaker12"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a8_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔiḥkī</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">kīf</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav">kānet</w>
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥayāt</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">taḥat</w>
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000033"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000035"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_xTok_000037"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">mislax</w>
+                  <pc xml:id="xTok_000038">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a8"
+                        xml:id="a30">tell me how was life over there in al-Maslakh.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a9_u1"
+                  end="#T14"
+                  start="#T13">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a9"
+                        xml:id="a31">al-Maslakh was very very al-Maslax very good.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a10_u1"
+                  end="#T15"
+                  start="#T14">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a10"
+                        xml:id="a32">everyone was kind to each other.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a11">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a11_u1"
+                  end="#T16"
+                  start="#T15">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a11"
+                        xml:id="a26">and it was (I mean) there was no: "this one is from the Neem, this one is from... Everyone loved each other.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a12_u1"
+                  end="#T17"
+                  start="#T16">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a12"
+                        xml:id="a33">al-Maslakh was good.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a13_u1"
+                  end="#T18"
+                  start="#T17">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a13"
+                        xml:id="a34">so much. if those days of the life in al-Maslakh could come back.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a14_u1"
+                  end="#T19"
+                  start="#T18">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a14"
+                        xml:id="a35">I go back. I now they give me a choice.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a15_u1"
+                  end="#T20"
+                  start="#T19">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a15"
+                        xml:id="a36">between (the) building I prefer... making a barrack in al-Maslakh.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a16_u1"
+                  end="#T21"
+                  start="#T20">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a16"
+                        xml:id="a27">yes. everyone liked each other. Their hearts were together.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a17_u1"
+                  end="#T22"
+                  start="#T21">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a17"
+                        xml:id="a37">Yes. What can I tell you. Absolutely everything</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a18_u1"
+                  end="#T23"
+                  start="#T22">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a18"
+                        xml:id="a38">Whatever you say about al-Maslakh (is) beautiful.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a19_u1"
+                  end="#T24"
+                  start="#T23">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a19"
+                        xml:id="a39">(I mean) there were no grudges among people.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a40">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a40_u1"
+                  end="#T25"
+                  start="#T24">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a40"
+                        xml:id="a42">When a foreigner would die there, they would take ... They would repatriate him to his country.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a41">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_NAA_2023_AD_F.67_Speaker1"
+                  xml:id="T01_AD_F.67_Naameh_Maslaxbefore1_a41_u1"
+                  end="#T26"
+                  start="#T25">
+                  <gap reason="unconsented"/>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T01_AD_F.67_Naameh_Maslaxbefore1_a41"
+                        xml:id="a43">I mean everyone, whether stranger or close relative, (if) this is from Arab al-Maslakh, they don't differenciate.</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
