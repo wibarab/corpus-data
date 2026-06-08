@@ -9,7 +9,8 @@
         Author: Daniel Schopper
         Created: 2022-03-12 -->
     <xsl:param name="pathToCorpusDoc" />
-    <xsl:variable name="whoSuffixes" as="xs:string*" select="('_Transcription-txt', '_Transcription', '_Transcriptions-txt')" />
+    <!-- NOTE: make sure the suffixes are ordered from longest to shortest to avoid partial matches -->
+    <xsl:variable name="whoSuffixes" as="xs:string*" select="('_Transcriptions-txt', '_Transcription-txt', '_Transcription', '-txt')" />
     <xsl:variable name="translationSuffixes" as="xs:string*" select="('_Translation-gls-en', '_EN')" />
     <xsl:function name="_:ensureNCName" as="xs:string">
         <xsl:param name="value" as="xs:string?" />

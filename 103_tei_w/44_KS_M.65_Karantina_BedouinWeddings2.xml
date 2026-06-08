@@ -1,0 +1,2671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T07:51:31.426088Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – KS (M.65) – Bedouin Weddings (2)</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">44_KS_M.65_Karantina_BedouinWeddings2</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="05:01" type="audio">
+                  <date when="2022-02-26"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2022</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 44_KS_M.65_Karantina_BedouinWeddings2</head>
+               <person sameAs="corpus:LEB_KAR_2022_KS_M.65_Speaker5">
+                  <idno>LEB_KAR_2022_KS_M.65_Speaker5</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2022_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.FreeSpeech"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Marriage</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="7880" since="#T0" xml:id="T1"/>
+         <when interval="14340" since="#T0" xml:id="T2"/>
+         <when interval="26754" since="#T0" xml:id="T3"/>
+         <when interval="27853" since="#T0" xml:id="T4"/>
+         <when interval="28122" since="#T0" xml:id="T5"/>
+         <when interval="31790" since="#T0" xml:id="T6"/>
+         <when interval="38296" since="#T0" xml:id="T7"/>
+         <when interval="43647" since="#T0" xml:id="T8"/>
+         <when interval="44039" since="#T0" xml:id="T9"/>
+         <when interval="48565" since="#T0" xml:id="T10"/>
+         <when interval="49013" since="#T0" xml:id="T11"/>
+         <when interval="56598" since="#T0" xml:id="T12"/>
+         <when interval="56886" since="#T0" xml:id="T13"/>
+         <when interval="58665" since="#T0" xml:id="T14"/>
+         <when interval="59021" since="#T0" xml:id="T15"/>
+         <when interval="67104" since="#T0" xml:id="T16"/>
+         <when interval="67577" since="#T0" xml:id="T17"/>
+         <when interval="73504" since="#T0" xml:id="T18"/>
+         <when interval="75656" since="#T0" xml:id="T19"/>
+         <when interval="86890" since="#T0" xml:id="T20"/>
+         <when interval="94364" since="#T0" xml:id="T21"/>
+         <when interval="95146" since="#T0" xml:id="T22"/>
+         <when interval="100803" since="#T0" xml:id="T23"/>
+         <when interval="101339" since="#T0" xml:id="T24"/>
+         <when interval="103859" since="#T0" xml:id="T25"/>
+         <when interval="104339" since="#T0" xml:id="T26"/>
+         <when interval="115942" since="#T0" xml:id="T27"/>
+         <when interval="116126" since="#T0" xml:id="T28"/>
+         <when interval="118934" since="#T0" xml:id="T29"/>
+         <when interval="119134" since="#T0" xml:id="T30"/>
+         <when interval="121230" since="#T0" xml:id="T31"/>
+         <when interval="121360" since="#T0" xml:id="T32"/>
+         <when interval="128040" since="#T0" xml:id="T33"/>
+         <when interval="128969" since="#T0" xml:id="T34"/>
+         <when interval="139572" since="#T0" xml:id="T35"/>
+         <when interval="139829" since="#T0" xml:id="T36"/>
+         <when interval="151710" since="#T0" xml:id="T37"/>
+         <when interval="152167" since="#T0" xml:id="T38"/>
+         <when interval="159750" since="#T0" xml:id="T39"/>
+         <when interval="159951" since="#T0" xml:id="T40"/>
+         <when interval="175353" since="#T0" xml:id="T41"/>
+         <when interval="175454" since="#T0" xml:id="T42"/>
+         <when interval="181314" since="#T0" xml:id="T43"/>
+         <when interval="181569" since="#T0" xml:id="T44"/>
+         <when interval="183410" since="#T0" xml:id="T45"/>
+         <when interval="183606" since="#T0" xml:id="T46"/>
+         <when interval="187730" since="#T0" xml:id="T47"/>
+         <when interval="187836" since="#T0" xml:id="T48"/>
+         <when interval="195167" since="#T0" xml:id="T49"/>
+         <when interval="195224" since="#T0" xml:id="T50"/>
+         <when interval="213507" since="#T0" xml:id="T51"/>
+         <when interval="213691" since="#T0" xml:id="T52"/>
+         <when interval="220220" since="#T0" xml:id="T53"/>
+         <when interval="220241" since="#T0" xml:id="T54"/>
+         <when interval="223339" since="#T0" xml:id="T55"/>
+         <when interval="224249" since="#T0" xml:id="T56"/>
+         <when interval="229490" since="#T0" xml:id="T57"/>
+         <when interval="230969" since="#T0" xml:id="T58"/>
+         <when interval="235649" since="#T0" xml:id="T59"/>
+         <when interval="236389" since="#T0" xml:id="T60"/>
+         <when interval="241727" since="#T0" xml:id="T61"/>
+         <when interval="241901" since="#T0" xml:id="T62"/>
+         <when interval="248018" since="#T0" xml:id="T63"/>
+         <when interval="255229" since="#T0" xml:id="T64"/>
+         <when interval="255518" since="#T0" xml:id="T65"/>
+         <when interval="261409" since="#T0" xml:id="T66"/>
+         <when interval="266309" since="#T0" xml:id="T67"/>
+         <when interval="267837" since="#T0" xml:id="T68"/>
+         <when interval="271122" since="#T0" xml:id="T69"/>
+         <when interval="272050" since="#T0" xml:id="T70"/>
+         <when interval="274886" since="#T0" xml:id="T71"/>
+         <when interval="275263" since="#T0" xml:id="T72"/>
+         <when interval="279159" since="#T0" xml:id="T73"/>
+         <when interval="279205" since="#T0" xml:id="T74"/>
+         <when interval="288750" since="#T0" xml:id="T75"/>
+         <when interval="289438" since="#T0" xml:id="T76"/>
+         <when interval="291559" since="#T0" xml:id="T77"/>
+         <when interval="298908" since="#T0" xml:id="T78"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T78</note>
+            </head>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a1_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">gilnā</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ən</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000008"
+                     xml:lang="ar-acm-x-shawi-vicav">niswān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav">tkūn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧāʕda</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav">tiṭḅux</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000012"
+                     xml:lang="ar-acm-x-shawi-vicav">il</w>
+                  <pc join="right" xml:id="xTok_000013">.</pc>
+                  <pc xml:id="xTok_000014">.</pc>
+                  <pc xml:id="xTok_000015">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000016"
+                     xml:lang="ar-acm-x-shawi-vicav">tkūn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav">mgaṭṭʕa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000018"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥam</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000021"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <pc join="right" xml:id="xTok_000022">.</pc>
+                  <pc xml:id="xTok_000023">.</pc>
+                  <pc xml:id="xTok_000024">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a1"
+                        xml:id="a682">As we told you, women would be cooking... cutting meat and...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a2">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a2_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000025"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000026"
+                     xml:lang="ar-acm-x-shawi-vicav">yiṭuḅxan</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a2"
+                        xml:id="a683">Cooking</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a3">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a3_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">ykūn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ən</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000030"
+                     xml:lang="ar-acm-x-shawi-vicav">niswān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">tkūn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav">gāʕda</w>
+                  <pc join="right" xml:id="xTok_000033">.</pc>
+                  <pc xml:id="xTok_000034">.</pc>
+                  <pc xml:id="xTok_000035">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000036"
+                     xml:lang="ar-acm-x-shawi-vicav">gāʕda</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000037"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000038"
+                     xml:lang="ar-acm-x-shawi-vicav">tuṭḅux</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a3"
+                        xml:id="a687">Women would be cooking, cooking.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a4">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a4_u1"
+                  end="#T8"
+                  start="#T7">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav">yiṭubxan</w>
+                  <pc join="right" xml:id="xTok_000040">.</pc>
+                  <pc join="right" xml:id="xTok_000041">.</pc>
+                  <pc join="right" xml:id="xTok_000042">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000043"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000044"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyya</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">zāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000048"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <pc join="right" xml:id="xTok_000049">.</pc>
+                  <pc join="right" xml:id="xTok_000050">.</pc>
+                  <pc join="right" xml:id="xTok_000051">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav">lah​ža</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a4"
+                        xml:id="a688"/>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a5">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a5_u1"
+                  end="#T10"
+                  start="#T9">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav">tkūn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000056"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ən</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000058"
+                     xml:lang="ar-acm-x-shawi-vicav">niswān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000059"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāttāt</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000060"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000062"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧida</w>
+                  <pc join="right" xml:id="xTok_000063">.</pc>
+                  <pc join="right" xml:id="xTok_000064">.</pc>
+                  <pc join="right" xml:id="xTok_000065">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000066"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav">ədsūta</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000069"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000070"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000071"
+                     xml:lang="ar-acm-x-shawi-vicav">yiṭuḅxan</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a5"
+                        xml:id="a689">Women would have put the pots and would be cooking</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a6">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a6_u1"
+                  end="#T12"
+                  start="#T11">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000073"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000077"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥidʕāš</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav">taqrīban</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000080"
+                     xml:lang="ar-acm-x-shawi-vicav">ykūn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000081"
+                     xml:lang="ar-acm-x-shawi-vicav">istawa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">r</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000084"
+                     xml:lang="ar-acm-x-shawi-vicav">rēzz</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000085"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000086"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000089"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000090"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000092"
+                     xml:lang="ar-acm-x-shawi-vicav">burġul</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000094"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000096"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥam</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a6"
+                        xml:id="a690">and by around 11 am, the rice and the bulgur and the meat would be cooked.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a7_u1"
+                  end="#T14"
+                  start="#T13">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000097"
+                     xml:lang="ar-acm-x-shawi-vicav">tinḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000098"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000100"
+                     xml:lang="ar-acm-x-shawi-vicav">manāsif</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a7"
+                        xml:id="a691">Then the manasif are placed/put.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a8_u1"
+                  end="#T16"
+                  start="#T15">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000101"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinti</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000102"
+                     xml:lang="ar-acm-x-shawi-vicav">masalan</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000103"
+                     xml:lang="ar-acm-x-shawi-vicav">šēxit</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000104"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕašīra</w>
+                  <pc xml:id="xTok_000105">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000106"
+                     xml:lang="ar-acm-x-shawi-vicav">yinḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000107"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">giddām</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000109"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣudur</w>
+                  <pc xml:id="xTok_000111">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav">minsaf</w>
+                  <pc xml:id="xTok_000113">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000114"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000115"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000117">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000118"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000119"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000120"
+                     xml:lang="ar-acm-x-shawi-vicav">xārūf</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000122"
+                     xml:lang="ar-acm-x-shawi-vicav">fōg</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a8"
+                        xml:id="a692">Were you, for instance, the sheikh of a clan, a tray, a minsaf with a lamb's head on top would be presented before you.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a9_u1"
+                  end="#T18"
+                  start="#T17">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">hiyye</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000124"
+                     xml:lang="ar-acm-x-shawi-vicav">kazālik</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000125"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000127"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔamər</w>
+                  <pc xml:id="xTok_000128">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000129"
+                     xml:lang="ar-acm-x-shawi-vicav">yinḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000130"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">giddām</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav">xārūf</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a9"
+                        xml:id="a693">For her, the same, in front of her, they would put a lamb's head</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a10_u1"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">kill</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000136"
+                     xml:lang="ar-acm-x-shawi-vicav">šēx</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕašīra</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000138"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000139"
+                     xml:lang="ar-acm-x-shawi-vicav">žāyb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav">dibīḥa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000141"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mʕā</w>
+                  <pc join="right" xml:id="xTok_000143">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <pc join="right" xml:id="xTok_000145">.</pc>
+                  <pc xml:id="xTok_000146">.</pc>
+                  <pc xml:id="xTok_000147">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕašīra</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000151"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav">​žāyba</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mʕā</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000156"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əd</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav">dibīḥa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000159"
+                     xml:lang="ar-acm-x-shawi-vicav">yinḥaṭṭ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000160"
+                     xml:lang="ar-acm-x-shawi-vicav">giddām</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000161"
+                     xml:lang="ar-acm-x-shawi-vicav">šēx</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000162"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000164"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕašīra</w>
+                  <pc join="right" xml:id="xTok_000165">.</pc>
+                  <pc xml:id="xTok_000166">.</pc>
+                  <pc xml:id="xTok_000167">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000170"
+                     xml:lang="ar-acm-x-shawi-vicav">minsaf</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000173"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <pc join="right" xml:id="xTok_000175">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000177"
+                     xml:lang="ar-acm-x-shawi-vicav">rās</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000178"
+                     xml:lang="ar-acm-x-shawi-vicav">xārūf</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a10"
+                        xml:id="a694">The sheikh of every clan that brings an offering (animal to sacrifice)... the sheikh of every clan who brought with them an offering is presented with a lamb's head on a minsaf.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a11">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a11_u1"
+                  end="#T21"
+                  start="#T20">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḏ̣a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000181"
+                     xml:lang="ar-acm-x-shawi-vicav">žāb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000182"
+                     xml:lang="ar-acm-x-shawi-vicav">dibīḥa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000183"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mʕā</w>
+                  <pc join="right" xml:id="xTok_000185">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000186"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000189"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000190"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕamilnā</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000192"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">qīmt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000194"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥaṭṭēnā</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000197"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000199"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000200"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">diḅīḥt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000202"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000203"
+                     xml:lang="ar-acm-x-shawi-vicav">illi</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000204"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">žāb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000206"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a11"
+                        xml:id="a695">In the sense of: "This person brought an offering with him and we honored him presenting him with the offering that he brought"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a12_u1"
+                  end="#T23"
+                  start="#T22">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000207"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+                  <pc join="right" xml:id="xTok_000208">.</pc>
+                  <pc xml:id="xTok_000209">.</pc>
+                  <pc xml:id="xTok_000210">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000211"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000212"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕad</w>
+                  <pc join="right" xml:id="xTok_000213">.</pc>
+                  <pc join="right" xml:id="xTok_000214">.</pc>
+                  <pc join="right" xml:id="xTok_000215">.</pc>
+                  <pc join="right" xml:id="xTok_000216">(</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000217"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">b</w>
+                  <pc xml:id="xTok_000218">)</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000219"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000221"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕālam</w>
+                  <pc join="right" xml:id="xTok_000222">(</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000223"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">b</w>
+                  <pc xml:id="xTok_000224">)</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav">tākul</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000226"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000227"
+                     xml:lang="ar-acm-x-shawi-vicav">txalliṣ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000228"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000229"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000231"
+                     xml:lang="ar-acm-x-shawi-vicav">yšrabu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav">gahwa</w>
+                  <pc xml:id="xTok_000233">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a12"
+                        xml:id="a696">And after people have eaten and finished and drunk coffee</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a13_u1"
+                  end="#T25"
+                  start="#T24">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">ā</w>
+                  <pc join="right" xml:id="xTok_000235">.</pc>
+                  <pc xml:id="xTok_000236">.</pc>
+                  <pc xml:id="xTok_000237">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000238"
+                     xml:lang="ar-acm-x-shawi-vicav">yzuffu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000239"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000241"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a13"
+                        xml:id="a697">they make a zaffa for the groom.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a14_u1"
+                  end="#T27"
+                  start="#T26">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000242"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000244"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕawāyid</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000245"
+                     xml:lang="ar-acm-x-shawi-vicav">kānat</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000246"
+                     xml:lang="ar-acm-x-shawi-vicav">gaḅul</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000247"
+                     xml:lang="ar-acm-x-shawi-vicav">masalan</w>
+                  <pc join="right" xml:id="xTok_000248">.</pc>
+                  <pc xml:id="xTok_000249">.</pc>
+                  <pc xml:id="xTok_000250">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000251"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕirəs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000252"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔaxū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000254"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ki</w>
+                  <pc xml:id="xTok_000255">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000256"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000258"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000260"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000261"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">sāḥəbt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000263"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000264"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <pc join="right" xml:id="xTok_000265">"</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000266"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥimmām</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000268"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000269"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000271"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <pc xml:id="xTok_000272">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a14"
+                        xml:id="a698">Tradition had it that, for instance, in your brother's wedding, your friend for instance would say: "His bath will take place at mine"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a15_u1"
+                  end="#T29"
+                  start="#T28">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000273"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000274"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔamtīn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000275"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000277"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000279"
+                     xml:lang="ar-acm-x-shawi-vicav">ik</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000280"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔiyyā</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000282"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <pc xml:id="xTok_000283">?</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000284"
+                     xml:lang="ar-acm-x-shawi-vicav">gaḅl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000285"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000287"
+                     xml:lang="ar-acm-x-shawi-vicav">žumʕa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a15"
+                        xml:id="a699">When would she tell you this? A week before.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a16_u1"
+                  end="#T31"
+                  start="#T30">
+                  <pc join="right" xml:id="xTok_000288">"</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000289"
+                     xml:lang="ar-acm-x-shawi-vicav">himmām</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000290"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000292"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000293"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000295"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <pc xml:id="xTok_000296">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a16"
+                        xml:id="a700">"The groom's bath will take place at mine"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a17_u1"
+                  end="#T33"
+                  start="#T32">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000297"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000298"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinti</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000299"
+                     xml:lang="ar-acm-x-shawi-vicav">tgūli</w>
+                  <pc join="right" xml:id="xTok_000300">"</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000301"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ən</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000303"
+                     xml:lang="ar-acm-x-shawi-vicav">nhār</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000304"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000306"
+                     xml:lang="ar-acm-x-shawi-vicav">flāni</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000307"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥimmām</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000308"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000310"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕirəs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000311"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕind</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">əflān</w>
+                  <pc xml:id="xTok_000313">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000314"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000316"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000317"
+                     xml:lang="ar-acm-x-shawi-vicav">əflān</w>
+                  <pc xml:id="xTok_000318">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a17"
+                        xml:id="a701">You (basically) say "on this day, the wedding bath will take place at this person's house"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a18_u1"
+                  end="#T35"
+                  start="#T34">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000319"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <pc join="right" xml:id="xTok_000320">.</pc>
+                  <pc xml:id="xTok_000321">.</pc>
+                  <pc xml:id="xTok_000322">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000323"
+                     xml:lang="ar-acm-x-shawi-vicav">yāklu</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000324"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000325"
+                     xml:lang="ar-acm-x-shawi-vicav">yxallṣu</w>
+                  <pc join="right" xml:id="xTok_000326">.</pc>
+                  <pc xml:id="xTok_000327">.</pc>
+                  <pc xml:id="xTok_000328">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000329"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000331"
+                     xml:lang="ar-acm-x-shawi-vicav">sāʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000332"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥidʕāš</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000333"
+                     xml:lang="ar-acm-x-shawi-vicav">ətnaʕāš</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000334"
+                     xml:lang="ar-acm-x-shawi-vicav">yāxdu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000335"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000337"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000338"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yʕamlū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000340"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000342"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000343"
+                     xml:lang="ar-acm-x-shawi-vicav">zaffa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000344"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000346"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000348"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">munṭaga</w>
+                  <pc xml:id="xTok_000349">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000350"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000351"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əṭ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000353"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭaḅul</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000354"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">giddām</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000356"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc join="right" xml:id="xTok_000357">.</pc>
+                  <pc xml:id="xTok_000358">.</pc>
+                  <pc xml:id="xTok_000359">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000360"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000362"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000364"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a18"
+                        xml:id="a684">And when they have eaten and finished, around 11 or 12, they take the groom, make a zaffa for him around the neighborhood, (with) the drum before him (leading the way) ... to the groom.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a19_u1"
+                  end="#T37"
+                  start="#T36">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000365"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000367"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarūs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000368"
+                     xml:lang="ar-acm-x-shawi-vicav">kānat</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000369"
+                     xml:lang="ar-acm-x-shawi-vicav">gaḅul</w>
+                  <pc join="right" xml:id="xTok_000370">.</pc>
+                  <pc xml:id="xTok_000371">.</pc>
+                  <pc xml:id="xTok_000372">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000373"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">in</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000375"
+                     xml:lang="ar-acm-x-shawi-vicav">niswān</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000376"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000378"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000379"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000381"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">iz</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000383"
+                     xml:lang="ar-acm-x-shawi-vicav">zulum</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000384"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000386"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāl</w>
+                  <pc xml:id="xTok_000387">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000388"
+                     xml:lang="ar-acm-x-shawi-vicav">liʔanno</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000389"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000390"
+                     xml:lang="ar-acm-x-shawi-vicav">bī</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000391"
+                     xml:lang="ar-acm-x-shawi-vicav">šawādir</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000392"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000393"
+                     xml:lang="ar-acm-x-shawi-vicav">bī</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000394"
+                     xml:lang="ar-acm-x-shawi-vicav">gaʕdāt</w>
+                  <pc join="right" xml:id="xTok_000395">.</pc>
+                  <pc xml:id="xTok_000396">.</pc>
+                  <pc xml:id="xTok_000397">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000398"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000400"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ən</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000402"
+                     xml:lang="ar-acm-x-shawi-vicav">niswān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000403"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000404"
+                     xml:lang="ar-acm-x-shawi-vicav">raḥ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000405"
+                     xml:lang="ar-acm-x-shawi-vicav">tinzal</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000406"
+                     xml:lang="ar-acm-x-shawi-vicav">tigʕud</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000407"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000409"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000411"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">šādir</w>
+                  <pc xml:id="xTok_000412">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a19"
+                        xml:id="a685">The bride back then was... Women would be on their own and men as well; because there used to be the sitting in the tents, and women would not sit in the tents.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a20_u1"
+                  end="#T39"
+                  start="#T38">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000413"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000415"
+                     xml:lang="ar-acm-x-shawi-vicav">muhimm</w>
+                  <pc join="right" xml:id="xTok_000416">.</pc>
+                  <pc xml:id="xTok_000417">.</pc>
+                  <pc xml:id="xTok_000418">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000419"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yaʕmlū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000421"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000423"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000424"
+                     xml:lang="ar-acm-x-shawi-vicav">zaffit</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000425"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000426"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000428"
+                     xml:lang="ar-acm-x-shawi-vicav">galḅ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000429"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000431"
+                     xml:lang="ar-acm-x-shawi-vicav">munṭaga</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000432"
+                     xml:lang="ar-acm-x-shawi-vicav">hāṭṭīn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000433"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tiyāb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000435"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000436"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000438"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṣ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000440"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣudur</w>
+                  <pc xml:id="xTok_000441">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a20"
+                        xml:id="a708">Anyways, they would make a zaffa for the groom at the heart of the neighborhood and they would put his clothes on a tray.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a21">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a21_u1"
+                  end="#T41"
+                  start="#T40">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000442"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əṭ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000444"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭaguṃ</w>
+                  <pc xml:id="xTok_000445">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000446"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000448"
+                     xml:lang="ar-acm-x-shawi-vicav">il</w>
+                  <pc join="right" xml:id="xTok_000449">.</pc>
+                  <pc xml:id="xTok_000450">.</pc>
+                  <pc xml:id="xTok_000451">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000452"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṭagm</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000454"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000455"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000456"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṣuḅḅāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000458"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000459"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000460"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kalsāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000462"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000463"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000464"
+                     xml:lang="ar-acm-x-shawi-vicav">kill</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000465"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000467"
+                     xml:lang="ar-acm-x-shawi-vicav">libis</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000468"
+                     xml:lang="ar-acm-x-shawi-vicav">taʕ</w>
+                  <pc join="right" xml:id="xTok_000469">.</pc>
+                  <pc xml:id="xTok_000470">.</pc>
+                  <pc xml:id="xTok_000471">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000472"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əṭ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000474"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭagəṃ</w>
+                  <pc join="right" xml:id="xTok_000475">(</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000476"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000478"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc xml:id="xTok_000479">)</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000480"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000482"
+                     xml:lang="ar-acm-x-shawi-vicav">kāmil</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000483"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kull</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000485"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000486"
+                     xml:lang="ar-acm-x-shawi-vicav">yinḥaṭṭ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000487"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000489"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṣ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000491"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣidur</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000492"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000493"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔuxt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000495"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000496"
+                     xml:lang="ar-acm-x-shawi-vicav">turgus</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000497"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bī</w>
+                  <pc join="right" xml:id="xTok_000499">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000500"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000501"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaw</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000502"
+                     xml:lang="ar-acm-x-shawi-vicav">bint</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000503"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕamm</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000505"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000506"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000507"
+                     xml:lang="ar-acm-x-shawi-vicav">mabṣūṭa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000508"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000510"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔaxū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000512"
+                     xml:lang="ar-acm-x-shawi-vicav">wa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a21"
+                        xml:id="a686">The suit... His suit, his shoes, his shoes, I mean, all his clothes are put on a tray and his sister would dance to it, or his cousin, out of joy for her brother.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a22">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a22_u1"
+                  end="#T43"
+                  start="#T42">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000513"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yaʕmlū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000515"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000517"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000518"
+                     xml:lang="ar-acm-x-shawi-vicav">barma</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000519"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000521"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000523"
+                     xml:lang="ar-acm-x-shawi-vicav">ṃunṭaga</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000524"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000525"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕdē​n</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000526"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yāxdū</w>
+                  <pc join="right" xml:id="xTok_000528">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000529"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000530"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕind</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000531"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000532"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000534"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧimāʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000535"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000536"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000538"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000539"
+                     xml:lang="ar-acm-x-shawi-vicav">yiġasslu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000540"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000542"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000543"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000545"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <pc xml:id="xTok_000546">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a22"
+                        xml:id="a702">They take him around the neighborhood and then they take him to the house of the people that are going to bathe the groom.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a23">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a23_u1"
+                  end="#T45"
+                  start="#T44">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000547"
+                     xml:lang="ar-acm-x-shawi-vicav">yfūt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000548"
+                     xml:lang="ar-acm-x-shawi-vicav">yitḥammam</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a23"
+                        xml:id="a703">He goes in, gets bathed.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a24">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a24_u1"
+                  end="#T47"
+                  start="#T46">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000549"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yiḥammimū</w>
+                  <pc join="right" xml:id="xTok_000551">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000552"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000553"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000555"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">šibāb</w>
+                  <pc xml:id="xTok_000556">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000557"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔaṣḥāb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000559"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc xml:id="xTok_000560">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000561"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">rifgāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000563"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc xml:id="xTok_000564">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000565"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000566"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yilabbsū</w>
+                  <pc join="right" xml:id="xTok_000568">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000569"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <pc xml:id="xTok_000570">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a24"
+                        xml:id="a704">They bathe him, the boys, his friends, and they dress him.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a25">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a25_u1"
+                  end="#T49"
+                  start="#T48">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000571"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000572"
+                     xml:lang="ar-acm-x-shawi-vicav">ykūn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000573"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000575"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥiḷḷāg</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000576"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiža</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000577"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yaḥḷug</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000579"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000581"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000582"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000583"
+                     xml:lang="ar-acm-x-shawi-vicav">kull</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000584"
+                     xml:lang="ar-acm-x-shawi-vicav">šī</w>
+                  <pc xml:id="xTok_000585">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000586"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000587"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yilabbs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000589"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000590"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000591"
+                     xml:lang="ar-acm-x-shawi-vicav">yiržaʕ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000592"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yinazzlū</w>
+                  <pc join="right" xml:id="xTok_000594">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000595"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000596"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000598"
+                     xml:lang="ar-acm-x-shawi-vicav">zaffa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000599"
+                     xml:lang="ar-acm-x-shawi-vicav">yiržaʕ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000600"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yibarrmū</w>
+                  <pc join="right" xml:id="xTok_000602">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000603"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000604"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000606"
+                     xml:lang="ar-acm-x-shawi-vicav">ṃunṭaga</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000607"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">kullayāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000609"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a25"
+                        xml:id="a705">(At this point) the barber must have arrived and shaved him and so on, and got him dressed and then they take him around the whole neighborhood.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a26">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a26_u1"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000610"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000611"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000612"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000614"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕirəs</w>
+                  <pc xml:id="xTok_000615">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000616"
+                     xml:lang="ar-acm-x-shawi-vicav">hēna</w>
+                  <pc xml:id="xTok_000617">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000618"
+                     xml:lang="ar-acm-x-shawi-vicav">yiži</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000619"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000620"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000622"
+                     xml:lang="ar-acm-x-shawi-vicav">hēna</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000623"
+                     xml:lang="ar-acm-x-shawi-vicav">maṭraḥ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000624"
+                     xml:lang="ar-acm-x-shawi-vicav">al</w>
+                  <pc join="right" xml:id="xTok_000625">.</pc>
+                  <pc xml:id="xTok_000626">.</pc>
+                  <pc xml:id="xTok_000627">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000628"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000630"
+                     xml:lang="ar-acm-x-shawi-vicav">yigʕud</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000631"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yʕamlū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000633"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000635"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000636"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥafla</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000637"
+                     xml:lang="ar-acm-x-shawi-vicav">yižību</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000638"
+                     xml:lang="ar-acm-x-shawi-vicav">muṭərḅīn</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000639"
+                     xml:lang="ar-acm-x-shawi-vicav">gaḅul</w>
+                  <pc join="right" xml:id="xTok_000640">.</pc>
+                  <pc xml:id="xTok_000641">.</pc>
+                  <pc xml:id="xTok_000642">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000643"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <pc join="right" xml:id="xTok_000644">.</pc>
+                  <pc xml:id="xTok_000645">.</pc>
+                  <pc xml:id="xTok_000646">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000647"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əṭ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000649"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭaḅul</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000650"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕad</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000651"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000652"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000653"
+                     xml:lang="ar-acm-x-shawi-vicav">yidugg</w>
+                  <pc xml:id="xTok_000654">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000655"
+                     xml:lang="ar-acm-x-shawi-vicav">ətṣīr</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000656"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000658"
+                     xml:lang="ar-acm-x-shawi-vicav">firqa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000659"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">al</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000661"
+                     xml:lang="ar-acm-x-shawi-vicav">musīqīyya</w>
+                  <pc join="right" xml:id="xTok_000662">.</pc>
+                  <pc join="right" xml:id="xTok_000663">.</pc>
+                  <pc join="right" xml:id="xTok_000664">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000665"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000666"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000668"
+                     xml:lang="ar-acm-x-shawi-vicav">firqa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000669"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000670"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">žāybīn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000672"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000673"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tġannī</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000675"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000677"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000678"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000679"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tuḥyī</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000681"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000683"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000684"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000686"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥafla</w>
+                  <pc xml:id="xTok_000687">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a26"
+                        xml:id="a706">When the wedding happens, here, the groom comes here, where... and sits (while) while people party for him, the used to bring musicians... (But) the drum is not playing (anymore), now it is the musical band that sings to him an animates the party.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a27">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a27_u1"
+                  end="#T53"
+                  start="#T52">
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000688"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000690"
+                     xml:lang="ar-acm-x-shawi-vicav">illa</w>
+                  <pc join="right" xml:id="xTok_000691">.</pc>
+                  <pc xml:id="xTok_000692">.</pc>
+                  <pc xml:id="xTok_000693">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000694"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000695"
+                     xml:lang="ar-acm-x-shawi-vicav">waḳt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000696"
+                     xml:lang="ar-acm-x-shawi-vicav">il</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000697"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000699"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000700"
+                     xml:lang="ar-acm-x-shawi-vicav">yidibku</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000701"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000703"
+                     xml:lang="ar-acm-x-shawi-vicav">šibāb</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000704"
+                     xml:lang="ar-acm-x-shawi-vicav">yṣīru</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000705"
+                     xml:lang="ar-acm-x-shawi-vicav">yṣīr</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000706"
+                     xml:lang="ar-acm-x-shawi-vicav">yiži</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000707"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000709"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṭ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000711"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭaḅəḷ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000712"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yidigg</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000714"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ill</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000716"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000717"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000718"
+                     xml:lang="ar-acm-x-shawi-vicav">yiʕamlu</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000719"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥafla</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000720"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a27"
+                        xml:id="a709">unless... when the boys want to dance dabke, then the drum starts playing for them and they party and so.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a28">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a28_u1"
+                  end="#T55"
+                  start="#T54">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000721"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000722"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000724"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕirəs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000725"
+                     xml:lang="ar-acm-x-shawi-vicav">əktīr</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000726"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilo</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000727"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000728"
+                     xml:lang="ar-acm-x-shawi-vicav">kull</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000729"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000731"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕālam</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000732"
+                     xml:lang="ar-acm-x-shawi-vicav">túmḅasiṭ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000733"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bī</w>
+                  <pc join="right" xml:id="xTok_000735">_</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000736"
+                     xml:lang="ar-acm-x-shawi-vicav">́</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a28"
+                        xml:id="a710">Weddings were beautiful and everyone had fun in them.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a29">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a29_u1"
+                  end="#T57"
+                  start="#T56">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000737"
+                     xml:lang="ar-acm-x-shawi-vicav">yiržaʕu</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000738"
+                     xml:lang="ar-acm-x-shawi-vicav">baʕdēn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000739"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕṭu</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000740"
+                     xml:lang="ar-acm-x-shawi-vicav">xabar</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000741"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000743"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔahl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000744"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000746"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarūs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000747"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000748"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔahl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000749"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000751"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000752"
+                     xml:lang="ar-acm-x-shawi-vicav">žǟyīn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000753"
+                     xml:lang="ar-acm-x-shawi-vicav">yāxdu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000754"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000756"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarūs</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a29"
+                        xml:id="a711">After that, they would inform the bride's family that the groom's family is coming to take the bride.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a30">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a30_u1"
+                  end="#T59"
+                  start="#T58">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000757"
+                     xml:lang="ar-acm-x-shawi-vicav">yižu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000758"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000760"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">s</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000762"
+                     xml:lang="ar-acm-x-shawi-vicav">siyārāt</w>
+                  <pc join="right" xml:id="xTok_000763">.</pc>
+                  <pc xml:id="xTok_000764">.</pc>
+                  <pc xml:id="xTok_000765">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000766"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000768"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000769"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000771"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarūs</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a30"
+                        xml:id="a712">They come by car to the bride's house.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a31">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a31_u1"
+                  end="#T61"
+                  start="#T60">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000772"
+                     xml:lang="ar-acm-x-shawi-vicav">yinzal</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000773"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000774"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000776"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <pc xml:id="xTok_000777">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000778"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000779"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000781"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <pc xml:id="xTok_000782">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000783"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000784"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔuṃṃ</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000785"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000787"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000788"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000789"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000791"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a31"
+                        xml:id="a713">The groom's father, the groom's mother and the groom (himself) get off (the car)</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a32">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a32_u1"
+                  end="#T63"
+                  start="#T62">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000792"
+                     xml:lang="ar-acm-x-shawi-vicav">yiṭlaʕu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000793"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000795"
+                     xml:lang="ar-acm-x-shawi-vicav">fōg</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000796"
+                     xml:lang="ar-acm-x-shawi-vicav">yitʔahhalu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000797"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bī</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000799"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">hum</w>
+                  <pc xml:id="xTok_000800">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000801"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yigaʕʕdū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000803"
+                     xml:lang="ar-acm-x-shawi-vicav">hum</w>
+                  <pc join="right" xml:id="xTok_000804">.</pc>
+                  <pc xml:id="xTok_000805">.</pc>
+                  <pc xml:id="xTok_000806">.</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000807"
+                     xml:lang="ar-acm-x-shawi-vicav">yigʕud</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000808"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥadd</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000810"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000811"
+                     xml:lang="ar-acm-x-shawi-vicav">šwayy</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000812"
+                     xml:lang="ar-acm-x-shawi-vicav">xaməs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000813"
+                     xml:lang="ar-acm-x-shawi-vicav">daqāyiq</w>
+                  <pc xml:id="xTok_000814">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a32"
+                        xml:id="a714">They go up to the house, they are welcomed and hosted. And he (the groom) sits next to her (bride) for five minutes.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a33">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a33_u1"
+                  end="#T64"
+                  start="#T63">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000815"
+                     xml:lang="ar-acm-x-shawi-vicav">yirǧaʕ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000816"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000817"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000819"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <pc xml:id="xTok_000820">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000821"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000822"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000823"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000825"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarūs</w>
+                  <pc xml:id="xTok_000826">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000827"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000828"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000830"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000831"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yigūl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000833"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000835"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <pc xml:id="xTok_000836">:</pc>
+                  <pc join="right" xml:id="xTok_000837">"</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000838"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tismaḥū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000840"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000842"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <pc xml:id="xTok_000843">,</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000844"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bidd</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000846"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000847"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000849"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕaǧiyya</w>
+                  <pc xml:id="xTok_000850">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a33"
+                        xml:id="a715">After this the groom's father tells them: "If you excuse us, we are here for the girl"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a34">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a34_u1"
+                  end="#T66"
+                  start="#T65">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000851"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabū</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000852"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000854"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕarīs</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000855"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yigūl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000857"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000859"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc xml:id="xTok_000860">:</pc>
+                  <pc join="right" xml:id="xTok_000861">"</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000862"
+                     xml:lang="ar-acm-x-shawi-vicav">tikram</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000863"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕēn</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000865"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <pc xml:id="xTok_000866">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000867"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000868"
+                     xml:lang="ar-acm-x-shawi-vicav">lēk</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000869"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔamān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000871"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <pc xml:id="xTok_000872">,</pc>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000873"
+                     xml:lang="ar-acm-x-shawi-vicav">hāy</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000874"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000876"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕaǧiyya</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000877"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔamān</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000879"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000880"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000882"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ragbit</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000884"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">kum</w>
+                  <pc xml:id="xTok_000885">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a34"
+                        xml:id="a716">The bride's father tells him: "Here you have her, but look, you are responsible of her safety now (lit. her safety is on your neck).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a35">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a35_u1"
+                  end="#T67"
+                  start="#T66">
+                  <pc join="right" xml:id="xTok_000886">"</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000887"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔiʕtabrū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000889"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000890"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">binit</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000892"
+                     xml:lang="ar-acm-x-shawi-vicav">kum</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000893"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000894"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāfẓu</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000895"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000897"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000898"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mitil</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000900"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000901"
+                     xml:lang="ar-acm-x-shawi-vicav">tḥāfẓu</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000902"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕala</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000903"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">šaraf</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000905"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">kum</w>
+                  <pc xml:id="xTok_000906">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a35"
+                        xml:id="a717">"Consider her your daughter and take care of her just as you care about your (own) honor"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a36">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a36_u1"
+                  end="#T69"
+                  start="#T68">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000907"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000908"
+                     xml:lang="ar-acm-x-shawi-vicav">bī</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000909"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔahāli</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000910"
+                     xml:lang="ar-acm-x-shawi-vicav">ylabbis</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000911"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bint</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000913"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000914"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000916"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕabāya</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a36"
+                        xml:id="a718">And there are families that put an abaya on their daughter.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a37">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a37_u1"
+                  end="#T71"
+                  start="#T70">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000917"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000918"
+                     xml:lang="ar-acm-x-shawi-vicav">bī</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000919"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔuṃṃahāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000920"
+                     xml:lang="ar-acm-x-shawi-vicav">tlabbis</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000921"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">banāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000923"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000924"
+                     xml:lang="ar-acm-x-shawi-vicav">dahab</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a37"
+                        xml:id="a719">And there are mothers that put gold on their daughters.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a38">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a38_u1"
+                  end="#T73"
+                  start="#T72">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000925"
+                     xml:lang="ar-acm-x-shawi-vicav">kull</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000926"
+                     xml:lang="ar-acm-x-shawi-vicav">wāhad</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000927"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000929"
+                     xml:lang="ar-acm-x-shawi-vicav">hawa</w>
+                  <pc join="right" xml:id="xTok_000930">.</pc>
+                  <pc xml:id="xTok_000931">.</pc>
+                  <pc xml:id="xTok_000932">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000933"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥālt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000935"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000936"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000938"
+                     xml:lang="ar-acm-x-shawi-vicav">hawa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000939"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔistiṭāʕ</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000941"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a38"
+                        xml:id="a720">Everyone does as much as their (financial) situation allows them</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a39">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a39_u1"
+                  end="#T75"
+                  start="#T74">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000942"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥatta</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000943"
+                     xml:lang="ar-acm-x-shawi-vicav">law</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000944"
+                     xml:lang="ar-acm-x-shawi-vicav">kānat</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000945"
+                     xml:lang="ar-acm-x-shawi-vicav">fiqīṛa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000946"
+                     xml:lang="ar-acm-x-shawi-vicav">wlād</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000947"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕamm</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000949"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000950"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000951"
+                     xml:lang="ar-acm-x-shawi-vicav">wlād</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000952"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕamm</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000954"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000955"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕammāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000957"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000958"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000959"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">xālāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000961"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000962"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000963"
+                     xml:lang="ar-acm-x-shawi-vicav">hāḍa</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000964"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yilabbsū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000966"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000967"
+                     xml:lang="ar-acm-x-shawi-vicav">dahab</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000968"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000969"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yiṭaḷḷʕū</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000971"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000972"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000973"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000975"
+                     xml:lang="ar-acm-x-shawi-vicav">bēt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000976"
+                     xml:lang="ar-acm-x-shawi-vicav">maqṣūrt</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000977"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000979"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">xāṭər</w>
+                  <pc xml:id="xTok_000980">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a39"
+                        xml:id="a707">Even if she were poor, all her cousins would put (their) gold on her, not to let her leave her home sad nor frustrated.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a40">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a40_u1"
+                  end="#T77"
+                  start="#T76">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000981"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000982"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">yāxud</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000984"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000985"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000986"
+                     xml:lang="ar-acm-x-shawi-vicav">rāḥat</w>
+                  <pc xml:id="xTok_000987">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a40"
+                        xml:id="a721">And he takes her and she goes.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a41">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2022_KS_M.65_Speaker5"
+                  xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_a41_u1"
+                  end="#T78"
+                  start="#T77">
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000988"
+                     xml:lang="ar-acm-x-shawi-vicav">hēk</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000989"
+                     xml:lang="ar-acm-x-shawi-vicav">kānat</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000990"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əl</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000992"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaʕrās</w>
+                  <pc join="right" xml:id="xTok_000993">.</pc>
+                  <pc xml:id="xTok_000994">.</pc>
+                  <pc xml:id="xTok_000995">.</pc>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000996"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">killayāt</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000998"
+                     xml:lang="ar-acm-x-shawi-vicav">a</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_000999"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_001000"
+                     xml:lang="ar-acm-x-shawi-vicav">basīṭa</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_001001"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_001002"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕafawiyya</w>
+                  <w xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_001003"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T44_KS_M.65_Karantina_BedouinWeddings2_xTok_001004"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭaḅiʕiyya</w>
+                  <pc xml:id="xTok_001005">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T44_KS_M.65_Karantina_BedouinWeddings2_a41"
+                        xml:id="a722">These were weddings ... All of them simple, spontaneous and natural.</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

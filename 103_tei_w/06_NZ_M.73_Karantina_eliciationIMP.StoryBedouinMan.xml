@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../082_scripts_xsl/tei_2_html__simple_text.xsl"?>
+<?xslt inPathSegment="\010_manannot\" outPathSegment="\106_html\"?>
+<?processor name="saxon" removePreserveFromXML="true" removePreserveFromXSLT="true"?>
+<?snippets fn="snippets_shawi_001.xml" path="{filePath}/../880_conf/"?>
+<?standoff fn="shawi_standoff.xml" path=""?>
+<?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
+<?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-06-08T07:51:17.476766Z-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">Karantina – NZ (M.73) – Elicitation: IMP Story (Bedouin Man)</title>
+            <title level="s">WIBARAB Corpus</title>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>principal</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>recording</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>transcription</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>transcription check</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+               <resp>translation</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="corpus:SP">Stephan Procházka</persName>
+               <resp>translation check</resp>
+            </respStmt>
+            <funder>Funded by the <orgName ref="https://ror.org/0472cxd90">European Research Council</orgName> under the Grant Agreement <idno type="projectNumber">101020127</idno>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
+            <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
+            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities and Cultural Heritage</distributor>
+            <date>TODO Set publication date here</date>
+            <address>
+               <addrLine>Bäckerstraße 13</addrLine>
+               <addrLine>1010 Vienna</addrLine>
+               <addrLine>Austria</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+            <idno type="WIBARABCorpusID">06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <recordingStmt>
+               <recording dur-iso="02:45" type="audio">
+                  <date when="2023-05-16"/>
+                  <respStmt>
+                     <resp>recording</resp>
+                     <persName ref="corpus:AID">Ana Iriarte Díez</persName>
+                  </respStmt>
+                  <p>Recorded during Lebanon Fieldwork Campaign Ana Iriarte Diez 2023</p>
+               </recording>
+            </recordingStmt>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="corpus"
+                       matchPattern="^(.+)$"
+                       replacementPattern="wibarabCorpus.xml#$1">
+               <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="share"
+                       matchPattern="^(.+)$"
+                       replacementPattern="\\share17.univie.ac.at\orientalistik\WIBARAB\Recordings\*\*\$1.wav">
+               <p>Private URIs using the <code>share</code> prefix are pointers to audio file residing on the WIBARAB network share.</p>
+            </prefixDef>
+            <prefixDef ident="geo"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_geo/vicav_geodata.xml#$1">
+               <p>Private URIs using the <code>geo</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>place</gi> element in <ref target="https://github.com/acdh-oeaw/vicav-library/blob/main/vicav_geo/vicav_geodata.xml">VICAV Geodata list</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="dmp"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_dmp.xml#$1">
+               <p>Private URIs using the <code>dmp</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_dmp.xml">WIBARAB DMP document.</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="zotid"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_biblio/vicav_biblio_tei_zotero.xml#$1">
+               <p>Private URIs using the <code>zotid</code> prefix are pointers to the <att>xml:id</att> attribute on a <gi>biblStruct</gi> element in the TEI export of the <ref target="https://www.zotero.org/groups/2165756/vicav/library">VICAV Zotero Group library</ref>.</p>
+            </prefixDef>
+            <prefixDef ident="sources"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
+               <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <head>Speakers in 06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan</head>
+               <person sameAs="corpus:AID">
+                  <idno>AID</idno>
+               </person>
+               <person sameAs="corpus:LEB_KAR_2023_NZ_M.73_Speaker1">
+                  <idno>LEB_KAR_2023_NZ_M.73_Speaker1</idno>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc corresp="sources:LEB_2023_AID">
+            <setting>
+               <placeName sameAs="geo:el_karantina">Karantina</placeName>
+            </setting>
+         </settingDesc>
+         <textClass>
+            <catRef scheme="corpus:datatypes.wibarab"
+                    target="corpus:datatypes.wibarab.Elicitation"/>
+            <keywords scheme="corpus:subjects.wibarab">
+               <term>Stories, jokes and tales</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <timeline unit="ms">
+         <when xml:id="T0"/>
+         <when interval="1135" since="#T0" xml:id="T1"/>
+         <when interval="3120" since="#T0" xml:id="T2"/>
+         <when interval="23599" since="#T0" xml:id="T50"/>
+         <when interval="32903" since="#T0" xml:id="T51"/>
+         <when interval="37707" since="#T0" xml:id="T52"/>
+         <when interval="41007" since="#T0" xml:id="T53"/>
+         <when interval="41249" since="#T0" xml:id="T3"/>
+         <when interval="43679" since="#T0" xml:id="T4"/>
+         <when interval="44074" since="#T0" xml:id="T5"/>
+         <when interval="45585" since="#T0" xml:id="T6"/>
+         <when interval="46931" since="#T0" xml:id="T7"/>
+         <when interval="47927" since="#T0" xml:id="T8"/>
+         <when interval="53949" since="#T0" xml:id="T9"/>
+         <when interval="54159" since="#T0" xml:id="T10"/>
+         <when interval="58654" since="#T0" xml:id="T11"/>
+         <when interval="58759" since="#T0" xml:id="T12"/>
+         <when interval="62292" since="#T0" xml:id="T13"/>
+         <when interval="62793" since="#T0" xml:id="T14"/>
+         <when interval="66373" since="#T0" xml:id="T15"/>
+         <when interval="66409" since="#T0" xml:id="T16"/>
+         <when interval="70578" since="#T0" xml:id="T17"/>
+         <when interval="70672" since="#T0" xml:id="T18"/>
+         <when interval="73191" since="#T0" xml:id="T19"/>
+         <when interval="77131" since="#T0" xml:id="T20"/>
+         <when interval="77195" since="#T0" xml:id="T21"/>
+         <when interval="80437" since="#T0" xml:id="T22"/>
+         <when interval="84616" since="#T0" xml:id="T23"/>
+         <when interval="88435" since="#T0" xml:id="T24"/>
+         <when interval="89095" since="#T0" xml:id="T25"/>
+         <when interval="93822" since="#T0" xml:id="T26"/>
+         <when interval="94944" since="#T0" xml:id="T27"/>
+         <when interval="98074" since="#T0" xml:id="T28"/>
+         <when interval="98427" since="#T0" xml:id="T29"/>
+         <when interval="101609" since="#T0" xml:id="T30"/>
+         <when interval="102079" since="#T0" xml:id="T31"/>
+         <when interval="110011" since="#T0" xml:id="T32"/>
+         <when interval="110204" since="#T0" xml:id="T33"/>
+         <when interval="113016" since="#T0" xml:id="T34"/>
+         <when interval="113149" since="#T0" xml:id="T35"/>
+         <when interval="118427" since="#T0" xml:id="T36"/>
+         <when interval="120116" since="#T0" xml:id="T37"/>
+         <when interval="129404" since="#T0" xml:id="T38"/>
+         <when interval="129602" since="#T0" xml:id="T39"/>
+         <when interval="136853" since="#T0" xml:id="T40"/>
+         <when interval="137587" since="#T0" xml:id="T41"/>
+         <when interval="144265" since="#T0" xml:id="T42"/>
+         <when interval="144747" since="#T0" xml:id="T43"/>
+         <when interval="149253" since="#T0" xml:id="T44"/>
+         <when interval="149525" since="#T0" xml:id="T45"/>
+         <when interval="153376" since="#T0" xml:id="T46"/>
+         <when interval="153573" since="#T0" xml:id="T47"/>
+         <when interval="161161" since="#T0" xml:id="T48"/>
+         <when interval="163953" since="#T0" xml:id="T49"/>
+      </timeline>
+      <body>
+         <div subtype="d0" type="Situation">
+            <head>
+               <note type="start">#T0</note>
+               <note type="end">#T49</note>
+            </head>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a1">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a1_u1"
+                  end="#T2"
+                  start="#T1">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000001"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000002"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔakalti</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000003"
+                     xml:lang="ar-acm-x-shawi-vicav">tamər</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000004"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000005"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭayyḅīn</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a1"
+                        xml:id="a34">You did not eat dates. They are good!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a32">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a32_u1"
+                  end="#T51"
+                  start="#T50">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000006"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔana</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000007"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000009"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔūl</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000010"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥki</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000011"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000013"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000015"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔamar</w>
+                  <pc xml:id="xTok_000016">,</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000017"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000019"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣiġat</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000020"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000022"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔamar</w>
+                  <pc xml:id="xTok_000023">,</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000024"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000025"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ḥadərt</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000027"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000028"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000029"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bə</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000031"
+                     xml:lang="ar-acm-x-shawi-vicav">tʔūl</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000032"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000034"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000036"
+                     xml:lang="ar-acm-x-shawi-vicav">laḥže</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000037"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000039"
+                     xml:lang="ar-acm-x-shawi-vicav">badawīyye</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000040"
+                     xml:lang="ar-acm-x-shawi-vicav">masalan</w>
+                  <pc xml:id="xTok_000041">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a32"
+                        xml:id="a86">I say "ḥki" in the imperative, but what do you say in your Bedouin dialect?</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a33">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:AID"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a33_u1"
+                  end="#T53"
+                  start="#T52">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000042"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiza</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000043"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">badd</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000045"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000046"
+                     xml:lang="ar-acm-x-shawi-vicav">tiṭlub</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000047"
+                     xml:lang="ar-acm-x-shawi-vicav">min</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000048"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥadan</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000049"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinno</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000050"
+                     xml:lang="ar-acm-x-shawi-vicav">yiḥki</w>
+                  <pc xml:id="xTok_000051">,</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000052"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">badd</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000054"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000055"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tʔəl</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000057"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000059"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <pc join="right" xml:id="xTok_000060">.</pc>
+                  <pc xml:id="xTok_000061">.</pc>
+                  <pc xml:id="xTok_000062">.</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a33"
+                        xml:id="a87">If you want to ask from someone to speak, you say ...</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a7">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a7_u1"
+                  end="#T4"
+                  start="#T3">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000063"
+                     xml:lang="ar-acm-x-shawi-vicav">sōlif</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000064"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000065"
+                     xml:lang="ar-acm-x-shawi-vicav">flān</w>
+                  <pc xml:id="xTok_000066">,</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000067"
+                     xml:lang="ar-acm-x-shawi-vicav">sōlif</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000068"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000069"
+                     xml:lang="ar-acm-x-shawi-vicav">bduwi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a7"
+                        xml:id="a35">Speak, you! Speak, you Bedouin!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a8">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a8_u1"
+                  end="#T6"
+                  start="#T5">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000070"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ngūl</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000072"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000074"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000075"
+                     xml:lang="ar-acm-x-shawi-vicav">sōlif</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000076"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000077"
+                     xml:lang="ar-acm-x-shawi-vicav">bduwi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a8"
+                        xml:id="a36">We say: "Speak, you Bedouin!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a9">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a9_u1"
+                  end="#T7"
+                  start="#T6">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000078"
+                     xml:lang="ar-acm-x-shawi-vicav">wēš</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000079"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕind</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000081"
+                     xml:lang="ar-acm-x-shawi-vicav">ak</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000082"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕulūm</w>
+                  <pc xml:id="xTok_000083">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a9"
+                        xml:id="a37">What are your news? (lit. What do you have (of) news?)</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a10">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a10_u1"
+                  end="#T9"
+                  start="#T8">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000084"
+                     xml:lang="ar-acm-x-shawi-vicav">masalan</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000085"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔaḅul</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000086"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000087"
+                     xml:lang="ar-acm-x-shawi-vicav">li</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000088"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000090"
+                     xml:lang="ar-acm-x-shawi-vicav">yinzil</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000091"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000093"
+                     xml:lang="ar-acm-x-shawi-vicav">beyrūt</w>
+                  <pc join="right" xml:id="xTok_000094">.</pc>
+                  <pc xml:id="xTok_000095">.</pc>
+                  <pc xml:id="xTok_000096">.</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000097"
+                     xml:lang="ar-acm-x-shawi-vicav">ōōōy</w>
+                  <pc xml:id="xTok_000098">!</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a10"
+                        xml:id="a38">For instance, before, when someone would go down to Beirut... wohoho!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a11">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a11_u1"
+                  end="#T11"
+                  start="#T10">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000099"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000100"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000101"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000103"
+                     xml:lang="ar-acm-x-shawi-vicav">yiži</w>
+                  <pc join="right" xml:id="xTok_000104">.</pc>
+                  <pc xml:id="xTok_000105">.</pc>
+                  <pc xml:id="xTok_000106">.</pc>
+                  <pc join="right" xml:id="xTok_000107">"</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000108"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">šū</w>
+                  <pc xml:id="xTok_000109">?</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000110"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">xabbir</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000112"
+                     xml:lang="ar-acm-x-shawi-vicav">ni</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000113"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabū</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000114"
+                     xml:lang="ar-acm-x-shawi-vicav">Mḥammad</w>
+                  <pc xml:id="xTok_000115">,</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a11"
+                        xml:id="a39">As soon as he would come (back): "Tell us, Abu Mohammed!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a12">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a12_u1"
+                  end="#T13"
+                  start="#T12">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000116"
+                     xml:lang="ar-acm-x-shawi-vicav">wēš</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000117"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000118"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mʕā</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000120"
+                     xml:lang="ar-acm-x-shawi-vicav">k</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000121"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">əb</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000123"
+                     xml:lang="ar-acm-x-shawi-vicav">bērūt</w>
+                  <pc xml:id="xTok_000124">?</pc>
+                  <pc xml:id="xTok_000125">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a12"
+                        xml:id="a40">What happened to you in Beirut?"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a13">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a13_u1"
+                  end="#T15"
+                  start="#T14">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000126"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">gāl</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000128"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000130"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000131"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷāhi</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a13"
+                        xml:id="a41">He would say to them:</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a14">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a14_u1"
+                  end="#T17"
+                  start="#T16">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000132"
+                     xml:lang="ar-acm-x-shawi-vicav">bērūt</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000133"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilwa</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000134"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000135"
+                     xml:lang="ar-acm-x-shawi-vicav">zēna</w>
+                  <pc xml:id="xTok_000136">,</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000137"
+                     xml:lang="ar-acm-x-shawi-vicav">bass</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000138"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʔahál</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000140"
+                     xml:lang="ar-acm-x-shawi-vicav">ha</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000141"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000142"
+                     xml:lang="ar-acm-x-shawi-vicav">yitʕāšarum</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a14"
+                        xml:id="a42">"Well, Beirut is (really) nice and beautiful, but I swear its people are unbearable (lit. they shouldn't be lived with).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a15">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a15_u1"
+                  end="#T19"
+                  start="#T18">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000143"
+                     xml:lang="ar-acm-x-shawi-vicav">ma</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000144"
+                     xml:lang="ar-acm-x-shawi-vicav">yiḥčum</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000145"
+                     xml:lang="ar-acm-x-shawi-vicav">maʕ</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000146"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥadan</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a15"
+                        xml:id="a43">They do not speak to anyone.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a16">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a16_u1"
+                  end="#T20"
+                  start="#T19">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000147"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000148"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">tgūl</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000150"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000152"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000153"
+                     xml:lang="ar-acm-x-shawi-vicav">marḥaba</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000154"
+                     xml:lang="ar-acm-x-shawi-vicav">yirudd</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000155"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕalē</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000157"
+                     xml:lang="ar-acm-x-shawi-vicav">k</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000158"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000160"
+                     xml:lang="ar-acm-x-shawi-vicav">nuṣṣ</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000161"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">šifāyf</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000163"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a16"
+                        xml:id="a44">When you say hello, they reply to you with a half-hearted greeting (lit. with half of his lips)."</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a17">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a17_u1"
+                  end="#T22"
+                  start="#T21">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000164"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000165"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <pc xml:id="xTok_000166">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a17"
+                        xml:id="a45">Yes, I swear.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a18">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a18_u1"
+                  end="#T24"
+                  start="#T23">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000167"
+                     xml:lang="ar-acm-x-shawi-vicav">wǟḥad</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000168"
+                     xml:lang="ar-acm-x-shawi-vicav">bduwi</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000169"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">b</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000171"
+                     xml:lang="ar-acm-x-shawi-vicav">yrūḥ</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000172"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000174"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000176"
+                     xml:lang="ar-acm-x-shawi-vicav">šǟm</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a18"
+                        xml:id="a46">There was a Bedouin man who went to Damascus.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a19">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a19_u1"
+                  end="#T26"
+                  start="#T25">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000177"
+                     xml:lang="ar-acm-x-shawi-vicav">tʕarfi</w>
+                  <pc xml:id="xTok_000178">?</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000179"
+                     xml:lang="ar-acm-x-shawi-vicav">niḥna</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000180"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000182"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕurbān</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000183"
+                     xml:lang="ar-acm-x-shawi-vicav">ənḥibb</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000184"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000186"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥilu</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a19"
+                        xml:id="a47">You know? Us, Bedouins, we have a sweet tooth.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a20">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a20_u1"
+                  end="#T28"
+                  start="#T27">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000187"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000188"
+                     xml:lang="ar-acm-x-shawi-vicav">rāḥ</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000189"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000191"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">š</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000193"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">šǟm</w>
+                  <pc xml:id="xTok_000194">,</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000195"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabu</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000196"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧāsim</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a20"
+                        xml:id="a48">He went to Damascus, Abu Jasim</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a21">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a21_u1"
+                  end="#T30"
+                  start="#T29">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000197"
+                     xml:lang="ar-acm-x-shawi-vicav">ġāḅ</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000198"
+                     xml:lang="ar-acm-x-shawi-vicav">yōmēn</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000199"
+                     xml:lang="ar-acm-x-shawi-vicav">talāta</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000200"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔarbaʕ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a21"
+                        xml:id="a49">He was gone for two, three, four days.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a22">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a22_u1"
+                  end="#T32"
+                  start="#T31">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000201"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔiǧa</w>
+                  <pc xml:id="xTok_000202">.</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000203"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000205"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">d</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000207"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">diwān</w>
+                  <pc xml:id="xTok_000208">.</pc>
+                  <pc join="right" xml:id="xTok_000209">"</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000210"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">xabbir</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000212"
+                     xml:lang="ar-acm-x-shawi-vicav">na</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000213"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000214"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔabu</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000215"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧāsim</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000216"
+                     xml:lang="ar-acm-x-shawi-vicav">wēš</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000217"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000218"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">mʕā</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000220"
+                     xml:lang="ar-acm-x-shawi-vicav">k</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000221"
+                     xml:lang="ar-acm-x-shawi-vicav">wēš</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000222"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣār</w>
+                  <pc xml:id="xTok_000223">?</pc>
+                  <pc xml:id="xTok_000224">"</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a22"
+                        xml:id="a50">(Then) he came (back) to the diwān. "Tell us Abu Jasim, what happened to you? What happened?"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a23">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a23_u1"
+                  end="#T34"
+                  start="#T33">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000225"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">gāl</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000227"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000229"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">um</w>
+                  <pc xml:id="xTok_000230">:</pc>
+                  <pc join="right" xml:id="xTok_000231">"</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000232"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔisuktum</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000233"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000234"
+                     xml:lang="ar-acm-x-shawi-vicav">malʕūnīn</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000235"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000237"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">wāldēn</w>
+                  <pc xml:id="xTok_000238">!</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a23"
+                        xml:id="a51">He told them: "Shut up, you idiots!"  (lit. you whose parents are cursed).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a24">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a24_u1"
+                  end="#T36"
+                  start="#T35">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000239"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000240"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔisuktum</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000241"
+                     xml:lang="ar-acm-x-shawi-vicav">ya</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000242"
+                     xml:lang="ar-acm-x-shawi-vicav">malʕūnīn</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000243"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000245"
+                     join="right"
+                     xml:lang="ar-acm-x-shawi-vicav">wāldēn</w>
+                  <pc xml:id="xTok_000246">!</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a24"
+                        xml:id="a52">"Shut up, you idiots!"  (lit. you whose parents are cursed).</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a25">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a25_u1"
+                  end="#T38"
+                  start="#T37">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000247"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔalāgi</w>
+                  <pc join="right" xml:id="xTok_000248">.</pc>
+                  <pc xml:id="xTok_000249">.</pc>
+                  <pc xml:id="xTok_000250">.</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000251"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔalāgi</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000252"
+                     xml:lang="ar-acm-x-shawi-vicav">bduwi</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000253"
+                     xml:lang="ar-acm-x-shawi-vicav">gāʕid</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000254"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕa</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000256"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ha</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000258"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ṭ</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000260"
+                     xml:lang="ar-acm-x-shawi-vicav">ṭāwla</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000261"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000262"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥāṭiṭ</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000263"
+                     xml:lang="ar-acm-x-shawi-vicav">ṣaḥan</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000264"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥalāwa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a25"
+                        xml:id="a53">"(I go there and) I find a Bedouin sitting at the table in front of a dish of halawa.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a26">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a26_u1"
+                  end="#T40"
+                  start="#T39">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000265"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000266"
+                     xml:lang="ar-acm-x-shawi-vicav">mballiš</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000267"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000268"
+                     xml:lang="ar-acm-x-shawi-vicav">yuhrus</w>
+                  <pc xml:id="xTok_000269">,</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000270"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000271"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕam</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000272"
+                     xml:lang="ar-acm-x-shawi-vicav">yōkul</w>
+                  <pc xml:id="xTok_000273">,</pc>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000274"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕa</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000275"
+                     xml:lang="ar-acm-x-shawi-vicav">yuhrus</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000276"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000278"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ha</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000280"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000282"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥalāwa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a26"
+                        xml:id="a54">And he has already started devouring, eating the halawa.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a27">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a27_u1"
+                  end="#T42"
+                  start="#T41">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000283"
+                     xml:lang="ar-acm-x-shawi-vicav">waḷḷa</w>
+                  <pc xml:id="xTok_000284">,</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000285"
+                     xml:lang="ar-acm-x-shawi-vicav">sāqabat</w>
+                  <pc xml:id="xTok_000286">,</pc>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000287"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">fitálət</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000289"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">l</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000291"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000292"
+                     xml:lang="ar-acm-x-shawi-vicav">šway</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000293"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">la</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000295"
+                     xml:lang="ar-acm-x-shawi-vicav">ǧiddām</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000296"
+                     xml:lang="ar-acm-x-shawi-vicav">kān</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000297"
+                     xml:lang="ar-acm-x-shawi-vicav">xallaṣ</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a27"
+                        xml:id="a55">And so, it so happened, that when I turned a bit towards the front, he had already finished.a</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a28">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a28_u1"
+                  end="#T44"
+                  start="#T43">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000298"
+                     xml:lang="ar-acm-x-shawi-vicav">w</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000299"
+                     xml:lang="ar-acm-x-shawi-vicav">tiḍruḅ</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000300"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕabāt</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000302"
+                     xml:lang="ar-acm-x-shawi-vicav">i</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000303"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000305"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕabāt</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000306"
+                     xml:lang="ar-acm-x-shawi-vicav">mīn</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000307"
+                     xml:lang="ar-acm-x-shawi-vicav">čila</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000308"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000310"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥalāwa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a28"
+                        xml:id="a56">and then my robe touched the robe of the man who ate the halawa!"</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a29">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a29_u1"
+                  end="#T46"
+                  start="#T45">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000311"
+                     xml:lang="ar-acm-x-shawi-vicav">ē</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000312"
+                     xml:lang="ar-acm-x-shawi-vicav">yaʕni</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000313"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕimil</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000314"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔinžǟz</w>
+                  <pc xml:id="xTok_000315">!</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a29"
+                        xml:id="a57">Yes, I mean, (as if) he accomplished something!</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a30">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a30_u1"
+                  end="#T48"
+                  start="#T47">
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000316"
+                     xml:lang="ar-acm-x-shawi-vicav">liʔan</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000317"
+                     xml:lang="ar-acm-x-shawi-vicav">ḍurḅit</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000318"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">ʕabǟt</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000320"
+                     xml:lang="ar-acm-x-shawi-vicav">o</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000321"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">bi</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000323"
+                     xml:lang="ar-acm-x-shawi-vicav">ʕabāt</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000324"
+                     xml:lang="ar-acm-x-shawi-vicav">mīn</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000325"
+                     xml:lang="ar-acm-x-shawi-vicav">ʔakal</w>
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000326"
+                     xml:lang="ar-acm-x-shawi-vicav"
+                     rendition="rend:dashAfter">il</w>
+                  <w xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000328"
+                     xml:lang="ar-acm-x-shawi-vicav">ḥalǟwa</w>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a30"
+                        xml:id="a58">Because his robe touched the robe of the guy eating halawa.</span>
+               </spanGrp>
+            </div>
+            <div xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a31">
+               <u xml:lang="ar-acm-x-shawi-vicav"
+                  who="corpus:LEB_KAR_2023_NZ_M.73_Speaker1"
+                  xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a31_u1"
+                  end="#T49"
+                  start="#T48">
+                  <w join="right"
+                     xml:id="T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_xTok_000329"
+                     xml:lang="ar-acm-x-shawi-vicav">maḅsūṭa</w>
+                  <pc xml:id="xTok_000330">?</pc>
+               </u>
+               <spanGrp type="Translation">
+                  <span xml:lang="en"
+                        target="#T06_NZ_M.73_Karantina_eliciationIMP.StoryBedouinMan_a31"
+                        xml:id="a59">Are you happy?</span>
+               </spanGrp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
