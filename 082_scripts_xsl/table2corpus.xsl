@@ -213,7 +213,7 @@
             </fileDesc>
             <encodingDesc>
                 <classDecl>
-                    <taxonomy xml:id="wibarabSubjects">
+                    <taxonomy xml:id="subjects.wibarab">
                         <xsl:for-each select="$allSubjects[tei:cell[$cn('Subjects')('Label')] != '']">
                             <xsl:sort select="_:sortKey(tei:cell[$cn('Subjects')('Label')])" />
                             <xsl:variable name="subjectID" select="_:ID(tei:cell[1])" />
@@ -224,10 +224,10 @@
                             </category>
                         </xsl:for-each>
                     </taxonomy>
-                    <taxonomy xml:id="wibarabDataTypes">
+                    <taxonomy xml:id="datatypes.wibarab">
                         <xsl:for-each-group select="tei:row[position() gt 1][normalize-space(tei:cell[$cn('Recordings')('Document Type')]) ne '']" group-by="normalize-space(tei:cell[$cn('Recordings')('Document Type')])">
                             <xsl:sort select="current-grouping-key()" />
-                            <category xml:id="textClass.WIBARAB.{replace(current-grouping-key(),'[^A-Za-z]','')}">
+                            <category xml:id="datatypes.wibarab.{replace(current-grouping-key(),'[^A-Za-z]','')}">
                                 <catDesc>
                                     <xsl:value-of select="current-grouping-key()" />
                                 </catDesc>
@@ -390,10 +390,10 @@
     </settingDesc>
     <textClass>
         <xsl:if test="$documentType ne ''">
-            <catRef scheme="{$teiCorpusPrefix}:wibarabDataTypes" target="{$teiCorpusPrefix}:textClass.WIBARAB.{replace($documentType,'[^A-Za-z]','')}" />
+            <catRef scheme="{$teiCorpusPrefix}:datatypes.wibarab" target="{$teiCorpusPrefix}:datatypes.wibarab.{replace($documentType,'[^A-Za-z]','')}" />
         </xsl:if>
         <xsl:if test="exists($subjects_in_recording)">
-            <keywords scheme="{$teiCorpusPrefix}:wibarabSubjects">
+            <keywords scheme="{$teiCorpusPrefix}:subjects.wibarab">
                 <xsl:for-each select="$subjects_in_recording">
                     <xsl:sort select="_:sortKey(tei:cell[$cn('Subjects')('Label')])" />
                     <term>
