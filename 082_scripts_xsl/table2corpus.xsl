@@ -16,6 +16,7 @@
         Created: 2022-03-10 (within the SHAWI project) -->
     <xsl:param name="pathToRecordings" />
     <xsl:param name="sp_pathToRecordingsXLSX" />
+    <xsl:param name="pathToVicavTextClasses" select="'https://raw.githubusercontent.com/acdh-oeaw/vicav-content/master/tools/vicav_textClasses.xml'" />
     <xsl:variable name="prefixDefs">
         <prefixDef ident="{$teiCorpusPrefix}" matchPattern="^(.+)$" replacementPattern="wibarabCorpus.xml#$1">
             <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
@@ -213,6 +214,17 @@
             </fileDesc>
             <encodingDesc>
                 <classDecl>
+                    <xsl:copy-of select="doc($pathToVicavTextClasses)//tei:classDecl/tei:taxonomy" />
+                    <taxonomy xml:id="datatypes.wibarab">
+                        <xsl:for-each-group select="tei:row[position() gt 1][normalize-space(tei:cell[$cn('Recordings')('Document Type')]) ne '']" group-by="normalize-space(tei:cell[$cn('Recordings')('Document Type')])">
+                            <xsl:sort select="current-grouping-key()" />
+                            <category xml:id="datatypes.wibarab.{replace(current-grouping-key(),'[^A-Za-z]','')}">
+                                <catDesc>
+                                    <xsl:value-of select="current-grouping-key()" />
+                                </catDesc>
+                            </category>
+                        </xsl:for-each-group>
+                    </taxonomy>
                     <taxonomy xml:id="subjects.wibarab">
                         <xsl:for-each select="$allSubjects[tei:cell[$cn('Subjects')('Label')] != '']">
                             <xsl:sort select="_:sortKey(tei:cell[$cn('Subjects')('Label')])" />
@@ -223,16 +235,6 @@
                                 </catDesc>
                             </category>
                         </xsl:for-each>
-                    </taxonomy>
-                    <taxonomy xml:id="datatypes.wibarab">
-                        <xsl:for-each-group select="tei:row[position() gt 1][normalize-space(tei:cell[$cn('Recordings')('Document Type')]) ne '']" group-by="normalize-space(tei:cell[$cn('Recordings')('Document Type')])">
-                            <xsl:sort select="current-grouping-key()" />
-                            <category xml:id="datatypes.wibarab.{replace(current-grouping-key(),'[^A-Za-z]','')}">
-                                <catDesc>
-                                    <xsl:value-of select="current-grouping-key()" />
-                                </catDesc>
-                            </category>
-                        </xsl:for-each-group>
                     </taxonomy>
                 </classDecl>
                 <listPrefixDef>
