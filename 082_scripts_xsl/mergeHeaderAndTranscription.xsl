@@ -99,6 +99,8 @@
 </xsl:template>
 <xsl:template match="tei:annotationBlock">
     <xsl:variable name="annotationId" select="_:ensureNCName(concat($recordingID, '_', @xml:id), 'd')" as="xs:string" />
+    <xsl:variable name="who" select="_:stripWhoSuffix(@who)" as="xs:string" />
+    <xsl:variable name="consent" select="$corpusDoc//tei:person[@xml:id = $who]/tei:state[@type='consent']/tei:label" />
     <xsl:variable name="spanGrps" select="tei:spanGrp[@type != 'token']" as="element(tei:spanGrp)*" />
     <xsl:variable name="selectedSpanGrp" as="element(tei:spanGrp)?">
         <!-- when there are multiple spanGrp elements, select the one with a type ending in a known translation suffix, ignore the rest -->
@@ -113,7 +115,9 @@
     </xsl:variable>
     <div xml:id="{$annotationId}">
         <xsl:apply-templates select="node() except tei:spanGrp" />
-        <xsl:apply-templates select="$selectedSpanGrp" />
+        <xsl:if test="lower-case(string($consent)) != 'no'">
+            <xsl:apply-templates select="$selectedSpanGrp" />
+        </xsl:if>
     </div>
 </xsl:template>
 <xsl:template match="tei:spanGrp">
