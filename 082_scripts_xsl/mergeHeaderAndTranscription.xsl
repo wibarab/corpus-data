@@ -42,7 +42,7 @@
         </xsl:choose>
     </xsl:function>
     <!-- get the audio name from the TEICorpo output -->
-    <xsl:function name="_:audioUrlToShareRef" as="xs:string">
+    <xsl:function name="_:audioUrlToFilename" as="xs:string">
         <xsl:param name="url" as="xs:string?" />
         <xsl:variable name="filename" select="replace(normalize-space($url), '^.*[\\/]', '')" />
         <xsl:choose>
@@ -94,35 +94,44 @@
 </xsl:apply-templates>
 </xsl:template>
 <xsl:template match="tei:TEI">
-    <xsl:variable name="audioShareRef" select="_:audioUrlToShareRef((tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:media/@url)[1])" as="xs:string" />
+    <xsl:variable name="audioFilename" select="_:audioUrlToFilename((tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:media/@url)[1])" as="xs:string" />
     <xsl:copy>
         <xsl:sequence select="$teiHeaderFromCorpus/../@*" />
         <xsl:apply-templates>
-            <xsl:with-param name="audioShareRef" select="$audioShareRef" tunnel="yes" />
+            <xsl:with-param name="audioFilename" select="$audioFilename" tunnel="yes" />
         </xsl:apply-templates>
     </xsl:copy>
 </xsl:template>
 <!-- TODO: make a real merge, i.e. include relelvant metadata from the ELAN export 
         and not just overwrite it with the corpus header -->
 <xsl:template match="tei:teiHeader">
-    <xsl:param name="audioShareRef" tunnel="yes" as="xs:string?" />
+    <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
     <xsl:param name="teiHeaderFromCorpus" tunnel="yes" />
     <xsl:copy>
         <xsl:apply-templates select="$teiHeaderFromCorpus/node()">
-            <xsl:with-param name="audioShareRef" select="$audioShareRef" tunnel="yes" />
+            <xsl:with-param name="audioFilename" select="$audioFilename" tunnel="yes" />
         </xsl:apply-templates>
     </xsl:copy>
 </xsl:template>
 <xsl:template match="tei:sourceDesc">
-    <xsl:param name="audioShareRef" tunnel="yes" as="xs:string?" />
+    <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
     <xsl:copy>
         <xsl:apply-templates select="@* | node()" />
-        <xsl:if test="normalize-space($audioShareRef) != ''">
+        <xsl:if test="normalize-space($audioFilename) != '' and not(tei:recordingStmt)">
             <recordingStmt>
                 <recording type="audio">
-                    <media url="{$audioShareRef}" mimeType="audio/wav" type="master" />
+                    <media url="{$audioFilename}" mimeType="audio/wav" type="master" />
                 </recording>
             </recordingStmt>
+        </xsl:if>
+    </xsl:copy>
+</xsl:template>
+<xsl:template match="tei:sourceDesc/tei:recordingStmt/tei:recording">
+    <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
+    <xsl:copy>
+        <xsl:apply-templates select="@* | node()" />
+        <xsl:if test="normalize-space($audioFilename) != '' and not(tei:media)">
+            <media url="{$audioFilename}" mimeType="audio/wav" type="master" />
         </xsl:if>
     </xsl:copy>
 </xsl:template>
