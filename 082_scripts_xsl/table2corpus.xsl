@@ -345,10 +345,9 @@
                                 <xsl:value-of select="$recordingPerson" />
                             </persName>
                         </respStmt>
-                        <!-- TODO The audio files on the share need to be re-organised to match the replacementPattern in the header -->
-                        <xsl:if test="$audioFilename!=''">
+                        <!-- <xsl:if test="$audioFilename!=''">
                             <media url="{$sharePrefix}:{$audioFilename}" mimeType="audio/wav" type="master" />
-                        </xsl:if>
+                        </xsl:if> -->
                         <xsl:if test="$campaignName != ''">
                             <p>Recorded during <xsl:value-of select="$campaignName" />
                         </p>
@@ -432,14 +431,6 @@
             <xsl:choose>
                 <xsl:when test="lower-case(tei:cell[3]) = ('f', 'm')">
                     <xsl:value-of select="lower-case(tei:cell[3])" />
-                </xsl:when>
-                <xsl:otherwise>missing</xsl:otherwise>
-            </xsl:choose>
-        </xsl:attribute>
-        <xsl:attribute name="age">
-            <xsl:choose>
-                <xsl:when test="normalize-space(tei:cell[5]) ne ''">
-                    <xsl:value-of select="tei:cell[5]" />
                 </xsl:when>
                 <xsl:otherwise>missing</xsl:otherwise>
             </xsl:choose>
@@ -547,6 +538,14 @@
             * "teiInstanceDoc": this generates the list of speakers in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
     <person sameAs="{$teiCorpusPrefix}:{tei:cell[1]}">
+        <xsl:attribute name="age">
+            <xsl:choose>
+                <xsl:when test="normalize-space(tei:cell[5]) ne ''">
+                    <xsl:value-of select="tei:cell[5]" />
+                </xsl:when>
+                <xsl:otherwise>missing</xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
         <idno>
             <xsl:value-of select="tei:cell[1]" />
         </idno>
