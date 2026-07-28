@@ -61,6 +61,8 @@
     <xsl:variable name="t_Speakers_in_Recordings" select="//tei:table[tei:head = 'Speakers_in_Recordings']" as="element(tei:table)" />
     <xsl:variable name="t_Subjects" select="//tei:table[tei:head = 'Subjects']" as="element(tei:table)" />
     <xsl:variable name="allSubjects" select="$t_Subjects//tei:row[position() gt 1]" as="element(tei:row)*" />
+    <xsl:variable name="t_AgeGroups" select="//tei:table[tei:head = 'Age Groups']" as="element(tei:table)?" />
+    <xsl:variable name="allAgeGroups" select="$t_AgeGroups//tei:row[position() gt 1][normalize-space(tei:cell[$cn('Age Groups')('Age Group')]) ne '']" as="element(tei:row)*" />
     <xsl:variable name="t_Subjects_in_Recordings" select="//tei:table[tei:head = 'Subjects_in_Recordings']" as="element(tei:table)" />
     <xsl:variable name="t_Team" select="//tei:table[tei:head = 'Team']" as="element(tei:table)" />
     <xsl:variable name="allTeam" select="$t_Team//tei:row[position() gt 1][tei:cell[3] != '']" as="element(tei:row)*" />
@@ -232,6 +234,28 @@
                             <category xml:id="{$subjectID}" n="{tei:cell[$cn('Subjects')('Label')]}">
                                 <catDesc>
                                     <xsl:value-of select="(tei:cell[$cn('Subjects')('Definition')][. != ''],'TODO ADD DESCRIPTION in Subjects table!')[1]" />
+                                </catDesc>
+                            </category>
+                        </xsl:for-each>
+                    </taxonomy>
+                    <taxonomy xml:id="ageGroups.wibarab">
+                        <xsl:for-each select="$allAgeGroups">
+                            <xsl:sort select="if (normalize-space(tei:cell[$cn('Age Groups')('At Least')]) ne '') then xs:integer(normalize-space(tei:cell[$cn('Age Groups')('At Least')])) else -1" data-type="number" />
+                            <xsl:variable name="ageGroupLabel" select="normalize-space(tei:cell[$cn('Age Groups')('Age Group')])" />
+                            <xsl:variable name="ageGroupId" select="concat('ageGroups.wibarab.', replace(lower-case($ageGroupLabel), '[^a-z0-9]+', ''))" />
+                            <category xml:id="{$ageGroupId}" n="{$ageGroupLabel}">
+                                <catDesc>
+                                    <xsl:variable name="ageGroupDesc" select="(normalize-space(tei:cell[$cn('Age Groups')('Description')]), 'TODO ADD DESCRIPTION in Age Groups table!')[1]" />
+                                    <xsl:analyze-string select="$ageGroupDesc" regex="\d+">
+                                        <xsl:matching-substring>
+                                            <num>
+                                                <xsl:value-of select="." />
+                                            </num>
+                                        </xsl:matching-substring>
+                                        <xsl:non-matching-substring>
+                                            <xsl:value-of select="." />
+                                        </xsl:non-matching-substring>
+                                    </xsl:analyze-string>
                                 </catDesc>
                             </category>
                         </xsl:for-each>
