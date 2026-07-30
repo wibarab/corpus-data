@@ -238,28 +238,6 @@
                             </category>
                         </xsl:for-each>
                     </taxonomy>
-                    <taxonomy xml:id="ageGroups.wibarab">
-                        <xsl:for-each select="$allAgeGroups">
-                            <xsl:sort select="if (normalize-space(tei:cell[$cn('Age Groups')('At Least')]) ne '') then xs:integer(normalize-space(tei:cell[$cn('Age Groups')('At Least')])) else -1" data-type="number" />
-                            <xsl:variable name="ageGroupLabel" select="normalize-space(tei:cell[$cn('Age Groups')('Age Group')])" />
-                            <xsl:variable name="ageGroupId" select="concat('ageGroups.wibarab.', replace(lower-case($ageGroupLabel), '[^a-z0-9]+', ''))" />
-                            <category xml:id="{$ageGroupId}" n="{$ageGroupLabel}">
-                                <catDesc>
-                                    <xsl:variable name="ageGroupDesc" select="(normalize-space(tei:cell[$cn('Age Groups')('Description')]), 'TODO ADD DESCRIPTION in Age Groups table!')[1]" />
-                                    <xsl:analyze-string select="$ageGroupDesc" regex="\d+">
-                                        <xsl:matching-substring>
-                                            <num>
-                                                <xsl:value-of select="." />
-                                            </num>
-                                        </xsl:matching-substring>
-                                        <xsl:non-matching-substring>
-                                            <xsl:value-of select="." />
-                                        </xsl:non-matching-substring>
-                                    </xsl:analyze-string>
-                                </catDesc>
-                            </category>
-                        </xsl:for-each>
-                    </taxonomy>
                 </classDecl>
                 <listPrefixDef>
                     <xsl:sequence select="$prefixDefs" />
