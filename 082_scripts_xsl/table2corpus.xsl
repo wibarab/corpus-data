@@ -16,7 +16,7 @@
         Created: 2022-03-10 (within the SHAWI project) -->
     <xsl:param name="pathToRecordings" />
     <xsl:param name="sp_pathToRecordingsXLSX" />
-    <xsl:param name="pathToVicavTextClasses" select="'https://raw.githubusercontent.com/acdh-oeaw/vicav-content/master/tools/vicav_textClasses.xml'" />
+    <xsl:param name="pathToVicavTextClasses" select="'https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml'" />
     <xsl:variable name="prefixDefs">
         <prefixDef ident="{$teiCorpusPrefix}" matchPattern="^(.+)$" replacementPattern="wibarabCorpus.xml#$1">
             <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
@@ -61,6 +61,8 @@
     <xsl:variable name="t_Speakers_in_Recordings" select="//tei:table[tei:head = 'Speakers_in_Recordings']" as="element(tei:table)" />
     <xsl:variable name="t_Subjects" select="//tei:table[tei:head = 'Subjects']" as="element(tei:table)" />
     <xsl:variable name="allSubjects" select="$t_Subjects//tei:row[position() gt 1]" as="element(tei:row)*" />
+    <xsl:variable name="t_AgeGroups" select="//tei:table[tei:head = 'Age Groups']" as="element(tei:table)?" />
+    <xsl:variable name="allAgeGroups" select="$t_AgeGroups//tei:row[position() gt 1][normalize-space(tei:cell[$cn('Age Groups')('Age Group')]) ne '']" as="element(tei:row)*" />
     <xsl:variable name="t_Subjects_in_Recordings" select="//tei:table[tei:head = 'Subjects_in_Recordings']" as="element(tei:table)" />
     <xsl:variable name="t_Team" select="//tei:table[tei:head = 'Team']" as="element(tei:table)" />
     <xsl:variable name="allTeam" select="$t_Team//tei:row[position() gt 1][tei:cell[3] != '']" as="element(tei:row)*" />
