@@ -16,7 +16,7 @@
         Created: 2022-03-10 (within the SHAWI project) -->
     <xsl:param name="pathToRecordings" />
     <xsl:param name="sp_pathToRecordingsXLSX" />
-    <xsl:param name="pathToVicavTextClasses" select="'https://raw.githubusercontent.com/acdh-oeaw/vicav-content/master/tools/vicav_textClasses.xml'" />
+    <xsl:param name="pathToVicavTextClasses" select="'https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml'" />
     <xsl:variable name="prefixDefs">
         <prefixDef ident="{$teiCorpusPrefix}" matchPattern="^(.+)$" replacementPattern="wibarabCorpus.xml#$1">
             <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
