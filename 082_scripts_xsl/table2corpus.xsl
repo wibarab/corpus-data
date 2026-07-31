@@ -16,7 +16,6 @@
         Created: 2022-03-10 (within the SHAWI project) -->
     <xsl:param name="pathToRecordings" />
     <xsl:param name="sp_pathToRecordingsXLSX" />
-    <xsl:param name="pathToVicavTextClasses" select="'https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml'" />
     <xsl:variable name="prefixDefs">
         <prefixDef ident="{$teiCorpusPrefix}" matchPattern="^(.+)$" replacementPattern="wibarabCorpus.xml#$1">
             <p>Private URIs using the <code>teiCorpusHeader</code> prefix are pointers to any element in the <ref target="wibarabCorpus.xml">WIBARAB teiCorpus document</ref>.</p>
@@ -36,6 +35,9 @@
         <prefixDef ident="{$sourcesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
             <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
         </prefixDef>
+        <prefixDef ident="{$textClassesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml">
+            <p>Private URIs using the <code>vtc</code> prefix are pointers to the list of VICAV text classes.</p>
+        </prefixDef>
     </xsl:variable>
     <xsl:variable name="teiCorpusPrefix">corpus</xsl:variable>
     <xsl:variable name="sharePrefix">share</xsl:variable>
@@ -43,6 +45,7 @@
     <xsl:variable name="dmpPrefix">dmp</xsl:variable>
     <xsl:variable name="vicavZoteroGroupPrefix">zotid</xsl:variable>
     <xsl:variable name="sourcesPrefix">sources</xsl:variable>
+    <xsl:variable name="textClassesPrefix">vtc</xsl:variable>
     <xsl:variable name="cn" as="map(xs:string, map(xs:string, xs:integer))">
         <xsl:map>
             <xsl:for-each select="//tei:table/tei:head">
@@ -216,7 +219,6 @@
             </fileDesc>
             <encodingDesc>
                 <classDecl>
-                    <xsl:copy-of select="doc($pathToVicavTextClasses)//tei:classDecl/tei:taxonomy" />
                     <taxonomy xml:id="datatypes.wibarab">
                         <xsl:for-each-group select="tei:row[position() gt 1][normalize-space(tei:cell[$cn('Recordings')('Document Type')]) ne '']" group-by="normalize-space(tei:cell[$cn('Recordings')('Document Type')])">
                             <xsl:sort select="current-grouping-key()" />
