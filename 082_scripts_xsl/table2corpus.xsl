@@ -543,9 +543,10 @@
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
     <person sameAs="{$teiCorpusPrefix}:{tei:cell[1]}">
         <xsl:attribute name="age">
+            <xsl:variable name="ageGroup" select="normalize-space(tei:cell[5])" />
             <xsl:choose>
-                <xsl:when test="normalize-space(tei:cell[5]) ne ''">
-                    <xsl:value-of select="tei:cell[5]" />
+                <xsl:when test="$ageGroup ne ''">
+                    <xsl:value-of select="if ($ageGroup eq '90s') then '90s+' else $ageGroup" />
                 </xsl:when>
                 <xsl:otherwise>missing</xsl:otherwise>
             </xsl:choose>
