@@ -109,6 +109,10 @@
     <xsl:variable name="tei:row" select="($allTeam[tei:cell[$cn('Team')('persName')] = $persName], $allSpeakers[tei:cell[$cn('Speakers')('Speaker')] = $persName])[1]" />
     <xsl:apply-templates select="$tei:row" mode="teiInstanceDoc" />
 </xsl:function>
+<xsl:function name="_:placeID" as="xs:string">
+    <xsl:param name="placeName" as="xs:string?" />
+    <xsl:sequence select="&#xD;&#xA;        normalize-space(&#xD;&#xA;            ($t_Places//tei:row[&#xD;&#xA;                normalize-space(tei:cell[$cn('Places')('Placename')])&#xD;&#xA;                = normalize-space($placeName)&#xD;&#xA;            ]/tei:cell[$cn('Places')('ID')])[1]&#xD;&#xA;        )&#xD;&#xA;    " />
+</xsl:function>
 <xsl:template name="publicationStmt">
     <xsl:param name="textID" />
     <publicationStmt>
@@ -282,7 +286,7 @@
     <xsl:variable name="rawDate" select="normalize-space(tei:cell[$cn('Recordings')('Date')])" />
     <!-- place -->
     <xsl:variable name="placeName" select="tei:cell[$cn('Recordings')('Place')]" />
-    <xsl:variable name="placeID" select="$t_Places//tei:row[tei:cell[$cn('Places')('Placename')] = $placeName]/tei:cell[$cn('Places')('ID')]" />
+    <xsl:variable name="placeID" select="_:placeID($placeName)" />
     <!-- path to Audio files -->
     <xsl:variable name="audioFilename" select="tei:cell[$cn('Recordings')('Trascribed Audio-file')]" />
     <xsl:variable name="fullPath" select="$pathToRecordings" />
@@ -479,6 +483,7 @@
     <xsl:param name="yearOfBirth" />
     <xsl:param name="placeOfOrigin" />
     <xsl:param name="ageGroupComment" />
+    <xsl:variable name="placeID" select="_:placeID($placeOfOrigin)" />
     <xsl:choose>
         <xsl:when test="matches($yearOfBirth,'^\d+$')">
             <birth>
@@ -486,7 +491,7 @@
                     <xsl:value-of select="$yearOfBirth" />
                 </date>
                 <xsl:if test="$placeOfOrigin != ''">
-                    <placeName>
+                    <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
                         <xsl:value-of select="$placeOfOrigin" />
                     </placeName>
                 </xsl:if>
@@ -504,7 +509,7 @@
                     <xsl:value-of select="$yearOfBirth" />
                 </date>
                 <xsl:if test="$placeOfOrigin != ''">
-                    <placeName>
+                    <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
                         <xsl:value-of select="$placeOfOrigin" />
                     </placeName>
                 </xsl:if>
@@ -513,7 +518,7 @@
         <xsl:when test="$yearOfBirth = '' and $placeOfOrigin != ''">
             <birth>
                 <xsl:comment>no information on birth date</xsl:comment>
-                <placeName>
+                <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
                     <xsl:value-of select="$placeOfOrigin" />
                 </placeName>
             </birth>
@@ -523,12 +528,12 @@
         </xsl:when>
         <xsl:otherwise>
             <birth>
-                <xsl:comment>Could not parse of birth date</xsl:comment>
+                <xsl:comment>Could not parse birth date</xsl:comment>
                 <date>
                     <xsl:value-of select="$yearOfBirth" />
                 </date>
                 <xsl:if test="$placeOfOrigin != ''">
-                    <placeName>
+                    <placeName sameAs="{$vicavGeoListPrefix}:{$placeID}">
                         <xsl:value-of select="$placeOfOrigin" />
                     </placeName>
                 </xsl:if>
