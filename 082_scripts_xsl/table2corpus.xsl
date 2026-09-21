@@ -135,6 +135,17 @@
         </xsl:if>
     </publicationStmt>
 </xsl:template>
+<xsl:template name="notesStmt">
+    <xsl:param name="trigger_warning" />
+    <xsl:if test="$trigger_warning != ''">
+        <!-- Might need to update this, for now, just include the text directly -->
+        <notesStmt>
+            <note type="triggerWarning">
+                <xsl:value-of select="$trigger_warning" />
+            </note>
+        </notesStmt>
+    </xsl:if>
+</xsl:template>
 <xsl:template name="titleStmt">
     <xsl:param name="textID" />
     <xsl:param name="title" />
@@ -283,6 +294,7 @@
     <xsl:variable name="translator" select="normalize-space(tei:cell[$cn('Recordings')('translated by')])" />
     <xsl:variable name="translationChecker" select="normalize-space(tei:cell[$cn('Recordings')('translation checked by')])" />
     <xsl:variable name="documentType" select="normalize-space(tei:cell[$cn('Recordings')('Document Type')])" />
+    <xsl:variable name="trigger_warning" select="normalize-space(tei:cell[$cn('Recordings')('Trigger Warning')])" />
     <xsl:variable name="rawDate" select="normalize-space(tei:cell[$cn('Recordings')('Date')])" />
     <!-- place -->
     <xsl:variable name="placeName" select="tei:cell[$cn('Recordings')('Place')]" />
@@ -320,6 +332,9 @@
                 </xsl:call-template>
                 <xsl:call-template name="publicationStmt">
                     <xsl:with-param name="textID" select="$textID" />
+                </xsl:call-template>
+                <xsl:call-template name="notesStmt">
+                    <xsl:with-param name="trigger_warning" select="$trigger_warning" />
                 </xsl:call-template>
                 <sourceDesc>
                     <!-- TODO reference source audio file to match with ELAN export. -->
