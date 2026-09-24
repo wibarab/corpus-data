@@ -9,20 +9,20 @@ jobs:
   build:
     name: Validate corpus files
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: main
           submodules: "true"
       - name: Checkout gh_pages
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: gh_pages
           path: gh_pages
       - name: Get python 3.13
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: "3.13"
           cache: "pipenv"
