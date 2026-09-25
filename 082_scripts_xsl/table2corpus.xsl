@@ -243,6 +243,9 @@
                                 </catDesc>
                             </category>
                         </xsl:for-each-group>
+                        <category xml:id="datatypes.wibarab.FeatureDescription">
+                            <catDesc>Feature Description</catDesc>
+                        </category>
                     </taxonomy>
                     <taxonomy xml:id="subjects.wibarab">
                         <xsl:for-each select="$allSubjects[tei:cell[$cn('Subjects')('Label')] != '']">
