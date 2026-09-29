@@ -127,13 +127,14 @@
             <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
             <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
             <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities</distributor>
-            <date>TODO Set publication date here</date>
+            <date when="2026">2026</date>
+            <pubPlace>Vienna</pubPlace>
             <address>
                 <addrLine>Bäckerstraße 13</addrLine>
                 <addrLine>1010 Vienna</addrLine>
                 <addrLine>Austria</addrLine>
             </address>
-            <availability status="free">
+            <availability status="restricted">
                 <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
             </availability>
             <xsl:if test="$textID != ''">
@@ -146,7 +147,6 @@
     <xsl:template name="notesStmt">
         <xsl:param name="trigger_warning" />
         <xsl:if test="$trigger_warning != ''">
-            <!-- Might need to update this, for now, just include the text directly -->
             <notesStmt>
                 <note type="triggerWarning">
                     <xsl:value-of select="$trigger_warning" />
