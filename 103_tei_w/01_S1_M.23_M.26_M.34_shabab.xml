@@ -6,7 +6,7 @@
 <?standoff fn="shawi_standoff.xml" path=""?>
 <?attributeAssignments fn="shawi_attributes.xml" path="{filePath}/../880_conf/"?>
 <?shortCuts fn="shawi_shortCuts" path="{filePath}/../880_conf/"?>
-<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-09-22T12:42:20.963772Z-->
+<!--THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at2026-09-29T09:04:49.379357Z-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T01_S1_M.23_M.26_M.34_shabab">
    <teiHeader>
       <fileDesc>
@@ -95,6 +95,11 @@
                        matchPattern="^(.+)$"
                        replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml">
                <p>Private URIs using the <code>vtc</code> prefix are pointers to the list of VICAV text classes.</p>
+            </prefixDef>
+            <prefixDef ident="pgr"
+                       matchPattern="^(.+)$"
+                       replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_personGroup.xml#$1">
+               <p>Private URIs using the <code>pgr</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_personGroup.xml">WIBARAB list of person groups</ref>.</p>
             </prefixDef>
          </listPrefixDef>
       </encodingDesc>
