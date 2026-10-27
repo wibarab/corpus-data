@@ -35,7 +35,7 @@
         <prefixDef ident="{$sourcesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_sources.xml#$1">
             <p>Private URIs using the <code>sources</code> prefix are pointers to the <att>xml:id</att> attribute on an element in the <ref target="https://github.com/wibarab/featuredb/blob/main/010_manannot/wibarab_sources.xml">WIBARAB list of sources</ref>.</p>
         </prefixDef>
-        <prefixDef ident="{$textClassesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml">
+        <prefixDef ident="{$textClassesPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/acdh-oeaw/vicav-library/main/vicav_textClasses.xml#$1">
             <p>Private URIs using the <code>vtc</code> prefix are pointers to the list of VICAV text classes.</p>
         </prefixDef>
         <prefixDef ident="{$persGrpPrefix}" matchPattern="^(.+)$" replacementPattern="https://raw.githubusercontent.com/wibarab/featuredb/main/010_manannot/wibarab_personGroup.xml#$1">
@@ -115,7 +115,7 @@
     </xsl:function>
     <xsl:function name="_:placeID" as="xs:string">
         <xsl:param name="placeName" as="xs:string?" />
-        <xsl:sequence select="&#xD;&#xA;        normalize-space(&#xD;&#xA;            ($t_Places//tei:row[&#xD;&#xA;                normalize-space(tei:cell[$cn('Places')('Placename')])&#xD;&#xA;                = normalize-space($placeName)&#xD;&#xA;            ]/tei:cell[$cn('Places')('ID')])[1]&#xD;&#xA;        )&#xD;&#xA;    " />
+        <xsl:sequence select="normalize-space(($t_Places//tei:row[normalize-space(tei:cell[$cn('Places')('Placename')]) = normalize-space($placeName)]/tei:cell[$cn('Places')('ID')])[1])" />
     </xsl:function>
     <xsl:function name="_:tribeID" as="xs:string">
         <xsl:param name="tribeName" as="xs:string?" />
@@ -126,7 +126,7 @@
         <publicationStmt>
             <publisher ref="https://ror.org/03anc3s24">Austrian Academy of Sciences</publisher>
             <publisher ref="https://ror.org/03prydq77">University of Vienna</publisher>
-            <distributor ref="https://ror.org/028bsh698">Austrian Center for Digital Humanities</distributor>
+            <distributor ref="https://ror.org/028bsh698">Austrian Centre for Digital Humanities</distributor>
             <date when="2026">2026</date>
             <pubPlace>Vienna</pubPlace>
             <address>
@@ -456,66 +456,69 @@
             * "teiCorpusDoc": this generates the master list of speakers in the teiCorpus  
             * "teiInstanceDoc": this generates the list of speakers in one TEI instance, 
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
-        <person xml:id="{tei:cell[1]}">
-            <xsl:attribute name="sex">
-                <xsl:choose>
-                    <xsl:when test="lower-case(tei:cell[3]) = ('f', 'm')">
-                        <xsl:value-of select="lower-case(tei:cell[3])" />
-                    </xsl:when>
-                    <xsl:otherwise>missing</xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-            <state type="consent">
-                <xsl:choose>
-                    <xsl:when test="lower-case(tei:cell[2]) = ('yes', 'no')">
-                        <label>
-                            <xsl:value-of select="lower-case(tei:cell[2])" />
-                        </label>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <label>missing</label>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </state>
-            <idno>
-                <xsl:value-of select="tei:cell[1]" />
-            </idno>
-            <xsl:call-template name="parseBirth">
-                <xsl:with-param name="yearOfBirth" select="tei:cell[4]" />
-                <xsl:with-param name="placeOfOrigin" select="tei:cell[8]" />
-                <xsl:with-param name="ageGroupComment" select="tei:cell[6]" />
-            </xsl:call-template>
-            <xsl:if test="tei:cell[7] != ''">
-                <langKnowledge>
-                    <xsl:for-each select="tokenize(tei:cell[7], ',')">
-                        <langKnown tag="{.}" />
-                    </xsl:for-each>
-                </langKnowledge>
-            </xsl:if>
-            <xsl:if test="normalize-space(tei:cell[11]) ne '' or normalize-space(tei:cell[13]) ne ''">
-                <state type="tribeMembership">
-                    <desc>
-                        <xsl:if test="normalize-space(tei:cell[11]) ne ''">
-                            <orgName type="tribe" ref="{$persGrpPrefix}:{_:tribeID(tei:cell[11])}">
-                                <xsl:value-of select="normalize-space(tei:cell[11])" />
-                            </orgName>
-                        </xsl:if>
-                        <xsl:if test="normalize-space(tei:cell[13]) ne ''">
-                            <orgName type="tribe">
-                                <xsl:value-of select="normalize-space(tei:cell[13])" />
-                            </orgName>
-                        </xsl:if>
-                    </desc>
+        <!-- only create person element if it's not a team member -->
+        <xsl:if test="tei:cell[2] = ''">
+            <person xml:id="{tei:cell[1]}">
+                <xsl:attribute name="sex">
+                    <xsl:choose>
+                        <xsl:when test="lower-case(tei:cell[4]) = ('f', 'm')">
+                            <xsl:value-of select="lower-case(tei:cell[4])" />
+                        </xsl:when>
+                        <xsl:otherwise>missing</xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+                <state type="consent">
+                    <xsl:choose>
+                        <xsl:when test="lower-case(tei:cell[3]) = ('yes', 'no')">
+                            <label>
+                                <xsl:value-of select="lower-case(tei:cell[3])" />
+                            </label>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <label>missing</label>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </state>
-            </xsl:if>
-            <xsl:if test="tei:cell[9] != 'N/A'">
-                <xsl:for-each select="tokenize(tei:cell[10], ',')">
-                    <ptr type="participatedIn" target="{$teiCorpusPrefix}:{normalize-space(.)}" />
-                </xsl:for-each>
-            </xsl:if>
-            <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
-            <!-- <note><xsl:value-of select="tei:cell[8]"/></note> -->
-        </person>
+                <idno>
+                    <xsl:value-of select="tei:cell[1]" />
+                </idno>
+                <xsl:call-template name="parseBirth">
+                    <xsl:with-param name="yearOfBirth" select="tei:cell[5]" />
+                    <xsl:with-param name="placeOfOrigin" select="tei:cell[9]" />
+                    <xsl:with-param name="ageGroupComment" select="tei:cell[7]" />
+                </xsl:call-template>
+                <xsl:if test="tei:cell[8] != ''">
+                    <langKnowledge>
+                        <xsl:for-each select="tokenize(tei:cell[8], ',')">
+                            <langKnown tag="{.}" />
+                        </xsl:for-each>
+                    </langKnowledge>
+                </xsl:if>
+                <xsl:if test="normalize-space(tei:cell[12]) ne '' or normalize-space(tei:cell[13]) ne ''">
+                    <state type="tribeMembership">
+                        <desc>
+                            <xsl:if test="normalize-space(tei:cell[12]) ne ''">
+                                <orgName type="tribe" ref="{$persGrpPrefix}:{_:tribeID(tei:cell[12])}">
+                                    <xsl:value-of select="normalize-space(tei:cell[12])" />
+                                </orgName>
+                            </xsl:if>
+                            <xsl:if test="normalize-space(tei:cell[14]) ne ''">
+                                <orgName type="tribe">
+                                    <xsl:value-of select="normalize-space(tei:cell[14])" />
+                                </orgName>
+                            </xsl:if>
+                        </desc>
+                    </state>
+                </xsl:if>
+                <xsl:if test="tei:cell[11] != 'N/A'">
+                    <xsl:for-each select="tokenize(tei:cell[11], ',')">
+                        <ptr type="participatedIn" target="{$teiCorpusPrefix}:{normalize-space(.)}" />
+                    </xsl:for-each>
+                </xsl:if>
+                <!-- Notes potentially contain internal information, so we ignore them for the moment. -->
+                <!-- <note><xsl:value-of select="tei:cell[10]"/></note> -->
+            </person>
+        </xsl:if>
     </xsl:template>
     <xsl:template name="parseBirth">
         <xsl:param name="yearOfBirth" />
@@ -586,7 +589,7 @@
             thus not include all details but a @sameAs attribute pointing to the corpusHeader -->
         <person sameAs="{$teiCorpusPrefix}:{tei:cell[1]}">
             <xsl:attribute name="age">
-                <xsl:variable name="ageGroup" select="normalize-space(tei:cell[5])" />
+                <xsl:variable name="ageGroup" select="normalize-space(tei:cell[6])" />
                 <xsl:choose>
                     <xsl:when test="$ageGroup ne ''">
                         <xsl:value-of select="if ($ageGroup eq '90s') then '90s+' else $ageGroup" />
