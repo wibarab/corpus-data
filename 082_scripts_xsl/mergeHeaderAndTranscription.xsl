@@ -65,9 +65,9 @@
     <xsl:variable name="teiHeaderFromCorpus" select="$recordingTEI[1]/tei:teiHeader" as="element(tei:teiHeader)?" />
     <xsl:template match="/">
         <xsl:if test="count($recordingTEI) gt 1">
-            <xsl:message>                
+            <xsl:message>
                 WARNING found several TEI elements with the same xml:id:
-            <xsl:value-of select="string-join(($recordingTEI/@xml:id) ! string(.), ', ')" />                
+                <xsl:value-of select="string-join(($recordingTEI/@xml:id) ! string(.), ', ')" />
                 - taking first one
             </xsl:message>
         </xsl:if>
@@ -76,124 +76,122 @@
             <xsl:message select="concat('$pathToCorpusDoc=',$pathToCorpusDoc)"/>
             <xsl:message select="concat('$IDcandidates=',string-join($IDcandidates,', '))"/>
             <xsl:message select="concat('$recordingID=',$recordingID)"/> -->
-            <xsl:message>$recordingID could not be determined from input filename <xsl:value-of select="tokenize(base-uri($input),'/')[last()]" />
-        </xsl:message>
-    </xsl:if>
-    <xsl:if test="not($teiHeaderFromCorpus)">
-        <!-- <xsl:message select="concat('$input=',base-uri($input))"/>
+            <xsl:message>$recordingID could not be determined from input filename <xsl:value-of select="tokenize(base-uri($input),'/')[last()]" /></xsl:message>
+        </xsl:if>
+        <xsl:if test="not($teiHeaderFromCorpus)">
+            <!-- <xsl:message select="concat('$input=',base-uri($input))"/>
             <xsl:message select="concat('$pathToCorpusDoc=',$pathToCorpusDoc)"/>
             <xsl:message select="concat('$IDcandidates=',string-join($IDcandidates,', '))"/>
             <xsl:message select="concat('$recordingID=',$recordingID)"/> -->
-        <xsl:message>teiHeader for recording <xsl:value-of select="$recordingID" /> not found in <xsl:value-of select="$pathToCorpusDoc" />
-    </xsl:message>
-</xsl:if>
-<xsl:comment>THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at<xsl:value-of select="current-dateTime()" />
-</xsl:comment>
-<xsl:apply-templates>
-    <xsl:with-param name="teiHeaderFromCorpus" select="$teiHeaderFromCorpus" tunnel="yes" />
-</xsl:apply-templates>
-</xsl:template>
-<xsl:template match="tei:TEI">
-    <xsl:variable name="audioFilename" select="_:audioUrlToFilename((tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:media/@url)[1])" as="xs:string" />
-    <xsl:copy>
-        <xsl:sequence select="$teiHeaderFromCorpus/../@*" />
+            <xsl:message>teiHeader for recording <xsl:value-of select="$recordingID" /> not found in <xsl:value-of select="$pathToCorpusDoc" /></xsl:message>
+        </xsl:if>
+        <xsl:comment>THIS FILE WAS PROGRAMMATICALLY CREATED by mergeHeaderAndTranscription.xsl on/at<xsl:value-of select="current-dateTime()" /></xsl:comment>
         <xsl:apply-templates>
-            <xsl:with-param name="audioFilename" select="$audioFilename" tunnel="yes" />
+            <xsl:with-param name="teiHeaderFromCorpus" select="$teiHeaderFromCorpus" tunnel="yes" />
         </xsl:apply-templates>
-    </xsl:copy>
-</xsl:template>
-<!-- TODO: make a real merge, i.e. include relelvant metadata from the ELAN export 
+    </xsl:template>
+    <xsl:template match="tei:TEI">
+        <xsl:variable name="audioFilename" select="_:audioUrlToFilename((tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:media/@url)[1])" as="xs:string" />
+        <xsl:copy>
+            <xsl:sequence select="$teiHeaderFromCorpus/../@*" />
+            <xsl:apply-templates>
+                <xsl:with-param name="audioFilename" select="$audioFilename" tunnel="yes" />
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+    <!-- TODO: make a real merge, i.e. include relelvant metadata from the ELAN export 
         and not just overwrite it with the corpus header -->
-<xsl:template match="tei:teiHeader">
-    <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
-    <xsl:param name="teiHeaderFromCorpus" tunnel="yes" />
-    <xsl:copy>
-        <xsl:apply-templates select="$teiHeaderFromCorpus/node()">
-            <xsl:with-param name="audioFilename" select="$audioFilename" tunnel="yes" />
-        </xsl:apply-templates>
-    </xsl:copy>
-</xsl:template>
-<xsl:template match="tei:sourceDesc">
-    <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
-    <xsl:copy>
-        <xsl:apply-templates select="@* | node()" />
-        <xsl:if test="normalize-space($audioFilename) != '' and not(tei:recordingStmt)">
-            <recordingStmt>
-                <recording type="audio">
-                    <media url="{$audioFilename}" mimeType="audio/wav" type="master" />
-                </recording>
-            </recordingStmt>
-        </xsl:if>
-    </xsl:copy>
-</xsl:template>
-<xsl:template match="tei:sourceDesc/tei:recordingStmt/tei:recording">
-    <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
-    <xsl:copy>
-        <xsl:apply-templates select="@* | node()" />
-        <xsl:if test="normalize-space($audioFilename) != '' and not(tei:media)">
-            <media url="{$audioFilename}" mimeType="audio/wav" type="master" />
-        </xsl:if>
-    </xsl:copy>
-</xsl:template>
-<xsl:template match="node() | @*">
-    <xsl:copy>
-        <xsl:apply-templates select="node() | @*" />
-    </xsl:copy>
-</xsl:template>
-<xsl:template match="tei:annotationBlock">
-    <xsl:variable name="annotationId" select="_:ensureNCName(concat($recordingID, '_', @xml:id), 'd')" as="xs:string" />
-    <xsl:variable name="who" select="_:stripWhoSuffix(@who)" as="xs:string" />
-    <xsl:variable name="consent" select="$corpusDoc//tei:person[@xml:id = $who]/tei:state[@type='consent']/tei:label" />
-    <xsl:variable name="spanGrps" select="tei:spanGrp[@type != 'token']" as="element(tei:spanGrp)*" />
-    <xsl:variable name="selectedSpanGrp" as="element(tei:spanGrp)?">
-        <!-- when there are multiple spanGrp elements, select the one with a type ending in a known translation suffix, ignore the rest -->
-        <xsl:choose>
-            <xsl:when test="count($spanGrps) gt 1">
-                <xsl:sequence select="($spanGrps[some $s in $translationSuffixes satisfies ends-with(@type, $s)])[1]" />
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:sequence select="$spanGrps[1]" />
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:variable>
-    <div xml:id="{$annotationId}">
-        <xsl:apply-templates select="node() except tei:spanGrp" />
-        <xsl:if test="lower-case(string($consent)) != 'no'">
-            <xsl:apply-templates select="$selectedSpanGrp" />
-        </xsl:if>
-    </div>
-</xsl:template>
-<xsl:template match="tei:spanGrp">
-    <spanGrp type="Translation">
-        <xsl:apply-templates select="@* except @type" />
+    <xsl:template match="tei:teiHeader">
+        <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
+        <xsl:param name="teiHeaderFromCorpus" tunnel="yes" />
+        <xsl:copy>
+            <xsl:apply-templates select="$teiHeaderFromCorpus/node()">
+                <xsl:with-param name="audioFilename" select="$audioFilename" tunnel="yes" />
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="tei:sourceDesc">
+        <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+            <xsl:if test="normalize-space($audioFilename) != '' and not(tei:recordingStmt)">
+                <recordingStmt>
+                    <recording type="audio">
+                        <media url="{$audioFilename}" mimeType="audio/wav" type="master" />
+                    </recording>
+                </recordingStmt>
+            </xsl:if>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="tei:sourceDesc/tei:recordingStmt/tei:recording">
+        <xsl:param name="audioFilename" tunnel="yes" as="xs:string?" />
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+            <xsl:if test="normalize-space($audioFilename) != '' and not(tei:media)">
+                <media url="{$audioFilename}" mimeType="audio/wav" type="master" />
+            </xsl:if>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="node() | @*">
+        <xsl:copy>
+            <xsl:apply-templates select="node() | @*" />
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="tei:annotationBlock">
+        <xsl:variable name="annotationId" select="_:ensureNCName(concat($recordingID, '_', @xml:id), 'd')" as="xs:string" />
+        <xsl:variable name="who" select="_:stripWhoSuffix(@who)" as="xs:string" />
+        <xsl:variable name="consent" select="$corpusDoc//tei:person[@xml:id = $who]/tei:state[@type='consent']/tei:label" />
+        <xsl:variable name="spanGrps" select="tei:spanGrp[@type != 'token']" as="element(tei:spanGrp)*" />
+        <xsl:variable name="selectedSpanGrp" as="element(tei:spanGrp)?">
+            <!-- when there are multiple spanGrp elements, select the one with a type ending in a known translation suffix, ignore the rest -->
+            <xsl:choose>
+                <xsl:when test="count($spanGrps) gt 1">
+                    <xsl:sequence select="($spanGrps[some $s in $translationSuffixes satisfies ends-with(@type, $s)])[1]" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:sequence select="$spanGrps[1]" />
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <div xml:id="{$annotationId}">
+            <xsl:apply-templates select="node() except tei:spanGrp" />
+            <xsl:if test="lower-case(string($consent)) != 'no'">
+                <xsl:apply-templates select="$selectedSpanGrp" />
+            </xsl:if>
+        </div>
+    </xsl:template>
+    <xsl:template match="tei:spanGrp">
+        <!-- translations are not included for now -->
+        <!-- <spanGrp type="Translation">
+            <xsl:apply-templates select="@* except @type" />
+            <xsl:apply-templates select="node()" />
+        </spanGrp> -->
+    </xsl:template>
+    <xsl:template match="tei:u">
+        <xsl:variable name="num">
+            <xsl:number level="any" from="tei:annotationBlock" count="tei:u" format="1" />
+        </xsl:variable>
+        <xsl:variable name="who" select="_:stripWhoSuffix(../@who)" />
+        <xsl:variable name="consent" select="$corpusDoc//tei:person[@xml:id = $who]/tei:state[@type='consent']/tei:label" />
+        <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{_:ensureNCName(concat($recordingID,'_',../@xml:id,'_u', $num), 'u')}" who="{concat('corpus:', $who)}">
+            <xsl:apply-templates select="../@* except (../@xml:id, ../@who)" />
+            <xsl:choose>
+                <!-- hide utterances from persons with no consent form -->
+                <xsl:when test="lower-case(string($consent)) = 'no'">
+                    <gap reason="unconsented" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="tei:seg" />
+                </xsl:otherwise>
+            </xsl:choose>
+        </u>
+    </xsl:template>
+    <xsl:template match="tei:seg">
         <xsl:apply-templates select="node()" />
-    </spanGrp>
-</xsl:template>
-<xsl:template match="tei:u">
-    <xsl:variable name="num">
-        <xsl:number level="any" from="tei:annotationBlock" count="tei:u" format="1" />
-    </xsl:variable>
-    <xsl:variable name="who" select="_:stripWhoSuffix(../@who)" />
-    <xsl:variable name="consent" select="$corpusDoc//tei:person[@xml:id = $who]/tei:state[@type='consent']/tei:label" />
-    <u xml:lang="ar-acm-x-shawi-vicav" xml:id="{_:ensureNCName(concat($recordingID,'_',../@xml:id,'_u', $num), 'u')}" who="{concat('corpus:', $who)}">
-        <xsl:apply-templates select="../@* except (../@xml:id, ../@who)" />
-        <xsl:choose>
-            <!-- hide utterances from persons with no consent form -->
-            <xsl:when test="lower-case(string($consent)) = 'no'">
-                <gap reason="unconsented" />
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates select="tei:seg" />
-            </xsl:otherwise>
-        </xsl:choose>
-    </u>
-</xsl:template>
-<xsl:template match="tei:seg">
-    <xsl:apply-templates select="node()" />
-</xsl:template>
-<xsl:template match="tei:span">
-    <span xml:lang="en" target="{concat('#', _:ensureNCName(concat($recordingID,'_',substring(@target, 2)), 'd'))}">
-        <xsl:apply-templates select="@* except @target | node()" />
-    </span>
-</xsl:template>
+    </xsl:template>
+    <xsl:template match="tei:span">
+        <span xml:lang="en" target="{concat('#', _:ensureNCName(concat($recordingID,'_',substring(@target, 2)), 'd'))}">
+            <xsl:apply-templates select="@* except @target | node()" />
+        </span>
+    </xsl:template>
 </xsl:stylesheet>
